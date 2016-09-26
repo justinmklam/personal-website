@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Justin MK Lam</title>
+    <link>http://justinmklam.com/posts/</link>
+    <description>Recent content in Posts on Justin MK Lam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Sep 2016 23:51:22 -0700</lastBuildDate>
+    <atom:link href="http://justinmklam.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Automatic Window Blinds</title>
+      <link>http://justinmklam.com/posts/auto-window-blinds/</link>
+      <pubDate>Sat, 24 Sep 2016 23:51:22 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/posts/auto-window-blinds/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Make an auto window blind thingy.&lt;/p&gt;
+
+&lt;p&gt;Blah blah blah&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This is italics&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This is bold&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;This is underline?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PerfEggct: Engineering the Perfect Soft-Boiled Egg</title>
+      <link>http://justinmklam.com/posts/perfeggct/</link>
+      <pubDate>Sat, 24 Sep 2016 22:38:31 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/posts/perfeggct/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Background: &lt;/strong&gt;Gone are the days of blindly timing and boiling eggs and being left with nothing but a bad yolk. As part of our final year mechatronics engineering project, we developed a device that measures the oscillation of an egg suspended on a spring. When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&#34;If it&#39;s worth doing, it&#39;s worth overdoing.&#34; - Jaime Hyneman&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.
+&lt;/p&gt;
+    
+
+&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; As part of our final year engineering course, we were tasked to create a mechatronics device of our choosing. This project was heavily inspired by &lt;a href=&#34;https://www.youtube.com/channel/UCckETVOT59aYw80B36aP9vw&#34;&gt;Matthias Wandel&lt;/a&gt; and his &lt;a href=&#34;https://www.youtube.com/watch?v=Cw9w1CZkTr0&#34;&gt;boiled egg hardness tester&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Limitations: &lt;/strong&gt;This prototype was developed in 3 weeks during school and has approximately 80% repeatability.&lt;/p&gt; 
+
+&lt;p&gt;&lt;strong&gt;Partner: &lt;/strong&gt;&lt;a href=&#34;http://justin-liang.com&#34;&gt;Justin Liang&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=100% height=400 src=&#34;https://www.youtube.com/embed/54d9iQcqX7Q&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p class=&#34;caption&#34;&gt;Sixty second demo video of the device in action.&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/perfeggct/CAD_4.png&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;CAD model of electronics inside the enclosure (transparency shown for clarity).&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/perfeggct/Fritzing%20diagram.jpg&#34; width=&#34;450&#34;/&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;PCB diagram.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/perfeggct/DSC03408.JPG&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;PCB assembled.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/perfeggct/DSC03430.JPG&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Dry fitting of components inside handle enclosure.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/perfeggct/IMG_0461_annotated.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Annotated diagram of the final device.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/perfeggct/storage_1.png&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;The PerfEggct stored in its natural habitat.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Altoids Portable Charger</title>
+      <link>http://justinmklam.com/posts/altoids/</link>
+      <pubDate>Fri, 23 Sep 2016 22:52:25 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/posts/altoids/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

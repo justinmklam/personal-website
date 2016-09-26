@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ .Title }}</title>
+    {{ partial "header.html" . }}
+</head>
+
+<body>
+
+    {{ partial "navbar.html" . }}
+
+    <!-- Page Content -->
+    <div class="container">
+       
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">{{ .Title }}
+					<small>{{ .Params.subtitle }} </small>
+				</h1>
+			</div>
+		</div>	   
+		
+			{{range where .Site.Pages "Type" "=" .Params.section}}
+			{{ if not .Params.hidden }}
+			
+			<div class="row">
+				<div class="col-sm-2 col-sm-offset-1">
+					<a {{ if .Params.clickable }}href="{{ .Permalink }}"{{end}}>
+						<img class="img-responsive img-rounded" src="{{ .Params.image }}" alt="">
+					</a>
+				</div>
+				<div class="col-sm-9">
+					<a class=
+					{{ if not .Params.clickable }}"h3 link-disabled"{{ else }} "h3" {{end}}
+					role="button" href="{{ .Permalink}} ">{{ .Title }}</a>
+					<h4>{{ .Params.tagline }}</h4>
+					<p>{{ .Params.summary }}</p>
+
+				</div>
+			</div>
+			
+			<hr>
+		
+			{{ end }}
+			{{ end }}
+            
+
+    </div>
+    <!-- /.container -->
+
+	{{ partial "footer-js.html" . }}
+
+</body>
+    
+{{ partial "footer.html" . }}
+
+</html>

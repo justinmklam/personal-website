@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sections on Justin MK Lam</title>
+    <link>http://justinmklam.com/sections/</link>
+    <description>Recent content in Sections on Justin MK Lam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Sep 2016 22:18:22 -0700</lastBuildDate>
+    <atom:link href="http://justinmklam.com/sections/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mechatronics</title>
+      <link>http://justinmklam.com/sections/mechatronics/</link>
+      <pubDate>Sat, 24 Sep 2016 22:18:22 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/sections/mechatronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>http://justinmklam.com/sections/software/</link>
+      <pubDate>Sat, 24 Sep 2016 22:21:29 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/sections/software/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

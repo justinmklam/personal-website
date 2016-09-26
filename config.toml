@@ -1,0 +1,7 @@
+baseurl = "http://justinmklam.com"
+languageCode = "en-us"
+title = "Justin MK Lam"
+author = "Justin MK Lam"
+
+[params]
+	sections = ["Mechatronics", "Mechanical", "Software", "Electrical"]
