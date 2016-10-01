@@ -7,7 +7,7 @@ summary = "Long range trajectories are heavily susceptible to external factors i
 tagline = "Predicting projectile trajectories of shots, shots, shots, shots, shots, shots."
 title = "External Ballistics Simulation"
 type = "software"
-
+draft = false
 +++
 
 __Background:__ including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth.

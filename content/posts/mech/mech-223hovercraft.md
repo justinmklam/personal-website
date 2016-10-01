@@ -7,6 +7,7 @@ summary = "Teams were given 3 weeks to research, conceptualize, test, and refine
 tagline = "Racing a remote-controlled hovercraft made of cardboard, plastic bags, and pink foam."
 title = "MECH 223 Hovercraft"
 type = "mech"
+draft = false
 +++
 
 <p><strong>Objective: </strong>Construct a remote controlled hovercraft to compete in a class-wide battle of speed, cargo capacity, and maneuverability.</p>

@@ -7,6 +7,7 @@ summary = "Drill availability is a major limitation in developing counties, wher
 tagline = "Quantifying the performance of a surgical drill designed for low-resource settings."
 title = "Co-op Drill Cover User Study"
 type = "mech"
+draft = false
 +++
 
 <p><strong>Background:</strong> Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries.  A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.</p>

@@ -3,5 +3,7 @@ languageCode = "en-us"
 title = "Justin MK Lam"
 author = "Justin MK Lam"
 
-[params]
-	sections = ["Mechatronics", "Mechanical", "Software", "Electrical"]
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+canonifyurls = true

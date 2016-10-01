@@ -6,4 +6,5 @@ subtitle = "SCRIPTING, DATA ANALYTICS"
 title = "Software"
 type = "node"
 weight = 4
+draft = false
 +++

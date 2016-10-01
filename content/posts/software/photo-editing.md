@@ -7,7 +7,7 @@ summary = "Traveling and taking pictures go hand in hand, but good photo opportu
 tagline = "Automagically removing obstructions in an image."
 title = "Photo Editing Script"
 type = "software"
-
+draft = false
 +++
 
 __Objective:__ Develop a script to find and remove any differences in a series of photos.

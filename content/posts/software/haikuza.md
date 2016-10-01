@@ -7,7 +7,7 @@ summary = "Spamming your phone's predictive keyboard is usually enough justifica
 tagline = "Contributing to society with an interactive, Twitter-based haiku generator."
 title = "Project Haikuza"
 type = "software"
-
+draft = false
 +++
 
 <p><strong>Objective:</strong> Develop an algorithm to generate haikus using song lyrics.</p>
