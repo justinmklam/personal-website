@@ -7,6 +7,7 @@ summary = "A novel method of bowling was introduced at a car2go marketing event.
 tagline = "Roof-mounted rig for vehicular bowling at the 2014 Vancouver Fringe Festival."
 title = "car2go Bowling"
 type = "mech"
+draft = false
 +++
 
 <p><strong>Objective</strong>: Design a roof-mounted bowling rig for a car2go marketing event.</p>

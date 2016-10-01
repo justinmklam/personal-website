@@ -7,7 +7,7 @@ summary = "The TrailRider™ is a specialized device to provide accessibility to
 tagline = "Designing a next-generation, offroad wheelchair."
 title = "MECH 328 TrailRider"
 type = "mech"
-
+draft = false
 +++
 
 __Background:__ The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility.  It is intended for a seated rider propelled and balanced by assistants.

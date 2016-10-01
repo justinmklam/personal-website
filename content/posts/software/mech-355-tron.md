@@ -7,4 +7,5 @@ summary = "A simple multiplayer game of TRON was recreated on an Altera FPGA, pr
 tagline = "8-bit remake of the pong-inspired arcade game."
 title = "MECH 355 Tron Game"
 type = "software"
+draft = false
 +++

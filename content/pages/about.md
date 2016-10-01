@@ -1,6 +1,6 @@
 +++
 date = "2016-09-24T12:58:43-07:00"
-draft = true
+draft = false
 title = "About"
 headshot = "/imgs/headshot.jpg"
 layout = "single-about"

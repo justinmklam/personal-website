@@ -7,7 +7,7 @@ summary = "Foam liners in bicycle helmets absorb energy during impacts. Manufact
 tagline = "Assessing the safety of your 15 year-old helmet."
 title = "Co-op: Age effect on Bicycle Helmets"
 type = "mech"
-
+draft = false
 +++
 
 <p><strong>Objective</strong>: Determine if age has an effect on the mechanical properties of bicycle helmets.</p>

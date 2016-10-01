@@ -12,7 +12,7 @@ type = "mecha"
 image = "/imgs/perfeggct/IMG_0461_square.png"
 
 clickable = true
-
+draft = false
 +++
 
 <p><strong>Background: </strong>Gone are the days of blindly timing and boiling eggs and being left with nothing but a bad yolk. As part of our final year mechatronics engineering project, we developed a device that measures the oscillation of an egg suspended on a spring. When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.

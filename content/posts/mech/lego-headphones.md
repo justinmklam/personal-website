@@ -7,7 +7,7 @@ summary = "Combining two favourite past-times of music and LEGO resulted in the 
 tagline = "Making music with the world's favourite construction toy."
 title = "LEGO Headphones"
 type = "mech"
-
+draft = false
 +++
 
 __Objective:__ Use LEGO to create the external assembly of a pair of headphones.

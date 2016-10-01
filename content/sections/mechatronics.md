@@ -6,4 +6,5 @@ subtitle = "INTEGRATED MECHANICAL AND ELECTRICAL DEVICES"
 title = "Mechatronics"
 type = "node"
 weight = 1
+draft = false
 +++

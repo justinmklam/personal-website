@@ -1,11 +1,25 @@
 +++
 clickable = true
 date = "2016-09-25T12:39:52-07:00"
-hidden = true
-image = ""
-summary = "A simple interface to act as a daily work log. Entries are saved into date-stamped text files. Adapted from the SourceTree Git GUI."
+hidden = false
+image = "/imgs/engineers-diary/thumbnail.PNG"
+summary = "No bells, no whistles; just a simple interface to act as a daily work log. Entries are time-stamped and saved into date-stamped text files."
 tagline = "Getting into the habit of writing stuff down because I don't trust my memory."
 title = "Engineer's Diary"
 type = "software"
-
+draft = false
 +++
+
+__Background:__ Between paper notebooks, post-it notes, OneNote, Evernote, and so many more, there is no shortage of ways to write things down. Each has its strengths and weaknesses, but none satisfied my requirements to act as a daily work log to record key events, thoughts, and milestones during my work day. 
+
+My paper notebook is excellent for free-form thoughts, sketches, and calculations, but I would want to keep a separate notebook to keep track of these sequential events. We use OneNote at work, but where the infinite blank canvas is a strength in applications such as for research or brainstorming, I found it to be a weakness in record keeping since the document is too easy to edit and "fragile".
+
+One day after learning about Git and SourceTree, I knew wanted to create a similar commit-style application to record activites and "freeze" them in time. Not web-based, internet connected, or cross platform; just a no frills desktop application that does one thing and one thing only.
+
+__Objective:__ Develop a simple application to log daily activities at work.
+
+{{<img caption="Screencap of the Engineer's Diary."
+src="/imgs/engineers-diary/screencap2.PNG" >}}
+
+{{<img caption="Screencap of the Engineer's Diary."
+src="/imgs/engineers-diary/screencap3.PNG" >}}

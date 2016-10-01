@@ -1,7 +1,7 @@
 +++
 date = "2014-09-24T22:12:57-07:00"
 
-draft = true
+draft = false
 
 title = "Bamboo Bike"
 

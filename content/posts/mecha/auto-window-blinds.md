@@ -1,20 +1,25 @@
 +++
-date = "2016-09-24T23:51:22-07:00"
-image = ""
-summary = "Because I'm too lazy to spin the rod every morning."
-tagline = "Automatic window blinds for all."
-title = "Automatic Window Blinds"
-type = "mech"
 clickable = true
+date = "2016-10-01T11:17:11-07:00"
 hidden = true
+image = "/imgs/SOURCE"
+summary = ""
+tagline = ""
+title = "auto window blinds"
+type = "mecha"
+draft = true
 +++
 
-__Objective__: Make an auto window blind thingy.
+__Background:__
 
-Blah blah blah
+__Objective:__
 
-_This is italics_
+__Motivation:__
 
-__This is bold__
+__Features:__
 
-___This is underline?___
++ Foo 1
++ Foo 2
+
+{{<img caption="TEXT"
+src="/imgs/SOURCE" >}}
