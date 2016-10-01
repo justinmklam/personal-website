@@ -22,27 +22,27 @@
 		</div>	   
 		
 			{{range where .Site.Pages "Type" "=" .Params.section}}
-			{{ if not .Params.hidden }}
-			
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1">
-					<a {{ if .Params.clickable }}href="{{ .Permalink }}"{{end}}>
-						<img class="img-responsive img-rounded" src="{{ .Params.image }}" alt="">
-					</a>
-				</div>
-				<div class="col-sm-9">
-					<a class=
-					{{ if not .Params.clickable }}"h3 link-disabled"{{ else }} "h3" {{end}}
-					role="button" href="{{ .Permalink}} ">{{ .Title }}</a>
-					<h4>{{ .Params.tagline }}</h4>
-					<p>{{ .Params.summary }}</p>
+				{{ if not .Params.hidden }}
+				
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-1">
+						<a {{ if .Params.clickable }}href="{{ .Permalink }}"{{end}}>
+							<img class="img-responsive img-rounded" src="{{ .Params.image }}" alt="">
+						</a>
+					</div>
+					<div class="col-sm-9">
+						<a class=
+						{{ if not .Params.clickable }}"h3 link-disabled"{{ else }} "h3" {{end}}
+						role="button" href="{{ .Permalink}} ">{{ .Title }}</a>
+						<h4>{{ .Params.tagline }}</h4>
+						<p>{{ .Params.summary }}</p>
 
+					</div>
 				</div>
-			</div>
+				
+				<hr>
 			
-			<hr>
-		
-			{{ end }}
+				{{ end }}
 			{{ end }}
             
 
