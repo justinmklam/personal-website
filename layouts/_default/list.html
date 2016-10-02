@@ -19,10 +19,13 @@
 					<small>{{ .Params.subtitle }} </small>
 				</h1>
 			</div>
-		</div>	   
+		</div>	
 		
-			{{range where .Site.Pages "Type" "=" .Params.section}}
-				{{ if not .Params.hidden }}
+		{{ range $index, $element := (where .Site.Pages "Type" .Params.section) }}
+			{{ if not .Params.hidden }}
+				{{ if not (eq $index 0) }}
+				<hr>
+				{{ end }}
 				
 				<div class="row">
 					<div class="col-sm-2 col-sm-offset-1">
@@ -36,14 +39,10 @@
 						role="button" href="{{ .Permalink}} ">{{ .Title }}</a>
 						<h4>{{ .Params.tagline }}</h4>
 						<p>{{ .Params.summary }}</p>
-
 					</div>
-				</div>
-				
-				<hr>
-			
-				{{ end }}
+				</div>			
 			{{ end }}
+		{{ end }}
             
 
     </div>
