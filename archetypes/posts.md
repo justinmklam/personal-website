@@ -18,5 +18,7 @@ __Features:__
 + Foo 1
 + Foo 2
 
+[TEXT](HYPERLINK)
+
 {{<img caption="TEXT"
 src="/imgs/SOURCE" >}}

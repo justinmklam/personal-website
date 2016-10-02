@@ -18,8 +18,19 @@ One day after learning about Git and SourceTree, I knew wanted to create a simil
 
 __Objective:__ Develop a simple application to log daily activities at work.
 
-{{<img caption="Screencap of the Engineer's Diary."
+__Features:__
+
++ Entries for each day are saved in a date-stamped text file
++ Each commit is time-stamped in the text file
++ Archive of log entries is accessible through the list in the left column
++ Text files show up as read only in the application, but are editable and searchable through the Windows File Explorer
+
+__Framework:__ C#
+
+__Source:__ [Github](https://github.com/justinmklam/engineers-diary)
+
+{{<img caption="Screencap of the Engineer's Diary. Write in the 'Description' and 'Project' text boxes, then press 'Commit' when complete."
 src="/imgs/engineers-diary/screencap2.PNG" >}}
 
-{{<img caption="Screencap of the Engineer's Diary."
+{{<img caption="After the 'Commit' button is pressed, the entry is written or appended to a text file and displayed on screen." 
 src="/imgs/engineers-diary/screencap3.PNG" >}}
