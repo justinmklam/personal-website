@@ -49,6 +49,10 @@ footer {
     max-height: 500px;
 }
 
+.media-center {
+	margin: 0 auto;
+}
+
 .iframe {
     margin: 0 auto;
     display: block;

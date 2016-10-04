@@ -458,17 +458,21 @@
 
 &lt;p&gt;&lt;strong&gt;Venue&lt;/strong&gt;: 2014 Vancouver Fringe Festival&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;div id=&#34;fb-root&#34;&gt;
-&lt;div&gt;&lt;/div&gt;
-&lt;script&gt;// &lt;![CDATA[
-(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = &#34;//connect.facebook.net/en_US/all.js#xfbml=1&#34;; fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));
-// ]]&gt;&lt;/script&gt;
-&lt;div class=&#34;fb-post&#34; data-href=&#34;https://www.facebook.com/video.php?v=10154557145565524&#34; data-width=&#34;466&#34;&gt;
-&lt;div class=&#34;fb-xfbml-parse-ignore&#34; style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.facebook.com/video.php?v=10154557145565524&#34;&gt;Post&lt;/a&gt; by &lt;a href=&#34;https://www.facebook.com/VancouverFringeFestival&#34;&gt;Vancouver Fringe Festival&lt;/a&gt;.&lt;/div&gt;
+&lt;div id=&#34;fb-root&#34;&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = &#34;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.6&#34;;
+fjs.parentNode.insertBefore(js, fjs);
+}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
+
+&lt;div class=&#34;fb-post&#34; data-href=https://www.facebook.com/video.php?v&amp;#61;10154557145565524 data-height=&#34;466&#34;&gt;
+	&lt;div class=&#34;fb-xfbml-parse-ignore&#34;&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+
+&lt;br&gt;&lt;br&gt;
 </description>
     </item>
     
