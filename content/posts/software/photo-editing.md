@@ -1,6 +1,6 @@
 +++
 clickable = true
-date = "2016-09-25T12:25:44-07:00"
+date = "2014-01-12T12:25:44-07:00"
 hidden = false
 image = "/imgs/photo_editing/IMG_4500-e1458003774965-300x300.jpg"
 summary = "Traveling and taking pictures go hand in hand, but good photo opportunities are often packed with other tourists. Instead of manually editing people out in Photoshop, a MATLAB script was designed to take a series of similar photos and remove any differences between them."

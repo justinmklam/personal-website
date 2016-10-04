@@ -1,6 +1,6 @@
 +++
 clickable = false
-date = "2016-09-25T12:36:02-07:00"
+date = "2014-03-30T12:36:02-07:00"
 hidden = false
 image = "/imgs/tron/tron-e1458003233329.png"
 summary = "A simple multiplayer game of TRON was recreated on an Altera FPGA, programmed in C."

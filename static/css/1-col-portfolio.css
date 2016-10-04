@@ -54,6 +54,12 @@ footer {
     display: block;
 }
 
+.datestamp {
+	text-align: right;
+	font-size: 90%;
+	color: #777;
+}
+
 @media (min-width: 992px) {
     .img-content {
         padding-left: 75px;

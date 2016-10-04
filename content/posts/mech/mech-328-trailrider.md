@@ -1,6 +1,6 @@
 +++
 clickable = true
-date = "2016-09-25T12:37:55-07:00"
+date = "2014-11-24T12:37:55-07:00"
 hidden = false
 image = "/imgs/trailrider/TrailRider-Overview-1-e1458002590550-300x300.png"
 summary = "The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility. As a team of mechanical engineering undergrads, we explored areas of improvement and developed a new design to incorporate these features."

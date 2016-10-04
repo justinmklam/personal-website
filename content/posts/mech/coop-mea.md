@@ -1,6 +1,6 @@
 +++
 clickable = true
-date = "2013-09-25T12:37:10-07:00"
+date = "2013-12-28T12:37:10-07:00"
 hidden = false
 image = "/imgs/mea_helmet/Drop-tower-e1458003618741-300x300.jpg"
 summary = "Foam liners in bicycle helmets absorb energy during impacts. Manufacturers recommend replacing a helmet every 2 to 10 years to maintain optimal head protection. To investigate this recommendation, we quantified the material and impact attenuation properties of helmets to determine if they changed with age."

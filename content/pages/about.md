@@ -4,6 +4,7 @@ draft = false
 title = "About"
 headshot = "/imgs/headshot.jpg"
 layout = "single-about"
+hidedate = true
 
 [menu.main]
     name = "About"

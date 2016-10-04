@@ -1,6 +1,6 @@
 +++
 clickable = true
-date = "2014-09-24T12:37:42-07:00"
+date = "2014-08-29T12:37:42-07:00"
 hidden = false
 image = "/imgs/car2go/car2go-300x300.png"
 summary = "A novel method of bowling was introduced at a car2go marketing event. Using a non-permanent method of atachment, a roof-mounted bowling rig was designed and created."

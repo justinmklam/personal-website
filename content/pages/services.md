@@ -2,6 +2,7 @@
 date = "2016-09-24T16:43:46-07:00"
 draft = false
 title = "Services"
+hidedate = true
 
 [menu.main]
     name = "Services"

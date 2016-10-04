@@ -2,6 +2,7 @@
 date = "2016-09-24T13:48:02-07:00"
 draft = false
 title = "Contact"
+hidedate = true
 [menu.main]
     name = "Contact"
     url = "/pages/contact/"

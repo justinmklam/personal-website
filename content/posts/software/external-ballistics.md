@@ -1,6 +1,6 @@
 +++
 clickable = true
-date = "2016-09-25T12:36:19-07:00"
+date = "2015-02-19T12:36:19-07:00"
 hidden = false
 image = "/imgs/external_ballistics/Ballistics-Simulation-300x300.jpg"
 summary = "Long range trajectories are heavily susceptible to external factors including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth. One solution is to connect a computer to a manual targeting system and estimate the corrected target location by accounting for these external factors. A basic program was developed to simulate and calculate the required correction."

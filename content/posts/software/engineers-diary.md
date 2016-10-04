@@ -1,6 +1,6 @@
 +++
 clickable = true
-date = "2016-09-25T12:39:52-07:00"
+date = "2016-10-01T12:39:52-07:00"
 hidden = false
 image = "/imgs/engineers-diary/thumbnail.PNG"
 summary = "No bells, no whistles; just a simple interface to act as a daily work log. Entries are time-stamped and saved into date-stamped text files."

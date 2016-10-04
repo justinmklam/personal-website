@@ -6,13 +6,48 @@
     <description>Recent content in Posts on Justin MK Lam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Sep 2016 12:57:32 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 01 Oct 2016 12:39:52 -0700</lastBuildDate>
     <atom:link href="http://www.justinmklam.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Engineer&#39;s Diary</title>
+      <link>http://www.justinmklam.com/posts/software/engineers-diary/</link>
+      <pubDate>Sat, 01 Oct 2016 12:39:52 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/posts/software/engineers-diary/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Between paper notebooks, post-it notes, OneNote, Evernote, and so many more, there is no shortage of ways to write things down. Each has its strengths and weaknesses, but none satisfied my requirements to act as a daily work log to record key events, thoughts, and milestones during my work day.&lt;/p&gt;
+
+&lt;p&gt;My paper notebook is excellent for free-form thoughts, sketches, and calculations, but I would want to keep a separate notebook to keep track of these sequential events. We use OneNote at work, but where the infinite blank canvas is a strength in applications such as for research or brainstorming, I found it to be a weakness in record keeping since the document is too easy to edit and &amp;ldquo;fragile&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;One day after learning about Git and SourceTree, I knew wanted to create a similar commit-style application to record activites and &amp;ldquo;freeze&amp;rdquo; them in time. Not web-based, internet connected, or cross platform; just a no frills desktop application that does one thing and one thing only.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop a simple application to log daily activities at work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Entries for each day are saved in a date-stamped text file&lt;/li&gt;
+&lt;li&gt;Each commit is time-stamped in the text file&lt;/li&gt;
+&lt;li&gt;Archive of log entries is accessible through the list in the left column&lt;/li&gt;
+&lt;li&gt;Text files show up as read only in the application, but are editable and searchable through the Windows File Explorer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; C#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt; &lt;a href=&#34;https://github.com/justinmklam/engineers-diary&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;a href=/imgs/engineers-diary/screencap2.PNG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/engineers-diary/screencap2.PNG /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Screencap of the Engineer&amp;#39;s Diary. Write in the &amp;#39;Description&amp;#39; and &amp;#39;Project&amp;#39; text boxes, then press &amp;#39;Commit&amp;#39; when complete.&lt;/p&gt;
+
+&lt;a href=/imgs/engineers-diary/screencap3.PNG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/engineers-diary/screencap3.PNG /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;After the &amp;#39;Commit&amp;#39; button is pressed, the entry is written or appended to a text file and displayed on screen.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Capstone 3D Optical Well Imager</title>
       <link>http://www.justinmklam.com/posts/mech/mech-458-capstone/</link>
-      <pubDate>Sun, 25 Sep 2016 12:57:32 -0700</pubDate>
+      <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
       <guid>http://www.justinmklam.com/posts/mech/mech-458-capstone/</guid>
       <description>&lt;p style=&#34;text-align: justify;&#34;&gt;&lt;strong&gt;Background&lt;/strong&gt;: The cost for high resolution pipeline inspection can range from roughly $2000 to $6000 per mile. Pipeline repairs are costly and dangerous, and preventative measures are frequently taken by companies to minimize risk and the advent of future problems. Our final year capstone project involved developing an imaging system to automate the inspection process for oil and gas wells .&lt;/p&gt;
@@ -81,44 +116,167 @@
     </item>
     
     <item>
-      <title>Engineer&#39;s Diary</title>
-      <link>http://www.justinmklam.com/posts/software/engineers-diary/</link>
-      <pubDate>Sun, 25 Sep 2016 12:39:52 -0700</pubDate>
+      <title>Portable Power Supply</title>
+      <link>http://www.justinmklam.com/posts/elec/power-supply/</link>
+      <pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/software/engineers-diary/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Between paper notebooks, post-it notes, OneNote, Evernote, and so many more, there is no shortage of ways to write things down. Each has its strengths and weaknesses, but none satisfied my requirements to act as a daily work log to record key events, thoughts, and milestones during my work day.&lt;/p&gt;
+      <guid>http://www.justinmklam.com/posts/elec/power-supply/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Build a cheap, portable, variable DC power supply.&lt;/p&gt;
 
-&lt;p&gt;My paper notebook is excellent for free-form thoughts, sketches, and calculations, but I would want to keep a separate notebook to keep track of these sequential events. We use OneNote at work, but where the infinite blank canvas is a strength in applications such as for research or brainstorming, I found it to be a weakness in record keeping since the document is too easy to edit and &amp;ldquo;fragile&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.&lt;/p&gt;
 
-&lt;p&gt;One day after learning about Git and SourceTree, I knew wanted to create a similar commit-style application to record activites and &amp;ldquo;freeze&amp;rdquo; them in time. Not web-based, internet connected, or cross platform; just a no frills desktop application that does one thing and one thing only.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitations:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop a simple application to log daily activities at work.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only DC voltages available&lt;/li&gt;
+&lt;li&gt;Max current is a function of input power and desired voltage (I=P/V)&lt;/li&gt;
+&lt;li&gt;Current limiting feature is non-existent, so must be careful to not let the genie out of circuits&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;a href=/imgs/power_supply/IMG_20160525_142454.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/power_supply/IMG_20160525_142454.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Power supply in action, providing 12V to a reel of strip LEDs.&lt;/p&gt;
+
+&lt;a href=/imgs/power_supply/IMG_20160525_143029.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/power_supply/IMG_20160525_143029.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Internals of the power supply.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PerfEggct: Engineering the Perfect Soft-Boiled Egg</title>
+      <link>http://www.justinmklam.com/posts/mecha/perfeggct/</link>
+      <pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/posts/mecha/perfeggct/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Background: &lt;/strong&gt;Gone are the days of blindly timing and boiling eggs and being left with nothing but a bad yolk. As part of our final year mechatronics engineering project, we developed a device that measures the oscillation of an egg suspended on a spring. When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&#34;If it&#39;s worth doing, it&#39;s worth overdoing.&#34; - Jaime Hyneman&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.
+&lt;/p&gt;
+    
+
+&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; As part of our final year engineering course, we were tasked to create a mechatronics device of our choosing. This project was heavily inspired by &lt;a href=&#34;https://www.youtube.com/channel/UCckETVOT59aYw80B36aP9vw&#34;&gt;Matthias Wandel&lt;/a&gt; and his &lt;a href=&#34;https://www.youtube.com/watch?v=Cw9w1CZkTr0&#34;&gt;boiled egg hardness tester&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Limitations: &lt;/strong&gt;This prototype was developed in 3 weeks during school and has approximately 80% repeatability.&lt;/p&gt; 
+
+&lt;p&gt;&lt;strong&gt;Partner: &lt;/strong&gt;&lt;a href=&#34;http://justin-liang.com&#34;&gt;Justin Liang&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=100% height=400 src=&#34;https://www.youtube.com/embed/54d9iQcqX7Q&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p class=&#34;caption&#34;&gt;Sixty second demo video of the device in action.&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/CAD_4.png&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;CAD model of electronics inside the enclosure (transparency shown for clarity).&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/Fritzing%20diagram.jpg&#34; width=&#34;450&#34;/&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;PCB diagram.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/DSC03408.JPG&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;PCB assembled.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/DSC03430.JPG&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Dry fitting of components inside handle enclosure.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/IMG_0461_annotated.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Annotated diagram of the final device.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/storage_1.png&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;The PerfEggct stored in its natural habitat.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Project Haikuza</title>
+      <link>http://www.justinmklam.com/posts/software/haikuza/</link>
+      <pubDate>Sun, 19 Jul 2015 12:36:28 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/posts/software/haikuza/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop an algorithm to generate haikus using song lyrics.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; Because computational linguistics are cool.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Project:&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/thehaikuza&#34;&gt;twitter.com/thehaikuza&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Entries for each day are saved in a date-stamped text file&lt;/li&gt;
-&lt;li&gt;Each commit is time-stamped in the text file&lt;/li&gt;
-&lt;li&gt;Archive of log entries is accessible through the list in the left column&lt;/li&gt;
-&lt;li&gt;Text files show up as read only in the application, but are editable and searchable through the Windows File Explorer&lt;/li&gt;
+&lt;li&gt;Scrapes &lt;a href=&#34;http://www.vancouver.virginradio.ca/broadcasthistory.aspx&#34;&gt;Virgin Radio&amp;rsquo;s broadcast history&lt;/a&gt; to find recently played songs&lt;/li&gt;
+&lt;li&gt;Creates a song-based haiku queue in &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1HazfuywY_MrmQ49fxSpHOMA8QXBUYVhEDx1e4qhjbqU/edit?usp=sharing&#34;&gt;Google Sheets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Generates a haiku using the queue as a reference and posts it on Twitter&lt;/li&gt;
+&lt;li&gt;Checks for new tweets every 5 minutes and generates a relevant haiku, if requested&lt;/li&gt;
+&lt;li&gt;Finds all song lyrics from &lt;a href=&#34;http://lyrics.wikia.com/Lyrics_Wiki&#34;&gt;Lyrics Wikia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Runs on a Raspberry Pi&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; C#&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Challenges:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt; &lt;a href=&#34;https://github.com/justinmklam/engineers-diary&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Formulaically counting syllables&lt;/li&gt;
+&lt;li&gt;Developing a context-free language model&lt;/li&gt;
+&lt;li&gt;Creating phrases that actually make sense&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;a href=/imgs/engineers-diary/screencap2.PNG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/engineers-diary/screencap2.PNG /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Screencap of the Engineer&amp;#39;s Diary. Write in the &amp;#39;Description&amp;#39; and &amp;#39;Project&amp;#39; text boxes, then press &amp;#39;Commit&amp;#39; when complete.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; Python 2.7.9&lt;/p&gt;
 
-&lt;a href=/imgs/engineers-diary/screencap3.PNG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/engineers-diary/screencap3.PNG /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;After the &amp;#39;Commit&amp;#39; button is pressed, the entry is written or appended to a text file and displayed on screen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt; &lt;a href=&#34;https://github.com/justinmklam/project-haikuza&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;a href=/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Screencap of @thehaikuza&amp;#39;s Twitter profile&lt;/p&gt;
+
+&lt;a href=/imgs/haikuza/IMG_20150803_180047-1024x768.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/haikuza/IMG_20150803_180047-1024x768.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Raspberry Pi 1 Model B running @thehaikuza, 24/7!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>External Ballistics Simulation</title>
+      <link>http://www.justinmklam.com/posts/software/external-ballistics/</link>
+      <pubDate>Thu, 19 Feb 2015 12:36:19 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/posts/software/external-ballistics/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth.&lt;/p&gt;
+
+&lt;p&gt;One solution is to connect a computer to a manual targeting system (ie. a scope) and estimate the corrected target location by accounting for these external factors.  The user may then line the manual targeting system up with the corrected target location, hoping to the high heavens that the target will be hit upon releasing the projectile.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Determine the required release angle given the muzzle velocity and target distance, accounting for external factors.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Limitations:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Only the corrected vertical distance is calculated&lt;/li&gt;
+&lt;li&gt;Values have not yet been validated for accuracy&lt;/li&gt;
+&lt;li&gt;Purely mathematical simulations lack the accuracy provided by simulations backed by empirical data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; Python(x,y) 2.7.9.0&lt;/p&gt;
+
+&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all_missed.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all_missed.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Visualization of release angles between 0 and 90° given the same muzzle velocity.&lt;/p&gt;
+
+&lt;a href=/imgs/external_ballistics/Ballistics-simulation-flowchart.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-simulation-flowchart.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Flowchart of the algorithm to determine the required release angle.&lt;/p&gt;
+
+&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Visualization of the algorithm on the release angle increment. The magenta trajectory is 5° higher than the red trajectory; the green is 2.5° higher than the magenta, and so on.&lt;/p&gt;
+
+&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle-exaggerated.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle-exaggerated.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Predicted trajectory on flat ground.&lt;/p&gt;
+
+&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_18-deg-Scope-Angle.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_18-deg-Scope-Angle.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Predicted trajectory when target is uphill from user.&lt;/p&gt;
+
+&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_-9-deg-Scope-Angle.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_-9-deg-Scope-Angle.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Predicted trajectory when target is downhill from user.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>MECH 328 TrailRider</title>
       <link>http://www.justinmklam.com/posts/mech/mech-328-trailrider/</link>
-      <pubDate>Sun, 25 Sep 2016 12:37:55 -0700</pubDate>
+      <pubDate>Mon, 24 Nov 2014 12:37:55 -0700</pubDate>
       
       <guid>http://www.justinmklam.com/posts/mech/mech-328-trailrider/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility.  It is intended for a seated rider propelled and balanced by assistants.&lt;/p&gt;
@@ -169,214 +327,9 @@
     </item>
     
     <item>
-      <title>Project Haikuza</title>
-      <link>http://www.justinmklam.com/posts/software/haikuza/</link>
-      <pubDate>Sun, 25 Sep 2016 12:36:28 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/posts/software/haikuza/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop an algorithm to generate haikus using song lyrics.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; Because computational linguistics are cool.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Source&lt;/strong&gt;: &lt;a href=&#34;https://twitter.com/thehaikuza&#34; target=&#34;_blank&#34;&gt;twitter.com/thehaikuza&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Scrapes &lt;a href=&#34;http://www.vancouver.virginradio.ca/broadcasthistory.aspx&#34; target=&#34;_blank&#34;&gt;Virgin Radio&#39;s broadcast history&lt;/a&gt; to find recently played songs&lt;/li&gt;
-    &lt;li&gt;Creates a song-based haiku queue in &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1HazfuywY_MrmQ49fxSpHOMA8QXBUYVhEDx1e4qhjbqU/edit?usp=sharing&#34; target=&#34;_blank&#34;&gt;Google Sheets&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;Generates a haiku using the queue as a reference and posts it on Twitter&lt;/li&gt;
-    &lt;li&gt;Checks for new tweets every 5 minutes and generates a relevant haiku, if requested&lt;/li&gt;
-    &lt;li&gt;Finds all song lyrics from &lt;a href=&#34;http://lyrics.wikia.com/Lyrics_Wiki&#34; target=&#34;_blank&#34;&gt;Lyrics Wikia&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;Runs on a Raspberry Pi&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-&lt;strong&gt;Challenges:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Formulaically counting syllables&lt;/li&gt;
-    &lt;li&gt;Developing a context-free language model&lt;/li&gt;
-    &lt;li&gt;Creating phrases that actually make sense&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; Python 2.7.9&lt;/p&gt;
-
-&lt;a href=/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Screencap of @thehaikuza&amp;#39;s Twitter profile&lt;/p&gt;
-
-&lt;a href=/imgs/haikuza/IMG_20150803_180047-1024x768.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/haikuza/IMG_20150803_180047-1024x768.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Raspberry Pi 1 Model B running @thehaikuza, 24/7!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>External Ballistics Simulation</title>
-      <link>http://www.justinmklam.com/posts/software/external-ballistics/</link>
-      <pubDate>Sun, 25 Sep 2016 12:36:19 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/posts/software/external-ballistics/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth.&lt;/p&gt;
-
-&lt;p&gt;One solution is to connect a computer to a manual targeting system (ie. a scope) and estimate the corrected target location by accounting for these external factors.  The user may then line the manual targeting system up with the corrected target location, hoping to the high heavens that the target will be hit upon releasing the projectile.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Determine the required release angle given the muzzle velocity and target distance, accounting for external factors.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Limitations:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Only the corrected vertical distance is calculated&lt;/li&gt;
-&lt;li&gt;Values have not yet been validated for accuracy&lt;/li&gt;
-&lt;li&gt;Purely mathematical simulations lack the accuracy provided by simulations backed by empirical data&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; Python(x,y) 2.7.9.0&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all_missed.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all_missed.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Visualization of release angles between 0 and 90° given the same muzzle velocity.&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-simulation-flowchart.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-simulation-flowchart.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Flowchart of the algorithm to determine the required release angle.&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Visualization of the algorithm on the release angle increment. The magenta trajectory is 5° higher than the red trajectory; the green is 2.5° higher than the magenta, and so on.&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle-exaggerated.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle-exaggerated.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Predicted trajectory on flat ground.&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_18-deg-Scope-Angle.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_18-deg-Scope-Angle.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Predicted trajectory when target is uphill from user.&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_-9-deg-Scope-Angle.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_-9-deg-Scope-Angle.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Predicted trajectory when target is downhill from user.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>MECH 355 Tron Game</title>
-      <link>http://www.justinmklam.com/posts/software/mech-355-tron/</link>
-      <pubDate>Sun, 25 Sep 2016 12:36:02 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/posts/software/mech-355-tron/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Photo Editing Script</title>
-      <link>http://www.justinmklam.com/posts/software/photo-editing/</link>
-      <pubDate>Sun, 25 Sep 2016 12:25:44 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/posts/software/photo-editing/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop a script to find and remove any differences in a series of photos.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; &lt;a href=&#34;http://toomanyadapters.com/how-to-remove-people-travel-photos-photoshop/&#34;&gt;How to Remove People From Your Travel Using Photoshop&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; MATLAB&lt;/p&gt;
-
-&lt;a href=/imgs/photo_editing/Image-test_all.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/photo_editing/Image-test_all.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Script takes any number of images (preferably taken on a tripod) and combines them into one cleaned-up image.&lt;/p&gt;
-
-&lt;a href=/imgs/photo_editing/Photo-editing-script-algorithm.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/photo_editing/Photo-editing-script-algorithm.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Flowchart of the implemented algorithm.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>PerfEggct: Engineering the Perfect Soft-Boiled Egg</title>
-      <link>http://www.justinmklam.com/posts/mecha/perfeggct/</link>
-      <pubDate>Sat, 24 Sep 2016 22:38:31 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/posts/mecha/perfeggct/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background: &lt;/strong&gt;Gone are the days of blindly timing and boiling eggs and being left with nothing but a bad yolk. As part of our final year mechatronics engineering project, we developed a device that measures the oscillation of an egg suspended on a spring. When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
-&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&#34;If it&#39;s worth doing, it&#39;s worth overdoing.&#34; - Jaime Hyneman&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.
-&lt;/p&gt;
-    
-
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; As part of our final year engineering course, we were tasked to create a mechatronics device of our choosing. This project was heavily inspired by &lt;a href=&#34;https://www.youtube.com/channel/UCckETVOT59aYw80B36aP9vw&#34;&gt;Matthias Wandel&lt;/a&gt; and his &lt;a href=&#34;https://www.youtube.com/watch?v=Cw9w1CZkTr0&#34;&gt;boiled egg hardness tester&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Limitations: &lt;/strong&gt;This prototype was developed in 3 weeks during school and has approximately 80% repeatability.&lt;/p&gt; 
-
-&lt;p&gt;&lt;strong&gt;Partner: &lt;/strong&gt;&lt;a href=&#34;http://justin-liang.com&#34;&gt;Justin Liang&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe width=100% height=400 src=&#34;https://www.youtube.com/embed/54d9iQcqX7Q&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;p class=&#34;caption&#34;&gt;Sixty second demo video of the device in action.&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/CAD_4.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;CAD model of electronics inside the enclosure (transparency shown for clarity).&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/Fritzing%20diagram.jpg&#34; width=&#34;450&#34;/&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;PCB diagram.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/DSC03408.JPG&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;PCB assembled.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/DSC03430.JPG&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Dry fitting of components inside handle enclosure.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/IMG_0461_annotated.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Annotated diagram of the final device.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/storage_1.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;The PerfEggct stored in its natural habitat.&lt;/p&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Portable Power Supply</title>
-      <link>http://www.justinmklam.com/posts/elec/power-supply/</link>
-      <pubDate>Sat, 24 Sep 2016 17:29:58 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/posts/elec/power-supply/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Build a cheap, portable, variable DC power supply.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Limitations:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Only DC voltages available&lt;/li&gt;
-&lt;li&gt;Max current is a function of input power and desired voltage (I=P/V)&lt;/li&gt;
-&lt;li&gt;Current limiting feature is non-existent, so must be careful to not let the genie out of circuits&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/power_supply/IMG_20160525_142454.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/power_supply/IMG_20160525_142454.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Power supply in action, providing 12V to a reel of strip LEDs.&lt;/p&gt;
-
-&lt;a href=/imgs/power_supply/IMG_20160525_143029.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/power_supply/IMG_20160525_143029.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Internals of the power supply.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Altoids Portable Charger</title>
-      <link>http://www.justinmklam.com/posts/elec/altoids/</link>
-      <pubDate>Fri, 23 Sep 2016 22:52:25 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/posts/elec/altoids/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Build a simple, rechargable battery pack to keep the tunes playing long road trips.&lt;/p&gt;
-
-&lt;a href=/imgs/altoids/Altoids-charger_1.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/altoids/Altoids-charger_1.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Overview of the fantastic charging device.&lt;/p&gt;
-
-&lt;a href=/imgs/altoids/Altoids-charger_2.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/altoids/Altoids-charger_2.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;The iPod is alive!&lt;/p&gt;
-
-&lt;a href=/imgs/altoids/Altoids-charger_3.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/altoids/Altoids-charger_3.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;President&amp;#39;s Choice rechargable batteries and some janky wiring is all it took.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Co-op Drill Cover User Study</title>
       <link>http://www.justinmklam.com/posts/mech/coop-drill-cover/</link>
-      <pubDate>Thu, 25 Sep 2014 12:39:34 -0700</pubDate>
+      <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
       
       <guid>http://www.justinmklam.com/posts/mech/coop-drill-cover/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries.  A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.&lt;/p&gt;
@@ -408,9 +361,35 @@
     </item>
     
     <item>
+      <title>car2go Bowling</title>
+      <link>http://www.justinmklam.com/posts/mech/car2go/</link>
+      <pubDate>Fri, 29 Aug 2014 12:37:42 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/posts/mech/car2go/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Design a roof-mounted bowling rig for a car2go marketing event.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;: Use a non-permanent method to securely attach the apparatus to the roof.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Venue&lt;/strong&gt;: 2014 Vancouver Fringe Festival&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;div id=&#34;fb-root&#34;&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;script&gt;// &lt;![CDATA[
+(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = &#34;//connect.facebook.net/en_US/all.js#xfbml=1&#34;; fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));
+// ]]&gt;&lt;/script&gt;
+&lt;div class=&#34;fb-post&#34; data-href=&#34;https://www.facebook.com/video.php?v=10154557145565524&#34; data-width=&#34;466&#34;&gt;
+&lt;div class=&#34;fb-xfbml-parse-ignore&#34; style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.facebook.com/video.php?v=10154557145565524&#34;&gt;Post&lt;/a&gt; by &lt;a href=&#34;https://www.facebook.com/VancouverFringeFestival&#34;&gt;Vancouver Fringe Festival&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Bamboo Bike</title>
       <link>http://www.justinmklam.com/posts/mech/bamboo-bike/</link>
-      <pubDate>Wed, 24 Sep 2014 22:12:57 -0700</pubDate>
+      <pubDate>Mon, 18 Aug 2014 22:12:57 -0700</pubDate>
       
       <guid>http://www.justinmklam.com/posts/mech/bamboo-bike/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.&lt;/p&gt;
@@ -465,35 +444,38 @@
     </item>
     
     <item>
-      <title>car2go Bowling</title>
-      <link>http://www.justinmklam.com/posts/mech/car2go/</link>
-      <pubDate>Wed, 24 Sep 2014 12:37:42 -0700</pubDate>
+      <title>MECH 355 Tron Game</title>
+      <link>http://www.justinmklam.com/posts/software/mech-355-tron/</link>
+      <pubDate>Sun, 30 Mar 2014 12:36:02 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mech/car2go/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Design a roof-mounted bowling rig for a car2go marketing event.&lt;/p&gt;
+      <guid>http://www.justinmklam.com/posts/software/mech-355-tron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photo Editing Script</title>
+      <link>http://www.justinmklam.com/posts/software/photo-editing/</link>
+      <pubDate>Sun, 12 Jan 2014 12:25:44 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/posts/software/photo-editing/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop a script to find and remove any differences in a series of photos.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;: Use a non-permanent method to securely attach the apparatus to the roof.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; &lt;a href=&#34;http://toomanyadapters.com/how-to-remove-people-travel-photos-photoshop/&#34;&gt;How to Remove People From Your Travel Using Photoshop&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Venue&lt;/strong&gt;: 2014 Vancouver Fringe Festival&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; MATLAB&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;a href=/imgs/photo_editing/Image-test_all.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/photo_editing/Image-test_all.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Script takes any number of images (preferably taken on a tripod) and combines them into one cleaned-up image.&lt;/p&gt;
 
-&lt;div id=&#34;fb-root&#34;&gt;
-&lt;div&gt;&lt;/div&gt;
-&lt;script&gt;// &lt;![CDATA[
-(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = &#34;//connect.facebook.net/en_US/all.js#xfbml=1&#34;; fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));
-// ]]&gt;&lt;/script&gt;
-&lt;div class=&#34;fb-post&#34; data-href=&#34;https://www.facebook.com/video.php?v=10154557145565524&#34; data-width=&#34;466&#34;&gt;
-&lt;div class=&#34;fb-xfbml-parse-ignore&#34; style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.facebook.com/video.php?v=10154557145565524&#34;&gt;Post&lt;/a&gt; by &lt;a href=&#34;https://www.facebook.com/VancouverFringeFestival&#34;&gt;Vancouver Fringe Festival&lt;/a&gt;.&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;a href=/imgs/photo_editing/Photo-editing-script-algorithm.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/photo_editing/Photo-editing-script-algorithm.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Flowchart of the implemented algorithm.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Co-op: Age effect on Bicycle Helmets</title>
       <link>http://www.justinmklam.com/posts/mech/coop-mea/</link>
-      <pubDate>Wed, 25 Sep 2013 12:37:10 -0700</pubDate>
+      <pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate>
       
       <guid>http://www.justinmklam.com/posts/mech/coop-mea/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Determine if age has an effect on the mechanical properties of bicycle helmets.&lt;/p&gt;
@@ -516,7 +498,7 @@
     <item>
       <title>MECH 223 Hovercraft</title>
       <link>http://www.justinmklam.com/posts/mech/mech-223hovercraft/</link>
-      <pubDate>Wed, 25 Sep 2013 12:22:15 -0700</pubDate>
+      <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
       
       <guid>http://www.justinmklam.com/posts/mech/mech-223hovercraft/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective: &lt;/strong&gt;Construct a remote controlled hovercraft to compete in a class-wide battle of speed, cargo capacity, and maneuverability.&lt;/p&gt;
@@ -542,6 +524,26 @@
 
 &lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/Recommendations1-1024x544.png&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Diagram outlines our well-implemented design features and recommendations for future revisions.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LEGO Headphones</title>
+      <link>http://www.justinmklam.com/posts/mech/lego-headphones/</link>
+      <pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/posts/mech/lego-headphones/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Use LEGO to create the external assembly of a pair of headphones.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; Combining the two things I enjoyed most (at the time).&lt;/p&gt;
+
+&lt;a href=/imgs/lego_headphones/P1080061-e1424407288767.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/lego_headphones/P1080061-e1424407288767.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;The world&amp;#39;s finest LEGO headphones in all its glory.&lt;/p&gt;
+
+&lt;a href=/imgs/lego_headphones/P1080050.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/lego_headphones/P1080050.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Easily deconstructed, staying true to the LEGO roots.&lt;/p&gt;
+
+&lt;p&gt;Visit &lt;a href=&#34;http://www.instructables.com/id/LEGO-Headphones/&#34;&gt;Instructables&lt;/a&gt; to learn more about the project!&lt;/p&gt;
 </description>
     </item>
     

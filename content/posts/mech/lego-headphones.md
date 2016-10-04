@@ -1,6 +1,6 @@
 +++
 clickable = true
-date = "2010-09-25T12:37:00-07:00"
+date = "2010-07-10T12:37:00-07:00"
 hidden = false
 image = "/imgs/lego_headphones/P1080061-e1458003880523-300x300.jpg"
 summary = "Combining two favourite past-times of music and LEGO resulted in the generation of a novel, functional pair of headphones. Batteries not included. Some assembly required."
