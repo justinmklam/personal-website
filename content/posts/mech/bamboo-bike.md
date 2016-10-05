@@ -3,7 +3,7 @@ date = "2014-08-18T22:12:57-07:00"
 
 draft = false
 
-title = "Bamboo Bike"
+title = "Award Winning Bamboo Bike"
 
 tagline = "An organic, gluten-free mode of transportation."
 

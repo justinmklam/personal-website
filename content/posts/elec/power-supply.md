@@ -3,7 +3,7 @@ date = "2016-05-25T17:29:58-07:00"
 
 draft = false
 
-title = "Portable Power Supply"
+title = "Adjustable Portable Power Supply"
 
 tagline = "Providing power to the people. Or in this case, hobby projects."
 
@@ -11,7 +11,7 @@ summary = "Tired of using a spliced USB cable or combining batteries to achieve 
 
 type = "elec"
 
-image = "/imgs/power_supply/IMG_20160525_142454_300x300.jpg"
+image = "/imgs/power_supply/powersupply_300x300.jpg"
 
 clickable = true
 +++
@@ -28,8 +28,8 @@ __Limitations:__
 
 <br>
 
-{{< img src="/imgs/power_supply/IMG_20160525_142454.jpg" 
-caption="Power supply in action, providing 12V to a reel of strip LEDs." >}}
+{{< img src="/imgs/power_supply/powersupply.jpg" 
+caption="Power supply in action." >}}
 
 {{< img src="/imgs/power_supply/IMG_20160525_143029.jpg"
 caption="Internals of the power supply." >}}

@@ -15,38 +15,56 @@ clickable = true
 draft = false
 +++
 
-<p><strong>Background: </strong>Gone are the days of blindly timing and boiling eggs and being left with nothing but a bad yolk. As part of our final year mechatronics engineering project, we developed a device that measures the oscillation of an egg suspended on a spring. When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
-</p>
+__Background:__ Gone are the days of blindly timing and boiling eggs and being left with nothing but a bad yolk. As part of our final year mechatronics engineering project, we developed a device that measures the oscillation of an egg suspended on a spring. When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
 
-<p><em>"If it's worth doing, it's worth overdoing." - Jaime Hyneman</em></p>
+> "If it's worth doing, it's worth overdoing." - Jaime Hyneman
 
-<p><strong>Objective:</strong> Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.
-</p>
+__Objective:__ Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.
 	
-<p><strong>Motivation:</strong> As part of our final year engineering course, we were tasked to create a mechatronics device of our choosing. This project was heavily inspired by <a href="https://www.youtube.com/channel/UCckETVOT59aYw80B36aP9vw">Matthias Wandel</a> and his <a href="https://www.youtube.com/watch?v=Cw9w1CZkTr0">boiled egg hardness tester</a>.
-</p>
+__Motivation:__ As part of our final year engineering course, we were tasked to create a mechatronics device of our choosing. This project was heavily inspired by [Matthias Wandel](https://www.youtube.com/channel/UCckETVOT59aYw80B36aP9vw) and his [boiled egg hardness tester](https://www.youtube.com/watch?v=Cw9w1CZkTr0).
 
-<p><strong>Limitations: </strong>This prototype was developed in 3 weeks during school and has approximately 80% repeatability.</p> 
+__Functional Requirements:__
 
-<p><strong>Partner: </strong><a href="http://justin-liang.com">Justin Liang</a></p>
++ Measure egg mass from strain gauge
++ Measure oscillation from accelerometer
++ Control LCD screen
++ Mechanical design and fabrication
++ Integration and user interaction study
++ C# interface
++ MATLAB data analysis
 
-<p><iframe width=100% height=400 src="https://www.youtube.com/embed/54d9iQcqX7Q" frameborder="0" allowfullscreen></iframe></p>
-<p class="caption">Sixty second demo video of the device in action.</p>
+__Limitations:__ This prototype was developed in 3 weeks during school and has approximately 80% repeatability. 
 
-<a><img class="img-responsive img-content" src="/imgs/perfeggct/CAD_4.png" /></a>
-<p class="caption">CAD model of electronics inside the enclosure (transparency shown for clarity).</p>
+__Partner:__ [Justin Liang](http://justin-liang.com)
 
-<a><img class="img-responsive img-content" src="/imgs/perfeggct/Fritzing%20diagram.jpg" width="450"/></a>
-<p class="caption">PCB diagram.</p>
+<iframe width=100% height=400 src="https://www.youtube.com/embed/54d9iQcqX7Q" frameborder="0" allowfullscreen></iframe>
+<p class="caption">Sixty second demo video of the device in action.
 
-<a><img class="img-responsive img-content" src="/imgs/perfeggct/DSC03408.JPG" /></a>
-<p class="caption">PCB assembled.</p>
+{{< img caption="CAD model of electronics inside the enclosure (transparency shown for clarity)"
+src="/imgs/perfeggct/CAD_4.png" >}}
 
-<a><img class="img-responsive img-content" src="/imgs/perfeggct/DSC03430.JPG" /></a>
-<p class="caption">Dry fitting of components inside handle enclosure.</p>
+{{< img caption="PCB diagram."
+src="/imgs/perfeggct/Fritzing%20diagram.jpg" >}}
 
-<a><img class="img-responsive img-content" src="/imgs/perfeggct/IMG_0461_annotated.jpg" /></a>
-<p class="caption">Annotated diagram of the final device.</p>
+{{< img caption="PCB assembled."
+src="/imgs/perfeggct/DSC03408.JPG" >}}
 
-<a><img class="img-responsive img-content" src="/imgs/perfeggct/storage_1.png" /></a>
-<p class="caption">The PerfEggct stored in its natural habitat.</p>
+{{< img caption="Dry fitting of components inside handle enclosure."
+src="/imgs/perfeggct/DSC03430.JPG" >}}
+
+{{< img caption="Annotated diagram of the final device."
+src="/imgs/perfeggct/IMG_0461_annotated.jpg" >}}
+
+{{< img caption="Example data from five egg-jiggling trials."
+src="/imgs/perfeggct/Raw signals.png" >}}
+
+{{< img caption="The PerfEggct stored in its natural habitat."
+src="/imgs/perfeggct/storage_1.png" >}}
+
+{{< img caption="Kitchen gadgets aren't complete without a fancy photoshoot!"
+src="/imgs/perfeggct/IMG_0407.JPG" >}}
+
+{{< img caption="Truly perf-egg-ct."
+src="/imgs/perfeggct/IMG_0424.JPG" >}}
+
+Interested in reading more about this project? Head over to [Instructables](http://www.instructables.com/id/PerfEGGct-Engineering-the-Perfect-Soft-Boiled-Egg/) for more details! And if you're *really* interested, feel free to read our glorious 35-page final report [here](/files/MECH 423 Final Project Report.pdf).

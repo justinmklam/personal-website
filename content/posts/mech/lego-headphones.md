@@ -10,9 +10,9 @@ type = "mech"
 draft = false
 +++
 
-__Objective:__ Use LEGO to create the external assembly of a pair of headphones.
+__Background:__ I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I'm quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go. No tools necessary!
 
-__Motivation:__ Combining the two things I enjoyed most (at the time). 	
+__Objective:__ Use LEGO to create the external assembly of a pair of headphones.
 
 {{<img caption="The world's finest LEGO headphones in all its glory."
 src="/imgs/lego_headphones/P1080061-e1424407288767.jpg" >}}

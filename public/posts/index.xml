@@ -116,7 +116,7 @@
     </item>
     
     <item>
-      <title>Portable Power Supply</title>
+      <title>Adjustable Portable Power Supply</title>
       <link>http://www.justinmklam.com/posts/elec/power-supply/</link>
       <pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate>
       
@@ -135,8 +135,8 @@
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;a href=/imgs/power_supply/IMG_20160525_142454.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/power_supply/IMG_20160525_142454.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Power supply in action, providing 12V to a reel of strip LEDs.&lt;/p&gt;
+&lt;a href=/imgs/power_supply/powersupply.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/power_supply/powersupply.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Power supply in action.&lt;/p&gt;
 
 &lt;a href=/imgs/power_supply/IMG_20160525_143029.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/power_supply/IMG_20160525_143029.jpg /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Internals of the power supply.&lt;/p&gt;
@@ -149,42 +149,63 @@
       <pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate>
       
       <guid>http://www.justinmklam.com/posts/mecha/perfeggct/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background: &lt;/strong&gt;Gone are the days of blindly timing and boiling eggs and being left with nothing but a bad yolk. As part of our final year mechatronics engineering project, we developed a device that measures the oscillation of an egg suspended on a spring. When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Gone are the days of blindly timing and boiling eggs and being left with nothing but a bad yolk. As part of our final year mechatronics engineering project, we developed a device that measures the oscillation of an egg suspended on a spring. When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;&#34;If it&#39;s worth doing, it&#39;s worth overdoing.&#34; - Jaime Hyneman&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.
-&lt;/p&gt;
-    
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; As part of our final year engineering course, we were tasked to create a mechatronics device of our choosing. This project was heavily inspired by &lt;a href=&#34;https://www.youtube.com/channel/UCckETVOT59aYw80B36aP9vw&#34;&gt;Matthias Wandel&lt;/a&gt; and his &lt;a href=&#34;https://www.youtube.com/watch?v=Cw9w1CZkTr0&#34;&gt;boiled egg hardness tester&lt;/a&gt;.
-&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; As part of our final year engineering course, we were tasked to create a mechatronics device of our choosing. This project was heavily inspired by &lt;a href=&#34;https://www.youtube.com/channel/UCckETVOT59aYw80B36aP9vw&#34;&gt;Matthias Wandel&lt;/a&gt; and his &lt;a href=&#34;https://www.youtube.com/watch?v=Cw9w1CZkTr0&#34;&gt;boiled egg hardness tester&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Limitations: &lt;/strong&gt;This prototype was developed in 3 weeks during school and has approximately 80% repeatability.&lt;/p&gt; 
+&lt;p&gt;&lt;strong&gt;Functional Requirements:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Partner: &lt;/strong&gt;&lt;a href=&#34;http://justin-liang.com&#34;&gt;Justin Liang&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Measure egg mass from strain gauge&lt;/li&gt;
+&lt;li&gt;Measure oscillation from accelerometer&lt;/li&gt;
+&lt;li&gt;Control LCD screen&lt;/li&gt;
+&lt;li&gt;Mechanical design and fabrication&lt;/li&gt;
+&lt;li&gt;Integration and user interaction study&lt;/li&gt;
+&lt;li&gt;C# interface&lt;/li&gt;
+&lt;li&gt;MATLAB data analysis&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;iframe width=100% height=400 src=&#34;https://www.youtube.com/embed/54d9iQcqX7Q&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitations:&lt;/strong&gt; This prototype was developed in 3 weeks during school and has approximately 80% repeatability.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Partner:&lt;/strong&gt; &lt;a href=&#34;http://justin-liang.com&#34;&gt;Justin Liang&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=100% height=400 src=&#34;https://www.youtube.com/embed/54d9iQcqX7Q&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p class=&#34;caption&#34;&gt;Sixty second demo video of the device in action.&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/CAD_4.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;CAD model of electronics inside the enclosure (transparency shown for clarity).&lt;/p&gt;&lt;/p&gt;
+&lt;a href=/imgs/perfeggct/CAD_4.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/CAD_4.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;CAD model of electronics inside the enclosure (transparency shown for clarity)&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/Fritzing%20diagram.jpg&#34; width=&#34;450&#34;/&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;PCB diagram.&lt;/p&gt;&lt;/p&gt;
+&lt;a href=/imgs/perfeggct/Fritzing%20diagram.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/Fritzing%20diagram.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;PCB diagram.&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/DSC03408.JPG&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;PCB assembled.&lt;/p&gt;&lt;/p&gt;
+&lt;a href=/imgs/perfeggct/DSC03408.JPG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/DSC03408.JPG /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;PCB assembled.&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/DSC03430.JPG&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Dry fitting of components inside handle enclosure.&lt;/p&gt;&lt;/p&gt;
+&lt;a href=/imgs/perfeggct/DSC03430.JPG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/DSC03430.JPG /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Dry fitting of components inside handle enclosure.&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/IMG_0461_annotated.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Annotated diagram of the final device.&lt;/p&gt;&lt;/p&gt;
+&lt;a href=/imgs/perfeggct/IMG_0461_annotated.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/IMG_0461_annotated.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Annotated diagram of the final device.&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/perfeggct/storage_1.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;The PerfEggct stored in its natural habitat.&lt;/p&gt;&lt;/p&gt;
+&lt;a href=/imgs/perfeggct/Raw%20signals.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/Raw%20signals.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Example data from five egg-jiggling trials.&lt;/p&gt;
+
+&lt;a href=/imgs/perfeggct/storage_1.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/storage_1.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;The PerfEggct stored in its natural habitat.&lt;/p&gt;
+
+&lt;a href=/imgs/perfeggct/IMG_0407.JPG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/IMG_0407.JPG /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Kitchen gadgets aren&amp;#39;t complete without a fancy photoshoot!&lt;/p&gt;
+
+&lt;a href=/imgs/perfeggct/IMG_0424.JPG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/IMG_0424.JPG /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Truly perf-egg-ct.&lt;/p&gt;
+
+&lt;p&gt;Interested in reading more about this project? Head over to &lt;a href=&#34;http://www.instructables.com/id/PerfEGGct-Engineering-the-Perfect-Soft-Boiled-Egg/&#34;&gt;Instructables&lt;/a&gt; for more details! And if you&amp;rsquo;re &lt;em&gt;really&lt;/em&gt; interested, feel free to read our glorious 35-page final report &lt;a href=&#34;http://www.justinmklam.com/files/MECH 423 Final Project Report.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -332,31 +353,53 @@
       <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
       
       <guid>http://www.justinmklam.com/posts/mech/coop-drill-cover/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries.  A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.&lt;/p&gt;
+      <description>
 
-&lt;p&gt;&lt;strong&gt;Objective: &lt;/strong&gt;Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries.  A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;: &lt;a title=&#34;Surgical Device Innovation for Low-Resource Settings: An Alternative for Bone Drilling&#34; href=&#34;http://www.justinmklam.com/surgical-device-innovation-for-low-resource-settings-an-alternative-for-bone-drilling/&#34; target=&#34;_blank&#34;&gt;Surgical Device Innovation for Low-Resource Settings: An Alternative for Bone Drilling&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Company&lt;/strong&gt;: &lt;a href=&#34;http://www.drillcover.com/&#34; target=&#34;_blank&#34;&gt;Arbutus Medical&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;: &lt;a href=&#34;http://canjsurg.ca/wp-content/uploads/2015/10/58-4-S157.pdf&#34;&gt;Surgical Device Innovation for Low-Resource Settings: An Alternative for Bone Drilling&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/drill_cover/DC-Study_2.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;From left to right: commercial surgical drill, drill cover solution, manual hand-crank drill.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Company&lt;/strong&gt;: &lt;a href=&#34;http://arbutusmedical.ca&#34;&gt;Arbutus Medical&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/drill_cover/DC-Study_3.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Operation of the test apparatus.&lt;/p&gt;&lt;/p&gt;
+&lt;h3 id=&#34;the-drill-cover-solution&#34;&gt;The Drill Cover Solution&lt;/h3&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/drill_cover/DC-Study_4.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Method to easily measure the plunge depth through the surrogate bone. The platform moves down as the drill bit pushes against it. The calipers measure the resulting depth.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;From the Arbutus Medical &lt;a href=&#34;http://arbutusmedical.ca/human-health/products/drill-cover-hex&#34;&gt;product page&lt;/a&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/drill_cover/DC-Study_1.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Stamping method to consistently mark targets for the drilling tests&lt;/p&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The DrillCover Hex is a sterilizable and reusable fully-sealed barrier that transforms a hardware drill into surgical grade drill. Our kit includes a drill and cover to provide the precision, sterility, and adaptability needed in low-resource settings.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/drill_cover/Hole-quality-comparison.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Comparison of hole quality. A well drilled hole face (left) compared to two holes drilled off axis (right).&lt;/p&gt;&lt;/p&gt;
+&lt;a href=/imgs/drill_cover/DrillCoverPhotobyMasashiKarasawa.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/DrillCoverPhotobyMasashiKarasawa.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;The drill cover solution.&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/drill_cover/Bone-model-render-1024x520.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Test apparatus, modeled in SolidWorks.&lt;/p&gt;&lt;/p&gt;
+&lt;a href=/imgs/drill_cover/drillcover.PNG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/drillcover.PNG /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Detailed view of the drill cover.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-user-study&#34;&gt;The User Study&lt;/h3&gt;
+
+&lt;p&gt;Owing to limited access to surgical power drills, orthopedic surgeons in low-resource settings commonly use manual drills or nonsterile hardware drills. We propose the use of a drill cover solution: a sterilizable fabric bag plus sealed surgical chuck adaptor to permit the safe use of hardware drills for orthopedic surgery.
+The purpose of this study was to compare the drilling performance of covered hardware drills with manual drills and standard surgical power drills.
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;a href=/imgs/drill_cover/DC-Study_2.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/DC-Study_2.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;From left to right: commercial surgical drill, drill cover solution, manual hand-crank drill.&lt;/p&gt;
+
+&lt;a href=/imgs/drill_cover/DC-Study_3.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/DC-Study_3.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Operation of the test apparatus.&lt;/p&gt;
+
+&lt;a href=/imgs/drill_cover/DC-Study_4.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/DC-Study_4.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Method to easily measure the plunge depth through the surrogate bone. The platform moves down as the drill bit pushes against it. The calipers measure the resulting depth.&lt;/p&gt;
+
+&lt;a href=/imgs/drill_cover/DC-Study_1.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/DC-Study_1.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Stamping method to consistently mark targets for the drilling tests&lt;/p&gt;
+
+&lt;a href=/imgs/drill_cover/Hole-quality-comparison.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/Hole-quality-comparison.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Comparison of hole quality. A well drilled hole face (left) compared to two holes drilled off axis (right).&lt;/p&gt;
+
+&lt;a href=/imgs/drill_cover/Bone-model-render-1024x520.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/Bone-model-render-1024x520.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Test apparatus, modeled in SolidWorks.&lt;/p&gt;
 </description>
     </item>
     
@@ -391,7 +434,7 @@ fjs.parentNode.insertBefore(js, fjs);
     </item>
     
     <item>
-      <title>Bamboo Bike</title>
+      <title>Award Winning Bamboo Bike</title>
       <link>http://www.justinmklam.com/posts/mech/bamboo-bike/</link>
       <pubDate>Mon, 18 Aug 2014 22:12:57 -0700</pubDate>
       
@@ -501,10 +544,10 @@ fjs.parentNode.insertBefore(js, fjs);
     
     <item>
       <title>MECH 223 Hovercraft</title>
-      <link>http://www.justinmklam.com/posts/mech/mech-223hovercraft/</link>
+      <link>http://www.justinmklam.com/posts/mech/mech-223-hovercraft/</link>
       <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mech/mech-223hovercraft/</guid>
+      <guid>http://www.justinmklam.com/posts/mech/mech-223-hovercraft/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective: &lt;/strong&gt;Construct a remote controlled hovercraft to compete in a class-wide battle of speed, cargo capacity, and maneuverability.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;:&lt;/p&gt;
@@ -537,9 +580,9 @@ fjs.parentNode.insertBefore(js, fjs);
       <pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate>
       
       <guid>http://www.justinmklam.com/posts/mech/lego-headphones/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Use LEGO to create the external assembly of a pair of headphones.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go. No tools necessary!&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; Combining the two things I enjoyed most (at the time).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Use LEGO to create the external assembly of a pair of headphones.&lt;/p&gt;
 
 &lt;a href=/imgs/lego_headphones/P1080061-e1424407288767.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/lego_headphones/P1080061-e1424407288767.jpg /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;The world&amp;#39;s finest LEGO headphones in all its glory.&lt;/p&gt;
