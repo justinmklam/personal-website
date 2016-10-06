@@ -1,9 +1,7 @@
-/*!
- * Start Bootstrap - 1 Col Portfolio (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+/*! CSS Styling for personal project portfolio
+Last edited: Wed, 5 Oct 2016
  */
- 
+
 body
 {
     font-family: 'Lato', sans-serif;
@@ -69,7 +67,6 @@ footer {
         padding-left: 75px;
         padding-right: 75px;
     }
-    
 }
 
 @media (max-width: 768px) {

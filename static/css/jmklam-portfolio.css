@@ -1,0 +1,91 @@
+/*! CSS Styling for personal project portfolio
+Last edited: Wed, 5 Oct 2016
+ */
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    margin: 35px 0;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+.link-disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+.img-content {
+    margin: 0 auto;
+    max-height: 500px;
+}
+
+.media-center {
+	margin: 0 auto;
+}
+
+.iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+.datestamp {
+	text-align: right;
+	font-size: 90%;
+	color: #777;
+}
+
+@media (min-width: 992px) {
+    .img-content {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-content {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .img-rounded {
+        max-width: 400px;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-rounded {
+        max-width: 200px;
+        margin: 15px auto;
+    }
+}
