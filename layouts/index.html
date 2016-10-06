@@ -5,15 +5,14 @@
     <title>Justin MK Lam - Welcome</title>
     {{ partial "header.html" . }}
 </head>
-    
-{{ partial "navbar-index.html" . }}
 
 <style>
 /*! CSS Styling for homepage (from homepage.css)
 Last edited: Wed, 5 Oct 2016
 */.home-header{padding-right:20px;padding-left:20px}
-@media(min-height:700px){.home-header{margin:210px auto}
-}@media(max-width:768px){.home-header{margin:150px auto}
+@media(min-width: 992px){.home-header{margin:210px auto}
+}@media(min-width:768px){.home-header{margin:150px auto}
+}@media(max-width:767px){.home-header{margin:150px auto}
 }@media(max-width:480px){.home-header{margin:75px auto}
 }.home-body{text-align:center;vertical-align:middle}
 .home-body h1{font-size:3.8em;font-weight:800;letter-spacing:8px}
@@ -25,6 +24,9 @@ Last edited: Wed, 5 Oct 2016
 </style>
 
 <body class="home-header">
+
+	{{ partial "navbar-index.html" . }}
+
     <div class="home-body">
         <h1>JUSTIN LAM</h1>
         <h2><small><em>A showcase of design, development, experiments, and more.</em></small></h2>

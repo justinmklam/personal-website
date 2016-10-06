@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Justin MK Lam</title>
-    <link>http://www.justinmklam.com/posts/</link>
+    <link>http://justinmklam.com/posts/</link>
     <description>Recent content in Posts on Justin MK Lam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Oct 2016 12:39:52 -0700</lastBuildDate>
-    <atom:link href="http://www.justinmklam.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://justinmklam.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Engineer&#39;s Diary</title>
-      <link>http://www.justinmklam.com/posts/software/engineers-diary/</link>
+      <link>http://justinmklam.com/posts/software/engineers-diary/</link>
       <pubDate>Sat, 01 Oct 2016 12:39:52 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/software/engineers-diary/</guid>
+      <guid>http://justinmklam.com/posts/software/engineers-diary/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Between paper notebooks, post-it notes, OneNote, Evernote, and so many more, there is no shortage of ways to write things down. Each has its strengths and weaknesses, but none satisfied my requirements to act as a daily work log to record key events, thoughts, and milestones during my work day.&lt;/p&gt;
 
 &lt;p&gt;My paper notebook is excellent for free-form thoughts, sketches, and calculations, but I would want to keep a separate notebook to keep track of these sequential events. We use OneNote at work, but where the infinite blank canvas is a strength in applications such as for research or brainstorming, I found it to be a weakness in record keeping since the document is too easy to edit and &amp;ldquo;fragile&amp;rdquo;.&lt;/p&gt;
@@ -46,10 +46,10 @@
     
     <item>
       <title>Capstone 3D Optical Well Imager</title>
-      <link>http://www.justinmklam.com/posts/mech/mech-458-capstone/</link>
+      <link>http://justinmklam.com/posts/mech/mech-458-capstone/</link>
       <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mech/mech-458-capstone/</guid>
+      <guid>http://justinmklam.com/posts/mech/mech-458-capstone/</guid>
       <description>&lt;p style=&#34;text-align: justify;&#34;&gt;&lt;strong&gt;Background&lt;/strong&gt;: The cost for high resolution pipeline inspection can range from roughly $2000 to $6000 per mile. Pipeline repairs are costly and dangerous, and preventative measures are frequently taken by companies to minimize risk and the advent of future problems. Our final year capstone project involved developing an imaging system to automate the inspection process for oil and gas wells .&lt;/p&gt;
 &lt;p style=&#34;text-align: justify;&#34;&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.&lt;/p&gt;
 &lt;p style=&#34;text-align: justify;&#34;&gt;&lt;strong style=&#34;line-height: 27px;&#34;&gt;How&lt;/strong&gt;&lt;span style=&#34;line-height: 27px;&#34;&gt;: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.&lt;/span&gt;&lt;/p&gt;
@@ -117,10 +117,10 @@
     
     <item>
       <title>Adjustable Portable Power Supply</title>
-      <link>http://www.justinmklam.com/posts/elec/power-supply/</link>
+      <link>http://justinmklam.com/posts/elec/power-supply/</link>
       <pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/elec/power-supply/</guid>
+      <guid>http://justinmklam.com/posts/elec/power-supply/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Build a cheap, portable, variable DC power supply.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.&lt;/p&gt;
@@ -145,10 +145,10 @@
     
     <item>
       <title>PerfEggct: Engineering the Perfect Soft-Boiled Egg</title>
-      <link>http://www.justinmklam.com/posts/mecha/perfeggct/</link>
+      <link>http://justinmklam.com/posts/mecha/perfeggct/</link>
       <pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mecha/perfeggct/</guid>
+      <guid>http://justinmklam.com/posts/mecha/perfeggct/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Gone are the days of blindly timing and boiling eggs and being left with nothing but a bad yolk. As part of our final year mechatronics engineering project, we developed a device that measures the oscillation of an egg suspended on a spring. When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -205,16 +205,16 @@
 &lt;a href=/imgs/perfeggct/IMG_0424.JPG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/IMG_0424.JPG /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Truly perf-egg-ct.&lt;/p&gt;
 
-&lt;p&gt;Interested in reading more about this project? Head over to &lt;a href=&#34;http://www.instructables.com/id/PerfEGGct-Engineering-the-Perfect-Soft-Boiled-Egg/&#34;&gt;Instructables&lt;/a&gt; for more details! And if you&amp;rsquo;re &lt;em&gt;really&lt;/em&gt; interested, feel free to read our glorious 35-page final report &lt;a href=&#34;http://www.justinmklam.com/files/MECH 423 Final Project Report.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Interested in reading more about this project? Head over to &lt;a href=&#34;http://www.instructables.com/id/PerfEGGct-Engineering-the-Perfect-Soft-Boiled-Egg/&#34;&gt;Instructables&lt;/a&gt; for more details! And if you&amp;rsquo;re &lt;em&gt;really&lt;/em&gt; interested, feel free to read our glorious 35-page final report &lt;a href=&#34;http://justinmklam.com/files/MECH 423 Final Project Report.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Project Haikuza</title>
-      <link>http://www.justinmklam.com/posts/software/haikuza/</link>
+      <link>http://justinmklam.com/posts/software/haikuza/</link>
       <pubDate>Sun, 19 Jul 2015 12:36:28 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/software/haikuza/</guid>
+      <guid>http://justinmklam.com/posts/software/haikuza/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop an algorithm to generate haikus using song lyrics.&lt;/p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; Because computational linguistics are cool.&lt;/p&gt;&lt;/p&gt;
@@ -254,10 +254,10 @@
     
     <item>
       <title>External Ballistics Simulation</title>
-      <link>http://www.justinmklam.com/posts/software/external-ballistics/</link>
+      <link>http://justinmklam.com/posts/software/external-ballistics/</link>
       <pubDate>Thu, 19 Feb 2015 12:36:19 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/software/external-ballistics/</guid>
+      <guid>http://justinmklam.com/posts/software/external-ballistics/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth.&lt;/p&gt;
 
 &lt;p&gt;One solution is to connect a computer to a manual targeting system (ie. a scope) and estimate the corrected target location by accounting for these external factors.  The user may then line the manual targeting system up with the corrected target location, hoping to the high heavens that the target will be hit upon releasing the projectile.&lt;/p&gt;&lt;/p&gt;
@@ -296,10 +296,10 @@
     
     <item>
       <title>MECH 328 TrailRider</title>
-      <link>http://www.justinmklam.com/posts/mech/mech-328-trailrider/</link>
+      <link>http://justinmklam.com/posts/mech/mech-328-trailrider/</link>
       <pubDate>Mon, 24 Nov 2014 12:37:55 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mech/mech-328-trailrider/</guid>
+      <guid>http://justinmklam.com/posts/mech/mech-328-trailrider/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility.  It is intended for a seated rider propelled and balanced by assistants.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Expand the range of both riders and assistants who can ride safely use the Black Diamond TrailRider™.&lt;/p&gt;
@@ -349,10 +349,10 @@
     
     <item>
       <title>Co-op Drill Cover User Study</title>
-      <link>http://www.justinmklam.com/posts/mech/coop-drill-cover/</link>
+      <link>http://justinmklam.com/posts/mech/coop-drill-cover/</link>
       <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mech/coop-drill-cover/</guid>
+      <guid>http://justinmklam.com/posts/mech/coop-drill-cover/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries.  A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.&lt;/p&gt;
@@ -405,10 +405,10 @@ The purpose of this study was to compare the drilling performance of covered har
     
     <item>
       <title>car2go Bowling</title>
-      <link>http://www.justinmklam.com/posts/mech/car2go/</link>
+      <link>http://justinmklam.com/posts/mech/car2go/</link>
       <pubDate>Fri, 29 Aug 2014 12:37:42 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mech/car2go/</guid>
+      <guid>http://justinmklam.com/posts/mech/car2go/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Design a roof-mounted bowling rig for a car2go marketing event.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;: Use a non-permanent method to securely attach the apparatus to the roof.&lt;/p&gt;
@@ -435,10 +435,10 @@ fjs.parentNode.insertBefore(js, fjs);
     
     <item>
       <title>Award Winning Bamboo Bike</title>
-      <link>http://www.justinmklam.com/posts/mech/bamboo-bike/</link>
+      <link>http://justinmklam.com/posts/mech/bamboo-bike/</link>
       <pubDate>Mon, 18 Aug 2014 22:12:57 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mech/bamboo-bike/</guid>
+      <guid>http://justinmklam.com/posts/mech/bamboo-bike/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.&lt;/p&gt;
             
 
@@ -456,34 +456,34 @@ fjs.parentNode.insertBefore(js, fjs);
     &lt;li&gt;First Prize - &lt;a href=&#34;http://www.instructables.com/contest/teachit/&#34; target=&#34;_blank&#34;&gt;Teach It! Instructables Contest, Sponsored by Dremel&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/Bike-frame-geometry-1024x567.png&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/Bike-frame-geometry-1024x567.png&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Track bicycle custom geometry.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/Drawing-Bike-frame-dimensions-1024x680.png&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/Drawing-Bike-frame-dimensions-1024x680.png&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Frame dimensions with tubes shown to determine the required cut lengths of bamboo.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/Bamboo-bike-in-jig-1-1024x572.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/Bamboo-bike-in-jig-1-1024x572.jpg&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Frame jig modeled in SolidWorks.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/2013-09-15-14.21.10-1024x768.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/2013-09-15-14.21.10-1024x768.jpg&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Bamboo poles after heat treatment in the oven, preparing for the next heat treatment.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/05-IMG_3962.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/05-IMG_3962.jpg&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Dry fitting of bamboo poles after mitering.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/07-IMG_3968.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/07-IMG_3968.jpg&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Bottom bracket junction with mitered bamboo.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/11-IMG_3985-1024x768.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/11-IMG_3985-1024x768.jpg&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Slotted bamboo to fit the dropouts.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/IMG_20140817_143412-1024x768.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/IMG_20140817_143412-1024x768.jpg&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Frame wrapped, sanded, and ready for finishing details.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/IMG_20140817_153701-768x1024.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/IMG_20140817_153701-768x1024.jpg&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Applying the final touches to the bottom bracket.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/IMG_5359-e1424407598804.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/IMG_5359-e1424407598804.jpg&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Build complete and ready to roll.&lt;/p&gt;&lt;/p&gt;
 
 &lt;p&gt;For a detailed step-by-step guide, head over to my &lt;a href=&#34;http://www.instructables.com/id/Building-a-Carbon-Fibre-Bamboo-Bicycle-From-Scratc/&#34; target=&#34;_blank&#34;&gt;Instructable&lt;/a&gt;.&lt;/p&gt;
@@ -492,19 +492,19 @@ fjs.parentNode.insertBefore(js, fjs);
     
     <item>
       <title>MECH 355 Tron Game</title>
-      <link>http://www.justinmklam.com/posts/software/mech-355-tron/</link>
+      <link>http://justinmklam.com/posts/software/mech-355-tron/</link>
       <pubDate>Sun, 30 Mar 2014 12:36:02 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/software/mech-355-tron/</guid>
+      <guid>http://justinmklam.com/posts/software/mech-355-tron/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Photo Editing Script</title>
-      <link>http://www.justinmklam.com/posts/software/photo-editing/</link>
+      <link>http://justinmklam.com/posts/software/photo-editing/</link>
       <pubDate>Sun, 12 Jan 2014 12:25:44 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/software/photo-editing/</guid>
+      <guid>http://justinmklam.com/posts/software/photo-editing/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop a script to find and remove any differences in a series of photos.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; &lt;a href=&#34;http://toomanyadapters.com/how-to-remove-people-travel-photos-photoshop/&#34;&gt;How to Remove People From Your Travel Using Photoshop&lt;/a&gt;&lt;/p&gt;
@@ -521,10 +521,10 @@ fjs.parentNode.insertBefore(js, fjs);
     
     <item>
       <title>Co-op: Age effect on Bicycle Helmets</title>
-      <link>http://www.justinmklam.com/posts/mech/coop-mea/</link>
+      <link>http://justinmklam.com/posts/mech/coop-mea/</link>
       <pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mech/coop-mea/</guid>
+      <guid>http://justinmklam.com/posts/mech/coop-mea/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Determine if age has an effect on the mechanical properties of bicycle helmets.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt;&lt;/p&gt;
@@ -544,10 +544,10 @@ fjs.parentNode.insertBefore(js, fjs);
     
     <item>
       <title>MECH 223 Hovercraft</title>
-      <link>http://www.justinmklam.com/posts/mech/mech-223-hovercraft/</link>
+      <link>http://justinmklam.com/posts/mech/mech-223-hovercraft/</link>
       <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mech/mech-223-hovercraft/</guid>
+      <guid>http://justinmklam.com/posts/mech/mech-223-hovercraft/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective: &lt;/strong&gt;Construct a remote controlled hovercraft to compete in a class-wide battle of speed, cargo capacity, and maneuverability.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;:&lt;/p&gt;
@@ -557,29 +557,29 @@ fjs.parentNode.insertBefore(js, fjs);
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;: 5th place out of 30 teams&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/Lift-tests.png&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/hovercraft/Lift-tests.png&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Various fan and chassis designs to provide lift.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/Prototypes.png&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/hovercraft/Prototypes.png&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Intermediate prototypes prior to our final design.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/Final-Picture1.png&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/hovercraft/Final-Picture1.png&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Close up of our rooster-themed hovercraft.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/902707_10200373195283748_1412416824_o-1024x683.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/hovercraft/902707_10200373195283748_1412416824_o-1024x683.jpg&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Mech2 Hovercraft competition showcase at the Robson Skating Rink in Vancouver, BC.&lt;/p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/Recommendations1-1024x544.png&#34; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/hovercraft/Recommendations1-1024x544.png&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Diagram outlines our well-implemented design features and recommendations for future revisions.&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>LEGO Headphones</title>
-      <link>http://www.justinmklam.com/posts/mech/lego-headphones/</link>
+      <link>http://justinmklam.com/posts/mech/lego-headphones/</link>
       <pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/posts/mech/lego-headphones/</guid>
+      <guid>http://justinmklam.com/posts/mech/lego-headphones/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go. No tools necessary!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Use LEGO to create the external assembly of a pair of headphones.&lt;/p&gt;

@@ -6,13 +6,19 @@ Last edited: Wed, 5 Oct 2016
 	padding-left: 20px;
 }
 
-@media (min-height: 700px) {
+@media (min-width: 992px) {
     .home-header {
 		margin: 210px auto;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+    .home-header {
+		margin: 150px auto;
+    }
+}
+
+@media (max-width: 767px) {
     .home-header {
 		margin: 150px auto;
     }

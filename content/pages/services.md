@@ -12,7 +12,7 @@ hidedate = true
 
 ### Consulting
 
-Need a hand with something you're working on?  I have gained a wide range of skills through my technical projects that will help me help you.  Please take a gander through my [projects]({{ .Site.BaseURL }}) and [LinkedIn profile](http://ca.linkedin.com/in/justinmklam) for more details regarding my capabilities, including:
+Need a hand with something you're working on?  I have gained a wide range of skills through my technical projects that will help me help you.  Please take a gander through my [projects](/view-all/) and [LinkedIn profile](http://ca.linkedin.com/in/justinmklam) for more details regarding my capabilities, including:
 
 + Mechanical Design
 + Mechanical Testing
