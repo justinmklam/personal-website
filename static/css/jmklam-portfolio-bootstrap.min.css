@@ -1446,11 +1446,8 @@ th.visible-print,td.visible-print{display:table-cell!important}
 }.visible-print-inline-block{display:none!important}
 @media print{.visible-print-inline-block{display:inline-block!important}
 }@media print{.hidden-print{display:none!important}
-}
-/*!
- * Start Bootstrap - 1 Col Portfolio (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+}/*! CSS Styling for personal project portfolio
+Last edited: Wed, 5 Oct 2016
  */body{font-family:'Lato',sans-serif;padding-top:70px}
 p{text-align:justify}
 footer{margin:35px 0}
