@@ -8,13 +8,13 @@ Last edited: Wed, 5 Oct 2016
 
 @media (min-width: 992px) {
     .home-header {
-		margin: 210px auto;
+		margin: 250px auto;
     }
 }
 
 @media (min-width: 768px) {
     .home-header {
-		margin: 150px auto;
+		margin: 210px auto;
     }
 }
 

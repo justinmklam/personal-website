@@ -12,6 +12,6 @@ hidedate = true
 Located in the heart of Vancouver, British Columbia, Canada.  Drop me a line and I'll get back to you within the day.
 
 ### Information
-__Email__: justin@justinmklam.com
+__Email__: [justinmklam@gmail.com](mailto:justinmklam@gmail.com)
 
 __Phone__: 604-219-1148
