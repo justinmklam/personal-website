@@ -7,3 +7,10 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 canonifyurls = true
+
+[params]
+	footer = "2016 Justin MK Lam"
+	github = "https://github.com/justinmklam"
+	facebook = "https://www.facebook.com/jmklam"
+	linkedin = "https://ca.linkedin.com/in/justinmklam"
+	instagram = "https://www.instagram.com/justinmklam"

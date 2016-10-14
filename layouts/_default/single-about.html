@@ -13,18 +13,32 @@
 	<br><br>
 	<div class="col-lg-12 text-center">
 		<img src={{ .Params.headshot }} width=300> 
+		<br><br>
 	</div>
-	<br>
 
     <!-- Page Content -->
     <div class="container">
-        
         <div class="col-sm-8 col-centered">
             <h1 class="page-header">{{ .Title }}
             </h1>
             
             {{ .Content }}
             
+			<div class="text-center">
+				<a style="color:inherit;" href={{ .Site.Params.facebook }} >
+					<i class="fa fa-facebook fa-lg"></i>
+				</a> &emsp;&emsp;
+				<a style="color:inherit;" href={{ .Site.Params.linkedin }}>
+					<i class="fa fa-linkedin fa-lg"></i>
+				</a> &emsp;&emsp;
+				<a style="color:inherit;" href={{ .Site.Params.github }}>
+					<i class="fa fa-github fa-lg"></i>
+				</a> &emsp;&emsp;
+				<a style="color:inherit;" href={{ .Site.Params.instagram }}>
+					<i class="fa fa-instagram fa-lg"></i>
+				</a>
+			</div>			
+			
         </div>
 
     </div>

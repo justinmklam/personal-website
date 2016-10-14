@@ -2,7 +2,7 @@
 date = "2016-09-24T12:58:43-07:00"
 draft = false
 title = "About"
-headshot = "/imgs/headshot.jpg"
+headshot = "/imgs/sketch headshot.png"
 layout = "single-about"
 hidedate = true
 
@@ -15,8 +15,15 @@ hidedate = true
 
 I grew up watching Star Wars, and like any other eight-year old boy, I wanted to become a Jedi Knight. Maneuvering starfighters through the Hoth asteroid field whilst in aerial combat, jousting battle droids wielding nothing but a lightsaber, and having my hand sliced off to make space for my own mechno-arm were the epitomes of my childhood fantasy.
 
-Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of developing a steering system for a model hovercraft providing optimized maneuverability, attacking design challenges with a pen and paper, and studying the possibilities of bionic technology.My passion is taking part in the vanguard of mechanical and electrical design. As a young engineer, I am constantly looking for opportunities to expand and develop my skill set.
+Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of developing a steering system for a model hovercraft providing optimized maneuverability, attacking design challenges with a pen and paper, and studying the possibilities of bionic technology. My passion is taking part in the vanguard of mechanical and electrical design. As a young engineer, I am constantly looking for opportunities to expand and develop my skill set.
 
-<p class="text-right">
-	Justin M.K. Lam <br> Mechatronics Engineer
+<div class="text-right">
+<br>
+![img](/imgs/signature.png)
+</div>
+<p class="text-right">	
+Justin M.K. Lam 
+<br>
+Mechatronics Engineer
+<br>
 </p>

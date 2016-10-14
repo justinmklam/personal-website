@@ -37,8 +37,7 @@ __Limitations:__ This prototype was developed in 3 weeks during school and has a
 
 __Partner:__ [Justin Liang](http://justin-liang.com)
 
-<iframe width=100% height=400 src="https://www.youtube.com/embed/54d9iQcqX7Q" frameborder="0" allowfullscreen></iframe>
-<p class="caption">Sixty second demo video of the device in action.
+{{< vid caption="Sixty second demo video of the device in action." src="https://www.youtube.com/embed/54d9iQcqX7Q" >}}
 
 {{< img caption="CAD model of electronics inside the enclosure (transparency shown for clarity)"
 src="/imgs/perfeggct/CAD_4.png" >}}

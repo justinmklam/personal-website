@@ -175,7 +175,10 @@
 
 &lt;p&gt;&lt;strong&gt;Partner:&lt;/strong&gt; &lt;a href=&#34;http://justin-liang.com&#34;&gt;Justin Liang&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;iframe width=100% height=400 src=&#34;https://www.youtube.com/embed/54d9iQcqX7Q&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
+  &lt;iframe class=&#34;embed-responsive-item&#34; src=https://www.youtube.com/embed/54d9iQcqX7Q&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p class=&#34;caption&#34;&gt;Sixty second demo video of the device in action.&lt;/p&gt;
 
 &lt;a href=/imgs/perfeggct/CAD_4.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/CAD_4.png /&gt;&lt;/a&gt;
