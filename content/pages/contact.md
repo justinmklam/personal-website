@@ -10,5 +10,5 @@ layout = "single-contact"
 	weight = 3
 +++
 
-Located in the heart of Vancouver, British Columbia, Canada.  Drop me a line and I'll get back to you within the day.
+Located in Vancouver, British Columbia.  Drop me a line and I'll get back to you within the day.
 
