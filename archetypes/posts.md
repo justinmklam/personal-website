@@ -1,7 +1,7 @@
 +++
 hidden = false
 clickable = true
-image = "/imgs/SOURCE"
+image = "http://placehold.it/300x300"
 type = ""
 summary = ""
 tagline = ""
@@ -17,6 +17,10 @@ __Features:__
 
 + Foo 1
 + Foo 2
+
+1. Don't worry, the
+3. numbers don't 
+4. really matter
 
 [TEXT](HYPERLINK)
 

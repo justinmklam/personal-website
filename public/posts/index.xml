@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Justin MK Lam</title>
+    <title>Posts on Justin MK Lam | Portfolio</title>
     <link>http://www.justinmklam.com/posts/</link>
-    <description>Recent content in Posts on Justin MK Lam</description>
+    <description>Recent content in Posts on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Oct 2016 12:39:52 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 22 Oct 2016 20:58:10 -0700</lastBuildDate>
     <atom:link href="http://www.justinmklam.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bargain Bandsaw Project</title>
+      <link>http://www.justinmklam.com/posts/mech/bandsaw/</link>
+      <pubDate>Sat, 22 Oct 2016 20:58:10 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/posts/mech/bandsaw/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; High school woodworking was awesome. Making things is awesome. Making things that make other things is even more awesome. Making things that make other things at home by fixing used tools is the awesome-est.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Make a table for a bandsaw with a missing table. No fuss, no muss (just lots of sawdust).&lt;/p&gt;
+
+&lt;a href=/imgs/bandsaw/original_1.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/original_1.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Fresh off Craigslist in its table-naked glory.&lt;/p&gt;
+
+&lt;a href=/imgs/bandsaw/IMG_20161016_091555.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161016_091555.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;I needed something to cut parts for the table support. Thus, the inverted jigsaw was birthed.&lt;/p&gt;
+
+&lt;a href=/imgs/bandsaw/IMG_20161022_170440.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161022_170440.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Cutting the table center out on the bandsaw stand-in.&lt;/p&gt;
+
+&lt;a href=/imgs/bandsaw/IMG_20161022_221837.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161022_221837.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Blade insert seated nice and snug.&lt;/p&gt;
+
+&lt;a href=/imgs/bandsaw/IMG_20161016_091647.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161016_091647.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Attempt #1: First version of the table supports. It wasn&amp;#39;t extremely stable, but it was good enough to cut sturdier parts as replacements.&lt;/p&gt;
+
+&lt;a href=/imgs/bandsaw/IMG_20161023_174353.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161023_174353.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Attempt #2: Completed table support with angle adjustment from the slotted hole. Also note the modified  knob handle above to provide easier adjustment.&lt;/p&gt;
+
+&lt;a href=/imgs/bandsaw/IMG_20161023_174235.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161023_174235.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Bandsaw fully functional and ready to rip.&lt;/p&gt;
+
+&lt;a href=/imgs/bandsaw/IMG_20161017_204329.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161017_204329.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;First bandsaw project was making a keyholder and to increase stoke for the winter ski season.&lt;/p&gt;
+
+&lt;a href=/imgs/bandsaw/IMG_20161021_222031.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161021_222031.jpg /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Also made a butcher&amp;#39;s block out of an old fireplace mantle.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Engineer&#39;s Diary</title>
@@ -45,7 +84,7 @@
     </item>
     
     <item>
-      <title>Capstone 3D Optical Well Imager</title>
+      <title>MECH 458: Capstone 3D Optical Well Imager</title>
       <link>http://www.justinmklam.com/posts/mech/mech-458-capstone/</link>
       <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
@@ -144,12 +183,12 @@
     </item>
     
     <item>
-      <title>PerfEggct: Engineering the Perfect Soft-Boiled Egg</title>
+      <title>MECH 423: Mechatronics Product Design</title>
       <link>http://www.justinmklam.com/posts/mecha/perfeggct/</link>
       <pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate>
       
       <guid>http://www.justinmklam.com/posts/mecha/perfeggct/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Gone are the days of blindly timing and boiling eggs and being left with nothing but a bad yolk. As part of our final year mechatronics engineering project, we developed a device that measures the oscillation of an egg suspended on a spring. When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman&lt;/p&gt;
@@ -298,7 +337,7 @@
     </item>
     
     <item>
-      <title>MECH 328 TrailRider</title>
+      <title>MECH 328: TrailRider Design Project</title>
       <link>http://www.justinmklam.com/posts/mech/mech-328-trailrider/</link>
       <pubDate>Mon, 24 Nov 2014 12:37:55 -0700</pubDate>
       
@@ -351,7 +390,7 @@
     </item>
     
     <item>
-      <title>Co-op Drill Cover User Study</title>
+      <title>Co-op: Drill Cover User Study</title>
       <link>http://www.justinmklam.com/posts/mech/coop-drill-cover/</link>
       <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
       
@@ -494,7 +533,7 @@ fjs.parentNode.insertBefore(js, fjs);
     </item>
     
     <item>
-      <title>MECH 355 Tron Game</title>
+      <title>MECH 355: Tron Game</title>
       <link>http://www.justinmklam.com/posts/software/mech-355-tron/</link>
       <pubDate>Sun, 30 Mar 2014 12:36:02 -0700</pubDate>
       
@@ -523,7 +562,7 @@ fjs.parentNode.insertBefore(js, fjs);
     </item>
     
     <item>
-      <title>Co-op: Age effect on Bicycle Helmets</title>
+      <title>Co-op: The Age Effect on Bicycle Helmets</title>
       <link>http://www.justinmklam.com/posts/mech/coop-mea/</link>
       <pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate>
       
@@ -546,7 +585,7 @@ fjs.parentNode.insertBefore(js, fjs);
     </item>
     
     <item>
-      <title>MECH 223 Hovercraft</title>
+      <title>MECH 223: Hovercraft Competition</title>
       <link>http://www.justinmklam.com/posts/mech/mech-223-hovercraft/</link>
       <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
       
@@ -574,26 +613,6 @@ fjs.parentNode.insertBefore(js, fjs);
 
 &lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/Recommendations1-1024x544.png&#34; /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Diagram outlines our well-implemented design features and recommendations for future revisions.&lt;/p&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>LEGO Headphones</title>
-      <link>http://www.justinmklam.com/posts/mech/lego-headphones/</link>
-      <pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/posts/mech/lego-headphones/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go. No tools necessary!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Use LEGO to create the external assembly of a pair of headphones.&lt;/p&gt;
-
-&lt;a href=/imgs/lego_headphones/P1080061-e1424407288767.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/lego_headphones/P1080061-e1424407288767.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;The world&amp;#39;s finest LEGO headphones in all its glory.&lt;/p&gt;
-
-&lt;a href=/imgs/lego_headphones/P1080050.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/lego_headphones/P1080050.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Easily deconstructed, staying true to the LEGO roots.&lt;/p&gt;
-
-&lt;p&gt;Visit &lt;a href=&#34;http://www.instructables.com/id/LEGO-Headphones/&#34;&gt;Instructables&lt;/a&gt; to learn more about the project!&lt;/p&gt;
 </description>
     </item>
     

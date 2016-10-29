@@ -5,7 +5,7 @@ hidden = false
 image = "/imgs/trailrider/TrailRider-Overview-1-e1458002590550-300x300.png"
 summary = "The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility. As a team of mechanical engineering undergrads, we explored areas of improvement and developed a new design to incorporate these features."
 tagline = "Designing a next-generation, offroad wheelchair."
-title = "MECH 328 TrailRider"
+title = "MECH 328: TrailRider Design Project"
 type = "mech"
 draft = false
 +++
