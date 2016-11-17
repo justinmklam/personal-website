@@ -1,7 +1,7 @@
 +++
 clickable = false
 date = "2016-11-11T09:26:50-08:00"
-hidden = true
+hidden = false
 image = "/imgs/vr-gantry/vr-gantry-300x300.gif"
 summary = "Current high-performance virtual reality headsets require cable connections to a host computer. For room-scale VR, users must always be mindful of this cable since it poses not only as a tripping hazard, but also a detraction from the otherwise immersive VR experience. This autonomous cable management system is one solution to sucky cables."
 tagline = "Tired of cables breaking presence in virtual reality? We are too."

@@ -6,8 +6,40 @@
     <description>Recent content in Posts on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Oct 2016 20:58:10 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 11 Nov 2016 09:26:50 -0800</lastBuildDate>
     <atom:link href="http://www.justinmklam.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Overhead Robotic Gantry for Tethered VR Headsets</title>
+      <link>http://www.justinmklam.com/posts/mecha/vr-gantry/</link>
+      <pubDate>Fri, 11 Nov 2016 09:26:50 -0800</pubDate>
+      
+      <guid>http://www.justinmklam.com/posts/mecha/vr-gantry/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Foo 1&lt;/li&gt;
+&lt;li&gt;Foo 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Don&amp;rsquo;t worry, the&lt;/li&gt;
+&lt;li&gt;numbers don&amp;rsquo;t&lt;/li&gt;
+&lt;li&gt;really matter&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;HYPERLINK&#34;&gt;TEXT&lt;/a&gt;&lt;/p&gt;
+
+&lt;a href=/imgs/SOURCE&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/SOURCE /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;TEXT&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Bargain Bandsaw Project</title>
@@ -581,38 +613,6 @@ fjs.parentNode.insertBefore(js, fjs);
 
 &lt;a href=/imgs/mea_helmet/Drop-Tower-annotated-685x1024.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/mea_helmet/Drop-Tower-annotated-685x1024.jpg /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Annotated diagram of the helmet drop tower.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>MECH 223: Hovercraft Competition</title>
-      <link>http://www.justinmklam.com/posts/mech/mech-223-hovercraft/</link>
-      <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/posts/mech/mech-223-hovercraft/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective: &lt;/strong&gt;Construct a remote controlled hovercraft to compete in a class-wide battle of speed, cargo capacity, and maneuverability.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Teams were given 3 weeks to research, conceptualize, test, and build their hovercrafts.&lt;/li&gt;
-    &lt;li&gt;Budget was extremely limited as costs came out of our own pockets.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;: 5th place out of 30 teams&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/Lift-tests.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Various fan and chassis designs to provide lift.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/Prototypes.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Intermediate prototypes prior to our final design.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/Final-Picture1.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Close up of our rooster-themed hovercraft.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/902707_10200373195283748_1412416824_o-1024x683.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Mech2 Hovercraft competition showcase at the Robson Skating Rink in Vancouver, BC.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/hovercraft/Recommendations1-1024x544.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Diagram outlines our well-implemented design features and recommendations for future revisions.&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
