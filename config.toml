@@ -9,7 +9,7 @@ publishdir = "public"
 canonifyurls = true
 
 [params]
-	footer = "2016 Justin MK Lam"
+	footer = "2017 Justin MK Lam"
 	email = "justinmklam@gmail.com"
 	phone = "604-219-1148"
 	github = "github.com/justinmklam"

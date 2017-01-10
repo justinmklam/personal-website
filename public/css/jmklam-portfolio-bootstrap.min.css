@@ -1450,7 +1450,7 @@ th.visible-print,td.visible-print{display:table-cell!important}
 Last edited: Wed, 5 Oct 2016
 */body{font-family:'Lato',sans-serif;padding-top:70px}
 /*a.h3{font-family: 'Roboto Slab', serif;}*/
-.row h4{line-height: 1.4;}
+.row h4{line-height: 1.4;font-style:italic;}
 p{text-align:justify}
 footer{margin:35px 0}
 .col-centered{float:none;margin:0 auto}

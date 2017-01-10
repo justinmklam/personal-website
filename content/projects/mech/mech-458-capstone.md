@@ -1,19 +1,20 @@
 +++
 date = "2016-06-02T12:57:32-07:00"
 image = "/imgs/capstone/System%20evaluation_4%20350x350.jpg"
-summary = "Pipeline repairs are costly and dangerous, and preventative measures are frequently taken by companies to minimize risk and future problems. The objective of this project was to develop an optical scanning system to be used for generating 3D models and images of liners, casings, and other types of pipe through fluids."
+summary = "Well liner repairs are costly and dangerous, and preventative measures are frequently taken by companies to minimize risk and future problems. The objective of this project was to develop an optical scanning system to be used for generating 3D models and images of liners, casings, and other types of pipe through fluids."
 tagline = "Integrating computer vision with automated pipeline inspection."
 title = "MECH 458: Capstone 3D Optical Well Imager"
 type = "mech"
-clickable = false
+clickable = true
 hidden = false
 draft = false
 +++
+### __Introduction__
 
-<p style="text-align: justify;"><strong>Background</strong>: The cost for high resolution pipeline inspection can range from roughly $2000 to $6000 per mile. Pipeline repairs are costly and dangerous, and preventative measures are frequently taken by companies to minimize risk and the advent of future problems. Our final year capstone project involved developing an imaging system to automate the inspection process for oil and gas wells .</p>
-<p style="text-align: justify;"><strong>Objective</strong>: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.</p>
-<p style="text-align: justify;"><strong style="line-height: 27px;">How</strong><span style="line-height: 27px;">: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.</span></p>
-<strong>Client</strong>: DarkVision Technologies
+__Objective__: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.</p>
+
+__How__: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.</span></p>
+
 <h3><strong>Requirements and Specifications</strong></h3>
 <p style="display: inline !important;"><strong>Optical</strong></p>
 

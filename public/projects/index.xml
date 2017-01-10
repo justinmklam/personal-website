@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Justin MK Lam | Portfolio</title>
-    <link>http://www.justinmklam.com/</link>
-    <description>Recent content on Justin MK Lam | Portfolio</description>
+    <title>Projects on Justin MK Lam | Portfolio</title>
+    <link>http://www.justinmklam.com/projects/</link>
+    <description>Recent content in Projects on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Jan 2017 12:28:27 -0800</lastBuildDate>
-    <atom:link href="http://www.justinmklam.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.justinmklam.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ESP8266 Sous Vide Controller</title>
@@ -144,57 +144,6 @@
 
 &lt;a href=/imgs/engineers-diary/screencap3.PNG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/engineers-diary/screencap3.PNG /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;After the &amp;#39;Commit&amp;#39; button is pressed, the entry is written or appended to a text file and displayed on screen.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>View All</title>
-      <link>http://www.justinmklam.com/view-all/</link>
-      <pubDate>Sat, 24 Sep 2016 23:08:47 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/view-all/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cv</title>
-      <link>http://www.justinmklam.com/pages/cv/</link>
-      <pubDate>Sat, 24 Sep 2016 16:56:13 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/pages/cv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>http://www.justinmklam.com/pages/contact/</link>
-      <pubDate>Sat, 24 Sep 2016 13:48:02 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/pages/contact/</guid>
-      <description>&lt;p&gt;Located in Vancouver, British Columbia.  Drop me a line and I&amp;rsquo;ll get back to you within the day.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://www.justinmklam.com/pages/about/</link>
-      <pubDate>Sat, 24 Sep 2016 12:58:43 -0700</pubDate>
-      
-      <guid>http://www.justinmklam.com/pages/about/</guid>
-      <description>&lt;p&gt;I grew up watching Star Wars, and like any other eight-year old boy, I wanted to become a Jedi Knight. Maneuvering starfighters through the Hoth asteroid field whilst in aerial combat, jousting battle droids wielding nothing but a lightsaber, and having my hand sliced off to make space for my own mechno-arm were the epitomes of my childhood fantasy.&lt;/p&gt;
-
-&lt;p&gt;Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of developing a steering system for a model hovercraft providing optimized maneuverability, attacking design challenges with a pen and paper, and studying the possibilities of bionic technology. My passion is taking part in the vanguard of mechanical and electrical design. As a young engineer, I am constantly looking for opportunities to expand and develop my skill set.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;text-right&#34;&gt;
-&lt;br&gt;
-&lt;img src=&#34;http://www.justinmklam.com/imgs/signature.png&#34; alt=&#34;img&#34; /&gt;
-&lt;/div&gt;
-&lt;p class=&#34;text-right&#34;&gt;&lt;br /&gt;
-Justin M.K. Lam
-&lt;br&gt;
-Mechatronics Engineer
-&lt;br&gt;
-&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -561,6 +510,122 @@ The purpose of this study was to compare the drilling performance of covered har
 
 &lt;a href=/imgs/drill_cover/Bone-model-render-1024x520.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/Bone-model-render-1024x520.jpg /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Test apparatus, modeled in SolidWorks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>car2go Bowling</title>
+      <link>http://www.justinmklam.com/projects/mech/car2go/</link>
+      <pubDate>Fri, 29 Aug 2014 12:37:42 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/projects/mech/car2go/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Design a roof-mounted bowling rig for a car2go marketing event.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;: Use a non-permanent method to securely attach the apparatus to the roof.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Venue&lt;/strong&gt;: 2014 Vancouver Fringe Festival&lt;/p&gt;
+
+
+&lt;div id=&#34;fb-root&#34;&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = &#34;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.6&#34;;
+fjs.parentNode.insertBefore(js, fjs);
+}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
+
+&lt;div class=&#34;fb-post&#34; data-href=https://www.facebook.com/video.php?v&amp;#61;10154557145565524 data-height=&#34;466&#34;&gt;
+	&lt;div class=&#34;fb-xfbml-parse-ignore&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br&gt;&lt;br&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Award Winning Bamboo Bike</title>
+      <link>http://www.justinmklam.com/projects/mech/bamboo-bike/</link>
+      <pubDate>Mon, 18 Aug 2014 22:12:57 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/projects/mech/bamboo-bike/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.&lt;/p&gt;
+            
+
+&lt;p&gt;&lt;strong&gt;Challenges&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li style=&#34;text-align: left;&#34;&gt;Constructing a frame jig to allow freedom around joints for carbon-fibre layup&lt;/li&gt;
+    &lt;li style=&#34;text-align: left;&#34;&gt;Accounting for the non-uniformity of bamboo poles at the frame lugs&lt;/li&gt;
+    &lt;li style=&#34;text-align: left;&#34;&gt;Maintaining compatibility with standard bicycle components&lt;/li&gt;
+    &lt;li style=&#34;text-align: left;&#34;&gt;Ensuring the frame is treated for typical&#34;Wet&#34; Coast weather&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Awards:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;First Prize - &lt;a href=&#34;http://www.instructables.com/contest/handtoolsonly/&#34; target=&#34;_blank&#34;&gt;Hand Tools Only Instructables Contest&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;First Prize - &lt;a href=&#34;http://www.instructables.com/contest/teachit/&#34; target=&#34;_blank&#34;&gt;Teach It! Instructables Contest, Sponsored by Dremel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/Bike-frame-geometry-1024x567.png&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Track bicycle custom geometry.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/Drawing-Bike-frame-dimensions-1024x680.png&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Frame dimensions with tubes shown to determine the required cut lengths of bamboo.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/Bamboo-bike-in-jig-1-1024x572.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Frame jig modeled in SolidWorks.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/2013-09-15-14.21.10-1024x768.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Bamboo poles after heat treatment in the oven, preparing for the next heat treatment.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/05-IMG_3962.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Dry fitting of bamboo poles after mitering.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/07-IMG_3968.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Bottom bracket junction with mitered bamboo.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/11-IMG_3985-1024x768.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Slotted bamboo to fit the dropouts.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/IMG_20140817_143412-1024x768.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Frame wrapped, sanded, and ready for finishing details.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/IMG_20140817_153701-768x1024.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Applying the final touches to the bottom bracket.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://www.justinmklam.com/imgs/bamboo_bike/IMG_5359-e1424407598804.jpg&#34; /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Build complete and ready to roll.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;For a detailed step-by-step guide, head over to my &lt;a href=&#34;http://www.instructables.com/id/Building-a-Carbon-Fibre-Bamboo-Bicycle-From-Scratc/&#34; target=&#34;_blank&#34;&gt;Instructable&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MECH 355: Tron Game</title>
+      <link>http://www.justinmklam.com/projects/software/mech-355-tron/</link>
+      <pubDate>Sun, 30 Mar 2014 12:36:02 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/projects/software/mech-355-tron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photo Editing Script</title>
+      <link>http://www.justinmklam.com/projects/software/photo-editing/</link>
+      <pubDate>Sun, 12 Jan 2014 12:25:44 -0700</pubDate>
+      
+      <guid>http://www.justinmklam.com/projects/software/photo-editing/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop a script to find and remove any differences in a series of photos.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; &lt;a href=&#34;http://toomanyadapters.com/how-to-remove-people-travel-photos-photoshop/&#34;&gt;How to Remove People From Your Travel Using Photoshop&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; MATLAB&lt;/p&gt;
+
+&lt;a href=/imgs/photo_editing/Image-test_all.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/photo_editing/Image-test_all.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Script takes any number of images (preferably taken on a tripod) and combines them into one cleaned-up image.&lt;/p&gt;
+
+&lt;a href=/imgs/photo_editing/Photo-editing-script-algorithm.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/photo_editing/Photo-editing-script-algorithm.png /&gt;&lt;/a&gt;
+&lt;p class=&#34;caption&#34;&gt;Flowchart of the implemented algorithm.&lt;/p&gt;
 </description>
     </item>
     
