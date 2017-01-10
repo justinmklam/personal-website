@@ -6,7 +6,7 @@ author = "Justin MK Lam"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
-canonifyurls = true
+canonifyurls = false
 
 [params]
 	footer = "2017 Justin MK Lam"
