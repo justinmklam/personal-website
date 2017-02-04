@@ -1448,9 +1448,13 @@ th.visible-print,td.visible-print{display:table-cell!important}
 }@media print{.hidden-print{display:none!important}
 }/*! CSS Styling for personal project portfolio
 Last edited: Wed, 5 Oct 2016
-*/body{font-family:'Lato',sans-serif;padding-top:70px}
+*/body{font-family:'Lato',sans-serif;padding-top:70px;font-size:14px;line-height:1.42857143;color:#333;background-color:#ffffff}
 /*a.h3{font-family: 'Roboto Slab', serif;}*/
-.row h4{line-height: 1.4;font-style:italic;}
+.navbar-inverse{
+  -webkit-box-shadow: 0 5px 6px -6px #222;
+  -moz-box-shadow:    0 5px 6px -6px #222;
+  box-shadow:         0 5px 6px -6px #222;}
+.row h4{line-height: 1.4;font-style:italic;color:#888}
 p{text-align:justify}
 footer{margin:35px 0}
 .col-centered{float:none;margin:0 auto}

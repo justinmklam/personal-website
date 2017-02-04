@@ -2,7 +2,7 @@
 clickable = false
 date = "2017-01-08T12:28:27-08:00"
 hidden = false
-image = "/imgs/sous-vide/steak-sq.jpg"
+image = "/imgs/sous-vide/controller-sq.jpg"
 summary = "By separating the internal and external cooking procedures, a perfect steak with no internal temperature gradient can be easily achieved. Cooking sous vide provides reliable, consistent, and precise results every time. An ESP8266 wifi chip was used to monitor and maintain the temperature controlled water."
 tagline = "Immersing food in a temperature controlled water bath."
 title = "ESP8266 Sous Vide Controller"

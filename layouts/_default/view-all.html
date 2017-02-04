@@ -13,6 +13,7 @@
     <!-- Page Content -->
     <div class="container"> 
 		
+		<!-- Loop through each project category -->
 		{{ range where .Site.Pages "Type" "=" "node"}}
 			<div class="row">
 				<div class="col-lg-12">
@@ -22,18 +23,24 @@
 				</div>
 			</div>	 
 		
+			<!-- loop through all projects -->
 			{{ range $index, $element := (where .Site.Pages "Type" .Params.section) }}
+				<!-- only show non-hidden projects -->
 				{{ if not .Params.hidden }}
+					<!-- don't show divider before the first item -->
 					{{ if not (eq $index 0) }}
 					<hr>
 					{{ end }}
 					
+					<!-- Bucket for each project -->
 					<div class="row">
+						<!-- project image -->
 						<div class="col-sm-2 col-sm-offset-1">
 							<a {{ if .Params.clickable }}href="{{ .Permalink }}"{{end}}>
 								<img class="img-responsive img-rounded" src="{{ .Params.image }}" alt="">
 							</a>
 						</div>
+						<!-- description -->
 						<div class="col-sm-9">
 							<a class=
 							{{ if not .Params.clickable }}"h3 link-disabled"{{ else }} "h3" {{end}}
