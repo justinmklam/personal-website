@@ -1473,11 +1473,11 @@ footer{margin:35px 0}
 }@media(max-width:480px){.img-rounded{max-width:200px;margin:15px auto}
 }
 #page-container {
-    -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0.7s; /* Firefox < 16 */
-        -ms-animation: fadein 0.7s; /* Internet Explorer */
-         -o-animation: fadein 0.7s; /* Opera < 12.1 */
-            animation: fadein 0.7s;
+    -webkit-animation: fadein 0.65s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.65s; /* Firefox < 16 */
+        -ms-animation: fadein 0.65s; /* Internet Explorer */
+         -o-animation: fadein 0.65s; /* Opera < 12.1 */
+            animation: fadein 0.65s;
 }
 
 @keyframes fadein {

@@ -15,13 +15,8 @@
 		
 		<!-- Loop through each project category -->
 		{{ range where .Site.Pages "Type" "=" "node"}}
-			<div class="row">
-				<div class="col-lg-12">
-					<h1 class="page-header">{{ .Title }}
-						<small>{{ .Params.subtitle }} </small>
-					</h1>
-				</div>
-			</div>	 
+			<!-- Project category header (mech, elec, etc.) -->
+			{{ partial "projects-category.html" . }}
 		
 			<!-- loop through all projects -->
 			{{ range $index, $element := (where .Site.Pages "Type" .Params.section) }}
@@ -33,25 +28,7 @@
 					{{ end }}
 					
 					<!-- Bucket for each project -->
-					<div class="row">
-						<!-- project image -->
-						<div class="col-sm-2 col-sm-offset-1">
-							<a {{ if .Params.clickable }}href="{{ .Permalink }}"{{end}}>
-								<img class="img-responsive img-rounded" src="{{ .Params.image }}" alt="">
-							</a>
-						</div>
-						<!-- description -->
-						<div class="col-sm-9">
-							{{ if .Params.clickable }}
-							<a class="h3" role="button" href="{{ .Permalink}} ">
-							{{ else }}
-							<a class="h3 link-disabled">
-							{{end}}
-							{{ .Title }}</a>
-							<h4>{{ .Params.tagline }}</h4>
-							<p>{{ .Params.summary }}</p>
-						</div>
-					</div>			
+					{{partial "projects-description.html" . }}
 				{{ end }}
 			{{ end }}
 		{{ end }}
