@@ -11,7 +11,7 @@
     {{ partial "navbar.html" . }}
 
     <!-- Page Content -->
-    <div class="container"> 
+    <div class="container" id="page-container"> 
 		
 		<!-- Loop through each project category -->
 		{{ range where .Site.Pages "Type" "=" "node"}}
@@ -42,9 +42,12 @@
 						</div>
 						<!-- description -->
 						<div class="col-sm-9">
-							<a class=
-							{{ if not .Params.clickable }}"h3 link-disabled"{{ else }} "h3" {{end}}
-							role="button" href="{{ .Permalink}} ">{{ .Title }}</a>
+							{{ if .Params.clickable }}
+							<a class="h3" role="button" href="{{ .Permalink}} ">
+							{{ else }}
+							<a class="h3 link-disabled">
+							{{end}}
+							{{ .Title }}</a>
 							<h4>{{ .Params.tagline }}</h4>
 							<p>{{ .Params.summary }}</p>
 						</div>
