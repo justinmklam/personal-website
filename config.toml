@@ -5,7 +5,7 @@ author = "Justin MK Lam"
 
 contentdir = "content"
 layoutdir = "layouts"
-publishdir = "public"
+publishdir = "docs"
 canonifyurls = false
 
 [params]

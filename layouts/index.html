@@ -4,6 +4,7 @@
 <head>
     <title>{{ .Site.Title }}</title>
     {{ partial "header.html" . }}
+    <!--<script src="/js/walkway.js"></script>-->
 </head>
 
 <style>
@@ -28,6 +29,7 @@ Last edited: Wed, 5 Oct 2016
 <body class="home-header" id="page-container">
 
 	{{ partial "navbar-index.html" . }}
+    <!--{{ partial "jlam-svg.svg" . }}-->
 
     <div class="home-body">
         <h1>JUSTIN LAM</h1>
@@ -49,6 +51,20 @@ Last edited: Wed, 5 Oct 2016
         </div>
 		  
     </div>
+    <!--<script src="http://cdn.jsdelivr.net/walkway/0.0.7/walkway.min.js"></script>
+    <script> 
+        document.addEventListener('DOMContentLoaded', function() {
+            var svg = new Walkway({
+                selector: '#jlam',
+                duration: 2000,
+                easing: 'linear'
+            });
+            
+            svg.draw(function() {
+                console.log('Finished!');
+            });
+        });
+    </script>-->
 </body>
     
 {{ partial "footer-js.html" . }}

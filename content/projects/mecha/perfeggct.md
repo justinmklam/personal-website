@@ -9,7 +9,7 @@ summary = "Gone are the days of blindly timing and boiling eggs, being left with
 
 type = "mecha"
 
-image = "/imgs/perfeggct/IMG_0461_square.png"
+image = "/imgs/perfeggct/IMG_0461_square.jpg"
 
 clickable = true
 draft = false

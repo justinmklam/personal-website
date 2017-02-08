@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project Haikuza</title>
+     <html>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatiblle" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="/css/jmklam-portfolio-bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400i,400|Roboto+Slab" rel="stylesheet">
+</html>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+                <a class="navbar-brand" href="http://www.justinmklam.com">Justin Lam</a>
+            
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="/view-all">Portfolio<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+                      <li><a href="/sections/mechatronics">Mechatronics</a></li>
+					  <li><a href="/sections/mechanical">Mechanical</a></li>
+					  <li><a href="/sections/electrical">Electrical</a></li>
+					  <li><a href="/sections/software">Software</a></li>
+					  <li role="separator" class="divider"></li>
+					  <li class="dropdown-header"></li>
+					  <li><a href="/view-all">View All</a></li>
+					</ul>
+				</li>
+				
+				
+					<li><a href="/pages/about/">About</a></li>
+				
+					<li><a href="/pages/contact/">Contact</a></li>
+				
+					<li><a href="/files/Resume-2016.pdf">CV</a></li>
+				
+
+            </ul>
+        </div>
+        
+    </div>
+    
+</nav>
+    
+</html>
+
+    
+    <div class="container" id="page-container">
+        
+        <div class="col-sm-8 col-centered">
+            <h1 class="page-header">Project Haikuza</h1>		            
+            <p><strong>Objective:</strong> Develop an algorithm to generate haikus using song lyrics.</p></p>
+
+<p><strong>Motivation:</strong> Because computational linguistics are cool.</p></p>
+
+<p><strong>Project:</strong> <a href="https://twitter.com/thehaikuza">twitter.com/thehaikuza</a></p>
+
+<p><strong>Features:</strong></p>
+
+<ul>
+<li>Scrapes <a href="http://www.vancouver.virginradio.ca/broadcasthistory.aspx">Virgin Radio&rsquo;s broadcast history</a> to find recently played songs</li>
+<li>Creates a song-based haiku queue in <a href="https://docs.google.com/spreadsheets/d/1HazfuywY_MrmQ49fxSpHOMA8QXBUYVhEDx1e4qhjbqU/edit?usp=sharing">Google Sheets</a></li>
+<li>Generates a haiku using the queue as a reference and posts it on Twitter</li>
+<li>Checks for new tweets every 5 minutes and generates a relevant haiku, if requested</li>
+<li>Finds all song lyrics from <a href="http://lyrics.wikia.com/Lyrics_Wiki">Lyrics Wikia</a></li>
+<li>Runs on a Raspberry Pi</li>
+</ul>
+
+<p><strong>Challenges:</strong></p>
+
+<ul>
+<li>Formulaically counting syllables</li>
+<li>Developing a context-free language model</li>
+<li>Creating phrases that actually make sense</li>
+</ul>
+
+<p><strong>Framework:</strong> Python 2.7.9</p>
+
+<p><strong>Source:</strong> <a href="https://github.com/justinmklam/project-haikuza">Github</a></p>
+
+<a href=/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png><img class="img-responsive img-content" src=/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png /></a>
+<p class="caption">Screencap of @thehaikuza&#39;s Twitter profile</p>
+
+<a href=/imgs/haikuza/IMG_20150803_180047-1024x768.jpg><img class="img-responsive img-content" src=/imgs/haikuza/IMG_20150803_180047-1024x768.jpg /></a>
+<p class="caption">Raspberry Pi 1 Model B running @thehaikuza, 24/7!</p>
+
+			
+			
+			<br>
+            <p class="datestamp"><span class="glyphicon glyphicon-time"></span> Published on July 19, 2015</p>
+			
+			
+        </div>
+
+		
+		
+    </div>	
+    
+
+	    
+    <script src="http://www.justinmklam.com/js/jquery.js"></script>
+
+    
+    <script src="http://www.justinmklam.com/js/bootstrap.min.js"></script>
+
+</body>
+    
+
+<footer>
+	<div class="col-lg-8 col-centered">
+		<hr>
+		<p class="text-center">&copy; 2017 Justin MK Lam</p>
+	</div>
+</footer>
+
+</html>
