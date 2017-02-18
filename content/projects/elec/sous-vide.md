@@ -101,7 +101,7 @@ src="/imgs/sous-vide/adafruit-dashboard.png" >}}
 
 ### A Comparison of Cookers
 
-Four trials were conducted with three different cooking vessels: a 3 cup rice cooker, 7 cup rice cooker, and a 14 cup (3.3 L) slow cooker. Two cups of water was used in each vessel for these tests. As shown through the graph below, the rice cookers get up to 55°C significantly than the _(very)_ slow cooker. Although it would be better in maintaining temperature due to its ceramic makeup, it took way too long to heat up for practical purposes. You can fill it with hot/boiling water to help it warm up, but it still wouldn't be as fast or convenient than the rice cookers.
+Four trials were conducted with three different cooking vessels: a 3 cup rice cooker, 7 cup rice cooker, and a 14 cup (3.3 L) slow cooker. Two cups of water were used in each vessel for these tests. As shown through the graph below, the rice cookers get up to 55°C significantly than the _(very)_ slow cooker. Although it would be better in maintaining temperature due to its ceramic makeup, it took way too long to heat up for practical purposes. You can fill it with hot/boiling water to help it warm up, but it still wouldn't be as fast or convenient than the rice cookers.
 
 Slow cooker, you are the weakest link. Goodbye.
 
@@ -109,6 +109,8 @@ Slow cooker, you are the weakest link. Goodbye.
 src="/imgs/sous-vide/plot_benchmarks2.png" >}}
 
 Looking at the rice cookers in more detail, we see that the small rice cooker has a much lower overshoot than the large. This makes sense since the heating element is smaller, thus it retains less heat "momentum" upon shutoff. The addition of a water circulator significantly reduced the steady state temperature oscillation as well as the amplitude of overshoot. With the added benefit of greater temperature uniformity within the water bath than relying on natural convection to mix the water, using a circulator is proven to be a necessity.
+
+Moving forward, I decided to use the large rice cooker with a circulator. Although the small rice cooker reaches steady state more quickly, its small vessel size s unfortunately not practical for cooking anything but a feast for ants.
 
 {{<img caption="Comparison of the remaining cooking vessels."
 src="/imgs/sous-vide/plot_benchmarks.png" >}}

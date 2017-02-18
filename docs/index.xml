@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Justin MK Lam | Portfolio</title>
-    <link>http://www.justinmklam.com/</link>
+    <link>http://justinmklam.com/</link>
     <description>Recent content on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Feb 2017 12:28:27 -0800</lastBuildDate>
-    <atom:link href="http://www.justinmklam.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://justinmklam.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ESP8266 Sous Vide Controller</title>
-      <link>http://www.justinmklam.com/projects/elec/sous-vide/</link>
+      <link>http://justinmklam.com/projects/elec/sous-vide/</link>
       <pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/elec/sous-vide/</guid>
+      <guid>http://justinmklam.com/projects/elec/sous-vide/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Create a small, modular controller to regulate the temperature of a water bath.&lt;/p&gt;
@@ -116,7 +116,7 @@
 
 &lt;h3 id=&#34;a-comparison-of-cookers&#34;&gt;A Comparison of Cookers&lt;/h3&gt;
 
-&lt;p&gt;Four trials were conducted with three different cooking vessels: a 3 cup rice cooker, 7 cup rice cooker, and a 14 cup (3.3 L) slow cooker. Two cups of water was used in each vessel for these tests. As shown through the graph below, the rice cookers get up to 55°C significantly than the &lt;em&gt;(very)&lt;/em&gt; slow cooker. Although it would be better in maintaining temperature due to its ceramic makeup, it took way too long to heat up for practical purposes. You can fill it with hot/boiling water to help it warm up, but it still wouldn&amp;rsquo;t be as fast or convenient than the rice cookers.&lt;/p&gt;
+&lt;p&gt;Four trials were conducted with three different cooking vessels: a 3 cup rice cooker, 7 cup rice cooker, and a 14 cup (3.3 L) slow cooker. Two cups of water were used in each vessel for these tests. As shown through the graph below, the rice cookers get up to 55°C significantly than the &lt;em&gt;(very)&lt;/em&gt; slow cooker. Although it would be better in maintaining temperature due to its ceramic makeup, it took way too long to heat up for practical purposes. You can fill it with hot/boiling water to help it warm up, but it still wouldn&amp;rsquo;t be as fast or convenient than the rice cookers.&lt;/p&gt;
 
 &lt;p&gt;Slow cooker, you are the weakest link. Goodbye.&lt;/p&gt;
 
@@ -124,6 +124,8 @@
 &lt;p class=&#34;caption&#34;&gt;Comparison of rice and slow cookers with circulated and uncirculated water baths.&lt;/p&gt;
 
 &lt;p&gt;Looking at the rice cookers in more detail, we see that the small rice cooker has a much lower overshoot than the large. This makes sense since the heating element is smaller, thus it retains less heat &amp;ldquo;momentum&amp;rdquo; upon shutoff. The addition of a water circulator significantly reduced the steady state temperature oscillation as well as the amplitude of overshoot. With the added benefit of greater temperature uniformity within the water bath than relying on natural convection to mix the water, using a circulator is proven to be a necessity.&lt;/p&gt;
+
+&lt;p&gt;Moving forward, I decided to use the large rice cooker with a circulator. Although the small rice cooker reaches steady state more quickly, its small vessel size s unfortunately not practical for cooking anything but a feast for ants.&lt;/p&gt;
 
 &lt;a href=/imgs/sous-vide/plot_benchmarks.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/plot_benchmarks.png /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Comparison of the remaining cooking vessels.&lt;/p&gt;
@@ -170,10 +172,10 @@
     
     <item>
       <title>Overhead Robotic Gantry for Tethered VR Headsets</title>
-      <link>http://www.justinmklam.com/projects/mecha/vr-gantry/</link>
+      <link>http://justinmklam.com/projects/mecha/vr-gantry/</link>
       <pubDate>Fri, 11 Nov 2016 09:26:50 -0800</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/mecha/vr-gantry/</guid>
+      <guid>http://justinmklam.com/projects/mecha/vr-gantry/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt;&lt;/p&gt;
@@ -202,10 +204,10 @@
     
     <item>
       <title>Bargain Bandsaw Project</title>
-      <link>http://www.justinmklam.com/projects/mech/bandsaw/</link>
+      <link>http://justinmklam.com/projects/mech/bandsaw/</link>
       <pubDate>Sat, 22 Oct 2016 20:58:10 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/mech/bandsaw/</guid>
+      <guid>http://justinmklam.com/projects/mech/bandsaw/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; High school woodworking was awesome. Making things is awesome. Making things that make other things is even more awesome. Making things that make other things at home by fixing used tools is the awesome-est.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Make a table for a bandsaw with a missing table. No fuss, no muss (just lots of sawdust).&lt;/p&gt;
@@ -241,10 +243,10 @@
     
     <item>
       <title>Engineer&#39;s Diary</title>
-      <link>http://www.justinmklam.com/projects/software/engineers-diary/</link>
+      <link>http://justinmklam.com/projects/software/engineers-diary/</link>
       <pubDate>Sat, 01 Oct 2016 12:39:52 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/software/engineers-diary/</guid>
+      <guid>http://justinmklam.com/projects/software/engineers-diary/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Between paper notebooks, post-it notes, OneNote, Evernote, and so many more, there is no shortage of ways to write things down. Each has its strengths and weaknesses, but none satisfied my requirements to act as a daily work log to record key events, thoughts, and milestones during my work day.&lt;/p&gt;
 
 &lt;p&gt;My paper notebook is excellent for free-form thoughts, sketches, and calculations, but I would want to keep a separate notebook to keep track of these sequential events. We use OneNote at work, but where the infinite blank canvas is a strength in applications such as for research or brainstorming, I found it to be a weakness in record keeping since the document is too easy to edit and &amp;ldquo;fragile&amp;rdquo;.&lt;/p&gt;
@@ -276,45 +278,45 @@
     
     <item>
       <title>View All</title>
-      <link>http://www.justinmklam.com/view-all/</link>
+      <link>http://justinmklam.com/view-all/</link>
       <pubDate>Sat, 24 Sep 2016 23:08:47 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/view-all/</guid>
+      <guid>http://justinmklam.com/view-all/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cv</title>
-      <link>http://www.justinmklam.com/pages/cv/</link>
+      <link>http://justinmklam.com/pages/cv/</link>
       <pubDate>Sat, 24 Sep 2016 16:56:13 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/pages/cv/</guid>
+      <guid>http://justinmklam.com/pages/cv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>http://www.justinmklam.com/pages/contact/</link>
+      <link>http://justinmklam.com/pages/contact/</link>
       <pubDate>Sat, 24 Sep 2016 13:48:02 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/pages/contact/</guid>
+      <guid>http://justinmklam.com/pages/contact/</guid>
       <description>&lt;p&gt;Located in Vancouver, British Columbia.  Drop me a line and I&amp;rsquo;ll get back to you within the day.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://www.justinmklam.com/pages/about/</link>
+      <link>http://justinmklam.com/pages/about/</link>
       <pubDate>Sat, 24 Sep 2016 12:58:43 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/pages/about/</guid>
+      <guid>http://justinmklam.com/pages/about/</guid>
       <description>&lt;p&gt;I grew up watching Star Wars, and like any other eight-year old boy, I wanted to become a Jedi Knight. Maneuvering starfighters through the Hoth asteroid field whilst in aerial combat, jousting battle droids wielding nothing but a lightsaber, and having my hand sliced off to make space for my own mechno-arm were the epitomes of my childhood fantasy.&lt;/p&gt;
 
 &lt;p&gt;Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of developing a steering system for a model hovercraft providing optimized maneuverability, attacking design challenges with a pen and paper, and studying the possibilities of bionic technology. My passion is taking part in the vanguard of mechanical and electrical design. As a young engineer, I am constantly looking for opportunities to expand and develop my skill set.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;text-right&#34;&gt;
 &lt;br&gt;
-&lt;img src=&#34;http://www.justinmklam.com/imgs/signature.png&#34; alt=&#34;img&#34; /&gt;
+&lt;img src=&#34;http://justinmklam.com/imgs/signature.png&#34; alt=&#34;img&#34; /&gt;
 &lt;/div&gt;
 &lt;p class=&#34;text-right&#34;&gt;&lt;br /&gt;
 Justin M.K. Lam
@@ -327,10 +329,10 @@ Mechatronics Engineer
     
     <item>
       <title>MECH 458: Capstone 3D Optical Well Imager</title>
-      <link>http://www.justinmklam.com/projects/mech/mech-458-capstone/</link>
+      <link>http://justinmklam.com/projects/mech/mech-458-capstone/</link>
       <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/mech/mech-458-capstone/</guid>
+      <guid>http://justinmklam.com/projects/mech/mech-458-capstone/</guid>
       <description>
 
 &lt;h3 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h3&gt;
@@ -402,10 +404,10 @@ Mechatronics Engineer
     
     <item>
       <title>Adjustable Portable Power Supply</title>
-      <link>http://www.justinmklam.com/projects/elec/power-supply/</link>
+      <link>http://justinmklam.com/projects/elec/power-supply/</link>
       <pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/elec/power-supply/</guid>
+      <guid>http://justinmklam.com/projects/elec/power-supply/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Build a cheap, portable, variable DC power supply.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.&lt;/p&gt;
@@ -430,10 +432,10 @@ Mechatronics Engineer
     
     <item>
       <title>MECH 423: Mechatronics Product Design</title>
-      <link>http://www.justinmklam.com/projects/mecha/perfeggct/</link>
+      <link>http://justinmklam.com/projects/mecha/perfeggct/</link>
       <pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/mecha/perfeggct/</guid>
+      <guid>http://justinmklam.com/projects/mecha/perfeggct/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -493,16 +495,16 @@ Mechatronics Engineer
 &lt;a href=/imgs/perfeggct/IMG_0424.JPG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/IMG_0424.JPG /&gt;&lt;/a&gt;
 &lt;p class=&#34;caption&#34;&gt;Truly perf-egg-ct.&lt;/p&gt;
 
-&lt;p&gt;Interested in reading more about this project? Head over to &lt;a href=&#34;http://www.instructables.com/id/PerfEGGct-Engineering-the-Perfect-Soft-Boiled-Egg/&#34;&gt;Instructables&lt;/a&gt; for more details! And if you&amp;rsquo;re &lt;em&gt;really&lt;/em&gt; interested, feel free to read our glorious 35-page final report &lt;a href=&#34;http://www.justinmklam.com/files/MECH 423 Final Project Report.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Interested in reading more about this project? Head over to &lt;a href=&#34;http://www.instructables.com/id/PerfEGGct-Engineering-the-Perfect-Soft-Boiled-Egg/&#34;&gt;Instructables&lt;/a&gt; for more details! And if you&amp;rsquo;re &lt;em&gt;really&lt;/em&gt; interested, feel free to read our glorious 35-page final report &lt;a href=&#34;http://justinmklam.com/files/MECH 423 Final Project Report.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Project Haikuza</title>
-      <link>http://www.justinmklam.com/projects/software/haikuza/</link>
+      <link>http://justinmklam.com/projects/software/haikuza/</link>
       <pubDate>Sun, 19 Jul 2015 12:36:28 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/software/haikuza/</guid>
+      <guid>http://justinmklam.com/projects/software/haikuza/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop an algorithm to generate haikus using song lyrics.&lt;/p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; Because computational linguistics are cool.&lt;/p&gt;&lt;/p&gt;
@@ -542,10 +544,10 @@ Mechatronics Engineer
     
     <item>
       <title>External Ballistics Simulation</title>
-      <link>http://www.justinmklam.com/projects/software/external-ballistics/</link>
+      <link>http://justinmklam.com/projects/software/external-ballistics/</link>
       <pubDate>Thu, 19 Feb 2015 12:36:19 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/software/external-ballistics/</guid>
+      <guid>http://justinmklam.com/projects/software/external-ballistics/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth.&lt;/p&gt;
 
 &lt;p&gt;One solution is to connect a computer to a manual targeting system (ie. a scope) and estimate the corrected target location by accounting for these external factors.  The user may then line the manual targeting system up with the corrected target location, hoping to the high heavens that the target will be hit upon releasing the projectile.&lt;/p&gt;&lt;/p&gt;
@@ -584,10 +586,10 @@ Mechatronics Engineer
     
     <item>
       <title>MECH 328: TrailRider Design Project</title>
-      <link>http://www.justinmklam.com/projects/mech/mech-328-trailrider/</link>
+      <link>http://justinmklam.com/projects/mech/mech-328-trailrider/</link>
       <pubDate>Mon, 24 Nov 2014 12:37:55 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/mech/mech-328-trailrider/</guid>
+      <guid>http://justinmklam.com/projects/mech/mech-328-trailrider/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility.  It is intended for a seated rider propelled and balanced by assistants.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Expand the range of both riders and assistants who can ride safely use the Black Diamond TrailRider™.&lt;/p&gt;
@@ -637,10 +639,10 @@ Mechatronics Engineer
     
     <item>
       <title>Co-op: Drill Cover User Study</title>
-      <link>http://www.justinmklam.com/projects/mech/coop-drill-cover/</link>
+      <link>http://justinmklam.com/projects/mech/coop-drill-cover/</link>
       <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
       
-      <guid>http://www.justinmklam.com/projects/mech/coop-drill-cover/</guid>
+      <guid>http://justinmklam.com/projects/mech/coop-drill-cover/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries.  A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.&lt;/p&gt;
