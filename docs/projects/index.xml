@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Feb 2017 12:28:27 -0800</lastBuildDate>
-    <atom:link href="http://justinmklam.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://justinmklam.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>ESP8266 Sous Vide Controller</title>
@@ -15,159 +17,10 @@
       <pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate>
       
       <guid>http://justinmklam.com/projects/elec/sous-vide/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Create a small, modular controller to regulate the temperature of a water bath.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; To get in on this cooking fad without dropping fat stacks of cash on an immersion circulator.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Crisp 0.96&amp;rdquo; OLED display&lt;/li&gt;
-&lt;li&gt;Pushbutton rotary encoder provides simple user interaction&lt;/li&gt;
-&lt;li&gt;Removable temperature plug through standard 3-pos audio connector&lt;/li&gt;
-&lt;li&gt;Temperature controlled outlet to be used with any heating element (ie. rice cooker, slow cooker, etc.)&lt;/li&gt;
-&lt;li&gt;Always on outlet for water circulator&lt;/li&gt;
-&lt;li&gt;Temperature logging over wifi&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt; &lt;a href=&#34;https://github.com/justinmklam/sous-vide&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
-
-&lt;!--__Skills:__
-
-+ Firmware programming
-+ Enclosure design
-+ PCB design--&gt;
-
-&lt;a href=/imgs/sous-vide/IMG_8508.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/IMG_8508.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Modular sous vide controller powered by everyone&amp;#39;s favourite WiFi chip, the EPS8266.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-sous-vide-story&#34;&gt;The Sous Vide Story&lt;/h2&gt;
-
-&lt;p&gt;You may have heard people rant about this fancy new cooking method that&amp;rsquo;s all the rage right now, but of course you shrug it off as a fad. But here you are, intrigued enough to be reading this article about the very thing you previously rolled your eyes at. So what the heck is sous vide anyway? The peeps over at &lt;a href=&#34;https://www.chefsteps.com/activities/what-is-sous-vide&#34;&gt;ChefSteps&lt;/a&gt; have an answer:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Imagine you’re cooking a steak. You probably know exactly the color and texture—the doneness, in other words—you’d like, right? With sous vide (say “sue veed”), you simply set a pot of water to the corresponding time and temperature, and you can get that perfect doneness you desire, every time.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Simply put, you stick the steak in a ziploc bag, stick the bag in the temperature controlled water bath, and wait for the steak to reach thermal equilibrium. After an hour or so, the steak will be the same temperature of the water bath. Need to wait an extra hour before you cook? Not to worry, your steak will be safe since it&amp;rsquo;ll never exceed the temperature of the bath.  With sous vide, say goodbye to overcooked food; physics just won&amp;rsquo;t let it happen.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/sousvideTechniques.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/sousvideTechniques.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Talk nerdy to me about sous vide. (Source: ChefSteps)&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/what-is-sous-vide.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/what-is-sous-vide.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Once immersion circulators came to the consumer market, sous vide became accessible to home kitchens. (Source: Anova Culinary)&lt;/p&gt;
-
-&lt;!--&lt;a href=/imgs/sous-vide/Sous-Vide-ENG.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/Sous-Vide-ENG.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Why cooking sous vide is worth the effort. (Source: OBH Nordica)&lt;/p&gt;--&gt;
-
-&lt;h2 id=&#34;the-controller&#34;&gt;The Controller&lt;/h2&gt;
-
-&lt;p&gt;Wanting to get in on this craze without spending a fortune (especially if it turned out to be a novelty), I set off to make my own. If all a sous vide device does is temperature control of a heating element, then it wouldn&amp;rsquo;t be anything my recent mechatronics degree couldn&amp;rsquo;t handle.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Equipment:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Rice cooker to act as the heating element and water vessel&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.ca/gp/product/B00EWENKXO/ref=oh_aui_detailpage_o05_s00?ie=UTF8&amp;amp;psc=1&#34;&gt;80 GPH Acquarium pump&lt;/a&gt; to circulate the water&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.ca/gp/product/B00KLZQ0P8/ref=oh_aui_detailpage_o09_s00?ie=UTF8&amp;amp;psc=1&#34;&gt;DS18B20&lt;/a&gt; waterproof temperature sensor&lt;/li&gt;
-&lt;li&gt;ESP8266 WiFi Chip&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;a href=/imgs/sous-vide/IMG_8608.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/IMG_8608.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;DIY sous vide setup with home-made temperature controller.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/IMG_8522.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/IMG_8522.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Front face of the controller.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/IMG_8526.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/IMG_8526.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Backside of the controller. Note the switch and cord grip for that back-me-on-Kickstarter finish quality.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/IMG_8454.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/IMG_8454.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Little space was left unused to minimize the physical footprint of the circuit.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/IMG_8432.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/IMG_8432.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Reveal of perfboard craftsmanship using the gobs-of-solder trace method.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/IMG_8400.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/IMG_8400.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Programming the ESP8266.&lt;/p&gt;
-
-&lt;!--&lt;a href=/imgs/sous-vide/IMG_8580.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/IMG_8580.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;TEXT&lt;/p&gt;--&gt;
-
-&lt;a href=/imgs/sous-vide/ui-demo.gif&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/ui-demo.gif /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Push button toggles between three states: main monitoring screen, set cooking time, and set cooking temperature.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-data&#34;&gt;The Data&lt;/h2&gt;
-
-&lt;p&gt;No project is complete without analyzing data! The main unknowns thus far:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Rise time and stability comparison between various cooking vessels&lt;/li&gt;
-&lt;li&gt;Temperature stability improvements with a water circulator&lt;/li&gt;
-&lt;li&gt;Is a bang-bang controller sufficient or is PID required?&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;To assess these questions, I setup the ESP8266 to push live temperature data to an online web server. Through &lt;a href=&#34;http://mqtt.org/&#34;&gt;MQTT&lt;/a&gt;, I was able to send live temperature data from the controller to &lt;a href=&#34;https://io.adafruit.com/&#34;&gt;Adafruit.IO&lt;/a&gt;. This service (in open beta at the time of writing) allows dashboards and data feeds to be easily created for real-time monitoring of anything.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/adafruit-dashboard.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/adafruit-dashboard.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;The ESP8266 logs temperature data through Adafruit servers. Data is displayed through their live dashboard feed.&lt;/p&gt;
-
-&lt;h3 id=&#34;a-comparison-of-cookers&#34;&gt;A Comparison of Cookers&lt;/h3&gt;
-
-&lt;p&gt;Four trials were conducted with three different cooking vessels: a 3 cup rice cooker, 7 cup rice cooker, and a 14 cup (3.3 L) slow cooker. Two cups of water were used in each vessel for these tests. As shown through the graph below, the rice cookers get up to 55°C significantly than the &lt;em&gt;(very)&lt;/em&gt; slow cooker. Although it would be better in maintaining temperature due to its ceramic makeup, it took way too long to heat up for practical purposes. You can fill it with hot/boiling water to help it warm up, but it still wouldn&amp;rsquo;t be as fast or convenient than the rice cookers.&lt;/p&gt;
-
-&lt;p&gt;Slow cooker, you are the weakest link. Goodbye.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/plot_benchmarks2.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/plot_benchmarks2.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Comparison of rice and slow cookers with circulated and uncirculated water baths.&lt;/p&gt;
-
-&lt;p&gt;Looking at the rice cookers in more detail, we see that the small rice cooker has a much lower overshoot than the large. This makes sense since the heating element is smaller, thus it retains less heat &amp;ldquo;momentum&amp;rdquo; upon shutoff. The addition of a water circulator significantly reduced the steady state temperature oscillation as well as the amplitude of overshoot. With the added benefit of greater temperature uniformity within the water bath than relying on natural convection to mix the water, using a circulator is proven to be a necessity.&lt;/p&gt;
-
-&lt;p&gt;Moving forward, I decided to use the large rice cooker with a circulator. Although the small rice cooker reaches steady state more quickly, its small vessel size s unfortunately not practical for cooking anything but a feast for ants.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/plot_benchmarks.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/plot_benchmarks.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Comparison of the remaining cooking vessels.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/IMG_8543.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/IMG_8543.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Small aquarium pump used to circulate the water.&lt;/p&gt;
-
-&lt;p&gt;Time to actually cook with this thing! After trying out various foods, the data shows that the temperature stability is surprisingly stable given the simple on-off temperature control.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/plot_cook%20times.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/plot_cook%20times.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Log of cook times.&lt;/p&gt;
-
-&lt;p&gt;Quantifying the ripple with some simple analysis shows that the average standard deviation for these four cooking trials was ±0.4°C, where the steak had the highest deviation of ±0.6°C.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    Trout Fillet at 48C for 59 mins
-       Mean:  48.35°C (+1.15, -0.73)
-       Std:  ±0.34°C
-
-    Sirloin Steak at 53C for 84 mins
-       Mean:  53.03°C (+1.78, -2.65)
-       Std:  ±0.63°C
-
-    Chicken Thighs at 70C for 99 mins
-       Mean:  70.03°C (+0.59, -1.53)
-       Std:  ±0.30°C
-
-    Burger Patty at 60C for 31 mins
-       Mean:  60.16°C (+0.72, -0.66)
-       Std:  ±0.23°C
-
-    --&amp;gt; AVERAGE STANDARD DEV: ±0.38°C
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Thus, using a simple temperature control implementation with a water circulator yields quite satisfying results.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-verdict&#34;&gt;The Verdict&lt;/h2&gt;
-
-&lt;p&gt;They say a picture is worth a thousand words. The one below might not be worth quite that many, but that pink uniformity definitely speaks for itself.&lt;/p&gt;
-
-&lt;a href=/imgs/sous-vide/IMG-20161231-WA0007.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/sous-vide/IMG-20161231-WA0007.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;A uniformly cooked sirloin steak finished on a cast-iron pan.&lt;/p&gt;
-</description>
+      <description>Objective: Create a small, modular controller to regulate the temperature of a water bath.
+Motivation: To get in on this cooking fad without dropping fat stacks of cash on an immersion circulator.
+Features:
+ Crisp 0.96&amp;rdquo; OLED display Pushbutton rotary encoder provides simple user interaction Removable temperature plug through standard 3-pos audio connector Temperature controlled outlet to be used with any heating element (ie. rice cooker, slow cooker, etc.) Always on outlet for water circulator Temperature logging over wifi  Source: Github</description>
     </item>
     
     <item>
@@ -176,30 +29,12 @@
       <pubDate>Fri, 11 Nov 2016 09:26:50 -0800</pubDate>
       
       <guid>http://justinmklam.com/projects/mecha/vr-gantry/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Foo 1&lt;/li&gt;
-&lt;li&gt;Foo 2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Don&amp;rsquo;t worry, the&lt;/li&gt;
-&lt;li&gt;numbers don&amp;rsquo;t&lt;/li&gt;
-&lt;li&gt;really matter&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;a href=&#34;HYPERLINK&#34;&gt;TEXT&lt;/a&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/SOURCE&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/SOURCE /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;TEXT&lt;/p&gt;
-</description>
+      <description>Background:
+Objective:
+Motivation:
+Features:
+ Foo 1 Foo 2   Don&amp;rsquo;t worry, the numbers don&amp;rsquo;t really matter  TEXT
+TEXT</description>
     </item>
     
     <item>
@@ -208,37 +43,10 @@
       <pubDate>Sat, 22 Oct 2016 20:58:10 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/bandsaw/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; High school woodworking was awesome. Making things is awesome. Making things that make other things is even more awesome. Making things that make other things at home by fixing used tools is the awesome-est.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Make a table for a bandsaw with a missing table. No fuss, no muss (just lots of sawdust).&lt;/p&gt;
-
-&lt;a href=/imgs/bandsaw/original_1.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/original_1.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Fresh off Craigslist in its table-naked glory.&lt;/p&gt;
-
-&lt;a href=/imgs/bandsaw/IMG_20161016_091555.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161016_091555.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;I needed something to cut parts for the table support. Thus, the inverted jigsaw was birthed.&lt;/p&gt;
-
-&lt;a href=/imgs/bandsaw/IMG_20161022_170440.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161022_170440.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Cutting the table center out on the bandsaw stand-in.&lt;/p&gt;
-
-&lt;a href=/imgs/bandsaw/IMG_20161022_221837.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161022_221837.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Blade insert seated nice and snug.&lt;/p&gt;
-
-&lt;a href=/imgs/bandsaw/IMG_20161016_091647.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161016_091647.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Attempt #1: First version of the table supports. It wasn&amp;#39;t extremely stable, but it was good enough to cut sturdier parts as replacements.&lt;/p&gt;
-
-&lt;a href=/imgs/bandsaw/IMG_20161023_174353.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161023_174353.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Attempt #2: Completed table support with angle adjustment from the slotted hole. Also note the modified  knob handle above to provide easier adjustment.&lt;/p&gt;
-
-&lt;a href=/imgs/bandsaw/IMG_20161023_174235.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161023_174235.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Bandsaw fully functional and ready to rip.&lt;/p&gt;
-
-&lt;a href=/imgs/bandsaw/IMG_20161017_204329.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161017_204329.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;First bandsaw project was making a keyholder and to increase stoke for the winter ski season.&lt;/p&gt;
-
-&lt;a href=/imgs/bandsaw/IMG_20161021_222031.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/bandsaw/IMG_20161021_222031.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Also made a butcher&amp;#39;s block out of an old fireplace mantle.&lt;/p&gt;
-</description>
+      <description>Background: High school woodworking was awesome. Making things is awesome. Making things that make other things is even more awesome. Making things that make other things at home by fixing used tools is the awesome-est.
+Objective: Make a table for a bandsaw with a missing table. No fuss, no muss (just lots of sawdust).
+Fresh off Craigslist in its table-naked glory.
+I needed something to cut parts for the table support.</description>
     </item>
     
     <item>
@@ -247,33 +55,8 @@
       <pubDate>Sat, 01 Oct 2016 12:39:52 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/software/engineers-diary/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Between paper notebooks, post-it notes, OneNote, Evernote, and so many more, there is no shortage of ways to write things down. Each has its strengths and weaknesses, but none satisfied my requirements to act as a daily work log to record key events, thoughts, and milestones during my work day.&lt;/p&gt;
-
-&lt;p&gt;My paper notebook is excellent for free-form thoughts, sketches, and calculations, but I would want to keep a separate notebook to keep track of these sequential events. We use OneNote at work, but where the infinite blank canvas is a strength in applications such as for research or brainstorming, I found it to be a weakness in record keeping since the document is too easy to edit and &amp;ldquo;fragile&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;One day after learning about Git and SourceTree, I knew wanted to create a similar commit-style application to record activites and &amp;ldquo;freeze&amp;rdquo; them in time. Not web-based, internet connected, or cross platform; just a no frills desktop application that does one thing and one thing only.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop a simple application to log daily activities at work.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Entries for each day are saved in a date-stamped text file&lt;/li&gt;
-&lt;li&gt;Each commit is time-stamped in the text file&lt;/li&gt;
-&lt;li&gt;Archive of log entries is accessible through the list in the left column&lt;/li&gt;
-&lt;li&gt;Text files show up as read only in the application, but are editable and searchable through the Windows File Explorer&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; C#&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt; &lt;a href=&#34;https://github.com/justinmklam/engineers-diary&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/engineers-diary/screencap2.PNG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/engineers-diary/screencap2.PNG /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Screencap of the Engineer&amp;#39;s Diary. Write in the &amp;#39;Description&amp;#39; and &amp;#39;Project&amp;#39; text boxes, then press &amp;#39;Commit&amp;#39; when complete.&lt;/p&gt;
-
-&lt;a href=/imgs/engineers-diary/screencap3.PNG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/engineers-diary/screencap3.PNG /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;After the &amp;#39;Commit&amp;#39; button is pressed, the entry is written or appended to a text file and displayed on screen.&lt;/p&gt;
-</description>
+      <description>Background: Between paper notebooks, post-it notes, OneNote, Evernote, and so many more, there is no shortage of ways to write things down. Each has its strengths and weaknesses, but none satisfied my requirements to act as a daily work log to record key events, thoughts, and milestones during my work day.
+My paper notebook is excellent for free-form thoughts, sketches, and calculations, but I would want to keep a separate notebook to keep track of these sequential events.</description>
     </item>
     
     <item>
@@ -282,73 +65,10 @@
       <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/mech-458-capstone/</guid>
-      <description>
-
-&lt;h3 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;How&lt;/strong&gt;: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;h3&gt;&lt;strong&gt;Requirements and Specifications&lt;/strong&gt;&lt;/h3&gt;
-&lt;p style=&#34;display: inline !important;&#34;&gt;&lt;strong&gt;Optical&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;ol&gt;
-    &lt;li&gt;Device must have a tolerance on distance measurement of 1 mm&lt;/li&gt;
-    &lt;li&gt;Device must have a camera circumferential resolution of 1.42°&lt;/li&gt;
-    &lt;li&gt;Device must have a 3D scan circumferential resolution of 1.42°&lt;/li&gt;
-    &lt;li&gt;Device must have an axial resolution of 1 mm&lt;/li&gt;
-&lt;/ol&gt;
-&lt;strong&gt;Mechanical&lt;/strong&gt;
-&lt;ol&gt;
-    &lt;li&gt;Device must be submersible&lt;/li&gt;
-    &lt;li&gt;Device must fit in a 3.5” ID pipe&lt;/li&gt;
-    &lt;li&gt;Device must have a minimum operating velocity of 10 mm/s&lt;/li&gt;
-    &lt;li&gt;Device must be operable using the existing test apparatus&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;&lt;strong&gt;Design Overview&lt;/strong&gt;&lt;/h3&gt;
-&lt;p style=&#34;text-align: justify;&#34;&gt;The final design of the prototype includes a camera module, laser module, and two conical mirrors. The basic functionality of the device is shown in the figure below. A red laser ring is generated by the laser module which is reflected by 90° on to the surface of the well casing. The camera’s vision is then reflected by 150° to capture the projected laser ring.&lt;/p&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/capstone/System-overview.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/capstone/System-overview.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Simplified diagram of scanning functionality.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Combined Modules&lt;/strong&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/capstone/Annotated-Combined-Modules_2-1.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/capstone/Annotated-Combined-Modules_2-1.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Overview of the optical imaging device.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Camera Module&lt;/strong&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/capstone/Camera-Module.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/capstone/Camera-Module.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Diagram of the camera module.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Laser Module&lt;/strong&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/capstone/Laser-Module.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/capstone/Laser-Module.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Diagram of the laser module.&lt;/p&gt;
-
-&lt;p&gt;&lt;h3&gt;System Evaluation&lt;/h3&gt;
-&lt;p style=&#34;text-align: justify;&#34;&gt;Our prototype was successful in recreating a 3D model of the pipe internals during unsubmerged operation, as shown through the figures below. However, we were unable to test the device in submerged conditions due to time constraints of the project.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p style=&#34;text-align: justify;&#34;&gt;&lt;strong&gt;Preliminary Testing and Calibration&lt;/strong&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/capstone/System-evaluation_5.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/capstone/System-evaluation_5.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Setup of the calibration grid with a green laser ring (left); Captured image (right)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Device Integration&lt;/strong&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/capstone/System-evaluation_2.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/capstone/System-evaluation_2.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Our device installed with the DarkVision lab equipment (left); Close up of the laser ring inside the well liner (right).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Post-Processing and Analysis&lt;/strong&gt;
-&lt;p style=&#34;text-align: justify;&#34;&gt;Four different exposure times and traversing speeds were tested to determine which camera parameters would generate adequate images for post-processing and analysis. From our tests, we determined that the imaging parameters resulting in an effective frame rate of 0.13 fps at a forward jog speed of 7 mm/s showed the most promising image slices of the well liner. To increase the slice resolution of the scan, the frame rate was increased to 1.3 fps which yielded visually poorer images, but our processing algorithms were still able to generate a 3D model of the well liner. A hue saturation value filter was used to detect the outer edge of the raw image.&lt;/p&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/capstone/System-evaluation_3.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/capstone/System-evaluation_3.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Captured laser ring by the camera through the conical mirror (left); Processed image (right)&lt;/p&gt;
-
-&lt;a href=/imgs/capstone/System-evaluation_4-1.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/capstone/System-evaluation_4-1.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Generated 3D model from the image slices.&lt;/p&gt;
-</description>
+      <description>Introduction Objective: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.
+How: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.
+Requirements and Specifications Optical
+ Device must have a tolerance on distance measurement of 1 mm Device must have a camera circumferential resolution of 1.</description>
     </item>
     
     <item>
@@ -357,26 +77,10 @@
       <pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/elec/power-supply/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Build a cheap, portable, variable DC power supply.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Limitations:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Only DC voltages available&lt;/li&gt;
-&lt;li&gt;Max current is a function of input power and desired voltage (I=P/V)&lt;/li&gt;
-&lt;li&gt;Current limiting feature is non-existent, so must be careful to not let the genie out of circuits&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/power_supply/powersupply.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/power_supply/powersupply.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Power supply in action.&lt;/p&gt;
-
-&lt;a href=/imgs/power_supply/IMG_20160525_143029.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/power_supply/IMG_20160525_143029.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Internals of the power supply.&lt;/p&gt;
-</description>
+      <description>Objective: Build a cheap, portable, variable DC power supply.
+Motivation: It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.
+Limitations:
+ Only DC voltages available Max current is a function of input power and desired voltage (I=P/V) Current limiting feature is non-existent, so must be careful to not let the genie out of circuits</description>
     </item>
     
     <item>
@@ -385,67 +89,9 @@
       <pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mecha/perfeggct/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; As part of our final year engineering course, we were tasked to create a mechatronics device of our choosing. This project was heavily inspired by &lt;a href=&#34;https://www.youtube.com/channel/UCckETVOT59aYw80B36aP9vw&#34;&gt;Matthias Wandel&lt;/a&gt; and his &lt;a href=&#34;https://www.youtube.com/watch?v=Cw9w1CZkTr0&#34;&gt;boiled egg hardness tester&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Functional Requirements:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Measure egg mass from strain gauge&lt;/li&gt;
-&lt;li&gt;Measure oscillation from accelerometer&lt;/li&gt;
-&lt;li&gt;Control LCD screen&lt;/li&gt;
-&lt;li&gt;Mechanical design and fabrication&lt;/li&gt;
-&lt;li&gt;Integration and user interaction study&lt;/li&gt;
-&lt;li&gt;C# interface&lt;/li&gt;
-&lt;li&gt;MATLAB data analysis&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Limitations:&lt;/strong&gt; This prototype was developed in 3 weeks during school and has approximately 80% repeatability.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Partner:&lt;/strong&gt; &lt;a href=&#34;http://justin-liang.com&#34;&gt;Justin Liang&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;embed-responsive embed-responsive-16by9&#34;&gt;
-  &lt;iframe class=&#34;embed-responsive-item&#34; src=https://www.youtube.com/embed/54d9iQcqX7Q&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;p class=&#34;caption&#34;&gt;Sixty second demo video of the device in action.&lt;/p&gt;
-
-&lt;a href=/imgs/perfeggct/CAD_4.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/CAD_4.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;CAD model of electronics inside the enclosure (transparency shown for clarity)&lt;/p&gt;
-
-&lt;a href=/imgs/perfeggct/Fritzing%20diagram.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/Fritzing%20diagram.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;PCB diagram.&lt;/p&gt;
-
-&lt;a href=/imgs/perfeggct/DSC03408.JPG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/DSC03408.JPG /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;PCB assembled.&lt;/p&gt;
-
-&lt;a href=/imgs/perfeggct/DSC03430.JPG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/DSC03430.JPG /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Dry fitting of components inside handle enclosure.&lt;/p&gt;
-
-&lt;a href=/imgs/perfeggct/IMG_0461_annotated.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/IMG_0461_annotated.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Annotated diagram of the final device.&lt;/p&gt;
-
-&lt;a href=/imgs/perfeggct/Raw%20signals.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/Raw%20signals.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Example data from five egg-jiggling trials.&lt;/p&gt;
-
-&lt;a href=/imgs/perfeggct/storage_1.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/storage_1.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;The PerfEggct stored in its natural habitat.&lt;/p&gt;
-
-&lt;a href=/imgs/perfeggct/IMG_0407.JPG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/IMG_0407.JPG /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Kitchen gadgets aren&amp;#39;t complete without a fancy photoshoot!&lt;/p&gt;
-
-&lt;a href=/imgs/perfeggct/IMG_0424.JPG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/perfeggct/IMG_0424.JPG /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Truly perf-egg-ct.&lt;/p&gt;
-
-&lt;p&gt;Interested in reading more about this project? Head over to &lt;a href=&#34;http://www.instructables.com/id/PerfEGGct-Engineering-the-Perfect-Soft-Boiled-Egg/&#34;&gt;Instructables&lt;/a&gt; for more details! And if you&amp;rsquo;re &lt;em&gt;really&lt;/em&gt; interested, feel free to read our glorious 35-page final report &lt;a href=&#34;http://justinmklam.com/files/MECH 423 Final Project Report.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Background: When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
+ &amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman
+ Objective: Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.</description>
     </item>
     
     <item>
@@ -454,41 +100,11 @@
       <pubDate>Sun, 19 Jul 2015 12:36:28 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/software/haikuza/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop an algorithm to generate haikus using song lyrics.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; Because computational linguistics are cool.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Project:&lt;/strong&gt; &lt;a href=&#34;https://twitter.com/thehaikuza&#34;&gt;twitter.com/thehaikuza&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Scrapes &lt;a href=&#34;http://www.vancouver.virginradio.ca/broadcasthistory.aspx&#34;&gt;Virgin Radio&amp;rsquo;s broadcast history&lt;/a&gt; to find recently played songs&lt;/li&gt;
-&lt;li&gt;Creates a song-based haiku queue in &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1HazfuywY_MrmQ49fxSpHOMA8QXBUYVhEDx1e4qhjbqU/edit?usp=sharing&#34;&gt;Google Sheets&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Generates a haiku using the queue as a reference and posts it on Twitter&lt;/li&gt;
-&lt;li&gt;Checks for new tweets every 5 minutes and generates a relevant haiku, if requested&lt;/li&gt;
-&lt;li&gt;Finds all song lyrics from &lt;a href=&#34;http://lyrics.wikia.com/Lyrics_Wiki&#34;&gt;Lyrics Wikia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Runs on a Raspberry Pi&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Challenges:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Formulaically counting syllables&lt;/li&gt;
-&lt;li&gt;Developing a context-free language model&lt;/li&gt;
-&lt;li&gt;Creating phrases that actually make sense&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; Python 2.7.9&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt; &lt;a href=&#34;https://github.com/justinmklam/project-haikuza&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Screencap of @thehaikuza&amp;#39;s Twitter profile&lt;/p&gt;
-
-&lt;a href=/imgs/haikuza/IMG_20150803_180047-1024x768.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/haikuza/IMG_20150803_180047-1024x768.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Raspberry Pi 1 Model B running @thehaikuza, 24/7!&lt;/p&gt;
-</description>
+      <description>Objective: Develop an algorithm to generate haikus using song lyrics.
+Motivation: Because computational linguistics are cool.
+Project: twitter.com/thehaikuza
+Features:
+ Scrapes Virgin Radio&amp;rsquo;s broadcast history to find recently played songs Creates a song-based haiku queue in Google Sheets Generates a haiku using the queue as a reference and posts it on Twitter Checks for new tweets every 5 minutes and generates a relevant haiku, if requested Finds all song lyrics from Lyrics Wikia Runs on a Raspberry Pi  Challenges:</description>
     </item>
     
     <item>
@@ -497,40 +113,8 @@
       <pubDate>Thu, 19 Feb 2015 12:36:19 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/software/external-ballistics/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth.&lt;/p&gt;
-
-&lt;p&gt;One solution is to connect a computer to a manual targeting system (ie. a scope) and estimate the corrected target location by accounting for these external factors.  The user may then line the manual targeting system up with the corrected target location, hoping to the high heavens that the target will be hit upon releasing the projectile.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Determine the required release angle given the muzzle velocity and target distance, accounting for external factors.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Limitations:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Only the corrected vertical distance is calculated&lt;/li&gt;
-&lt;li&gt;Values have not yet been validated for accuracy&lt;/li&gt;
-&lt;li&gt;Purely mathematical simulations lack the accuracy provided by simulations backed by empirical data&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; Python(x,y) 2.7.9.0&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all_missed.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all_missed.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Visualization of release angles between 0 and 90° given the same muzzle velocity.&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-simulation-flowchart.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-simulation-flowchart.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Flowchart of the algorithm to determine the required release angle.&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Visualization of the algorithm on the release angle increment. The magenta trajectory is 5° higher than the red trajectory; the green is 2.5° higher than the magenta, and so on.&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle-exaggerated.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle-exaggerated.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Predicted trajectory on flat ground.&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_18-deg-Scope-Angle.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_18-deg-Scope-Angle.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Predicted trajectory when target is uphill from user.&lt;/p&gt;
-
-&lt;a href=/imgs/external_ballistics/Ballistics-Simulation_-9-deg-Scope-Angle.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/external_ballistics/Ballistics-Simulation_-9-deg-Scope-Angle.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Predicted trajectory when target is downhill from user.&lt;/p&gt;
-</description>
+      <description>Background: including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth.
+One solution is to connect a computer to a manual targeting system (ie. a scope) and estimate the corrected target location by accounting for these external factors. The user may then line the manual targeting system up with the corrected target location, hoping to the high heavens that the target will be hit upon releasing the projectile.</description>
     </item>
     
     <item>
@@ -539,51 +123,9 @@
       <pubDate>Mon, 24 Nov 2014 12:37:55 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/mech-328-trailrider/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility.  It is intended for a seated rider propelled and balanced by assistants.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Expand the range of both riders and assistants who can ride safely use the Black Diamond TrailRider™.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;How:&lt;/strong&gt; As a team of seven mechanical engineering undergrads, we explored a range of areas for improvement and developed a new design to incorporate these features.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Existing Problems:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul style=&#34;text-align: left;&#34;&gt;
-    &lt;li&gt;Device relies entirely on assistants for balance, which may be physically demanding for some assistants&lt;/li&gt;
-    &lt;li&gt;Riders generally find the current device too passive&lt;/li&gt;
-    &lt;li&gt;Single-wheel design provides difficulty in rolling over abrupt trail features&lt;/li&gt;
-    &lt;li&gt;Single-wheel provides limited cushioning over rough terrain&lt;/li&gt;
-    &lt;li&gt;Device is difficult to transport and store when space is limited&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Our Improvements:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li style=&#34;text-align: left;&#34;&gt;Incorporation of a 255 W electric power assist feature&lt;/li&gt;
-    &lt;li style=&#34;text-align: left;&#34;&gt;Implementation of lever-propulsion handles for rider engagement&lt;/li&gt;
-    &lt;li style=&#34;text-align: left;&#34;&gt;Integrated frame and suspension design for increased shock absorption&lt;/li&gt;
-    &lt;li style=&#34;text-align: left;&#34;&gt;Increased portability&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Client:&lt;/strong&gt; British Columbia Mobility Opportunities Society (BCMOS)&lt;/p&gt;
-
-&lt;a href=/imgs/trailrider/Original-TR-in-use.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/trailrider/Original-TR-in-use.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Original TrailRider in use. (Image courtesy of BCMOS)&lt;/p&gt;
-
-&lt;a href=/imgs/trailrider/Original-TR-CAD.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/trailrider/Original-TR-CAD.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;How the original TrailRider folds for transportation.&lt;/p&gt;
-
-&lt;a href=/imgs/trailrider/TrailRider-Overview.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/trailrider/TrailRider-Overview.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Our TrailRider in the folded configuration, 56% smaller than the current design.&lt;/p&gt;
-
-&lt;a href=/imgs/trailrider/Kickstand-diagram.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/trailrider/Kickstand-diagram.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Diagram showing the how the kickstand is integrated with the assistant&amp;#39;s push handles.&lt;/p&gt;
-
-&lt;a href=/imgs/trailrider/Side-view_annotated-large.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/trailrider/Side-view_annotated-large.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Overview of our redesigned TrailRider.&lt;/p&gt;
-
-&lt;a href=/imgs/trailrider/Suspension_annotated-large.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/trailrider/Suspension_annotated-large.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Close up of the integrated frame and suspension system.&lt;/p&gt;
-</description>
+      <description>Background: The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility. It is intended for a seated rider propelled and balanced by assistants.
+Objective: Expand the range of both riders and assistants who can ride safely use the Black Diamond TrailRider™.
+How: As a team of seven mechanical engineering undergrads, we explored a range of areas for improvement and developed a new design to incorporate these features.</description>
     </item>
     
     <item>
@@ -592,54 +134,8 @@
       <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/coop-drill-cover/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Background:&lt;/strong&gt; Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries.  A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;: &lt;a href=&#34;http://canjsurg.ca/wp-content/uploads/2015/10/58-4-S157.pdf&#34;&gt;Surgical Device Innovation for Low-Resource Settings: An Alternative for Bone Drilling&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Company&lt;/strong&gt;: &lt;a href=&#34;http://arbutusmedical.ca&#34;&gt;Arbutus Medical&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;the-drill-cover-solution&#34;&gt;The Drill Cover Solution&lt;/h3&gt;
-
-&lt;p&gt;From the Arbutus Medical &lt;a href=&#34;http://arbutusmedical.ca/human-health/products/drill-cover-hex&#34;&gt;product page&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The DrillCover Hex is a sterilizable and reusable fully-sealed barrier that transforms a hardware drill into surgical grade drill. Our kit includes a drill and cover to provide the precision, sterility, and adaptability needed in low-resource settings.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;a href=/imgs/drill_cover/DrillCoverPhotobyMasashiKarasawa.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/DrillCoverPhotobyMasashiKarasawa.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;The drill cover solution.&lt;/p&gt;
-
-&lt;a href=/imgs/drill_cover/drillcover.PNG&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/drillcover.PNG /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Detailed view of the drill cover.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-user-study&#34;&gt;The User Study&lt;/h3&gt;
-
-&lt;p&gt;Owing to limited access to surgical power drills, orthopedic surgeons in low-resource settings commonly use manual drills or nonsterile hardware drills. We propose the use of a drill cover solution: a sterilizable fabric bag plus sealed surgical chuck adaptor to permit the safe use of hardware drills for orthopedic surgery.
-The purpose of this study was to compare the drilling performance of covered hardware drills with manual drills and standard surgical power drills.
-&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;a href=/imgs/drill_cover/DC-Study_2.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/DC-Study_2.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;From left to right: commercial surgical drill, drill cover solution, manual hand-crank drill.&lt;/p&gt;
-
-&lt;a href=/imgs/drill_cover/DC-Study_3.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/DC-Study_3.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Operation of the test apparatus.&lt;/p&gt;
-
-&lt;a href=/imgs/drill_cover/DC-Study_4.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/DC-Study_4.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Method to easily measure the plunge depth through the surrogate bone. The platform moves down as the drill bit pushes against it. The calipers measure the resulting depth.&lt;/p&gt;
-
-&lt;a href=/imgs/drill_cover/DC-Study_1.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/DC-Study_1.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Stamping method to consistently mark targets for the drilling tests&lt;/p&gt;
-
-&lt;a href=/imgs/drill_cover/Hole-quality-comparison.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/Hole-quality-comparison.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Comparison of hole quality. A well drilled hole face (left) compared to two holes drilled off axis (right).&lt;/p&gt;
-
-&lt;a href=/imgs/drill_cover/Bone-model-render-1024x520.jpg&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/drill_cover/Bone-model-render-1024x520.jpg /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Test apparatus, modeled in SolidWorks.&lt;/p&gt;
-</description>
+      <description>Background: Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.
+Objective: Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.</description>
     </item>
     
     <item>
@@ -648,28 +144,10 @@ The purpose of this study was to compare the drilling performance of covered har
       <pubDate>Fri, 29 Aug 2014 12:37:42 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/car2go/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Design a roof-mounted bowling rig for a car2go marketing event.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;: Use a non-permanent method to securely attach the apparatus to the roof.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Venue&lt;/strong&gt;: 2014 Vancouver Fringe Festival&lt;/p&gt;
-
-
-&lt;div id=&#34;fb-root&#34;&gt;&lt;/div&gt;
-&lt;script&gt;(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = &#34;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.6&#34;;
-fjs.parentNode.insertBefore(js, fjs);
-}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
-
-&lt;div class=&#34;fb-post&#34; data-href=https://www.facebook.com/video.php?v&amp;#61;10154557145565524 data-height=&#34;466&#34;&gt;
-	&lt;div class=&#34;fb-xfbml-parse-ignore&#34;&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;br&gt;&lt;br&gt;
-</description>
+      <description>Objective: Design a roof-mounted bowling rig for a car2go marketing event.
+Constraints: Use a non-permanent method to securely attach the apparatus to the roof.
+Venue: 2014 Vancouver Fringe Festival
+(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = &#34;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.6&#34;;fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));</description>
     </item>
     
     <item>
@@ -678,55 +156,10 @@ fjs.parentNode.insertBefore(js, fjs);
       <pubDate>Mon, 18 Aug 2014 22:12:57 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/bamboo-bike/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective&lt;/strong&gt;: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.&lt;/p&gt;
-            
-
-&lt;p&gt;&lt;strong&gt;Challenges&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li style=&#34;text-align: left;&#34;&gt;Constructing a frame jig to allow freedom around joints for carbon-fibre layup&lt;/li&gt;
-    &lt;li style=&#34;text-align: left;&#34;&gt;Accounting for the non-uniformity of bamboo poles at the frame lugs&lt;/li&gt;
-    &lt;li style=&#34;text-align: left;&#34;&gt;Maintaining compatibility with standard bicycle components&lt;/li&gt;
-    &lt;li style=&#34;text-align: left;&#34;&gt;Ensuring the frame is treated for typical&#34;Wet&#34; Coast weather&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Awards:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;First Prize - &lt;a href=&#34;http://www.instructables.com/contest/handtoolsonly/&#34; target=&#34;_blank&#34;&gt;Hand Tools Only Instructables Contest&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;First Prize - &lt;a href=&#34;http://www.instructables.com/contest/teachit/&#34; target=&#34;_blank&#34;&gt;Teach It! Instructables Contest, Sponsored by Dremel&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/Bike-frame-geometry-1024x567.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Track bicycle custom geometry.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/Drawing-Bike-frame-dimensions-1024x680.png&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Frame dimensions with tubes shown to determine the required cut lengths of bamboo.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/Bamboo-bike-in-jig-1-1024x572.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Frame jig modeled in SolidWorks.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/2013-09-15-14.21.10-1024x768.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Bamboo poles after heat treatment in the oven, preparing for the next heat treatment.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/05-IMG_3962.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Dry fitting of bamboo poles after mitering.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/07-IMG_3968.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Bottom bracket junction with mitered bamboo.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/11-IMG_3985-1024x768.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Slotted bamboo to fit the dropouts.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/IMG_20140817_143412-1024x768.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Frame wrapped, sanded, and ready for finishing details.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/IMG_20140817_153701-768x1024.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Applying the final touches to the bottom bracket.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a&gt;&lt;img class=&#34;img-responsive img-content&#34; src=&#34;http://justinmklam.com/imgs/bamboo_bike/IMG_5359-e1424407598804.jpg&#34; /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Build complete and ready to roll.&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;For a detailed step-by-step guide, head over to my &lt;a href=&#34;http://www.instructables.com/id/Building-a-Carbon-Fibre-Bamboo-Bicycle-From-Scratc/&#34; target=&#34;_blank&#34;&gt;Instructable&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Objective: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.
+Challenges:
+ Constructing a frame jig to allow freedom around joints for carbon-fibre layup Accounting for the non-uniformity of bamboo poles at the frame lugs Maintaining compatibility with standard bicycle components Ensuring the frame is treated for typical&#34;Wet&#34; Coast weather  Awards:
+ First Prize - Hand Tools Only Instructables Contest First Prize - Teach It!</description>
     </item>
     
     <item>
@@ -744,18 +177,57 @@ fjs.parentNode.insertBefore(js, fjs);
       <pubDate>Sun, 12 Jan 2014 12:25:44 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/software/photo-editing/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt; Develop a script to find and remove any differences in a series of photos.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; &lt;a href=&#34;http://toomanyadapters.com/how-to-remove-people-travel-photos-photoshop/&#34;&gt;How to Remove People From Your Travel Using Photoshop&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Framework:&lt;/strong&gt; MATLAB&lt;/p&gt;
-
-&lt;a href=/imgs/photo_editing/Image-test_all.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/photo_editing/Image-test_all.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Script takes any number of images (preferably taken on a tripod) and combines them into one cleaned-up image.&lt;/p&gt;
-
-&lt;a href=/imgs/photo_editing/Photo-editing-script-algorithm.png&gt;&lt;img class=&#34;img-responsive img-content&#34; src=/imgs/photo_editing/Photo-editing-script-algorithm.png /&gt;&lt;/a&gt;
-&lt;p class=&#34;caption&#34;&gt;Flowchart of the implemented algorithm.&lt;/p&gt;
-</description>
+      <description>Objective: Develop a script to find and remove any differences in a series of photos.
+Motivation: How to Remove People From Your Travel Using Photoshop
+Framework: MATLAB
+Script takes any number of images (preferably taken on a tripod) and combines them into one cleaned-up image.
+Flowchart of the implemented algorithm.</description>
+    </item>
+    
+    <item>
+      <title>Co-op: The Age Effect on Bicycle Helmets</title>
+      <link>http://justinmklam.com/projects/mech/coop-mea/</link>
+      <pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/projects/mech/coop-mea/</guid>
+      <description>Objective: Determine if age has an effect on the mechanical properties of bicycle helmets.
+Tasks:
+ Conducted 1630 helmet impact attenuation tests to measure the effect of age and use on bicycle helmet foam Developed scripts in MATLAB to autonomously post-process the impact data and organize information according to existing helmet databases Wrote the Methods section of the research report to be submitted to the Accident Prevention &amp;amp; Analysis Journal Assisted in protocol development of the helmet and foam core impact attenuation tests  Company: MEA Forensic Engineers &amp;amp; Scientists</description>
+    </item>
+    
+    <item>
+      <title>MECH 223: Hovercraft Competition</title>
+      <link>http://justinmklam.com/projects/mech/mech-223-hovercraft/</link>
+      <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/projects/mech/mech-223-hovercraft/</guid>
+      <description>Objective: Construct a remote controlled hovercraft to compete in a class-wide battle of speed, cargo capacity, and maneuverability.
+Constraints:
+ Teams were given 3 weeks to research, conceptualize, test, and build their hovercrafts. Budget was extremely limited as costs came out of our own pockets.  Result: 5th place out of 30 teams
+ Various fan and chassis designs to provide lift.
+ Intermediate prototypes prior to our final design.</description>
+    </item>
+    
+    <item>
+      <title>LEGO Headphones</title>
+      <link>http://justinmklam.com/projects/mech/lego-headphones/</link>
+      <pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/projects/mech/lego-headphones/</guid>
+      <description>Background: I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go.</description>
+    </item>
+    
+    <item>
+      <title>Altoids Portable Charger</title>
+      <link>http://justinmklam.com/projects/elec/altoids/</link>
+      <pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/projects/elec/altoids/</guid>
+      <description>Background: Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback.
+Objective: Build a simple, rechargable battery pack to keep the tunes playing long road trips.
+Overview of the fantastic charging device.
+The iPod is alive!
+President&amp;#39;s Choice rechargable batteries and some janky wiring is all it took.</description>
     </item>
     
   </channel>

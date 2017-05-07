@@ -77,6 +77,12 @@ src="/imgs/sous-vide/IMG_8454.jpg" >}}
 {{<img caption="Reveal of perfboard craftsmanship using the gobs-of-solder trace method."
 src="/imgs/sous-vide/IMG_8432.jpg" >}}
 
+{{<img caption="I designed the panel in SolidWorks, printed out the layout, taped it to a store bought enclosure panel and used a Dremel to carve out the holes."
+src="/imgs/sous-vide/iUJLGdd.jpg" >}}
+
+{{<img caption="Dry fitting after a bit of filing to clean up the edges and corners."
+src="/imgs/sous-vide/DCfOE0B.jpg" >}}
+
 {{<img caption="Programming the ESP8266."
 src="/imgs/sous-vide/IMG_8400.jpg" >}}
 

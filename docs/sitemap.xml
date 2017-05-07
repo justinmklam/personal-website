@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://justinmklam.com/</loc>
-    <lastmod>2017-02-05T12:28:27-08:00</lastmod>
+    <loc>http://justinmklam.com/sections/mechatronics/</loc>
+    <lastmod>2016-09-24T22:18:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/sections/mechanical/</loc>
+    <lastmod>2016-09-24T17:34:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/sections/electrical/</loc>
+    <lastmod>2016-09-24T17:34:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/sections/software/</loc>
+    <lastmod>2016-09-24T22:21:29-07:00</lastmod>
   </url>
   
   <url>
@@ -122,23 +137,37 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/sections/mechatronics/</loc>
+    <loc>http://justinmklam.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/</loc>
     <lastmod>2016-09-24T22:18:22-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/sections/mechanical/</loc>
-    <lastmod>2016-09-24T17:34:23-07:00</lastmod>
+    <loc>http://justinmklam.com/pages/</loc>
+    <lastmod>2016-09-24T16:56:13-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/sections/electrical/</loc>
-    <lastmod>2016-09-24T17:34:23-07:00</lastmod>
+    <loc>http://justinmklam.com/projects/</loc>
+    <lastmod>2017-02-05T12:28:27-08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/sections/software/</loc>
-    <lastmod>2016-09-24T22:21:29-07:00</lastmod>
+    <loc>http://justinmklam.com/sections/</loc>
+    <lastmod>2016-09-24T22:18:22-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
