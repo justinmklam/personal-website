@@ -1,12 +1,12 @@
 +++
 clickable = true
 date = "2016-10-22T20:58:10-07:00"
-hidden = false
+hidden = true
 image = "/imgs/bandsaw/bandsaw_thumb.jpg"
 summary = "It's generally known that cheap tools are usually not worth the trouble, but the deal on this bandsaw was simply too hard to pass up. With only a missing table, it was merely a quick woodworking project away from restoring its full functionality."
 tagline = "Making do with a $50 bandsaw off Craigslist."
 title = "Bargain Bandsaw Project"
-type = "mech"
+type = ""
 +++
 
 __Background:__ High school woodworking was awesome. Making things is awesome. Making things that make other things is even more awesome. Making things that make other things at home by fixing used tools is the awesome-est. 

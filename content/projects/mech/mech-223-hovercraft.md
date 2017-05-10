@@ -1,7 +1,7 @@
 +++
 clickable = true
 date = "2013-04-20T12:22:15-07:00"
-hidden = false
+hidden = true
 image = "/imgs/hovercraft/905264_10200347234314740_147853883_o-e1458003673110-300x300.jpg"
 summary = "Teams were given 3 weeks to research, conceptualize, test, and refine their hovercrafts to compete in a class-wide battle of speed, cargo capacity, and maneuverability."
 tagline = "Racing a remote-controlled hovercraft made of cardboard, plastic bags, and pink foam."
