@@ -6,10 +6,37 @@
     <description>Recent content in Projects on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Feb 2017 12:28:27 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 09 May 2017 21:26:18 -0700</lastBuildDate>
     
 	<atom:link href="http://justinmklam.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Battery Power Protection and Regulation PCB</title>
+      <link>http://justinmklam.com/projects/elec/mistywest-mvs/</link>
+      <pubDate>Tue, 09 May 2017 21:26:18 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/projects/elec/mistywest-mvs/</guid>
+      <description>Background:
+Objective:
+Motivation:
+Features:
+ Foo 1 Foo 2   Don&amp;rsquo;t worry, the numbers don&amp;rsquo;t really matter  TEXT
+TEXT</description>
+    </item>
+    
+    <item>
+      <title>Overhead Robotic Gantry for Tethered VR Headsets</title>
+      <link>http://justinmklam.com/projects/mecha/vr-gantry/</link>
+      <pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate>
+      
+      <guid>http://justinmklam.com/projects/mecha/vr-gantry/</guid>
+      <description>Objective: Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.
+Motivation: An extravagant party prop for an evening at CES 2017, hosted by MistyWest.
+Features:
+ CoreXY planar gantry design System built with 8020 aluminum extrusions and laser cut acrylic components Stepper motor control through Teensy 3.2 HTC Vive pose tracking through C++ Patent pending  Skills:
+ Mechanical design with rapid prototyping methods C++ software development Arduino-based firmware development  Sources:</description>
+    </item>
     
     <item>
       <title>ESP8266 Sous Vide Controller</title>
@@ -21,20 +48,6 @@
 Motivation: To get in on this cooking fad without dropping fat stacks of cash on an immersion circulator.
 Features:
  Crisp 0.96&amp;rdquo; OLED display Pushbutton rotary encoder provides simple user interaction Removable temperature plug through standard 3-pos audio connector Temperature controlled outlet to be used with any heating element (ie. rice cooker, slow cooker, etc.) Always on outlet for water circulator Temperature logging over wifi  Source: Github</description>
-    </item>
-    
-    <item>
-      <title>Overhead Robotic Gantry for Tethered VR Headsets</title>
-      <link>http://justinmklam.com/projects/mecha/vr-gantry/</link>
-      <pubDate>Fri, 11 Nov 2016 09:26:50 -0800</pubDate>
-      
-      <guid>http://justinmklam.com/projects/mecha/vr-gantry/</guid>
-      <description>Background:
-Objective:
-Motivation:
-Features:
- Foo 1 Foo 2   Don&amp;rsquo;t worry, the numbers don&amp;rsquo;t really matter  TEXT
-TEXT</description>
     </item>
     
     <item>

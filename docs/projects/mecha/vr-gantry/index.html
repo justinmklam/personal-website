@@ -74,34 +74,114 @@
         
         <div class="col-sm-8 col-centered">
             <h1 class="page-header">Overhead Robotic Gantry for Tethered VR Headsets</h1>		            
-            <p><strong>Background:</strong></p>
+            
 
-<p><strong>Objective:</strong></p>
+<p><strong>Objective:</strong> Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.</p>
 
-<p><strong>Motivation:</strong></p>
+<p><strong>Motivation:</strong> An extravagant party prop for an evening at CES 2017, hosted by MistyWest.</p>
 
 <p><strong>Features:</strong></p>
 
 <ul>
-<li>Foo 1</li>
-<li>Foo 2</li>
+<li>CoreXY planar gantry design</li>
+<li>System built with 8020 aluminum extrusions and laser cut acrylic components</li>
+<li>Stepper motor control through Teensy 3.2</li>
+<li>HTC Vive pose tracking through C++</li>
+<li>Patent pending</li>
 </ul>
 
-<ol>
-<li>Don&rsquo;t worry, the</li>
-<li>numbers don&rsquo;t</li>
-<li>really matter</li>
-</ol>
+<p><strong>Skills:</strong></p>
 
-<p><a href="HYPERLINK">TEXT</a></p>
+<ul>
+<li>Mechanical design with rapid prototyping methods</li>
+<li>C++ software development</li>
+<li>Arduino-based firmware development</li>
+</ul>
 
-<a href=/imgs/SOURCE><img class="img-responsive img-content" src=/imgs/SOURCE /></a>
-<p class="caption">TEXT</p>
+<p><strong>Sources:</strong></p>
+
+<ul>
+<li><a href="https://github.com/MistyWestAdmin">MistyWest Github</a></li>
+<li>Medium blog post titled <a href="https://medium.com/@mistywest/tired-of-cables-in-virtual-reality-we-are-too-efeab5606bf0"><em>Tired of cables in VR? We are too.</em></a></li>
+<li>CES Founders and Friends 2017 Photo Gallery by <a href="https://natalialeva.shootproof.com/gallery/3918977/home">Natalia Leva</a></li>
+</ul>
+
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src=https://www.youtube.com/embed/zULBxDJVaHs></iframe>
+</div>
+<p class="caption">Demo video of the gantry in action.</p>
+
+<a href=/imgs/vr-gantry/DSC1764.jpg><img class="img-responsive img-content" src=/imgs/vr-gantry/DSC1764.jpg /></a>
+<p class="caption">The gantry being used at a penthouse party hosted by MistyWest during CES 2017. (Photo by Natalia Leva)</p>
+
+<h2 id="the-development-story">The Development Story</h2>
+
+<p>We wanted a solution to increase and maintain presence in virtual reality; having to worry about tripping over the cable takes away from it. What we needed was a way to mimic a cable sherpa, following our every movement to prevent tension in the cable and entanglement around our legs. Whether we were moving forward, backward, left, right, or turning around, we wanted a way to roam freely as if virtual reality was already wireless.</p>
+
+<h3 id="stage-1-design-and-testing">Stage 1: Design and Testing</h3>
+
+<p>We wanted to make this as quickly as possible, so I designed the rig using off-the-shelf parts and laser cut acrylic parts.</p>
+
+<a href=/imgs/vr-gantry/CAD.png><img class="img-responsive img-content" src=/imgs/vr-gantry/CAD.png /></a>
+<p class="caption">The gantry frame designed in SolidWorks 2017.</p>
+
+<p>Preliminary tests were less than stellar. I initially used relative position commands, but as the clip below shows, but it wasn&rsquo;t responsive enough for practical use.</p>
+
+<a href=/imgs/vr-gantry/giphy_0.gif><img class="img-responsive img-content" src=/imgs/vr-gantry/giphy_0.gif /></a>
+<p class="caption">Initial testing of the tracking using relative position commands, almost as if it has a mind of its own.</p>
+
+<p>Changing the motor control to use absolute coordinates instead of relative showed promising results.</p>
+
+<a href=/imgs/vr-gantry/giphy_1.gif><img class="img-responsive img-content" src=/imgs/vr-gantry/giphy_1.gif /></a>
+<p class="caption">Revised tracking using absolute position commands for significantly improved precision.</p>
+
+<h3 id="stage-2-user-testing">Stage 2: User Testing</h3>
+
+<p>The results were so promising, in fact, that we decided to strap it to the ceiling and do some user testing. The results were&hellip; Loud due to the rattling and vibrations from the stepper motors. System responsiveness was slow, so more work needed to be done.</p>
+
+<a href=/imgs/vr-gantry/giphy_2.gif><img class="img-responsive img-content" src=/imgs/vr-gantry/giphy_2.gif /></a>
+<p class="caption">First user test with the gantry attached to the lab ceiling (rotation tracking not yet implemented).</p>
+
+<p>Many revisions later, and the rig was finally working as expected!</p>
+
+<a href=/imgs/vr-gantry/giphy_3.gif><img class="img-responsive img-content" src=/imgs/vr-gantry/giphy_3.gif /></a>
+<p class="caption">After many hardware, software, and firmware tweaks, the gantry finally became usable.</p>
+
+<!--<a href=/imgs/vr-gantry/vr-gantry.gif><img class="img-responsive img-content" src=/imgs/vr-gantry/vr-gantry.gif /></a>
+<p class="caption">Achievement unlocked: Freedom of movement with wired VR.</p>-->
+
+<h3 id="stage-3-making-it-portable">Stage 3: Making it &ldquo;Portable&rdquo;</h3>
+
+<p>Since this was an internal project with <a href="https://mistywest.com/">MistyWest</a>, the value was in showing this prototype around. The social media content was one thing, but physically bringing it around was thought to have additional &ldquo;wow&rdquo; factors. Since CES 2017 was coming up and MistyWest would be hosting a penthouse party during one of the evenings, it was time to make this thing free standing.</p>
+
+<p>Continuing the theme with 8020 extrusions, the external frame was assembled and tested.</p>
+
+<a href=/imgs/vr-gantry/IMG_20161212_141058.jpg><img class="img-responsive img-content" src=/imgs/vr-gantry/IMG_20161212_141058.jpg /></a>
+<p class="caption">Construction of the free standing frame in preparation for bringing the rig to CES.</p>
+
+<a href=/imgs/vr-gantry/IMG_20161216_161302.jpg><img class="img-responsive img-content" src=/imgs/vr-gantry/IMG_20161216_161302.jpg /></a>
+<p class="caption">Testing the free standing setup to gain confidence in its sturdiness.</p>
+
+<a href=/imgs/vr-gantry/IMG_20161222_114418.jpg><img class="img-responsive img-content" src=/imgs/vr-gantry/IMG_20161222_114418.jpg /></a>
+<p class="caption">Yes, it is in fact portable!</p>
+
+<h3 id="stage-4-mission-complete">Stage 4: Mission Complete</h3>
+
+<p>On January 6, 2017, the rig was set up in Las Vegas and (after some headache and remote debugging) the rig came alive at the <a href="https://mistywest.com/founders-friends-2017/">Founders and Friends 2017</a>. It was a huge hit amongst the tech enthusiasts and ran beautifully through the night.</p>
+
+<a href=/imgs/vr-gantry/DSC1873.jpg><img class="img-responsive img-content" src=/imgs/vr-gantry/DSC1873.jpg /></a>
+<p class="caption">People showing interest in the high-tech marriage between robotics and virtual reality. (Photo by Natalia Leva)</p>
+
+<a href=/imgs/vr-gantry/DSC1658.jpg><img class="img-responsive img-content" src=/imgs/vr-gantry/DSC1658.jpg /></a>
+<p class="caption">Founders and Friends 2017. (Photo by Natalia Leva)</p>
+
+<p>The rig is now retired and sleeps soundly in its storage container. On to the next project!</p>
 
 			
 			
 			<br>
-            <p class="datestamp"><span class="glyphicon glyphicon-time"></span> Published on November 11, 2016</p>
+            <p class="datestamp"><span class="glyphicon glyphicon-time"></span> Published on April 4, 2017</p>
 			
 			
         </div>
