@@ -1,10 +1,10 @@
 +++
-hidden = false
+hidden =    false
 clickable = true
-image = "http://placehold.it/300x300"
-type = ""
-summary = ""
-tagline = ""
+image =     "http://placehold.it/300x300"
+type =      "" <!-- mech/mecha/elec/software -->
+summary =   ""
+tagline =   ""
 +++
 
 __Background:__
@@ -24,5 +24,10 @@ __Features:__
 
 [TEXT](HYPERLINK)
 
-{{<img caption="TEXT"
+{{< img caption="TEXT"
 src="/imgs/SOURCE" >}}
+
+{{< fb-video src="SOURCE" >}}
+
+{{< vid caption="TEXT" 
+src="SOURCE" >}}

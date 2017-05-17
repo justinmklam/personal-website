@@ -7,13 +7,13 @@ Increasing my online presence by showcasing projects that I've worked on over th
 
 # How To Use
 ## Basic Hugo commands
-To compile the website where output is in 'public' folder:
+To compile the website where output is in 'docs' folder:
+```
+hugo
+```
+or to include drafts,
 ```
 hugo -D
-```
-or
-```
-hugo --buildDrafts
 ```
 To start a local server for live website testing:
 ```
@@ -22,7 +22,7 @@ hugo server -D
 ## Adding Content
 To create a new project post in the 'content' folder:
 ```
-hugo new /posts/[CATEGORY]/[TITLE].md
+hugo new /projects/[CATEGORY]/[TITLE].md
 ```
 __Note:__ Upload project images, files, etc. in the 'static' folder.
 
