@@ -48,6 +48,15 @@
     </item>
     
     <item>
+      <title>Blog</title>
+      <link>http://justinmklam.com/blog-index/</link>
+      <pubDate>Sun, 14 May 2017 23:08:47 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Battery Power Protection and Regulation PCB</title>
       <link>http://justinmklam.com/projects/elec/mistywest-mvs/</link>
       <pubDate>Tue, 09 May 2017 21:26:18 -0700</pubDate>
@@ -59,6 +68,15 @@ Motivation:
 Features:
  Foo 1 Foo 2   Don&amp;rsquo;t worry, the numbers don&amp;rsquo;t really matter  TEXT
 TEXT</description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>http://justinmklam.com/pages/blog/</link>
+      <pubDate>Fri, 14 Apr 2017 16:56:13 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/pages/blog/</guid>
+      <description></description>
     </item>
     
     <item>

@@ -1,13 +1,12 @@
 +++
 clickable = true
-date = "2017-04-04T09:26:50-08:00"
-hidden = false
-image = "/imgs/vr-gantry/vr-gantry-300x300.gif"
+date    = "2017-04-04T09:26:50-08:00"
+hidden  = false
+image   = "/imgs/vr-gantry/vr-gantry-300x300.gif"
 summary = "Current high-performance virtual reality headsets require cable connections to a host computer. For room-scale VR, users must always be mindful of this cable since it poses not only as a tripping hazard, but also a detraction from the otherwise immersive VR experience. This autonomous cable management system is one solution to sucky cables."
 tagline = "Tired of cables breaking presence in virtual reality? We are too."
-title = "Overhead Robotic Gantry for Tethered VR Headsets"
-type = "mecha"
-
+title   = "Overhead Robotic Gantry for Tethered VR Headsets"
+type    = "mecha"
 +++
 
 __Objective:__ Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.
@@ -47,8 +46,9 @@ We wanted a solution to increase and maintain presence in virtual reality; havin
 
 We wanted to make this as quickly as possible, so I designed the rig using off-the-shelf parts and laser cut acrylic parts.
 
-{{<img caption="The gantry frame designed in SolidWorks 2017."
-src="/imgs/vr-gantry/CAD.png" >}}
+<div class="embed-responsive embed-responsive-16by9"><iframe src="https://sketchfab.com/models/3be6275ae3c048098c2c777d7817ff26/embed?autostart=1&amp;preload=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+</div>
+<p class="caption">The gantry frame designed in SolidWorks 2017.</p>
 
 Preliminary tests were less than stellar. I initially used relative position commands, but as the clip below shows, but it wasn't responsive enough for practical use.
 
@@ -59,6 +59,11 @@ Changing the motor control to use absolute coordinates instead of relative showe
 
 {{<img caption="Revised tracking using absolute position commands for significantly improved precision."
 src="/imgs/vr-gantry/giphy_1.gif" >}}
+
+An overview of the software algorithm to parse the user's current position and command the stepper motors is shown in the flowchart below.
+
+{{<img caption="Flowchart of the software algorithm."
+src="/imgs/vr-gantry/SoftwareFlowchart.png" >}}
 
 ### Stage 2: User Testing
 
