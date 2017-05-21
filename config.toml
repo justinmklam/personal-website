@@ -8,6 +8,10 @@ layoutdir = "layouts"
 publishdir = "docs"
 canonifyurls = false
 
+[taxonomies]
+	tag = "tags"
+	type = "types"
+
 [params]
 	footer = "2017 Justin MK Lam"
 	email = "justinmklam@gmail.com"

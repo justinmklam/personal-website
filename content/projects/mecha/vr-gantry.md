@@ -46,7 +46,7 @@ We wanted a solution to increase and maintain presence in virtual reality; havin
 
 We wanted to make this as quickly as possible, so I designed the rig using off-the-shelf parts and laser cut acrylic parts.
 
-<div class="embed-responsive embed-responsive-16by9"><iframe src="https://sketchfab.com/models/3be6275ae3c048098c2c777d7817ff26/embed?autostart=1&amp;preload=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe src="https://sketchfab.com/models/3be6275ae3c048098c2c777d7817ff26/embed?autostart=0&amp;preload=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
 </div>
 <p class="caption">The gantry frame designed in SolidWorks 2017.</p>
 

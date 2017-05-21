@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ .Title }}</title>
+    {{ partial "header.html" . }}
+</head>
+
+<body>
+
+    {{ partial "navbar.html" . }}
+
+    <!-- Page Content -->
+    <div class="container" id="page-container">
+        
+        <div class="col-sm-8 col-centered">
+            <!--<div class="page-header">-->
+            <br>
+            <h2>{{ .Title }}</h2>
+            <p class="datestamp-index"><span class="glyphicon glyphicon-time"></span> Published on {{ .Date.Format "January 2, 2006" }}</p>	            
+            <!--</div>-->
+            <!--<br>-->
+            {{ .Content }}
+			
+			{{ if not .Params.hidedate }}
+			<br>
+            
+			{{ end }}
+			
+        </div>
+
+		
+		
+    </div>	
+    <!-- /.container -->
+
+	{{ partial "footer-js.html" . }}
+
+</body>
+    
+{{ partial "footer.html" . }}
+
+</html>

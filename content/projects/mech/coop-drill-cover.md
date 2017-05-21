@@ -1,13 +1,12 @@
 +++
 clickable = true
 date = "2014-09-27T12:39:34-07:00"
-hidden = true
 image = "/imgs/drill_cover/DrillCoverPhotobyMasashiKarasawa-e1458002972956-300x300.jpg"
 summary = "Drill availability is a major limitation in developing counties, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room."
 tagline = "Quantifying the performance of a surgical drill designed for low-resource settings."
 title = "Co-op: Drill Cover User Study"
 type = "mech"
-draft = false
+draft = true
 +++
 
 __Background:__ Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries.  A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.
