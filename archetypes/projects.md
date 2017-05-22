@@ -2,7 +2,7 @@
 hidden =    false
 clickable = true
 image =     "http://placehold.it/300x300"
-type =      "" <!-- mech/mecha/elec/software -->
+type =      "mech/mecha/elec/software"
 summary =   ""
 tagline =   ""
 +++
