@@ -5,7 +5,7 @@ title = "blog"
 
 [menu.main]
 	name = "Blog"
-	url = "/blog-index"
+	url = "/blog"
 	weight = 4
 +++
 
