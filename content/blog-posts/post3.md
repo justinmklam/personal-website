@@ -1,6 +1,6 @@
 +++
 date = "2017-05-21T16:01:54-07:00"
-image = "http://placehold.it/900x300"
+image = "http://placehold.it/600x300"
 title = "Test Post 3"
 type = "blog"
 draft = false
