@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog-posts on Justin MK Lam | Portfolio</title>
+    <link>http://justinmklam.com/blog-posts/</link>
+    <description>Recent content in Blog-posts on Justin MK Lam | Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Oct 2016 20:58:10 -0700</lastBuildDate>
+    
+	<atom:link href="http://justinmklam.com/blog-posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bargain Bandsaw Project</title>
+      <link>http://justinmklam.com/blog-posts/bandsaw/</link>
+      <pubDate>Sat, 22 Oct 2016 20:58:10 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-posts/bandsaw/</guid>
+      <description>I&amp;rsquo;ve always wanted a bandsaw. Being able to cut wood, plastics, etc. quickly and with flexibility has been a dream in my home shop. When I found an ad on Craigslist for a portable bandsaw for $50, I just couldn&amp;rsquo;t resist. The main caveat was that it was missing a table, but that wasn&amp;rsquo;t a big enough issue to turn me away from this killer deal.
+Fresh off Craigslist in its table-naked glory.</description>
+    </item>
+    
+    <item>
+      <title>Co-op: Drill Cover User Study</title>
+      <link>http://justinmklam.com/blog-posts/coop-drill-cover/</link>
+      <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-posts/coop-drill-cover/</guid>
+      <description>Background: Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.
+Objective: Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.</description>
+    </item>
+    
+    <item>
+      <title>MECH 355: Tron Game</title>
+      <link>http://justinmklam.com/blog-posts/mech-355-tron/</link>
+      <pubDate>Sun, 30 Mar 2014 12:36:02 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-posts/mech-355-tron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Co-op: The Age Effect on Bicycle Helmets</title>
+      <link>http://justinmklam.com/blog-posts/coop-mea/</link>
+      <pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-posts/coop-mea/</guid>
+      <description>Objective: Determine if age has an effect on the mechanical properties of bicycle helmets.
+Tasks:
+ Conducted 1630 helmet impact attenuation tests to measure the effect of age and use on bicycle helmet foam Developed scripts in MATLAB to autonomously post-process the impact data and organize information according to existing helmet databases Wrote the Methods section of the research report to be submitted to the Accident Prevention &amp;amp; Analysis Journal Assisted in protocol development of the helmet and foam core impact attenuation tests  Company: MEA Forensic Engineers &amp;amp; Scientists</description>
+    </item>
+    
+    <item>
+      <title>MECH 223: Hovercraft Competition</title>
+      <link>http://justinmklam.com/blog-posts/mech-223-hovercraft/</link>
+      <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-posts/mech-223-hovercraft/</guid>
+      <description>For our final MECH2 design project at UBC, we were given three weeks to research, conceptualize, test, and build a functional hovercraft. The end goal was a class-wide competition of speed, cargo capacity, maneuverability, and driving skill. Budget was limited since costs came out of our own pockets, so we set out to build an inexpensive hovercraft using parts from the hardware and dollar store.
+Our result: 5th place out of 30 teams.</description>
+    </item>
+    
+    <item>
+      <title>Altoids Portable Charger</title>
+      <link>http://justinmklam.com/blog-posts/altoids/</link>
+      <pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-posts/altoids/</guid>
+      <description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback. I built a simple, rechargable battery pack to keep the tunes playing on long road trips.
+The iPod is alive!
+President&amp;#39;s Choice rechargable batteries and some janky wiring is all it took.</description>
+    </item>
+    
+  </channel>
+</rss>

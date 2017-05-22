@@ -51,18 +51,6 @@ Features:
     </item>
     
     <item>
-      <title>Bargain Bandsaw Project</title>
-      <link>http://justinmklam.com/projects/mech/bandsaw/</link>
-      <pubDate>Sat, 22 Oct 2016 20:58:10 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/projects/mech/bandsaw/</guid>
-      <description>Background: High school woodworking was awesome. Making things is awesome. Making things that make other things is even more awesome. Making things that make other things at home by fixing used tools is the awesome-est.
-Objective: Make a table for a bandsaw with a missing table. No fuss, no muss (just lots of sawdust).
-Fresh off Craigslist in its table-naked glory.
-I needed something to cut parts for the table support.</description>
-    </item>
-    
-    <item>
       <title>Engineer&#39;s Diary</title>
       <link>http://justinmklam.com/projects/software/engineers-diary/</link>
       <pubDate>Sat, 01 Oct 2016 12:39:52 -0700</pubDate>
@@ -142,16 +130,6 @@ How: As a team of seven mechanical engineering undergrads, we explored a range o
     </item>
     
     <item>
-      <title>Co-op: Drill Cover User Study</title>
-      <link>http://justinmklam.com/projects/mech/coop-drill-cover/</link>
-      <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/projects/mech/coop-drill-cover/</guid>
-      <description>Background: Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.
-Objective: Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.</description>
-    </item>
-    
-    <item>
       <title>car2go Bowling</title>
       <link>http://justinmklam.com/projects/mech/car2go/</link>
       <pubDate>Fri, 29 Aug 2014 12:37:42 -0700</pubDate>
@@ -176,15 +154,6 @@ Challenges:
     </item>
     
     <item>
-      <title>MECH 355: Tron Game</title>
-      <link>http://justinmklam.com/projects/software/mech-355-tron/</link>
-      <pubDate>Sun, 30 Mar 2014 12:36:02 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/projects/software/mech-355-tron/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Photo Editing Script</title>
       <link>http://justinmklam.com/projects/software/photo-editing/</link>
       <pubDate>Sun, 12 Jan 2014 12:25:44 -0700</pubDate>
@@ -198,49 +167,12 @@ Framework: MATLAB
     </item>
     
     <item>
-      <title>Co-op: The Age Effect on Bicycle Helmets</title>
-      <link>http://justinmklam.com/projects/mech/coop-mea/</link>
-      <pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/projects/mech/coop-mea/</guid>
-      <description>Objective: Determine if age has an effect on the mechanical properties of bicycle helmets.
-Tasks:
- Conducted 1630 helmet impact attenuation tests to measure the effect of age and use on bicycle helmet foam Developed scripts in MATLAB to autonomously post-process the impact data and organize information according to existing helmet databases Wrote the Methods section of the research report to be submitted to the Accident Prevention &amp;amp; Analysis Journal Assisted in protocol development of the helmet and foam core impact attenuation tests  Company: MEA Forensic Engineers &amp;amp; Scientists</description>
-    </item>
-    
-    <item>
-      <title>MECH 223: Hovercraft Competition</title>
-      <link>http://justinmklam.com/projects/mech/mech-223-hovercraft/</link>
-      <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/projects/mech/mech-223-hovercraft/</guid>
-      <description>Objective: Construct a remote controlled hovercraft to compete in a class-wide battle of speed, cargo capacity, and maneuverability.
-Constraints:
- Teams were given 3 weeks to research, conceptualize, test, and build their hovercrafts. Budget was extremely limited as costs came out of our own pockets.  Result: 5th place out of 30 teams
- Various fan and chassis designs to provide lift.
- Intermediate prototypes prior to our final design.</description>
-    </item>
-    
-    <item>
       <title>LEGO Headphones</title>
       <link>http://justinmklam.com/projects/mech/lego-headphones/</link>
       <pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/lego-headphones/</guid>
       <description>Background: I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go.</description>
-    </item>
-    
-    <item>
-      <title>Altoids Portable Charger</title>
-      <link>http://justinmklam.com/projects/elec/altoids/</link>
-      <pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/projects/elec/altoids/</guid>
-      <description>Background: Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback.
-Objective: Build a simple, rechargable battery pack to keep the tunes playing long road trips.
-Overview of the fantastic charging device.
-The iPod is alive!
-President&amp;#39;s Choice rechargable batteries and some janky wiring is all it took.</description>
     </item>
     
   </channel>
