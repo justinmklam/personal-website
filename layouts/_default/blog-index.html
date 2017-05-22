@@ -4,7 +4,6 @@
 <head>
     <title>{{ .Title }}</title>
     {{ partial "header.html" . }}
-    <script src="https://use.fontawesome.com/ccb78cc113.js"></script>
 </head>
 
 <body>
@@ -25,7 +24,10 @@
                 <a class="h2" role="button" href="{{ .Permalink }}">{{ .Title }}</a>
             </h2>
             <!--Timestamp-->
-            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on {{ .Date.Format "January 2, 2006" }}</p>
+            <p class="datestamp-index">
+                <span class="fa fa-calendar-o"></span>&nbsp Posted on {{ .Date.Format "January 2, 2006" }}
+                <em>&nbsp &middot &nbsp&nbsp{{.ReadingTime}} min read </em>
+            </p>
 
             <!--Image if available-->
             <img class="img-responsive " style="margin-bottom:16px" src="{{ .Params.image }}">

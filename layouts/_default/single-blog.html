@@ -16,8 +16,11 @@
         <div class="col-sm-8 col-centered">
             <br>
             <h2>{{ .Title }}</h2>
-            <p class="datestamp-index"><span class="glyphicon glyphicon-time"></span> Published on {{ .Date.Format "January 2, 2006" }}</p>	            
-
+            <!--Timestamp-->
+            <p class="datestamp-index">
+                <span class="fa fa-calendar-o"></span>&nbsp Posted on {{ .Date.Format "January 2, 2006" }}
+                <em>&nbsp &middot &nbsp&nbsp{{.ReadingTime}} min read </em>
+            </p>
             <img class="img-responsive" style="margin-bottom:16px" src="{{ .Params.image }}">
 
             {{ .Content }}

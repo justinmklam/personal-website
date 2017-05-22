@@ -4,7 +4,6 @@
 <head>
     <title>{{ .Title }}</title>
     {{ partial "header.html" . }}
-    <script src="https://use.fontawesome.com/ccb78cc113.js"></script>
     <style>
         .archive-year {color:#999; font-size: 16px}
         .archive-date {color:#777; font-size: 18px}
@@ -27,7 +26,7 @@
             {{ range (where .Site.Pages "Type" "blog") }}
             <div class="row">
             <!-- Blog heading -->
-            <div class="col-lg-1 text-right">
+            <div class="col-lg-1 text-center">
                 <h2 class="archive-year">
                     {{ .Date | dateFormat "2006"}} <!-- print publish year -->
                 </h2>
