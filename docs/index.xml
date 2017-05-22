@@ -102,6 +102,16 @@ Features:
     </item>
     
     <item>
+      <title>New Toy Tuesday: Monoprice Select Mini 3D Printer</title>
+      <link>http://justinmklam.com/blog-posts/2017.03.07_mp-select-mini/</link>
+      <pubDate>Tue, 07 Mar 2017 15:56:53 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-posts/2017.03.07_mp-select-mini/</guid>
+      <description>I&amp;rsquo;ve been bit by the 3D printing bug.
+Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for quite some time. For my final year mechatronics design project, my partner and I designed an extravagent contraption to measure the yolk done-ness of a soft-boiled egg, which we called The PerfEGGct. We borrowed my roommate&amp;rsquo;s 3D printer to create the enclosure, and it turned out to be an indispensable tool during our prototyping process.</description>
+    </item>
+    
+    <item>
       <title>ESP8266 Sous Vide Controller</title>
       <link>http://justinmklam.com/projects/elec/sous-vide/</link>
       <pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate>
@@ -115,10 +125,10 @@ Features:
     
     <item>
       <title>Bargain Bandsaw Project</title>
-      <link>http://justinmklam.com/blog-posts/bandsaw/</link>
+      <link>http://justinmklam.com/blog-posts/2016.10.22_bandsaw/</link>
       <pubDate>Sat, 22 Oct 2016 20:58:10 -0700</pubDate>
       
-      <guid>http://justinmklam.com/blog-posts/bandsaw/</guid>
+      <guid>http://justinmklam.com/blog-posts/2016.10.22_bandsaw/</guid>
       <description>I&amp;rsquo;ve always wanted a bandsaw. Being able to cut wood, plastics, etc. quickly and with flexibility has been a dream in my home shop. When I found an ad on Craigslist for a portable bandsaw for $50, I just couldn&amp;rsquo;t resist. The main caveat was that it was missing a table, but that wasn&amp;rsquo;t a big enough issue to turn me away from this killer deal.
 Fresh off Craigslist in its table-naked glory.</description>
     </item>
@@ -241,10 +251,10 @@ How: As a team of seven mechanical engineering undergrads, we explored a range o
     
     <item>
       <title>Co-op: Drill Cover User Study</title>
-      <link>http://justinmklam.com/blog-posts/coop-drill-cover/</link>
+      <link>http://justinmklam.com/blog-posts/2014.09.27_coop-drill-cover/</link>
       <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
       
-      <guid>http://justinmklam.com/blog-posts/coop-drill-cover/</guid>
+      <guid>http://justinmklam.com/blog-posts/2014.09.27_coop-drill-cover/</guid>
       <description>Background: Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.
 Objective: Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.</description>
     </item>
@@ -275,10 +285,10 @@ Challenges:
     
     <item>
       <title>MECH 355: Tron Game</title>
-      <link>http://justinmklam.com/blog-posts/mech-355-tron/</link>
+      <link>http://justinmklam.com/blog-posts/2014.03.30_mech-355-tron/</link>
       <pubDate>Sun, 30 Mar 2014 12:36:02 -0700</pubDate>
       
-      <guid>http://justinmklam.com/blog-posts/mech-355-tron/</guid>
+      <guid>http://justinmklam.com/blog-posts/2014.03.30_mech-355-tron/</guid>
       <description></description>
     </item>
     
@@ -297,10 +307,10 @@ Framework: MATLAB
     
     <item>
       <title>Co-op: The Age Effect on Bicycle Helmets</title>
-      <link>http://justinmklam.com/blog-posts/coop-mea/</link>
+      <link>http://justinmklam.com/blog-posts/2013.12.28_coop-mea/</link>
       <pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate>
       
-      <guid>http://justinmklam.com/blog-posts/coop-mea/</guid>
+      <guid>http://justinmklam.com/blog-posts/2013.12.28_coop-mea/</guid>
       <description>Objective: Determine if age has an effect on the mechanical properties of bicycle helmets.
 Tasks:
  Conducted 1630 helmet impact attenuation tests to measure the effect of age and use on bicycle helmet foam Developed scripts in MATLAB to autonomously post-process the impact data and organize information according to existing helmet databases Wrote the Methods section of the research report to be submitted to the Accident Prevention &amp;amp; Analysis Journal Assisted in protocol development of the helmet and foam core impact attenuation tests  Company: MEA Forensic Engineers &amp;amp; Scientists</description>
@@ -308,10 +318,10 @@ Tasks:
     
     <item>
       <title>MECH 223: Hovercraft Competition</title>
-      <link>http://justinmklam.com/blog-posts/mech-223-hovercraft/</link>
+      <link>http://justinmklam.com/blog-posts/2013.04.20_mech-223-hovercraft/</link>
       <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
       
-      <guid>http://justinmklam.com/blog-posts/mech-223-hovercraft/</guid>
+      <guid>http://justinmklam.com/blog-posts/2013.04.20_mech-223-hovercraft/</guid>
       <description>For our final MECH2 design project at UBC, we were given three weeks to research, conceptualize, test, and build a functional hovercraft. The end goal was a class-wide competition of speed, cargo capacity, maneuverability, and driving skill. Budget was limited since costs came out of our own pockets, so we set out to build an inexpensive hovercraft using parts from the hardware and dollar store.
 Our result: 5th place out of 30 teams.</description>
     </item>
@@ -326,11 +336,11 @@ Our result: 5th place out of 30 teams.</description>
     </item>
     
     <item>
-      <title>Altoids Portable Charger</title>
-      <link>http://justinmklam.com/blog-posts/altoids/</link>
+      <title>A Minty-Fresh Power Pack</title>
+      <link>http://justinmklam.com/blog-posts/2009.04.16_altoids/</link>
       <pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate>
       
-      <guid>http://justinmklam.com/blog-posts/altoids/</guid>
+      <guid>http://justinmklam.com/blog-posts/2009.04.16_altoids/</guid>
       <description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback. I built a simple, rechargable battery pack to keep the tunes playing on long road trips.
 The iPod is alive!
 President&amp;#39;s Choice rechargable batteries and some janky wiring is all it took.</description>
