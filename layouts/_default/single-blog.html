@@ -24,6 +24,7 @@
             <img class="img-responsive" style="display:block; margin:auto; margin-bottom:16px" src="{{ .Params.image }}">
 
             {{ .Content }}
+
 			<!--<hr>-->
             <br>
             <div class="text-left">
@@ -31,7 +32,9 @@
                     <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent posts
                 </a>
             </div>
-            <!--<br>-->
+            <br>
+            {{ partial "disqus.html" . }}
+
 
         </div>
         <!--/.content-->

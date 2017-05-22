@@ -8,6 +8,8 @@ layoutdir = "layouts"
 publishdir = "docs"
 canonifyurls = false
 
+disqusShortname = "justinmklam"
+
 [taxonomies]
 	tag = "tags"
 	type = "types"
