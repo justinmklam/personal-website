@@ -21,8 +21,10 @@
                 <span class="fa fa-calendar-o"></span>&nbsp Posted on {{ .Date.Format "January 2, 2006" }}
                 <em>&nbsp &middot &nbsp&nbsp{{.ReadingTime}} min read </em>
             </p>
-            <img class="img-responsive" style="display:block; margin:auto; margin-bottom:16px" src="{{ .Params.image }}">
-
+            <!--Image if available-->
+            <a href={{.Params.image}}>
+                <img class="img-responsive" style="display:block; margin:auto; margin-bottom:16px" src="{{ .Params.image }}">
+            </a>
             {{ .Content }}
 
 			<!--<hr>-->
