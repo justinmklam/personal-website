@@ -24,10 +24,8 @@ __Features:__
 
 [TEXT](HYPERLINK)
 
-{{< img caption="TEXT"
-src="/imgs/SOURCE" >}}
+{{<img caption="TEXT" src="/imgs/SOURCE">}}
 
-{{< fb-video src="SOURCE" >}}
+{{<fb-video src="SOURCE">}}
 
-{{< vid caption="TEXT" 
-src="SOURCE" >}}
+{{<vid caption="TEXT" src="SOURCE">}}
