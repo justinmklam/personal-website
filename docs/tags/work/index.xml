@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work on Justin MK Lam | Portfolio</title>
+    <link>http://justinmklam.com/tags/work/</link>
+    <description>Recent content in Work on Justin MK Lam | Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Nov 2016 23:02:43 -0700</lastBuildDate>
+    
+	<atom:link href="http://justinmklam.com/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tired of cables in VR? We are too.</title>
+      <link>http://justinmklam.com/blog-posts/2016.11.15_tired-of-cables/</link>
+      <pubDate>Tue, 15 Nov 2016 23:02:43 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-posts/2016.11.15_tired-of-cables/</guid>
+      <description>Originally posted on Medium under MistyWest.
+Virtual reality pushes the envelope of bleeding edge technology, allowing us to explore and experience worlds beyond our mortal imaginations. It gives us immersion in another dimension, providing an unprecedented medium for communication and story telling. If a picture is worth a thousand words, then virtual reality must be worth millions. Except there’s one thing keeping it grounded to reality: cables.
+Since the first virtual reality headset that was hacked together in 2011, immersive head-mounted displays have progressed far and quickly.</description>
+    </item>
+    
+    <item>
+      <title>Co-op: Drill Cover User Study</title>
+      <link>http://justinmklam.com/blog-posts/2014.09.27_coop-drill-cover/</link>
+      <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-posts/2014.09.27_coop-drill-cover/</guid>
+      <description>Background: Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.
+Objective: Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.</description>
+    </item>
+    
+    <item>
+      <title>Co-op: The Age Effect on Bicycle Helmets</title>
+      <link>http://justinmklam.com/blog-posts/2013.12.28_coop-mea/</link>
+      <pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/blog-posts/2013.12.28_coop-mea/</guid>
+      <description>Objective: Determine if age has an effect on the mechanical properties of bicycle helmets.
+Tasks:
+ Conducted 1630 helmet impact attenuation tests to measure the effect of age and use on bicycle helmet foam Developed scripts in MATLAB to autonomously post-process the impact data and organize information according to existing helmet databases Wrote the Methods section of the research report to be submitted to the Accident Prevention &amp;amp; Analysis Journal Assisted in protocol development of the helmet and foam core impact attenuation tests  Company: MEA Forensic Engineers &amp;amp; Scientists</description>
+    </item>
+    
+  </channel>
+</rss>
