@@ -6,8 +6,8 @@
     {{ partial "header.html" . }}
     <style>
         .archive-year {color:#999; font-size: 16px}
-        .archive-date {color:#777; font-size: 18px}
-        .archive {font-size:90%}
+        .archive-date {color:#777; font-size: 16px}
+        td {padding: 0px 36px 0px 0px}
     </style>
 </head>
 
@@ -21,29 +21,29 @@
         <br>
 
 		<!--Blog post summaries-->
-        <div class="col-lg-8 col-centered">
+        <div class="col-sm-8 col-centered">
 
             {{ range (where .Site.Pages "Type" "blog") }}
             <div class="row">
             <!-- Blog heading -->
-            <div class="col-lg-1 text-center">
-                <h2 class="archive-year">
-                    {{ .Date | dateFormat "2006"}} <!-- print publish year -->
-                </h2>
-            </div>
+                <div class="col-sm-3 text-center">
+                    <table class="h2">
+                        <tr>
+                            <!-- print publish year -->
+                            <td class="archive-year">{{ .Date | dateFormat "2006"}} </td>
+                            <td class="archive-date">{{ .Date | dateFormat "Jan 2"}}</td>
+                        </tr>
+                    </table>
+                    <!--</h2>-->
+                </div>
 
-            <div class="col-lg-2 text-center">
-                <h2 class="archive-date">
-                    {{ .Date | dateFormat "Jan 2"}} <!-- print publish year -->
-                </h2>
-            </div>
-            <div class="col-lg-9">
+            <div class="col-sm-9">
                 <h2>
-                    <a class="h2" role="button" href="{{ .Permalink }}">{{ .Title }}</a>
+                    <a class="h2" style="font-size:18px; vertical-align:text-top" href="{{ .Permalink }}">{{ .Title }}</a>
                 </h2>
             <!--First 70 words of post-->
             <!--<div class="col-lg-5">-->
-            <p>{{ .Summary }}</p>
+            <h4 style="font-size:16px; ; line-height:1">{{ .Params.tagline }}</h4>
                         <!--Read more buttn-->
             <div class="text-right">
                 <a href="{{ .Permalink }}">Read More<span style="font-size:0.83em" class="glyphicon glyphicon-menu-right"></span></a>
