@@ -2,7 +2,7 @@
 clickable = false
 date = "2017-05-09T21:26:18-07:00"
 hidden = false
-image = "/imgs/mw-mvs-elec/Altium capture.png"
+image = "/imgs/mw-mvs-elec/PCB-1.jpg"
 summary = "Needing various power rails off a 4-cell LiPo battery pack, I designed a PCB with overcurrent/undervoltage protection and 12V/7V/5V buck regulators."
 tagline = "Design of a power management board in Altium."
 title = "Battery Power Protection and Regulation PCB"
