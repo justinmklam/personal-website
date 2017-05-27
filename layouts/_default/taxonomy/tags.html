@@ -13,12 +13,13 @@
     <!-- Page Content -->
     <div class="container" id="page-container">
 
-        <br>
-
 		<!--Blog post summaries-->
         <div class="col-lg-8 col-centered">
+            <div class="row">
+                <h1 class="page-header" style="margin-bottom: 0">Tag: #{{ .Title }} </h1>
+            </div>
 
-            {{ range first 5 (where .Site.Pages "Type" "blog") }}
+            {{ range .Data.Pages }}
             <!-- Blog heading -->
             <h2>
                 <a class="h2" role="button" href="{{ .Permalink }}">{{ .Title }}</a>
