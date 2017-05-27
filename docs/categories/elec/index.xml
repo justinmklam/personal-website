@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elec on Justin MK Lam | Portfolio</title>
+    <link>http://justinmklam.com/categories/elec/</link>
+    <description>Recent content in Elec on Justin MK Lam | Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 May 2017 21:26:18 -0700</lastBuildDate>
+    
+	<atom:link href="http://justinmklam.com/categories/elec/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Battery Power Protection and Regulation PCB</title>
+      <link>http://justinmklam.com/projects/elec/mistywest-mvs/</link>
+      <pubDate>Tue, 09 May 2017 21:26:18 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/projects/elec/mistywest-mvs/</guid>
+      <description>Background:
+Objective:
+Motivation:
+Features:
+ Foo 1 Foo 2   Don&amp;rsquo;t worry, the numbers don&amp;rsquo;t really matter  TEXT
+TEXT</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,6 +13,7 @@ disqusShortname = "justinmklam"
 [taxonomies]
 	tag = "tags"
 	type = "types"
+	category = "categories"
 
 [params]
 	footer = "2017 Justin MK Lam"

@@ -7,6 +7,7 @@ summary = "Needing various power rails off a 4-cell LiPo battery pack, I designe
 tagline = "Design of a power management board in Altium."
 title = "Battery Power Protection and Regulation PCB"
 type = "elec"
+categories = "elec"
 
 +++
 
