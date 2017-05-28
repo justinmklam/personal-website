@@ -5,7 +5,7 @@
     <title>Resources for 3D Printing with the MP Select Mini</title>
      <html>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatiblle" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -177,7 +177,7 @@
 <a href=/imgs/blog-imgs/3d-printing-primer/machine%20settings.PNG><img class="img-responsive img-content" src=/imgs/blog-imgs/3d-printing-primer/machine%20settings.PNG /></a>
 <p class="caption">Machine settings for MP Select Mini.</p>
 
-<p>For the lazy, you can simply copy and paste the code boxes below.</p>
+<p>For the lazy, you can simply copy and paste the code boxes below (ignore the End Gcode in the image above).</p>
 
 <pre><code>;; Start Gcode
 G28 ;Home
@@ -189,12 +189,17 @@ G92 E0 ; reset extrusion distance
 </code></pre>
 
 <pre><code>;; End Gcode
-M104 S0 ; turn off extruder
-M140 S0 ; turn off bed
-G28 X ; home x axis
-G1 Y120 ; move platform forward for access
-M84 ; disable motor
-M106 S1 ; turn off fan  (See comments from others regarding this code change.)
+M104 S0 ; turn off hotend heater
+M140 S0 ; turn off bed heater
+G91 ; Switch to use Relative Coordinates
+G1 E-2 F300 ; retract the filament a bit before lifting the nozzle to release some of the pressure
+G1 Z1 ; raise Z 1mm from current position
+G1 E-2 F300 ; retract filament even more
+G90 ; Switch back to using Absolute Coordinates
+G1 X20 ; move X axis close to tower but hopefully far enough to keep the fan from rattling
+G1 Y115 ; move bed forward for easier part removal
+M84 ; disable motors
+G4 S600 ; keep fan running for 600 seconds to cool hotend and allow the fan to be turned off
 M107 ; turn off fan
 </code></pre>
 

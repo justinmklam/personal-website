@@ -32,35 +32,18 @@ clickable = true
 	<li>First Prize - <a href="http://www.instructables.com/contest/teachit/" target="_blank">Teach It! Instructables Contest, Sponsored by Dremel</a></li>
 </ul>
 
-<a><img class="img-responsive img-content" src="/imgs/bamboo_bike/Bike-frame-geometry-1024x567.png" /></a>
-<p class="caption">Track bicycle custom geometry.</p>
+<br>
 
-<a><img class="img-responsive img-content" src="/imgs/bamboo_bike/Drawing-Bike-frame-dimensions-1024x680.png" /></a>
-<p class="caption">Frame dimensions with tubes shown to determine the required cut lengths of bamboo.</p>
-
-<a><img class="img-responsive img-content" src="/imgs/bamboo_bike/Bamboo-bike-in-jig-1-1024x572.jpg" /></a>
-<p class="caption">Frame jig modeled in SolidWorks.</p>
-
-
-<a><img class="img-responsive img-content" src="/imgs/bamboo_bike/2013-09-15-14.21.10-1024x768.jpg" /></a>
-<p class="caption">Bamboo poles after heat treatment in the oven, preparing for the next heat treatment.</p>
-
-<a><img class="img-responsive img-content" src="/imgs/bamboo_bike/05-IMG_3962.jpg" /></a>
-<p class="caption">Dry fitting of bamboo poles after mitering.</p>
-
-<a><img class="img-responsive img-content" src="/imgs/bamboo_bike/07-IMG_3968.jpg" /></a>
-<p class="caption">Bottom bracket junction with mitered bamboo.</p>
-
-<a><img class="img-responsive img-content" src="/imgs/bamboo_bike/11-IMG_3985-1024x768.jpg" /></a>
-<p class="caption">Slotted bamboo to fit the dropouts.</p>
-
-<a><img class="img-responsive img-content" src="/imgs/bamboo_bike/IMG_20140817_143412-1024x768.jpg" /></a>
-<p class="caption">Frame wrapped, sanded, and ready for finishing details.</p>
-
-<a><img class="img-responsive img-content" src="/imgs/bamboo_bike/IMG_20140817_153701-768x1024.jpg" /></a>
-<p class="caption">Applying the final touches to the bottom bracket.</p>
-
-<a><img class="img-responsive img-content" src="/imgs/bamboo_bike/IMG_5359-e1424407598804.jpg" /></a>
-<p class="caption">Build complete and ready to roll.</p>
+{{<img caption="Build complete and ready to roll." src="/imgs/bamboo_bike/IMG_5359-e1424407598804.jpg">}}
+{{<img caption="Track bicycle custom geometry." src="/imgs/bamboo_bike/Bike-frame-geometry-1024x567.png">}}
+{{<img caption="Frame dimensions with tubes shown to determine the required cut lengths of bamboo." src="/imgs/bamboo_bike/Drawing-Bike-frame-dimensions-1024x680.png">}}
+{{<img caption="Frame jig modeled in SolidWorks." src="/imgs/bamboo_bike/Bamboo-bike-in-jig-1-1024x572.jpg">}}
+{{<img caption="Bamboo poles after heat treatment in the oven, preparing for the next heat treatment." src="/imgs/bamboo_bike/2013-09-15-14.21.10-1024x768.jpg">}}
+{{<img caption="Dry fitting of bamboo poles after mitering." src="/imgs/bamboo_bike/05-IMG_3962.jpg">}}
+{{<img caption="Bottom bracket junction with mitered bamboo." src="/imgs/bamboo_bike/07-IMG_3968.jpg">}}
+{{<img caption="Slotted bamboo to fit the dropouts." src="/imgs/bamboo_bike/11-IMG_3985-1024x768.jpg">}}
+{{<img caption="Frame wrapped, sanded, and ready for finishing details." src="/imgs/bamboo_bike/IMG_20140817_143412-1024x768.jpg">}}
+{{<img caption="Applying the final touches to the bottom bracket." src="/imgs/bamboo_bike/IMG_20140817_153701-768x1024.jpg">}}
+{{<img caption="Aaaand we're done!" src="/imgs/bamboo_bike/IMG_5364-1024x768.jpg">}}
 
 <p>For a detailed step-by-step guide, head over to my <a href="http://www.instructables.com/id/Building-a-Carbon-Fibre-Bamboo-Bicycle-From-Scratc/" target="_blank">Instructable</a>.</p>
