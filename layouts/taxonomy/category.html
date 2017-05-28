@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ .Title }}</title>
+    {{ partial "header.html" . }}
+</head>
+
+<body>
+
+    {{ partial "navbar.html" . }}
+
+    <!-- Page Content -->
+    <div class="container" id="page-container">
+		<!-- Project category header (mech, elec, etc.) -->
+		{{ partial "projects-category.html" . }}
+
+		<!-- loop through all projects -->
+		{{ range $index, $element := .Data.Pages }}
+			<!-- only show non-hidden projects -->
+			{{ if not .Params.hidden }}
+				<!-- don't show divider before the first item -->
+				{{ if not (eq $index 0) }}
+				<hr>
+				{{ end }}
+				
+				<!-- Bucket for each project -->
+				{{partial "projects-description.html" . }}
+			{{ end }}
+		{{ end }}
+    </div>
+    <!-- /.container -->
+
+	{{ partial "footer-js.html" . }}
+
+</body>
+    
+{{ partial "footer.html" . }}
+
+</html>
