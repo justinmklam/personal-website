@@ -117,6 +117,11 @@
   </url>
   
   <url>
+    <loc>http://justinmklam.com/blog-posts/2015.12.18_bamboo-bike-boo-boo/</loc>
+    <lastmod>2015-12-18T20:50:37-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://justinmklam.com/projects/software/haikuza/</loc>
     <lastmod>2015-07-19T12:36:28-07:00</lastmod>
   </url>
@@ -179,6 +184,12 @@
   <url>
     <loc>http://justinmklam.com/tags/3dprinting/</loc>
     <lastmod>2017-03-25T21:14:29-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/tags/biking/</loc>
+    <lastmod>2015-12-18T20:50:37-07:00</lastmod>
     <priority>0</priority>
   </url>
   
