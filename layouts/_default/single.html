@@ -17,10 +17,21 @@
             <h1 class="page-header">{{ .Title }}</h1>		            
             {{ .Content }}
 			
-			{{ if not .Params.hidedate }}
-			<br>
-            <p class="datestamp"><span class="glyphicon glyphicon-time"></span> Published on {{ .Date.Format "January 2, 2006" }}</p>
-			{{ end }}
+            <br>
+
+            <!--Page footer-->
+            <div class="row">
+                <!--Date stamp-->
+                <div class="col-sm-9 col-sm-push-3">
+                    <p class="datestamp"><span class="glyphicon glyphicon-time"></span> Published on {{ .Date.Format "January 2, 2006" }}</p>
+                </div>   
+                <!--Back to view all page-->
+                <div class="col-sm-3 col-sm-pull-9">
+                    <a class="text-left" href="/view-all">
+                        <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>All Projects
+                    </a>
+                </div>                             
+            </div>
 			
         </div>
 
