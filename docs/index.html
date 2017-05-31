@@ -19,12 +19,10 @@
 </head>
 
 <style>
- .home-header{padding-right:20px;padding-left:20px}
-@media(min-width: 992px){.home-header{margin:250px auto}
-}@media(min-width:768px){.home-header{margin:210px auto}
-}@media(max-width:767px){.home-header{margin:150px auto}
-}@media(max-width:480px){.home-header{margin:75px auto}
-}.home-body{text-align:center;vertical-align:middle}
+ 
+.home-body{	width: 600px; height: 500px; 
+position: absolute; top: 60px; bottom: 0; left: 0;	right: 0; margin: auto; 
+text-align:center;vertical-align:middle}
 .home-body h1{font-size:3.8em;font-weight:800;letter-spacing:8px}
 .home-body h2{font-family:'Roboto Slab',serif;font-weight:200;font-size:30px}
 .home-item{text-transform:uppercase;letter-spacing:3px;color:#555;font-size:1.25em;font-weight:regular}
@@ -33,9 +31,13 @@
 .navbar .navbar-nav{display:inline-block;float:none;vertical-align:top}
 .navbar .navbar-collapse{text-align:center}
 .glyphicon{font-size:0.83em}
+@media only screen and (max-device-width:480px){
+     
+    .home-body{zoom: 0.8;-moz-transform: scale(0.8); width: 350px} .home-body h1{font-size:3em}
+}
 </style>
 
-<body class="home-header" id="page-container">
+<body id="page-container">
 
 	<!DOCTYPE html>
 <html lang="en">
@@ -86,17 +88,17 @@
         <br>
         <div class="home-list">
             <a href="/sections/mechatronics" class="home-item">Mechatronics <span class="glyphicon glyphicon-menu-right"></span></a>
-			<br>
+            <br>
             <a href="/sections/mechanical" class="home-item">Mechanical <span class="glyphicon glyphicon-menu-right"></span></a>
-			<br>
+            <br>
             <a href="/sections/electrical/" class="home-item">Electrical <span class="glyphicon glyphicon-menu-right"></span></a>
-			<br>
+            <br>
             <a href="/sections/software" class="home-item">Software <span class="glyphicon glyphicon-menu-right"></span></a>
             <hr>
             <a href="/view-all" class="home-item"><strong>View All <span class="glyphicon glyphicon-menu-right"></strong></span></a>
-			
+            
         </div>
-		  
+        
     </div>
     
 </body>
