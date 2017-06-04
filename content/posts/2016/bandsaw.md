@@ -2,7 +2,7 @@
 clickable = true
 date = "2016-10-22T20:58:10-07:00"
 draft = false
-image = "/imgs/bandsaw/bandsaw_thumb.jpg"
+image = "/imgs/bandsaw/bandsaw-banner.jpg"
 summary = "It's generally known that cheap tools are usually not worth the trouble, but the deal on this bandsaw was simply too hard to pass up. With only a missing table, it was merely a quick woodworking project away from restoring its full functionality."
 tagline = "Sometimes you can get more than what you pay for."
 title = "Making Do With a Bargain Bin Bandsaw"

@@ -1,7 +1,7 @@
 +++
 date = "2017-03-07T15:56:53-07:00"
 draft = false
-image = "/imgs/blog-imgs/mp-select-mini/mp-select-mini.jpg"
+image = "/imgs/blog-imgs/mp-select-mini/mp-select-mini-product.jpg"
 layout = "single-blog"
 title = "New Toy Tuesday: Monoprice Select Mini 3D Printer"
 tagline = "Giving in to temptation for a tool that can make other tools."
@@ -17,8 +17,6 @@ Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for 
 src="http://justinmklam.com/imgs/perfeggct/IMG_0407.JPG" >}}
 
 Fast forward to today, and we have the [Monoprice Select Mini 3D printer](https://www.monoprice.com/product?p_id=15365). This bad boy is a mere $200 USD, putting it right into impulse buy territory. This price range of sub-$500 printers typically puts you with Chinese clones that are inconsistent, unreliable, and dangerous (no thermal regulation = setting fire to your house/rental suite). However, Monoprice is a reputable company in the electronics industry, putting ease to the reliability concern. More notably, just look at the thing: sheet metal enclosure and no assembly required. No muss, no fuss. At the time of writing, this is the best entry-level 3D printer due to its great price to performance ratio.
-
-{{<img caption="Product images of the MP Select Mini" src="/imgs/blog-imgs/mp-select-mini/mp-select-mini-product.jpg" >}}
 
 Let's get printing! See below for a collection of printed models off [Thingiverse](https://www.thingiverse.com/).
 

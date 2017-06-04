@@ -1,7 +1,7 @@
 +++
 date = "2017-03-25T21:14:29-07:00"
 draft = false
-image = "/imgs/blog-imgs/solder-fume-extractor/5 - 4x2jB3f.jpg"
+image = "/imgs/blog-imgs/solder-fume-extractor/solder-fume-banner.jpg"
 layout = "single-blog"
 tags = ["3dprinting"]
 title = "Hakko-Style Solder Fume Extractor"
@@ -23,6 +23,7 @@ Taking the Hakko FA400-04 as a (heavily-inspired) design reference, I set off to
 {{<img caption="Configuration 2: Low profile airflow" src="/imgs/blog-imgs/solder-fume-extractor/2 - czUZR3J.jpg" >}}
 {{<img caption="Configuration 3: Third hand" src="/imgs/blog-imgs/solder-fume-extractor/3 - HPpDgDG.jpg" >}}
 {{<img caption="Carbon filters cut to size." src="/imgs/blog-imgs/solder-fume-extractor/4 - nTKV4GM.jpg" >}}
+{{<img caption="Pseudo-exploded view of assembly." src="/imgs/blog-imgs/solder-fume-extractor/5 - 4x2jB3f.jpg" >}}
 {{<img caption="Uses M3 fasteners and a 40x40mm 12V fan." src="/imgs/blog-imgs/solder-fume-extractor/6 - bLHzYjo.jpg" >}}
 
 It may not be the greatest fume extractor out there, but at least it works. Maybe I'll make another version which has a proper power connector and its own supply. Maybe I'll also add some LED strips to help illuminate my work area. Maybe I'll even add wifi to it, because you know, the Internet of Things and everybody's doing it.
