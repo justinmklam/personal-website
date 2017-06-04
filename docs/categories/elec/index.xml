@@ -17,20 +17,11 @@
       <pubDate>Tue, 09 May 2017 21:26:18 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/elec/mistywest-mvs/</guid>
-      <description>Background:
-Objective:
-Motivation:
-Features:
- Foo 1 Foo 2   Don&amp;rsquo;t worry, the numbers don&amp;rsquo;t really matter  TEXT
-TEXT
-TEXT
-TEXT
-TEXT
-TEXT
-TEXT
-TEXT
-TEXT
-TEXT</description>
+      <description>Objective:
+ Design a custom PCB to protect and regulate a 14.8V LiPo battery for use with an autonomous RC car  Features:
+ 12V undervoltage and 10A overcurrent protection 8.4V, 7.4V, and 5V regulated outputs  Main Components:
+ LT6109 High Side Current Sense Amplifier RT8288AZSP Synchronous Step-Down Converter  Skills:
+ Reading and understanding datasheets Schematic capture and PCB layout in Altium Designer Board bring-up Hardware debugging  Achievement Unlocked:</description>
     </item>
     
   </channel>

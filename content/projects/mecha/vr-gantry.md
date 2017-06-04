@@ -33,6 +33,16 @@ __Sources:__
 + Medium blog post titled [_Tired of cables in VR? We are too._](https://medium.com/@mistywest/tired-of-cables-in-virtual-reality-we-are-too-efeab5606bf0)
 + CES Founders and Friends 2017 Photo Gallery by [Natalia Leva](https://natalialeva.shootproof.com/gallery/3918977/home)
 
+__Acknowledgements:__ 
+
+This project was completed under [MistyWest](https://mistywest.com/) with the help of:
+
++ Derek Disanjh - _Project Supervisor_
++ Div Gill - _Firmware Advisor_
++ Ryan Walker - _Software Advisor_
++ Denis Godin - _Filming_
++ Madison Reid - _Video Editing_
+
 {{<vid caption="Demo video of the gantry in action." src="https://www.youtube.com/embed/zULBxDJVaHs" >}}
 
 {{<img caption="The gantry being used at a penthouse party hosted by MistyWest during CES 2017. (Photo by Natalia Leva)"
