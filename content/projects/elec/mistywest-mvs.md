@@ -1,5 +1,5 @@
 +++
-clickable = false
+clickable = true
 date = "2017-05-09T21:26:18-07:00"
 hidden = false
 image = "/imgs/mw-mvs-elec/PCB-1.jpg"
