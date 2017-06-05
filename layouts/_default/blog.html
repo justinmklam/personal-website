@@ -18,7 +18,7 @@
 		<!--Blog post summaries-->
         <div class="col-lg-8 col-centered">
 
-            {{ range first 5 (where .Site.Pages "Type" "blog") }}
+            {{ range first 10 (where .Site.Pages "Type" "blog") }}
             <!-- Blog heading -->
             <h2>
                 <a class="h2" role="button" href="{{ .Permalink }}">{{ .Title }}</a>

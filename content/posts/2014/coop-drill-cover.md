@@ -1,14 +1,14 @@
 +++
 clickable = true
 date = "2014-09-27T12:39:34-07:00"
-image = "/imgs/drill_cover/DrillCoverPhotobyMasashiKarasawa-e1458002972956-300x300.jpg"
+image = "/imgs/drill_cover/DrillCoverPhotobyMasashiKarasawa.jpg"
 summary = "Drill availability is a major limitation in developing counties, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room."
 tagline = "Quantifying the performance of a surgical drill designed for low-resource settings."
 title = "Co-op: Drill Cover User Study"
 type = "blog"
 draft = false
 layout = "single-blog"
-tags = ["work"]
+tags = ["work", "coop"]
 +++
 
 __Background:__ Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries.  A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.
@@ -24,9 +24,6 @@ __Company__: [Arbutus Medical](http://arbutusmedical.ca)
 From the Arbutus Medical [product page](http://arbutusmedical.ca/human-health/products/drill-cover-hex):
 
 > The DrillCover Hex is a sterilizable and reusable fully-sealed barrier that transforms a hardware drill into surgical grade drill. Our kit includes a drill and cover to provide the precision, sterility, and adaptability needed in low-resource settings.
-
-{{< img caption="The drill cover solution."
-src="/imgs/drill_cover/DrillCoverPhotobyMasashiKarasawa.jpg" >}}
 
 {{< img caption="Detailed view of the drill cover."
 src="/imgs/drill_cover/drillcover.PNG" >}}
@@ -54,3 +51,5 @@ src="/imgs/drill_cover/Hole-quality-comparison.png" >}}
 
 {{< img caption="Test apparatus, modeled in SolidWorks."
 src="/imgs/drill_cover/Bone-model-render-1024x520.jpg" >}}
+
+_Product photos by Masashi Karasawa_
