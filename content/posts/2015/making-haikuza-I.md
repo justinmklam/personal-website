@@ -54,9 +54,10 @@ Interesting. Maybe I can create a Mad Lib-based language model that can learn th
 
 The plan was to create a machine-learning script (of sorts) that did the following:
 
-Import a collection of human-written haikus
-Extract the POS tags for each line
-Construct a database of 5 and 7 syllable POS phrases
+1. Import a collection of human-written haikus
+1. Extract the POS tags for each line
+1. Construct a database of 5 and 7 syllable POS phrases
+
 The implementation looked something like this:
 
 ```

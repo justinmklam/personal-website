@@ -144,3 +144,5 @@ class Markov(object):
 Time to make some progress in making some beautifully robotic poetry! The plan for @thehaikuza V0.2 is to create a Markov chain dictionary using song lyrics and create randomized phrases from the resulting keys and values. Although this implementation still doesnt involve a proper grammar model, its an improvement from the previous method because of its more structured approach. By simply mixing and matching phrases that once made sense before, theres a much higher probability that the resulting phrase will also make some level of sense.
 
 The success rate should now go from laughable to respectfully laughable! Progress is progress.
+
+_Check out the full repo on [Github](https://github.com/justinmklam/project-haikuza)!_
