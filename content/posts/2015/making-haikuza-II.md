@@ -112,7 +112,7 @@ class Markov(object):
     def triples(self):
         """ Generates triples from the given data string.
         """
-        if len(self.words) &amp;amp;amp;amp;amp;amp;amp;amp;amp;lt; 3:
+        if len(self.words) == 3:
             return
 
         for i in range(len(self.words) - 2):

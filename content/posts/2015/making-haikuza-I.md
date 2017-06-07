@@ -186,6 +186,6 @@ I lied. Pretty sure those were worse.
 
 Obviously, the generated haikus were complete word salad. With absolutely no concept of context or proper grammar, @thehaikuza V0.1 was light years away from reliably generating poems that made at least some remote level of sense. There was definitely more to constructing phrases than stuffing in random words into corresponding POS slots, so I needed another approach.
 
-Hm, I keep hearing about this Markov Chain I wonder if hes related to 2 Chainz?
+Hm, I keep hearing about this Markov Chain I wonder if he's related to 2 Chainz?
 
-Click here to read [The Making of Project Haikuza: Part 2](/posts/2015/making-haikuza-ii/)!
+_Click here to read [The Making of Project Haikuza: Part 2](/posts/2015/making-haikuza-ii/)!_
