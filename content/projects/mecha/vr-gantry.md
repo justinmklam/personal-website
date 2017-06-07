@@ -56,36 +56,29 @@ We wanted a solution to increase and maintain presence in virtual reality; havin
 
 We wanted to make this as quickly as possible, so I designed the rig using off-the-shelf parts and laser cut acrylic parts.
 
-<div class="embed-responsive embed-responsive-16by9"><iframe src="https://sketchfab.com/models/3be6275ae3c048098c2c777d7817ff26/embed?autostart=0&amp;preload=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
-</div>
-<p class="caption">The gantry frame designed in SolidWorks 2017.</p>
+{{<vid caption="The gantry frame designed in SolidWorks 2017." src="https://sketchfab.com/models/3be6275ae3c048098c2c777d7817ff26/embed?autostart=0&amp;preload=1">}}
 
 Preliminary tests were less than stellar. I initially used relative position commands, but as the clip below shows, but it wasn't responsive enough for practical use.
 
-{{<img caption="Initial testing of the tracking using relative position commands, almost as if it has a mind of its own."
-src="/imgs/vr-gantry/giphy_0.gif" >}}
+{{<vid caption="Initial testing of the tracking using relative position commands, almost as if it has a mind of its own." src="https://gfycat.com/ifr/AcademicDizzyJay">}}
 
 Changing the motor control to use absolute coordinates instead of relative showed promising results.
 
-{{<img caption="Revised tracking using absolute position commands for significantly improved precision."
-src="/imgs/vr-gantry/giphy_1.gif" >}}
+{{<vid caption="Revised tracking using absolute position commands for significantly improved precision." src="https://gfycat.com/ifr/SparsePassionateLaughingthrush" >}}
 
 An overview of the software algorithm to parse the user's current position and command the stepper motors is shown in the flowchart below.
 
-{{<img caption="Flowchart of the software algorithm."
-src="/imgs/vr-gantry/SoftwareFlowchart.png" >}}
+{{<img caption="Flowchart of the software algorithm." src="/imgs/vr-gantry/SoftwareFlowchart.png" >}}
 
 ### Stage 2: User Testing
 
 The results were so promising, in fact, that we decided to strap it to the ceiling and do some user testing. The results were... Loud due to the rattling and vibrations from the stepper motors. System responsiveness was slow, so more work needed to be done.
 
-{{<img caption="First user test with the gantry attached to the lab ceiling (rotation tracking not yet implemented)."
-src="/imgs/vr-gantry/giphy_2.gif" >}}
+{{<vid caption="First user test with the gantry attached to the lab ceiling (rotation tracking not yet implemented)." src="https://gfycat.com/ifr/FairPoisedArizonaalligatorlizard" >}}
 
 Many revisions later, and the rig was finally working as expected!
 
-{{<img caption="After many hardware, software, and firmware tweaks, the gantry finally became usable."
-src="/imgs/vr-gantry/giphy_3.gif" >}}
+{{<vid caption="After many hardware, software, and firmware tweaks, the gantry finally became usable." src="https://gfycat.com/ifr/DesertedHospitableEwe" >}}
 
 <!--{{<img caption="Achievement unlocked: Freedom of movement with wired VR."
 src="/imgs/vr-gantry/vr-gantry.gif" >}}-->
