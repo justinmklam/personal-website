@@ -27,9 +27,12 @@
             <p class="datestamp-index">{{ partial "blog-metadata.html" . }}</p>
 
             <!--Image if available-->
-            <a href="{{ .Permalink }}">
+            <!--<a href="{{ .Permalink }}">
                 <img class="img-responsive blog-preview-img" style="display:block; margin:auto; margin-bottom:16px" src="{{ .Params.image }}">
-            </a>
+            </a>-->
+            <div class="blog-preview-img">
+                <a href="{{ .Permalink }}" style="background-image:url({{ .Params.image }})"></a>
+            </div>
           
             <!--First 70 words of post-->
             <p>{{ .Summary }}</p>
