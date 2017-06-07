@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Making of Project Haikuza: Part 1</title>
+     <html>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="/css/jmklam-portfolio-bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400i,400|Roboto+Slab" rel="stylesheet">
+    <script src="https://use.fontawesome.com/ccb78cc113.js"></script>\
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+</html>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+                <a class="navbar-brand" href="http://justinmklam.com">Justin Lam</a>
+            
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="/view-all">Portfolio<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+                      <li><a href="/sections/mechatronics">Mechatronics</a></li>
+					  <li><a href="/sections/mechanical">Mechanical</a></li>
+					  <li><a href="/sections/electrical">Electrical</a></li>
+					  <li><a href="/sections/software">Software</a></li>
+					  <li role="separator" class="divider"></li>
+					  <li class="dropdown-header"></li>
+					  <li><a href="/view-all">View All</a></li>
+					</ul>
+				</li>
+				
+				
+					<li><a href="/pages/about/">About</a></li>
+				
+					<li><a href="/pages/contact/">Contact</a></li>
+				
+					<li><a href="/blog">Blog</a></li>
+				
+					<li><a href="/files/Resume-2016.pdf">CV</a></li>
+				
+
+            </ul>
+        </div>
+        
+    </div>
+    
+</nav>
+    
+</html>
+
+    
+    <div class="container" id="page-container">
+        
+        <div class="col-sm-8 col-centered">
+            <br>
+            <h2>The Making of Project Haikuza: Part 1</h2>
+            
+            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on July 12, 2015
+<em>&nbsp &middot &nbsp&nbsp7 min read &nbsp &middot &nbsp
+    
+    <a href="/tags/programming">#programming&nbsp</a>
+    
+    <a href="/tags/python">#python&nbsp</a>
+    
+</em></p>
+
+            
+            <a href=/imgs/blog-imgs/making-haikuza/8Y0EDX4VP9.jpg>
+                <img class="img-responsive" style="display:block; margin:auto; margin-bottom:16px" src="/imgs/blog-imgs/making-haikuza/8Y0EDX4VP9.jpg">
+            </a>
+            
+
+<p><em>The format of this series is an outline of my thought process during the development of <a href="/projects/software/haikuza/">@thehaikuza</a>.</em></p>
+
+<blockquote>
+<p>Haikus are simple</p>
+
+<p>Even children can write them</p>
+
+<p>maybe programs too?</p>
+</blockquote>
+
+<p>Nothing is cooler than algorithmic poetry. Except for maybe Carl Sagan. I heard he was a pretty cool guy.</p>
+
+<p>I was listening to the radio while driving home one Sunday evening, and an ad came up for a university that was submitting computer-generated poetry to a literature competition. Ive recently been fascinated by the many intricacies of the English language, so the thought of somehow teaching a computer how to construct proper phrases seemed like an elusive task. But hey, if Google is also working on natural language processing, then how hard can it be right?</p>
+
+<p>The idea of computer generated text is often a humourous one. Spamming your smartphones predictive keyboard is usually enough justification to avoid trying to computationally bang out the works of Shakespeare. As laughable as the monkeys at a typewriter idea is, maybe weve become smart enough to at least get close to this literary pipe dream</p>
+
+<h3 id="1-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-prequel-the-prudence-of-pivoting">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prequel: The Prudence of Pivoting</h3>
+
+<p>Needless to say, it can take a few tries to end up at a decent idea, and @thehaikuza was no exception. After hearing about the poetry contest, I wanted to develop something related to computational linguistics, but I was partial to run-of-the-mill poetry. High school English classes had given me a negative bias for this type of literary art, so naturally I was in search for a different end product.</p>
+
+<p>Rap songs were the first to come to mind. After all, songs are simply poems accompanied by musical harmonies and melodies, so I wasnt too far off from the realm of poetic computations. However, I eventually realized that writing rap songs from scratch (not to mention by an algorithm) would have mountains of difficulty, especially since my knowledge of natural language processing was currently at ground zero.  I decided to scale back and start off small with the most simple form of poetry known to (probably) every North American student: the haiku.</p>
+
+<p>Haikus are great because they are short in length and only have one simple rule: dont break the 5/7/5 syllable count per line. One of my coworkers suggested using Twitter as my platform for haiku generation, which would prove to be much easier than opening another can of worms of trying to develop my own web app.  Since theres already a Twitter API library for Python, and with each average haiku being under the threshold of 140 characters, my decision was made before I even had to think about it.</p>
+
+<p>With the advent of using Twitter, I had a few more options I could play with. My first idea was to make haikus based on the trending topics on Twitter. This would give my Twitter-bot the dynamic quality thats inherent in the fast-paced nature of the internet, rather than just creating stale haikus about nature.  It could retrieve the trending topics, gather all the relevant tweets, and then use the collected phrases to formulate a relevant haiku.  In theory, this seemed like a great idea; in practice, not so much! After some prototyping, I quickly learned that the broken English, frequent spelling mistakes, and chaotic nature of &lt; 140 character messages wouldnt serve as an adequate corpus for phrase generation.</p>
+
+<p>Okay, well forget about that idea. But I still wanted a venue to stay relevant on the internet. I figured songs can also be relevant, especially if I would be grabbing ones that are currently playing on the radio. Adding an interactive element to @thehaikuza by making it able to respond to song requests would just be icing on the cake. Thus, @thehaikuza was born!</p>
+
+<p>Or so I thought. Turned out it was still an embryo.</p>
+
+<h3 id="2-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-makin-bacon-haikus-v0-1">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Makin Bacon Haikus V0.1</h3>
+
+<p>The first research topic on my ever-growing list was to figure out what makes a sensible sentence. In elementary school, were taught that the most basic phrase consists of a subject and verb. In the sentence below, for example, the boy is the subject and is sweating is the action.</p>
+
+<p>The boy is sweating.
+Okay, this evidently isnt new knowledge to anyone. But what if we break down the phrase into types of words?  Referencing a universal part of speech (POS) tagging system, we get:</p>
+
+<blockquote>
+<p>[The, determinant] [boy, noun] [is, verb] [sweating, verb]</p>
+</blockquote>
+
+<p>Interesting. Maybe I can create a Mad Lib-based language model that can learn the sentence structures of existing haikus, then use an external wordset to substitute the corresponding words. For poetry, and notably haikus, grammar isnt as important as a passive aggressive letter to your not-so-favourite mobile carrier, so I might be able to get away with this rudimentary language model.  (Spoiler alert: I couldnt.)</p>
+
+<h4 id="2-1-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-haiku-training">2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Haiku Training</h4>
+
+<p>The plan was to create a machine-learning script (of sorts) that did the following:</p>
+
+<p>Import a collection of human-written haikus
+Extract the POS tags for each line
+Construct a database of 5 and 7 syllable POS phrases
+The implementation looked something like this:</p>
+
+<pre><code>import nltk
+
+class LearnHaiku(object):
+    def __init__(self, fname):
+        self.haikus = self.parse(fname)
+        self.pos_five, self.pos_seven, self.log = self.analyze()
+
+    @staticmethod
+    def parse(fname):
+        haikus = []
+        with open(fname) as inputfile:
+            for line in inputfile:
+                haikus.append(line)
+
+        return haikus
+
+    def analyze(self):
+        line5s = []
+        line7s = []
+        errors = []
+
+        is_line7s = 1
+        numrows = len(self.haikus)
+
+        for i in range(numrows):
+            &quot;&quot;&quot;Only parse if not a blank line&quot;&quot;&quot;
+            if self.haikus[i] != '\n':
+                try:
+                    tags = nltk.pos_tag(self.haikus[i].split(' '), tagset='universal')
+                    if i == is_line7s:
+                        line7s.append([x[1] for x in tags])
+                        is_line7s += 4
+                    else:
+                        line5s.append([x[1] for x in tags])
+                except UnicodeDecodeError:
+                    errors.append(i+1)
+
+        log_str = &quot;Couldn't parse line(s) %s.&quot; %(', '.join(str(x) for x in errors))
+
+        return line5s, line7s, log_str
+
+if __name__ == '__main__':
+    hk = LearnHaiku(&quot;[REF] Haiku Training Examples V0.1.txt&quot;)
+    print hk.pos_five
+    print hk.pos_seven
+</code></pre>
+
+<p>From this, I could then randomly generate haiku POS templates that I would be able to use with an external set of words.  From the (rather awfully juvenile) example haikus below:</p>
+
+<blockquote>
+<p>An old silent pond</p>
+
+<p>A frog jumps into the pond,</p>
+
+<p>splash! Silence again.</p>
+
+<p><br>
+The autumn moonlight</p>
+
+<p>a large worm digs silently</p>
+
+<p>into the chestnut.</p>
+
+<p><br>
+Lightning flashes bright</p>
+
+<p>what I thought were white faces</p>
+
+<p>are plumes of plain grass.</p>
+</blockquote>
+
+<p>The POS tag retrieval for the phrases were:</p>
+
+<pre><code>Five Syllable Lines:
+        [u'DET', u'ADJ', u'NOUN', u'NOUN'],
+        [u'NOUN', u'NOUN', u'NOUN'],
+        [u'DET', u'NOUN', u'NOUN'],
+        [u'NOUN', u'VERB', u'NOUN'],
+        [u'VERB', u'ADV', u'ADP', u'NOUN', u'NOUN'] 
+
+Seven Syllable Lines:
+        [u'DET', u'NOUN', u'VERB', u'ADP', u'DET', u'ADJ'],
+        [u'DET', u'ADJ', u'NOUN', u'VERB', u'NOUN', u'NOUN'],
+        [u'PRON', u'PRON', u'VERB', u'NOUN', u'NOUN']
+</code></pre>
+
+<p>Almost there to our first haiku!</p>
+
+<h4 id="2-2-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-first-pass-haiku-generation">2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Pass Haiku Generation</h4>
+
+<p>I wrote another simple script to take in song lyrics, apply a POS tag for each of the lyrics, and create a word list sorted by the corresponding tags. I could then plug-and-chug words from the generated list into an appropriate slot in the haiku template.</p>
+
+<p>For the first test, I thought it was only appropriate to use lyrics from Drakes classic Started From The Bottom. The output:</p>
+
+<pre><code>Story screaming real
+Out uncle own stay worry
+Through bottom lips heard
+
+When that standing as
+Poppin coming we begging
+From started keep if
+
+Fucking ball standing
+Niggas explaining guys crowd
+Say girl chain rumors
+</code></pre>
+
+<p>Oh dear lord, what a mellifluous balance of repulsive vocabulary and lackadaisical grammar! Those were definitely some of the worst haikus Ive read Maybe if I try using Blank Space by Taylor Swift:</p>
+
+<pre><code>Half bottom boy flames
+Feel what bottom you darling
+crying was from is crying
+
+Explaining queen lights
+Stays leave could cherry stay
+Town cause lets dress the
+
+Crystal blank starts: flames
+thats explaining funny hand
+Cherry at god im
+I lied. Pretty sure those were worse.
+</code></pre>
+
+<p>Obviously, the generated haikus were complete word salad. With absolutely no concept of context or proper grammar, @thehaikuza V0.1 was light years away from reliably generating poems that made at least some remote level of sense. There was definitely more to constructing phrases than stuffing in random words into corresponding POS slots, so I needed another approach.</p>
+
+<p>Hm, I keep hearing about this Markov Chain I wonder if hes related to 2 Chainz?</p>
+
+<p>Click here to read <a href="/posts/2015/making-haikuza-ii/">The Making of Project Haikuza: Part 2</a>!</p>
+
+
+			
+            <br>
+            <div class="text-left">
+                <a href="/blog">
+                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+                </a>
+            </div>
+            <hr>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'justinmklam';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </div>
+        
+
+    </div>	
+    
+
+	    
+    <script src="http://justinmklam.com/js/jquery.js"></script>
+
+    
+    <script src="http://justinmklam.com/js/bootstrap.min.js"></script>
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+    
+
+<footer>
+	<div class="col-lg-8 col-centered">
+		<hr>
+		<p class="text-center">&copy; 2017 Justin MK Lam</p>
+	</div>
+</footer>
+
+</html>
