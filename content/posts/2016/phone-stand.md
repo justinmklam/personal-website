@@ -4,7 +4,7 @@ draft = false
 image = "/imgs/blog-imgs/phone-stand/IMG_8724.jpg"
 layout = "single-blog"
 tagline = "Turning a hunk of wood into a hunky tech holder."
-tags = ["woodworking"]
+tags = ["design", "woodworking"]
 title = "Wooden Phone Stand"
 type = "blog"
 

@@ -151,7 +151,7 @@ Almost there to our first haiku!
 
 I wrote another simple script to take in song lyrics, apply a POS tag for each of the lyrics, and create a word list sorted by the corresponding tags. I could then plug-and-chug words from the generated list into an appropriate slot in the haiku template.
 
-For the first test, I thought it was only appropriate to use lyrics from Drakes classic Started From The Bottom. The output:
+For the first test, I thought it was only appropriate to use lyrics from Drake's classic _Started From The Bottom_. The output:
 
 <blockquote style="text-align:center">
 Story screaming real
@@ -167,7 +167,7 @@ Story screaming real
 <br>Say girl chain rumors
 </blockquote>
 
-Oh dear lord, what a mellifluous balance of repulsive vocabulary and lackadaisical grammar! Those were definitely some of the worst haikus Ive read... Maybe if I try using Blank Space by Taylor Swift:
+Oh dear lord, what a mellifluous balance of repulsive vocabulary and lackadaisical grammar. Those were definitely some of the worst haikus I've read... Maybe if I try using _Blank Space_ by Taylor Swift:
 
 <blockquote style="text-align:center">
 Half bottom boy flames
