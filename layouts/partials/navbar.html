@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 
-				<li class="dropdown">
+				<!--<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="/view-all">Portfolio<span class="caret"></span></a>
 					<ul class="dropdown-menu">
                       <li><a href="/sections/mechatronics">Mechatronics</a></li>
@@ -31,7 +31,9 @@
 					  <li class="dropdown-header"></li>
 					  <li><a href="/view-all">View All</a></li>
 					</ul>
-				</li>
+				</li>-->
+
+                <li><a href="/view-all">Portfolio</a>
 				
 				{{ range .Site.Menus.main }}
 					<li><a href="{{.URL}}">{{ .Name }}</a></li>

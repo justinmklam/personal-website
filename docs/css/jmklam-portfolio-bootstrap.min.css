@@ -1472,8 +1472,9 @@ footer{margin:35px 0}
 .datestamp,.datestamp-index {font-size:90%;color:#777}
 .datestamp {text-align:right}
 .archive-header {font-size:18px; margin-top:5px; margin-bottom:7px}
-blockquote p{text-align:center}
+/*blockquote p{text-align:center}*/
 h4 {margin-top:20px}
+.project-description h4 {margin-top:5px}
 @media(min-width:992px){.img-content{padding-left:75px;padding-right:75px}}
 @media(max-width:768px){.img-content{padding-left:5px;padding-right:5px}}
 @media(max-width:767px){.img-rounded{max-width:400px;margin:15px auto}}
