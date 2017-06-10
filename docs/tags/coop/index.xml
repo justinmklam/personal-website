@@ -6,10 +6,20 @@
     <description>Recent content in Coop on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Sep 2014 12:39:34 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2015 21:30:17 -0700</lastBuildDate>
     
 	<atom:link href="http://justinmklam.com/tags/coop/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Co-op: Air Quality Calibration Chamber</title>
+      <link>http://justinmklam.com/posts/2015/mistywest-coop/</link>
+      <pubDate>Tue, 23 Jun 2015 21:30:17 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/posts/2015/mistywest-coop/</guid>
+      <description>Background: Welcome to TZOA (pronounced &amp;lsquo;zoa&amp;rsquo;) - the world&amp;rsquo;s most advanced environment tracker. TZOA uses internal sensors to measure your air quality, temperature, humidity, atmospheric pressure, ambient light, and UV (sun) exposure, all in one wearable device.
+Objective: Design and build a purified test chamber with zero air particulate to calibrate the TZOA devices against the DusTrak DRX 8533. An aerosolized cloud of ultrafine (0.3 - 20 μm) test dust was used to create the particle events.</description>
+    </item>
     
     <item>
       <title>Co-op: Drill Cover User Study</title>

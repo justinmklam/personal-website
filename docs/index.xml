@@ -322,6 +322,16 @@ As a new member of the VOC, it quickly became apparent to me how &amp;ldquo;begi
     </item>
     
     <item>
+      <title>Co-op: Air Quality Calibration Chamber</title>
+      <link>http://justinmklam.com/posts/2015/mistywest-coop/</link>
+      <pubDate>Tue, 23 Jun 2015 21:30:17 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/posts/2015/mistywest-coop/</guid>
+      <description>Background: Welcome to TZOA (pronounced &amp;lsquo;zoa&amp;rsquo;) - the world&amp;rsquo;s most advanced environment tracker. TZOA uses internal sensors to measure your air quality, temperature, humidity, atmospheric pressure, ambient light, and UV (sun) exposure, all in one wearable device.
+Objective: Design and build a purified test chamber with zero air particulate to calibrate the TZOA devices against the DusTrak DRX 8533. An aerosolized cloud of ultrafine (0.3 - 20 μm) test dust was used to create the particle events.</description>
+    </item>
+    
+    <item>
       <title>External Ballistics Simulation</title>
       <link>http://justinmklam.com/projects/software/external-ballistics/</link>
       <pubDate>Thu, 19 Feb 2015 12:36:19 -0700</pubDate>
