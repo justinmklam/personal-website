@@ -6,7 +6,7 @@ layout = "single-blog"
 title = "New Toy Tuesday: Monoprice Select Mini 3D Printer"
 tagline = "Giving in to temptation for a tool that can make other tools."
 type = "blog"
-tags = ["3dprinting"]
+tags = ["3d printing"]
 +++
 
 I've been bit by the 3D printing bug.
