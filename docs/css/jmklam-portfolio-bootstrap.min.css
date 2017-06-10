@@ -1475,6 +1475,8 @@ footer{margin:35px 0}
 /*blockquote p{text-align:center}*/
 h4 {margin-top:20px}
 .project-description h4 {margin-top:5px}
+.navbar-inverse .navbar-toggle{border-color:#ffffff}
+.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus{background-color:#ffffff}
 @media(min-width:992px){.img-content{padding-left:75px;padding-right:75px}}
 @media(max-width:768px){.img-content{padding-left:5px;padding-right:5px}}
 @media(max-width:767px){.img-rounded{max-width:400px;margin:15px auto}}
