@@ -1318,7 +1318,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:transpa
 .modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,.5);box-shadow:0 5px 15px rgba(0,0,0,.5)}
 .modal-sm{width:300px}
 }@media(min-width:992px){.modal-lg{width:900px}
-}.tooltip{position:absolute;z-index:1070;display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;font-style:normal;font-weight:normal;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;filter:alpha(opacity=0);opacity:0;line-break:auto}
+}.tooltip{position:absolute;z-index:1070;display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;font-style:normal;font-weight:normal;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;filter:alpha(opacity=0);opacity:0}
 .tooltip.in{filter:alpha(opacity=90);opacity:.9}
 .tooltip.top{padding:5px 0;margin-top:-3px}
 .tooltip.right{padding:0 5px;margin-left:3px}
@@ -1334,7 +1334,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:transpa
 .tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-width:0 5px 5px;border-bottom-color:#000}
 .tooltip.bottom-left .tooltip-arrow{top:0;right:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#000}
 .tooltip.bottom-right .tooltip-arrow{top:0;left:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#000}
-.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-style:normal;font-weight:normal;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);line-break:auto}
+.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-style:normal;font-weight:normal;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2)}
 .popover.top{margin-top:-10px}
 .popover.right{margin-left:10px}
 .popover.bottom{margin-top:10px}
@@ -1446,10 +1446,9 @@ th.visible-print,td.visible-print{display:table-cell!important}
 }.visible-print-inline-block{display:none!important}
 @media print{.visible-print-inline-block{display:inline-block!important}
 }@media print{.hidden-print{display:none!important}
-}/*! CSS Styling for personal project portfolio
-Last edited: Wed, 5 Oct 2016
-*/body{font-family:'Lato',sans-serif;padding-top:70px;font-size:14px;line-height:1.42857143;color:#333;background-color:#ffffff}
-/*a.h3{font-family: 'Roboto Slab', serif;}*/
+}
+/***** CUSTOM CSS STYLING ******/
+body{font-family:'Lato',sans-serif;padding-top:70px;font-size:14px;line-height:1.42857143;color:#333;background-color:#ffffff}
 .navbar-inverse{
   -webkit-box-shadow: 0 5px 6px -6px #222;
   -moz-box-shadow:    0 5px 6px -6px #222;
@@ -1463,8 +1462,6 @@ footer{margin:35px 0}
 .link-disabled{pointer-events:none;cursor:default}
 .caption{text-align:center;font-style:italic;padding-bottom:15px}
 .img-content{margin:0 auto; max-height:450px}
-/*.blog-preview-img{width:100%;height:225px; object-fit:cover;}
-@media only screen and (max-device-width:481px){.blog-preview-img{height:100px}}*/
 .blog-preview-img a{height:225px; background-size: cover; background-position:center center; display:block;}
 @media only screen and (max-width:481px){.projects-category h1 {margin-bottom:5px} .blog-preview-img a{height:150px} }
 .media-center{margin:0 auto}
@@ -1472,8 +1469,8 @@ footer{margin:35px 0}
 .datestamp,.datestamp-index {font-size:90%;color:#777; text-align:left}
 .datestamp {text-align:right}
 .archive-header {font-size:18px; margin-top:5px; margin-bottom:7px}
-/*blockquote p{text-align:center}*/
 h4 {margin-top:20px}
+pre {background-color: #F0F0F0}
 .project-description h4 {margin-top:5px}
 .navbar-inverse .navbar-toggle{border-color:#ffffff}
 .navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus{background-color:#ffffff}
@@ -1481,104 +1478,20 @@ h4 {margin-top:20px}
 @media(max-width:768px){.img-content{padding-left:5px;padding-right:5px}}
 @media(max-width:767px){.img-rounded{max-width:400px;margin:15px auto}}
 @media(max-width:480px){.img-rounded{max-width:200px;margin:15px auto}}
-#page-container, #hamburger-menu {
-    -webkit-animation: fadein 0.65s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0.65s; /* Firefox < 16 */
-        -ms-animation: fadein 0.65s; /* Internet Explorer */
-         -o-animation: fadein 0.65s; /* Opera < 12.1 */
-            animation: fadein 0.65s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-#hamburger-menu {
-  /*width: 60px;
-  height: 45px;
-  position: relative;
-  margin: 50px auto;*/
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-#hamburger-menu span {
-  /*display: block;
-  position: absolute;
-  height: 9px;
-  width: 100%;
-  background: #d3531a;
-  border-radius: 9px;*/
-  /*opacity: 1;
-  left: 0;*/
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-}
-
-#hamburger-menu {
-}
-
-#hamburger-menu span:nth-child(1) {
-  top: 0px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#hamburger-menu span:nth-child(2) {
-  top: 18px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#hamburger-menu span:nth-child(3) {
-  top: 36px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
+/*Page fade animation*/
+#page-container, #hamburger-menu {-webkit-animation: fadein 0.65s; -moz-animation: fadein 0.65s; -ms-animation: fadein 0.65s; -o-animation: fadein 0.65s; animation: fadein 0.65s}
+@keyframes fadein {from { opacity: 0; }to{ opacity: 1; }}
+@-moz-keyframes fadein {from { opacity: 0; }to{ opacity: 1; }}
+@-webkit-keyframes fadein {from { opacity: 0; }to{ opacity: 1; }}
+@-ms-keyframes fadein {from { opacity: 0; }to{ opacity: 1; }}
+@-o-keyframes fadein {from { opacity: 0; }to{ opacity: 1; }}
+/*Hamburger menu animated*/
+#hamburger-menu {-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .5s ease-in-out;-moz-transition: .5s ease-in-out;-o-transition: .5s ease-in-out;transition: .5s ease-in-out;cursor: pointer;}
+#hamburger-menu span {-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .25s ease-in-out;-moz-transition: .25s ease-in-out;-o-transition: .25s ease-in-out;transition: .25s ease-in-out;}
+#hamburger-menu span:nth-child(1) {top: 0px;-webkit-transform-origin: left center;-moz-transform-origin: left center;-o-transform-origin: left center;transform-origin: left center;}
+#hamburger-menu span:nth-child(2) {top: 18px;-webkit-transform-origin: left center;-moz-transform-origin: left center;-o-transform-origin: left center;transform-origin: left center;}
+#hamburger-menu span:nth-child(3) {top: 36px;-webkit-transform-origin: left center;-moz-transform-origin: left center;-o-transform-origin: left center;transform-origin: left center;}
+#hamburger-menu.open span:nth-child(2) {width: 0%;opacity: 0;}
 #hamburger-menu.open span:nth-child(1) {
   -webkit-transform:rotate(35deg);
   -moz-transform:   rotate(35deg);
@@ -1587,12 +1500,6 @@ h4 {margin-top:20px}
   top: -3px;
   left: 8px;
 }
-
-#hamburger-menu.open span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
-}
-
 #hamburger-menu.open span:nth-child(3) {
   -webkit-transform:rotate(-35deg);
   -moz-transform:   rotate(-35deg);

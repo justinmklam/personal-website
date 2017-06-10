@@ -131,7 +131,7 @@ src="/imgs/sous-vide/plot_cook times.png" >}}
 
 Quantifying the ripple with some simple analysis shows that the average standard deviation for these four cooking trials was ±0.4°C, where the steak had the highest deviation of ±0.6°C. 
 
-```
+```no-highlight
     Trout Fillet at 48C for 59 mins
        Mean:  48.35°C (+1.15, -0.73)
        Std:  ±0.34°C

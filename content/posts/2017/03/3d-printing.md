@@ -52,7 +52,7 @@ The machine settings below are based off the ones in the official user manual. H
 
 For the lazy, you can simply copy and paste the code boxes below (ignore the End Gcode in the image above).
 
-```
+```ini
 ;; Start Gcode
 G28 ;Home
 G1 Z0.2 F1200 ; raise nozzle
@@ -62,7 +62,7 @@ G1 Y100 E12 F600 ; purge nozzle & wipe
 G92 E0 ; reset extrusion distance
 ```
 
-```
+```ini
 ;; End Gcode
 M104 S0 ; turn off hotend heater
 M140 S0 ; turn off bed heater
