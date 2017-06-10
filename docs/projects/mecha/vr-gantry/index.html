@@ -31,14 +31,13 @@
     <div class="container">
         
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
+            <button id="hamburger-menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             
-                <a class="navbar-brand" href="http://justinmklam.com">Justin Lam</a>
+            <a class="navbar-brand" href="http://justinmklam.com">Justin Lam</a>
             
         </div>
         
@@ -245,6 +244,14 @@
 
     
     <script src="https://use.fontawesome.com/ccb78cc113.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#hamburger-menu').click(function(){
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
 
 </body>
     
