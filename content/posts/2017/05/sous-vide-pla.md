@@ -1,6 +1,6 @@
 +++
 date = "2017-06-10T15:56:53-07:00"
-draft = true
+draft = false
 image = "/imgs/blog-imgs/sous-vide-pla/banner.jpg"
 title = "Annealing 3D Printed Plastics: Sous Vide Style"
 tagline = "When hobbies combine and engineering takes over."

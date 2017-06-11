@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Mar 2017 21:14:29 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jun 2017 15:56:53 -0700</lastBuildDate>
     
 	<atom:link href="http://justinmklam.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>3d Printing</title>
       <link>http://justinmklam.com/tags/3d-printing/</link>
-      <pubDate>Sat, 25 Mar 2017 21:14:29 -0700</pubDate>
+      <pubDate>Sat, 10 Jun 2017 15:56:53 -0700</pubDate>
       
       <guid>http://justinmklam.com/tags/3d-printing/</guid>
       <description></description>
@@ -53,6 +53,15 @@
       <pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate>
       
       <guid>http://justinmklam.com/tags/electrical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Materials Science</title>
+      <link>http://justinmklam.com/tags/materials-science/</link>
+      <pubDate>Sat, 10 Jun 2017 15:56:53 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/tags/materials-science/</guid>
       <description></description>
     </item>
     
