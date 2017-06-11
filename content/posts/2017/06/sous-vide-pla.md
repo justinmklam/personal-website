@@ -9,13 +9,9 @@ layout = "single-blog"
 tags = ["3d printing", "materials science"]
 +++
 
-> "Oh so you have a 3D printer? I read on the internet that you can make a gun with it."
+Let's say we wanted to make a highly functional part using a 3D printer. Maybe you need a replacement gear or a weight-bearing mounting bracket, and 3D printing would be the easiest way to fabricate the part. 
 
-No. Just no. Sure you can model it in your favourite CAD software and print one out, but at the end of the day **it's still a goddamn plastic gun.**
-
-<!-- For a bullet to exit the chamber at any meaningful velocity to cause damage, an extremely high pressure needs to be created within the barrel (traditionally accomplished by a gunpowder explosion). So for a plastic gun, this means internal annihilation. But if you're going to use a metal barrel and other non-plastic parts with a printed enclosure, then that's the equivalent of covering a rock in snow for a snowball fight with your friends. And there's a special place after death for people who do that.-->
-
-Rant aside, let's say we actually wanted to make a highly functional part (aside from a weapon) using a 3D printer. Maybe you need a replacement gear or a weight-bearing mounting bracket, and 3D printing would be the easiest way to fabricate the part. You carefully select your slicer settings to optimize shell thickness, infill density, and layer height based on your application.  You select a material that adequately suits your needs based on material strength or flexibility and environmental factors like UV exposure and heat resistance. You even take layer geometry into consideration to maximize strength in the loading direction.
+You carefully select your slicer settings to optimize shell thickness, infill density, and layer height based on your application.  You select a material that adequately suits your needs based on material strength or flexibility and environmental factors like UV exposure and heat resistance. You even take layer geometry into consideration to maximize strength in the loading direction.
 
 {{<img caption="Optimal layer orientation with respect to direction of primary load." src="/imgs/blog-imgs/sous-vide-pla/layer-orientation.jpg" >}}
 
@@ -23,9 +19,17 @@ With all settings configured and high hopes for success, you load up the filamen
 
 {{<img caption="Fence bracket repaired (left), and broken after a heavy windstorm (right)." src="/imgs/blog-imgs/sous-vide-pla/broken fence.jpg" >}}
 
-But it still fails. Tears ensue. Aspirations crumble. Is there any hope for the humanity of functional, 3D printed parts? Thankfully there's an entire industry dedicated to squeezing every ounce of performance out of material properties, so that should be an adequate starting point!
+But it still fails. Tears ensue. Aspirations crumble. Is there any hope for the humanity of functional, home-made, plastic designs? 
 
-### A Primer in Heat Treatment
+### The Problem With Printed Parts
+
+3D printing shines in the rapid creation of designs with moderately complex geometries. From trinkets to tool holders and enclosures to gear trains, 3D printing has found its way into a variety of purposes. However, at the end of the day, they're only plastic parts having limited practicality in more demanding applications. 
+
+The inherent property of these parts is that they're built layer upon layer, with different areas being rapidly heated and cooled at different rates. This causes internal stresses and they end up acting like perforated lines that are prone to snapping apart. 
+
+Thankfully there's an entire industry dedicated to squeezing every ounce of performance out of material properties, so that will be an adequate starting point. Let's begin!
+
+### The Solution: Heat Treatment
 
 In metallurgy (the study of physical and chemical behaviour of metallic elements), annealing is a heat treatment process that alters the material's physical (and sometimes chemical) properties[^1]. For common metals such as copper, steel, silver, and brass, the process looks something like:
 
@@ -37,17 +41,15 @@ In metallurgy (the study of physical and chemical behaviour of metallic elements
 
 <!--In more scientific terms, these three stages of annealing are known as recovery, recrystallization, and grain growth. In recovery, the material is softened to relax its internal defects in the grain structure called _dislocations_, which normally cause internal stresses. In recrystallization, new strain-free grains grow in place of the dislocations. In grain growth, the microstructure coarsens-->
 
-Typically with any material, internal defects are evident (notably on a microscopic scale) and create internal stresses which weaken its overall strength. When creating metal parts, the initial metal-forming processes create these defects and as a result, the metal will crack under stress along these stress-forming juncture lines called "grains". To minimize the effect of these grains, annealing can be done to soften the material, relax the grain structures causing the internal stresses, and allow new, strain-free grains to form as replacements. 
+#### Why are internal stresses formed?
+
+Typically with any material, internal defects are evident (notably on a microscopic scale) and create internal stresses which weaken its overall strength. When creating metal parts, the initial metal-forming processes create these defects and as a result, the metal will crack under stress along these stress-forming juncture lines called "grains". 
+
+To minimize the effect of these grains, annealing can be done to soften the material, relax the grain structures causing the internal stresses, and allow new, strain-free grains to form as replacements. 
 
 {{<img caption="Diagram showing the effect of heat treatment on the material's microstructure. (Source: Rigid Ink Blog)" src="/imgs/blog-imgs/sous-vide-pla/annealing_prints.jpg" >}}
 
-With 3D printed parts, these internal defects occur on a more macroscopic scale[^2]. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there's really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling. 
-
-[^2]: [How to Anneal Your 3D Prints for Strength](https://rigid.ink/blogs/news/how-to-anneal-your-3d-prints-for-strength), Rigid Ink.
-
 ### Annealing, Plastic, And You
-
-3D printing shines in the rapid creation of designs with moderately complex geometries. From trinkets to tool holders and enclosures to gear trains, 3D printing has found its way into a variety of purposes. However, at the end of the day, they're only plastic parts having limited practicality in more demanding applications. 
 
 From our newfound knowledge in maximizing material performance in metals, we know:
 
@@ -55,13 +57,21 @@ From our newfound knowledge in maximizing material performance in metals, we kno
 2. Internal stresses are created when a material is pushed, squeezed, and formed into a part
 3. Internal stresses can be reduced by reheating, softening, and re-hardening the part
 
+#### How does this relate to our 3D printed plastic?
+
+With 3D printed parts, these internal defects occur on a more macroscopic scale[^2]. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there's really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling. 
+
+[^2]: [How to Anneal Your 3D Prints for Strength](https://rigid.ink/blogs/news/how-to-anneal-your-3d-prints-for-strength), Rigid Ink.
+
+### Phase 1: A Review of Current Research
+
 Fortunately, a similar heat treatment process can be applied to plastics to remove these nasty stresses and allow internal harmony to coalesce. I came across a research paper by Lih-Sheng Turng and Yottha Srithep, which discusses the relationship of crystallinity (ie. the degree of structural order in a solid) and mechanical properties of injection molded polylactide, commonly known as PLA[^3].
 
 ... Or, in plain English: they took a bunch of plastic sample pieces, performed some heat treatment on them, stuck them back in an oven to see if they still deform, and measured how much better the annealed samples hold up in the heat. Let's dig in and see what they found!
 
 [^3]: [Annealing conditions for injection-molded poly(lactic acid).](http://www.4spepro.org/pdf/005392/005392.pdf), Plastics Research Online.
 
-### Science Alert: The Nitty Gritty of Crystallinity
+#### Science Alert: The Nitty Gritty of Crystallinity
 
 To go into a bit more detail, increasing a polymer's crystallinity is good because it can lead to an increase in stiffness, strength, heat deflection temperature, and chemical resistance. However, this is difficult to do with PLA because of its low crystallization rate and its required slow cooling rate.
 
@@ -71,26 +81,36 @@ Looking at the graph below, we see that the PLA samples had a maximum crystallin
 
 {{<img caption="Degree of crystallinity versus annealing time. (Source: Turng and Srithep, 2014)" src="/imgs/blog-imgs/sous-vide-pla/crystallinity vs annealing time.JPG" >}}
 
+#### Their Results
+
 So what's the takeaway? Unfortunately, this paper only tested the heat resistance of the annealed samples, as it would have been interesting to see them evaluate other mechanical properties such as tension/compression and getting a stress/strain curve out of it all. But this at least sheds some insight on performing heat treatment on PLA; if it improves heat resistance, then it should also improve other (potentially related) mechanical properties.
 
-### Current Methods in the 3D Printing Community
+### Phase 2: A Review of Current Methods
 
-From a cursory search, annealing PLA seems to be a common, known method in squeezing a bit of extra mechanical performance out of printed parts. YouTubers Thomas Sanlader[^4] and Joe Mike Terranella[^5] have shown both quantitative and qualitative results in strength improvements by annealing. 
+From a cursory search in the 3D printing community, annealing PLA seems to be a common, known method in squeezing a bit of extra mechanical performance out of printed parts. YouTubers Thomas Sanlader[^4] and Joe Mike Terranella[^5] have shown both quantitative and qualitative results in strength improvements by annealing. 
 
-Thomas' approach in testing oven-baked samples was nicely scientific, and warping was shown to be an issue since ovens aren't great at providing even, uniform heating. Joe's approach with boiling PLA was a good proof of concept, but it was only qualitative, his parts were floating in the water, and most importantly, no data was collected (savage). 
+#### The Oven Bake Method
+
+Thomas' approach in testing oven-baked samples was nicely scientific, and warping was shown to be an issue since ovens aren't great at providing even, uniform heating.  
 
 [^4]: [Bake your PLA and have it outperform everything else!](https://www.youtube.com/watch?v=CZX8eHC7fws), Thomas Sanladerer.
 [^5]: [Annealing MakerGeeks Raptor PLA - The Boil Method](https://www.youtube.com/watch?v=WmTGU3r53VU), Joe Mike Terranella.
 
 {{<img caption="Annealing various 3D printed plastics in an oven. (Source: Thomas Sanlader, YouTube)" src="/imgs/blog-imgs/sous-vide-pla/screencap-thomas-sanlader.JPG" >}}
 
+#### The Boiling Water Method
+
+Joe's approach with boiling PLA was a good proof of concept, but it was only qualitative, his parts were floating in the water, and most importantly, no data was collected (savage).
+
 {{<img caption="Boiling PLA for 10 minutes for extra strength. (Source: Joe Mike Terranella, YouTube)" src="/imgs/blog-imgs/sous-vide-pla/screencap-terranella.JPG" >}}
+
+#### Areas of Improvement
 
 Using water as a heat source is advantageous because it provides fairly uniform heating, but temperature control is fussy to maintain a specific temperature. Ovens are convenient since it provides a (moderately) temperature controlled chamber, but heat transfer from the heating element to the part is less than ideal and still leads to uneven heating. 
 
 If only there was a way to combine the temperature control of an oven and uniform, stable heating of a water bath...
 
-### Annealing PLA with... Sous Vide?
+### Phase 3: Annealing PLA with... Sous Vide?
 
 Yes, that's right. Sous vide is the ultimate hero of this story.
 
@@ -102,28 +122,19 @@ Ladies and gentlemen, welcome to the meat and potatoes of this post.
 
 To recap, we've learned why annealing is desirable to reduce internal stresses (ie. increase crystallization), what previous research has identified, and what current heat treatment processes have already been tried. Although the presented information has helped in answering our preliminary questions, we still have unanswered ones that are left for us to uncover and test:
 
-#### Objectives
+#### The Questions
 
 1. Will annealing PLA in a temperature controlled water bath improve its mechanical properties?
 1. What effect does layer height have on annealed parts?
 1. Do we really need to cool the samples slowly, or can we get away with (quicker) cooling in room temperature?
 
-#### Methods - Annealing Process
-
-1. Print 9 rectangular prisms as the test samples
-1. Remove 3 samples as the control set (ie. unmodified and directly off the printer)
-1. Fill kettle with room temperature water
-1. Submerge the remaining 6 samples in water bath
-1. Set desired temperature of water bath
-1. Maintain temperature for 30 mins
-1. Remove 3 samples (1st sous vide set) and allow to air cool at room temperature
-1. Turn off heat and allow the remaining 3 samples (2nd sous vide set) to slowly cool with the water bath
-
 {{<img caption="Deprecated pennies were used to keep the samples submerged in the temperature controlled water bath." src="/imgs/blog-imgs/sous-vide-pla/IMG_20170318_183551.jpg" >}}
 
 {{<img caption="Test samples lined up for carnage." src="/imgs/blog-imgs/sous-vide-pla/IMG_20170318_165409.jpg" >}}
 
-Wait, hold the phone: this leads to even more questions! What annealing temperature is going to be maintained? How long are the samples going to be annealed for? Why are the samples so small?
+#### Designing the Tests
+
+Wait, hold the phone: we still have many questions! What annealing temperature is going to be maintained? How long are the samples going to be annealed for? Why are the samples so small?
 
 All great questions, but unfortunately not all have great answers.
 
@@ -141,17 +152,30 @@ Since we're applying (what we'll assume to be) a point force, the sample doesn't
 
 [^6]: [PLA](http://reprap.org/wiki/PLA), RepRap Wiki.
 
+### The Procedure
+
 Now that that's out of the way, we can finally start testing and breaking things!
 
-#### Methods - Quantifying Maximum Load
+#### Step 1: Annealing the Samples
+
+1. Print 9 rectangular prisms as the test samples
+1. Remove 3 samples as the control set (ie. unmodified and directly off the printer)
+1. Fill kettle with room temperature water
+1. Submerge the remaining 6 samples in water bath
+1. Set desired temperature of water bath
+1. Maintain temperature for 30 mins
+1. Remove 3 samples (1st sous vide set) and allow to air cool at room temperature
+1. Turn off heat and allow the remaining 3 samples (2nd sous vide set) to slowly cool with the water bath
+
+#### Step 2: Breaking the Samples
 
 1. Place test jig on top of bathroom scale
-1. Apply vertical point force on the sample with drill press handles
+1. Apply vertical point force on the sample
 1. Record maximum load before sample catastrophically explodes
 
 {{<img caption="Overview of test setup. Camera is used to capture the scale measurement at peak force." src="/imgs/blog-imgs/sous-vide-pla/IMG_20170319_164047.jpg" >}}
 
-{{<vid caption="The conversion of potential to kinetic energy, recorded on an iPhone 6 at 240 fps." src="https://gfycat.com/ifr/MintyEvenBanteng">}}
+{{<vid caption="Measuring maximum force before material failure, recorded on an iPhone 6 at 240 fps." src="https://gfycat.com/ifr/MintyEvenBanteng">}}
 
 ### The Results
 

@@ -89,15 +89,9 @@
             </a>
             
 
-<blockquote>
-<p>&ldquo;Oh so you have a 3D printer? I read on the internet that you can make a gun with it.&rdquo;</p>
-</blockquote>
+<p>Let&rsquo;s say we wanted to make a highly functional part using a 3D printer. Maybe you need a replacement gear or a weight-bearing mounting bracket, and 3D printing would be the easiest way to fabricate the part.</p>
 
-<p>No. Just no. Sure you can model it in your favourite CAD software and print one out, but at the end of the day <strong>it&rsquo;s still a goddamn plastic gun.</strong></p>
-
-<!-- For a bullet to exit the chamber at any meaningful velocity to cause damage, an extremely high pressure needs to be created within the barrel (traditionally accomplished by a gunpowder explosion). So for a plastic gun, this means internal annihilation. But if you're going to use a metal barrel and other non-plastic parts with a printed enclosure, then that's the equivalent of covering a rock in snow for a snowball fight with your friends. And there's a special place after death for people who do that.-->
-
-<p>Rant aside, let&rsquo;s say we actually wanted to make a highly functional part (aside from a weapon) using a 3D printer. Maybe you need a replacement gear or a weight-bearing mounting bracket, and 3D printing would be the easiest way to fabricate the part. You carefully select your slicer settings to optimize shell thickness, infill density, and layer height based on your application.  You select a material that adequately suits your needs based on material strength or flexibility and environmental factors like UV exposure and heat resistance. You even take layer geometry into consideration to maximize strength in the loading direction.</p>
+<p>You carefully select your slicer settings to optimize shell thickness, infill density, and layer height based on your application.  You select a material that adequately suits your needs based on material strength or flexibility and environmental factors like UV exposure and heat resistance. You even take layer geometry into consideration to maximize strength in the loading direction.</p>
 
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/sous-vide-pla/layer-orientation.jpg><img class="img-responsive img-content" src=/imgs/blog-imgs/sous-vide-pla/layer-orientation.jpg /></a>
@@ -111,9 +105,17 @@
     <p class="caption">Fence bracket repaired (left), and broken after a heavy windstorm (right).</p>
 </div>
 
-<p>But it still fails. Tears ensue. Aspirations crumble. Is there any hope for the humanity of functional, 3D printed parts? Thankfully there&rsquo;s an entire industry dedicated to squeezing every ounce of performance out of material properties, so that should be an adequate starting point!</p>
+<p>But it still fails. Tears ensue. Aspirations crumble. Is there any hope for the humanity of functional, home-made, plastic designs?</p>
 
-<h3 id="a-primer-in-heat-treatment">A Primer in Heat Treatment</h3>
+<h3 id="the-problem-with-printed-parts">The Problem With Printed Parts</h3>
+
+<p>3D printing shines in the rapid creation of designs with moderately complex geometries. From trinkets to tool holders and enclosures to gear trains, 3D printing has found its way into a variety of purposes. However, at the end of the day, they&rsquo;re only plastic parts having limited practicality in more demanding applications.</p>
+
+<p>The inherent property of these parts is that they&rsquo;re built layer upon layer, with different areas being rapidly heated and cooled at different rates. This causes internal stresses and they end up acting like perforated lines that are prone to snapping apart.</p>
+
+<p>Thankfully there&rsquo;s an entire industry dedicated to squeezing every ounce of performance out of material properties, so that will be an adequate starting point. Let&rsquo;s begin!</p>
+
+<h3 id="the-solution-heat-treatment">The Solution: Heat Treatment</h3>
 
 <p>In metallurgy (the study of physical and chemical behaviour of metallic elements), annealing is a heat treatment process that alters the material&rsquo;s physical (and sometimes chemical) properties<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>. For common metals such as copper, steel, silver, and brass, the process looks something like:</p>
 
@@ -125,18 +127,18 @@
 
 <!--In more scientific terms, these three stages of annealing are known as recovery, recrystallization, and grain growth. In recovery, the material is softened to relax its internal defects in the grain structure called _dislocations_, which normally cause internal stresses. In recrystallization, new strain-free grains grow in place of the dislocations. In grain growth, the microstructure coarsens-->
 
-<p>Typically with any material, internal defects are evident (notably on a microscopic scale) and create internal stresses which weaken its overall strength. When creating metal parts, the initial metal-forming processes create these defects and as a result, the metal will crack under stress along these stress-forming juncture lines called &ldquo;grains&rdquo;. To minimize the effect of these grains, annealing can be done to soften the material, relax the grain structures causing the internal stresses, and allow new, strain-free grains to form as replacements.</p>
+<h4 id="why-are-internal-stresses-formed">Why are internal stresses formed?</h4>
+
+<p>Typically with any material, internal defects are evident (notably on a microscopic scale) and create internal stresses which weaken its overall strength. When creating metal parts, the initial metal-forming processes create these defects and as a result, the metal will crack under stress along these stress-forming juncture lines called &ldquo;grains&rdquo;.</p>
+
+<p>To minimize the effect of these grains, annealing can be done to soften the material, relax the grain structures causing the internal stresses, and allow new, strain-free grains to form as replacements.</p>
 
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/sous-vide-pla/annealing_prints.jpg><img class="img-responsive img-content" src=/imgs/blog-imgs/sous-vide-pla/annealing_prints.jpg /></a>
     <p class="caption">Diagram showing the effect of heat treatment on the material&#39;s microstructure. (Source: Rigid Ink Blog)</p>
 </div>
 
-<p>With 3D printed parts, these internal defects occur on a more macroscopic scale<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there&rsquo;s really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling.</p>
-
 <h3 id="annealing-plastic-and-you">Annealing, Plastic, And You</h3>
-
-<p>3D printing shines in the rapid creation of designs with moderately complex geometries. From trinkets to tool holders and enclosures to gear trains, 3D printing has found its way into a variety of purposes. However, at the end of the day, they&rsquo;re only plastic parts having limited practicality in more demanding applications.</p>
 
 <p>From our newfound knowledge in maximizing material performance in metals, we know:</p>
 
@@ -146,11 +148,17 @@
 <li>Internal stresses can be reduced by reheating, softening, and re-hardening the part</li>
 </ol>
 
+<h4 id="how-does-this-relate-to-our-3d-printed-plastic">How does this relate to our 3D printed plastic?</h4>
+
+<p>With 3D printed parts, these internal defects occur on a more macroscopic scale<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there&rsquo;s really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling.</p>
+
+<h3 id="phase-1-a-review-of-current-research">Phase 1: A Review of Current Research</h3>
+
 <p>Fortunately, a similar heat treatment process can be applied to plastics to remove these nasty stresses and allow internal harmony to coalesce. I came across a research paper by Lih-Sheng Turng and Yottha Srithep, which discusses the relationship of crystallinity (ie. the degree of structural order in a solid) and mechanical properties of injection molded polylactide, commonly known as PLA<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>.</p>
 
 <p>&hellip; Or, in plain English: they took a bunch of plastic sample pieces, performed some heat treatment on them, stuck them back in an oven to see if they still deform, and measured how much better the annealed samples hold up in the heat. Let&rsquo;s dig in and see what they found!</p>
 
-<h3 id="science-alert-the-nitty-gritty-of-crystallinity">Science Alert: The Nitty Gritty of Crystallinity</h3>
+<h4 id="science-alert-the-nitty-gritty-of-crystallinity">Science Alert: The Nitty Gritty of Crystallinity</h4>
 
 <p>To go into a bit more detail, increasing a polymer&rsquo;s crystallinity is good because it can lead to an increase in stiffness, strength, heat deflection temperature, and chemical resistance. However, this is difficult to do with PLA because of its low crystallization rate and its required slow cooling rate.</p>
 
@@ -166,29 +174,39 @@
     <p class="caption">Degree of crystallinity versus annealing time. (Source: Turng and Srithep, 2014)</p>
 </div>
 
+<h4 id="their-results">Their Results</h4>
+
 <p>So what&rsquo;s the takeaway? Unfortunately, this paper only tested the heat resistance of the annealed samples, as it would have been interesting to see them evaluate other mechanical properties such as tension/compression and getting a stress/strain curve out of it all. But this at least sheds some insight on performing heat treatment on PLA; if it improves heat resistance, then it should also improve other (potentially related) mechanical properties.</p>
 
-<h3 id="current-methods-in-the-3d-printing-community">Current Methods in the 3D Printing Community</h3>
+<h3 id="phase-2-a-review-of-current-methods">Phase 2: A Review of Current Methods</h3>
 
-<p>From a cursory search, annealing PLA seems to be a common, known method in squeezing a bit of extra mechanical performance out of printed parts. YouTubers Thomas Sanlader<sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup> and Joe Mike Terranella<sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup> have shown both quantitative and qualitative results in strength improvements by annealing.</p>
+<p>From a cursory search in the 3D printing community, annealing PLA seems to be a common, known method in squeezing a bit of extra mechanical performance out of printed parts. YouTubers Thomas Sanlader<sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup> and Joe Mike Terranella<sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup> have shown both quantitative and qualitative results in strength improvements by annealing.</p>
 
-<p>Thomas&rsquo; approach in testing oven-baked samples was nicely scientific, and warping was shown to be an issue since ovens aren&rsquo;t great at providing even, uniform heating. Joe&rsquo;s approach with boiling PLA was a good proof of concept, but it was only qualitative, his parts were floating in the water, and most importantly, no data was collected (savage).</p>
+<h4 id="the-oven-bake-method">The Oven Bake Method</h4>
+
+<p>Thomas&rsquo; approach in testing oven-baked samples was nicely scientific, and warping was shown to be an issue since ovens aren&rsquo;t great at providing even, uniform heating.</p>
 
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/sous-vide-pla/screencap-thomas-sanlader.JPG><img class="img-responsive img-content" src=/imgs/blog-imgs/sous-vide-pla/screencap-thomas-sanlader.JPG /></a>
     <p class="caption">Annealing various 3D printed plastics in an oven. (Source: Thomas Sanlader, YouTube)</p>
 </div>
 
+<h4 id="the-boiling-water-method">The Boiling Water Method</h4>
+
+<p>Joe&rsquo;s approach with boiling PLA was a good proof of concept, but it was only qualitative, his parts were floating in the water, and most importantly, no data was collected (savage).</p>
+
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/sous-vide-pla/screencap-terranella.JPG><img class="img-responsive img-content" src=/imgs/blog-imgs/sous-vide-pla/screencap-terranella.JPG /></a>
     <p class="caption">Boiling PLA for 10 minutes for extra strength. (Source: Joe Mike Terranella, YouTube)</p>
 </div>
 
+<h4 id="areas-of-improvement">Areas of Improvement</h4>
+
 <p>Using water as a heat source is advantageous because it provides fairly uniform heating, but temperature control is fussy to maintain a specific temperature. Ovens are convenient since it provides a (moderately) temperature controlled chamber, but heat transfer from the heating element to the part is less than ideal and still leads to uneven heating.</p>
 
 <p>If only there was a way to combine the temperature control of an oven and uniform, stable heating of a water bath&hellip;</p>
 
-<h3 id="annealing-pla-with-sous-vide">Annealing PLA with&hellip; Sous Vide?</h3>
+<h3 id="phase-3-annealing-pla-with-sous-vide">Phase 3: Annealing PLA with&hellip; Sous Vide?</h3>
 
 <p>Yes, that&rsquo;s right. Sous vide is the ultimate hero of this story.</p>
 
@@ -203,25 +221,12 @@
 
 <p>To recap, we&rsquo;ve learned why annealing is desirable to reduce internal stresses (ie. increase crystallization), what previous research has identified, and what current heat treatment processes have already been tried. Although the presented information has helped in answering our preliminary questions, we still have unanswered ones that are left for us to uncover and test:</p>
 
-<h4 id="objectives">Objectives</h4>
+<h4 id="the-questions">The Questions</h4>
 
 <ol>
 <li>Will annealing PLA in a temperature controlled water bath improve its mechanical properties?</li>
 <li>What effect does layer height have on annealed parts?</li>
 <li>Do we really need to cool the samples slowly, or can we get away with (quicker) cooling in room temperature?</li>
-</ol>
-
-<h4 id="methods-annealing-process">Methods - Annealing Process</h4>
-
-<ol>
-<li>Print 9 rectangular prisms as the test samples</li>
-<li>Remove 3 samples as the control set (ie. unmodified and directly off the printer)</li>
-<li>Fill kettle with room temperature water</li>
-<li>Submerge the remaining 6 samples in water bath</li>
-<li>Set desired temperature of water bath</li>
-<li>Maintain temperature for 30 mins</li>
-<li>Remove 3 samples (1st sous vide set) and allow to air cool at room temperature</li>
-<li>Turn off heat and allow the remaining 3 samples (2nd sous vide set) to slowly cool with the water bath</li>
 </ol>
 
 <div class="row captioned-img">
@@ -234,7 +239,9 @@
     <p class="caption">Test samples lined up for carnage.</p>
 </div>
 
-<p>Wait, hold the phone: this leads to even more questions! What annealing temperature is going to be maintained? How long are the samples going to be annealed for? Why are the samples so small?</p>
+<h4 id="designing-the-tests">Designing the Tests</h4>
+
+<p>Wait, hold the phone: we still have many questions! What annealing temperature is going to be maintained? How long are the samples going to be annealed for? Why are the samples so small?</p>
 
 <p>All great questions, but unfortunately not all have great answers.</p>
 
@@ -250,13 +257,28 @@
 
 <p>Since we&rsquo;re applying (what we&rsquo;ll assume to be) a point force, the sample doesn&rsquo;t actually need to be that long. In terms of cross-sectional area, wall thickness has a much larger impact on a part&rsquo;s strength than infill. Thus, these samples were designed to be hollow with a 2.0 mm wall thickness, which is actually a reasonable thickness for standard printed parts. Since those are the criteria that needs to be met, the sample just needs to be big enough to be able to test with (ie. long enough to span the gap). And going back to my impatience, 8 minutes is about the longest I want to wait for these samples since I&rsquo;ll be printing multiple of these.</p>
 
+<h3 id="the-procedure">The Procedure</h3>
+
 <p>Now that that&rsquo;s out of the way, we can finally start testing and breaking things!</p>
 
-<h4 id="methods-quantifying-maximum-load">Methods - Quantifying Maximum Load</h4>
+<h4 id="step-1-annealing-the-samples">Step 1: Annealing the Samples</h4>
+
+<ol>
+<li>Print 9 rectangular prisms as the test samples</li>
+<li>Remove 3 samples as the control set (ie. unmodified and directly off the printer)</li>
+<li>Fill kettle with room temperature water</li>
+<li>Submerge the remaining 6 samples in water bath</li>
+<li>Set desired temperature of water bath</li>
+<li>Maintain temperature for 30 mins</li>
+<li>Remove 3 samples (1st sous vide set) and allow to air cool at room temperature</li>
+<li>Turn off heat and allow the remaining 3 samples (2nd sous vide set) to slowly cool with the water bath</li>
+</ol>
+
+<h4 id="step-2-breaking-the-samples">Step 2: Breaking the Samples</h4>
 
 <ol>
 <li>Place test jig on top of bathroom scale</li>
-<li>Apply vertical point force on the sample with drill press handles</li>
+<li>Apply vertical point force on the sample</li>
 <li>Record maximum load before sample catastrophically explodes</li>
 </ol>
 
@@ -269,7 +291,7 @@
 <div class="embed-responsive embed-responsive-16by9 col-xs-10 col-centered">
   <iframe class="embed-responsive-item" src=https://gfycat.com/ifr/MintyEvenBanteng></iframe>
 </div>
-<p class="caption">The conversion of potential to kinetic energy, recorded on an iPhone 6 at 240 fps.</p>
+<p class="caption">Measuring maximum force before material failure, recorded on an iPhone 6 at 240 fps.</p>
 
 <h3 id="the-results">The Results</h3>
 
