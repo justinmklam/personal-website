@@ -1460,13 +1460,14 @@ footer{margin:35px 0}
 .vertical-align{display:flex;align-items:center}
 .dropdown:hover .dropdown-menu{display:block;margin-top:0}
 .link-disabled{pointer-events:none;cursor:default}
-.caption{text-align:center;font-style:italic;padding-bottom:15px}
-.img-content{margin:0 auto; max-height:450px}
+.caption{text-align:center;font-style:italic; margin-bottom: 15px}
+.img-content{margin: 5px auto; max-height:450px}
 .blog-preview-img a{height:225px; background-size: cover; background-position:center center; display:block;}
+.captioned-img {padding-left: 15px; padding-right:15px}
 @media only screen and (max-width:481px){.projects-category h1 {margin-bottom:5px} .blog-preview-img a{height:150px} }
 .media-center{margin:0 auto}
 .iframe{margin:0 auto;display:block}
-.datestamp,.datestamp-index {font-size:90%;color:#777; text-align:left}
+.datestamp,.datestamp-index {font-size:90%; font-style:oblique; color:#777; text-align:left}
 .datestamp {text-align:right}
 .archive-header {font-size:18px; margin-top:5px; margin-bottom:7px}
 pre code {white-space:pre}

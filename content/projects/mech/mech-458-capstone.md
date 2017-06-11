@@ -62,14 +62,11 @@ src="/imgs/capstone/System-evaluation_5.png" >}}
 
 <strong>Device Integration</strong>
 
-{{<img caption="Our device installed with the DarkVision lab equipment (left); Close up of the laser ring inside the well liner (right)."
-src="/imgs/capstone/System-evaluation_2.png" >}}
+{{<img caption="Our device installed with the DarkVision lab equipment (left); Close up of the laser ring inside the well liner (right)." src="/imgs/capstone/System-evaluation_2.png" >}}
 
 <strong>Post-Processing and Analysis</strong>
 <p style="text-align: justify;">Four different exposure times and traversing speeds were tested to determine which camera parameters would generate adequate images for post-processing and analysis. From our tests, we determined that the imaging parameters resulting in an effective frame rate of 0.13 fps at a forward jog speed of 7 mm/s showed the most promising image slices of the well liner. To increase the slice resolution of the scan, the frame rate was increased to 1.3 fps which yielded visually poorer images, but our processing algorithms were still able to generate a 3D model of the well liner. A hue saturation value filter was used to detect the outer edge of the raw image.</p>
 
-{{<img caption="Captured laser ring by the camera through the conical mirror (left); Processed image (right)"
-src="/imgs/capstone/System-evaluation_3.png" >}}
+{{<img caption="Captured laser ring by the camera through the conical mirror (left); Processed image (right)" src="/imgs/capstone/System-evaluation_3.png" >}}
 
-{{<img caption="Generated 3D model from the image slices."
-src="/imgs/capstone/System-evaluation_4-1.png" >}}
+{{<img caption="Generated 3D model from the image slices." src="/imgs/capstone/System-evaluation_4-1.jpg">}}

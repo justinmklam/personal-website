@@ -1463,6 +1463,7 @@ footer{margin:35px 0}
 .caption{text-align:center;font-style:italic; margin-bottom: 15px}
 .img-content{margin: 5px auto; max-height:450px}
 .blog-preview-img a{height:225px; background-size: cover; background-position:center center; display:block;}
+.captioned-img {padding-left: 15px; padding-right:15px}
 @media only screen and (max-width:481px){.projects-category h1 {margin-bottom:5px} .blog-preview-img a{height:150px} }
 .media-center{margin:0 auto}
 .iframe{margin:0 auto;display:block}

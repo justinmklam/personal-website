@@ -40,3 +40,5 @@ src="/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png">}}
 
 {{<img caption="Raspberry Pi 1 Model B running @thehaikuza, 24/7!"
 src="/imgs/haikuza/IMG_20150803_180047-1024x768.jpg">}}
+
+Interested about the development of @thehaikuza? Follow it on [The Making of Project Haikuza: Part 1](/posts/2015/making-haikuza-i)!
