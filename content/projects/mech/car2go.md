@@ -16,4 +16,7 @@ draft = false
 
 <p><strong>Venue</strong>: 2014 Vancouver Fringe Festival</p>
 
-{{< fb-video src="https://www.facebook.com/video.php?v=10154557145565524" >}}
+{{<img caption="Bowling rig set up and ready to roll." src="/imgs/car2go/20140907_165320.jpg">}}
+
+<div style='position:relative;padding-bottom:505px'><iframe src='https://gfycat.com/ifr/VastFoolishJaeger' frameborder='0' scrolling='no' width='100%' height='500px' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+<p class="caption">Car2go bowling in action.</p>
