@@ -27,7 +27,7 @@ Leaving @thehaikuza to make complete gibberish wasnt what I had intended. I envi
 
 In any event, I needed to try something a little more sophisticated than shoving words into slots where they didn't really fit.
 
-### 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Lesser Known Cousin of 2 Chainz
+### The Lesser Known Cousin of 2 Chainz
 
 Every time I Googled a new topic I didnt know about, five more topics were thrown on my plate. Notable keywords that popped up:
 
@@ -40,7 +40,7 @@ Every time I Googled a new topic I didnt know about, five more topics were throw
 
 By no means am I suggesting that I understood all of those search terms after reading about them. In fact, I still don't and am constantly trying to wrap my head around those polysyllabic words. (Fun fact: anything above three syllables starts to scare most people.) The takeaway is the last item on the list, which coincidentally is the one I did manage to (somewhat) understand: the Markov chain.
 
-#### 3.1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Primer for Markov Chains
+#### A Primer for Markov Chains
 
 In technical terms, a Markov chain is any random process that undergoes transitions from one state to another. It's also a memoryless process, meaning that it only cares about its current state and not the states it has previously occupied.
 
@@ -50,7 +50,7 @@ The marvelous aspect of Markov chains is that they can work with any item, not j
 
 {{<img caption="Visualization of words forming a Markov chain. (Source: Andrew Cholakian's Blog)" src="/imgs/blog-imgs/making-haikuza/chain.png" >}}
 
-#### 3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Harnessing its Raw, Indisputable Power
+#### Harnessing its Raw, Indisputable Power
 
 Using Markov chains would allow me to use song lyrics as a training ground for creating alternate phrases. This would consequently form a probability-based flowchart like the one above, allowing me to generate new sentences by walking through each word state and letting probability determine my next word.
 
@@ -135,7 +135,7 @@ class Markov(object):
         return ' '.join(gen_words)
 ```
 
-#### 3.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teaching Markov the Art of Haikus
+#### Teaching Markov the Art of Haikus
 
 Time to make some progress in making some beautifully robotic poetry! The plan for @thehaikuza V0.2 is to create a Markov chain dictionary using song lyrics and create randomized phrases from the resulting keys and values. Although this implementation still doesn't involve a proper grammar model, it's an improvement from the previous method because of its more structured approach. By simply mixing and matching phrases that once made sense before, there's a much higher probability that the resulting phrase will also make some level of sense.
 

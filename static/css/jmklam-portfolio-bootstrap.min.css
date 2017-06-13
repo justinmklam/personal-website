@@ -1510,3 +1510,26 @@ pre {background-color: #F0F0F0}
   top: 39px;
   left: 8px;
 }
+
+#blog h2 {
+  counter-reset: h2counter;
+}
+#blog h3 {
+  counter-reset: h3counter;
+}
+#blog h4 {
+  counter-reset: h4counter;
+}
+#blog h3:before {
+  content: counter(h2counter) ".\0000a0\0000a0\0000a0";
+  counter-increment: h2counter;
+}
+#blog h4:before {
+  content: counter(h2counter) "." counter(h3counter) "\0000a0\0000a0\0000a0\0000a0";
+  counter-increment: h3counter;
+}
+#blog h5:before {
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "\0000a0\0000a0\0000a0\0000a0";
+  counter-increment: h4counter;
+}
+

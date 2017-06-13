@@ -24,7 +24,7 @@ I was listening to the radio while driving home one Sunday evening, and an ad ca
 
 The idea of computer generated text is often a humourous one. Spamming your smartphone's predictive keyboard is usually enough justification to avoid trying to computationally bang out the works of Shakespeare. As laughable as the monkeys at a typewriter idea is, maybe weve become smart enough to at least get close to this literary pipe dream...
 
-### 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prequel: The Prudence of Pivoting
+### Prequel: The Prudence of Pivoting
 
 Needless to say, it can take a few tries to end up at a decent idea, and @thehaikuza was no exception. After hearing about the poetry contest, I wanted to develop something related to computational linguistics, but I was partial to run-of-the-mill poetry. High school English classes had given me a negative bias for this type of literary art, so naturally I was in search for a different end product.
 
@@ -38,7 +38,7 @@ Okay, well forget about that idea. But I still wanted a venue to stay relevant o
 
 Or so I thought. Turned out it was still an embryo.
 
-### 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Makin Bacon Haikus V0.1
+### Makin Bacon Haikus V0.1
 
 The first research topic on my ever-growing list was to figure out what makes a sensible sentence. In elementary school, we're taught that the most basic phrase consists of a subject and verb. In the sentence below, for example, the boy is the subject and is sweating is the action.
 
@@ -55,7 +55,7 @@ Okay, this evidently isnt new knowledge to anyone. But what if we break down the
 
 Interesting. Maybe I can create a Mad Lib-based language model that can learn the sentence structures of existing haikus, then use an external wordset to substitute the corresponding words. For poetry, and notably haikus, grammar isnt as important as a passive aggressive letter to your not-so-favourite mobile carrier, so I might be able to get away with this rudimentary language model.  (Spoiler alert: I couldnt.)
 
-#### 2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Haiku Training
+#### Haiku Training
 
 The plan was to create a pseudo-smart script (of sorts) that did the following:
 
@@ -147,7 +147,7 @@ Seven Syllable Lines:
 
 Almost there to our first haiku!
 
-#### 2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Pass Haiku Generation
+#### First Pass Haiku Generation
 
 I wrote another simple script to take in song lyrics, apply a POS tag for each of the lyrics, and create a word list sorted by the corresponding tags. I could then plug-and-chug words from the generated list into an appropriate slot in the haiku template.
 

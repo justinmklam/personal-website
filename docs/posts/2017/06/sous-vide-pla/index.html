@@ -70,7 +70,7 @@
     
     <div class="container" id="page-container">
         
-        <div class="col-sm-8 col-centered">
+        <div class="col-sm-8 col-centered" id="blog">
             <br>
             <h2>Annealing 3D Printed Plastics: Sous Vide Style</h2>
             
@@ -127,7 +127,7 @@
 
 <!--In more scientific terms, these three stages of annealing are known as recovery, recrystallization, and grain growth. In recovery, the material is softened to relax its internal defects in the grain structure called _dislocations_, which normally cause internal stresses. In recrystallization, new strain-free grains grow in place of the dislocations. In grain growth, the microstructure coarsens-->
 
-<h4 id="why-are-internal-stresses-formed">Why are internal stresses formed?</h4>
+<h4 id="the-importance-of-reducing-internal-stresses">The Importance of Reducing Internal Stresses</h4>
 
 <p>Typically with any material, internal defects are evident (notably on a microscopic scale) and create internal stresses which weaken its overall strength. When creating metal parts, the initial metal-forming processes create these defects and as a result, the metal will crack under stress along these stress-forming juncture lines called &ldquo;grains&rdquo;.</p>
 
@@ -152,7 +152,7 @@
 
 <p>With 3D printed parts, these internal defects occur on a more macroscopic scale<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there&rsquo;s really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling.</p>
 
-<h3 id="phase-1-a-review-of-current-research">Phase 1: A Review of Current Research</h3>
+<h3 id="a-review-of-current-research">A Review of Current Research</h3>
 
 <p>Fortunately, a similar heat treatment process can be applied to plastics to remove these nasty stresses and allow internal harmony to coalesce. I came across a research paper by Lih-Sheng Turng and Yottha Srithep, which discusses the relationship of crystallinity (ie. the degree of structural order in a solid) and mechanical properties of injection molded polylactide, commonly known as PLA<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>.</p>
 
@@ -174,11 +174,11 @@
     <p class="caption">Degree of crystallinity versus annealing time. (Source: Turng and Srithep, 2014)</p>
 </div>
 
-<h4 id="their-results">Their Results</h4>
+<h4 id="the-takeaway">The Takeaway</h4>
 
-<p>So what&rsquo;s the takeaway? Unfortunately, this paper only tested the heat resistance of the annealed samples, as it would have been interesting to see them evaluate other mechanical properties such as tension/compression and getting a stress/strain curve out of it all. But this at least sheds some insight on performing heat treatment on PLA; if it improves heat resistance, then it should also improve other (potentially related) mechanical properties.</p>
+<p>Unfortunately, this paper only tested the heat resistance of the annealed samples, as it would have been interesting to see them evaluate other mechanical properties such as tension/compression and getting a stress/strain curve out of it all. But this at least sheds some insight on performing heat treatment on PLA; if it improves heat resistance, then it should also improve other (potentially related) mechanical properties.</p>
 
-<h3 id="phase-2-a-review-of-current-methods">Phase 2: A Review of Current Methods</h3>
+<h3 id="a-review-of-current-methods">A Review of Current Methods</h3>
 
 <p>From a cursory search in the 3D printing community, annealing PLA seems to be a common, known method in squeezing a bit of extra mechanical performance out of printed parts. YouTubers Thomas Sanlader<sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup> and Joe Mike Terranella<sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup> have shown both quantitative and qualitative results in strength improvements by annealing.</p>
 
@@ -206,7 +206,7 @@
 
 <p>If only there was a way to combine the temperature control of an oven and uniform, stable heating of a water bath&hellip;</p>
 
-<h3 id="phase-3-annealing-pla-with-sous-vide">Phase 3: Annealing PLA with&hellip; Sous Vide?</h3>
+<h3 id="annealing-pla-with-sous-vide">Annealing PLA with&hellip; Sous Vide?</h3>
 
 <p>Yes, that&rsquo;s right. Sous vide is the ultimate hero of this story.</p>
 
@@ -241,7 +241,7 @@
 
 <h4 id="designing-the-tests">Designing the Tests</h4>
 
-<p>Wait, hold the phone: we still have many questions! What annealing temperature is going to be maintained? How long are the samples going to be annealed for? Why are the samples so small?</p>
+<p>Wait, hold the phone: we still have many other questions! What annealing temperature is going to be maintained? How long are the samples going to be annealed for? Why are the samples so small?</p>
 
 <p>All great questions, but unfortunately not all have great answers.</p>
 
@@ -257,11 +257,11 @@
 
 <p>Since we&rsquo;re applying (what we&rsquo;ll assume to be) a point force, the sample doesn&rsquo;t actually need to be that long. In terms of cross-sectional area, wall thickness has a much larger impact on a part&rsquo;s strength than infill. Thus, these samples were designed to be hollow with a 2.0 mm wall thickness, which is actually a reasonable thickness for standard printed parts. Since those are the criteria that needs to be met, the sample just needs to be big enough to be able to test with (ie. long enough to span the gap). And going back to my impatience, 8 minutes is about the longest I want to wait for these samples since I&rsquo;ll be printing multiple of these.</p>
 
-<h3 id="the-procedure">The Procedure</h3>
+<h4 id="the-procedure">The Procedure</h4>
 
 <p>Now that that&rsquo;s out of the way, we can finally start testing and breaking things!</p>
 
-<h4 id="step-1-annealing-the-samples">Step 1: Annealing the Samples</h4>
+<h5 id="annealing-the-samples">Annealing the Samples</h5>
 
 <ol>
 <li>Print 9 rectangular prisms as the test samples</li>
@@ -274,7 +274,7 @@
 <li>Turn off heat and allow the remaining 3 samples (2nd sous vide set) to slowly cool with the water bath</li>
 </ol>
 
-<h4 id="step-2-breaking-the-samples">Step 2: Breaking the Samples</h4>
+<h5 id="breaking-the-samples">Breaking the Samples</h5>
 
 <ol>
 <li>Place test jig on top of bathroom scale</li>
@@ -293,17 +293,32 @@
 </div>
 <p class="caption">Measuring maximum force before material failure, recorded on an iPhone 6 at 240 fps.</p>
 
-<h3 id="the-results">The Results</h3>
+<h4 id="the-results">The Results</h4>
 
 <p>Stay tuned.</p>
 
-<!--To recap:
-
-#### Hypotheses
+<!--To recap our hypotheses:
 
 1. Annealing PLA in a temperature controlled water bath will promote crystallinity (and thus lower internal stress) in comparison with using conventional ovens.
 1. Samples printed at a 0.175 mm layer height will have higher internal stress than those at 0.2625 mm.
-1. Samples cooled at room temperature in air will have higher internal stress than samples cooled with the water bath.-->
+1. Samples cooled at room temperature in air will have higher internal stress than samples cooled with the water bath.
+
+<div class="row captioned-img">
+    <a href=/imgs/blog-imgs/sous-vide-pla/data-layer%20height.JPG><img class="img-responsive img-content" src=/imgs/blog-imgs/sous-vide-pla/data-layer%20height.JPG /></a>
+    <p class="caption">Max applied force before failure at 0.2625 mm and 0.175 mm layer heights.</p>
+</div>
+<div class="row captioned-img">
+    <a href=/imgs/blog-imgs/sous-vide-pla/data-layer%20height%20avg.JPG><img class="img-responsive img-content" src=/imgs/blog-imgs/sous-vide-pla/data-layer%20height%20avg.JPG /></a>
+    <p class="caption">Averaged data with error bars showing min/max values.</p>
+</div>
+<div class="row captioned-img">
+    <a href=/imgs/blog-imgs/sous-vide-pla/data-dimensional%20change.JPG><img class="img-responsive img-content" src=/imgs/blog-imgs/sous-vide-pla/data-dimensional%20change.JPG /></a>
+    <p class="caption">Quantifying the changes in each dimension after annealing.</p>
+</div>
+
+### The Takeaways
+
+### Future Work-->
 <div class="footnotes">
 
 <hr />
