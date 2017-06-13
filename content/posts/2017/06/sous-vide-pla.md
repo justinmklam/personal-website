@@ -230,6 +230,7 @@ After doing a bit of Googling, other tests have shown that larger layer heights 
 Their results: test samples printed at 0.3 mm had a maximum stress of about 36 MPa, whereas the samples at 0.1 mm topped out around 29 MPa. Backing up a bit, we can safely say that a part made of solid piece of plastic would be significantly more robust than two pieces of solid plastic bonded together. Since the material itself has imperfections, adding the bonding layer creates another source of imperfection and instability. Extrapolating this to a 3D printed part with hundreds of layers, we can guess that the increase in sources of imperfection will not bode well for the part's own well being.
 
 So why did only the smaller layer height benefit from annealing? My guess is that the annealing helps massage these imperfections out, so more imperfections means more room for improvement. It's possible that with the larger layer height, my test sample was too small and short to really benefit from the annealing. That, in addition to the many sources of error in my testing (which I'll get to later), may be the reason for the lack of improvement in mechanical performance with the 0.2625 mm parts.
+
 <!--
 ##### Slow Cooling vs Fast Cooling
 
