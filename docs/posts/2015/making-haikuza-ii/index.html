@@ -108,7 +108,7 @@ Poetry is hard
 
 <p>In any event, I needed to try something a little more sophisticated than shoving words into slots where they didn&rsquo;t really fit.</p>
 
-<h3 id="3-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-the-lesser-known-cousin-of-2-chainz">3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Lesser Known Cousin of 2 Chainz</h3>
+<h3 id="the-lesser-known-cousin-of-2-chainz">The Lesser Known Cousin of 2 Chainz</h3>
 
 <p>Every time I Googled a new topic I didnt know about, five more topics were thrown on my plate. Notable keywords that popped up:</p>
 
@@ -123,7 +123,7 @@ Poetry is hard
 
 <p>By no means am I suggesting that I understood all of those search terms after reading about them. In fact, I still don&rsquo;t and am constantly trying to wrap my head around those polysyllabic words. (Fun fact: anything above three syllables starts to scare most people.) The takeaway is the last item on the list, which coincidentally is the one I did manage to (somewhat) understand: the Markov chain.</p>
 
-<h4 id="3-1-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-a-primer-for-markov-chains">3.1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Primer for Markov Chains</h4>
+<h4 id="a-primer-for-markov-chains">A Primer for Markov Chains</h4>
 
 <p>In technical terms, a Markov chain is any random process that undergoes transitions from one state to another. It&rsquo;s also a memoryless process, meaning that it only cares about its current state and not the states it has previously occupied.</p>
 
@@ -136,7 +136,7 @@ Poetry is hard
     <p class="caption">Visualization of words forming a Markov chain. (Source: Andrew Cholakian&#39;s Blog)</p>
 </div>
 
-<h4 id="3-2-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-harnessing-its-raw-indisputable-power">3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Harnessing its Raw, Indisputable Power</h4>
+<h4 id="harnessing-its-raw-indisputable-power">Harnessing its Raw, Indisputable Power</h4>
 
 <p>Using Markov chains would allow me to use song lyrics as a training ground for creating alternate phrases. This would consequently form a probability-based flowchart like the one above, allowing me to generate new sentences by walking through each word state and letting probability determine my next word.</p>
 
@@ -222,7 +222,7 @@ class Markov(object):
         return ' '.join(gen_words)
 </code></pre>
 
-<h4 id="3-3-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-teaching-markov-the-art-of-haikus">3.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teaching Markov the Art of Haikus</h4>
+<h4 id="teaching-markov-the-art-of-haikus">Teaching Markov the Art of Haikus</h4>
 
 <p>Time to make some progress in making some beautifully robotic poetry! The plan for @thehaikuza V0.2 is to create a Markov chain dictionary using song lyrics and create randomized phrases from the resulting keys and values. Although this implementation still doesn&rsquo;t involve a proper grammar model, it&rsquo;s an improvement from the previous method because of its more structured approach. By simply mixing and matching phrases that once made sense before, there&rsquo;s a much higher probability that the resulting phrase will also make some level of sense.</p>
 
