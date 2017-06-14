@@ -1,5 +1,5 @@
 +++
-date = "2017-06-10T15:56:53-07:00"
+date = "2017-06-13T15:56:53-07:00"
 draft = false
 image = "/imgs/blog-imgs/sous-vide-pla/banner.jpg"
 title = "Annealing 3D Printed Plastics: Sous Vide Style"
@@ -8,6 +8,39 @@ type = "blog"
 layout = "single-blog"
 tags = ["3d printing", "materials science"]
 +++
+
+Yep, you heard it right. With all the craze surrounding cooking sous vide these days, it was only a matter of time before someone decided to venture using it outside of the culinary world. Turns out that someone also had a 3D printer, and _you won't believe what happened next!_
+
+Click-bait headlines aside, this post is quite lengthy and not everyone may have the patience to get through it all. Feel free to read the TL;DR below, or if you're feeling inclined, follow along my adventure through the land of 3D printing, materials science, and modern cooking.
+
+## The Short Version
+
+Heat treatment was carried out on 3D printed parts using a temperature controlled water bath (aka sous vide) instead of being baked in an oven. 
+
+**What the goal was:**
+
++ To determine if extra strength can be squeezed out of PLA filament by annealing the parts and testing how much force can be applied before the test piece breaks in half. 
+
+**How it was tested:**
+
+1. Printed some small test blocks (7mm x 7mm x 30mm)
+1. Submerged them in water at 70°C for 30 mins
+1. Half of the blocks cooled to room temperature in air (70°C to 18°C in < 10 mins), and the other half were regulated to cooled much slower (70°C to 18°C in > 4 hours)
+1. Applied a point load on the test block
+1. Recorded the maximum load before failure
+
+**What the results suggest:**
+
++ Using a temperature controlled water bath provides a more stable, uniform, and controllable heat source (so parts are less prone to warping from uneven heating)
++ Annealing PLA yields an increase in mechanical strength under some circumstances
++ Testing was fairly inconclusive due to the inconsistency/human error in rate of applied force
+
+**What the takeaways are:**
+
++ Annealing printed parts by sous vide is a plausible method for annealing PLA
++ Further testing is required to conclusively determine the balance between post-processing time and the resulting performance gains
+
+## The Long Version
 
 Let's say we wanted to make a highly functional part using a 3D printer. Maybe you need a replacement gear or a weight-bearing mounting bracket, and 3D printing would be the easiest way to fabricate the part. 
 
@@ -203,7 +236,7 @@ For the 0.2625 mm layer height, there was virtually no change between the contro
 
 Averaging the data paints a clearer picture. Interestingly, the sous vide samples when cooled quicker (ie. at room temperature instead of in the water bath) showed a slightly higher maximum force. Granted, three data points is hardly enough information to make any conclusions, but it provides some indication to the characteristic trend of these scenarios.
 
-{{<img caption="Averaged data with error bars showing min/max values." src="/imgs/blog-imgs/sous-vide-pla/data-layer height avg.JPG">}}
+{{<img caption="Averaged data with error bars showing standard deviations." src="/imgs/blog-imgs/sous-vide-pla/data-layer height avg.JPG">}}
 
 ##### Measuring the Changes in Physical Dimensions
 
@@ -231,17 +264,43 @@ Their results: test samples printed at 0.3 mm had a maximum stress of about 36 M
 
 So why did only the smaller layer height benefit from annealing? My guess is that the annealing helps massage these imperfections out, so more imperfections means more room for improvement. It's possible that with the larger layer height, my test sample was too small and short to really benefit from the annealing. That, in addition to the many sources of error in my testing (which I'll get to later), may be the reason for the lack of improvement in mechanical performance with the 0.2625 mm parts.
 
-<!--
 ##### Slow Cooling vs Fast Cooling
 
-The other aspect of testing was 
+For annealing to be effective, the material typically needs to be cooled uniformly back to room temperature. If it's cooled too rapidly, different areas of the part may cool at different rates and cause either warping or internal stress to form. To slowly cool the test samples, they were left in the water bath (with heat turned off) such that the rate of part cooling matched that of the water bath. Since water has a high heat capacity of 4.181 J/g/K (and for comparison, solid aluminum is only 0.897 J/g/K)[^8], it would reach room temperature at a significantly slower rate than if the parts were just left on the counter (a difference of about < 10 mins versus > 4 hours). 
 
-The results suggest that fast cooling yielded a greater improvement in strength over the slow cooling. 
+[^8]: [Heat capacity](https://en.wikipedia.org/wiki/Heat_capacity), Wikipedia.
 
-##### The (Many) Sources of Error
+The results suggest that faster cooling yielded a greater improvement in strength over the slow cooling, which goes against the above logic. However, since the test parts were small in size and having low thermal and physical masses, the benefits of slow cooling may not be evident. Additionally, the individual 0.175 mm results for the "SV, Slow Cool" set (in turquoise) had a fairly large spread, so more data should be collected to determine if it's actually statistically significant from the 0.2625 mm data.
 
-#### Future Work-->
+##### The Sources of Error
+
+During the testing process of breaking the samples, it occurred to me that I was most likely applying the force at different rates. As I got into the rhythm of testing and got a feel for when the samples failed, I likely changed the applied force profile. I would have more confidence in the results if I applied force at the same speed for all trials, but alas human error got the best of me. This was probably the greatest source of error in the testing.
+
+The digital bathroom scale was also not ideal since I don't know how quickly the measurement actually updates on the screen. Since the event of failure occurs so quickly, I may have easily missed the actual maximum force. This in tandem with the inconsistency in applied force means that I'm unfortunately unable to draw meaningful conclusions from the collected data.
+
+Another source of error includes part to part variation on the same printer, which would be reduced by collecting more data points (ie. more than a measly 3 tests per set). The test piece also may not have been perfectly centered between the two wooden supports, which may also affect the load distribution and thus required breaking force.
+
+#### Future Work
+
+The silver lining to all of this are the learnings from mistakes. If I were to carry out the tests again, I would change the following:
+
++ Apply the point load at a consistent rate (maybe attach a stepper/DC motor to drive the force down into the sample)
++ Use an analog instead of digital scale, or
++ Set up a dedicated load sensor in addition to displacement measurement to quantify the stress-strain characteristics
 
 ### Annealing, PLA, and You
 
-Stay tuned.
+So does this mean annealing is worth the effort? Is sous vide really necessary over a regular oven? Was this just a waste 20 minutes reading an article with inconclusive results?
+
+Maybe, probably, and it depends. 
+
+As discussed earlier in this post, annealing plastic has tangible benefits in increasing its mechanical strength. However, plastic (and especially 3D printed plastic) is not the end-all material for home projects. It can only go so far, and sometimes 3D printing may not be the most suitable manufacturing method. Yes, people have printed gearboxes and mechanical vises which are undoubtedly impressive, but sometimes it's cheaper in material cost and/or time to look at alternative manufacturing methods (or even off-the-shelf components).
+
+Despite sous vide being home in the kitchen, I'm still adamant that it also has a place in heat treatment applications. The benefits of having an easily regulated, uniform temperature controlled environment is advantageous. However, limitations are evident in scaling as it may not be feasible to have a large tank of heated water in industrial settings when an oven may be cheaper and achieve similar results.
+
+As for this excessively long article, the least you can do is learn from my mistakes and apply the knowledge to your own future projects. Hopefully you found it interesting and enjoyable to follow along this technical deep dive, and maybe even learned a thing or two in the process.
+
+Until next time!
+
+<br>
+<p style="margin-bottom:-15px"><em>References</em></p>
