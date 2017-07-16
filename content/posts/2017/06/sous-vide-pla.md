@@ -10,7 +10,7 @@ tags = ["3d printing", "materials science"]
 +++
 
 <p class="text-center" style="font-style:oblique">
-Featured at <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/" target="_blank">Hackaday</a> on June 17, 2017.
+Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/" target="_blank">Hackaday</a> and <a href="https://www.fictiv.com/blog/posts/june-hardware-roundup" target="_blank">Fictiv Blog</a>!
 </p>
 
 Yep, you heard it right. With all the craze surrounding cooking sous vide these days, it was only a matter of time before someone decided to venture using it outside of the culinary world. Turns out that someone also had a 3D printer, and _you won't believe what happened next!_
