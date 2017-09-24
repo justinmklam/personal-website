@@ -38,13 +38,15 @@ What's better than an inexpensive 3D printer? Free sources of information! The i
 * CAD Modeling Software (free for hobbyists and enthusiasts):
     * [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview)
 * Slicing Software: 
-    * [Cura 2.5](https://ultimaker.com/en/products/cura-software)
+    * [Cura 2.7](https://ultimaker.com/en/products/cura-software)
 * Onboard WiFi for wireless printing:
     * [Connecting to WiFi through G-code](http://mpselectmini.com/wifi/g-code_file)
 * Using Raspberry Pi and Octoprint for wireless printing:
     * [OctoPi](http://octoprint.org/download/)
 
 ### Machine Settings
+
+#### General
 
 The machine settings below are based off the ones in the official user manual. However, the start and end gcode was taken from the community-driven Google Doc (see above) and slightly modified to include an initial nozzle wipe/primer and to remove the delay in turning the fans off.
 
@@ -78,9 +80,17 @@ G4 S600 ; keep fan running for 600 seconds to cool hotend and allow the fan to b
 M107 ; turn off fan
 ```
 
+#### OctoPrint
+
+To connect OctoPrint through Cura, go to "Settings > Printer > Manage Printers", select your printer from the list, then click the "Connect OctoPrint" button on the right side of the menu. 
+
+{{<img caption="Setting up OctoPrint through Cura." src="/imgs/blog-imgs/3d-printing-primer/octopi settings.png" >}}
+
+This way, you can send gcode files directly from Cura to Octoprint with a click of a button!
+
 ### Print Settings
 
-When fiddling with layer heights, it's recommended to use the optimal values below:
+ When fiddling with layer heights, it's recommended to use the optimal values below: 
 
 * 0.04375 (results may vary)*
 * 0.0875
@@ -101,4 +111,4 @@ The settings below should serve as a decent starting point in dialing in your ow
 {{<img caption="For mating parts, a general guideline of 0.25mm is sufficient." src="/imgs/blog-imgs/3d-printing-primer/tolerance.png" >}}
 
 <br>
-<p class="text-right">_Last edited: May 23, 2017_</p>
+<p class="text-right">_Last edited: September 24, 2017_</p>

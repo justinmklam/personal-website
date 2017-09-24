@@ -151,7 +151,7 @@
 <li>Slicing Software:
 
 <ul>
-<li><a href="https://ultimaker.com/en/products/cura-software">Cura 2.5</a></li>
+<li><a href="https://ultimaker.com/en/products/cura-software">Cura 2.7</a></li>
 </ul></li>
 <li>Onboard WiFi for wireless printing:
 
@@ -166,6 +166,8 @@
 </ul>
 
 <h3 id="machine-settings">Machine Settings</h3>
+
+<h4 id="general">General</h4>
 
 <p>The machine settings below are based off the ones in the official user manual. However, the start and end gcode was taken from the community-driven Google Doc (see above) and slightly modified to include an initial nozzle wipe/primer and to remove the delay in turning the fans off.</p>
 
@@ -200,6 +202,17 @@ G4 S600 ; keep fan running for 600 seconds to cool hotend and allow the fan to b
 M107 ; turn off fan
 </code></pre>
 
+<h4 id="octoprint">OctoPrint</h4>
+
+<p>To connect OctoPrint through Cura, go to &ldquo;Settings &gt; Printer &gt; Manage Printers&rdquo;, select your printer from the list, then click the &ldquo;Connect OctoPrint&rdquo; button on the right side of the menu.</p>
+
+<div class="row captioned-img">
+    <a href=/imgs/blog-imgs/3d-printing-primer/octopi%20settings.png><img class="img-responsive img-content" src=/imgs/blog-imgs/3d-printing-primer/octopi%20settings.png /></a>
+    <p class="caption">Setting up OctoPrint through Cura.</p>
+</div>
+
+<p>This way, you can send gcode files directly from Cura to Octoprint with a click of a button!</p>
+
 <h3 id="print-settings">Print Settings</h3>
 
 <p>When fiddling with layer heights, it&rsquo;s recommended to use the optimal values below:</p>
@@ -233,7 +246,7 @@ M107 ; turn off fan
 </div>
 
 <p><br>
-<p class="text-right"><em>Last edited: May 23, 2017</em></p></p>
+<p class="text-right"><em>Last edited: September 24, 2017</em></p></p>
 
 			
             <br>
