@@ -118,16 +118,16 @@
 <p>Open the Debug panel (<code>CTRL + SHIFT + D</code>) and select &ldquo;Add Configuration &gt; GDB&rdquo; through the top left dropdown arrow. Create a GDB configuration in launch.json and add the following. Note: Change the paths in &ldquo;target&rdquo;, &ldquo;gdbpath&rdquo;, and &ldquo;autorun&rdquo; to the correct locations.</p>
 
 <pre><code>{
-	&quot;name&quot;: &quot;GDB&quot;,
-	&quot;type&quot;: &quot;gdb&quot;,
-	&quot;request&quot;: &quot;launch&quot;,
-	&quot;cwd&quot;: &quot;${workspaceRoot}&quot;,
-	&quot;target&quot;: &quot;${workspaceRoot}/.pioenvs/nucleo_f303k8/firmware.elf&quot;, 
-	&quot;gdbpath&quot; : &quot;C:/STM32Toolchain/gcc-arm/5.4 2016q3/bin/arm-none-eabi-gdb.exe&quot;,
-	&quot;autorun&quot;: [
-		&quot;target remote localhost:3333&quot;,
-		&quot;symbol-file ./.pioenvs/nucleo_f303k8/firmware.elf&quot;,
-		&quot;monitor reset&quot; 
+    &quot;name&quot;: &quot;GDB&quot;,
+    &quot;type&quot;: &quot;gdb&quot;,
+    &quot;request&quot;: &quot;launch&quot;,
+    &quot;cwd&quot;: &quot;${workspaceRoot}&quot;,
+    &quot;target&quot;: &quot;${workspaceRoot}/.pioenvs/nucleo_f303k8/firmware.elf&quot;, 
+    &quot;gdbpath&quot; : &quot;C:/STM32Toolchain/gcc-arm/5.4 2016q3/bin/arm-none-eabi-gdb.exe&quot;,
+    &quot;autorun&quot;: [
+        &quot;target remote localhost:3333&quot;,
+        &quot;symbol-file ./.pioenvs/nucleo_f303k8/firmware.elf&quot;,
+        &quot;monitor reset&quot; 
         ]
 }
 </code></pre>
