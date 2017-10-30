@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stm32 on Justin MK Lam | Portfolio</title>
+    <link>http://justinmklam.com/tags/stm32/</link>
+    <description>Recent content in Stm32 on Justin MK Lam | Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Oct 2017 14:24:52 -0700</lastBuildDate>
+    
+	<atom:link href="http://justinmklam.com/tags/stm32/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debugger Setup with GDB &#43; OpenOCD in Visual Studio Code</title>
+      <link>http://justinmklam.com/posts/2017/10/vscode-debugger-setup/</link>
+      <pubDate>Sun, 29 Oct 2017 14:24:52 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/posts/2017/10/vscode-debugger-setup/</guid>
+      <description>Visual Studio Code&amp;rsquo;s combination of functionality, customizability, and aesthetics makes it one of my favourite code editors. As such, I was set on making it work with embedded development since I was getting started with the STM32 line of microcontrollers. I was following the steps outlined in Mastering STM32 by Carmine Noviello (which is an excellent resource) until it said to use Eclipse, because life&amp;rsquo;s too short to use software with unnecessary bloat.</description>
+    </item>
+    
+  </channel>
+</rss>
