@@ -8,6 +8,7 @@ layoutdir = "layouts"
 publishdir = "docs"
 canonifyurls = false
 
+googleAnalytics = "UA-85178257-1"
 disqusShortname = "justinmklam"
 
 [taxonomies]
