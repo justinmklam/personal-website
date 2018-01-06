@@ -2,6 +2,6 @@
 <footer>
 	<div class="col-lg-8 col-centered">
 		<hr>
-		<p class="text-center">&copy; {{ .Site.Params.footer }}</p>
+		<p class="text-center">&copy; {{ now.Format "2006" }} {{ .Site.Params.footer }}</p>
 	</div>
 </footer>

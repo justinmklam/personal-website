@@ -19,13 +19,11 @@ Reality came quite bluntly, yet these dreams continued to flourish. These days, 
 
 My experience encompasses rapid prototyping, manufacturing, medical devices, automation, robotics, and control systems. As a young engineer, I am constantly looking for opportunities to expand and develop my skill set.
 
-<div class="text-right">
 <br>
-![img](/imgs/signature.png)
-</div>
-<p class="text-right">	
+<p class="text-right">	<i>
 Justin M.K. Lam 
 <br>
 Mechatronics Engineer
 <br>
-</p>
+</i>
+</p> 
