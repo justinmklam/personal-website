@@ -15,14 +15,18 @@ or to include drafts,
 ```
 hugo -D
 ```
-To start a local server for live website testing:
+To start a local server for live website testing (at localhost:1313):
 ```
-hugo server -D
+hugo serve
 ```
 ## Adding Content
 To create a new project post in the 'content' folder:
 ```
-hugo new /projects/[CATEGORY]/[TITLE].md
+hugo new /projects/[PROJECT TYPE]/[TITLE].md
+```
+To create a new blog post:
+```
+hugo new /posts/[YEAR]/[MONTH]/[TITLE].md
 ```
 __Note:__ Upload project images, files, etc. in the 'static' folder.
 
