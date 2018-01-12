@@ -3,14 +3,14 @@ date = "2018-01-12T09:42:57-08:00"
 draft = false
 image = "/imgs/blog-imgs/sad-lamp/Verilux Spectral Response - Comparison.PNG"
 layout = "single-blog"
-tagline = "Shedding the light of truth on a $70 bulb."
+tagline = "Shining the light of truth on a $70 bulb."
 tags = ["spectroscopy"]
-title = "Measuring the Spectral Response of a Light Therapy Lamp"
+title = "Measuring the Spectral Characteristics of a Light Therapy Lamp"
 type = "blog"
 
 +++
 
-_Disclaimer: Light therapy is one method of easing seasonal affective disorder (SAD); some people swear by it whereas others remain unaffected. This blog post does not intend to refute the effectiveness of light therapy, but rather to dig deeper into the technology behind these light therapy lamps to better educate fellow consumers._
+***Disclaimer:*** _Light therapy is one method of easing seasonal affective disorder (SAD); some people swear by it whereas others remain unaffected. This blog post does not intend to refute the effectiveness of light therapy, but rather to dig deeper into the technology behind these light therapy lamps to better educate fellow consumers._
 
 <!--more-->
 
@@ -141,3 +141,7 @@ Integrating the UV region between 350 - 400 nm shows that there's still a bit of
 I hope this journey through light and its spectral characteristics was both entertaining and educational. With any luck, you may have learned a thing or two (and gained an appreciation) about all the different light sources surrounding you everyday. 
 
 Although you can build your own light therapy lamp for a fraction of its retail purchasing cost, that may not be a viable (or convenient) option for everyone. Whatever you choose to do with this information is up to you, so light up your own path to mitigating your SAD-ness :)
+
+<br>
+
+***Acknowledgements:*** *Thanks to [MistyWest](https://mistywest.com/) for letting me use their spectrometer to measure this data!*
