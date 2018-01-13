@@ -4,7 +4,7 @@ draft = false
 image = "/imgs/blog-imgs/sad-lamp/Verilux Spectral Response - Comparison.PNG"
 layout = "single-blog"
 tagline = "Shining the light of truth on a $70 bulb."
-tags = ["spectroscopy"]
+tags = ["physics", "spectroscopy"]
 title = "Measuring the Spectral Characteristics of a Light Therapy Lamp"
 type = "blog"
 
@@ -14,7 +14,9 @@ type = "blog"
 
 <!--more-->
 
-Ah, the winter blues of Vancouver, BC. While some days bring bluebird skies and [fresh pow](https://media1.tenor.com/images/25e5bfdf6e824bfa330964b5e0e48855/tenor.gif?itemid=5287297) for skiing, other days are downright gloomy. Spending this past Christmas in Singapore meant warm, sunny, and +25°C weather, which is quite atypical of how most Canadians spend their winters. However, coming back to the overcast, bone-chilling, gray, and wet Vancouver winter was a climate shock my body had yet to feel before. A week or so of jetlag-ridden sleep cycles and my circadian rhythm was back to normal, but I couldn't scratch the itch of yearning for sun and truly despising this city's gloomy winter weather.
+Ah, the winter blues of Vancouver, BC. While some days bring bluebird skies and [fresh pow](https://media1.tenor.com/images/25e5bfdf6e824bfa330964b5e0e48855/tenor.gif?itemid=5287297) for skiing, other days are downright gloomy. Spending this past Christmas in Singapore meant warm, sunny, and +25°C weather, which is quite atypical of how most Canadians spend their winters. 
+
+However, coming back to the overcast, bone-chilling, gray, and wet Vancouver winter was a climate shock my body had yet to feel before. A week or so of jetlag-ridden sleep cycles and my circadian rhythm was back to normal, but I couldn't scratch the itch of yearning for sun and truly despising this city's gloomy winter weather.
 
 Thanks to Amazon Prime's same/one day shipping, a solution to this problem was less than 24 hours away. Introducing my new light therapy lamp!
 
@@ -28,7 +30,7 @@ But wait just one moment; upon unboxing the lamp, I noticed something familiar. 
 
 {{<img caption="Left: $14.99 Verilux Full Spectrum Bulb. Right: $1.50 Standard CFL bulb." src="/imgs/blog-imgs/sad-lamp/bulb comparison.png" >}}
 
-Fortunately for me, I work at [MistyWest](https://mistywest.com/) and we have a fancy spectrometer that will allow me to confirm/deny my suspicions. It's used to measure the spectral power density at each wavelength of light (or in layman terms,it measures the intensity of each specific colour of light). The two main questions I was curious to answer:
+Fortunately for me, I work at [MistyWest](https://mistywest.com/) and we have a fancy spectrometer that will allow me to confirm/deny my suspicions. It's used to measure the spectral power density at each wavelength of light (or in layman terms, it measures the intensity of each specific colour of light). The two main questions I was curious to answer:
 
 1. Are the spectral characteristics of this bulb any different than a regular CFL bulb?
 2. Is the filter/diffuser actually made of a special UV-blocking material?
@@ -140,7 +142,9 @@ Integrating the UV region between 350 - 400 nm shows that there's still a bit of
 
 I hope this journey through light and its spectral characteristics was both entertaining and educational. With any luck, you may have learned a thing or two (and gained an appreciation) about all the different light sources surrounding you everyday. 
 
-Although you can build your own light therapy lamp for a fraction of its retail purchasing cost, that may not be a viable (or convenient) option for everyone. Whatever you choose to do with this information is up to you, so light up your own path to mitigating your SAD-ness :)
+Although you can build your own light therapy lamp for a fraction of its retail purchasing cost, that may not be a viable (or convenient) option for everyone. Additionally, light therapy is apparently more dependent on the brightness output rather than the actual wavelengths; as long as it's bright and white(-ish) then it should work for light therapy! 
+
+Whatever you choose to do with this information is up to you, so light up your own path to mitigating your SAD-ness :)
 
 <br>
 
