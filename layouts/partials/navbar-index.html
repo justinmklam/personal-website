@@ -16,11 +16,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-			
+            
+            <li><a href="/view-all">Portfolio</a>
+
 			{{ range .Site.Menus.main }}
 				<li><a href="{{.URL}}">{{ .Name }}</a></li>
 			{{ end }}
-			
 
             </ul>
         </div>
