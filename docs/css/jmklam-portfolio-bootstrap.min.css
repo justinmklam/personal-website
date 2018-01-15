@@ -1454,7 +1454,7 @@ body{font-family:'Lato',sans-serif;padding-top:70px;font-size:14px;line-height:1
   -moz-box-shadow:    0 5px 6px -6px #222;
   box-shadow:         0 5px 6px -6px #222;}
 .row h4{line-height: 1.4;font-style:italic;color:#888}
-p{text-align:justify}
+p{text-align:left}
 /* a{color: #DD6333;}
 a:hover, a:focus {color: #DD6333;} */
 footer{margin:35px 0}
