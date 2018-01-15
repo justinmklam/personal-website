@@ -18,7 +18,7 @@
 		<!--Blog post summaries-->
         <div class="col-lg-8 col-centered">
 
-            {{ range first 10 (where .Site.Pages "Type" "blog") }}
+            {{ range first 5 (where .Site.Pages "Type" "blog") }}
             <!-- Blog heading -->
             <h2>
                 <a class="h2" role="button" href="{{ .Permalink }}">{{ .Title }}</a>
@@ -47,7 +47,7 @@
 
             <!--Archives button-->
             <div class="text-left">
-                <a style="color:#555" href="/blog-archive">
+                <a style="color:#555; font-weight: bold" href="/blog-archive">
                     <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>All Posts
                 </a>
             </div>
