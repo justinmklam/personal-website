@@ -5,7 +5,7 @@ title = "cv"
 
 [menu.main]
 	name = "CV"
-	url = "/files/Resume-2016.pdf"
+	url = "/files/Resume.pdf"
 	weight = 5
 +++
 
