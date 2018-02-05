@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jan 2018 09:42:57 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 03 Feb 2018 17:02:25 -0800</lastBuildDate>
     
 	<atom:link href="http://justinmklam.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Synchronous Vs Asynchronous Ping Sweep in C# Windows Form</title>
+      <link>http://justinmklam.com/posts/2018/02/ping-sweeper/</link>
+      <pubDate>Sat, 03 Feb 2018 17:02:25 -0800</pubDate>
+      
+      <guid>http://justinmklam.com/posts/2018/02/ping-sweeper/</guid>
+      <description>As a mechatronics engineer1, sometimes I like to pretend to also know how to program.
+In my most recent adventures to software land at MistyWest, I needed to write an application in C# that involved doing a ping sweep to find any connected devices. Since Google and Stack Overflow are my two best friends, I was able to find an off-the-net solution quite quickly. Additionally, this is a relatively well known objective so there are obvious libraries and methods to accomplish it.</description>
+    </item>
     
     <item>
       <title>Measuring the Spectral Characteristics of a Light Therapy Lamp</title>

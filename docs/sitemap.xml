@@ -22,6 +22,11 @@
   </url>
   
   <url>
+    <loc>http://justinmklam.com/posts/2018/02/ping-sweeper/</loc>
+    <lastmod>2018-02-03T17:02:25-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://justinmklam.com/posts/2018/01/sad-lamp/</loc>
     <lastmod>2018-01-12T09:42:57-08:00</lastmod>
   </url>
@@ -234,6 +239,12 @@
   </url>
   
   <url>
+    <loc>http://justinmklam.com/tags/c-sharp/</loc>
+    <lastmod>2018-02-03T17:02:25-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://justinmklam.com/categories/</loc>
     <priority>0</priority>
   </url>
@@ -300,13 +311,13 @@
   
   <url>
     <loc>http://justinmklam.com/posts/</loc>
-    <lastmod>2018-01-12T09:42:57-08:00</lastmod>
+    <lastmod>2018-02-03T17:02:25-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://justinmklam.com/tags/programming/</loc>
-    <lastmod>2017-10-29T14:24:52-07:00</lastmod>
+    <lastmod>2018-02-03T17:02:25-08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Synchronous Vs Asynchronous Ping Sweep in C# Windows Form</title>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-85178257-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-85178257-1');
+</script>
+
+
+<script>
+    var shiftWindow = function() { scrollBy(0, -70) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+</script>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content=
+
+    "Life is better when you live asynchronously."
+
+>
+<meta name="author" content="Justin Lam">
+
+<link href="/css/jmklam-portfolio-bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:400i,400|Roboto+Slab" rel="stylesheet">
+<link href="/css/highlight-js.css" rel="stylesheet">
+</head>
+
+<body onload="load()">
+
+    <!DOCTYPE html>
+<html lang="en">
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        
+        <div class="navbar-header">
+            <button id="hamburger-menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a class="navbar-brand" href="http://justinmklam.com">Justin Lam</a>
+            
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                
+				
+
+                <li><a href="/view-all">Portfolio</a>
+				
+				
+					<li><a href="/pages/about/">About</a></li>
+				
+					<li><a href="/pages/contact/">Contact</a></li>
+				
+					<li><a href="/blog">Blog</a></li>
+				
+					<li><a href="/files/Resume.pdf">CV</a></li>
+				
+
+            </ul>
+        </div>
+        
+    </div>
+    
+</nav>
+    
+</html>
+
+    
+    <div class="container" id="page-container">
+        
+        <div class="col-sm-8 col-centered" id="blog">
+            <br>
+            <h2>Synchronous Vs Asynchronous Ping Sweep in C# Windows Form</h2>
+            
+            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on February 3, 2018
+<em>&nbsp &middot &nbsp&nbsp4 min read &nbsp &middot &nbsp
+    
+    <a href="/tags/programming">#programming&nbsp</a>
+    
+    <a href="/tags/c-sharp">#c sharp&nbsp</a>
+    
+</em></p>
+
+            
+            <a href=/imgs/blog-imgs/ping-sweeper/banner2.PNG>
+                <img class="img-responsive" style="display:block; margin:auto; margin-bottom:16px" src="/imgs/blog-imgs/ping-sweeper/banner2.PNG">
+            </a>
+            
+
+<p>As a mechatronics engineer<sup class="footnote-ref" id="fnref:-"><a rel="footnote" href="#fn:-">1</a></sup>, sometimes I like to pretend to also know how to program.</p>
+
+<p>In my most recent adventures to software land at <a href="https://mistywest.com/">MistyWest</a>, I needed to write an application in C# that involved doing a ping sweep to find any connected devices. Since Google and Stack Overflow are my two best friends, I was able to find an off-the-net solution quite quickly. Additionally, this is a relatively well known objective so there are obvious libraries and methods to accomplish it.</p>
+
+<p>Using the <code>System.Net.NetworkInformation</code> namespace, we can easily use the <code>Ping</code> class and its <code>Send</code> command to check if a remote address is alive.</p>
+
+<pre><code class="language-c#">using System.Net.NetworkInformation;
+
+int timeout = 10;   //in ms
+
+Ping p = new Ping();
+PingReply rep = p.Send(&quot;192.168.1.1&quot;, timeout);
+
+if (rep.Status == IPStatus.Success)
+{
+    //host is active
+}
+</code></pre>
+
+<p>However, from the <a href="https://msdn.microsoft.com/en-us/library/ms144955.aspx">MSDN Documentation</a> for <code>Ping.Send</code>, it appears that setting very fast timeouts doesn&rsquo;t actually change much.</p>
+
+<blockquote>
+<p>When specifying very small numbers for timeout, the Ping reply can be received even if timeout milliseconds have elapsed.</p>
+</blockquote>
+
+<p>In practice, it seems that ~500ms is about the fastest threshold that can be set. Unfortunately, scanning 255 IP addresses this way will be excruciatingly slow (for both the developer and end user).</p>
+
+<p>Thanks to <a href="https://stackoverflow.com/a/4042887">Tim Coker</a>, I thought I was mostly done my application already (knowledge is half the battle, right?). The console application worked wonderfully and was written in C#, which was great news since I was developing the application using Windows Forms. However, upon copying the code into Windows Forms, it didn&rsquo;t seem to work. What gives?</p>
+
+<pre><code class="language-csharp">/* Source: https://stackoverflow.com/a/4042887
+ * Original author: Tim Coker
+ */
+
+using System;
+using System.Diagnostics;
+using System.Threading;
+using System.Net.NetworkInformation;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static CountdownEvent countdown;
+        static int upCount = 0;
+        static object lockObj = new object();
+        const bool resolveNames = true;
+
+        static void Main(string[] args)
+        {
+            countdown = new CountdownEvent(1);
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            string ipBase = &quot;10.22.4.&quot;;
+            for (int i = 1; i &lt; 255; i++)
+            {
+                string ip = ipBase + i.ToString();
+
+                Ping p = new Ping();
+                p.PingCompleted += new PingCompletedEventHandler(p_PingCompleted);
+                countdown.AddCount();
+                p.SendAsync(ip, 100, ip);
+            }
+            countdown.Signal();
+            countdown.Wait();
+            sw.Stop();
+            TimeSpan span = new TimeSpan(sw.ElapsedTicks);
+            Console.WriteLine(&quot;Took {0} milliseconds. {1} hosts active.&quot;, sw.ElapsedMilliseconds, upCount);
+            Console.ReadLine();
+        }
+
+        static void p_PingCompleted(object sender, PingCompletedEventArgs e)
+        {
+            string ip = (string)e.UserState;
+            if (e.Reply != null &amp;&amp; e.Reply.Status == IPStatus.Success)
+            {
+                Console.WriteLine(&quot;{0} is up: ({1} ms)&quot;, ip, e.Reply.RoundtripTime);
+                lock(lockObj)
+                {
+                    upCount++;
+                }
+            }
+            else if (e.Reply == null)
+            {
+                Console.WriteLine(&quot;Pinging {0} failed. (Null Reply object?)&quot;, ip);
+            }
+            countdown.Signal();
+        }
+    }
+}
+</code></pre>
+
+<p>It turns out that <code>System.Net.NetworkInformation.Ping</code></p>
+
+<h3 id="c-windows-form-application">C# Windows Form Application</h3>
+
+<div class="row captioned-img">
+    <a href=/imgs/blog-imgs/ping-sweeper/winform.png><img class="img-responsive img-content" src=/imgs/blog-imgs/ping-sweeper/winform.png /></a>
+    <p class="caption">Simple Winform application to demonstrate the power of threads.</p>
+</div>
+
+<h4 id="synchronous-ping-sweep">Synchronous Ping Sweep</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<pre><code class="language-c#">private string BaseIP = &quot;192.168.1.&quot;;
+private int StartIP = 1;
+private int StopIP = 255;
+private string ip;
+
+private int timeout = 100;
+private int nFound = 0;
+
+Stopwatch stopWatch = new Stopwatch();
+TimeSpan ts;
+
+public void RunPingSweep_Sync()
+{
+    nFound = 0;
+
+    stopWatch.Start();
+    System.Net.NetworkInformation.Ping p = new System.Net.NetworkInformation.Ping();
+
+    for (int i = StartIP; i &lt;= StopIP; i++)
+    {
+        ip = BaseIP + i.ToString();
+        System.Net.NetworkInformation.PingReply rep = p.Send(ip, timeout);
+
+        if (rep.Status == System.Net.NetworkInformation.IPStatus.Success)
+        {
+            nFound++;
+        }
+    }
+
+    stopWatch.Stop();
+    ts = stopWatch.Elapsed;
+
+    MessageBox.Show(nFound.ToString() + &quot; devices found! Elapsed time: &quot; + ts.ToString(), &quot;Single Threaded&quot;);
+}
+</code></pre>
+
+<div class="row captioned-img">
+    <a href=/imgs/blog-imgs/ping-sweeper/ping%20result%20-%20sync.png><img class="img-responsive img-content" src=/imgs/blog-imgs/ping-sweeper/ping%20result%20-%20sync.png /></a>
+    <p class="caption">Result of 255 pings using a synchronous method. Nobody has 2 minutes to wait for a complete scan.</p>
+</div>
+
+<h4 id="asynchronous-ping-sweep">Asynchronous Ping Sweep</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<pre><code class="language-c#">private string BaseIP = &quot;192.168.1.&quot;;
+private int StartIP = 1;
+private int StopIP = 255;
+private string ip;
+
+private int timeout = 100;
+private int nFound = 0;
+
+static object lockObj = new object();
+Stopwatch stopWatch = new Stopwatch();
+TimeSpan ts;
+
+public async void RunPingSweep_Async()
+{
+    nFound = 0;
+
+    var tasks = new List&lt;Task&gt;();
+
+    stopWatch.Start();
+
+    for (int i = StartIP; i &lt;= StopIP; i++)
+    {
+        ip = BaseIP + i.ToString();
+
+        System.Net.NetworkInformation.Ping p = new System.Net.NetworkInformation.Ping();
+        var task = PingAndUpdateAsync(p, ip);
+        tasks.Add(task);
+    }
+
+    await Task.WhenAll(tasks);
+
+    stopWatch.Stop();
+    ts = stopWatch.Elapsed;
+    MessageBox.Show(nFound.ToString() + &quot; devices found! Elapsed time: &quot; + ts.ToString(), &quot;Single Threaded&quot;);
+}
+
+private async Task PingAndUpdateAsync(System.Net.NetworkInformation.Ping ping, string ip)
+{
+    var reply = await ping.SendPingAsync(ip, timeout);
+
+    if (reply.Status == System.Net.NetworkInformation.IPStatus.Success)
+    {
+        lock(lockObj)
+        {
+            nFound++;
+        }
+    }
+}
+</code></pre>
+
+<div class="row captioned-img">
+    <a href=/imgs/blog-imgs/ping-sweeper/ping%20result%20-%20async.png><img class="img-responsive img-content" src=/imgs/blog-imgs/ping-sweeper/ping%20result%20-%20async.png /></a>
+    <p class="caption">Asynchronous pings are light years faster! Half a second and we&#39;re rocking.</p>
+</div>
+
+<pre><code>$ nmap -sP 192.168.1.1-255
+...
+Nmap done: 255 IP addresses (15 hosts up) scanned in 34.73 seconds
+</code></pre>
+
+<p>Check out the full source code on <a href="https://github.com/justinmklam/ping-sweeper/blob/master/Ping%20Sweep%20Demo/Ping%20Sweep%20Demo/FormMain.cs">Github</a>.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:-">Engineer in Training. EGBC please don&rsquo;t take my license away.
+ <a class="footnote-return" href="#fnref:-"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+			
+            <br>
+            <div class="text-left">
+                <a href="/blog">
+                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+                </a>
+            </div>
+            <hr>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'justinmklam';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </div>
+        
+
+    </div>	
+    
+
+	    
+    <script src="http://justinmklam.com/js/jquery.js"></script>
+
+    
+    <script src="http://justinmklam.com/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+    <script src="https://use.fontawesome.com/ccb78cc113.js"></script>
+
+    
+    <script>
+        $(document).ready(function(){
+            $('#hamburger-menu').click(function(){
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+
+</body>
+    
+
+<footer>
+	<div class="col-lg-8 col-centered">
+		<hr>
+		<p class="text-center">&copy; 2018 Justin MK Lam</p>
+	</div>
+</footer>
+
+</html>
