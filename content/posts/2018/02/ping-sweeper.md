@@ -1,6 +1,6 @@
 +++
 date = "2018-02-03T17:02:25-08:00"
-draft = false
+draft = true
 image = "/imgs/blog-imgs/ping-sweeper/banner2.PNG"
 layout = "single-blog"
 tagline = "Life is better when you live asynchronously."
@@ -36,7 +36,7 @@ if (rep.Status == IPStatus.Success)
 }
 ```
 
-This is great if we only had a few addresses to ping, because unfortunately this method is unacceptably too slow for a user waiting to see if any devices are found. Although `Ping.Send` has an overload to accept a timeout interval, it appears that setting very low values doesn't actually change much. From the [MSDN docs](https://msdn.microsoft.com/en-us/library/ms144955.aspx):
+This is great if we only had a few addresses to ping, because unfortunately this method is unacceptably slow for a user waiting to see if any devices are found. Although `Ping.Send` has an overload to accept a timeout interval, it appears that setting very low values doesn't actually change much. From the [MSDN docs](https://msdn.microsoft.com/en-us/library/ms144955.aspx):
 
 > When specifying very small numbers for timeout, the Ping reply can be received even if timeout milliseconds have elapsed.
 
