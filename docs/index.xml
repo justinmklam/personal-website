@@ -48,16 +48,6 @@
     </item>
     
     <item>
-      <title>Synchronous vs Asynchronous Ping Sweep in C# Windows Form</title>
-      <link>http://justinmklam.com/posts/2018/02/ping-sweeper/</link>
-      <pubDate>Sat, 03 Feb 2018 17:02:25 -0800</pubDate>
-      
-      <guid>http://justinmklam.com/posts/2018/02/ping-sweeper/</guid>
-      <description>As a mechatronics engineer (in training), sometimes I like to pretend that I also know how to program.
-In my most recent adventures to software land at MistyWest, I needed to write an application in C# that involved doing a ping sweep to find devices that were physically connected through ethernet. Since Google and Stack Overflow are my two best friends, I was able to find (what seemed to be) an off-the-net solution quite quickly.</description>
-    </item>
-    
-    <item>
       <title>Measuring the Spectral Characteristics of a Light Therapy Lamp</title>
       <link>http://justinmklam.com/posts/2018/01/sad-lamp/</link>
       <pubDate>Fri, 12 Jan 2018 09:42:57 -0800</pubDate>

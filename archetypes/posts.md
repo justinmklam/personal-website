@@ -1,7 +1,7 @@
 +++
 image =     "http://placehold.it/900x300"
 type =      "blog"
-draft =     false
+draft =     true
 layout =    "single-blog"
 tags =      [""]
 tagline =   ""
