@@ -11,6 +11,8 @@ canonifyurls = false
 googleAnalytics = "UA-85178257-1"
 disqusShortname = "justinmklam"
 
+FootnoteReturnLinkContents = "↩"
+
 [taxonomies]
 	tag = "tags"
 	type = "types"
