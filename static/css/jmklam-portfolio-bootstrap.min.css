@@ -1472,6 +1472,7 @@ footer{margin:35px 0}
 .datestamp,.datestamp-index {font-size:90%; font-style:oblique; color:#777; text-align:left}
 .datestamp {text-align:right}
 .archive-header {font-size:18px; margin-top:5px; margin-bottom:7px}
+.footnotes {font-size: 95%; font-style: italic}
 pre code {white-space:pre}
 h4 {margin-top:20px}
 pre {background-color: #F0F0F0}
