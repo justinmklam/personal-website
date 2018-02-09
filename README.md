@@ -17,7 +17,7 @@ hugo -D
 ```
 To start a local server for live website testing (at localhost:1313):
 ```
-hugo serve
+hugo -D serve
 ```
 ## Adding Content
 To create a new project post in the 'content' folder:
@@ -31,10 +31,12 @@ hugo new /posts/[YEAR]/[MONTH]/[TITLE].md
 __Note:__ Upload project images, files, etc. in the 'static' folder.
 
 ## Publishing through GitHub Pages
-Create a branch called 'gh-pages' and push the content in the 'public' folder to it. To regenerate the website after making changes:
+Github will publish the 'docs' folder in this repo. Configure the Hugo publish directory in config.toml for easy publishing. 
+
 ```
-git add --all
-git commit -m "<some change message>"
-git push -f origin gh-pages
+publishdir = "docs"
 ```
-Or follow the [Hugo Quickstart Guide](https://gohugo.io/overview/quickstart/) for more details.
+
+Using Visual Studio Code and the git sidebar makes it a one-stop web dev shop.
+
+Follow the [Hugo Quickstart Guide](https://gohugo.io/overview/quickstart/) for more details.
