@@ -6,7 +6,7 @@
     <description>Recent content in C Sharp on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Feb 2018 17:02:25 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 09 Feb 2018 17:02:25 -0800</lastBuildDate>
     
 	<atom:link href="http://justinmklam.com/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Synchronous vs Asynchronous Ping Sweep in C# Windows Form</title>
       <link>http://justinmklam.com/posts/2018/02/ping-sweeper/</link>
-      <pubDate>Sat, 03 Feb 2018 17:02:25 -0800</pubDate>
+      <pubDate>Fri, 09 Feb 2018 17:02:25 -0800</pubDate>
       
       <guid>http://justinmklam.com/posts/2018/02/ping-sweeper/</guid>
       <description>As a mechatronics engineer (in training), sometimes I like to pretend that I also know how to program.

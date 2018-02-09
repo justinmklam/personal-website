@@ -32,6 +32,7 @@
 <meta name="author" content="Justin Lam">
 
 <link href="/css/jmklam-portfolio-bootstrap.min.css" rel="stylesheet">
+<link href="/css/jmklam-portfolio.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:400i,400|Roboto+Slab" rel="stylesheet">
 <link href="/css/highlight-js.css" rel="stylesheet">
 </head>
@@ -89,8 +90,8 @@
             <br>
             <h2>Synchronous vs Asynchronous Ping Sweep in C# Windows Form</h2>
             
-            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on February 3, 2018
-<em>&nbsp &middot &nbsp&nbsp6 min read &nbsp &middot &nbsp
+            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on February 9, 2018
+<em>&nbsp &middot &nbsp&nbsp8 min read &nbsp &middot &nbsp
     
     <a href="/tags/programming">#programming&nbsp</a>
     
@@ -112,7 +113,7 @@
 
 <h3 id="first-attempt-some-ping-simple">First Attempt: Some-ping Simple</h3>
 
-<p>A quick Google search showed that pinging addresses is dead simple in C#. Using the <code>System.Net.NetworkInformation</code> namespace, we can easily use the <code>Ping.Send()</code> command to check if a remote address is alive.</p>
+<p>A quick Google search showed that pinging addresses is dead easy in C#. Using the <code>System.Net.NetworkInformation</code> namespace, we can easily use the <code>Ping.Send()</code> command to check if a remote address is alive.</p>
 
 <pre><code class="language-c#">using System.Net.NetworkInformation;
 
@@ -203,36 +204,70 @@ namespace ConsoleApplication1
 }
 </code></pre>
 
-<p>Apparently, console applications and Windows Forms are different beasts and deadlocks occur with the above code. According to <a href="https://stackoverflow.com/a/7767632">Hans Passant from another Stack Overflow thread</a>, the additional UI thread is the culprit:</p>
+<p>Lesson learned: Console applications and Windows Forms are different beasts and deadlocks occur with the above code. According to <a href="https://stackoverflow.com/a/7767632">Hans Passant from another Stack Overflow thread</a>, the additional UI thread is the culprit:</p>
 
 <blockquote>
 <p>Winforms has a synchronization provider whereas console apps do not. The problem is that the <code>Ping</code> class makes a best effort to raise the <code>PingCompleted</code> event on the same thread that calls <code>SendAsync()</code>. So it tries to raise the event on the main thread, but that can&rsquo;t work since the main thread is blocked with the <code>countdown.Wait()</code> call. In a console app however, the <code>PingCompleted</code> event will be raised on a <code>ThreadPool</code> thread.</p>
 </blockquote>
 
-<p>Hm, turns out this problem wasn&rsquo;t as easy as copying and pasting random code off the internet. It also turns out that there are two different asynchronous ping methods in the same class. First on the list:</p>
+<p>Hm, turns out this problem wasn&rsquo;t as easy as copying and pasting random code off the internet. Time for a bit of research!</p>
+
+<h4 id="digging-deeper-a-battle-of-asynchronous-pings">Digging Deeper: A Battle of Asynchronous Pings</h4>
+
+<p>For some reason that can only be to confuse inexperienced programmers like myself, there are two different asynchronous ping methods in this class. First on the list:</p>
 
 <blockquote>
-<p><code>Ping.SendAsync</code>: <strong>Asynchronously attempts</strong> to send an Internet Control Message Protocol (ICMP) echo message to a computer, and receive a corresponding ICMP echo reply message from that computer. - <a href="https://msdn.microsoft.com/en-us/library/system.net.networkinformation.ping.sendasync(v=vs.110).aspx">MSDN</a></p>
+<p><code>Ping.SendAsync()</code>: <strong>Asynchronously attempts</strong> to send an Internet Control Message Protocol (ICMP) echo message to a computer, and receive a corresponding ICMP echo reply message from that computer. - <a href="https://msdn.microsoft.com/en-us/library/system.net.networkinformation.ping.sendasync(v=vs.110).aspx">MSDN</a></p>
 </blockquote>
 
 <p>And the second:</p>
 
 <blockquote>
-<p><code>Ping.SendPingAsync</code>: Sends an Internet Control Message Protocol (ICMP) echo message to a computer, and receives a corresponding ICMP echo reply message from that computer <strong>as an asynchronous operation</strong>. - <a href="https://msdn.microsoft.com/en-us/library/system.net.networkinformation.ping.sendpingasync(v=vs.110).aspx">MSDN</a></p>
+<p><code>Ping.SendPingAsync()</code>: Sends an Internet Control Message Protocol (ICMP) echo message to a computer, and receives a corresponding ICMP echo reply message from that computer <strong>as an asynchronous operation</strong>. - <a href="https://msdn.microsoft.com/en-us/library/system.net.networkinformation.ping.sendpingasync(v=vs.110).aspx">MSDN</a></p>
 </blockquote>
 
-<p>Doing a bit more research, a came across the <code>BackgroundWorker</code> class that&rsquo;s built into C# Winforms. However, it wasn&rsquo;t clear to me how <code>Ping.SendPingAsync()</code> would be dealt with in a single background thread. Although it wouldn&rsquo;t be on the UI thread, it seemed like each ping would need its own background thread to be truly asynchronous, which seemed like a clunky implementation&hellip;</p>
+<p>Based on these method descriptions, it appears that <code>SendAsync()</code> does not guarantee asynchronous operation. Since we just learned how threading in console applications vs windows forms is dealt with differently, this may be why it didn&rsquo;t work as expected in the latter case. What we want are guaranteed asynchronous operations, so hopefully <code>SendPingAsync()</code> should perform to its name.</p>
+
+<p>(One can only assume this second method was added after-the-fact when Microsoft realized that developers wanted a truly asynchronous ping&hellip;)</p>
+
+<p><strong>The takeaway:</strong> Use <code>SendPingAsync()</code> or bust.</p>
+
+<h4 id="digging-deeper-background-worker-vs-async-await">Digging Deeper: Background Worker vs Async/Await</h4>
+
+<p>So we&rsquo;ve selected our asynchronous ping method, but that still leaves us hanging over how we&rsquo;re going to handle it in a background task. Before .NET 4.0 was released, <code>BackgroundWorker</code> was the de-facto standard<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>. However:</p>
+
+<blockquote>
+<p>The core problem that <code>BackgroundWorker</code> originally solved was the need to <em>execute synchronous code on a background thread</em>. If you&rsquo;re using it for asynchronous or parallel work, you&rsquo;re not using the right tool in the first place. - <a href="http://blog.stephencleary.com/2013/05/taskrun-vs-backgroundworker-round-1.html">Stephen Cleary</a></p>
+</blockquote>
+
+<p>After .NET 4.0, we have the following options:</p>
+
+<ul>
+<li>Tasks (Async Methods)</li>
+<li>Tasks (Task Parallel Library)</li>
+<li>Delegate.BeginInvoke</li>
+<li>ThreadPool.QueueUserWorkItem</li>
+<li>Threads</li>
+</ul>
+
+<p>Discussing each of these methods is beyond the scope of this post, but you can read more on Cleary&rsquo;s article on <a href="http://blog.stephencleary.com/2010/08/various-implementations-of-asynchronous.html">various implementations of asynchronous background tasks</a>. In short, using <code>Task</code>-returning asynchronous methods is the best overall method to use.</p>
+
+<p>Kind of.</p>
+
+<p>For my application, sending each ping to its own task using <code>async/await</code> is logical, as I could then call <code>Task.WhenAll()</code> to wait until all pings have been received back to the main thread.</p>
+
+<p>However, I could still use <code>BackgroundWorker</code> for SFTP file transfer from the remote devices to a local directory (required in my final application, but not included in this ping sweep demo). Doing so would prevent the main UI thread from hanging while files are being transferred. Although <code>async/await</code> may also be used for this, <code>BackgroundWorker</code> seemed to be the more appropriate (and easier) implementation since each file is serially transferred from remote to local device. Additionally, it&rsquo;s just drag and drop in WinForms!</p>
+
+<p><strong>The takeaway:</strong> Use <code>async/await</code> for asynchronous ping sweep, and <code>BackgroundWorker</code> for SFTP file transfers.</p>
 
 <h3 id="third-attempt-one-ping-to-rule-them-all-one-ping-to-find-them">Third Attempt: One Ping to Rule Them All, One Ping to Find Them</h3>
-
-<p><a href="https://stackoverflow.com/questions/13406901/task-parallel-library-code-freezes-in-a-windows-forms-application-works-fine-a">https://stackoverflow.com/questions/13406901/task-parallel-library-code-freezes-in-a-windows-forms-application-works-fine-a</a></p>
 
 <!-- <div class="row captioned-img">
     <a href=/imgs/blog-imgs/ping-sweeper/winform.png><img class="img-responsive img-content" src=/imgs/blog-imgs/ping-sweeper/winform.png /></a>
     <p class="caption">Simple Winform application to demonstrate the power of threads.</p>
 </div> -->
 
-<p>Introducing the <code>Task</code> class in <code>System.Threading.Tasks</code>! This was the cleanest (and easiest) method to integrate with `Ping</p>
+<p>Finally, we have a working solution! Using <code>async/await</code> with <code>Tasks</code> in <code>System.Threading.Tasks</code> yields promising results. See below for the implementation.</p>
 
 <pre><code class="language-c#">private string BaseIP = &quot;192.168.1.&quot;;
 private int StartIP = 1;
@@ -263,11 +298,12 @@ public async void RunPingSweep_Async()
         tasks.Add(task);
     }
 
-    await Task.WhenAll(tasks);
-
-    stopWatch.Stop();
-    ts = stopWatch.Elapsed;
-    MessageBox.Show(nFound.ToString() + &quot; devices found! Elapsed time: &quot; + ts.ToString(), &quot;Single Threaded&quot;);
+    await Task.WhenAll(tasks).ContinueWith(t =&gt;
+    {
+        stopWatch.Stop();
+        ts = stopWatch.Elapsed;
+        MessageBox.Show(nFound.ToString() + &quot; devices found! Elapsed time: &quot; + ts.ToString(), &quot;Asynchronous&quot;);
+    });
 }
 
 private async Task PingAndUpdateAsync(System.Net.NetworkInformation.Ping ping, string ip)
@@ -289,9 +325,20 @@ private async Task PingAndUpdateAsync(System.Net.NetworkInformation.Ping ping, s
     <p class="caption">Asynchronous pings are light years faster! Half a second and we&#39;re rocking with all the pings we needed.</p>
 </div>
 
-<h4 id="synchronous-ping-sweep">Synchronous Ping Sweep</h4>
+<h4 id="verification-with-benchmark">Verification with Benchmark</h4>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>To make sure our numbers add up, let&rsquo;s compare it with a known tool that is much more mature than this C# application.</p>
+
+<div class="row captioned-img">
+    <a href=/imgs/blog-imgs/ping-sweeper/angryip.PNG><img class="img-responsive img-content" src=/imgs/blog-imgs/ping-sweeper/angryip.PNG /></a>
+    <p class="caption">Verifying scanned result with Angry IP scanner because apparently nmap isn&#39;t fully functional in Windows Subsystem for Linux yet.</p>
+</div>
+
+<p>Same number of hosts alive, but a little slower. However, Angry IP Scanner is more robust in its pings and thread handling, so the few extra seconds is likely put to good use. I found my application to be somewhat inconsistent in finding all the alive hosts, which may be mitigated with multiple ping packets to send (instead of just one).</p>
+
+<h4 id="comparing-with-synchronous-ping-sweep">Comparing with Synchronous Ping Sweep</h4>
+
+<p>Because pinging is such an interesting past-time, let&rsquo;s see how the very first synchronous solution performs using <code>Ping.Send()</code>.</p>
 
 <pre><code class="language-c#">private string BaseIP = &quot;192.168.1.&quot;;
 private int StartIP = 1;
@@ -325,7 +372,7 @@ public void RunPingSweep_Sync()
     stopWatch.Stop();
     ts = stopWatch.Elapsed;
 
-    MessageBox.Show(nFound.ToString() + &quot; devices found! Elapsed time: &quot; + ts.ToString(), &quot;Single Threaded&quot;);
+    MessageBox.Show(nFound.ToString() + &quot; devices found! Elapsed time: &quot; + ts.ToString(), &quot;Synchronous&quot;);
 }
 </code></pre>
 
@@ -334,12 +381,26 @@ public void RunPingSweep_Sync()
     <p class="caption">Result of 255 pings using a synchronous method. Nobody has 2 minutes to wait for a complete scan.</p>
 </div>
 
-<pre><code>$ nmap -sP 192.168.1.1-255
-...
-Nmap done: 255 IP addresses (15 hosts up) scanned in 34.73 seconds
-</code></pre>
+<p>Wow. A full two minutes compared to less than one second. Life truly is better when you live asynchronously.</p>
 
-<p>Check out the full source code on <a href="https://github.com/justinmklam/ping-sweeper/blob/master/Ping%20Sweep%20Demo/Ping%20Sweep%20Demo/FormMain.cs">Github</a>.</p>
+<h3 id="closing-thoughts">Closing Thoughts</h3>
+
+<p>This concludes another adventure through asynchronous methods in C#. It&rsquo;s amazing how much information is available on the internet, and I truly would not be able to get this far without it. Google and Stack Overflow, what would I be without you?</p>
+
+<p>Thanks for reading, and I hope you learned a <em>ping</em> or two about these methods.</p>
+
+<p><br></p>
+
+<p>Check out the full source code of this project on <a href="https://github.com/justinmklam/ping-sweeper/blob/master/Ping%20Sweep%20Demo/Ping%20Sweep%20Demo/FormMain.cs">Github</a>!</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">According to <a href="http://blog.stephencleary.com/2010/08/various-implementations-of-asynchronous.html">Stephen Cleary</a>, one of <a href="https://mvp.microsoft.com/en-us/PublicProfile/5000058?fullName=Stephen%20Cleary">Microsoft&rsquo;s Most Valuable Professionals</a> and top answerer for async/await questions on Stack Overflow. I&rsquo;d trust him if I were you.
+ <a class="footnote-return" href="#fnref:1">↩</a></li>
+</ol>
+</div>
 
 
 			
