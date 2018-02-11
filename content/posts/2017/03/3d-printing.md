@@ -38,7 +38,7 @@ What's better than an inexpensive 3D printer? Free sources of information! The i
 * CAD Modeling Software (free for hobbyists and enthusiasts):
     * [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview)
 * Slicing Software: 
-    * [Cura 2.7](https://ultimaker.com/en/products/cura-software)
+    * [Ultimaker Cura](https://ultimaker.com/en/products/cura-software)
 * Onboard WiFi for wireless printing:
     * [Connecting to WiFi through G-code](http://mpselectmini.com/wifi/g-code_file)
 * Using Raspberry Pi and Octoprint for wireless printing:
@@ -108,7 +108,22 @@ The settings below should serve as a decent starting point in dialing in your ow
 
 {{<img caption="PLA material settings." src="/imgs/blog-imgs/3d-printing-primer/pla-settings.png" >}}
 
+### Design Guidelines
+Want parts to fit together? 0.25mm is usually works well.
 {{<img caption="For mating parts, a general guideline of 0.25mm is sufficient." src="/imgs/blog-imgs/3d-printing-primer/tolerance.png" >}}
 
+### Troubleshooting
+#### Hole Features on First Layer Not Adhering
+Make the following setting modifications, in descending order of preference (I try to avoid using rafts to reduce print time and material waste).
+
++ Slow down print speed to ~10mm/s
++ Increase build plate temperature and/or use external adhesion methods (ie. glue/hairspray)
++ Increase initial layer height such that more material sticks to the bed
++ Disable fans for initial layer
++ Use raft
+
+#### Stringy Parts
++ Fiddle with retraction distance and speed (start with 4.5mm and 40mm/s)
+
 <br>
-<p class="text-right">_Last edited: September 24, 2017_</p>
+<p class="text-right">_Last edited: February 10, 2018_</p>

@@ -17,6 +17,8 @@ Yep, you heard it right. With all the craze surrounding cooking sous vide these 
 
 Click-bait headlines aside, this post is quite lengthy and not everyone may have the patience to get through it all. Feel free to read the TL;DR below, or if you're feeling inclined, follow along my adventure through the land of 3D printing, materials science, and modern cooking.
 
+{{<img caption="Measuring maximum force before material failure, recorded on an iPhone 6 at 240 fps." src="/imgs/blog-imgs/sous-vide-pla/pla-carnage.gif">}}
+
 ## The Short Version
 
 Heat treatment was carried out on 3D printed parts using a temperature controlled water bath (aka sous vide) instead of being baked in an oven. 
@@ -219,8 +221,6 @@ Now that that's out of the way, we can finally start testing and breaking things
 1. Record maximum load before sample catastrophically explodes
 
 {{<img caption="Overview of test setup. Camera is used to capture the scale measurement at peak force." src="/imgs/blog-imgs/sous-vide-pla/IMG_20170319_164047.jpg" >}}
-
-{{<vid caption="Measuring maximum force before material failure, recorded on an iPhone 6 at 240 fps." src="https://gfycat.com/ifr/MintyEvenBanteng">}}
 
 #### The Results
 

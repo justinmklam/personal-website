@@ -34,6 +34,9 @@ __Source:__ [Github](https://github.com/justinmklam/sous-vide)
 {{<img caption="Modular sous vide controller powered by everyone's favourite WiFi chip, the EPS8266."
 src="/imgs/sous-vide/IMG_8508.jpg" >}}
 
+{{<img caption="Push button toggles between three states: main monitoring screen, set cooking time, and set cooking temperature."
+src="/imgs/sous-vide/ui-demo.gif" >}}
+
 ## The Sous Vide Story
 
 You may have heard people rant about this fancy new cooking method that's all the rage right now, but of course you shrug it off as a fad. But here you are, intrigued enough to be reading this article about the very thing you previously rolled your eyes at. So what the heck is sous vide anyway? The peeps over at [ChefSteps](https://www.chefsteps.com/activities/what-is-sous-vide) have an answer:
@@ -88,9 +91,6 @@ src="/imgs/sous-vide/IMG_8400.jpg" >}}
 
 <!--{{<img caption="TEXT"
 src="/imgs/sous-vide/IMG_8580.jpg" >}}-->
-
-{{<img caption="Push button toggles between three states: main monitoring screen, set cooking time, and set cooking temperature."
-src="/imgs/sous-vide/ui-demo.gif" >}}
 
 ## The Data
 
