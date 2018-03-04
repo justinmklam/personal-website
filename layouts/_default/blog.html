@@ -20,7 +20,7 @@
 
             {{ range first 5 (where .Site.Pages "Type" "blog") }}
             <!-- Blog heading -->
-            <h2>
+            <h2 class="blog-title">
                 <a class="h2" role="button" href="{{ .Permalink }}">{{ .Title }}</a>
             </h2>
             <!--Timestamp-->
