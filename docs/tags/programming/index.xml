@@ -6,10 +6,20 @@
     <description>Recent content in Programming on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Feb 2018 17:02:25 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Apr 2018 20:33:46 -0700</lastBuildDate>
     
 	<atom:link href="http://justinmklam.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>From Prototype to Cloud: A Python Recipe Converter</title>
+      <link>http://justinmklam.com/posts/2018/04/python-flask-heroku-tutorial/</link>
+      <pubDate>Fri, 06 Apr 2018 20:33:46 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/posts/2018/04/python-flask-heroku-tutorial/</guid>
+      <description>In case the title wasn&amp;rsquo;t clear, this blog post is about developing a web application using the Python programming language using Jupyter Lab, Flask, and the Heroku platform. If you were looking for an article on python recipes, you can start off with this one on making a poached Burmese python curry.
+The Backstory The problem with online baking recipes is that the majority of them use volumetric units. As any civilized baker would know, Patricia&amp;rsquo;s 1 cup of flour may very well be different than Patrick&amp;rsquo;s 1 cup of flour.</description>
+    </item>
     
     <item>
       <title>Synchronous vs Asynchronous Ping Sweep in C# Windows Form</title>

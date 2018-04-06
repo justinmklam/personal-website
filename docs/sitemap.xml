@@ -22,6 +22,11 @@
   </url>
   
   <url>
+    <loc>http://justinmklam.com/posts/2018/04/python-flask-heroku-tutorial/</loc>
+    <lastmod>2018-04-06T20:33:46-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://justinmklam.com/posts/2018/02/ping-sweeper/</loc>
     <lastmod>2018-02-09T17:02:25-08:00</lastmod>
   </url>
@@ -311,13 +316,13 @@
   
   <url>
     <loc>http://justinmklam.com/posts/</loc>
-    <lastmod>2018-02-09T17:02:25-08:00</lastmod>
+    <lastmod>2018-04-06T20:33:46-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://justinmklam.com/tags/programming/</loc>
-    <lastmod>2018-02-09T17:02:25-08:00</lastmod>
+    <lastmod>2018-04-06T20:33:46-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -329,7 +334,7 @@
   
   <url>
     <loc>http://justinmklam.com/tags/python/</loc>
-    <lastmod>2015-08-06T23:49:59-07:00</lastmod>
+    <lastmod>2018-04-06T20:33:46-07:00</lastmod>
     <priority>0</priority>
   </url>
   
