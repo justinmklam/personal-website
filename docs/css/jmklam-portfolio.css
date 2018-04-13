@@ -131,8 +131,14 @@ h1, .h1, h2, .h2, h3, .h3 {
 	font-style: italic
 }
 
+/* Horizontal scrolling for long code lines */
 pre code {
 	white-space: pre
+}
+
+pre {
+	background-color: #2B303B;
+	color: #c0c5ce
 }
 
 .page-header {
@@ -140,10 +146,6 @@ pre code {
 }
 h4 {
 	margin-top: 20px
-}
-
-pre {
-	background-color: #F0F0F0
 }
 
 .project-description h4 {
