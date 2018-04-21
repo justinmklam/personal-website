@@ -109,7 +109,9 @@
             <a href=/imgs/blog-imgs/vscode-debugger/debugger.png>
                 <img class="img-responsive" style="display:block; margin:auto; margin-bottom:16px" src="/imgs/blog-imgs/vscode-debugger/debugger.png">
             </a>
-            
+
+            <div class="blog-content">
+                
 
 <p><a href="https://code.visualstudio.com/">Visual Studio Code&rsquo;s</a> combination of functionality, customizability, and aesthetics makes it one of my favourite code editors. As such, I was set on making it work with embedded development since I was getting started with the STM32 line of microcontrollers. I was following the steps outlined in <a href="https://leanpub.com/mastering-stm32">Mastering STM32</a> by Carmine Noviello (which is an excellent resource) until it said to use Eclipse, because life&rsquo;s too short to use software with unnecessary bloat. Enter VS Code and someone wanting to use the latest and greatest in code editors.</p>
 
@@ -133,7 +135,7 @@
 
 <p><em>Note: The following was set up on Windows 10 for STM32 Nucleo F303K8. The Nucleo F030R8 was also tested and confirmed working with this setup.</em></p>
 
-<h3 id="configuring-vs-code">Configuring VS Code</h3>
+<h1 id="configuring-vs-code">Configuring VS Code</h1>
 
 <p>Open the Debug panel (<code>CTRL + SHIFT + D</code>) and select &ldquo;Add Configuration &gt; GDB&rdquo; through the top left dropdown arrow. Create a GDB configuration in launch.json and add the following. Note: Change the paths in &ldquo;target&rdquo;, &ldquo;gdbpath&rdquo;, and &ldquo;autorun&rdquo; to the correct locations.</p>
 
@@ -157,7 +159,7 @@
     <p class="caption">GDB debugger entry added after successfuly entry in launch.json file.</p>
 </div>
 
-<h3 id="starting-a-debug-session">Starting a Debug Session</h3>
+<h1 id="starting-a-debug-session">Starting a Debug Session</h1>
 
 <p>Before entering debug mode (<code>F5</code>), you need to launch the OpenOCD server. Open Terminal in VS Code (<code>CTRL + `</code>) and type:</p>
 
@@ -171,7 +173,7 @@
 
 <p>Unfortunately you must always start the OpenOCD server before hitting <code>F5</code>, but fortunately you can just hit <code>Up</code> in the terminal to recall the last command.</p>
 
-<h3 id="troubleshooting">Troubleshooting</h3>
+<h1 id="troubleshooting">Troubleshooting</h1>
 
 <p>When running OpenOCD, the following error might come up:</p>
 
@@ -187,6 +189,7 @@
 
 <p>Happy debugging!</p>
 
+            </div>
 
 			
             <br>

@@ -12,7 +12,7 @@ type = "blog"
 
 In case the title wasn't clear, this blog post is about developing a web application using the Python programming language using Jupyter Lab, Flask, and the Heroku platform. If you were looking for an article on python recipes, you can start off with this one on making a [poached Burmese python curry](https://mobile-cuisine.com/recipes/recipe-poached-burmese-python-curry/).
 
-## The Backstory
+# The Backstory
 
 The problem with online baking recipes is that the majority of them use volumetric units. As any civilized baker would know, Patricia's 1 cup of flour may very well be different than Patrick's 1 cup of flour. Maybe Patricia sifted her flour. Maybe Patrick's organic flour is a finer texture. Maybe both Pats **should measure by mass instead of volume** to avoid all this confusion in the first place.
 
@@ -22,7 +22,7 @@ My main reqiurement for this application was to be cross-platform. I wanted to b
 
 After a bit of searching, I came across [Flask](http://flask.pocoo.org/) and [Heroku](https://www.heroku.com/python) which would allow me to use Python for the entire development process, from prototype to deployment. Super cool.
 
-## The Outline
+# The Outline
 
 This blog post will outline the development of a simple string-parsing application that converts common ingredients measured in cups, tablespoons, and teaspoons to grams. 
 
@@ -35,9 +35,9 @@ This blog post will outline the development of a simple string-parsing applicati
 
 <hr>
 
-## The Development
+# The Development
 
-### Prototyping in Jupyter
+## Prototyping in Jupyter
 
 Sure you can do all your development in a text editor and command line. There's nothing wrong with putting print statements everywhere, or even having a Python console open to do scratchpad-type testing. But when a tool as flexible and great as Jupyter is available for everyone to use, why settle for anything else?
 
@@ -49,7 +49,7 @@ One of its greatest selling points is the option to execute code in chunks and s
 
 {{<img caption="Jupyter Lab is the successor to Jupyter (previously iPython) Notebook. The tabbed interface is a godsend." src="/imgs/blog-imgs/python-heroku-tutorial/jupyter lab.png" link="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906" link-text="Jupyter">}}
 
-#### On To The Prototype
+### On To The Prototype
 
 The proposed use case is described below. Nothing complex happening, just a handful of string parsing operations and a conversion table lookup.
 
@@ -79,7 +79,7 @@ Comparing that with the [current version](https://github.com/justinmklam/recipe-
 
 Now that we've finished testing the prototype and are happy with how it works, we can move on to the next step in turning it into a browser-based application.
 
-### Migrating to Visual Studio Code
+## Migrating to Visual Studio Code
 
 Fortunately, this is painless! In Jupyter, navigate to `File > Export Notebook As... > Executable Script`, and that's it. A Python script will download with all the cells in a single executable file. 
 
@@ -89,9 +89,9 @@ Fortunately, this is painless! In Jupyter, navigate to `File > Export Notebook A
 
 Feel free to check out the cleaned up file on [GitHub](https://github.com/justinmklam/recipe-converter/blob/master/recipeConverter.py). That was easy.
 
-### Integrating with Flask
+## Integrating with Flask
 
-#### Like the Thing Used in Chemistry?
+### Like the Thing Used in Chemistry?
 
 No, this Flask is different! There are many options for web development in Python, with two heavy hitters being Flask and Django. They're both great frameworks, but where Django is the more fully-featured framework, Flask follows the Unix philosophy of "do one thing and do it well". 
 
@@ -108,7 +108,7 @@ Recommended reading:
 + [Flask Simple Web Form Tutorial](https://pythonspot.com/flask-web-forms/)
 + [Blogging Application Tutorial](http://flask.pocoo.org/docs/dev/tutorial/#tutorial)
 
-#### Running With Flask
+### Running With Flask
 
 Now the fun really begins. We can start off by firing up a terminal and installing (and updating) the Flask microframework:
 
@@ -139,7 +139,7 @@ Now moving on to our recipe converter, we need two parts to make this work:
 + Flask python script for the backend
 + HTML template for the frontend
 
-##### App.py (aka the Back End)
+#### App.py (aka the Back End)
 
 Looking at the code below, there isn't much difference from the simple "hello world" application from above. One key change is the inclusion of `methods = ['GET', 'POST']` in the `route()` decorator. From the [quickstart](http://flask.pocoo.org/docs/0.12/quickstart/) guide:
 
@@ -196,7 +196,7 @@ if __name__ == '__main__':
     app.run()
 ```
 
-##### Form.html (aka the Front End)
+#### Form.html (aka the Front End)
 
 To accompany our Flask script, we need a usable interface. The interesting bits are encapsulated by `{}`, and everything else is straight HTML and the [Bootstrap library](https://getbootstrap.com).
 
@@ -271,7 +271,7 @@ $ flask run
 
 
 
-### Deploying on Heroku Cloud
+## Deploying on Heroku Cloud
 
 First thing's first: Create download [Heroku](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) and create an account by running (after the installation completes):
 
@@ -281,7 +281,7 @@ First thing's first: Create download [Heroku](https://devcenter.heroku.com/artic
 
 Heroku should now be initialized on your local system!
 
-#### Setting Up the Required Files
+### Setting Up the Required Files
 
 To deploy an application/dyno on Heroku, we need the following files:
 
@@ -296,7 +296,7 @@ To deploy an application/dyno on Heroku, we need the following files:
 
 The following sections will detail what goes into where.
 
-##### Procfile
+#### Procfile
 
 We'll be using [Gunicorn](http://gunicorn.org/) to run our application on Heroku, which is its preferred HTTP server. So in `Procfile`, add the following line:
 
@@ -312,7 +312,7 @@ web: python app.py --log-file=-
 
 This is functionally equivalent to running the Flask command from before, with the main difference is that this uses Heroku's local hosting framework.
 
-##### Requirements.txt
+#### Requirements.txt
 
 In `Requirements.txt`, we need to add the dependencies our app has. When we deploy it to Heroku cloud, it will install these modules on the server. Add the following lines:
 
@@ -321,7 +321,7 @@ gunicorn
 Flask
 ```
 
-##### Runtime.txt
+#### Runtime.txt
 
 Finally, we need to specify that our app runs on Python in `runtime.txt`. You can check your own version by running `python -V` or `python --version`.
 
@@ -331,7 +331,7 @@ In `Runtime.txt`:
 python-3.6.4
 ```
 
-#### Testing Heroku Locally
+### Testing Heroku Locally
 
 For a minimal application, our file structure should look like the following:
 
@@ -361,7 +361,7 @@ If you're on a Unix system, you only need to run `heroku local web` to start a l
 
 With any luck, the app should compile and run just like it did with Flask!
 
-#### Pushing to Heroku App
+### Pushing to Heroku App
 
 Heroku uses `git` to receive files to host on `herokuapp.com`. First, we'll setup the Heroku application with `heroku create` (where the second argument is the app name, otherwise a randomly generated one will be used).
 
@@ -391,7 +391,7 @@ Finally, we can push and deploy the files to Heroku:
 > heroku logs
 ```
 
-#### Published to the Cloud!
+### Published to the Cloud!
 
 After all that's been said and done, the recipe converter app is now published on [herokuapp.com](http://recipe-converter-app.herokuapp.com/)! It's a freemium service, so it's worth checking out for professional development as well.
 
@@ -401,7 +401,7 @@ Logging in to [dashboard.heroku.com](https://dashboard.heroku.com/) provides a n
 
 {{<img caption="Heroku dashboard to manage your dynos." src="/imgs/blog-imgs/python-heroku-tutorial/heroku dashboard.PNG" >}}
 
-### Closing Thoughts
+# Closing Thoughts
 
 To recap our on our journey, we:
 

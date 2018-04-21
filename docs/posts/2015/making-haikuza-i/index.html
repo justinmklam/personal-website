@@ -107,7 +107,9 @@
             <a href=/imgs/blog-imgs/making-haikuza/8Y0EDX4VP9.jpg>
                 <img class="img-responsive" style="display:block; margin:auto; margin-bottom:16px" src="/imgs/blog-imgs/making-haikuza/8Y0EDX4VP9.jpg">
             </a>
-            
+
+            <div class="blog-content">
+                
 
 <p><em>The format of this series is an outline of my thought process during the development of <a href="/projects/software/haikuza/">@thehaikuza</a>.</em></p>
 
@@ -123,7 +125,7 @@ Haikus are simple
 
 <p>The idea of computer generated text is often a humourous one. Spamming your smartphone&rsquo;s predictive keyboard is usually enough justification to avoid trying to computationally bang out the works of Shakespeare. As laughable as the monkeys at a typewriter idea is, maybe weve become smart enough to at least get close to this literary pipe dream&hellip;</p>
 
-<h3 id="prequel-the-prudence-of-pivoting">Prequel: The Prudence of Pivoting</h3>
+<h1 id="prequel-the-prudence-of-pivoting">Prequel: The Prudence of Pivoting</h1>
 
 <p>Needless to say, it can take a few tries to end up at a decent idea, and @thehaikuza was no exception. After hearing about the poetry contest, I wanted to develop something related to computational linguistics, but I was partial to run-of-the-mill poetry. High school English classes had given me a negative bias for this type of literary art, so naturally I was in search for a different end product.</p>
 
@@ -137,7 +139,7 @@ Haikus are simple
 
 <p>Or so I thought. Turned out it was still an embryo.</p>
 
-<h3 id="makin-bacon-haikus-v0-1">Makin Bacon Haikus V0.1</h3>
+<h1 id="makin-bacon-haikus-v0-1">Makin Bacon Haikus V0.1</h1>
 
 <p>The first research topic on my ever-growing list was to figure out what makes a sensible sentence. In elementary school, we&rsquo;re taught that the most basic phrase consists of a subject and verb. In the sentence below, for example, the boy is the subject and is sweating is the action.</p>
 
@@ -153,7 +155,7 @@ The boy is sweating.
 
 <p>Interesting. Maybe I can create a Mad Lib-based language model that can learn the sentence structures of existing haikus, then use an external wordset to substitute the corresponding words. For poetry, and notably haikus, grammar isnt as important as a passive aggressive letter to your not-so-favourite mobile carrier, so I might be able to get away with this rudimentary language model.  (Spoiler alert: I couldnt.)</p>
 
-<h4 id="haiku-training">Haiku Training</h4>
+<h2 id="haiku-training">Haiku Training</h2>
 
 <p>The plan was to create a pseudo-smart script (of sorts) that did the following:</p>
 
@@ -245,7 +247,7 @@ Seven Syllable Lines:
 
 <p>Almost there to our first haiku!</p>
 
-<h4 id="first-pass-haiku-generation">First Pass Haiku Generation</h4>
+<h2 id="first-pass-haiku-generation">First Pass Haiku Generation</h2>
 
 <p>I wrote another simple script to take in song lyrics, apply a POS tag for each of the lyrics, and create a word list sorted by the corresponding tags. I could then plug-and-chug words from the generated list into an appropriate slot in the haiku template.</p>
 
@@ -289,6 +291,7 @@ Half bottom boy flames
 
 <p><em>Click here to read <a href="/posts/2015/making-haikuza-ii/">The Making of Project Haikuza: Part 2</a>!</em></p>
 
+            </div>
 
 			
             <br>

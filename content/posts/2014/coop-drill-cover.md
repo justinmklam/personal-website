@@ -19,7 +19,7 @@ __Abstract__: [Surgical Device Innovation for Low-Resource Settings: An Alterna
 
 __Company__: [Arbutus Medical](http://arbutusmedical.ca) 
 
-### The Drill Cover Solution
+# The Drill Cover Solution
 
 From the Arbutus Medical [product page](http://arbutusmedical.ca/human-health/products/drill-cover-hex):
 
@@ -28,7 +28,7 @@ From the Arbutus Medical [product page](http://arbutusmedical.ca/human-health/pr
 {{< img caption="Detailed view of the drill cover."
 src="/imgs/drill_cover/drillcover.PNG" >}}
 
-### The User Study
+# The User Study
 
 Owing to limited access to surgical power drills, orthopedic surgeons in low-resource settings commonly use manual drills or nonsterile hardware drills. We propose the use of a drill cover solution: a sterilizable fabric bag plus sealed surgical chuck adaptor to permit the safe use of hardware drills for orthopedic surgery.
 The purpose of this study was to compare the drilling performance of covered hardware drills with manual drills and standard surgical power drills. 

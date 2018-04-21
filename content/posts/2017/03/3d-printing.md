@@ -13,7 +13,7 @@ What's better than an inexpensive 3D printer? Free sources of information! The i
 
 <!--more-->
 
-### General Info
+# General Info
 * Product Page: 
     * [Monoprice Select Mini V1](https://www.monoprice.com/product?p_id=15365)
 * Official User Manual:
@@ -27,14 +27,14 @@ What's better than an inexpensive 3D printer? Free sources of information! The i
 * Community Knowledge Base:
     * [Google Doc](https://docs.google.com/document/d/1HJaLIcUD4oiIUYu6In7Bxf7WxAOiT3n48RvOe5pvSHk/edit)
 
-### Materials and Accessories
+# Materials and Accessories
 * Tested PLA Brands:
     * [Hatchbox](https://www.amazon.ca/s/ref=bl_dp_s_web_3006902011?ie=UTF8&node=3006902011&field-brandtextbin=HATCHBOX)
     * [AMZ3D](https://www.amazon.ca/s/ref=bl_dp_s_web_667823011?ie=UTF8&node=667823011&field-brandtextbin=AMZ3D)
 * Alternative Bed Surface:
     * [PEI Sheet](https://www.amazon.ca/gp/product/B0013HKZTA/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1), see RepRap Wiki for [details](http://reprap.org/wiki/PEI_build_surface)
 
-### Initial Set Up
+# Initial Set Up
 * CAD Modeling Software (free for hobbyists and enthusiasts):
     * [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview)
 * Slicing Software: 
@@ -44,9 +44,9 @@ What's better than an inexpensive 3D printer? Free sources of information! The i
 * Using Raspberry Pi and Octoprint for wireless printing:
     * [OctoPi](http://octoprint.org/download/)
 
-### Machine Settings
+# Machine Settings
 
-#### General
+## General
 
 The machine settings below are based off the ones in the official user manual. However, the start and end gcode was taken from the community-driven Google Doc (see above) and slightly modified to include an initial nozzle wipe/primer and to remove the delay in turning the fans off.
 
@@ -80,7 +80,7 @@ G4 S600 ; keep fan running for 600 seconds to cool hotend and allow the fan to b
 M107 ; turn off fan
 ```
 
-#### OctoPrint
+## OctoPrint
 
 To connect OctoPrint through Cura, go to "Settings > Printer > Manage Printers", select your printer from the list, then click the "Connect OctoPrint" button on the right side of the menu. 
 
@@ -88,7 +88,7 @@ To connect OctoPrint through Cura, go to "Settings > Printer > Manage Printers",
 
 This way, you can send gcode files directly from Cura to Octoprint with a click of a button!
 
-### Print Settings
+# Print Settings
 
  When fiddling with layer heights, it's recommended to use the optimal values below: 
 
@@ -108,12 +108,12 @@ The settings below should serve as a decent starting point in dialing in your ow
 
 {{<img caption="PLA material settings." src="/imgs/blog-imgs/3d-printing-primer/pla-settings.png" >}}
 
-### Design Guidelines
+# Design Guidelines
 Want parts to fit together? 0.25mm is usually works well.
 {{<img caption="For mating parts, a general guideline of 0.25mm is sufficient." src="/imgs/blog-imgs/3d-printing-primer/tolerance.png" >}}
 
-### Troubleshooting
-#### Hole Features on First Layer Not Adhering
+# Troubleshooting
+## Hole Features on First Layer Not Adhering
 Make the following setting modifications, in descending order of preference (I try to avoid using rafts to reduce print time and material waste).
 
 + Slow down print speed to ~10mm/s
@@ -122,7 +122,7 @@ Make the following setting modifications, in descending order of preference (I t
 + Disable fans for initial layer
 + Use raft
 
-#### Stringy Parts
+## Stringy Parts
 + Fiddle with retraction distance and speed (start with 4.5mm and 40mm/s)
 
 <br>

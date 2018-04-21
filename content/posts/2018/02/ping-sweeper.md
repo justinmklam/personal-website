@@ -18,7 +18,9 @@ In my most recent adventures to software land at [MistyWest](https://mistywest.c
 
 However, despite this being a relatively well known objective with well-known libraries to accomplish it, my journey to developing a solution was not as easy as I originally thought. The following post outlines the things I tried before arriving to a working solution, which hopefully is at least mildly interesting and/or educational. Also if you're a software engineer reading this, please go easy on my code. Or not.
 
-### First Attempt: Some-ping Simple
+# The Development
+
+## First Attempt: Some-ping Simple
 
 A quick Google search showed that pinging addresses is dead easy in C#. Using the `System.Net.NetworkInformation` namespace, we can easily use the `Ping.Send()` command to check if a remote address is alive. 
 
@@ -42,7 +44,7 @@ This is great if we only had a few addresses to ping, because unfortunately this
 
 In practice, it seems that ~500ms is about the fastest threshold that can be set. Unfortunately, scanning 255 IP addresses this way will be excruciatingly slow (for both the developer and end user). And the search continues...
 
-### Second Attempt: Jaime LAN-nister, Pingslayer
+## Second Attempt: Jaime LAN-nister, Pingslayer
 
 A few more Googles later and I had what seemed to be the golden solution.
 
@@ -117,7 +119,7 @@ Lesson learned: Console applications and Windows Forms are different beasts and 
 
 Hm, turns out this problem wasn't as easy as copying and pasting random code off the internet. Time for a bit of research!
 
-#### Digging Deeper: A Battle of Asynchronous Pings
+### Digging Deeper: A Battle of Asynchronous Pings
 
 For some reason that can only be to confuse inexperienced programmers like myself, there are two different asynchronous ping methods in this class. First on the list:
 
@@ -133,7 +135,7 @@ Based on these method descriptions, it appears that `SendAsync()` does not guara
 
 **The takeaway:** Use `SendPingAsync()` or bust.
 
-#### Digging Deeper: Background Worker vs Async/Await
+### Digging Deeper: Background Worker vs Async/Await
 
 So we've selected our asynchronous ping method, but that still leaves us hanging over how we're going to handle it in a background task. Before .NET 4.0 was released, `BackgroundWorker` was the de-facto standard[^1]. However:
 
@@ -159,7 +161,7 @@ However, I could still use `BackgroundWorker` for SFTP file transfer from the re
 
 **The takeaway:** Use `async/await` for asynchronous ping sweep, and `BackgroundWorker` for SFTP file transfers.
 
-### Third Attempt: One Ping to Rule Them All, One Ping to Find Them
+## Third Attempt: One Ping to Rule Them All, One Ping to Find Them
 
 <!-- {{<img caption="Simple Winform application to demonstrate the power of threads." src="/imgs/blog-imgs/ping-sweeper/winform.png" >}} -->
 
@@ -219,7 +221,7 @@ private async Task PingAndUpdateAsync(System.Net.NetworkInformation.Ping ping, s
 
 {{<img caption="Asynchronous pings are light years faster! Half a second and we're rocking with all the pings we needed." src="/imgs/blog-imgs/ping-sweeper/ping result - async.png" >}}
 
-#### Verification with Benchmark
+### Verification with Benchmark
 
 To make sure our numbers add up, let's compare it with a known tool that is much more mature than this C# application.
 
@@ -227,7 +229,7 @@ To make sure our numbers add up, let's compare it with a known tool that is much
 
 Same number of hosts alive, but a little slower. However, Angry IP Scanner is more robust in its pings and thread handling, so the few extra seconds is likely put to good use. I found my application to be somewhat inconsistent in finding all the alive hosts, which may be mitigated with multiple ping packets to send (instead of just one).
 
-#### Comparing with Synchronous Ping Sweep
+### Comparing with Synchronous Ping Sweep
 
 Because pinging is such an interesting past-time, let's see how the very first synchronous solution performs using `Ping.Send()`.
 
@@ -272,7 +274,7 @@ public void RunPingSweep_Sync()
 
 Wow. A full two minutes compared to less than one second. Life truly is better when you live asynchronously.
 
-### Closing Thoughts
+# Closing Thoughts
 
 This concludes another adventure through asynchronous methods in C#. It's amazing how much information is available on the internet, and I truly would not be able to get this far without it. Google and Stack Overflow, what would I be without you?
 

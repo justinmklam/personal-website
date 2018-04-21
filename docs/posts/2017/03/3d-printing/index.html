@@ -105,11 +105,13 @@
             <a href=/imgs/blog-imgs/3d-printing-primer/mp%20select%20mini%20user%20group.jpg>
                 <img class="img-responsive" style="display:block; margin:auto; margin-bottom:16px" src="/imgs/blog-imgs/3d-printing-primer/mp%20select%20mini%20user%20group.jpg">
             </a>
-            <p>What&rsquo;s better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.</p>
+
+            <div class="blog-content">
+                <p>What&rsquo;s better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.</p>
 
 <p></p>
 
-<h3 id="general-info">General Info</h3>
+<h1 id="general-info">General Info</h1>
 
 <ul>
 <li>Product Page:
@@ -144,7 +146,7 @@
 </ul></li>
 </ul>
 
-<h3 id="materials-and-accessories">Materials and Accessories</h3>
+<h1 id="materials-and-accessories">Materials and Accessories</h1>
 
 <ul>
 <li>Tested PLA Brands:
@@ -160,7 +162,7 @@
 </ul></li>
 </ul>
 
-<h3 id="initial-set-up">Initial Set Up</h3>
+<h1 id="initial-set-up">Initial Set Up</h1>
 
 <ul>
 <li>CAD Modeling Software (free for hobbyists and enthusiasts):
@@ -185,9 +187,9 @@
 </ul></li>
 </ul>
 
-<h3 id="machine-settings">Machine Settings</h3>
+<h1 id="machine-settings">Machine Settings</h1>
 
-<h4 id="general">General</h4>
+<h2 id="general">General</h2>
 
 <p>The machine settings below are based off the ones in the official user manual. However, the start and end gcode was taken from the community-driven Google Doc (see above) and slightly modified to include an initial nozzle wipe/primer and to remove the delay in turning the fans off.</p>
 
@@ -222,7 +224,7 @@ G4 S600 ; keep fan running for 600 seconds to cool hotend and allow the fan to b
 M107 ; turn off fan
 </code></pre>
 
-<h4 id="octoprint">OctoPrint</h4>
+<h2 id="octoprint">OctoPrint</h2>
 
 <p>To connect OctoPrint through Cura, go to &ldquo;Settings &gt; Printer &gt; Manage Printers&rdquo;, select your printer from the list, then click the &ldquo;Connect OctoPrint&rdquo; button on the right side of the menu.</p>
 
@@ -233,7 +235,7 @@ M107 ; turn off fan
 
 <p>This way, you can send gcode files directly from Cura to Octoprint with a click of a button!</p>
 
-<h3 id="print-settings">Print Settings</h3>
+<h1 id="print-settings">Print Settings</h1>
 
 <p>When fiddling with layer heights, it&rsquo;s recommended to use the optimal values below:</p>
 
@@ -260,7 +262,7 @@ M107 ; turn off fan
     <p class="caption">PLA material settings.</p>
 </div>
 
-<h3 id="design-guidelines">Design Guidelines</h3>
+<h1 id="design-guidelines">Design Guidelines</h1>
 
 <p>Want parts to fit together? 0.25mm is usually works well.
 <div class="row captioned-img">
@@ -268,9 +270,9 @@ M107 ; turn off fan
     <p class="caption">For mating parts, a general guideline of 0.25mm is sufficient.</p>
 </div></p>
 
-<h3 id="troubleshooting">Troubleshooting</h3>
+<h1 id="troubleshooting">Troubleshooting</h1>
 
-<h4 id="hole-features-on-first-layer-not-adhering">Hole Features on First Layer Not Adhering</h4>
+<h2 id="hole-features-on-first-layer-not-adhering">Hole Features on First Layer Not Adhering</h2>
 
 <p>Make the following setting modifications, in descending order of preference (I try to avoid using rafts to reduce print time and material waste).</p>
 
@@ -282,7 +284,7 @@ M107 ; turn off fan
 <li>Use raft</li>
 </ul>
 
-<h4 id="stringy-parts">Stringy Parts</h4>
+<h2 id="stringy-parts">Stringy Parts</h2>
 
 <ul>
 <li>Fiddle with retraction distance and speed (start with 4.5mm and 40mm/s)</li>
@@ -290,6 +292,7 @@ M107 ; turn off fan
 
 <p><br>
 <p class="text-right"><em>Last edited: February 10, 2018</em></p></p>
+            </div>
 
 			
             <br>

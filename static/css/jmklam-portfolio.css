@@ -1,5 +1,4 @@
 /***** CUSTOM CSS STYLING ******/
-/***** CUSTOM CSS STYLING ******/
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -25,14 +24,6 @@ body {
 p {
 	text-align: left
 }
-
-/* a{
-    color: #DD6333;
-}
- a:hover, a:focus {
-    color: #DD6333;
-}
- */
 
 footer {
 	margin: 35px 0
@@ -61,7 +52,7 @@ footer {
 .caption {
 	text-align: center;
 	font-style: italic;
-	margin-bottom: 15px
+	margin-bottom: 10px
 }
 
 .img-content {
@@ -199,26 +190,52 @@ h4 {
   left: 8px;
 }
 
-/* Blog header numbering */
-#blog h2 {
-  counter-reset: h2counter;
-}
-#blog h3 {
-  counter-reset: h3counter;
-}
-#blog h4 {
-  counter-reset: h4counter;
-}
-#blog h3:before {
-  content: counter(h2counter) ".\0000a0\0000a0\0000a0";
-  counter-increment: h2counter;
-}
-#blog h4:before {
-  content: counter(h2counter) "." counter(h3counter) "\0000a0\0000a0\0000a0\0000a0";
-  counter-increment: h3counter;
-}
-#blog h5:before {
-  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "\0000a0\0000a0\0000a0\0000a0";
-  counter-increment: h4counter;
+/* Blog headings */
+.blog-content h1, h2, h3, h4, h5 {
+	margin-top: 18px;
+	margin-bottom: 8px;
 }
 
+.blog-content h1 {
+	font-size: 21px;
+	text-transform: none;
+	letter-spacing: normal;
+	counter-reset: h2counter;
+}
+
+.blog-content h2 {
+	font-size: 19px;
+	counter-reset: h3counter;
+}
+
+.blog-content h3 {
+	font-size: 17px;
+	counter-reset: h4counter;
+}
+
+.blog-content h4 {
+	font-size: 16px;
+	font-style: italic;
+	counter-reset: h5counter;
+}
+
+.blog-content h5 {
+	font-size: 16px;
+}
+/* Blog header numbering */
+.blog-content h2:before {
+	content: counter(h2counter) ".\0000a0\0000a0\0000a0";
+	counter-increment: h2counter;
+}
+.blog-content h3:before {
+	content: counter(h2counter) "." counter(h3counter) "\0000a0\0000a0\0000a0\0000a0";
+	counter-increment: h3counter;
+}
+.blog-content h4:before {
+	content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "\0000a0\0000a0\0000a0\0000a0";
+	counter-increment: h4counter;
+}
+.blog-content h5:before {
+	content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "\0000a0\0000a0\0000a0\0000a0";
+	counter-increment: h5counter;
+}

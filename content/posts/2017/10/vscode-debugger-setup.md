@@ -28,7 +28,7 @@ The only thing that was keeping me away was the lack of out-of-the-box debugging
 
 *Note: The following was set up on Windows 10 for STM32 Nucleo F303K8. The Nucleo F030R8 was also tested and confirmed working with this setup.*
 
-### Configuring VS Code
+# Configuring VS Code
 
 Open the Debug panel (```CTRL + SHIFT + D```) and select "Add Configuration > GDB" through the top left dropdown arrow. Create a GDB configuration in launch.json and add the following. Note: Change the paths in "target", "gdbpath", and "autorun" to the correct locations.
 
@@ -50,7 +50,7 @@ Open the Debug panel (```CTRL + SHIFT + D```) and select "Add Configuration > GD
 
 {{<img caption="GDB debugger entry added after successfuly entry in launch.json file." src="/imgs/blog-imgs/vscode-debugger/gdb.png" >}}
 
-### Starting a Debug Session
+# Starting a Debug Session
 
 Before entering debug mode (```F5```), you need to launch the OpenOCD server. Open Terminal in VS Code (```CTRL + ` ```) and type:
 
@@ -60,7 +60,7 @@ Before entering debug mode (```F5```), you need to launch the OpenOCD server. Op
 
 Unfortunately you must always start the OpenOCD server before hitting ```F5```, but fortunately you can just hit ```Up``` in the terminal to recall the last command. 
 
-### Troubleshooting
+# Troubleshooting
 
 When running OpenOCD, the following error might come up:
 

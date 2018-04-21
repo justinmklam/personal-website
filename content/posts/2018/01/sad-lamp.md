@@ -26,6 +26,8 @@ Thanks to Amazon Prime's same/one day shipping, a solution to this problem was l
 
 {{<img caption="Ultraviolet difuser/filter removed from the lamp. Wait a minute, is that just a CFL bulb?" src="/imgs/blog-imgs/sad-lamp/IMG_20180103_193302.jpg" >}}
 
+# The Suspicions
+
 But wait just one moment; upon unboxing the lamp, I noticed something familiar. The light source behind the box looked strangely similar to a standard CFL bulb... Had I just been duped into spending $70 for a plain old light bulb in a fancy plastic enclosure?
 
 {{<img caption="Left: $14.99 Verilux Full Spectrum Bulb. Right: $1.50 Standard CFL bulb." src="/imgs/blog-imgs/sad-lamp/bulb comparison.png" >}}
@@ -37,9 +39,11 @@ Fortunately for me, I work at [MistyWest](https://mistywest.com/) and we have a 
 
 But before we get into the details of spectral characteristics, let's shed _a bit of light_ on the different lighting methods and how they came to be. (Stay with me; it's worth it.)
 
-### Illumination Nation
+# The Research
 
-#### Overview of Light Sources
+## Illumination Nation
+
+### Overview of Light Sources
 Different sources of light can have significantly different spectral characteristics. The figure below shows how six different light sources vary greatly at each wavelength. 
 
 {{<img caption="Typical spectral characteristics and corresponding colours of various lighting." src="/imgs/blog-imgs/sad-lamp/spectral_responses2.png" link="http://housecraft.ca/eco-friendly-lighting-colour-rendering-index-and-colour-temperature/" link-text="HouseCraft" >}}
@@ -76,7 +80,7 @@ Different sources of light can have significantly different spectral characteris
 
 {{<img caption="When an electron flows from anode to cathode across the band gap, it falls into a lower energy level and releases energy in the form of a photon (light)." src="/imgs/blog-imgs/sad-lamp/LED-explanation0.jpg" link="http://www.lumenelectronicjewelry.com/2014/04/how-does-an-led-work-anyway/" link-text="Lumen Electronic Jewelry" >}}
 
-#### A Walk Down Memory Lane
+### A Walk Down Memory Lane
 
 Now, slapping some dates to the evolution of lighting technologies (thanks [Wikipedia](https://en.wikipedia.org/wiki/Timeline_of_lighting_technology#20th_century)) gives us a pretty good understanding of how this all played out:
 
@@ -90,21 +94,21 @@ Now, slapping some dates to the evolution of lighting technologies (thanks [Wiki
 
 Through this brief overview of light sources, we can see how the different illumination methods developed from sending current through a tiny strand of wire making it glow bright, to using fluorescence as an energy efficient way to produce light (and also at different colour temperatures).
 
-#### So What?
+### So What?
 The takeaway through this stroll through history lane is this: even before taking the spectral measurement of this bulb, we already know that the likelihood of this light therapy bulb being different is quite low. The History of Light(TM) paints a clear path of what's both economically and physically possible in creating a light source, so this mystical light therapy bulb is almost certainly just your everyday compact fluorescent bulb (with a GU10 base).
 
 {{<img caption="Let's mix and match different bases and shapes and label it as a proprietary bulb! The marketing team will love it." src="/imgs/blog-imgs/sad-lamp/bulb types.jpg" link="http://www.tomic-arms.com/track-lighting-bulb-types/good-track-lighting-bulb-types-77-on-track-lighting-with-ceiling-fan-with-track-lighting-bulb-types/" link-text="Tomic Arms" >}}
 
 But since we're already here, let's measure the data anyway! It's not everyday we get to learn about the physics we're surrounded by, especially when it involves expensive ~~toys~~ instruments.
 
-### Let's Get To It: Playing with the Spectrometer
+## Let's Get To It: Playing with the Spectrometer
 
 With our [Ocean Optics visible light spectrometer](https://oceanoptics.com/product/sts-vis-rad/) placed about 10 cm in front of the light therapy lamp and set with a 10 ms integration time, we can capture the spectral characteristics of the bulb. To recap, the two things we're interested in are the following:
 
 1. Are the spectral characteristics of this bulb any different than a regular CFL bulb?
 2. Is the filter/diffuser actually made of a special UV-blocking material?
 
-#### To CFL or To Not CFL? That is the Question
+### To CFL or To Not CFL? That is the Question
 
 Looking at the figure below, the trace in blue is the response with the frosted plastic in front of the bulb (ie. the lamp fully assembled). Surprise, surprise: the distinct peaks suggest that it is in fact a compact fluorescent bulb. 
 
@@ -138,7 +142,7 @@ Integrating the UV region between 350 - 400 nm shows that there's still a bit of
 
 **The takeaway:** UV is removed by attenuating the entire spectral response of the CFL bulb until the UV light is removed (for practical purposes). Yes, the frosted diffuser also makes the lamp more user friendly (as staring into a bare bulb is rather jarring), but now you know that you can simply replace it with another diffuse material should you ever lose that part.
 
-### The Light at the End of the Tunnel
+# The Light at the End of the Tunnel
 
 I hope this journey through light and its spectral characteristics was both entertaining and educational. With any luck, you may have learned a thing or two (and gained an appreciation) about all the different light sources surrounding you everyday. 
 
