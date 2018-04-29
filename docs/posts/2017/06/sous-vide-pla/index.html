@@ -33,7 +33,7 @@
 
 <link rel="stylesheet" href="/css/jmklam-portfolio-bootstrap.min.css">
 <link rel="stylesheet" href="/css/jmklam-portfolio.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400i,400|Roboto+Slab">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab">
 
 
 
@@ -189,7 +189,7 @@ Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-strong
 
 <h2 id="the-solution-heat-treatment">The Solution: Heat Treatment</h2>
 
-<p>In metallurgy (the study of physical and chemical behaviour of metallic elements), annealing is a heat treatment process that alters the material&rsquo;s physical (and sometimes chemical) properties<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>. For common metals such as copper, steel, silver, and brass, the process looks something like:</p>
+<p>In metallurgy (the study of physical and chemical behaviour of metallic elements), annealing is a heat treatment process that alters the material&rsquo;s physical (and sometimes chemical) properties<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>. For common metals such as copper, steel, silver, and brass, the process looks something like:</p>
 
 <ol>
 <li>Heat material until glowing</li>
@@ -220,11 +220,11 @@ Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-strong
 
 <h3 id="how-does-this-relate-to-our-3d-printed-plastic">How does this relate to our 3D printed plastic?</h3>
 
-<p>With 3D printed parts, these internal defects occur on a more macroscopic scale<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there&rsquo;s really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling.</p>
+<p>With 3D printed parts, these internal defects occur on a more macroscopic scale<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there&rsquo;s really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling.</p>
 
 <h2 id="a-review-of-current-research">A Review of Current Research</h2>
 
-<p>Fortunately, a similar heat treatment process can be applied to plastics to remove these nasty stresses and allow internal harmony to coalesce. I came across a research paper by Lih-Sheng Turng and Yottha Srithep, which discusses the relationship of crystallinity (ie. the degree of structural order in a solid) and mechanical properties of injection molded polylactide, commonly known as PLA<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>.</p>
+<p>Fortunately, a similar heat treatment process can be applied to plastics to remove these nasty stresses and allow internal harmony to coalesce. I came across a research paper by Lih-Sheng Turng and Yottha Srithep, which discusses the relationship of crystallinity (ie. the degree of structural order in a solid) and mechanical properties of injection molded polylactide, commonly known as PLA<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup>.</p>
 
 <p>&hellip; Or, in plain English: they took a bunch of plastic sample pieces, performed some heat treatment on them, stuck them back in an oven to see if they still deform, and measured how much better the annealed samples hold up in the heat. Let&rsquo;s dig in and see what they found!</p>
 
@@ -256,7 +256,7 @@ Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-strong
 
 <h2 id="a-review-of-current-methods">A Review of Current Methods</h2>
 
-<p>From a cursory search in the 3D printing community, annealing PLA seems to be a common, known method in squeezing a bit of extra mechanical performance out of printed parts. YouTubers Thomas Sanlader<sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup> and Joe Mike Terranella<sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup> have shown both quantitative and qualitative results in strength improvements by annealing.</p>
+<p>From a cursory search in the 3D printing community, annealing PLA seems to be a common, known method in squeezing a bit of extra mechanical performance out of printed parts. YouTubers Thomas Sanlader<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">4</a></sup> and Joe Mike Terranella<sup class="footnote-ref" id="fnref:5"><a href="#fn:5">5</a></sup> have shown both quantitative and qualitative results in strength improvements by annealing.</p>
 
 <h3 id="the-oven-bake-method">The Oven Bake Method</h3>
 
@@ -327,7 +327,7 @@ Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-strong
 
 <p><strong>Q: What annealing temperature are we going to maintain?</strong></p>
 
-<p>PLA melts around 180-220°C, and its glass transition temperature is between 60-65°C<sup class="footnote-ref" id="fnref:6"><a rel="footnote" href="#fn:6">6</a></sup>. We&rsquo;re interested in the latter since that&rsquo;s the temperature where recrystallization occurs. However, lower quality PLA requires higher temperatures due to more impurities in the material. To be safe, we&rsquo;ll set the temperature to 70°C. According to the graph of crystallinity vs annealing time (a few page scrolls above), we&rsquo;ll hit the maximum 48-49% crystallinity at around 6 hours.</p>
+<p>PLA melts around 180-220°C, and its glass transition temperature is between 60-65°C<sup class="footnote-ref" id="fnref:6"><a href="#fn:6">6</a></sup>. We&rsquo;re interested in the latter since that&rsquo;s the temperature where recrystallization occurs. However, lower quality PLA requires higher temperatures due to more impurities in the material. To be safe, we&rsquo;ll set the temperature to 70°C. According to the graph of crystallinity vs annealing time (a few page scrolls above), we&rsquo;ll hit the maximum 48-49% crystallinity at around 6 hours.</p>
 
 <p><strong>Q: Wait, 6 hours of annealing time? Are we really going to wait that long?</strong></p>
 
@@ -414,7 +414,7 @@ Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-strong
 
 <p>This was probably the most unexpected observation. Annealing didn&rsquo;t seem to have an effect on the samples printed at 0.2625 mm, but it did at 0.175 mm. What gives?</p>
 
-<p>After doing a bit of Googling, other tests have shown that larger layer heights provide greater part strength<sup class="footnote-ref" id="fnref:7"><a rel="footnote" href="#fn:7">7</a></sup>. 3D Matter wrote a great article on how layer height, infill percentage, and infill pattern affects the maximum strength of a printed part.</p>
+<p>After doing a bit of Googling, other tests have shown that larger layer heights provide greater part strength<sup class="footnote-ref" id="fnref:7"><a href="#fn:7">7</a></sup>. 3D Matter wrote a great article on how layer height, infill percentage, and infill pattern affects the maximum strength of a printed part.</p>
 
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/sous-vide-pla/layerheightstressstrain.png><img class="img-responsive img-content" src=/imgs/blog-imgs/sous-vide-pla/layerheightstressstrain.png /></a>
@@ -427,7 +427,7 @@ Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-strong
 
 <h4 id="slow-cooling-vs-fast-cooling">Slow Cooling vs Fast Cooling</h4>
 
-<p>For annealing to be effective, the material typically needs to be cooled uniformly back to room temperature. If it&rsquo;s cooled too rapidly, different areas of the part may cool at different rates and cause either warping or internal stress to form. To slowly cool the test samples, they were left in the water bath (with heat turned off) such that the rate of part cooling matched that of the water bath. Since water has a high heat capacity of 4.181 J/g/K (and for comparison, solid aluminum is only 0.897 J/g/K)<sup class="footnote-ref" id="fnref:8"><a rel="footnote" href="#fn:8">8</a></sup>, it would reach room temperature at a significantly slower rate than if the parts were just left on the counter (a difference of about &lt; 10 mins versus &gt; 4 hours).</p>
+<p>For annealing to be effective, the material typically needs to be cooled uniformly back to room temperature. If it&rsquo;s cooled too rapidly, different areas of the part may cool at different rates and cause either warping or internal stress to form. To slowly cool the test samples, they were left in the water bath (with heat turned off) such that the rate of part cooling matched that of the water bath. Since water has a high heat capacity of 4.181 J/g/K (and for comparison, solid aluminum is only 0.897 J/g/K)<sup class="footnote-ref" id="fnref:8"><a href="#fn:8">8</a></sup>, it would reach room temperature at a significantly slower rate than if the parts were just left on the counter (a difference of about &lt; 10 mins versus &gt; 4 hours).</p>
 
 <p>The results suggest that faster cooling yielded a greater improvement in strength over the slow cooling, which goes against the above logic. However, since the test parts were small in size and having low thermal and physical masses, the benefits of slow cooling may not be evident. Additionally, the individual 0.175 mm results for the &ldquo;SV, Slow Cool&rdquo; set (in turquoise) had a fairly large spread, so more data should be collected to determine if it&rsquo;s actually statistically significant from the 0.2625 mm data.</p>
 
