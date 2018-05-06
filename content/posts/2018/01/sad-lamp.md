@@ -4,15 +4,13 @@ draft = false
 image = "/imgs/blog-imgs/sad-lamp/Verilux Spectral Response - Comparison.PNG"
 layout = "single-blog"
 tagline = "Shining the light of truth on a $70 bulb."
-tags = ["physics", "spectroscopy"]
+tags = ["physics"]
 title = "Measuring the Spectral Characteristics of a Light Therapy Lamp"
 type = "blog"
 
 +++
 
-***Disclaimer:*** _Light therapy is one method of easing seasonal affective disorder (SAD); some people swear by it whereas others remain unaffected. This blog post does not intend to refute the effectiveness of light therapy, but rather to dig deeper into the technology behind these light therapy lamps to better educate fellow consumers._
-
-<!--more-->
+**Disclaimer:** _Light therapy is one method of easing seasonal affective disorder (SAD); some people swear by it whereas others remain unaffected. This blog post does not intend to refute the effectiveness of light therapy, but rather to dig deeper into the technology behind these light therapy lamps to better educate fellow consumers._
 
 Ah, the winter blues of Vancouver, BC. While some days bring bluebird skies and [fresh pow](https://media1.tenor.com/images/25e5bfdf6e824bfa330964b5e0e48855/tenor.gif?itemid=5287297) for skiing, other days are downright gloomy. Spending this past Christmas in Singapore meant warm, sunny, and +25°C weather, which is quite atypical of how most Canadians spend their winters. 
 
