@@ -33,7 +33,7 @@
 
 <link rel="stylesheet" href="/css/jmklam-portfolio-bootstrap.min.css">
 <link rel="stylesheet" href="/css/jmklam-portfolio.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400i,400|Roboto+Slab">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab">
 
 
 
@@ -240,7 +240,7 @@ namespace ConsoleApplication1
 
 <h3 id="digging-deeper-background-worker-vs-async-await">Digging Deeper: Background Worker vs Async/Await</h3>
 
-<p>So we&rsquo;ve selected our asynchronous ping method, but that still leaves us hanging over how we&rsquo;re going to handle it in a background task. Before .NET 4.0 was released, <code>BackgroundWorker</code> was the de-facto standard<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>. However:</p>
+<p>So we&rsquo;ve selected our asynchronous ping method, but that still leaves us hanging over how we&rsquo;re going to handle it in a background task. Before .NET 4.0 was released, <code>BackgroundWorker</code> was the de-facto standard<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>. However:</p>
 
 <blockquote>
 <p>The core problem that <code>BackgroundWorker</code> originally solved was the need to <em>execute synchronous code on a background thread</em>. If you&rsquo;re using it for asynchronous or parallel work, you&rsquo;re not using the right tool in the first place. - <a href="http://blog.stephencleary.com/2013/05/taskrun-vs-backgroundworker-round-1.html">Stephen Cleary</a></p>

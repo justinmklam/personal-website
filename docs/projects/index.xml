@@ -137,7 +137,7 @@ How: As a team of seven mechanical engineering undergrads, we explored a range o
       <description>Objective: Design a roof-mounted bowling rig for a car2go marketing event.
 Constraints: Use a non-permanent method to securely attach the apparatus to the roof.
 Venue: 2014 Vancouver Fringe Festival
-Bowling rig set up and ready to roll.
+ Bowling rig set up and ready to roll.
   Car2go bowling in action.</description>
     </item>
     
@@ -162,8 +162,8 @@ Challenges:
       <description>Objective: Develop a script to find and remove any differences in a series of photos.
 Motivation: How to Remove People From Your Travel Using Photoshop
 Framework: MATLAB
-Script takes any number of images (preferably taken on a tripod) and combines them into one cleaned-up image.
- Flowchart of the implemented algorithm.
+ Script takes any number of images (preferably taken on a tripod) and combines them into one cleaned-up image.
+  Flowchart of the implemented algorithm.
  </description>
     </item>
     
