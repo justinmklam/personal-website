@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
     <loc>http://justinmklam.com/sections/mechatronics/</loc>
@@ -115,11 +114,6 @@
   <url>
     <loc>http://justinmklam.com/view-all/</loc>
     <lastmod>2016-09-24T23:08:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/pages/cv/</loc>
-    <lastmod>2016-09-24T16:56:13-07:00</lastmod>
   </url>
   
   <url>
