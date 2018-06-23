@@ -1,33 +1,35 @@
 +++
-date = "2018-05-25T17:50:22-07:00"
+date = "2018-06-21T17:50:22-07:00"
 draft = true
 image = "/imgs/blog-imgs/sourdough-starter-monitor/Crumb comparison.png"
 layout = "single-blog"
-tagline = "Something something insert crumby bread pun here."
+tagline = "[Insert crumby bread pun here.]"
 tags = ["programming", "python", "image analysis"]
 title = "Using Computer Vision to Monitor Yeast Fermentation"
 type = "blog"
 
 +++
+Bread, the quintessence of life. People have survived off this staple for centuries using only flour, water, salt, and yeast. If you were to try consuming those ingredients individually, your body refuse it. However, by combining them together and letting time do its thing, you get fermentation of healthy bacteria that releases flavour, texture, and nutrients that were previously locked away.
 
 # The Backstory
 Blah blah blah
 
 # The Development
 
-## Setting Up Headless Raspberry Pi
+## Setting It Up
 
-### Headless Mode
+### Headless Raspberry Pi Zero
 
-Source: [raspberrypi.org](https://www.raspberrypi.org/forums/viewtopic.php?t=191252)
+Setting up a Raspberry Pi is very easy these days.
 
-Step 1: Create an empty file. You can use Notepad on Windows or TextEdit to do so by creating a new file. Just name the file `ssh`. Save that empty file and dump it into boot partition (microSD).
+1. Download [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
+2. Flash it to an SD card with something like [Etcher](https://etcher.io/)
 
-Step 2: Create another file name `wpa_supplicant.conf`. This time you need to write a few lines of text for this file. For this file, you need to use the FULL VERSION of wpa_supplicant.conf. Meaning you must have the 3 lines of data namely country, ctrl_interface and update_config
+The only hiccup I ran into was setting up without any monitor or ethernet attached, so getting it connected to WiFi and retrieving its IP address was non-trivial. Luckily, other people have run into the same problem over at the [Raspberry Pi forums]((https://www.raspberrypi.org/forums/viewtopic.php?t=191252).
+The solution:
 
-> If a wpa_supplicant.conf file is placed into the /boot/ directory, this will be moved to the /etc/wpa_supplicant/ directory the next time the system is booted, overwriting the network settings; this allows a Wifi configuration to be preloaded onto a card from a Windows or other machine that can only see the boot partition. 
-> 
-> — The latest update to Raspbian - Raspberry Pi, 2016-05-13
+1. Create an empty file on the SD's boot partition called `ssh` to enable it.
+2. Create another file named `wpa_supplicant.conf` with the following content:
 
 ```
 country=US
@@ -42,11 +44,17 @@ network={
 }
 ```
 
-{{<img caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor/ip-scan-results.png" >}}
+Connect the camera module, boot it up, and with any luck you should be able to ssh into it from your own computer!
 
-### The Timelapse
+### Creating the Timelapse
+
+Fortunately, the Pi comes loaded with `raspistill`, a command line tool to capture images (see [here](https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspistill.md) for documentation). All we need to do is to write a simple shell script to execute this command every N seconds to create a timelapse.
+
+**Note**: The easiest option is to use the built in [timelapse mode](https://www.raspberrypi.org/documentation/usage/camera/raspicam/timelapse.md). However, I put it in a script to automatically create a new datestamped folder every time a new instance is run.
 
 #### Folder Structure
+
+I set up two scripts, one to take the timelapses, and another to start the timelapse as a background process.
 
 ```text
     home/pi/
@@ -95,58 +103,156 @@ cd sourdough-monitor
 nohup ./timelapse.sh &> /dev/null &
 ```
 
+Nothing fancy here, so let's move along!
+
 ## Putting it All Together
 
-{{<img caption="Sometimes tape and random parts are the best way forward." src="/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_173837.jpg" >}}
+Sure I could have 3D printed an enclosure, but where's the fun in that when readily available materials can be used to achieve the same result? Might not be as pretty, but when bread is on the line then nothing else matters. All we're here for is the data!
+
+{{<img caption="Sometimes random parts and a bit of tape are the best way forward." src="/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_173837.jpg" >}}
+
 {{<img caption="The light was originally placed in front (as shown above), but the better method was to put the light behind the jars to maximize contrast and minimize glare." src="/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_225557.jpg" >}}
 
-To start:
+To start the timelapse, ssh into the Pi and execute the following:
 ```bash
 $ ./run_sourdough_monitor.sh
 ```
 
-To kill the process:
+The next morning, you can ssh back in and kill the process with:
 ```bash
 $ pkill timelapse
 ```
+
+Now we have some data to analyze!
 
 <div class="row captioned-img">
     <video class="img-responsive img-content" autoplay="autoplay" loop="loop" controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/timelapse.mp4 type="video/mp4" />
     </video>
-    <p class="caption">The Timelapse</p>
+    <p class="caption">Two sourdough starters with different feeding ratios, taken over ~10 hours.</p>
 </div>
 
 ## The Analysis
 
-<!-- {{<loop-vid caption="The timelapse" src="/imgs/blog-imgs/sourdough-starter-monitor/timelapse.mp4">}} -->
+The computer vision part of this project was quite straightforward, thanks to SciKit Learn. All we have to do is to:
 
-{{<img caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor/Threshold Comparison_1.png" >}}
+1. Apply a binary threshold to the image to get two distinct regions
+2. Find the location of the boundary line
+
+Fortunately, these are very easy to do! The two main required components:
+
++ [skimage.filters](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html) - For applying thresholds
++ [skimage.measure](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_regionprops.html) - For measuring region properties
+
+### Thresholding the Image
+
+```python
+import matplotlib.pyplot as plt
+from skimage.filters import try_all_threshold
+
+img = io.imread('2018-05-31 Levain Timelapse/test.jpg', as_grey=True)
+img = img[0:1000, 650:1100]   # crop image to zoom in to jar
+
+fig, ax = try_all_threshold(img, figsize=(10, 8), verbose=False)
+plt.show()
+```
+
+Running the above code yields the following image:
+
+{{<img caption="The try_all_threshold() function is fast and convenient to see which will likely be the best for an image." src="/imgs/blog-imgs/sourdough-starter-monitor/Threshold Comparison_1.png" >}}
+
+Since our histogram 
+
+```python
+plt.hist(img.ravel(), bins=256, range=(0.0, 1.0), fc='k', ec='k')
+plt.title('Histogram of Original Image')
+plt.show()
+```
+
+{{<img caption="The image is a bimodal histogram, so the Otsu algorithm will work well." src="/imgs/blog-imgs/sourdough-starter-monitor/histogram.png" >}}
+
+Discussing the different thresholding algorithms is beyond the scope of this post, but here's a snippet on Otsu:
+
+> Otsu’s method calculates an “optimal” threshold (marked by a red line in the histogram below) by maximizing the variance between two classes of pixels, which are separated by the threshold. Equivalently, this threshold minimizes the intra-class variance. - [SciKit Image Docs](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html)
+
+```python
+from skimage.filters import threshold_otsu
+
+thresh = threshold_otsu(img, nbins=5)
+binary_img = img < thresh
+
+fig, axes = plt.subplots(ncols=2)
+ax = axes.ravel()
+
+ax[0].imshow(img, cmap=plt.cm.gray)
+ax[0].set_title('Original image')
+
+ax[1].imshow(binary_img, cmap=plt.cm.gray)
+ax[1].set_title('Result')
+
+plt.show()
+```
+{{<img caption="Comparison of the cropped, grayscaled image and after thresholding." src="/imgs/blog-imgs/sourdough-starter-monitor/threshold-comparison.png" >}}
+
+### Measuring the Image
+
+```python
+height = None
+
+fig, ax = plt.subplots()
+ax.imshow(binary_img, cmap=plt.cm.gray)
+
+label_img = label(binary_img)
+regions = regionprops(label_img)
+
+for props in regions:
+    y0, x0 = props.centroid
+
+    minr, minc, maxr, maxc = props.bbox
+    bx = (minc, maxc, maxc, minc, minc)
+    by = (minr, minr, maxr, maxr, minr)
+
+    area = (maxc-minc)*(maxr-minr)
+
+    if area >= min_area:
+        # Plot the bounding box
+        ax.plot(bx, by, '-b', linewidth=2.5)
+        # Plot the centroid
+        ax.plot(x0, y0, 'ro')
+        height = minr
+
+plt.show()
+```
+
+{{<img caption="Minimum area is required since other areas will register as a detected region." src="/imgs/blog-imgs/sourdough-starter-monitor/min-area.png" >}}
+
+Due to camera perspective and the jar curvature, the boundary between the two regions is not actually straight. This was solved by taking a much narrower cropped region, which you will see below in the animated timelapses.
+
+{{<img caption="This may have been a bit easier with a square container..." src="/imgs/blog-imgs/sourdough-starter-monitor/first-thresh.png" >}}
+
 
 ## The Results
 
-### Timelapses
+### May 29, Left Jar
+{{<loop-vid caption="The rise on the left jar had the cleanest growth trace." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29 Levain Timelapse.mp4">}}
 
-#### May 29, Left Jar
-{{<loop-vid caption="May 29, Left Jar" src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29 Levain Timelapse.mp4">}}
+### May 29, Right Jar
+{{<loop-vid caption="A narrow crop area had to be used to prevent detection of uneven rise levels." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29 Levain Timelapse, Right.mp4">}}
 
-#### May 29, Right Jar
-{{<loop-vid caption="May 29, Right Jar" src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29 Levain Timelapse, Right.mp4">}}
+### May 31, First Feeding
+{{<loop-vid caption="Sunlight through the kitchen window created glare on the bottom left area on the jar, which affected the binary thresholding." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-31 Levain Timelapse.mp4">}}
 
-#### May 31, First Feeding
-{{<loop-vid caption="May 31, First Feeding" src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-31 Levain Timelapse.mp4">}}
+### May 31, Second Feeding
+{{<loop-vid caption="Having the jar farther away reduced the thresholding accuracy, but the overall trace was still acceptable." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-31 Levain Timelapse 2.mp4">}}
 
-#### May 31, Second Feeding
-{{<loop-vid caption="May 31, Second Feeding" src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-31 Levain Timelapse 2.mp4">}}
-
-#### June 10, Out of Fridge
-{{<loop-vid caption="June 10, Out of Fridge" src="/imgs/blog-imgs/sourdough-starter-monitor/2018-06-10 Out of Fridge.mp4">}}
+### June 10, Out of Fridge
+{{<loop-vid caption="A larger jar was needed for this one! The thresholding algorithm was surprisingly still able ot catch the peak to some extent, despite minimal contrast." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-06-10 Out of Fridge.mp4">}}
 
 ## Comparison
 
-{{<img-span caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor/Levain Growth Over Time.png" >}}
+{{<img-span caption="All the timelapses plotted to compare normalized growth." src="/imgs/blog-imgs/sourdough-starter-monitor/Levain Growth Over Time.png" >}}
 
-{{<img-span caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor/Levain Growth Over Time (Regular Feeding).png" >}}
+{{<img-span caption="We can clearly see that regularly feeding the sourdough starter greatly increases its rate and growth!" src="/imgs/blog-imgs/sourdough-starter-monitor/Levain Growth Over Time (Regular Feeding).png" >}}
 
-{{<img-span caption="Tight crumb (left), open crumb (right). This is why good fermentation is important!" src="/imgs/blog-imgs/sourdough-starter-monitor/Crumb comparison.png" >}}
-
+<!-- {{<img-span caption="Tight crumb (left), open crumb (right). This is why good fermentation is important!" src="/imgs/blog-imgs/sourdough-starter-monitor/Crumb comparison.png" >}}
+ -->
