@@ -111,7 +111,7 @@ Sure I could have 3D printed an enclosure, but where's the fun in that when read
 
 {{<img caption="Sometimes random parts and a bit of tape are the best way forward." src="/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_173837.jpg" >}}
 
-{{<img caption="The light was originally placed in front (as shown above), but the better method was to put the light behind the jars to maximize contrast and minimize glare." src="/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_225557.jpg" >}}
+{{<img caption="The light was originally placed in front (as shown above), but a better method was to put the light behind the jars to maximize contrast and minimize glare." src="/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_225557.jpg" >}}
 
 To start the timelapse, ssh into the Pi and execute the following:
 ```bash
@@ -129,22 +129,24 @@ Now we have some data to analyze!
     <video class="img-responsive img-content" autoplay="autoplay" loop="loop" controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/timelapse.mp4 type="video/mp4" />
     </video>
-    <p class="caption">Two sourdough starters with different feeding ratios, taken over ~10 hours.</p>
+    <p class="caption">Timelapse taken over ~10 hours at 5 minute intervals. Shown: Two sourdough starters with different feeding ratios.</p>
 </div>
 
 ## The Analysis
 
-The computer vision part of this project was quite straightforward, thanks to SciKit Learn. All we have to do is to:
+The computer vision part of this project was quite straightforward, thanks to scikit-learn. All we have to do is to:
 
 1. Apply a binary threshold to the image to get two distinct regions
 2. Find the location of the boundary line
 
-Fortunately, these are very easy to do! The two main required components:
+Fortunately, these are very easy to do with this library! The two main required components:
 
 + [skimage.filters](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html) - For applying thresholds
 + [skimage.measure](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_regionprops.html) - For measuring region properties
 
 ### Thresholding the Image
+
+There are many threshold algorithms to choose from, and fortunately scikit-learn comes with a handy function to try them all at once.
 
 ```python
 import matplotlib.pyplot as plt
@@ -161,7 +163,13 @@ Running the above code yields the following image:
 
 {{<img caption="The try_all_threshold() function is fast and convenient to see which will likely be the best for an image." src="/imgs/blog-imgs/sourdough-starter-monitor/Threshold Comparison_1.png" >}}
 
-Since our histogram 
+Discussing the different thresholding algorithms is beyond the scope of this post, but what we're looking for is one that is able to separate the boundary between the clear glass jar and the opaque sourdough starter. From the image above, it looks like isodata, otsu, and yen provide the sharpest thresholded boundary.
+
+Given a hot tip from my coworker (thanks Andreas), let's dig deeper into Otsu's method. From the docs:
+
+> Otsu’s method calculates an “optimal” threshold (marked by a red line in the histogram below) by maximizing the variance between two classes of pixels, which are separated by the threshold. Equivalently, this threshold minimizes the intra-class variance. - [SciKit Image Docs](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html)
+
+The main takeaway with Otsu's method is that it works best with a bimodal distribution. For our image, this means the histogram should be separated into two distinct peaks. Since our cropped image looks to have two distinct regions, let's confirm that this method will be sufficient.
 
 ```python
 plt.hist(img.ravel(), bins=256, range=(0.0, 1.0), fc='k', ec='k')
@@ -169,11 +177,13 @@ plt.title('Histogram of Original Image')
 plt.show()
 ```
 
+Plotting the histogram yields the following result:
+
 {{<img caption="The image is a bimodal histogram, so the Otsu algorithm will work well." src="/imgs/blog-imgs/sourdough-starter-monitor/histogram.png" >}}
 
-Discussing the different thresholding algorithms is beyond the scope of this post, but here's a snippet on Otsu:
+Great, the histogram shows just what we need! (Except for the high concentration of saturated pixels, but let's just ignore that for now...)
 
-> Otsu’s method calculates an “optimal” threshold (marked by a red line in the histogram below) by maximizing the variance between two classes of pixels, which are separated by the threshold. Equivalently, this threshold minimizes the intra-class variance. - [SciKit Image Docs](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html)
+Taking a closer look at the Otsu threshold:
 
 ```python
 from skimage.filters import threshold_otsu
@@ -192,9 +202,13 @@ ax[1].set_title('Result')
 
 plt.show()
 ```
-{{<img caption="Comparison of the cropped, grayscaled image and after thresholding." src="/imgs/blog-imgs/sourdough-starter-monitor/threshold-comparison.png" >}}
+{{<img caption="Those white blobs on the walls of the jar may still be detected as regions of interest, but applying a minimum thresholded area will help with false positives." src="/imgs/blog-imgs/sourdough-starter-monitor/threshold-comparison.png" >}}
+
+Luckily, we have moderate control of the lighting and contrast of the object in question. If we're lucky we won't have to change much for the timelapses taken at different times of the day!
 
 ### Measuring the Image
+
+With our binary image, we can now use skimage.measure to easily get quantified properties of the regions. Full list of properties can be found [in the docs](http://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops).
 
 ```python
 height = None
@@ -224,14 +238,19 @@ for props in regions:
 plt.show()
 ```
 
+The resultant image below shows how multiple areas are detected and classified. However, we can apply some RI(TM) (aka. *real* intelligence) to only pick the region of the sourdough starter. There are many ways to do this, but the simplest was to simply set a minimum area requirement. As long as it's high enough, it should ignore all the other regions.
+
 {{<img caption="Minimum area is required since other areas will register as a detected region." src="/imgs/blog-imgs/sourdough-starter-monitor/min-area.png" >}}
 
-Due to camera perspective and the jar curvature, the boundary between the two regions is not actually straight. This was solved by taking a much narrower cropped region, which you will see below in the animated timelapses.
+Due to the camera perspective and curvature of the jar, the boundary between the two regions is not actually straight. This was solved by taking a much narrower cropped region, which you will see below in the animated timelapses.
 
 {{<img caption="This may have been a bit easier with a square container..." src="/imgs/blog-imgs/sourdough-starter-monitor/first-thresh.png" >}}
 
+This is enough to get scripting; on to the data!
 
 ## The Results
+
+The five timelapses below show the sourdough starter from different dates. The boundary tracking algorithm is reasonably well at detecting the correct height, but there are occasional outliers that cause the errors. However, the overall trend of the growth is still captured.
 
 ### May 29, Left Jar
 {{<loop-vid caption="The rise on the left jar had the cleanest growth trace." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29 Levain Timelapse.mp4">}}
