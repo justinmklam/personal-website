@@ -3,9 +3,9 @@ date = "2018-06-21T17:50:22-07:00"
 draft = true
 image = "/imgs/blog-imgs/sourdough-starter-monitor/Crumb comparison.png"
 layout = "single-blog"
-tagline = "[Insert crumby bread pun here.]"
+tagline = "Bread is love, bread is life; would it be wrong to call it my wife?"
 tags = ["programming", "python", "image analysis"]
-title = "Using Computer Vision to Monitor Yeast Fermentation"
+title = "Using Computer Vision to Monitor Fermentation of Wild Yeast"
 type = "blog"
 
 +++
@@ -165,11 +165,11 @@ Running the above code yields the following image:
 
 Discussing the different thresholding algorithms is beyond the scope of this post, but what we're looking for is one that is able to separate the boundary between the clear glass jar and the opaque sourdough starter. From the image above, it looks like isodata, otsu, and yen provide the sharpest thresholded boundary.
 
-Given a hot tip from my coworker (thanks Andreas), let's dig deeper into Otsu's method. From the docs:
+Given a hot tip from my coworker (thanks Andreas) that Otsu's method is a good one to pick, we can dig deeper into it. From the docs:
 
 > Otsu’s method calculates an “optimal” threshold (marked by a red line in the histogram below) by maximizing the variance between two classes of pixels, which are separated by the threshold. Equivalently, this threshold minimizes the intra-class variance. - [SciKit Image Docs](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html)
 
-The main takeaway with Otsu's method is that it works best with a bimodal distribution. For our image, this means the histogram should be separated into two distinct peaks. Since our cropped image looks to have two distinct regions, let's confirm that this method will be sufficient.
+The main takeaway with Otsu's method is that it works best with a bimodal distribution. For our image, this means the histogram should be represented by two distinct peaks. Since our cropped image looks to have two distinct regions, let's confirm that this method will be sufficient.
 
 ```python
 plt.hist(img.ravel(), bins=256, range=(0.0, 1.0), fc='k', ec='k')
@@ -179,11 +179,11 @@ plt.show()
 
 Plotting the histogram yields the following result:
 
-{{<img caption="The image is a bimodal histogram, so the Otsu algorithm will work well." src="/imgs/blog-imgs/sourdough-starter-monitor/histogram.png" >}}
+{{<img caption="The image is a bimodal histogram, so Otsu's method should work well." src="/imgs/blog-imgs/sourdough-starter-monitor/histogram.png" >}}
 
 Great, the histogram shows just what we need! (Except for the high concentration of saturated pixels, but let's just ignore that for now...)
 
-Taking a closer look at the Otsu threshold:
+Taking a closer look at the thresholded image:
 
 ```python
 from skimage.filters import threshold_otsu
@@ -202,11 +202,11 @@ ax[1].set_title('Result')
 
 plt.show()
 ```
-{{<img caption="Those white blobs on the walls of the jar may still be detected as regions of interest, but applying a minimum thresholded area will help with false positives." src="/imgs/blog-imgs/sourdough-starter-monitor/threshold-comparison.png" >}}
+{{<img caption="The result of Otsu's thresholding method." src="/imgs/blog-imgs/sourdough-starter-monitor/threshold-comparison.png" >}}
 
-Luckily, we have moderate control of the lighting and contrast of the object in question. If we're lucky we won't have to change much for the timelapses taken at different times of the day!
+Those white blobs on the walls of the jar may still be detected as regions of interest, but applying a minimum thresholded area will help with false positives. Luckily, we have moderate control of the lighting and contrast of the object in question. If we're lucky we won't have to change much for the timelapses taken at different times of the day!
 
-### Measuring the Image
+### Quantifying the Image
 
 With our binary image, we can now use skimage.measure to easily get quantified properties of the regions. Full list of properties can be found [in the docs](http://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops).
 
@@ -246,11 +246,11 @@ Due to the camera perspective and curvature of the jar, the boundary between the
 
 {{<img caption="This may have been a bit easier with a square container..." src="/imgs/blog-imgs/sourdough-starter-monitor/first-thresh.png" >}}
 
-This is enough to get scripting; on to the data!
+Now that we have a working understanding of the components we need, let's get scripting and collect a bunch of data! You can check out the full analysis on [Github](https://github.com/justinmklam/sourdough-starter-monitor).
 
 ## The Results
 
-The five timelapses below show the sourdough starter from different dates. The boundary tracking algorithm is reasonably well at detecting the correct height, but there are occasional outliers that cause the errors. However, the overall trend of the growth is still captured.
+The timelapses below show the sourdough starter from different dates. The boundary tracking algorithm is reasonably well at detecting the correct height, but there are occasional outliers that cause the errors. However, the overall trend of the growth is still captured.
 
 ### May 29, Left Jar
 {{<loop-vid caption="The rise on the left jar had the cleanest growth trace." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29 Levain Timelapse.mp4">}}
@@ -267,11 +267,39 @@ The five timelapses below show the sourdough starter from different dates. The b
 ### June 10, Out of Fridge
 {{<loop-vid caption="A larger jar was needed for this one! The thresholding algorithm was surprisingly still able ot catch the peak to some extent, despite minimal contrast." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-06-10 Out of Fridge.mp4">}}
 
-## Comparison
+### June 23, First Feeding
+{{<loop-vid caption="A larger jar was needed for this one! The thresholding algorithm was surprisingly still able ot catch the peak to some extent, despite minimal contrast." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-06-23 First Feeding.mp4">}}
 
-{{<img-span caption="All the timelapses plotted to compare normalized growth." src="/imgs/blog-imgs/sourdough-starter-monitor/Levain Growth Over Time.png" >}}
+### June 23, Refeeding
+{{<loop-vid caption="A larger jar was needed for this one! The thresholding algorithm was surprisingly still able ot catch the peak to some extent, despite minimal contrast." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-06-23 Refeeding.mp4">}}
 
-{{<img-span caption="We can clearly see that regularly feeding the sourdough starter greatly increases its rate and growth!" src="/imgs/blog-imgs/sourdough-starter-monitor/Levain Growth Over Time (Regular Feeding).png" >}}
+## The Discussion
+
+The animations are cool to watch, but what can we interpret from it? Plotting all the growths (as shown below), we see that they seem more similar than different. The peaks hover around 60-80%, and the rate of growth coming up to the peak are similar. 
+
+{{<img-span caption="All the timelapses plotted to compare normalized growth. Horizontal dotted line indicates 50% mark." src="/imgs/blog-imgs/sourdough-starter-monitor/all-growths_1.png" >}}
+
+### Effect of Regular Feeding
+
+Taking only a select number of days, there is a clearer trend to be seen! We started to regularly feed it, and the graph below shows how the growth magnitude and rate increase over feedings. 
+
+On May 29th, we began to feed our sourdough starter after many months of sporadic feeding. With the June 10th growth (and visually correcting for the step at 6 hours), the rate of growth looks to be more exponential-like rather than more linear-like, as the other two feedings show.
+
+{{<img-span caption="We can see that regularly feeding the sourdough starter greatly increases its rate and growth." src="/imgs/blog-imgs/sourdough-starter-monitor/Levain Growth Over Time (Regular Feeding).png" >}}
+
+**Note**: The time delay of each subsequent feeding day may not mean anything, and may be purely coincidental that it looks like a pattern. Starting temperature plays a significant role in the fermentation cycle, and it was likely that the June 10 was fed right after being taken out of the fridge. 
+
+What we should pay attention to is the change in growth and the growth rate, not the shift in the horizontal axis. However, if you have any other insight as to what may cause this shift, please leave a comment below!
+
+### Bringing the Starter Back to Life
+
+Previous to June 23, the starter was neglected for a week. After the first (overnight) feeding, it showed little signs of growth. However, feeding it again at lunch and tracking its progress shows that the growth springs back up to ~80%, which was around the previous maximum from before. 
+
+{{<img-span caption="What doesn't kill you makes you stronger (or at least as strong as before)." src="/imgs/blog-imgs/sourdough-starter-monitor/refeeding_1.png" >}}
+
+Thus, a bit of neglect seems to be okay since it appears to be somewhat resilient to starvation!
+
+## The Conclusion
 
 <!-- {{<img-span caption="Tight crumb (left), open crumb (right). This is why good fermentation is important!" src="/imgs/blog-imgs/sourdough-starter-monitor/Crumb comparison.png" >}}
  -->
