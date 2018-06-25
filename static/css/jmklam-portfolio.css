@@ -63,7 +63,7 @@ footer {
 .img-span-row {
 	display:block; 
 	margin:auto; 
-	margin-bottom:16px;
+	/* margin-bottom:16px; */
 }
 
 .blog-preview-img a {

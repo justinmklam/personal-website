@@ -5,17 +5,17 @@ image = "/imgs/blog-imgs/sourdough-starter-monitor/Crumb comparison.png"
 layout = "single-blog"
 tagline = "Bread is love, bread is life; would it be wrong to call it my wife?"
 tags = ["programming", "python", "image analysis"]
-title = "Using Computer Vision to Monitor Fermentation of Wild Yeast"
+title = "Monitoring the Fermentation of Sourdough Starter with Computer Vision"
 type = "blog"
 
 +++
-Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Fun fact: try consuming all these ingredients separately, and you'll be in for a digestive surprise. However, mix them together and let time do its thing, and the resulting fermentation releases flavour, texture, and nutrients that were previously locked away. 
+Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you'll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away. 
 
-Although it's relatively easy to turn dough into something that resembles a loaf of bread, it's much more challenging to squeeze every possible ounce of flavour and texture using only these four ingredients. A baker's skill is in their ability to manage and control the fermentation process, which is usually achieved through countless months/years of trial and error.
+Despite it being relatively easy to turn dough into something that looks and feels like bread, the challenge is in squeezing every possible ounce of flavour and texture (using only those four ingredients) to achieve the embodiment of a true loaf of bread. The secret to artisinal bread is **all in the fermentation.** A baker's skill is in their ability to manage and control the fermentation process, which is usually achieved through countless months and/or years of trial and error.
 
-**But what if there was another way to gain a better understanding of what happens during fermentation?** 
+**But what if there was a better way to understand what happens during the fermentation process?** 
 
-In this blog post, we dive into the world of wild yeast (aka. sourdough starter) by tracking its growth through timelapses, programming, and cool graph animations. Read on to find out more! 
+In this blog post, we dive into the world of wild yeast (commonly known as sourdough starter) by tracking its growth through timelapses, automated image analysis, and cool graph animations. Read on to find out more! 
 
 <div class="row captioned-img">
     <video class="img-responsive img-content" autoplay="autoplay" loop="loop" controls>
@@ -24,17 +24,15 @@ In this blog post, we dive into the world of wild yeast (aka. sourdough starter)
     <p class="caption">Timelapse taken over ~10 hours at 5 minute intervals. Shown: Two sourdough starters with different feeding ratios.</p>
 </div>
 
+{{<loop-vid caption="Image analysis for tracking growth of the above timelapse." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29 Levain Timelapse.mp4">}}
+
 # The Backstory
 
-Two key components in making artisinal bread are **time** and **fermentation**. If you can afford a long, slow rise, you will be rewarded with flavours that are both complex and subtle, and a texture like no other. Most bakeries unfortunately do not have this luxury (since it's a business after all), so commercial instant dry yeast is used to expedite the rise and reach the desired loaf volume at a reasonable schedule. With loafs risen with instant dry yeast, it will definitely resemble visual qualities of bread, but the texture and taste will not be comparable to bread that uses wild yeast.
+Two key components in making artisinal bread are **time** and **fermentation**. If you can afford a long, slow rise, you will be rewarded with a texture like no other, and flavours that are both complex and subtle. Most bakeries unfortunately do not have this luxury (since it's a business after all), so commercial instant dry yeast is used to expedite the fermentation such that it reaches the desired loaf volume at a reasonable schedule. With bread risen with instant dry yeast, it will definitely resemble visual qualities of bread, but the texture and taste will not be comparable to bread that uses wild yeast.
 
-The quest for baking the perfect loaf is an arduous one. It can take anywhere upwards of 12 hours from the first mix to actually being able to bake, and environmental factors (ie. temperature and humidity) can alter the dough's behaviour in how it absorbs water and how fast/slow the fermentation occurs. With every loaf being slightly different, it can be challenging to identify what processes need changing to get one step closer to that perfect loaf.
+The quest for achieving the perfect loaf is an arduous one. It can take upwards of 12 hours from the first mix to actually being able to bake the loaf, and environmental factors (ie. temperature and humidity) can alter the dough's behaviour (ie. in how it absorbs water, or how fast/slow the fermentation occurs). With every loaf being slightly different, it can be challenging to identify what processes need adjusting to get one step closer to that perfect loaf.
 
-Sourdough starter is a living organism, and as such should be treated with kindness, respect, and most importantly, food. An active starter is a happy and well-fed one; if we can get a feel for how the starter behaves on a day-to-day basis during its feeding (and thus when the fermentation occurs), it may help clear up at least one of the variables in bread baking.
-
-One way to achieve this understanding is simply through trial and error. But we can do better. We can use (rather simple) **computer vision**!
-
-For context, a typical process for making bread is roughly described below:
+For context, a typical process for making an artisinal loaf is roughly described below:
 
 1. Discard 80-90% of the sourdough starter and feed it with flour and water.
 2. Wait a few hours for the starter to ferment and double or triple in size.
@@ -43,19 +41,24 @@ For context, a typical process for making bread is roughly described below:
 5. Let rest. Flavours are developed during this bulk fermentation period.
 5. Shape the loaf and place it in a proofing basket.
 6. Let rest. The final volume is achieved during this second fermentation.
-7. Bake.
+7. Bake. 
+8. Place on cooling rack when done, and listen to the song of the crackling crust while you wait to cut it open.
 
-The loaf's holey texture (ie. the openness of the crumb) is largely determined by activeness of the starter, so this is where we shall put our initial efforts. **Specifically, we want to understand**:
+Sourdough starter is a living organism, and as such should be treated with kindness, respect, and most importantly, food. A well-fed starter is an active and happy one; if we can get a feel for how the starter behaves on a day-to-day basis during its feeding (ie. when the fermentation occurs), it may help clear up at least one of the variables in bread baking.
+
+One way to achieve this understanding is simply through trial and error. But we can do better. We can use (rather simple) **computer vision**!
+
+The loaf's holey texture (ie. the elusive open crumb) is largely determined by activeness of the starter, so this is where we shall put our initial efforts. **Specifically, we want to understand**:
 
 + When the starter reaches its maximum fermentation,
 + How consistent the starter's fermentation is, and
 + What happens when the starter is neglected and how quickly it can come back to life.
 
-To get to know the starter better, our plan is to:
+To answer these questions, our plan of action is to:
 
 1. Take a timelapse of starter
-1. Write a script to find the current height of the starter
-1. Plot the height over time to get the growth characteristics
+1. Write an image analysis script to locate the current height of the starter in each image
+1. Plot the height over time to get its growth characteristics
 
 Enough with the walls of text. Let's get on to the fun stuff!
 
@@ -63,7 +66,7 @@ Enough with the walls of text. Let's get on to the fun stuff!
 
 ## Setting Up the Timelapse
 
-For ease and convenience, the timelapse was set up on a Raspberry Pi. You can really use any camera, but I went with a Pi to give me the future flexibility if I wanted to put something together for real-time analysis (instead of analyzing the data afterwards).
+For ease and convenience, the timelapse was set up on a Raspberry Pi. I initially had the idea to eventually create a real-time analysis of the starter (ie. a Python script updating a locally hosted dashboard), but I figured post processing a timelapse was good enough for now to answer those questions. You can pretty much use any camera to take a timelapse.
 
 ### Loading the Raspberry Pi Zero (Headless)
 
@@ -72,7 +75,7 @@ Setting up a Raspberry Pi is very easy these days:
 1. Download [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
 2. Flash it to an SD card with something like [Etcher](https://etcher.io/)
 
-The only hiccup I ran into was setting up without any monitor or ethernet attached, so getting it connected to WiFi and retrieving its IP address was non-trivial. Luckily, other people have run into the same problem over at the [Raspberry Pi forums](https://www.raspberrypi.org/forums/viewtopic.php?t=191252).
+The only hiccup I ran into was setting up without any monitor or ethernet attached, so getting it connected to WiFi and retrieving its IP address was non-trivial. Luckily, other people had run into the same problem over at the [Raspberry Pi forums](https://www.raspberrypi.org/forums/viewtopic.php?t=191252).
 The solution:
 
 1. Create an empty file on the SD's boot partition called `ssh` to enable it.
@@ -91,17 +94,17 @@ network={
 }
 ```
 
-Connect the camera module, boot it up, and with any luck you should be able to ssh into it from your own computer!
+Connect the camera module and boot it up. You can use something like [Angry IP Scanner](https://angryip.org/download/#linux) to find its IP address, and with any luck you should be able to SSH into it from your own computer!
 
 ### Creating the Scripts
 
 Fortunately, the Pi comes loaded with `raspistill`, a command line tool to capture images (see [here](https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspistill.md) for documentation). All we need to do is to write a simple shell script to execute this command every N seconds to create a timelapse.
 
-**Note**: The easiest option is to use the built in [timelapse mode](https://www.raspberrypi.org/documentation/usage/camera/raspicam/timelapse.md). However, I put it in a script to automatically create a new datestamped folder every time a new instance is run.
+**Note**: The easiest option is to use the built in [timelapse mode](https://www.raspberrypi.org/documentation/usage/camera/raspicam/timelapse.md). However, I decided to make my own script to have more control over the filenames and where the images get saved.
 
 #### Folder Structure
 
-I set up two scripts, one to take the timelapses, and another to start the timelapse as a background process.
+I set up two scripts, one to take the timelapses, and another to start the timelapse as a background process. The `run` script is in the home directory so I can execute the command right when I login through the command line.
 
 ```text
     home/pi/
@@ -150,11 +153,11 @@ cd sourdough-monitor
 nohup ./timelapse.sh &> /dev/null &
 ```
 
-Nothing fancy here, so let's move along!
+Nothing fancy here, so let's move along.
 
 ## Taking the Timelapses
 
-Sure I could have 3D printed an enclosure, but where's the fun in that when readily available materials can be used to achieve the same result? Might not be as pretty, but when bread is on the menu then nothing else matters. All we're here for is the data!
+Sometimes having ghetto setups is the best way forward. Might not be as pretty, but when bread is on the menu then nothing else matters. All we're here for is the data!
 
 {{<img caption="Sometimes random parts and a bit of tape are the best way forward." src="/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_173837.jpg" >}}
 
@@ -172,7 +175,7 @@ $ pkill timelapse
 
 Once you have it set up on the Pi, you can also control it with your phone and something like [JuiceSSH](https://play.google.com/store/apps/details?id=com.sonelli.juicessh&hl=en_CA) to feel super techy.
 
-{{<img caption="Starting the timelapse on Android." src="/imgs/blog-imgs/sourdough-starter-monitor/Screenshot_JuiceSSH_20180623-124103.png" >}}
+{{<img caption="Starting the timelapse on Android, because why not?" src="/imgs/blog-imgs/sourdough-starter-monitor/Screenshot_JuiceSSH_20180623-124103.png" >}}
 
 Now we have some data to analyze!
 
@@ -187,6 +190,8 @@ Fortunately, these are very easy to do with this library! The two main required 
 
 + [skimage.filters](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html) - For applying thresholds
 + [skimage.measure](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_regionprops.html) - For measuring region properties
+
+Everything discussed in this blog post is also available on my [Github](https://github.com/justinmklam/sourdough-starter-monitor).
 
 ### Thresholding the Image
 
@@ -223,7 +228,7 @@ plt.show()
 
 Plotting the histogram yields the following result:
 
-{{<img caption="The image is a bimodal histogram, so Otsu's method should work well." src="/imgs/blog-imgs/sourdough-starter-monitor/histogram.png" >}}
+{{<img caption="The image is a bimodal histogram, so Otsu's method should work well. (Please forgive my unlabelled axes.)" src="/imgs/blog-imgs/sourdough-starter-monitor/histogram.png" >}}
 
 Great, the histogram shows just what we need! (Except for the high concentration of saturated pixels, but let's just ignore that for now...)
 
@@ -325,9 +330,9 @@ The animations are cool to watch, but what can we interpret from it? Plotting al
 
 ### Effect of Regular Feeding
 
-Taking only a select number of days, there is a clearer trend to be seen! We started to regularly feed it, and the graph below shows how the growth magnitude and rate increase over feedings. 
+Taking only a select number of days, there is a clearer trend to be seen. We started to regularly feed it, and the graph below shows how the growth magnitude and rate increase over feedings. 
 
-On May 29th, we began to feed our sourdough starter after many months of sporadic feeding. With the June 10th growth (and visually correcting for the step at 6 hours), the rate of growth looks to be more exponential-like rather than more linear-like, as the other two feedings show.
+On May 29th, we began to feed our sourdough starter after many months of sporadic feeding. With the June 10th growth, it starts later but rises to ~80%. The ideal target is to double or triple in size, but hopefully that time will come with even more regular feeding.
 
 {{<img-span caption="We can see that regularly feeding the sourdough starter greatly increases its rate and growth." src="/imgs/blog-imgs/sourdough-starter-monitor/Levain Growth Over Time (Regular Feeding).png" >}}
 
@@ -335,13 +340,39 @@ On May 29th, we began to feed our sourdough starter after many months of sporadi
 
 ### Bringing the Starter Back to Life
 
-Previous to June 23, the starter was neglected for a week. After the first (overnight) feeding, it showed little signs of growth. However, feeding it again at lunch and tracking its progress shows that the growth springs back up to ~80%, which was around the previous maximum from before. 
+Previous to June 23, the starter was neglected for a week. After the first (overnight) feeding, it showed little signs of growth. However, feeding it again around noon and tracking its progress shows that the growth springs back up to ~80%, which was around the previous maximum from before. 
 
 {{<img-span caption="What doesn't kill you makes you stronger (or at least as strong as before). First feeding is shifted because I forgot to start the timelapse right away." src="/imgs/blog-imgs/sourdough-starter-monitor/refeeding_1.png" >}}
 
-Thus, a bit of neglect seems to be okay since it appears to be somewhat resilient to starvation!
+Thus, a bit of neglect seems to be okay since the starter appears to be fairly resilient to starvation! (But if you're going on vacation, please feed it more than you typically would so it can sustain itself in your absence.)
 
 ## The Conclusion
 
+So what can we take away from ~40 hours of watching yeast rise[^1]? From all this, we learned:
+
++ The rate of growth appears to be fairly consistent, even with poorly maintained starters
++ A healthy, regularly fed starter reaches maximum fermentation growth after 5-6 hours.
++ The peak has a ~1 hour window for when it should be used
++ Regularly feeding a neglected starter will make it (and you) happy again
+
+[^1]: Which, for the record, is much more interesting than watching paint dry.
+
+Even just taking a timelapse will give you a good feel for how your starter behaves, especially when you're starting out with baking bread. If you leave it overnight and come back the next morning to what looks like minimal growth, a timelapse can tell you if it peaked 3 hours in without you noticing, or if it actually didn't grow. Every starter is different, but if you can give it the attention it deserves, its fermentation will continually reward you with loaves like no other.
+
+Happy baking!
+
+<hr>
+
+# Further Reading
+
+Check out the links below to level-up your bread game. (I may make profit from the Amazon (affiliate) links below, but not the other ones. Those just have good content that I support!)
+
++ Alex French Guy Cooking's Guide to Sourdough [(YouTube)](https://www.youtube.com/watch?v=APEavQg8rMw&t=514s)
++ Trevor J. Wilson's Open Crumb Mastery [(Breadwerx](http://www.breadwerx.com/open-crumb-mastery/), [YouTube)](https://www.youtube.com/watch?v=QHiQ5X3NKEI&t=288s)
++ Tartine Bread <a target="_blank" href="https://www.amazon.com/gp/product/0811870413/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0811870413&linkCode=as2&tag=justinmklam-20&linkId=389ae22a493d37c70d3a6c4446a42721">(Amazon)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=justinmklam-20&l=am2&o=1&a=0811870413" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
++ Flour Water Salt Yeast: The Fundamentals of Artisan Bread and Pizza <a target="_blank" href="https://www.amazon.com/gp/product/160774273X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=160774273X&linkCode=as2&tag=justinmklam-20&linkId=9e6460fb3ee23e897b924d08e34709d9">(Amazon)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=justinmklam-20&l=am2&o=1&a=160774273X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
++ My Bread: The Revolutionary No-Work, No-Knead Method<a target="_blank" href="https://www.amazon.com/gp/product/0393066304/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393066304&linkCode=as2&tag=justinmklam-20&linkId=292f06c9eaad7c87742dbb35cc1d1233"> (Amazon)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=justinmklam-20&l=am2&o=1&a=0393066304" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+> Disclaimer: justinmklam.com is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
 <!-- {{<img-span caption="Tight crumb (left), open crumb (right). This is why good fermentation is important!" src="/imgs/blog-imgs/sourdough-starter-monitor/Crumb comparison.png" >}}
  -->
