@@ -9,23 +9,70 @@ title = "Using Computer Vision to Monitor Fermentation of Wild Yeast"
 type = "blog"
 
 +++
-Bread, the quintessence of life. People have survived off this staple for centuries using only flour, water, salt, and yeast. If you were to try consuming those ingredients individually, your body refuse it. However, by combining them together and letting time do its thing, you get fermentation of healthy bacteria that releases flavour, texture, and nutrients that were previously locked away.
+Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Fun fact: try consuming all these ingredients separately, and you'll be in for a digestive surprise. However, mix them together and let time do its thing, and the resulting fermentation releases flavour, texture, and nutrients that were previously locked away. 
+
+Although it's relatively easy to turn dough into something that resembles a loaf of bread, it's much more challenging to squeeze every possible ounce of flavour and texture using only these four ingredients. A baker's skill is in their ability to manage and control the fermentation process, which is usually achieved through countless months/years of trial and error.
+
+**But what if there was another way to gain a better understanding of what happens during fermentation?** 
+
+In this blog post, we dive into the world of wild yeast (aka. sourdough starter) by tracking its growth through timelapses, programming, and cool graph animations. Read on to find out more! 
+
+<div class="row captioned-img">
+    <video class="img-responsive img-content" autoplay="autoplay" loop="loop" controls>
+      <source src=/imgs/blog-imgs/sourdough-starter-monitor/timelapse.mp4 type="video/mp4" />
+    </video>
+    <p class="caption">Timelapse taken over ~10 hours at 5 minute intervals. Shown: Two sourdough starters with different feeding ratios.</p>
+</div>
 
 # The Backstory
-Blah blah blah
+
+Two key components in making artisinal bread are **time** and **fermentation**. If you can afford a long, slow rise, you will be rewarded with flavours that are both complex and subtle, and a texture like no other. Most bakeries unfortunately do not have this luxury (since it's a business after all), so commercial instant dry yeast is used to expedite the rise and reach the desired loaf volume at a reasonable schedule. With loafs risen with instant dry yeast, it will definitely resemble visual qualities of bread, but the texture and taste will not be comparable to bread that uses wild yeast.
+
+The quest for baking the perfect loaf is an arduous one. It can take anywhere upwards of 12 hours from the first mix to actually being able to bake, and environmental factors (ie. temperature and humidity) can alter the dough's behaviour in how it absorbs water and how fast/slow the fermentation occurs. With every loaf being slightly different, it can be challenging to identify what processes need changing to get one step closer to that perfect loaf.
+
+Sourdough starter is a living organism, and as such should be treated with kindness, respect, and most importantly, food. An active starter is a happy and well-fed one; if we can get a feel for how the starter behaves on a day-to-day basis during its feeding (and thus when the fermentation occurs), it may help clear up at least one of the variables in bread baking.
+
+One way to achieve this understanding is simply through trial and error. But we can do better. We can use (rather simple) **computer vision**!
+
+For context, a typical process for making bread is roughly described below:
+
+1. Discard 80-90% of the sourdough starter and feed it with flour and water.
+2. Wait a few hours for the starter to ferment and double or triple in size.
+3. At its peak, take the starter and mix it in with the rest of the bread ingredients.
+4. Gently fold the dough to tighten it up (which creates the gluten) a few times for the first 1-2 hours.
+5. Let rest. Flavours are developed during this bulk fermentation period.
+5. Shape the loaf and place it in a proofing basket.
+6. Let rest. The final volume is achieved during this second fermentation.
+7. Bake.
+
+The loaf's holey texture (ie. the openness of the crumb) is largely determined by activeness of the starter, so this is where we shall put our initial efforts. **Specifically, we want to understand**:
+
++ When the starter reaches its maximum fermentation,
++ How consistent the starter's fermentation is, and
++ What happens when the starter is neglected and how quickly it can come back to life.
+
+To get to know the starter better, our plan is to:
+
+1. Take a timelapse of starter
+1. Write a script to find the current height of the starter
+1. Plot the height over time to get the growth characteristics
+
+Enough with the walls of text. Let's get on to the fun stuff!
 
 # The Development
 
-## Setting It Up
+## Setting Up the Timelapse
 
-### Headless Raspberry Pi Zero
+For ease and convenience, the timelapse was set up on a Raspberry Pi. You can really use any camera, but I went with a Pi to give me the future flexibility if I wanted to put something together for real-time analysis (instead of analyzing the data afterwards).
 
-Setting up a Raspberry Pi is very easy these days.
+### Loading the Raspberry Pi Zero (Headless)
+
+Setting up a Raspberry Pi is very easy these days:
 
 1. Download [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
 2. Flash it to an SD card with something like [Etcher](https://etcher.io/)
 
-The only hiccup I ran into was setting up without any monitor or ethernet attached, so getting it connected to WiFi and retrieving its IP address was non-trivial. Luckily, other people have run into the same problem over at the [Raspberry Pi forums]((https://www.raspberrypi.org/forums/viewtopic.php?t=191252).
+The only hiccup I ran into was setting up without any monitor or ethernet attached, so getting it connected to WiFi and retrieving its IP address was non-trivial. Luckily, other people have run into the same problem over at the [Raspberry Pi forums](https://www.raspberrypi.org/forums/viewtopic.php?t=191252).
 The solution:
 
 1. Create an empty file on the SD's boot partition called `ssh` to enable it.
@@ -46,7 +93,7 @@ network={
 
 Connect the camera module, boot it up, and with any luck you should be able to ssh into it from your own computer!
 
-### Creating the Timelapse
+### Creating the Scripts
 
 Fortunately, the Pi comes loaded with `raspistill`, a command line tool to capture images (see [here](https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspistill.md) for documentation). All we need to do is to write a simple shell script to execute this command every N seconds to create a timelapse.
 
@@ -105,9 +152,9 @@ nohup ./timelapse.sh &> /dev/null &
 
 Nothing fancy here, so let's move along!
 
-## Putting it All Together
+## Taking the Timelapses
 
-Sure I could have 3D printed an enclosure, but where's the fun in that when readily available materials can be used to achieve the same result? Might not be as pretty, but when bread is on the line then nothing else matters. All we're here for is the data!
+Sure I could have 3D printed an enclosure, but where's the fun in that when readily available materials can be used to achieve the same result? Might not be as pretty, but when bread is on the menu then nothing else matters. All we're here for is the data!
 
 {{<img caption="Sometimes random parts and a bit of tape are the best way forward." src="/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_173837.jpg" >}}
 
@@ -123,14 +170,11 @@ The next morning, you can ssh back in and kill the process with:
 $ pkill timelapse
 ```
 
-Now we have some data to analyze!
+Once you have it set up on the Pi, you can also control it with your phone and something like [JuiceSSH](https://play.google.com/store/apps/details?id=com.sonelli.juicessh&hl=en_CA) to feel super techy.
 
-<div class="row captioned-img">
-    <video class="img-responsive img-content" autoplay="autoplay" loop="loop" controls>
-      <source src=/imgs/blog-imgs/sourdough-starter-monitor/timelapse.mp4 type="video/mp4" />
-    </video>
-    <p class="caption">Timelapse taken over ~10 hours at 5 minute intervals. Shown: Two sourdough starters with different feeding ratios.</p>
-</div>
+{{<img caption="Starting the timelapse on Android." src="/imgs/blog-imgs/sourdough-starter-monitor/Screenshot_JuiceSSH_20180623-124103.png" >}}
+
+Now we have some data to analyze!
 
 ## The Analysis
 
@@ -169,7 +213,7 @@ Given a hot tip from my coworker (thanks Andreas) that Otsu's method is a good o
 
 > Otsu’s method calculates an “optimal” threshold (marked by a red line in the histogram below) by maximizing the variance between two classes of pixels, which are separated by the threshold. Equivalently, this threshold minimizes the intra-class variance. - [SciKit Image Docs](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html)
 
-The main takeaway with Otsu's method is that it works best with a bimodal distribution. For our image, this means the histogram should be represented by two distinct peaks. Since our cropped image looks to have two distinct regions, let's confirm that this method will be sufficient.
+The main takeaway with Otsu's method is that it works best with a bimodal distribution. For our image, this means the histogram should be represented by two distinct peaks. Since our cropped image looks to have two visually different areas (ie. transparent glass at the top, flour/water mixture at the bottom), let's confirm that this method will work.
 
 ```python
 plt.hist(img.ravel(), bins=256, range=(0.0, 1.0), fc='k', ec='k')
@@ -268,10 +312,10 @@ The timelapses below show the sourdough starter from different dates. The bounda
 {{<loop-vid caption="A larger jar was needed for this one! The thresholding algorithm was surprisingly still able ot catch the peak to some extent, despite minimal contrast." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-06-10 Out of Fridge.mp4">}}
 
 ### June 23, First Feeding
-{{<loop-vid caption="A larger jar was needed for this one! The thresholding algorithm was surprisingly still able ot catch the peak to some extent, despite minimal contrast." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-06-23 First Feeding.mp4">}}
+{{<loop-vid caption="After some neglect, the starter only rose to ~50%..." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-06-23 First Feeding.mp4">}}
 
 ### June 23, Refeeding
-{{<loop-vid caption="A larger jar was needed for this one! The thresholding algorithm was surprisingly still able ot catch the peak to some extent, despite minimal contrast." src="/imgs/blog-imgs/sourdough-starter-monitor/2018-06-23 Refeeding.mp4">}}
+{{<loop-vid caption="But after another feeding the next morning, it had enough activity to spring back ~80% growth!" src="/imgs/blog-imgs/sourdough-starter-monitor/2018-06-23 Refeeding.mp4">}}
 
 ## The Discussion
 
@@ -287,15 +331,13 @@ On May 29th, we began to feed our sourdough starter after many months of sporadi
 
 {{<img-span caption="We can see that regularly feeding the sourdough starter greatly increases its rate and growth." src="/imgs/blog-imgs/sourdough-starter-monitor/Levain Growth Over Time (Regular Feeding).png" >}}
 
-**Note**: The time delay of each subsequent feeding day may not mean anything, and may be purely coincidental that it looks like a pattern. Starting temperature plays a significant role in the fermentation cycle, and it was likely that the June 10 was fed right after being taken out of the fridge. 
-
-What we should pay attention to is the change in growth and the growth rate, not the shift in the horizontal axis. However, if you have any other insight as to what may cause this shift, please leave a comment below!
+**Note**: The time delay of each subsequent feeding is not a result of regularity, but rather because the starter to food ratio was reduced over time to promote a more active fermentation. We eventually migrated to a 50g starter + 100g water + 100g flour (50 / 50 white and whole wheat). The starter has more potential for growth by beginning with less starter and more food, but as a result it may takee a bit longer for the bacteria to really start multiplying.started
 
 ### Bringing the Starter Back to Life
 
 Previous to June 23, the starter was neglected for a week. After the first (overnight) feeding, it showed little signs of growth. However, feeding it again at lunch and tracking its progress shows that the growth springs back up to ~80%, which was around the previous maximum from before. 
 
-{{<img-span caption="What doesn't kill you makes you stronger (or at least as strong as before)." src="/imgs/blog-imgs/sourdough-starter-monitor/refeeding_1.png" >}}
+{{<img-span caption="What doesn't kill you makes you stronger (or at least as strong as before). First feeding is shifted because I forgot to start the timelapse right away." src="/imgs/blog-imgs/sourdough-starter-monitor/refeeding_1.png" >}}
 
 Thus, a bit of neglect seems to be okay since it appears to be somewhat resilient to starvation!
 
