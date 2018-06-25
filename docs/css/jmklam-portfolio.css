@@ -66,6 +66,10 @@ footer {
 	/* margin-bottom:16px; */
 }
 
+.blog-header-img {
+	margin-bottom:16px;
+}
+
 .blog-preview-img a {
 	height: 225px;
 	background-size: cover;
