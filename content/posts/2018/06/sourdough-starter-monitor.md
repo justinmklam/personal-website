@@ -1,5 +1,5 @@
 +++
-date = "2018-06-21T17:50:22-07:00"
+date = "2018-06-24T17:50:22-07:00"
 draft = false
 image = "/imgs/blog-imgs/sourdough-starter-monitor/Crumb comparison.png"
 layout = "single-blog"
