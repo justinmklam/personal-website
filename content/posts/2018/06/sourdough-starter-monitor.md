@@ -1,6 +1,6 @@
 +++
 date = "2018-06-21T17:50:22-07:00"
-draft = true
+draft = false
 image = "/imgs/blog-imgs/sourdough-starter-monitor/Crumb comparison.png"
 layout = "single-blog"
 tagline = "Bread is love, bread is life; would it be wrong to call it my wife?"

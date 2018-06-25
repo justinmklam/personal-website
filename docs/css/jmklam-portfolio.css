@@ -57,7 +57,13 @@ footer {
 
 .img-content {
 	margin: 5px auto;
-	max-height: 450px
+	max-height: 500px
+}
+
+.img-span-row {
+	display:block; 
+	margin:auto; 
+	/* margin-bottom:16px; */
 }
 
 .blog-preview-img a {

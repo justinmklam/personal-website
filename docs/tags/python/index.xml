@@ -6,10 +6,20 @@
     <description>Recent content in Python on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Apr 2018 20:33:46 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 21 Jun 2018 17:50:22 -0700</lastBuildDate>
     
 	<atom:link href="http://justinmklam.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Monitoring the Fermentation of Sourdough Starter with Computer Vision</title>
+      <link>http://justinmklam.com/posts/2018/06/sourdough-starter-monitor/</link>
+      <pubDate>Thu, 21 Jun 2018 17:50:22 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/posts/2018/06/sourdough-starter-monitor/</guid>
+      <description>Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you&amp;rsquo;ll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.
+Despite it being relatively easy to turn dough into something that looks and feels like bread, the challenge is in squeezing every possible ounce of flavour and texture (using only those four ingredients) to achieve the embodiment of a true loaf of bread.</description>
+    </item>
     
     <item>
       <title>From Prototype to Cloud: A Python Recipe Converter</title>
