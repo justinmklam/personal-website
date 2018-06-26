@@ -93,7 +93,7 @@
             <h2 class="blog-title">Monitoring the Fermentation of Sourdough Starter with Computer Vision</h2>
             
             <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on June 24, 2018
-<em>&nbsp &middot &nbsp&nbsp14 min read &nbsp &middot &nbsp
+<em>&nbsp &middot &nbsp&nbsp15 min read &nbsp &middot &nbsp
     
     <a href="/tags/programming">#programming&nbsp</a>
     
@@ -253,7 +253,30 @@ mkdir -p $FOLDER_NAME # create image root folder if not exist
 IDX=0 # image index
 
 function cleanup() {
-    echo &quot;Exiting.&quot;
+        echo &quot;Exiting.&quot;
+        exit 0
+}
+
+trap cleanup INT
+
+while true; do
+        DATE=$(date +%Y-%m-%d_%H-%M-%S)
+        FNAME=&quot;${DATE}_(${IDX})&quot; # image filename
+
+        # Create folder for current timelapse set
+        if [ $IDX -eq 0 ]
+        then
+                FOLDER_NAME=$FOLDER_NAME/$DATE
+                mkdir -p $FOLDER_NAME
+                echo &quot;Created folder: ${FOLDER_NAME}&quot;
+        fi
+        # Take image
+        raspistill --nopreview -t $CAM_DELAY -o ./$FOLDER_NAME/$FNAME.jpg -w $RES_W -h $RES_H
+
+        echo &quot;Captured: ${FNAME}&quot;
+        IDX=$((IDX+1))
+        sleep $SLEEP_DELAY
+done
 </code></pre>
 
 <p>And in <code>run_sourdough_monitor.sh</code>:</p>

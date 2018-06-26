@@ -138,7 +138,30 @@ mkdir -p $FOLDER_NAME # create image root folder if not exist
 IDX=0 # image index
 
 function cleanup() {
-    echo "Exiting."
+        echo "Exiting."
+        exit 0
+}
+
+trap cleanup INT
+
+while true; do
+        DATE=$(date +%Y-%m-%d_%H-%M-%S)
+        FNAME="${DATE}_(${IDX})" # image filename
+
+        # Create folder for current timelapse set
+        if [ $IDX -eq 0 ]
+        then
+                FOLDER_NAME=$FOLDER_NAME/$DATE
+                mkdir -p $FOLDER_NAME
+                echo "Created folder: ${FOLDER_NAME}"
+        fi
+        # Take image
+        raspistill --nopreview -t $CAM_DELAY -o ./$FOLDER_NAME/$FNAME.jpg -w $RES_W -h $RES_H
+
+        echo "Captured: ${FNAME}"
+        IDX=$((IDX+1))
+        sleep $SLEEP_DELAY
+done
 ```
 
 And in `run_sourdough_monitor.sh`:
