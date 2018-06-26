@@ -157,7 +157,7 @@ Nothing fancy here, so let's move along.
 
 ## Taking the Timelapses
 
-Sometimes having ghetto setups is the best way forward. Might not be as pretty, but when bread is on the menu then nothing else matters. All we're here for is the data!
+Sometimes having kludgy setups is the best way forward. Might not be as pretty, but when bread is on the menu then nothing else matters. All we're here for is the data!
 
 {{<img caption="Sometimes random parts and a bit of tape are the best way forward." src="/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_173837.jpg" >}}
 
@@ -330,13 +330,13 @@ The animations are cool to watch, but what can we interpret from it? Plotting al
 
 ### Effect of Regular Feeding
 
-Taking only a select number of days, there is a clearer trend to be seen. We started to regularly feed it, and the graph below shows how the growth magnitude and rate increase over feedings. 
+Taking only a select number of days, there is a clearer trend to be seen. The graph below shows how the growth magnitude and rate increases over frequent and regularly scheduled feedings.
 
-On May 29th, we began to feed our sourdough starter after many months of sporadic feeding. With the June 10th growth, it starts later but rises to ~80%. The ideal target is to double or triple in size, but hopefully that time will come with even more regular feeding.
+On May 29th, we began to feed our sourdough starter after many months of sporadic feeding. With the June 10th growth, the ramp up occured later but eventually rises to ~80%. The ideal growth target is to double or triple in size, but hopefully that time will come with even more regular feeding.
 
 {{<img-span caption="We can see that regularly feeding the sourdough starter greatly increases its rate and growth." src="/imgs/blog-imgs/sourdough-starter-monitor/Levain Growth Over Time (Regular Feeding).png" >}}
 
-**Note**: The time delay of each subsequent feeding is not a result of regularity, but rather because the starter to food ratio was reduced over time to promote a more active fermentation. We eventually migrated to a 50g starter + 100g water + 100g flour (50 / 50 white and whole wheat). The starter has more potential for growth by beginning with less starter and more food, but as a result it may takee a bit longer for the bacteria to really start multiplying.started
+**Note**: The time delay of each subsequent feeding is not a result of regularity, but rather because the starter to food ratio was reduced over time to promote a more active fermentation. We eventually migrated to a 50g starter + 100g water + 100g flour (50 / 50 white and whole wheat). The starter has more potential for growth by beginning with less starter and more food, but as a result it may take a bit longer for the bacteria to vigorously start multiplying.
 
 ### Bringing the Starter Back to Life
 
