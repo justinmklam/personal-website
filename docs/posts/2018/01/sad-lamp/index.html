@@ -31,6 +31,7 @@
 >
 <meta name="author" content="Justin Lam">
 
+
 <link rel="stylesheet" href="/css/jmklam-portfolio-bootstrap.min.css">
 <link rel="stylesheet" href="/css/jmklam-portfolio.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab">
@@ -39,9 +40,13 @@
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/bootstrap-toc.css">
+
 </head>
 
-<body onload="load()">
+<body onload="load()" data-spy="scroll" data-target="#toc">
 
     <!DOCTYPE html>
 <html lang="en">
@@ -88,24 +93,28 @@
     
     <div class="container" id="page-container">
         
-        <div class="col-sm-8 col-centered" id="blog">
-            <br>
-            <h2 class="blog-title">Measuring the Spectral Characteristics of a Light Therapy Lamp</h2>
-            
-            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on January 12, 2018
+        
+        <div class="row">
+                <div class="col-sm-2">
+                    </div>            
+            <div class="col-sm-8" id="blog">
+                <br>
+                <h2 data-toc-skip class="blog-title">Measuring the Spectral Characteristics of a Light Therapy Lamp</h2>
+                
+                <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on January 12, 2018
 <em>&nbsp &middot &nbsp&nbsp9 min read &nbsp &middot &nbsp
     
     <a href="/tags/physics">#physics&nbsp</a>
     
 </em></p>
-
-            
-            <a href=/imgs/blog-imgs/sad-lamp/Verilux%20Spectral%20Response%20-%20Comparison.PNG>
-                <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/sad-lamp/Verilux%20Spectral%20Response%20-%20Comparison.PNG">
-            </a>
-
-            <div class="blog-content">
                 
+                
+                <a href=/imgs/blog-imgs/sad-lamp/Verilux%20Spectral%20Response%20-%20Comparison.PNG>
+                    <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/sad-lamp/Verilux%20Spectral%20Response%20-%20Comparison.PNG">
+                </a>
+                
+                <div class="blog-content">
+                    
 
 <p><strong>Disclaimer:</strong> <em>Light therapy is one method of easing seasonal affective disorder (SAD); some people swear by it whereas others remain unaffected. This blog post does not intend to refute the effectiveness of light therapy, but rather to dig deeper into the technology behind these light therapy lamps to better educate fellow consumers.</em></p>
 
@@ -325,17 +334,17 @@
 
 <p><strong><em>Acknowledgements:</em></strong> <em>Thanks to <a href="https://mistywest.com/">MistyWest</a> for letting me use their spectrometer to measure this data!</em></p>
 
-            </div>
-
-			
-            <br>
-            <div class="text-left">
-                <a href="/blog">
-                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
-                </a>
-            </div>
-            <hr>
-            <div id="disqus_thread"></div>
+                </div>
+                
+                
+                <br>
+                <div class="text-left">
+                    <a href="/blog">
+                        <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+                    </a>
+                </div>
+                <hr>
+                <div id="disqus_thread"></div>
 <script type="text/javascript">
 
 (function() {
@@ -352,19 +361,27 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                
+                
+            </div>
 
+            <div class="col-sm-1">
+                    <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+                </div>
+            
+            
 
         </div>
-        
-
     </div>	
     
 
-	    
+        
     <script src="http://justinmklam.com/js/jquery.js"></script>
 
     
     <script src="http://justinmklam.com/js/bootstrap.min.js"></script>
+    
+    <script src="/js/bootstrap-toc.min.js"></script>
 
     
     <script src="/js/highlight.pack.js"></script>

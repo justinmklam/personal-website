@@ -31,6 +31,7 @@
 >
 <meta name="author" content="Justin Lam">
 
+
 <link rel="stylesheet" href="/css/jmklam-portfolio-bootstrap.min.css">
 <link rel="stylesheet" href="/css/jmklam-portfolio.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab">
@@ -39,9 +40,13 @@
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/bootstrap-toc.css">
+
 </head>
 
-<body onload="load()">
+<body onload="load()" data-spy="scroll" data-target="#toc">
 
     <!DOCTYPE html>
 <html lang="en">
@@ -88,11 +93,15 @@
     
     <div class="container" id="page-container">
         
-        <div class="col-sm-8 col-centered" id="blog">
-            <br>
-            <h2 class="blog-title">New Workshop &#43; Plywood Bench Stool</h2>
-            
-            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on June 1, 2016
+        
+        <div class="row">
+                <div class="col-sm-2">
+                    </div>            
+            <div class="col-sm-8" id="blog">
+                <br>
+                <h2 data-toc-skip class="blog-title">New Workshop &#43; Plywood Bench Stool</h2>
+                
+                <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on June 1, 2016
 <em>&nbsp &middot &nbsp&nbsp2 min read &nbsp &middot &nbsp
     
     <a href="/tags/design">#design&nbsp</a>
@@ -100,14 +109,14 @@
     <a href="/tags/woodworking">#woodworking&nbsp</a>
     
 </em></p>
-
-            
-            <a href=/imgs/blog-imgs/new-shop/IMG_20160601_171007.jpg>
-                <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/new-shop/IMG_20160601_171007.jpg">
-            </a>
-
-            <div class="blog-content">
-                <p>My family moved into a new house, meaning that we finally have an actual garage instead of a measly carport. But what this really means is that I get a chance to claim space to set up an actual workshop! First project was naturally a workbench, which I put together using 2x4&rsquo;s and a <sup>3</sup>&frasl;<sub>4</sub>&rdquo; MDF board for the work surface (see above). Second project was a bench stool, as shown in the following images below. The builders left some <sup>1</sup>&frasl;<sub>8</sub>&rdquo; plywood in the yard, and I wanted to see how sturdy of a chair I can make with it given the inherent flimsiness of the thin sheet stock. By adding a reinforcing cross-brace at the base of the legs, I was able to significantly increase its sturdiness.</p>
+                
+                
+                <a href=/imgs/blog-imgs/new-shop/IMG_20160601_171007.jpg>
+                    <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/new-shop/IMG_20160601_171007.jpg">
+                </a>
+                
+                <div class="blog-content">
+                    <p>My family moved into a new house, meaning that we finally have an actual garage instead of a measly carport. But what this really means is that I get a chance to claim space to set up an actual workshop! First project was naturally a workbench, which I put together using 2x4&rsquo;s and a <sup>3</sup>&frasl;<sub>4</sub>&rdquo; MDF board for the work surface (see above). Second project was a bench stool, as shown in the following images below. The builders left some <sup>1</sup>&frasl;<sub>8</sub>&rdquo; plywood in the yard, and I wanted to see how sturdy of a chair I can make with it given the inherent flimsiness of the thin sheet stock. By adding a reinforcing cross-brace at the base of the legs, I was able to significantly increase its sturdiness.</p>
 
 <p><div class="row captioned-img">
     <a href=/imgs/blog-imgs/new-shop/IMG_20160602_170121.jpg><img class="img-responsive img-content" src=/imgs/blog-imgs/new-shop/IMG_20160602_170121.jpg /></a>
@@ -132,17 +141,17 @@
 
 <p>For a stool made with the cheapest possible wood, it actually turned out half-decent and it does what it needs to do!</p>
 
-            </div>
-
-			
-            <br>
-            <div class="text-left">
-                <a href="/blog">
-                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
-                </a>
-            </div>
-            <hr>
-            <div id="disqus_thread"></div>
+                </div>
+                
+                
+                <br>
+                <div class="text-left">
+                    <a href="/blog">
+                        <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+                    </a>
+                </div>
+                <hr>
+                <div id="disqus_thread"></div>
 <script type="text/javascript">
 
 (function() {
@@ -159,19 +168,27 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                
+                
+            </div>
 
+            <div class="col-sm-1">
+                    <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+                </div>
+            
+            
 
         </div>
-        
-
     </div>	
     
 
-	    
+        
     <script src="http://justinmklam.com/js/jquery.js"></script>
 
     
     <script src="http://justinmklam.com/js/bootstrap.min.js"></script>
+    
+    <script src="/js/bootstrap-toc.min.js"></script>
 
     
     <script src="/js/highlight.pack.js"></script>

@@ -31,6 +31,7 @@
 >
 <meta name="author" content="Justin Lam">
 
+
 <link rel="stylesheet" href="/css/jmklam-portfolio-bootstrap.min.css">
 <link rel="stylesheet" href="/css/jmklam-portfolio.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab">
@@ -39,9 +40,13 @@
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/bootstrap-toc.css">
+
 </head>
 
-<body onload="load()">
+<body onload="load()" data-spy="scroll" data-target="#toc">
 
     <!DOCTYPE html>
 <html lang="en">
@@ -88,11 +93,15 @@
     
     <div class="container" id="page-container">
         
-        <div class="col-sm-8 col-centered" id="blog">
-            <br>
-            <h2 class="blog-title">Hakko-Style Solder Fume Extractor</h2>
-            
-            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on March 25, 2017
+        
+        <div class="row">
+                <div class="col-sm-2">
+                    </div>            
+            <div class="col-sm-8" id="blog">
+                <br>
+                <h2 data-toc-skip class="blog-title">Hakko-Style Solder Fume Extractor</h2>
+                
+                <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on March 25, 2017
 <em>&nbsp &middot &nbsp&nbsp2 min read &nbsp &middot &nbsp
     
     <a href="/tags/3d-printing">#3d printing&nbsp</a>
@@ -100,14 +109,14 @@
     <a href="/tags/design">#design&nbsp</a>
     
 </em></p>
-
-            
-            <a href=/imgs/blog-imgs/solder-fume-extractor/solder-fume-banner.jpg>
-                <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/solder-fume-extractor/solder-fume-banner.jpg">
-            </a>
-
-            <div class="blog-content">
-                <p>I&rsquo;ve been slowly getting into the land of electrical pixies. So now, not only will I be inhaling sawdust, I can also fill them with leaded solder (because we all know that the performance of leaded solder takes higher priority than the safety of lead-free solder)! However, because I still value living, I figured I should get something to help get the solder fumes away from my lungs.</p>
+                
+                
+                <a href=/imgs/blog-imgs/solder-fume-extractor/solder-fume-banner.jpg>
+                    <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/solder-fume-extractor/solder-fume-banner.jpg">
+                </a>
+                
+                <div class="blog-content">
+                    <p>I&rsquo;ve been slowly getting into the land of electrical pixies. So now, not only will I be inhaling sawdust, I can also fill them with leaded solder (because we all know that the performance of leaded solder takes higher priority than the safety of lead-free solder)! However, because I still value living, I figured I should get something to help get the solder fumes away from my lungs.</p>
 
 <p>At my current job with MistyWest, we have a nice, bench top solder fume extractor by Hakko. But I&rsquo;m cheap, so heck no was I going to <a href="https://www.digikey.ca/product-detail/en/american-hakko-products-inc/FA400-04/1691-1039-ND/6228795">pay over $100</a> for blowing away fumes when I can blow them away myself! Despite it being a nifty design with multiple configurations (shown in the images below), I would resist the temptation to lighten my wallet on this. Oh wait, I just bought a thing that I can use to make other things&hellip;</p>
 
@@ -151,17 +160,17 @@
 
 <p>Kidding.</p>
 
-            </div>
-
-			
-            <br>
-            <div class="text-left">
-                <a href="/blog">
-                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
-                </a>
-            </div>
-            <hr>
-            <div id="disqus_thread"></div>
+                </div>
+                
+                
+                <br>
+                <div class="text-left">
+                    <a href="/blog">
+                        <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+                    </a>
+                </div>
+                <hr>
+                <div id="disqus_thread"></div>
 <script type="text/javascript">
 
 (function() {
@@ -178,19 +187,27 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                
+                
+            </div>
 
+            <div class="col-sm-1">
+                    <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+                </div>
+            
+            
 
         </div>
-        
-
     </div>	
     
 
-	    
+        
     <script src="http://justinmklam.com/js/jquery.js"></script>
 
     
     <script src="http://justinmklam.com/js/bootstrap.min.js"></script>
+    
+    <script src="/js/bootstrap-toc.min.js"></script>
 
     
     <script src="/js/highlight.pack.js"></script>

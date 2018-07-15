@@ -31,6 +31,7 @@
 >
 <meta name="author" content="Justin Lam">
 
+
 <link rel="stylesheet" href="/css/jmklam-portfolio-bootstrap.min.css">
 <link rel="stylesheet" href="/css/jmklam-portfolio.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab">
@@ -39,9 +40,13 @@
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/bootstrap-toc.css">
+
 </head>
 
-<body onload="load()">
+<body onload="load()" data-spy="scroll" data-target="#toc">
 
     <!DOCTYPE html>
 <html lang="en">
@@ -88,11 +93,15 @@
     
     <div class="container" id="page-container">
         
-        <div class="col-sm-8 col-centered" id="blog">
-            <br>
-            <h2 class="blog-title">Annealing 3D Printed Plastics: Sous Vide Style</h2>
-            
-            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on June 13, 2017
+        
+        <div class="row">
+                <div class="col-sm-2">
+                    </div>            
+            <div class="col-sm-8" id="blog">
+                <br>
+                <h2 data-toc-skip class="blog-title">Annealing 3D Printed Plastics: Sous Vide Style</h2>
+                
+                <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on June 13, 2017
 <em>&nbsp &middot &nbsp&nbsp19 min read &nbsp &middot &nbsp
     
     <a href="/tags/3d-printing">#3d printing&nbsp</a>
@@ -100,14 +109,14 @@
     <a href="/tags/materials-science">#materials science&nbsp</a>
     
 </em></p>
-
-            
-            <a href=/imgs/blog-imgs/sous-vide-pla/banner.jpg>
-                <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/sous-vide-pla/banner.jpg">
-            </a>
-
-            <div class="blog-content">
                 
+                
+                <a href=/imgs/blog-imgs/sous-vide-pla/banner.jpg>
+                    <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/sous-vide-pla/banner.jpg">
+                </a>
+                
+                <div class="blog-content">
+                    
 
 <p class="text-center" style="font-style:oblique">
 Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/" target="_blank">Hackaday</a> and <a href="https://www.fictiv.com/blog/posts/june-hardware-roundup" target="_blank">Fictiv Blog</a>!
@@ -487,17 +496,17 @@ Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-strong
 </ol>
 </div>
 
-            </div>
-
-			
-            <br>
-            <div class="text-left">
-                <a href="/blog">
-                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
-                </a>
-            </div>
-            <hr>
-            <div id="disqus_thread"></div>
+                </div>
+                
+                
+                <br>
+                <div class="text-left">
+                    <a href="/blog">
+                        <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+                    </a>
+                </div>
+                <hr>
+                <div id="disqus_thread"></div>
 <script type="text/javascript">
 
 (function() {
@@ -514,19 +523,27 @@ Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-strong
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                
+                
+            </div>
 
+            <div class="col-sm-1">
+                    <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+                </div>
+            
+            
 
         </div>
-        
-
     </div>	
     
 
-	    
+        
     <script src="http://justinmklam.com/js/jquery.js"></script>
 
     
     <script src="http://justinmklam.com/js/bootstrap.min.js"></script>
+    
+    <script src="/js/bootstrap-toc.min.js"></script>
 
     
     <script src="/js/highlight.pack.js"></script>

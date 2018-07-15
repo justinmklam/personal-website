@@ -31,6 +31,7 @@
 >
 <meta name="author" content="Justin Lam">
 
+
 <link rel="stylesheet" href="/css/jmklam-portfolio-bootstrap.min.css">
 <link rel="stylesheet" href="/css/jmklam-portfolio.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab">
@@ -39,9 +40,13 @@
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/bootstrap-toc.css">
+
 </head>
 
-<body onload="load()">
+<body onload="load()" data-spy="scroll" data-target="#toc">
 
     <!DOCTYPE html>
 <html lang="en">
@@ -88,11 +93,15 @@
     
     <div class="container" id="page-container">
         
-        <div class="col-sm-8 col-centered" id="blog">
-            <br>
-            <h2 class="blog-title">Synchronous vs Asynchronous Ping Sweep in C# Windows Form</h2>
-            
-            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on February 9, 2018
+        
+        <div class="row">
+                <div class="col-sm-2">
+                    </div>            
+            <div class="col-sm-8" id="blog">
+                <br>
+                <h2 data-toc-skip class="blog-title">Synchronous vs Asynchronous Ping Sweep in C# Windows Form</h2>
+                
+                <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on February 9, 2018
 <em>&nbsp &middot &nbsp&nbsp8 min read &nbsp &middot &nbsp
     
     <a href="/tags/programming">#programming&nbsp</a>
@@ -100,14 +109,14 @@
     <a href="/tags/c-sharp">#c sharp&nbsp</a>
     
 </em></p>
-
-            
-            <a href=/imgs/blog-imgs/ping-sweeper/banner2.PNG>
-                <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/ping-sweeper/banner2.PNG">
-            </a>
-
-            <div class="blog-content">
                 
+                
+                <a href=/imgs/blog-imgs/ping-sweeper/banner2.PNG>
+                    <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/ping-sweeper/banner2.PNG">
+                </a>
+                
+                <div class="blog-content">
+                    
 
 <p>As a mechatronics engineer (in training), sometimes I like to pretend that I also know how to program.</p>
 
@@ -408,17 +417,17 @@ public void RunPingSweep_Sync()
 </ol>
 </div>
 
-            </div>
-
-			
-            <br>
-            <div class="text-left">
-                <a href="/blog">
-                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
-                </a>
-            </div>
-            <hr>
-            <div id="disqus_thread"></div>
+                </div>
+                
+                
+                <br>
+                <div class="text-left">
+                    <a href="/blog">
+                        <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+                    </a>
+                </div>
+                <hr>
+                <div id="disqus_thread"></div>
 <script type="text/javascript">
 
 (function() {
@@ -435,19 +444,27 @@ public void RunPingSweep_Sync()
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                
+                
+            </div>
 
+            <div class="col-sm-1">
+                    <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+                </div>
+            
+            
 
         </div>
-        
-
     </div>	
     
 
-	    
+        
     <script src="http://justinmklam.com/js/jquery.js"></script>
 
     
     <script src="http://justinmklam.com/js/bootstrap.min.js"></script>
+    
+    <script src="/js/bootstrap-toc.min.js"></script>
 
     
     <script src="/js/highlight.pack.js"></script>

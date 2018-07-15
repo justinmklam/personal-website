@@ -9,12 +9,6 @@ body {
 	background-color: #ffffff
 }
 
-.navbar-inverse {
-	-webkit-box-shadow: 0 5px 6px -6px #222;
-	-moz-box-shadow: 0 5px 6px -6px #222;
-	box-shadow: 0 5px 6px -6px #222;
-}
-
 .row h4 {
 	line-height: 1.4;
 	font-style: italic;
@@ -86,6 +80,11 @@ footer {
 	margin-top: 5px
 }
 
+#blog {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
 h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 15px;
     margin-bottom: 10px;
@@ -151,6 +150,12 @@ h4 {
 
 .project-description h4 {
 	margin-top: 5px
+}
+
+.navbar-inverse {
+	-webkit-box-shadow: 0 5px 6px -6px #222;
+	-moz-box-shadow: 0 5px 6px -6px #222;
+	box-shadow: 0 5px 6px -6px #222;
 }
 
 .navbar-inverse .navbar-toggle {

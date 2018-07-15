@@ -31,6 +31,7 @@
 >
 <meta name="author" content="Justin Lam">
 
+
 <link rel="stylesheet" href="/css/jmklam-portfolio-bootstrap.min.css">
 <link rel="stylesheet" href="/css/jmklam-portfolio.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab">
@@ -39,9 +40,13 @@
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/bootstrap-toc.css">
+
 </head>
 
-<body onload="load()">
+<body onload="load()" data-spy="scroll" data-target="#toc">
 
     <!DOCTYPE html>
 <html lang="en">
@@ -88,24 +93,28 @@
     
     <div class="container" id="page-container">
         
-        <div class="col-sm-8 col-centered" id="blog">
-            <br>
-            <h2 class="blog-title">MECH 223: Hovercraft Competition</h2>
-            
-            <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on April 20, 2013
+        
+        <div class="row">
+                <div class="col-sm-2">
+                    </div>            
+            <div class="col-sm-8" id="blog">
+                <br>
+                <h2 data-toc-skip class="blog-title">MECH 223: Hovercraft Competition</h2>
+                
+                <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on April 20, 2013
 <em>&nbsp &middot &nbsp&nbsp1 min read &nbsp &middot &nbsp
     
     <a href="/tags/school">#school&nbsp</a>
     
 </em></p>
-
-            
-            <a href=/imgs/hovercraft/hovercraft.jpg>
-                <img class="img-responsive img-span-row blog-header-img" src="/imgs/hovercraft/hovercraft.jpg">
-            </a>
-
-            <div class="blog-content">
-                <p>For our final MECH2 design project at UBC, we were given three weeks to research, conceptualize, test, and build a functional hovercraft. The end goal was a class-wide competition of speed, cargo capacity, maneuverability, and driving skill. Budget was limited since costs came out of our own pockets, so we set out to build an inexpensive hovercraft using parts from the hardware and dollar store.</p>
+                
+                
+                <a href=/imgs/hovercraft/hovercraft.jpg>
+                    <img class="img-responsive img-span-row blog-header-img" src="/imgs/hovercraft/hovercraft.jpg">
+                </a>
+                
+                <div class="blog-content">
+                    <p>For our final MECH2 design project at UBC, we were given three weeks to research, conceptualize, test, and build a functional hovercraft. The end goal was a class-wide competition of speed, cargo capacity, maneuverability, and driving skill. Budget was limited since costs came out of our own pockets, so we set out to build an inexpensive hovercraft using parts from the hardware and dollar store.</p>
 
 <p>Our result: 5th place out of 30 teams. Not too shabby for a hovercraft made with foam and garbage bags!</p>
 
@@ -124,17 +133,17 @@
 <p><a><img class="img-responsive img-content" src="/imgs/hovercraft/Recommendations1-1024x544.png" /></a>
 <p class="caption">Diagram outlines our well-implemented design features and recommendations for future revisions.</p></p>
 
-            </div>
-
-			
-            <br>
-            <div class="text-left">
-                <a href="/blog">
-                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
-                </a>
-            </div>
-            <hr>
-            <div id="disqus_thread"></div>
+                </div>
+                
+                
+                <br>
+                <div class="text-left">
+                    <a href="/blog">
+                        <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+                    </a>
+                </div>
+                <hr>
+                <div id="disqus_thread"></div>
 <script type="text/javascript">
 
 (function() {
@@ -151,19 +160,27 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                
+                
+            </div>
 
+            <div class="col-sm-1">
+                    <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+                </div>
+            
+            
 
         </div>
-        
-
     </div>	
     
 
-	    
+        
     <script src="http://justinmklam.com/js/jquery.js"></script>
 
     
     <script src="http://justinmklam.com/js/bootstrap.min.js"></script>
+    
+    <script src="/js/bootstrap-toc.min.js"></script>
 
     
     <script src="/js/highlight.pack.js"></script>
