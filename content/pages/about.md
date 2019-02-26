@@ -2,7 +2,7 @@
 date = "2016-09-24T12:58:43-07:00"
 draft = false
 title = "About"
-headshot = "/imgs/sketch headshot.jpg"
+headshot = "/imgs/headshot.png"
 layout = "single-about"
 hidedate = true
 
