@@ -1,5 +1,5 @@
 # Personal Project Website
-Increasing my online presence by showcasing projects that I've worked on over the years.
+Increasing my online presence by showcasing projects that I've worked on over the years. 
 
 # Dependencies
 + Static website created using Hugo engine
@@ -28,7 +28,7 @@ To create a new blog post:
 ```
 hugo new /posts/[YEAR]/[MONTH]/[TITLE].md
 ```
-__Note:__ Upload project images, files, etc. in the 'static' folder.
+__Note:__ Upload project images, files, etc. in the `static` directory.
 
 ## Publishing through GitHub Pages
 Github will publish the 'docs' folder in this repo. Configure the Hugo publish directory in config.toml for easy publishing. 
@@ -37,6 +37,16 @@ Github will publish the 'docs' folder in this repo. Configure the Hugo publish d
 publishdir = "docs"
 ```
 
-Using Visual Studio Code and the git sidebar makes it a one-stop web dev shop.
-
 Follow the [Hugo Quickstart Guide](https://gohugo.io/overview/quickstart/) for more details.
+
+# Namecheap Setup for Custom Domain
+These settings are managed under the `Advanced DNS` tab. See [GitHub Help](https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider) for details.
+
+| Type | Host | Value | TTL |
+|---|---|---|---|
+| A Record | @ | 185.199.108.153 | Automatic |
+| A Record | @ | 185.199.109.153 | Automatic |
+| A Record | @ | 185.199.110.153 | Automatic |
+| A Record | @ | 185.199.111.153 | Automatic |
+| CNAME Record | www | justinmklam.github.io. | Automatic |
+| TXT Record | @ | google-site-verification=[KEY] | Automatic |
