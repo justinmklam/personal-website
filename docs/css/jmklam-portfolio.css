@@ -55,8 +55,8 @@ footer {
 }
 
 .img-span-row {
-	display:block; 
-	margin:auto; 
+	display:block;
+	margin:auto;
 	/* margin-bottom:16px; */
 }
 
@@ -83,6 +83,11 @@ footer {
 #blog {
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+#img-headshot {
+	border-radius: 50%;
+	width: 300px;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
