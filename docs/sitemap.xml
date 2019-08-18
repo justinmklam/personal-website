@@ -23,7 +23,17 @@
   </url>
   
   <url>
+    <loc>http://justinmklam.com/</loc>
+    <lastmod>2018-06-24T17:50:22-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://justinmklam.com/posts/2018/06/sourdough-starter-monitor/</loc>
+    <lastmod>2018-06-24T17:50:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/tags/programming/</loc>
     <lastmod>2018-06-24T17:50:22-07:00</lastmod>
   </url>
   
@@ -43,8 +53,23 @@
   </url>
   
   <url>
+    <loc>http://justinmklam.com/tags/physics/</loc>
+    <lastmod>2018-01-12T09:42:57-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://justinmklam.com/posts/2017/10/vscode-debugger-setup/</loc>
     <lastmod>2017-10-29T14:24:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/tags/embedded/</loc>
+    <lastmod>2017-10-29T14:24:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/tags/3d-printing/</loc>
+    <lastmod>2017-06-13T15:56:53-07:00</lastmod>
   </url>
   
   <url>
@@ -64,6 +89,11 @@
   
   <url>
     <loc>http://justinmklam.com/projects/elec/mistywest-mvs/</loc>
+    <lastmod>2017-05-09T21:26:18-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/categories/elec/</loc>
     <lastmod>2017-05-09T21:26:18-07:00</lastmod>
   </url>
   
@@ -103,7 +133,22 @@
   </url>
   
   <url>
+    <loc>http://justinmklam.com/tags/work/</loc>
+    <lastmod>2016-11-15T23:02:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/tags/writing/</loc>
+    <lastmod>2016-11-15T23:02:43-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://justinmklam.com/posts/2016/phone-stand/</loc>
+    <lastmod>2016-11-13T21:35:28-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/tags/woodworking/</loc>
     <lastmod>2016-11-13T21:35:28-07:00</lastmod>
   </url>
   
@@ -223,6 +268,11 @@
   </url>
   
   <url>
+    <loc>http://justinmklam.com/tags/school/</loc>
+    <lastmod>2013-04-20T12:22:15-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://justinmklam.com/projects/mech/lego-headphones/</loc>
     <lastmod>2010-07-10T12:37:00-07:00</lastmod>
   </url>
@@ -233,163 +283,8 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/tags/3d-printing/</loc>
-    <lastmod>2017-06-13T15:56:53-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/biking/</loc>
-    <lastmod>2015-12-18T20:50:37-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/c-sharp/</loc>
-    <lastmod>2018-02-09T17:02:25-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/coop/</loc>
-    <lastmod>2015-06-23T21:30:17-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/design/</loc>
-    <lastmod>2017-03-25T21:14:29-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/categories/elec/</loc>
-    <lastmod>2017-05-09T21:26:18-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://justinmklam.com/tags/electrical/</loc>
     <lastmod>2009-04-16T22:52:25-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/embedded/</loc>
-    <lastmod>2017-10-29T14:24:52-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/image-analysis/</loc>
-    <lastmod>2018-06-24T17:50:22-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/</loc>
-    <lastmod>2016-09-24T22:18:22-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/materials-science/</loc>
-    <lastmod>2017-06-13T15:56:53-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/outdoors/</loc>
-    <lastmod>2015-07-08T23:14:15-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/pages/</loc>
-    <lastmod>2017-04-14T16:56:13-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/physics/</loc>
-    <lastmod>2018-01-12T09:42:57-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/posts/</loc>
-    <lastmod>2018-06-24T17:50:22-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/programming/</loc>
-    <lastmod>2018-06-24T17:50:22-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/projects/</loc>
-    <lastmod>2017-05-09T21:26:18-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/python/</loc>
-    <lastmod>2018-06-24T17:50:22-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/school/</loc>
-    <lastmod>2013-04-20T12:22:15-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/sections/</loc>
-    <lastmod>2016-09-24T22:18:22-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/stm32/</loc>
-    <lastmod>2017-10-29T14:24:52-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/</loc>
-    <lastmod>2017-06-13T15:56:53-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/types/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/vr/</loc>
-    <lastmod>2016-11-15T23:02:43-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/woodworking/</loc>
-    <lastmod>2016-11-13T21:35:28-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/work/</loc>
-    <lastmod>2016-11-15T23:02:43-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

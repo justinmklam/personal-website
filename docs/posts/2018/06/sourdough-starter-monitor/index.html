@@ -106,15 +106,11 @@
     
     <a href="/tags/programming">#programming&nbsp</a>
     
-    <a href="/tags/python">#python&nbsp</a>
-    
-    <a href="/tags/image-analysis">#image analysis&nbsp</a>
-    
 </em></p>
                 
                 
-                <a href=/imgs/blog-imgs/sourdough-starter-monitor/Crumb%20comparison.png>
-                    <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/sourdough-starter-monitor/Crumb%20comparison.png">
+                <a href=/imgs/blog-imgs/sourdough-starter-monitor/Crumb-comparison.jpeg>
+                    <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/sourdough-starter-monitor/Crumb-comparison.jpeg">
                 </a>
                 
                 <div class="blog-content">
@@ -204,20 +200,21 @@ The solution:</p>
 
 <ol>
 <li>Create an empty file on the SD&rsquo;s boot partition called <code>ssh</code> to enable it.</li>
-<li>Create another file named <code>wpa_supplicant.conf</code> with the following content:</li>
-</ol>
+
+<li><p>Create another file named <code>wpa_supplicant.conf</code> with the following content:</p>
 
 <pre><code>country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-    ssid=&quot;your_real_wifi_ssid&quot;
-    scan_ssid=1
-    psk=&quot;your_real_password&quot;
-    key_mgmt=WPA-PSK
+ssid=&quot;your_real_wifi_ssid&quot;
+scan_ssid=1
+psk=&quot;your_real_password&quot;
+key_mgmt=WPA-PSK
 }
-</code></pre>
+</code></pre></li>
+</ol>
 
 <p>Connect the camera module and boot it up. You can use something like <a href="https://angryip.org/download/#linux">Angry IP Scanner</a> to find its IP address, and with any luck you should be able to SSH into it from your own computer!</p>
 

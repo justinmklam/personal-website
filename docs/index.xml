@@ -6,7 +6,7 @@
     <description>Recent content on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Sep 2016 22:18:22 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jun 2018 17:50:22 -0700</lastBuildDate>
     
 	<atom:link href="http://justinmklam.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -130,11 +130,7 @@ Click-bait headlines aside, this post is quite lengthy and not everyone may have
       <pubDate>Tue, 09 May 2017 21:26:18 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/elec/mistywest-mvs/</guid>
-      <description>Objective:
- Design a custom PCB to protect and regulate a 14.8V LiPo battery for use with an autonomous RC car  Features:
- 12V undervoltage and 10A overcurrent protection 8.4V, 7.4V, and 5V regulated outputs  Main Components:
- LT6109 High Side Current Sense Amplifier RT8288AZSP Synchronous Step-Down Converter  Skills:
- Reading and understanding datasheets Schematic capture and PCB layout in Altium Designer Board bring-up Hardware debugging  Achievement Unlocked:</description>
+      <description>Needing various power rails off a 4-cell LiPo battery pack, I designed a PCB with overcurrent/undervoltage protection and 8.4V/7.4/5V buck regulators.</description>
     </item>
     
     <item>
@@ -152,11 +148,7 @@ Click-bait headlines aside, this post is quite lengthy and not everyone may have
       <pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate>
       
       <guid>http://justinmklam.com/projects/mecha/vr-gantry/</guid>
-      <description>Objective: Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.
-Motivation: An extravagant party prop for an evening at CES 2017, hosted by MistyWest.
-Features:
- CoreXY planar gantry design System built with 8020 aluminum extrusions and laser cut acrylic components Stepper motor control through Teensy 3.2 HTC Vive pose tracking through C++ Patent pending  Skills:
- Mechanical design with rapid prototyping methods C++ software development Arduino-based firmware development  Sources:</description>
+      <description>Current high-performance virtual reality headsets require cable connections to a host computer. For room-scale VR, users must always be mindful of this cable since it poses not only as a tripping hazard, but also a detraction from the otherwise immersive VR experience. This autonomous cable management system is one solution to sucky cables.</description>
     </item>
     
     <item>
@@ -175,9 +167,8 @@ At my current job with MistyWest, we have a nice, bench top solder fume extracto
       <pubDate>Thu, 23 Mar 2017 19:38:27 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2017/03/3d-printing/</guid>
-      <description>&lt;p&gt;What&amp;rsquo;s better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>What&amp;rsquo;s better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.
+General Info  Product Page:  Monoprice Select Mini V1  Official User Manual:  MP Select Mini User Manual  Reddit:  /r/MPSelectMiniOwners  Facebook Group:  MP Mini User Group  Unofficial Wiki:  MP Select Mini Wiki  Community Knowledge Base:  Google Doc   Materials and Accessories  Tested PLA Brands:  Hatchbox AMZ3D  Alternative Bed Surface:  PEI Sheet, see RepRap Wiki for details   Initial Set Up  CAD Modeling Software (free for hobbyists and enthusiasts):  Autodesk Fusion 360  Slicing Software:  Ultimaker Cura  Onboard WiFi for wireless printing:  Connecting to WiFi through G-code  Using Raspberry Pi and Octoprint for wireless printing:  OctoPi   Machine Settings General The machine settings below are based off the ones in the official user manual.</description>
     </item>
     
     <item>
@@ -196,10 +187,7 @@ Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for 
       <pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate>
       
       <guid>http://justinmklam.com/projects/elec/sous-vide/</guid>
-      <description>Objective: Create a small, modular controller to regulate the temperature of a water bath.
-Motivation: To get in on this cooking fad without dropping fat stacks of cash on an immersion circulator.
-Features:
- Crisp 0.96&amp;rdquo; OLED display Pushbutton rotary encoder provides simple user interaction Removable temperature plug through standard 3-pos audio connector Temperature controlled outlet to be used with any heating element (ie. rice cooker, slow cooker, etc.) Always on outlet for water circulator Temperature logging over wifi  Source: Github</description>
+      <description>By separating the internal and external cooking procedures, a perfect steak with no internal temperature gradient can be easily achieved. Cooking sous vide provides reliable, consistent, and precise results every time. An ESP8266 wifi chip was used to monitor and maintain the temperature controlled water.</description>
     </item>
     
     <item>
@@ -229,8 +217,7 @@ I started off on Google to look for existing designs I could imitate, but most f
       <pubDate>Sat, 22 Oct 2016 20:58:10 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2016/bandsaw/</guid>
-      <description>I&amp;rsquo;ve always wanted a bandsaw. Being able to cut wood, plastics, etc. quickly and with flexibility has been a dream in my home shop. When I found an ad on Craigslist for a portable bandsaw for $50, I just couldn&amp;rsquo;t resist. The main caveat was that it was missing a table, but that wasn&amp;rsquo;t a big enough issue to turn me away from this killer deal.
- Fresh off Craigslist in its table-naked glory.</description>
+      <description>It&amp;rsquo;s generally known that cheap tools are usually not worth the trouble, but the deal on this bandsaw was simply too hard to pass up. With only a missing table, it was merely a quick woodworking project away from restoring its full functionality.</description>
     </item>
     
     <item>
@@ -239,8 +226,7 @@ I started off on Google to look for existing designs I could imitate, but most f
       <pubDate>Sat, 01 Oct 2016 12:39:52 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/software/engineers-diary/</guid>
-      <description>Background: Between paper notebooks, post-it notes, OneNote, Evernote, and so many more, there is no shortage of ways to write things down. Each has its strengths and weaknesses, but none satisfied my requirements to act as a daily work log to record key events, thoughts, and milestones during my work day.
-My paper notebook is excellent for free-form thoughts, sketches, and calculations, but I would want to keep a separate notebook to keep track of these sequential events.</description>
+      <description>No bells, no whistles; just a simple interface to act as a daily work log. Entries are time-stamped and saved into date-stamped text files.</description>
     </item>
     
     <item>
@@ -277,10 +263,7 @@ Reality came quite bluntly, yet these dreams continued to flourish. These days, 
       <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/mech-458-capstone/</guid>
-      <description>Introduction Objective: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.
-How: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.
-Requirements and Specifications Optical
- Device must have a tolerance on distance measurement of 1 mm Device must have a camera circumferential resolution of 1.</description>
+      <description>Well liner repairs are costly and dangerous, and preventative measures are frequently taken by companies to minimize risk and future problems. The objective of this project was to develop an optical scanning system to be used for generating 3D models and images of liners, casings, and other types of pipe through fluids.</description>
     </item>
     
     <item>
@@ -298,10 +281,7 @@ Requirements and Specifications Optical
       <pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/elec/power-supply/</guid>
-      <description>Objective: Build a cheap, portable, variable DC power supply.
-Motivation: It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.
-Limitations:
- Only DC voltages available Max current is a function of input power and desired voltage (I=P/V) Current limiting feature is non-existent, so must be careful to not let the genie out of circuits</description>
+      <description>Tired of using a spliced USB cable or combining batteries to achieve a desired voltage, an inexpensive boost-buck converter was paired with the input from a laptop power brick to supply variable voltage.</description>
     </item>
     
     <item>
@@ -310,9 +290,7 @@ Limitations:
       <pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mecha/perfeggct/</guid>
-      <description>Background: When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
- &amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman
- Objective: Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.</description>
+      <description>Gone are the days of blindly timing and boiling eggs, being left with nothing but a solid, chalky yolk. As part of our final year mechatronics engineering project, we developed a non-invasive device to measure the oscillation of an egg suspended on a spring. By analyzing the oscillatory response of the egg, we were able to determine the yolk consistency with (questionable) accuracy.</description>
     </item>
     
     <item>
@@ -342,11 +320,7 @@ Leaving @thehaikuza to make complete gibberish wasnt what I had intended.</descr
       <pubDate>Sun, 19 Jul 2015 12:36:28 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/software/haikuza/</guid>
-      <description>Objective: Develop an algorithm to generate haikus using song lyrics.
-Motivation: Because computational linguistics are cool.
-Project: twitter.com/thehaikuza
-Features:
- Scrapes Virgin Radio&amp;rsquo;s broadcast history to find recently played songs Creates a song-based haiku queue in Google Sheets Generates a haiku using the queue as a reference and posts it on Twitter Checks for new tweets every 5 minutes and generates a relevant haiku, if requested Finds all song lyrics from Lyrics Wikia Runs on a Raspberry Pi  Challenges:</description>
+      <description>Spamming your phone&amp;rsquo;s predictive keyboard is usually enough justification to avoid trying to computationally bang out the works of Shakespeare. Futile goals aside, an algorithm was developed to generate haikus using natural language processing and song lyrics.</description>
     </item>
     
     <item>
@@ -387,8 +361,7 @@ Objective: Design and build a purified test chamber with zero air particulate to
       <pubDate>Thu, 19 Feb 2015 12:36:19 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/software/external-ballistics/</guid>
-      <description>Background: including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth.
-One solution is to connect a computer to a manual targeting system (ie. a scope) and estimate the corrected target location by accounting for these external factors. The user may then line the manual targeting system up with the corrected target location, hoping to the high heavens that the target will be hit upon releasing the projectile.</description>
+      <description>Long range trajectories are heavily susceptible to external factors including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth. One solution is to connect a computer to a manual targeting system and estimate the corrected target location by accounting for these external factors. A basic program was developed to simulate and calculate the required correction.</description>
     </item>
     
     <item>
@@ -397,9 +370,7 @@ One solution is to connect a computer to a manual targeting system (ie. a scope
       <pubDate>Mon, 24 Nov 2014 12:37:55 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/mech-328-trailrider/</guid>
-      <description>Background: The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility. It is intended for a seated rider propelled and balanced by assistants.
-Objective: Expand the range of both riders and assistants who can ride safely use the Black Diamond TrailRider™.
-How: As a team of seven mechanical engineering undergrads, we explored a range of areas for improvement and developed a new design to incorporate these features.</description>
+      <description>The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility. As a team of mechanical engineering undergrads, we explored areas of improvement and developed a new design to incorporate these features.</description>
     </item>
     
     <item>
@@ -408,8 +379,7 @@ How: As a team of seven mechanical engineering undergrads, we explored a range o
       <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2014/coop-drill-cover/</guid>
-      <description>Background: Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.
-Objective: Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.</description>
+      <description>Drill availability is a major limitation in developing counties, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.</description>
     </item>
     
     <item>
@@ -418,11 +388,7 @@ Objective: Develop, conduct, and analyze a study to quantify the drilling perfo
       <pubDate>Fri, 29 Aug 2014 12:37:42 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/car2go/</guid>
-      <description>Objective: Design a roof-mounted bowling rig for a car2go marketing event.
-Constraints: Use a non-permanent method to securely attach the apparatus to the roof.
-Venue: 2014 Vancouver Fringe Festival
- Bowling rig set up and ready to roll.
-  Car2go bowling in action.</description>
+      <description>A novel method of bowling was introduced at a car2go marketing event. Using a non-permanent method of atachment, a roof-mounted bowling rig was designed and created.</description>
     </item>
     
     <item>
@@ -431,10 +397,7 @@ Venue: 2014 Vancouver Fringe Festival
       <pubDate>Mon, 18 Aug 2014 22:12:57 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/bamboo-bike/</guid>
-      <description>Objective: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.
-Challenges:
- Constructing a frame jig to allow freedom around joints for carbon-fibre layup Accounting for the non-uniformity of bamboo poles at the frame lugs Maintaining compatibility with standard bicycle components Ensuring the frame is treated for typical&#34;Wet&#34; Coast weather  Awards:
- First Prize - Hand Tools Only Instructables Contest First Prize - Teach It!</description>
+      <description>Bamboo bicycles provide road vibration absorption, a higher strength to weight ratio than steel, and comparable stiffness to aluminum. Exceeding the threshold for Vancouverite-hipster was the goal of this build.</description>
     </item>
     
     <item>
@@ -443,12 +406,7 @@ Challenges:
       <pubDate>Sun, 12 Jan 2014 12:25:44 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/software/photo-editing/</guid>
-      <description>Objective: Develop a script to find and remove any differences in a series of photos.
-Motivation: How to Remove People From Your Travel Using Photoshop
-Framework: MATLAB
- Script takes any number of images (preferably taken on a tripod) and combines them into one cleaned-up image.
-  Flowchart of the implemented algorithm.
- </description>
+      <description>Traveling and taking pictures go hand in hand, but good photo opportunities are often packed with other tourists. Instead of manually editing people out in Photoshop, a MATLAB script was designed to take a series of similar photos and remove any differences between them.</description>
     </item>
     
     <item>
@@ -457,9 +415,7 @@ Framework: MATLAB
       <pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2013/coop-mea/</guid>
-      <description>Objective: Determine if age has an effect on the mechanical properties of bicycle helmets.
-Tasks:
- Conducted 1630 helmet impact attenuation tests to measure the effect of age and use on bicycle helmet foam Developed scripts in MATLAB to autonomously post-process the impact data and organize information according to existing helmet databases Wrote the Methods section of the research report to be submitted to the Accident Prevention &amp;amp; Analysis Journal Assisted in protocol development of the helmet and foam core impact attenuation tests  Company: MEA Forensic Engineers &amp;amp; Scientists</description>
+      <description>Foam liners in bicycle helmets absorb energy during impacts. Manufacturers recommend replacing a helmet every 2 to 10 years to maintain optimal head protection. To investigate this recommendation, we quantified the material and impact attenuation properties of helmets to determine if they changed with age.</description>
     </item>
     
     <item>
@@ -468,8 +424,7 @@ Tasks:
       <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2013/mech-223-hovercraft/</guid>
-      <description>For our final MECH2 design project at UBC, we were given three weeks to research, conceptualize, test, and build a functional hovercraft. The end goal was a class-wide competition of speed, cargo capacity, maneuverability, and driving skill. Budget was limited since costs came out of our own pockets, so we set out to build an inexpensive hovercraft using parts from the hardware and dollar store.
-Our result: 5th place out of 30 teams.</description>
+      <description>Teams were given 3 weeks to research, conceptualize, test, and refine their hovercrafts to compete in a class-wide battle of speed, cargo capacity, and maneuverability.</description>
     </item>
     
     <item>
@@ -478,7 +433,7 @@ Our result: 5th place out of 30 teams.</description>
       <pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate>
       
       <guid>http://justinmklam.com/projects/mech/lego-headphones/</guid>
-      <description>Background: I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go.</description>
+      <description>Combining two favourite past-times of music and LEGO resulted in the generation of a novel, functional pair of headphones. Batteries not included. Some assembly required.</description>
     </item>
     
     <item>
@@ -487,9 +442,7 @@ Our result: 5th place out of 30 teams.</description>
       <pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2009/altoids/</guid>
-      <description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback. I built a simple, rechargable battery pack to keep the tunes playing on long road trips.
- The iPod is alive!
-  President&amp;#39;s Choice rechargable batteries and some janky wiring is all it took.</description>
+      <description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback.</description>
     </item>
     
   </channel>
