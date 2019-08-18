@@ -1,7 +1,7 @@
 +++
 date = "2018-06-24T17:50:22-07:00"
 draft = false
-image = "/imgs/blog-imgs/sourdough-starter-monitor/Crumb comparison.png"
+image = "/imgs/blog-imgs/sourdough-starter-monitor/Crumb-comparison.jpeg"
 layout = "single-blog"
 tagline = "Bread is love, bread is life; would it be wrong to call it my wife?"
 tags = ["programming", "python", "image analysis"]

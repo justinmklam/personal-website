@@ -1,7 +1,7 @@
 +++
 date = "2018-04-06T20:33:46-07:00"
 draft = false
-image = "/imgs/blog-imgs/python-heroku-tutorial/converter - flask demo.gif"
+image = "/imgs/blog-imgs/python-heroku-tutorial/modularity comparison.png"
 layout = "single-blog"
 tagline = "A journey from Jupyter to Flask to Heroku, all in one post."
 tags = ["programming", "python"]
