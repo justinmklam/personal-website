@@ -55,6 +55,14 @@ Here's [another video](https://www.youtube.com/watch?v=-5Ix57Cetek) on how a sto
 
 {{<img caption="She said yes!" src="/imgs/blog-imgs/diy-wedding-ring/heather 2.jpg" >}}
 
+## ... The Boo Boo
+
+{{<img caption="" src="/imgs/blog-imgs/diy-wedding-ring/ring-side-view.png" >}}
+
+{{<img caption="" src="/imgs/blog-imgs/diy-wedding-ring/IMG_20190818_115332.jpg" >}}
+
+{{<img caption="" src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181121_175343.jpg" >}}
+
 ## Final Thoughts
 
 {{<img caption="" src="/imgs/blog-imgs/diy-wedding-ring/J_H-10.jpg" >}}
