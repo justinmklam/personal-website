@@ -4,7 +4,7 @@ draft = false
 image = "/imgs/blog-imgs/mistywest-coop/Enclosure overview.JPG"
 layout = "single-blog"
 tagline = "Building a clean-room enclosure for testing air quality monitors."
-tags = ["work", "coop", "design"]
+tags = ["work"]
 title = "Co-op: Air Quality Calibration Chamber"
 type = "blog"
 +++

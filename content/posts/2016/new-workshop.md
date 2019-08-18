@@ -4,7 +4,7 @@ draft = false
 image = "/imgs/blog-imgs/new-shop/IMG_20160601_171007.jpg"
 layout = "single-blog"
 tagline = "Finally having a garage means finally having space for a proper workbench."
-tags = ["design", "woodworking"]
+tags = ["woodworking"]
 title = "New Workshop + Plywood Bench Stool"
 type = "blog"
 

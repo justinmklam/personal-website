@@ -4,7 +4,7 @@ draft = false
 image = "/imgs/blog-imgs/python-heroku-tutorial/modularity comparison.png"
 layout = "single-blog"
 tagline = "A journey from Jupyter to Flask to Heroku, all in one post."
-tags = ["programming", "python"]
+tags = ["programming"]
 title = "From Prototype to Cloud: A Python Recipe Converter"
 type = "blog"
 

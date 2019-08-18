@@ -6,7 +6,7 @@ layout = "single-blog"
 title = "Tired of Cables in VR? We Are Too."
 tagline = "When VR gives you lemons, you make a lemonade-making robot."
 type = "blog"
-tags = ["work", "vr"]
+tags = ["work", "writing"]
 +++
 
 _Originally posted on [Medium](https://medium.com/mistywest/tired-of-cables-in-virtual-reality-we-are-too-efeab5606bf0) under [MistyWest](https://mistywest.com/)._

@@ -4,7 +4,7 @@ draft = false
 image = "/imgs/blog-imgs/making-haikuza/VL01D336R8.jpg"
 layout = "single-blog"
 tagline = "When the generator gets a bit smarter, but still not smart enough."
-tags = ["programming", "python"]
+tags = ["programming"]
 title = "The Making of Project Haikuza: Part 2"
 type = "blog"
 

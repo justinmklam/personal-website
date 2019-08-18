@@ -8,7 +8,7 @@ title = "Co-op: The Age Effect on Bicycle Helmets"
 type = "blog"
 draft = false
 layout = "single-blog"
-tags = ["work", "coop"]
+tags = ["work"]
 +++
 
 <p><strong>Objective</strong>: Determine if age has an effect on the mechanical properties of bicycle helmets.</p>

@@ -6,7 +6,7 @@ title = "Annealing 3D Printed Plastics: Sous Vide Style"
 tagline = "When hobbies combine and engineering takes over."
 type = "blog"
 layout = "single-blog"
-tags = ["3d printing", "materials science"]
+tags = ["3d printing"]
 +++
 
 <p class="text-center" style="font-style:oblique">
@@ -30,10 +30,10 @@ Heat treatment was carried out on 3D printed parts using a temperature controlle
 **How it was tested:**
 
 1. Printed some small test blocks (7mm x 7mm x 30mm)
-1. Submerged them in water at 70°C for 30 mins
-1. Half of the blocks cooled to room temperature in air (70°C to 18°C in < 10 mins), and the other half were regulated to cooled much slower (70°C to 18°C in > 4 hours)
-1. Applied a point load on the test block
-1. Recorded the maximum load before failure
+2. Submerged them in water at 70°C for 30 mins
+3. Half of the blocks cooled to room temperature in air (70°C to 18°C in < 10 mins), and the other half were regulated to cooled much slower (70°C to 18°C in > 4 hours)
+4. Applied a point load on the test block
+5. Recorded the maximum load before failure
 
 **What the results suggest:**
 

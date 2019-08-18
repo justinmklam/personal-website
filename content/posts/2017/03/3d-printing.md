@@ -11,8 +11,6 @@ tags = ["3d printing"]
 
 What's better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.
 
-<!--more-->
-
 # General Info
 * Product Page: 
     * [Monoprice Select Mini V1](https://www.monoprice.com/product?p_id=15365)

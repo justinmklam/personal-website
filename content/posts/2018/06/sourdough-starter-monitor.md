@@ -4,7 +4,7 @@ draft = false
 image = "/imgs/blog-imgs/sourdough-starter-monitor/Crumb-comparison.jpeg"
 layout = "single-blog"
 tagline = "Bread is love, bread is life; would it be wrong to call it my wife?"
-tags = ["programming", "python", "image analysis"]
+tags = ["programming"]
 title = "Monitoring the Fermentation of Sourdough Starter with Computer Vision"
 type = "blog"
 
@@ -39,10 +39,10 @@ For context, a typical process for making an artisinal loaf is roughly described
 3. At its peak, take the starter and mix it in with the rest of the bread ingredients.
 4. Gently fold the dough to tighten it up (which creates the gluten) a few times for the first 1-2 hours.
 5. Let rest. Flavours are developed during this bulk fermentation period.
-5. Shape the loaf and place it in a proofing basket.
-6. Let rest. The final volume is achieved during this second fermentation.
-7. Bake. 
-8. Place on cooling rack when done, and listen to the song of the crackling crust while you wait to cut it open.
+6. Shape the loaf and place it in a proofing basket.
+7. Let rest. The final volume is achieved during this second fermentation.
+8. Bake. 
+9. Place on cooling rack when done, and listen to the song of the crackling crust while you wait to cut it open.
 
 Sourdough starter is a living organism, and as such should be treated with kindness, respect, and most importantly, food. A well-fed starter is an active and happy one; if we can get a feel for how the starter behaves on a day-to-day basis during its feeding (ie. when the fermentation occurs), it may help clear up at least one of the variables in bread baking.
 

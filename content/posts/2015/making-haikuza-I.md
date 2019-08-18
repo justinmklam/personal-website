@@ -4,7 +4,7 @@ draft = false
 image = "/imgs/blog-imgs/making-haikuza/8Y0EDX4VP9.jpg"
 layout = "single-blog"
 tagline = "The development of a laughable haiku generator in Python."
-tags = ["programming", "python"]
+tags = ["programming"]
 title = "The Making of Project Haikuza: Part 1"
 type = "blog"
 
@@ -60,8 +60,8 @@ Interesting. Maybe I can create a Mad Lib-based language model that can learn th
 The plan was to create a pseudo-smart script (of sorts) that did the following:
 
 1. Import a collection of human-written haikus
-1. Extract the POS tags for each line
-1. Construct a database of 5 and 7 syllable POS phrases
+2. Extract the POS tags for each line
+3. Construct a database of 5 and 7 syllable POS phrases
 
 The implementation looked something like this:
 

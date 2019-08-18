@@ -4,7 +4,7 @@ draft = false
 image = "/imgs/blog-imgs/ping-sweeper/banner2.PNG"
 layout = "single-blog"
 tagline = "Life is better when you live asynchronously."
-tags = ["programming", "c sharp"]
+tags = ["programming"]
 title = "Synchronous vs Asynchronous Ping Sweep in C# Windows Form"
 type = "blog"
 

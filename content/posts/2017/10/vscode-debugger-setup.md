@@ -4,7 +4,7 @@ draft = false
 image = "/imgs/blog-imgs/vscode-debugger/debugger.png"
 layout = "single-blog"
 tagline = "Because this editor is awesome and I want to use it for everything."
-tags = ["programming", "embedded", "stm32"]
+tags = ["programming", "embedded"]
 title = "Debugger Setup with GDB + OpenOCD in Visual Studio Code"
 type = "blog"
 
