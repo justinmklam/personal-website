@@ -7,6 +7,7 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "docs"
 canonifyurls = false
+disableKinds = ["section", "taxonomyTerm"]
 
 googleAnalytics = "UA-85178257-1"
 disqusShortname = "justinmklam"
