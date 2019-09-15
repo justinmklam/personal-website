@@ -11,7 +11,6 @@ body {
 
 .row h4 {
 	line-height: 1.4;
-	font-style: italic;
 	color: #888
 }
 
@@ -113,6 +112,8 @@ a:hover, a:focus,
 
 .page-header,
 .navbar-nav,
+.project-description a,
+.project-description h4,
 .blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4,
 .blog-title {
 	font-family: "DM Sans", sans-serif;
