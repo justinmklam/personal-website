@@ -1,18 +1,17 @@
 +++
+layout =    "single-blog"
+type =      "blog"
+
 date = "2016-04-22T22:38:31-07:00"
+draft =     false
+
 
 title = "MECH 423: Mechatronics Product Design"
-
 tagline = "Over-engineering the soft-boiled egg with the ultimate kitchen gadget, PerfEGGct™."
+image =     ""
+tags =      ["electrical", "school"]
 
-summary = "Gone are the days of blindly timing and boiling eggs, being left with nothing but a solid, chalky yolk. As part of our final year mechatronics engineering project, we developed a non-invasive device to measure the oscillation of an egg suspended on a spring. By analyzing the oscillatory response of the egg, we were able to determine the yolk consistency with (questionable) accuracy."
-
-type = "mecha"
-
-image = "/imgs/perfeggct/IMG_0461_square.jpg"
-
-clickable = true
-draft = false
+aliases =   ["/projects/mecha/perfeggct/"]
 +++
 
 __Background:__ When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
@@ -20,7 +19,7 @@ __Background:__ When a hard boiled egg is spun on a table, it rotates freely sin
 > "If it's worth doing, it's worth overdoing." - Jaime Hyneman
 
 __Objective:__ Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.
-	
+
 __Motivation:__ As part of our final year engineering course, we were tasked to create a mechatronics device of our choosing. This project was heavily inspired by [Matthias Wandel](https://www.youtube.com/channel/UCckETVOT59aYw80B36aP9vw) and his [boiled egg hardness tester](https://www.youtube.com/watch?v=Cw9w1CZkTr0).
 
 __Functional Requirements:__
@@ -33,7 +32,7 @@ __Functional Requirements:__
 + C# interface
 + MATLAB data analysis
 
-__Limitations:__ This prototype was developed in 3 weeks during school and has approximately 80% repeatability. 
+__Limitations:__ This prototype was developed in 3 weeks during school and has approximately 80% repeatability.
 
 __Partner:__ [Justin Liang](http://justin-liang.com)
 

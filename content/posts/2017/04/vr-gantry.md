@@ -1,13 +1,19 @@
 +++
-clickable = true
+layout =    "single-blog"
+type =      "blog"
+
 date    = "2017-04-04T09:26:50-08:00"
-hidden  = false
-image   = "/imgs/vr-gantry/vr-gantry-300x300.gif"
-summary = "Current high-performance virtual reality headsets require cable connections to a host computer. For room-scale VR, users must always be mindful of this cable since it poses not only as a tripping hazard, but also a detraction from the otherwise immersive VR experience. This autonomous cable management system is one solution to sucky cables."
+draft =     false
+
 tagline = "Tired of cables breaking presence in virtual reality? We are too."
 title   = "Overhead Robotic Gantry for Tethered VR Headsets"
-type    = "mecha"
+image =     ""
+tags =      ["work", "programming", "design", "electrical"]
+
+aliases =   ["/projects/mecha/vr-gantry/"]
 +++
+
+# Project Overview
 
 __Objective:__ Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.
 
@@ -16,7 +22,7 @@ __Motivation:__ An extravagant party prop for an evening at CES 2017, hosted by 
 __Features:__
 
 + CoreXY planar gantry design
-+ System built with 8020 aluminum extrusions and laser cut acrylic components 
++ System built with 8020 aluminum extrusions and laser cut acrylic components
 + Stepper motor control through Teensy 3.2
 + HTC Vive pose tracking through C++
 + Patent pending
@@ -33,7 +39,7 @@ __Sources:__
 + Medium blog post titled [_Tired of cables in VR? We are too._](https://medium.com/@mistywest/tired-of-cables-in-virtual-reality-we-are-too-efeab5606bf0)
 + CES Founders and Friends 2017 Photo Gallery by [Natalia Leva](https://natalialeva.shootproof.com/gallery/3918977/home)
 
-__Acknowledgements:__ 
+__Acknowledgements:__
 
 This project was completed under [MistyWest](https://mistywest.com/) with the help of:
 
@@ -48,11 +54,11 @@ This project was completed under [MistyWest](https://mistywest.com/) with the he
 {{<img caption="The gantry being used at a penthouse party hosted by MistyWest during CES 2017. (Photo by Natalia Leva)"
 src="/imgs/vr-gantry/DSC1764.jpg" >}}
 
-## The Development Story
+# The Development Story
 
 We wanted a solution to increase and maintain presence in virtual reality; having to worry about tripping over the cable takes away from it. What we needed was a way to mimic a cable sherpa, following our every movement to prevent tension in the cable and entanglement around our legs. Whether we were moving forward, backward, left, right, or turning around, we wanted a way to roam freely as if virtual reality was already wireless.
 
-### Stage 1: Design and Testing 
+## Design and Testing
 
 We wanted to make this as quickly as possible, so I designed the rig using off-the-shelf parts and laser cut acrylic parts.
 
@@ -70,7 +76,7 @@ An overview of the software algorithm to parse the user's current position and c
 
 {{<img caption="Flowchart of the software algorithm." src="/imgs/vr-gantry/SoftwareFlowchart.png" >}}
 
-### Stage 2: User Testing
+## User Testing
 
 The results were so promising, in fact, that we decided to strap it to the ceiling and do some user testing. The results were... Loud due to the rattling and vibrations from the stepper motors. System responsiveness was slow, so more work needed to be done.
 
@@ -83,9 +89,9 @@ Many revisions later, and the rig was finally working as expected!
 <!--{{<img caption="Achievement unlocked: Freedom of movement with wired VR."
 src="/imgs/vr-gantry/vr-gantry.gif" >}}-->
 
-### Stage 3: Making it "Portable"
+## Making it "Portable"
 
-Since this was an internal project with [MistyWest](https://mistywest.com/), the value was in showing this prototype around. The social media content was one thing, but physically bringing it around was thought to have additional "wow" factors. Since CES 2017 was coming up and MistyWest would be hosting a penthouse party during one of the evenings, it was time to make this thing free standing. 
+Since this was an internal project with [MistyWest](https://mistywest.com/), the value was in showing this prototype around. The social media content was one thing, but physically bringing it around was thought to have additional "wow" factors. Since CES 2017 was coming up and MistyWest would be hosting a penthouse party during one of the evenings, it was time to make this thing free standing.
 
 Continuing the theme with 8020 extrusions, the external frame was assembled and tested.
 
@@ -98,7 +104,7 @@ src="/imgs/vr-gantry/IMG_20161216_161302.jpg" >}}
 {{<img caption="Yes, it is in fact portable!"
 src="/imgs/vr-gantry/IMG_20161222_114418.jpg" >}}
 
-### Stage 4: Mission Complete
+## Mission Complete
 
 On January 6, 2017, the rig was set up in Las Vegas and (after some headache and remote debugging) the rig came alive at the [Founders and Friends 2017](https://mistywest.com/founders-friends-2017/). It was a huge hit amongst the tech enthusiasts and ran beautifully through the night.
 
