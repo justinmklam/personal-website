@@ -7,6 +7,9 @@ layout =    "single-blog"
 tags =      ["electrical", "programming", "embedded"]
 tagline =   "Immersing food in a temperature controlled water bath."
 title =     "ESP8266 Sous Vide Controller"
+aliases = [
+    "/projects/elec/sous-vide/"
+]
 +++
 
 # Project Summary
