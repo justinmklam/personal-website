@@ -26,4 +26,4 @@ Header append Vary: Accept-Encoding
 </IfModule>
 
 ## Page redirects
-Redirect /projects/elec/sous-vide/ /posts/2017/05/sous-vide-controller/
+Redirect 301 /projects/elec/sous-vide/ /posts/2017/05/sous-vide-controller/
