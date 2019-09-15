@@ -17,7 +17,7 @@ nav[data-toggle='toc'] .nav > li > a {
 nav[data-toggle='toc'] .nav > li > a:hover,
 nav[data-toggle='toc'] .nav > li > a:focus {
   padding-left: 19px;
-  color: #23527c;
+  color: #405dcf;
   text-decoration: none;
   background-color: transparent;
 }
@@ -25,7 +25,7 @@ nav[data-toggle='toc'] .active .nav-link,
 nav[data-toggle='toc'] .active .nav-link:hover,
 nav[data-toggle='toc'] .active .nav-link:focus {
   /* font-weight: bold; */
-  color: #23527c;
+  color: #405dcf;
   background-color: transparent;
 }
 
@@ -67,7 +67,7 @@ nav[data-toggle='toc'] .nav .active .nav .nav-link {
 }
 
 nav[data-toggle='toc'] .nav .active .active .nav-link {
-  color: #23527c;
+  color: #405dcf;
   background-color: transparent;
 }
 #toc {

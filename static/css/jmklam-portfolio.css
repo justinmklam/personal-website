@@ -29,6 +29,20 @@ footer {
 	margin: 35px 0
 }
 
+.blog-nav-btn,
+.blog-content a {
+	color: inherit;
+	font-weight: bold;
+	background-image: linear-gradient(180deg,transparent 86%,rgba(101,125,225,.4) 0);
+}
+
+a,
+a:hover, a:focus,
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #405dcf;
+}
+
 .col-centered {
 	float: none;
 	margin: 0 auto

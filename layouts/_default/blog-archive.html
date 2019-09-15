@@ -32,7 +32,7 @@
                 <h2 id="{{.Key | urlize}}">{{.Key}}</h2>
                 <hr>
             </div>
-            
+
             <!--Loop through posts per year-->
             {{ range sort .Pages "Date" "desc" }}
             <div class="row">
@@ -81,8 +81,8 @@
 
             <!--Return to recent posts button-->
             <div class="text-right">
-                <a style="color:#555" href="/blog">
-                    Recent posts<span style="font-size:0.83em" class="glyphicon glyphicon-menu-right"></span>
+                <a class="blog-nav-btn"  href="/blog">
+                    Recent Posts<span style="font-size:0.83em" class="glyphicon glyphicon-menu-right"></span>
                 </a>
             </div>
 
@@ -95,7 +95,7 @@
 	{{ partial "footer-js.html" . }}
 
 </body>
-    
+
 {{ partial "footer.html" . }}
 
 </html>
