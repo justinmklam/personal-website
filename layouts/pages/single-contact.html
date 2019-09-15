@@ -6,21 +6,17 @@
     {{ partial "header.html" . }}
 </head>
 
-<style>
-	a:hover {text-decoration: underline;}
-</style>
-
 <body>
 
     {{ partial "navbar.html" . }}
 
     <!-- Page Content -->
     <div class="container" id="page-container">
-        
+
         <div class="col-sm-8 col-centered">
-            <h1 class="page-header">{{ .Title }}</h1>		            
+            <h1 class="page-header">{{ .Title }}</h1>
             {{ .Content }}
-			
+
 			<br><br>
 			<!-- Email and phone contact -->
 			<div class="row text-nowrap">
@@ -29,8 +25,8 @@
 					<!--<br><i class="fa fa-phone"></i> <br>-->
 				</div>
 				<div class="col-xs-3">
-					<a style="color:inherit;" href=mailto:{{ .Site.Params.email }} >{{ .Site.Params.email }}</a> <br>
-					<!--<br><a style="color:inherit;" href="tel:+1{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a> <br>-->
+					<a class="contact-links" href=mailto:{{ .Site.Params.email }} >{{ .Site.Params.email }}</a> <br>
+					<!--<br><a class="contact-links" href="tel:+1{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a> <br>-->
 				</div>
 			</div>
 			<!-- Divider -->
@@ -46,24 +42,24 @@
 					<i class="fa fa-facebook"></i> <br><br>
 				</div>
 				<div class="col-xs-3">
-					<a style="color:inherit;" href="http://{{ .Site.Params.linkedin }}" >{{ .Site.Params.linkedin }}</a> <br><br>
-					<a style="color:inherit;" href="http://{{ .Site.Params.github }}" >{{ .Site.Params.github }}</a> <br><br>
-					<a style="color:inherit;" href="http://{{ .Site.Params.instagram }}" >{{ .Site.Params.instagram }}</a> <br><br>
-					<a style="color:inherit;" href="http://{{ .Site.Params.facebook }}" >{{ .Site.Params.facebook }}</a> <br><br>
+					<a class="contact-links" href="http://{{ .Site.Params.linkedin }}" >{{ .Site.Params.linkedin }}</a> <br><br>
+					<a class="contact-links" href="http://{{ .Site.Params.github }}" >{{ .Site.Params.github }}</a> <br><br>
+					<a class="contact-links" href="http://{{ .Site.Params.instagram }}" >{{ .Site.Params.instagram }}</a> <br><br>
+					<a class="contact-links" href="http://{{ .Site.Params.facebook }}" >{{ .Site.Params.facebook }}</a> <br><br>
 				</div>
 			</div>
-			
+
         </div>
 
-		
-		
-    </div>	
+
+
+    </div>
     <!-- /.container -->
 
 	{{ partial "footer-js.html" . }}
 
 </body>
-    
+
 {{ partial "footer.html" . }}
 
 </html>

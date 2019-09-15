@@ -29,6 +29,10 @@ footer {
 	margin: 35px 0
 }
 
+.contact-links {
+	color: inherit;
+}
+
 .blog-nav-btn,
 .blog-content a {
 	color: inherit;
