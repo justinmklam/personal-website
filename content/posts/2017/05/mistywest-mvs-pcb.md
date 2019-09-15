@@ -1,21 +1,23 @@
 +++
-clickable = true
-date = "2017-05-09T21:26:18-07:00"
-hidden = false
-image = "/imgs/mw-mvs-elec/PCB-1.jpg"
-summary = "Needing various power rails off a 4-cell LiPo battery pack, I designed a PCB with overcurrent/undervoltage protection and 8.4V/7.4/5V buck regulators."
-tagline = "Design of a power management board in Altium."
-title = "Battery Power Protection and Regulation PCB"
-type = "elec"
-categories = "elec"
+layout =    "single-blog"
+type =      "blog"
 
+date =      2017-05-09T11:30:56-07:00
+draft =     false
+
+title =     "Battery Power Protection and Regulation PCB"
+image =     "/imgs/mw-mvs-elec/IMG_20170524_162252.jpg"
+tags =      ["electrical"]
+tagline =   "Design of a power management board in Altium."
+
+aliases =   ["/projects/elec/mistywest-mvs"]
 +++
 
-__Objective:__ 
+__Objective:__
 
 + Design a custom PCB to protect and regulate a 14.8V LiPo battery for use with an autonomous RC car
 
-__Features:__ 
+__Features:__
 
 + 12V undervoltage and 10A overcurrent protection
 + 8.4V, 7.4V, and 5V regulated outputs
@@ -32,11 +34,11 @@ __Skills:__
 + Board bring-up
 + Hardware debugging
 
-__Achievement Unlocked:__ 
+__Achievement Unlocked:__
 
 + A mechanical engineer doing electrical engineering
 
-__Acknowledgements:__ 
+__Acknowledgements:__
 
 This project was completed under [MistyWest](https://mistywest.com/) with the guidance of Dave MacLeod, Div Gill, and Ryan Walker.
 

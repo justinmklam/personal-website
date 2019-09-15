@@ -1,19 +1,16 @@
 +++
+layout =    "single-blog"
+type =      "blog"
+
 date = "2016-05-25T17:29:58-07:00"
+draft =     false
 
-draft = false
-
-title = "Adjustable Portable Power Supply"
-
+title =     "Adjustable Portable Power Supply"
+image =     "/imgs/power_supply/powersupply.jpg"
+tags =      ["electrical"]
 tagline = "Providing power to the people. Or in this case, hobby projects."
 
-summary = "Tired of using a spliced USB cable or combining batteries to achieve a desired voltage, an inexpensive boost-buck converter was paired with the input from a laptop power brick to supply variable voltage."
-
-type = "elec"
-
-image = "/imgs/power_supply/powersupply_300x300.jpg"
-
-clickable = true
+aliases =   ["projects/elec/power-supply/"]
 +++
 
 __Objective:__ Build a cheap, portable, variable DC power supply.
@@ -25,11 +22,6 @@ __Limitations:__
 + Only DC voltages available
 + Max current is a function of input power and desired voltage (I=P/V)
 + Current limiting feature is non-existent, so must be careful to not let the genie out of circuits
-
-<br>
-
-{{< img src="/imgs/power_supply/powersupply.jpg" 
-caption="Power supply in action." >}}
 
 {{< img src="/imgs/power_supply/IMG_20160525_143029.jpg"
 caption="Internals of the power supply." >}}
