@@ -126,6 +126,10 @@ a:hover, a:focus,
     letter-spacing: 2px;
 }
 
+.navbar-nav>li>a {
+	text-transform: none;
+}
+
 #blog {
 	padding-left: 25px;
 	padding-right: 25px;
