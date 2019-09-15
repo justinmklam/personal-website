@@ -113,6 +113,14 @@ a:hover, a:focus,
 	font-family: "DM Sans", sans-serif;
 }
 
+.navbar-brand {
+    padding: 17.5px 30px;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
 #blog {
 	padding-left: 25px;
 	padding-right: 25px;
