@@ -29,7 +29,7 @@
             {{ range (where .Site.Pages "Type" "blog").GroupByDate "2006"}}
             <div class="row">
                 <!--Print year-->
-                <h2 id="{{.Key | urlize}}">{{.Key}}</h2>
+                <h2 class="archive-date-category" id="{{.Key | urlize}}">{{.Key}}</h2>
                 <hr>
             </div>
 
