@@ -33,7 +33,9 @@ footer {
 	color: inherit;
 }
 
+.blog-tag,
 .blog-nav-btn,
+.page-content a,
 .blog-content a {
 	color: inherit;
 	font-weight: bold;
