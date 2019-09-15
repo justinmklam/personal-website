@@ -12,11 +12,11 @@
 
     <!-- Page Content -->
     <div class="container" id="page-container">
-        
-        <div class="col-sm-8 col-centered">
-            <h1 class="page-header">{{ .Title }}</h1>		            
+
+        <div class="col-sm-8 col-centered page-content">
+            <h1 class="page-header">{{ .Title }}</h1>
             {{ .Content }}
-			
+
             <br>
 
             <!--Page footer-->
@@ -24,26 +24,26 @@
                 <!--Date stamp-->
                 <div class="col-sm-9 col-sm-push-3">
                     <p class="datestamp"><span class="glyphicon glyphicon-time"></span> Published on {{ .Date.Format "January 2, 2006" }}</p>
-                </div>   
+                </div>
                 <!--Back to view all page-->
                 <div class="col-sm-3 col-sm-pull-9">
                     <a class="text-left" href="/view-all">
                         <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>All Projects
                     </a>
-                </div>                             
+                </div>
             </div>
-			
+
         </div>
 
-		
-		
-    </div>	
+
+
+    </div>
     <!-- /.container -->
 
 	{{ partial "footer-js.html" . }}
 
 </body>
-    
+
 {{ partial "footer.html" . }}
 
 </html>
