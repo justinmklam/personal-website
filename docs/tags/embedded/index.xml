@@ -20,5 +20,17 @@
       <description>Visual Studio Code&amp;rsquo;s combination of functionality, customizability, and aesthetics makes it one of my favourite code editors. As such, I was set on making it work with embedded development since I was getting started with the STM32 line of microcontrollers. I was following the steps outlined in Mastering STM32 by Carmine Noviello (which is an excellent resource) until it said to use Eclipse, because life&amp;rsquo;s too short to use software with unnecessary bloat.</description>
     </item>
     
+    <item>
+      <title>ESP8266 Sous Vide Controller</title>
+      <link>http://justinmklam.com/posts/2017/05/sous-vide-controller/</link>
+      <pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate>
+      
+      <guid>http://justinmklam.com/posts/2017/05/sous-vide-controller/</guid>
+      <description>Project Summary Objective: Create a small, modular controller to regulate the temperature of a water bath.
+Motivation: To get in on this cooking fad without dropping fat stacks of cash on an immersion circulator.
+Features:
+ Crisp 0.96&amp;rdquo; OLED display Pushbutton rotary encoder provides simple user interaction Removable temperature plug through standard 3-pos audio connector Temperature controlled outlet to be used with any heating element (ie. rice cooker, slow cooker, etc.</description>
+    </item>
+    
   </channel>
 </rss>

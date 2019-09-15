@@ -1,14 +1,15 @@
 +++
-clickable = true
+image = "/imgs/sous-vide/IMG_8522.jpg"
 date = "2017-02-05T12:28:27-08:00"
-hidden = false
-image = "/imgs/sous-vide/controller-sq.jpg"
-summary = "By separating the internal and external cooking procedures, a perfect steak with no internal temperature gradient can be easily achieved. Cooking sous vide provides reliable, consistent, and precise results every time. An ESP8266 wifi chip was used to monitor and maintain the temperature controlled water."
-tagline = "Immersing food in a temperature controlled water bath."
-title = "ESP8266 Sous Vide Controller"
-type = "elec"
-
+type =      "blog"
+draft =     false
+layout =    "single-blog"
+tags =      ["electrical", "programming", "embedded"]
+tagline =   "Immersing food in a temperature controlled water bath."
+title =     "ESP8266 Sous Vide Controller"
 +++
+
+# Project Summary
 
 __Objective:__ Create a small, modular controller to regulate the temperature of a water bath.
 
@@ -37,6 +38,8 @@ src="/imgs/sous-vide/IMG_8508.jpg" >}}
 {{<img caption="Push button toggles between three states: main monitoring screen, set cooking time, and set cooking temperature."
 src="/imgs/sous-vide/ui-demo.gif" >}}
 
+# The Long Version
+
 ## The Sous Vide Story
 
 You may have heard people rant about this fancy new cooking method that's all the rage right now, but of course you shrug it off as a fad. But here you are, intrigued enough to be reading this article about the very thing you previously rolled your eyes at. So what the heck is sous vide anyway? The peeps over at [ChefSteps](https://www.chefsteps.com/activities/what-is-sous-vide) have an answer:
@@ -58,7 +61,7 @@ src="/imgs/sous-vide/Sous-Vide-ENG.jpg" >}}-->
 
 Wanting to get in on this craze without spending a fortune (especially if it turned out to be a novelty), I set off to make my own. If all a sous vide device does is temperature control of a heating element, then it wouldn't be anything my recent mechatronics degree couldn't handle.
 
-__Equipment:__ 
+__Equipment:__
 
 + Rice cooker to act as the heating element and water vessel
 + [80 GPH Acquarium pump](https://www.amazon.ca/gp/product/B00EWENKXO/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1) to circulate the water
@@ -100,7 +103,7 @@ No project is complete without analyzing data! The main unknowns thus far:
 1. Temperature stability improvements with a water circulator
 1. Is a bang-bang controller sufficient or is PID required?
 
-To assess these questions, I setup the ESP8266 to push live temperature data to an online web server. Through [MQTT](http://mqtt.org/), I was able to send live temperature data from the controller to [Adafruit.IO](https://io.adafruit.com/). This service (in open beta at the time of writing) allows dashboards and data feeds to be easily created for real-time monitoring of anything. 
+To assess these questions, I setup the ESP8266 to push live temperature data to an online web server. Through [MQTT](http://mqtt.org/), I was able to send live temperature data from the controller to [Adafruit.IO](https://io.adafruit.com/). This service (in open beta at the time of writing) allows dashboards and data feeds to be easily created for real-time monitoring of anything.
 
 {{<img caption="The ESP8266 logs temperature data through Adafruit servers. Data is displayed through their live dashboard feed."
 src="/imgs/sous-vide/adafruit-dashboard.png" >}}
@@ -124,12 +127,12 @@ src="/imgs/sous-vide/plot_benchmarks.png" >}}
 {{<img caption="Small aquarium pump used to circulate the water."
 src="/imgs/sous-vide/IMG_8543.jpg" >}}
 
-Time to actually cook with this thing! After trying out various foods, the data shows that the temperature stability is surprisingly stable given the simple on-off temperature control. 
+Time to actually cook with this thing! After trying out various foods, the data shows that the temperature stability is surprisingly stable given the simple on-off temperature control.
 
 {{<img caption="Log of cook times."
 src="/imgs/sous-vide/plot_cook times.png" >}}
 
-Quantifying the ripple with some simple analysis shows that the average standard deviation for these four cooking trials was ±0.4°C, where the steak had the highest deviation of ±0.6°C. 
+Quantifying the ripple with some simple analysis shows that the average standard deviation for these four cooking trials was ±0.4°C, where the steak had the highest deviation of ±0.6°C.
 
 ```no-highlight
     Trout Fillet at 48C for 59 mins
@@ -151,7 +154,7 @@ Quantifying the ripple with some simple analysis shows that the average standard
     --> AVERAGE STANDARD DEV: ±0.38°C
 ```
 
-Thus, using a simple temperature control implementation with a water circulator yields quite satisfying results. 
+Thus, using a simple temperature control implementation with a water circulator yields quite satisfying results.
 
 ## The Verdict
 

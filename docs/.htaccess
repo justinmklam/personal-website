@@ -24,3 +24,6 @@ ErrorDocument 404 /404.html
 Header append Vary: Accept-Encoding
 </FilesMatch>
 </IfModule>
+
+## Page redirects
+Redirect /projects/elec/sous-vide/ /posts/2017/05/sous-vide-controller/
