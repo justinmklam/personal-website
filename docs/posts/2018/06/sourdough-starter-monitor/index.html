@@ -32,9 +32,9 @@
 <meta name="author" content="Justin Lam">
 
 
-<link rel="stylesheet" href="/css/jmklam-portfolio-bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap-modified.min.css">
 <link rel="stylesheet" href="/css/jmklam-portfolio.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab|DM+Sans:500&display=swap">
 
 
 
@@ -43,6 +43,7 @@
 
 
 <link rel="stylesheet" href="/css/bootstrap-toc.css">
+
 
 </head>
 
@@ -92,11 +93,11 @@
 
     
     <div class="container" id="page-container">
-        
+
         
         <div class="row">
                 <div class="col-sm-2">
-                    </div>            
+                    </div>
             <div class="col-sm-8" id="blog">
                 <br>
                 <h2 data-toc-skip class="blog-title">Monitoring the Fermentation of Sourdough Starter with Computer Vision</h2>
@@ -104,16 +105,17 @@
                 <p class="datestamp-index"><span class="fa fa-calendar-o"></span>&nbsp Posted on June 24, 2018
 <em>&nbsp &middot &nbsp&nbsp15 min read &nbsp &middot &nbsp
     
-    <a href="/tags/programming">#programming&nbsp</a>
+    <a class="blog-tag" href="/tags/programming">#programming&nbsp</a>
     
-</em></p>
-                
+</em>
+</p>
+
                 
                 <a href=/imgs/blog-imgs/sourdough-starter-monitor/Crumb-comparison.jpeg>
                     <img class="img-responsive img-span-row blog-header-img" src="/imgs/blog-imgs/sourdough-starter-monitor/Crumb-comparison.jpeg">
                 </a>
-                
-                <div class="blog-content">
+
+                <div class="blog-content page-content">
                     
 
 <p>Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you&rsquo;ll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.</p>
@@ -200,21 +202,20 @@ The solution:</p>
 
 <ol>
 <li>Create an empty file on the SD&rsquo;s boot partition called <code>ssh</code> to enable it.</li>
-
-<li><p>Create another file named <code>wpa_supplicant.conf</code> with the following content:</p>
+<li>Create another file named <code>wpa_supplicant.conf</code> with the following content:</li>
+</ol>
 
 <pre><code>country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-ssid=&quot;your_real_wifi_ssid&quot;
-scan_ssid=1
-psk=&quot;your_real_password&quot;
-key_mgmt=WPA-PSK
+    ssid=&quot;your_real_wifi_ssid&quot;
+    scan_ssid=1
+    psk=&quot;your_real_password&quot;
+    key_mgmt=WPA-PSK
 }
-</code></pre></li>
-</ol>
+</code></pre>
 
 <p>Connect the camera module and boot it up. You can use something like <a href="https://angryip.org/download/#linux">Angry IP Scanner</a> to find its IP address, and with any luck you should be able to SSH into it from your own computer!</p>
 
@@ -616,11 +617,11 @@ plt.show()
 </div>
 
                 </div>
-                
+
                 
                 <br>
                 <div class="text-left">
-                    <a href="/blog">
+                    <a class="blog-nav-btn" href="/blog">
                         <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
                     </a>
                 </div>
@@ -642,18 +643,18 @@ plt.show()
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-                
-                
+
+
             </div>
 
             <div class="col-sm-1">
                     <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
                 </div>
             
-            
+
 
         </div>
-    </div>	
+    </div>
     
 
         
@@ -684,7 +685,7 @@ plt.show()
     </script>
 
 </body>
-    
+
 
 <footer>
 	<div class="col-lg-8 col-centered">

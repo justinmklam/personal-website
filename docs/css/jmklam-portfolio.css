@@ -11,13 +11,17 @@ body {
 
 .row h4 {
 	line-height: 1.4;
-	font-style: italic;
 	color: #888
 }
 
+.page-header {
+	margin-top: 30px;
+	text-transform: inherit;
+	letter-spacing: inherit;
+}
+
 .blog-tag-header {
-	margin-bottom: 0;
-	text-transform: none;
+	text-transform: lowercase;
 	letter-spacing: normal;
 }
 
@@ -27,6 +31,26 @@ p {
 
 footer {
 	margin: 35px 0
+}
+
+.contact-links {
+	color: inherit;
+}
+
+.blog-tag,
+.blog-nav-btn,
+.page-content a,
+.blog-content a {
+	color: inherit;
+	font-weight: bold;
+	background-image: linear-gradient(180deg,transparent 86%,rgba(101,125,225,.6) 0);
+}
+
+a,
+a:hover, a:focus,
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #405dcf;
 }
 
 .col-centered {
@@ -83,7 +107,28 @@ footer {
 }
 
 .blog-title {
-	margin-top: 5px
+	margin-top: 5px;
+}
+
+.page-header,
+.navbar-nav,
+.project-description a,
+.project-description h4,
+.blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4,
+.blog-title {
+	font-family: "DM Sans", sans-serif;
+}
+
+.navbar-brand {
+    padding: 17.5px 30px;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navbar-nav>li>a {
+	text-transform: none;
 }
 
 #blog {
@@ -152,9 +197,6 @@ pre {
 	color: #c0c5ce
 }
 
-.page-header {
-	margin-top: 30px;
-}
 h4 {
 	margin-top: 20px
 }
@@ -241,7 +283,7 @@ h4 {
 
 .blog-content h4 {
 	font-size: 16px;
-	font-style: italic;
+	font-style: normal;
 	counter-reset: h5counter;
 }
 
