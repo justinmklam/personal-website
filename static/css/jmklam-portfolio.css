@@ -106,7 +106,7 @@ a:hover, a:focus,
 	margin-top: 5px;
 }
 
-/* .navbar-brand, */
+.page-header,
 .navbar-nav,
 .blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4,
 .blog-title {
@@ -189,6 +189,8 @@ pre {
 
 .page-header {
 	margin-top: 30px;
+	text-transform: inherit;
+	letter-spacing: inherit;
 }
 h4 {
 	margin-top: 20px
