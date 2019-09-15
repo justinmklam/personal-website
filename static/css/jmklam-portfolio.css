@@ -15,9 +15,14 @@ body {
 	color: #888
 }
 
+.page-header {
+	margin-top: 30px;
+	text-transform: inherit;
+	letter-spacing: inherit;
+}
+
 .blog-tag-header {
-	margin-bottom: 0;
-	text-transform: none;
+	text-transform: lowercase;
 	letter-spacing: normal;
 }
 
@@ -187,11 +192,6 @@ pre {
 	color: #c0c5ce
 }
 
-.page-header {
-	margin-top: 30px;
-	text-transform: inherit;
-	letter-spacing: inherit;
-}
 h4 {
 	margin-top: 20px
 }
