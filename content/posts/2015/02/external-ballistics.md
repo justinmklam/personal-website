@@ -1,13 +1,16 @@
 +++
-clickable = true
-date = "2015-02-19T12:36:19-07:00"
-hidden = false
-image = "/imgs/external_ballistics/Ballistics-Simulation-300x300.jpg"
-summary = "Long range trajectories are heavily susceptible to external factors including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth. One solution is to connect a computer to a manual targeting system and estimate the corrected target location by accounting for these external factors. A basic program was developed to simulate and calculate the required correction."
+layout =    "single-blog"
+type =      "blog"
+
+date =      2015-02-19T11:38:35-07:00
+draft =     true
+
 tagline = "Predicting projectile trajectories of shots, shots, shots, shots, shots, shots."
 title = "External Ballistics Simulation"
-type = "software"
-draft = false
+image =     ""
+tags =      ["programming"]
+
+aliases =   ["/projects/software/external-ballistics/"]
 +++
 
 __Background:__ including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth.
@@ -24,10 +27,10 @@ __Limitations:__
 
 __Framework:__ Python(x,y) 2.7.9.0
 
-{{<img caption="Visualization of release angles between 0 and 90° given the same muzzle velocity." 
+{{<img caption="Visualization of release angles between 0 and 90° given the same muzzle velocity."
 src="/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all_missed.png" >}}
 
-{{<img caption="Flowchart of the algorithm to determine the required release angle." 
+{{<img caption="Flowchart of the algorithm to determine the required release angle."
 src="/imgs/external_ballistics/Ballistics-simulation-flowchart.png" >}}
 
 {{<img caption="Visualization of the algorithm on the release angle increment. The magenta trajectory is 5° higher than the red trajectory; the green is 2.5° higher than the magenta, and so on."

@@ -1,13 +1,16 @@
 +++
-clickable = true
-date = "2015-07-19T12:36:28-07:00"
-hidden = false
-image = "/imgs/haikuza/Haikuza-twitter-screencap-v4-e1458001635541-300x300.png"
-summary = "Spamming your phone's predictive keyboard is usually enough justification to avoid trying to computationally bang out the works of Shakespeare. Futile goals aside, an algorithm was developed to generate haikus using natural language processing and song lyrics."
-tagline = "Contributing to society with an interactive, Twitter-based haiku generator."
+layout =    "single-blog"
+type =      "blog"
+
+date =      2015-07-10T11:42:26-07:00
+draft =     true
+
 title = "Project Haikuza"
-type = "software"
-draft = false
+tagline = "Contributing to society with an interactive, Twitter-based haiku generator."
+image =     ""
+tags =      ["programming"]
+
+aliases =   ["/projects/software/haikuza"]
 +++
 
 __Objective:__ Develop an algorithm to generate haikus using song lyrics.</p>
