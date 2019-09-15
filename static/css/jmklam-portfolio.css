@@ -103,7 +103,14 @@ a:hover, a:focus,
 }
 
 .blog-title {
-	margin-top: 5px
+	margin-top: 5px;
+}
+
+/* .navbar-brand, */
+.navbar-nav,
+.blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4,
+.blog-title {
+	font-family: "DM Sans", sans-serif;
 }
 
 #blog {
@@ -261,7 +268,7 @@ h4 {
 
 .blog-content h4 {
 	font-size: 16px;
-	font-style: italic;
+	font-style: normal;
 	counter-reset: h5counter;
 }
 
