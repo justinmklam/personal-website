@@ -44,7 +44,7 @@ footer {
 .blog-content a {
 	color: inherit;
 	font-weight: bold;
-	background-image: linear-gradient(180deg,transparent 86%,rgba(101,125,225,.4) 0);
+	background-image: linear-gradient(180deg,transparent 86%,rgba(101,125,225,.6) 0);
 }
 
 a,
