@@ -3,13 +3,13 @@ date = "2016-09-24T12:58:43-07:00"
 draft = false
 title = "About"
 headshot = "/imgs/headshot.png"
-layout = "single-about"
+layout = "about"
 hidedate = true
+aliases = ["/pages/about"]
 
 [menu.main]
     name = "About"
     identifier = "about"
-    url = "/pages/about/"
 	weight = 3
 +++
 
