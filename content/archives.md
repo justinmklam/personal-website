@@ -2,10 +2,11 @@
 date = "2019-09-15T16:56:13-07:00"
 draft = false
 title = "archives"
+layout = "archives"
+aliases = ["/blog-archive/"]
 
 [menu.main]
-	name = "Archive"
-	url = "/blog-archive"
+	name = "Archives"
 	weight = 2
 +++
 
