@@ -1,23 +1,21 @@
 +++
-date = "2014-08-18T22:12:57-07:00"
+layout =    "single-blog"
+type =      "blog"
 
-draft = false
+date = "2014-08-18T22:12:57-07:00"
+draft =     false
 
 title = "Award Winning Bamboo Bike"
-
 tagline = "An organic, gluten-free mode of transportation."
 
-summary = "Bamboo bicycles provide road vibration absorption, a higher strength to weight ratio than steel, and comparable stiffness to aluminum. Exceeding the threshold for Vancouverite-hipster was the goal of this build."
+image =     ""
+tags =      ["design"]
 
-type = "mech"
-
-image = "/imgs/bamboo_bike/IMG_5359-e1458003099757-300x300.jpg"
-
-clickable = true
+aliases =   ["/projects/mech/bamboo-bike/"]
 +++
 
 <p><strong>Objective</strong>: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.</p>
-            
+
 <p><strong>Challenges</strong>:</p>
 
 <ul>

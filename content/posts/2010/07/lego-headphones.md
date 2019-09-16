@@ -1,13 +1,16 @@
 +++
-clickable = true
+layout =    "single-blog"
+type =      "blog"
+
 date = "2010-07-10T12:37:00-07:00"
-hidden = false
-image = "/imgs/lego_headphones/P1080061-e1458003880523-300x300.jpg"
-summary = "Combining two favourite past-times of music and LEGO resulted in the generation of a novel, functional pair of headphones. Batteries not included. Some assembly required."
-tagline = "Making music with the world's favourite construction toy."
+draft =     false
+
 title = "LEGO Headphones"
-type = "mech"
-draft = false
+tagline = "Making music with the world's favourite construction toy."
+image =     ""
+tags =      ["design"]
+
+aliases =   ["/projects/mech/lego-headphones"]
 +++
 
 __Background:__ I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I'm quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go. No tools necessary!

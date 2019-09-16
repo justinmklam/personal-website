@@ -1,13 +1,16 @@
 +++
-clickable = true
+layout =    "single-blog"
+type =      "blog"
+
 date = "2014-08-29T12:37:42-07:00"
-hidden = false
-image = "/imgs/car2go/car2go-300x300.png"
-summary = "A novel method of bowling was introduced at a car2go marketing event. Using a non-permanent method of atachment, a roof-mounted bowling rig was designed and created."
+draft =     false
+
+title = "Bowling With car2go"
 tagline = "Roof-mounted rig for vehicular bowling at the 2014 Vancouver Fringe Festival."
-title = "car2go Bowling"
-type = "mech"
-draft = false
+image =     ""
+tags =      ["design"]
+
+aliases =   ["/projects/mech/car2go/"]
 +++
 
 <p><strong>Objective</strong>: Design a roof-mounted bowling rig for a car2go marketing event.</p>

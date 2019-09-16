@@ -1,13 +1,16 @@
 +++
-clickable = true
+layout =    "single-blog"
+type =      "blog"
+
 date = "2014-11-24T12:37:55-07:00"
-hidden = true
-image = "/imgs/trailrider/TrailRider-Overview-1-e1458002590550-300x300.png"
-summary = "The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility. As a team of mechanical engineering undergrads, we explored areas of improvement and developed a new design to incorporate these features."
+draft =     false
+
 tagline = "Designing a next-generation, offroad wheelchair."
 title = "MECH 328: TrailRider Design Project"
-type = "mech"
-draft = false
+image =     ""
+tags =      ["design", "school"]
+
+aliases =   ["/projects/mech/mech-328-trailrider.md"]
 +++
 
 __Background:__ The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility.  It is intended for a seated rider propelled and balanced by assistants.
