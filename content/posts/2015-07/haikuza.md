@@ -3,7 +3,7 @@ layout =    "single-blog"
 type =      "blog"
 
 date =      2015-07-10T11:42:26-07:00
-draft =     true
+draft =     false
 
 title = "Project Haikuza"
 tagline = "Contributing to society with an interactive, Twitter-based haiku generator."

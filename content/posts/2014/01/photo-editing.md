@@ -3,7 +3,7 @@ layout =    "single-blog"
 type =      "blog"
 
 date =      2014-01-12T11:45:14-07:00
-draft =     true
+draft =     false
 
 tagline = "Automagically removing obstructions in an image."
 title = "MATLAB Photo Editing Script"

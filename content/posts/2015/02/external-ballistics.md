@@ -3,7 +3,7 @@ layout =    "single-blog"
 type =      "blog"
 
 date =      2015-02-19T11:38:35-07:00
-draft =     true
+draft =     false
 
 tagline = "Predicting projectile trajectories of shots, shots, shots, shots, shots, shots."
 title = "External Ballistics Simulation"
