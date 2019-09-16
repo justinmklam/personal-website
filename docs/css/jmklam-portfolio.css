@@ -112,6 +112,8 @@ a:hover, a:focus,
 
 .page-header,
 .navbar-nav,
+.archive-header,
+.archive-date-category,
 .project-description a,
 .project-description h4,
 .blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4,
@@ -129,6 +131,18 @@ a:hover, a:focus,
 
 .navbar-nav>li>a {
 	text-transform: none;
+}
+
+.archive-blog-metadata {
+	margin-bottom:0px;
+	font-size:12px;
+	font-style: italic;
+	color: #777;
+}
+
+.archive-blog-tagline {
+	font-size:16px;
+	margin-top: 5px;
 }
 
 #blog {
@@ -193,8 +207,8 @@ pre code {
 }
 
 pre {
-	background-color: #2B303B;
-	color: #c0c5ce
+	/* Must match the background defined by highlight.js syntax theme */
+	background-color: #fafafa;
 }
 
 h4 {
