@@ -10,23 +10,23 @@ hidedate = true
     name = "About"
     identifier = "about"
     url = "/pages/about/"
-	weight = 1
+	weight = 3
 +++
 
 I grew up watching Star Wars, and like any other eight-year old boy, I wanted to become a Jedi Knight. Maneuvering starfighters through the Hoth asteroid field whilst in aerial combat, jousting battle droids wielding nothing but a lightsaber, and having my hand sliced off to make space for my own mechno-arm were the epitomes of my childhood fantasy.
 
-Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of developing a steering system for a model hovercraft providing optimized maneuverability, attacking design challenges with a pen and paper, and studying the possibilities of bionic technology. My passion is taking part in the vanguard of mechanical and electrical design. 
+Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of developing a steering system for a model hovercraft providing optimized maneuverability, attacking design challenges with a pen and paper, and studying the possibilities of bionic technology. My passion is taking part in the vanguard of mechanical and electrical design.
 
 My experience encompasses rapid prototyping, manufacturing, medical devices, automation, robotics, and control systems. As a young engineer, I am constantly looking for opportunities to expand and develop my skill set.
 
 <br>
 <p class="text-right">	<i>
-Justin M.K. Lam 
+Justin M.K. Lam
 <br>
 Mechatronics Engineer
 <br>
 </i>
-</p> 
+</p>
 
 ### Personal Achievements
 
@@ -39,7 +39,7 @@ Mechatronics Engineer
 + First time being featured on a website. Annealing 3D printed plastics blog post shared on [Hackaday](https://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/).
 
 ##### 2015
-+ Abstract for "Surgical Device Innovation for Low Resource Settings" published in the [Canadian Journal of Surgery](http://canjsurg.ca/wp-content/uploads/2015/10/58-4-S157.pdf). 
++ Abstract for "Surgical Device Innovation for Low Resource Settings" published in the [Canadian Journal of Surgery](http://canjsurg.ca/wp-content/uploads/2015/10/58-4-S157.pdf).
 + First time public speaking. Presented at the Bethune Round Table annual meeting in Calgary, AB, and at the UBC Orthopaedics Research Day in Vancouver, BC.
 
 ##### 2014

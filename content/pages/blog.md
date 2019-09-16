@@ -6,6 +6,6 @@ title = "blog"
 [menu.main]
 	name = "Blog"
 	url = "/blog"
-	weight = 4
+	weight = 1
 +++
 
