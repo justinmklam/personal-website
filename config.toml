@@ -17,7 +17,6 @@ FootnoteReturnLinkContents = "↩"
 [taxonomies]
 	tag = "tags"
 	type = "types"
-	category = "categories"
 
 [params]
 	footer = "Justin MK Lam"
