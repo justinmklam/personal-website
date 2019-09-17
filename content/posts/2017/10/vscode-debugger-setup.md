@@ -2,7 +2,7 @@
 date = "2017-10-29T14:24:52-07:00"
 draft = false
 image = "/imgs/blog-imgs/vscode-debugger/debugger.png"
-layout = "single-blog"
+layout = "single"
 tagline = "Because this editor is awesome and I want to use it for everything."
 tags = ["programming", "embedded"]
 title = "Debugger Setup with GDB + OpenOCD in Visual Studio Code"
@@ -38,12 +38,12 @@ Open the Debug panel (```CTRL + SHIFT + D```) and select "Add Configuration > GD
 		"type": "gdb",
 		"request": "launch",
 		"cwd": "${workspaceRoot}",
-		"target": "${workspaceRoot}/.pioenvs/nucleo_f303k8/firmware.elf", 
+		"target": "${workspaceRoot}/.pioenvs/nucleo_f303k8/firmware.elf",
 		"gdbpath" : "C:/STM32Toolchain/gcc-arm/5.4 2016q3/bin/arm-none-eabi-gdb.exe",
 		"autorun": [
 			"target remote localhost:3333",
 			"symbol-file ./.pioenvs/nucleo_f303k8/firmware.elf",
-			"monitor reset" 
+			"monitor reset"
 			]
 	}
 
@@ -58,7 +58,7 @@ Before entering debug mode (```F5```), you need to launch the OpenOCD server. Op
 
 {{<img caption="Adding breakpoints and stepping through code on an STM32 through VS Code!" src="/imgs/blog-imgs/vscode-debugger/debugger.png" >}}
 
-Unfortunately you must always start the OpenOCD server before hitting ```F5```, but fortunately you can just hit ```Up``` in the terminal to recall the last command. 
+Unfortunately you must always start the OpenOCD server before hitting ```F5```, but fortunately you can just hit ```Up``` in the terminal to recall the last command.
 
 # Troubleshooting
 

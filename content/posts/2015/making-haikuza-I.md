@@ -2,7 +2,7 @@
 date = "2015-07-12T23:49:52-07:00"
 draft = false
 image = "/imgs/blog-imgs/making-haikuza/8Y0EDX4VP9.jpg"
-layout = "single-blog"
+layout = "single"
 tagline = "The development of a laughable haiku generator in Python."
 tags = ["programming"]
 title = "The Making of Project Haikuza: Part 1"
@@ -137,7 +137,7 @@ Five Syllable Lines:
         [u'NOUN', u'NOUN', u'NOUN'],
         [u'DET', u'NOUN', u'NOUN'],
         [u'NOUN', u'VERB', u'NOUN'],
-        [u'VERB', u'ADV', u'ADP', u'NOUN', u'NOUN'] 
+        [u'VERB', u'ADV', u'ADP', u'NOUN', u'NOUN']
 
 Seven Syllable Lines:
         [u'DET', u'NOUN', u'VERB', u'ADP', u'DET', u'ADJ'],

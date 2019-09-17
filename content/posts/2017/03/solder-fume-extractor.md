@@ -2,7 +2,7 @@
 date = "2017-03-25T21:14:29-07:00"
 draft = false
 image = "/imgs/blog-imgs/solder-fume-extractor/solder-fume-banner.jpg"
-layout = "single-blog"
+layout = "single"
 tags = ["3d printing"]
 title = "Hakko-Style Solder Fume Extractor"
 tagline = "Inhaling 3D printer melted plastic instead of toxic solder fumes."

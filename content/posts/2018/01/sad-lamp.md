@@ -2,7 +2,7 @@
 date = "2018-01-12T09:42:57-08:00"
 draft = false
 image = "/imgs/blog-imgs/sad-lamp/Verilux Spectral Response - Comparison.PNG"
-layout = "single-blog"
+layout = "single"
 tagline = "Shining the light of truth on a $70 bulb."
 tags = ["physics"]
 title = "Measuring the Spectral Characteristics of a Light Therapy Lamp"
@@ -12,7 +12,7 @@ type = "blog"
 
 **Disclaimer:** _Light therapy is one method of easing seasonal affective disorder (SAD); some people swear by it whereas others remain unaffected. This blog post does not intend to refute the effectiveness of light therapy, but rather to dig deeper into the technology behind these light therapy lamps to better educate fellow consumers._
 
-Ah, the winter blues of Vancouver, BC. While some days bring bluebird skies and [fresh pow](https://media1.tenor.com/images/25e5bfdf6e824bfa330964b5e0e48855/tenor.gif?itemid=5287297) for skiing, other days are downright gloomy. Spending this past Christmas in Singapore meant warm, sunny, and +25°C weather, which is quite atypical of how most Canadians spend their winters. 
+Ah, the winter blues of Vancouver, BC. While some days bring bluebird skies and [fresh pow](https://media1.tenor.com/images/25e5bfdf6e824bfa330964b5e0e48855/tenor.gif?itemid=5287297) for skiing, other days are downright gloomy. Spending this past Christmas in Singapore meant warm, sunny, and +25°C weather, which is quite atypical of how most Canadians spend their winters.
 
 However, coming back to the overcast, bone-chilling, gray, and wet Vancouver winter was a climate shock my body had yet to feel before. A week or so of jetlag-ridden sleep cycles and my circadian rhythm was back to normal, but I couldn't scratch the itch of yearning for sun and truly despising this city's gloomy winter weather.
 
@@ -42,15 +42,15 @@ But before we get into the details of spectral characteristics, let's shed _a bi
 ## Illumination Nation
 
 ### Overview of Light Sources
-Different sources of light can have significantly different spectral characteristics. The figure below shows how six different light sources vary greatly at each wavelength. 
+Different sources of light can have significantly different spectral characteristics. The figure below shows how six different light sources vary greatly at each wavelength.
 
 {{<img caption="Typical spectral characteristics and corresponding colours of various lighting." src="/imgs/blog-imgs/sad-lamp/spectral_responses2.png" link="http://housecraft.ca/eco-friendly-lighting-colour-rendering-index-and-colour-temperature/" link-text="HouseCraft" >}}
 
-+ **Daylight** 
++ **Daylight**
     + Rounded peak around 450 nm
     + Broad spectrum light intensity
     + 5000 - 6500K
-+ **Incandenscent** 
++ **Incandenscent**
     + Increases from 400 nm to 700 - 800 nm
     + Burning of tungsten filament inside a vacuum bulb produces a very warm glow (in addition to a great amount of heat!)
     + 2400 K
@@ -58,7 +58,7 @@ Different sources of light can have significantly different spectral characteris
     + Distinct peaks around 420 nm, 490 nm, 550 nm, and 610 nm
     + Peaks are due to the fluorescence of excited phosphor within the glass tube
     + 2700 - 6500 K
-    
+
 {{<img caption="Electricity ionizes the mercury and argon gas, producing UV light which hits the phosphor coating and finally fluoresces white." src="/imgs/blog-imgs/sad-lamp/image-cfl.png" link="https://www.naturalblaze.com/wp-content/uploads/2017/10/image-cfl.png" link-text="Natural Blaze" >}}
 
 + **Halogen**
@@ -72,7 +72,7 @@ Different sources of light can have significantly different spectral characteris
 + **Warm White LED**
     + Shallow peak around 450nm, large peak around 550 nm
     + Combining different phosphors change the fluorescent characteristics of the emitted light
-    + 2700 K 
+    + 2700 K
 
 <!-- {{<img caption=". [Source: Serendip Bryn Mawr]" src="/imgs/blog-imgs/sad-lamp/incandescentbulb.jpg" >}} -->
 
@@ -108,15 +108,15 @@ With our [Ocean Optics visible light spectrometer](https://oceanoptics.com/produ
 
 ### To CFL or To Not CFL? That is the Question
 
-Looking at the figure below, the trace in blue is the response with the frosted plastic in front of the bulb (ie. the lamp fully assembled). Surprise, surprise: the distinct peaks suggest that it is in fact a compact fluorescent bulb. 
+Looking at the figure below, the trace in blue is the response with the frosted plastic in front of the bulb (ie. the lamp fully assembled). Surprise, surprise: the distinct peaks suggest that it is in fact a compact fluorescent bulb.
 
 {{<img caption="Spectral responses with and without the UV diffuser/filter." src="/imgs/blog-imgs/sad-lamp/Verilux Comparison.png" >}}
 
-However, a typical fluorescent bulb has sharp peaks and a flat baseline. What's up with the rounded peak around 450 nm? 
+However, a typical fluorescent bulb has sharp peaks and a flat baseline. What's up with the rounded peak around 450 nm?
 
 {{<img caption="Standard fluorescent tube." src="/imgs/blog-imgs/sad-lamp/spectral_responses_fluorescent.png" link="http://housecraft.ca/eco-friendly-lighting-colour-rendering-index-and-colour-temperature/" link-text="HouseCraft">}}
 
-Digging a bit deeper, it appears that the additional peak is due to the different colour temperature. Based on the spectral data collected by [Advanced Aquarist](http://www.advancedaquarist.com/2010/8/aafeature) shown below, the rounded peak is likely from an additional/different phosphor inside the tube. This creates additional fluorescence to shift the visible colour temperature towards a more daylight-esque tone (by adding more blue content). On the other hand, the soft white bulb shows a flat spectral base, as expected from our previous graphs. 
+Digging a bit deeper, it appears that the additional peak is due to the different colour temperature. Based on the spectral data collected by [Advanced Aquarist](http://www.advancedaquarist.com/2010/8/aafeature) shown below, the rounded peak is likely from an additional/different phosphor inside the tube. This creates additional fluorescence to shift the visible colour temperature towards a more daylight-esque tone (by adding more blue content). On the other hand, the soft white bulb shows a flat spectral base, as expected from our previous graphs.
 
 {{<img caption="Spectral response of a daylight CFL bulb, 6500K (left) and soft white, 2700K (right)." src="/imgs/blog-imgs/sad-lamp/cfl_comparison.jpg" link="http://www.advancedaquarist.com/2010/8/aafeature" link-text="Advanced Aquarist" >}}
 
@@ -134,7 +134,7 @@ To put a number to this, we can numerically integrate the spectral power density
 
 {{<img caption="Comparison of total irradiance with and without the diffuser." src="/imgs/blog-imgs/sad-lamp/chart.png" >}}
 
-Integrating the UV region between 350 - 400 nm shows that there's still a bit of UV light that gets through. However, it's of insignificant amount compared to the UV exposure from other sources (ie. sun, TV, computer screen, etc.) that they can say that there's "effectively no UV radiation" from this lamp. 
+Integrating the UV region between 350 - 400 nm shows that there's still a bit of UV light that gets through. However, it's of insignificant amount compared to the UV exposure from other sources (ie. sun, TV, computer screen, etc.) that they can say that there's "effectively no UV radiation" from this lamp.
 
 {{<img caption="Comparison of irradiance in the UV range, with and without the diffuser." src="/imgs/blog-imgs/sad-lamp/chart (1).png" >}}
 
@@ -142,9 +142,9 @@ Integrating the UV region between 350 - 400 nm shows that there's still a bit of
 
 # The Light at the End of the Tunnel
 
-I hope this journey through light and its spectral characteristics was both entertaining and educational. With any luck, you may have learned a thing or two (and gained an appreciation) about all the different light sources surrounding you everyday. 
+I hope this journey through light and its spectral characteristics was both entertaining and educational. With any luck, you may have learned a thing or two (and gained an appreciation) about all the different light sources surrounding you everyday.
 
-Although you can build your own light therapy lamp for a fraction of its retail purchasing cost, that may not be a viable (or convenient) option for everyone. Additionally, light therapy is apparently more dependent on the brightness output rather than the actual wavelengths; as long as it's bright and white(-ish) then it should work for light therapy! 
+Although you can build your own light therapy lamp for a fraction of its retail purchasing cost, that may not be a viable (or convenient) option for everyone. Additionally, light therapy is apparently more dependent on the brightness output rather than the actual wavelengths; as long as it's bright and white(-ish) then it should work for light therapy!
 
 Whatever you choose to do with this information is up to you, so light up your own path to mitigating your SAD-ness :)
 

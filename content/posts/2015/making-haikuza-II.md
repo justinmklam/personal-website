@@ -2,7 +2,7 @@
 date = "2015-08-06T23:49:59-07:00"
 draft = false
 image = "/imgs/blog-imgs/making-haikuza/VL01D336R8.jpg"
-layout = "single-blog"
+layout = "single"
 tagline = "When the generator gets a bit smarter, but still not smart enough."
 tags = ["programming"]
 title = "The Making of Project Haikuza: Part 2"

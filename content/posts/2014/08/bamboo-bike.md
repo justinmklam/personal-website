@@ -1,5 +1,5 @@
 +++
-layout =    "single-blog"
+layout =    "single"
 type =      "blog"
 
 date = "2014-08-18T22:12:57-07:00"

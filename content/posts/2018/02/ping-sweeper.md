@@ -2,7 +2,7 @@
 date = "2018-02-09T17:02:25-08:00"
 draft = false
 image = "/imgs/blog-imgs/ping-sweeper/banner2.PNG"
-layout = "single-blog"
+layout = "single"
 tagline = "Life is better when you live asynchronously."
 tags = ["programming"]
 title = "Synchronous vs Asynchronous Ping Sweep in C# Windows Form"
@@ -10,11 +10,11 @@ type = "blog"
 
 +++
 
-As a mechatronics engineer (in training), sometimes I like to pretend that I also know how to program. 
+As a mechatronics engineer (in training), sometimes I like to pretend that I also know how to program.
 
 [^*]: Engineer in Training. EGBC please don't take my license away.
 
-In my most recent adventures to software land at [MistyWest](https://mistywest.com/), I needed to write an application in C# that involved doing a ping sweep to find devices that were physically connected through ethernet. Since Google and Stack Overflow are my two best friends, I was able to find (what seemed to be) an off-the-net solution quite quickly. 
+In my most recent adventures to software land at [MistyWest](https://mistywest.com/), I needed to write an application in C# that involved doing a ping sweep to find devices that were physically connected through ethernet. Since Google and Stack Overflow are my two best friends, I was able to find (what seemed to be) an off-the-net solution quite quickly.
 
 However, despite this being a relatively well known objective with well-known libraries to accomplish it, my journey to developing a solution was not as easy as I originally thought. The following post outlines the things I tried before arriving to a working solution, which hopefully is at least mildly interesting and/or educational. Also if you're a software engineer reading this, please go easy on my code. Or not.
 
@@ -22,7 +22,7 @@ However, despite this being a relatively well known objective with well-known li
 
 ## First Attempt: Some-ping Simple
 
-A quick Google search showed that pinging addresses is dead easy in C#. Using the `System.Net.NetworkInformation` namespace, we can easily use the `Ping.Send()` command to check if a remote address is alive. 
+A quick Google search showed that pinging addresses is dead easy in C#. Using the `System.Net.NetworkInformation` namespace, we can easily use the `Ping.Send()` command to check if a remote address is alive.
 
 ```c#
 using System.Net.NetworkInformation;
@@ -129,7 +129,7 @@ And the second:
 
 > `Ping.SendPingAsync()`: Sends an Internet Control Message Protocol (ICMP) echo message to a computer, and receives a corresponding ICMP echo reply message from that computer **as an asynchronous operation**. - [MSDN](https://msdn.microsoft.com/en-us/library/system.net.networkinformation.ping.sendpingasync(v=vs.110).aspx)
 
-Based on these method descriptions, it appears that `SendAsync()` does not guarantee asynchronous operation. Since we just learned how threading in console applications vs windows forms is dealt with differently, this may be why it didn't work as expected in the latter case. What we want are guaranteed asynchronous operations, so hopefully `SendPingAsync()` should perform to its name. 
+Based on these method descriptions, it appears that `SendAsync()` does not guarantee asynchronous operation. Since we just learned how threading in console applications vs windows forms is dealt with differently, this may be why it didn't work as expected in the latter case. What we want are guaranteed asynchronous operations, so hopefully `SendPingAsync()` should perform to its name.
 
 (One can only assume this second method was added after-the-fact when Microsoft realized that developers wanted a truly asynchronous ping...)
 
@@ -151,11 +151,11 @@ After .NET 4.0, we have the following options:
 + ThreadPool.QueueUserWorkItem
 + Threads
 
-Discussing each of these methods is beyond the scope of this post, but you can read more on Cleary's article on [various implementations of asynchronous background tasks](http://blog.stephencleary.com/2010/08/various-implementations-of-asynchronous.html). In short, using `Task`-returning asynchronous methods is the best overall method to use. 
+Discussing each of these methods is beyond the scope of this post, but you can read more on Cleary's article on [various implementations of asynchronous background tasks](http://blog.stephencleary.com/2010/08/various-implementations-of-asynchronous.html). In short, using `Task`-returning asynchronous methods is the best overall method to use.
 
 Kind of.
 
-For my application, sending each ping to its own task using `async/await` is logical, as I could then call `Task.WhenAll()` to wait until all pings have been received back to the main thread. 
+For my application, sending each ping to its own task using `async/await` is logical, as I could then call `Task.WhenAll()` to wait until all pings have been received back to the main thread.
 
 However, I could still use `BackgroundWorker` for SFTP file transfer from the remote devices to a local directory (required in my final application, but not included in this ping sweep demo). Doing so would prevent the main UI thread from hanging while files are being transferred. Although `async/await` may also be used for this, `BackgroundWorker` seemed to be the more appropriate (and easier) implementation since each file is serially transferred from remote to local device. Additionally, it's just drag and drop in WinForms!
 

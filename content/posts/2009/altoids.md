@@ -7,7 +7,7 @@ type = "blog"
 image = "/imgs/altoids/Altoids-charger_1.jpg"
 clickable = true
 draft = false
-layout = "single-blog"
+layout = "single"
 tags = ["electrical"]
 +++
 

@@ -2,20 +2,20 @@
 date = "2018-06-24T17:50:22-07:00"
 draft = false
 image = "/imgs/blog-imgs/sourdough-starter-monitor/Crumb-comparison.jpeg"
-layout = "single-blog"
+layout = "single"
 tagline = "Bread is love, bread is life; would it be wrong to call it my wife?"
 tags = ["programming"]
 title = "Monitoring the Fermentation of Sourdough Starter with Computer Vision"
 type = "blog"
 
 +++
-Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you'll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away. 
+Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you'll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.
 
 Despite it being relatively easy to turn dough into something that looks and feels like bread, the challenge is in squeezing every possible ounce of flavour and texture (using only those four ingredients) to achieve the embodiment of a true loaf of bread. The secret to artisinal bread is **all in the fermentation.** A baker's skill is in their ability to manage and control the fermentation process, which is usually achieved through countless months and/or years of trial and error.
 
-**But what if there was a better way to understand what happens during the fermentation process?** 
+**But what if there was a better way to understand what happens during the fermentation process?**
 
-In this blog post, we dive into the world of wild yeast (commonly known as sourdough starter) by tracking its growth through timelapses, automated image analysis, and cool graph animations. Read on to find out more! 
+In this blog post, we dive into the world of wild yeast (commonly known as sourdough starter) by tracking its growth through timelapses, automated image analysis, and cool graph animations. Read on to find out more!
 
 <div class="row captioned-img">
     <video class="img-responsive img-content" autoplay="autoplay" loop="loop" controls>
@@ -41,7 +41,7 @@ For context, a typical process for making an artisinal loaf is roughly described
 5. Let rest. Flavours are developed during this bulk fermentation period.
 6. Shape the loaf and place it in a proofing basket.
 7. Let rest. The final volume is achieved during this second fermentation.
-8. Bake. 
+8. Bake.
 9. Place on cooling rack when done, and listen to the song of the crackling crust while you wait to cut it open.
 
 Sourdough starter is a living organism, and as such should be treated with kindness, respect, and most importantly, food. A well-fed starter is an active and happy one; if we can get a feel for how the starter behaves on a day-to-day basis during its feeding (ie. when the fermentation occurs), it may help clear up at least one of the variables in bread baking.
@@ -347,7 +347,7 @@ The timelapses below show the sourdough starter from different dates. The bounda
 
 ## The Discussion
 
-The animations are cool to watch, but what can we interpret from it? Plotting all the growths (as shown below), we see that they seem more similar than different. The peaks hover around 60-80%, and the rate of growth coming up to the peak are similar. 
+The animations are cool to watch, but what can we interpret from it? Plotting all the growths (as shown below), we see that they seem more similar than different. The peaks hover around 60-80%, and the rate of growth coming up to the peak are similar.
 
 {{<img-span caption="All the timelapses plotted to compare normalized growth. Horizontal dotted line indicates 50% mark." src="/imgs/blog-imgs/sourdough-starter-monitor/all-growths_1.png" >}}
 
@@ -363,7 +363,7 @@ On May 29th, we began to feed our sourdough starter after many months of sporadi
 
 ### Bringing the Starter Back to Life
 
-Previous to June 23, the starter was neglected for a week. After the first (overnight) feeding, it showed little signs of growth. However, feeding it again around noon and tracking its progress shows that the growth springs back up to ~80%, which was around the previous maximum from before. 
+Previous to June 23, the starter was neglected for a week. After the first (overnight) feeding, it showed little signs of growth. However, feeding it again around noon and tracking its progress shows that the growth springs back up to ~80%, which was around the previous maximum from before.
 
 {{<img-span caption="What doesn't kill you makes you stronger (or at least as strong as before). First feeding is shifted because I forgot to start the timelapse right away." src="/imgs/blog-imgs/sourdough-starter-monitor/refeeding_1.png" >}}
 

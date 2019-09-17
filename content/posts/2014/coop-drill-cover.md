@@ -7,7 +7,7 @@ tagline = "Quantifying the performance of a surgical drill designed for low-reso
 title = "Co-op: Drill Cover User Study"
 type = "blog"
 draft = false
-layout = "single-blog"
+layout = "single"
 tags = ["work"]
 +++
 
@@ -15,9 +15,9 @@ __Background:__ Drill availability is a major limitation in developing countrie
 
 __Objective:__ Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.
 
-__Abstract__: [Surgical Device Innovation for Low-Resource Settings: An Alternative for Bone Drilling](http://canjsurg.ca/wp-content/uploads/2015/10/58-4-S157.pdf) 
+__Abstract__: [Surgical Device Innovation for Low-Resource Settings: An Alternative for Bone Drilling](http://canjsurg.ca/wp-content/uploads/2015/10/58-4-S157.pdf)
 
-__Company__: [Arbutus Medical](http://arbutusmedical.ca) 
+__Company__: [Arbutus Medical](http://arbutusmedical.ca)
 
 # The Drill Cover Solution
 
@@ -31,7 +31,7 @@ src="/imgs/drill_cover/drillcover.PNG" >}}
 # The User Study
 
 Owing to limited access to surgical power drills, orthopedic surgeons in low-resource settings commonly use manual drills or nonsterile hardware drills. We propose the use of a drill cover solution: a sterilizable fabric bag plus sealed surgical chuck adaptor to permit the safe use of hardware drills for orthopedic surgery.
-The purpose of this study was to compare the drilling performance of covered hardware drills with manual drills and standard surgical power drills. 
+The purpose of this study was to compare the drilling performance of covered hardware drills with manual drills and standard surgical power drills.
 <br><br>
 
 {{< img caption="From left to right: commercial surgical drill, drill cover solution, manual hand-crank drill."

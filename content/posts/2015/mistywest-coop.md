@@ -2,7 +2,7 @@
 date = "2015-06-23T21:30:17-07:00"
 draft = false
 image = "/imgs/blog-imgs/mistywest-coop/Enclosure overview.JPG"
-layout = "single-blog"
+layout = "single"
 tagline = "Building a clean-room enclosure for testing air quality monitors."
 tags = ["work"]
 title = "Co-op: Air Quality Calibration Chamber"

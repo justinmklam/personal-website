@@ -2,7 +2,7 @@
 date = "2015-07-08T23:14:15-07:00"
 draft = false
 image = "/imgs/blog-imgs/howe-sound/STB_5903-PANO.jpg"
-layout = "single-blog"
+layout = "single"
 title = "Places To Be: Howe Sound Crest Trail"
 tagline = "A multi-day hike not suitable for beginners. Except I didn't listen."
 type = "blog"

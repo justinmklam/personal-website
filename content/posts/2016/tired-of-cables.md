@@ -2,7 +2,7 @@
 date = "2016-11-15T23:02:43-07:00"
 draft = false
 image = "/imgs/blog-imgs/tired-of-cables/0-bQFzgpiEsQUziwJN.jpg"
-layout = "single-blog"
+layout = "single"
 title = "Tired of Cables in VR? We Are Too."
 tagline = "When VR gives you lemons, you make a lemonade-making robot."
 type = "blog"
