@@ -7,7 +7,7 @@ draft =     false
 
 tagline = "Predicting projectile trajectories of shots, shots, shots, shots, shots, shots."
 title = "External Ballistics Simulation"
-image =     ""
+image =     "/imgs/external_ballistics/Ballistics-Simulation_0-deg-Scope-Angle_all_missed.png"
 tags =      ["programming"]
 
 aliases =   ["/projects/software/external-ballistics/"]

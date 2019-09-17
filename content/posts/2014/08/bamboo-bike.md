@@ -8,7 +8,7 @@ draft =     false
 title = "Award Winning Bamboo Bike"
 tagline = "An organic, gluten-free mode of transportation."
 
-image =     ""
+image =     "/imgs/bamboo_bike/IMG_5359-e1424407598804.jpg"
 tags =      ["design"]
 
 aliases =   ["/projects/mech/bamboo-bike/"]
@@ -32,7 +32,6 @@ aliases =   ["/projects/mech/bamboo-bike/"]
 
 <br>
 
-{{<img caption="Build complete and ready to roll." src="/imgs/bamboo_bike/IMG_5359-e1424407598804.jpg">}}
 {{<img caption="Track bicycle custom geometry." src="/imgs/bamboo_bike/Bike-frame-geometry-1024x567.png">}}
 {{<img caption="Frame dimensions with tubes shown to determine the required cut lengths of bamboo." src="/imgs/bamboo_bike/Drawing-Bike-frame-dimensions-1024x680.png">}}
 {{<img caption="Frame jig modeled in SolidWorks." src="/imgs/bamboo_bike/Bamboo-bike-in-jig-1-1024x572.jpg">}}

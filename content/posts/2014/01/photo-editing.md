@@ -7,7 +7,7 @@ draft =     false
 
 tagline = "Automagically removing obstructions in an image."
 title = "MATLAB Photo Editing Script"
-image =     ""
+image =     "/imgs/photo_editing/Image-test_all.png"
 tags =      ["programming"]
 
 aliases =   ["/projects/software/photo-editing/"]

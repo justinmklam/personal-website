@@ -7,7 +7,7 @@ draft =     false
 
 title = "MECH 458: Capstone 3D Optical Well Imager"
 tagline = "Integrating computer vision with automated pipeline inspection."
-image =     ""
+image =     "/imgs/capstone/System-evaluation_2.png"
 tags =      ["design", "school"]
 
 aliases =   ["/projects/mech/mech-458-capstone/"]

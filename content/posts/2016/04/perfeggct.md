@@ -8,8 +8,8 @@ draft =     false
 
 title = "MECH 423: Mechatronics Product Design"
 tagline = "Over-engineering the soft-boiled egg with the ultimate kitchen gadget, PerfEGGct™."
-image =     ""
-tags =      ["electrical", "school"]
+image =     "/imgs/perfeggct/IMG_0407.JPG"
+tags =      ["design", "electrical", "school"]
 
 aliases =   ["/projects/mecha/perfeggct/"]
 +++

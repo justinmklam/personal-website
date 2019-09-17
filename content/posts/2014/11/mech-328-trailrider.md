@@ -7,7 +7,7 @@ draft =     false
 
 tagline = "Designing a next-generation, offroad wheelchair."
 title = "MECH 328: TrailRider Design Project"
-image =     ""
+image =     "/imgs/trailrider/Side-view_annotated-large.png"
 tags =      ["design", "school"]
 
 aliases =   ["/projects/mech/mech-328-trailrider.md"]

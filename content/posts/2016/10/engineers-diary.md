@@ -6,7 +6,7 @@ date =      2016-10-01T11:34:47-07:00
 draft =     false
 
 title =     "Engineer's Diary"
-image =     ""
+image =     "/imgs/engineers-diary/screencap2.PNG"
 tagline =   "Getting into the habit of writing stuff down because I don't trust my memory."
 tags =      ["programming"]
 

@@ -7,7 +7,7 @@ draft =     false
 
 title = "LEGO Headphones"
 tagline = "Making music with the world's favourite construction toy."
-image =     ""
+image =     "/imgs/lego_headphones/P1080061-e1424407288767.jpg"
 tags =      ["design"]
 
 aliases =   ["/projects/mech/lego-headphones"]

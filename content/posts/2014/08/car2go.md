@@ -7,7 +7,7 @@ draft =     false
 
 title = "Bowling With car2go"
 tagline = "Roof-mounted rig for vehicular bowling at the 2014 Vancouver Fringe Festival."
-image =     ""
+image =     "/imgs/car2go/20140907_165320.jpg"
 tags =      ["design"]
 
 aliases =   ["/projects/mech/car2go/"]

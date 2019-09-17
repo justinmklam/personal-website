@@ -7,7 +7,7 @@ draft =     false
 
 title = "Project Haikuza"
 tagline = "Contributing to society with an interactive, Twitter-based haiku generator."
-image =     ""
+image =     "/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png"
 tags =      ["programming"]
 
 aliases =   ["/projects/software/haikuza"]
@@ -37,9 +37,6 @@ __Challenges:__
 __Framework:__ Python 2.7.9
 
 __Source:__ [Github](https://github.com/justinmklam/project-haikuza)
-
-{{<img caption="Screencap of @thehaikuza's Twitter profile"
-src="/imgs/haikuza/Haikuza-twitter-screencap-v3-e1458090798553.png">}}
 
 {{<img caption="Raspberry Pi 1 Model B running @thehaikuza, 24/7!"
 src="/imgs/haikuza/IMG_20150803_180047-1024x768.jpg">}}

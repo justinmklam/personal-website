@@ -7,7 +7,7 @@ draft =     false
 
 tagline = "Tired of cables breaking presence in virtual reality? We are too."
 title   = "Overhead Robotic Gantry for Tethered VR Headsets"
-image =     ""
+image =     "/imgs/vr-gantry/DSC1764.jpg"
 tags =      ["work", "programming", "design", "electrical"]
 
 aliases =   ["/projects/mecha/vr-gantry/"]
