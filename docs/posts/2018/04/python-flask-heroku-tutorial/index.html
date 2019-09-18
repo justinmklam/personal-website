@@ -62,24 +62,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            
+
             <a class="navbar-brand" href="http://justinmklam.com">Justin Lam</a>
-            
+
         </div>
         
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                
-				
 
-                <li><a href="/view-all">Portfolio</a>
 				
+					<li><a href="/">Blog</a></li>
 				
-					<li><a href="/pages/about/">About</a></li>
+					<li><a href="/archives/">Archives</a></li>
 				
-					<li><a href="/pages/contact/">Contact</a></li>
+					<li><a href="/about/">About</a></li>
 				
-					<li><a href="/blog">Blog</a></li>
+					<li><a href="/contact/">Contact</a></li>
 				
 
             </ul>
@@ -88,8 +86,9 @@
     </div>
     
 </nav>
-    
+
 </html>
+
 
     
     <div class="container" id="page-container">
@@ -364,19 +363,19 @@ if __name__ == '__main__':
         &lt;/form&gt;
     &lt;/p&gt;
 &lt;/div&gt;
-    
+
 &lt;!-- Output column (right) --&gt;
 &lt;div class=&quot;col-md-6&quot;&gt;
     &lt;h2&gt;Output Recipe&lt;/h2&gt;
     &lt;p&gt;
         &lt;!-- Display each converted line from the flash method (from Flask) --&gt;
-        {% with messages = get_flashed_messages() %} 
+        {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
                     {{ message }}
                     &lt;br&gt;
                 {% endfor %}
-            {% endif %} 
+            {% endif %}
         {% endwith %}
     &lt;/p&gt;
 &lt;/div&gt;

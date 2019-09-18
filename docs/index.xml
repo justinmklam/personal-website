@@ -6,44 +6,17 @@
     <description>Recent content on Justin MK Lam | Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Sep 2016 22:18:22 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 15 Sep 2019 16:56:13 -0700</lastBuildDate>
     
 	<atom:link href="http://justinmklam.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Mechatronics</title>
-      <link>http://justinmklam.com/sections/mechatronics/</link>
-      <pubDate>Sat, 24 Sep 2016 22:18:22 -0700</pubDate>
+      <title>Archives</title>
+      <link>http://justinmklam.com/archives/</link>
+      <pubDate>Sun, 15 Sep 2019 16:56:13 -0700</pubDate>
       
-      <guid>http://justinmklam.com/sections/mechatronics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mechanical</title>
-      <link>http://justinmklam.com/sections/mechanical/</link>
-      <pubDate>Sat, 24 Sep 2016 17:34:23 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/sections/mechanical/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Electrical</title>
-      <link>http://justinmklam.com/sections/electrical/</link>
-      <pubDate>Sat, 24 Sep 2016 17:34:23 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/sections/electrical/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software</title>
-      <link>http://justinmklam.com/sections/software/</link>
-      <pubDate>Sat, 24 Sep 2016 22:21:29 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/sections/software/</guid>
+      <guid>http://justinmklam.com/archives/</guid>
       <description></description>
     </item>
     
@@ -107,29 +80,11 @@ Click-bait headlines aside, this post is quite lengthy and not everyone may have
     </item>
     
     <item>
-      <title>Blog</title>
-      <link>http://justinmklam.com/blog-archive/</link>
-      <pubDate>Sun, 14 May 2017 23:08:47 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/blog-archive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>http://justinmklam.com/blog/</link>
-      <pubDate>Sun, 14 May 2017 23:08:47 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Battery Power Protection and Regulation PCB</title>
-      <link>http://justinmklam.com/projects/elec/mistywest-mvs/</link>
-      <pubDate>Tue, 09 May 2017 21:26:18 -0700</pubDate>
+      <link>http://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</link>
+      <pubDate>Tue, 09 May 2017 11:30:56 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/elec/mistywest-mvs/</guid>
+      <guid>http://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</guid>
       <description>Objective:
  Design a custom PCB to protect and regulate a 14.8V LiPo battery for use with an autonomous RC car  Features:
  12V undervoltage and 10A overcurrent protection 8.4V, 7.4V, and 5V regulated outputs  Main Components:
@@ -139,24 +94,23 @@ Click-bait headlines aside, this post is quite lengthy and not everyone may have
     
     <item>
       <title>blog</title>
-      <link>http://justinmklam.com/pages/blog/</link>
+      <link>http://justinmklam.com/blog/</link>
       <pubDate>Fri, 14 Apr 2017 16:56:13 -0700</pubDate>
       
-      <guid>http://justinmklam.com/pages/blog/</guid>
+      <guid>http://justinmklam.com/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Overhead Robotic Gantry for Tethered VR Headsets</title>
-      <link>http://justinmklam.com/projects/mecha/vr-gantry/</link>
+      <link>http://justinmklam.com/posts/2017/04/vr-gantry/</link>
       <pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate>
       
-      <guid>http://justinmklam.com/projects/mecha/vr-gantry/</guid>
-      <description>Objective: Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.
+      <guid>http://justinmklam.com/posts/2017/04/vr-gantry/</guid>
+      <description>Project Overview Objective: Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.
 Motivation: An extravagant party prop for an evening at CES 2017, hosted by MistyWest.
 Features:
- CoreXY planar gantry design System built with 8020 aluminum extrusions and laser cut acrylic components Stepper motor control through Teensy 3.2 HTC Vive pose tracking through C++ Patent pending  Skills:
- Mechanical design with rapid prototyping methods C++ software development Arduino-based firmware development  Sources:</description>
+ CoreXY planar gantry design System built with 8020 aluminum extrusions and laser cut acrylic components Stepper motor control through Teensy 3.2 HTC Vive pose tracking through C++ Patent pending  Skills:</description>
     </item>
     
     <item>
@@ -234,52 +188,42 @@ I started off on Google to look for existing designs I could imitate, but most f
     
     <item>
       <title>Engineer&#39;s Diary</title>
-      <link>http://justinmklam.com/projects/software/engineers-diary/</link>
-      <pubDate>Sat, 01 Oct 2016 12:39:52 -0700</pubDate>
+      <link>http://justinmklam.com/posts/2016/10/engineers-diary/</link>
+      <pubDate>Sat, 01 Oct 2016 11:34:47 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/software/engineers-diary/</guid>
+      <guid>http://justinmklam.com/posts/2016/10/engineers-diary/</guid>
       <description>Background: Between paper notebooks, post-it notes, OneNote, Evernote, and so many more, there is no shortage of ways to write things down. Each has its strengths and weaknesses, but none satisfied my requirements to act as a daily work log to record key events, thoughts, and milestones during my work day.
 My paper notebook is excellent for free-form thoughts, sketches, and calculations, but I would want to keep a separate notebook to keep track of these sequential events.</description>
     </item>
     
     <item>
-      <title>View All</title>
-      <link>http://justinmklam.com/view-all/</link>
-      <pubDate>Sat, 24 Sep 2016 23:08:47 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/view-all/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Contact</title>
-      <link>http://justinmklam.com/pages/contact/</link>
+      <link>http://justinmklam.com/contact/</link>
       <pubDate>Sat, 24 Sep 2016 13:48:02 -0700</pubDate>
       
-      <guid>http://justinmklam.com/pages/contact/</guid>
+      <guid>http://justinmklam.com/contact/</guid>
       <description>Located in Vancouver, British Columbia. Drop me a line and I&amp;rsquo;ll get back to you within the day.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://justinmklam.com/pages/about/</link>
+      <link>http://justinmklam.com/about/</link>
       <pubDate>Sat, 24 Sep 2016 12:58:43 -0700</pubDate>
       
-      <guid>http://justinmklam.com/pages/about/</guid>
+      <guid>http://justinmklam.com/about/</guid>
       <description>I grew up watching Star Wars, and like any other eight-year old boy, I wanted to become a Jedi Knight. Maneuvering starfighters through the Hoth asteroid field whilst in aerial combat, jousting battle droids wielding nothing but a lightsaber, and having my hand sliced off to make space for my own mechno-arm were the epitomes of my childhood fantasy.
 Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of developing a steering system for a model hovercraft providing optimized maneuverability, attacking design challenges with a pen and paper, and studying the possibilities of bionic technology.</description>
     </item>
     
     <item>
       <title>MECH 458: Capstone 3D Optical Well Imager</title>
-      <link>http://justinmklam.com/projects/mech/mech-458-capstone/</link>
+      <link>http://justinmklam.com/posts/2016/06/mech-458-capstone/</link>
       <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/mech/mech-458-capstone/</guid>
+      <guid>http://justinmklam.com/posts/2016/06/mech-458-capstone/</guid>
       <description>Introduction Objective: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.
 How: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.
-Requirements and Specifications Optical
- Device must have a tolerance on distance measurement of 1 mm Device must have a camera circumferential resolution of 1.</description>
+Project Details Requirements and Specifications Optical  Device must have a tolerance on distance measurement of 1 mm Device must have a camera circumferential resolution of 1.</description>
     </item>
     
     <item>
@@ -293,22 +237,22 @@ Requirements and Specifications Optical
     
     <item>
       <title>Adjustable Portable Power Supply</title>
-      <link>http://justinmklam.com/projects/elec/power-supply/</link>
+      <link>http://justinmklam.com/posts/2016/05/power-supply/</link>
       <pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/elec/power-supply/</guid>
+      <guid>http://justinmklam.com/posts/2016/05/power-supply/</guid>
       <description>Objective: Build a cheap, portable, variable DC power supply.
 Motivation: It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.
 Limitations:
- Only DC voltages available Max current is a function of input power and desired voltage (I=P/V) Current limiting feature is non-existent, so must be careful to not let the genie out of circuits</description>
+ Only DC voltages available Max current is a function of input power and desired voltage (I=P/V) Current limiting feature is non-existent, so must be careful to not let the genie out of circuits   Internals of the power supply.</description>
     </item>
     
     <item>
       <title>MECH 423: Mechatronics Product Design</title>
-      <link>http://justinmklam.com/projects/mecha/perfeggct/</link>
+      <link>http://justinmklam.com/posts/2016/04/perfeggct/</link>
       <pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/mecha/perfeggct/</guid>
+      <guid>http://justinmklam.com/posts/2016/04/perfeggct/</guid>
       <description>Background: When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
  &amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman
  Objective: Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.</description>
@@ -336,19 +280,6 @@ Leaving @thehaikuza to make complete gibberish wasnt what I had intended.</descr
     </item>
     
     <item>
-      <title>Project Haikuza</title>
-      <link>http://justinmklam.com/projects/software/haikuza/</link>
-      <pubDate>Sun, 19 Jul 2015 12:36:28 -0700</pubDate>
-      
-      <guid>http://justinmklam.com/projects/software/haikuza/</guid>
-      <description>Objective: Develop an algorithm to generate haikus using song lyrics.
-Motivation: Because computational linguistics are cool.
-Project: twitter.com/thehaikuza
-Features:
- Scrapes Virgin Radio&amp;rsquo;s broadcast history to find recently played songs Creates a song-based haiku queue in Google Sheets Generates a haiku using the queue as a reference and posts it on Twitter Checks for new tweets every 5 minutes and generates a relevant haiku, if requested Finds all song lyrics from Lyrics Wikia Runs on a Raspberry Pi  Challenges:</description>
-    </item>
-    
-    <item>
       <title>The Making of Project Haikuza: Part 1</title>
       <link>http://justinmklam.com/posts/2015/making-haikuza-i/</link>
       <pubDate>Sun, 12 Jul 2015 23:49:52 -0700</pubDate>
@@ -357,6 +288,19 @@ Features:
       <description>The format of this series is an outline of my thought process during the development of @thehaikuza.
 Haikus are simple Even children can write them maybe programs too?  Nothing is cooler than algorithmic poetry. Except for maybe Carl Sagan. I heard he was a pretty cool guy.
 I was listening to the radio while driving home one Sunday evening, and an ad came up for a university that was submitting computer-generated poetry to a literature competition.</description>
+    </item>
+    
+    <item>
+      <title>Project Haikuza</title>
+      <link>http://justinmklam.com/posts/2015/07/haikuza/</link>
+      <pubDate>Fri, 10 Jul 2015 11:42:26 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/posts/2015/07/haikuza/</guid>
+      <description>Objective: Develop an algorithm to generate haikus using song lyrics.
+Motivation: Because computational linguistics are cool.
+Project: twitter.com/thehaikuza
+Features:
+ Scrapes Virgin Radio&amp;rsquo;s broadcast history to find recently played songs Creates a song-based haiku queue in Google Sheets Generates a haiku using the queue as a reference and posts it on Twitter Checks for new tweets every 5 minutes and generates a relevant haiku, if requested Finds all song lyrics from Lyrics Wikia Runs on a Raspberry Pi  Challenges:</description>
     </item>
     
     <item>
@@ -382,20 +326,20 @@ Objective: Design and build a purified test chamber with zero air particulate to
     
     <item>
       <title>External Ballistics Simulation</title>
-      <link>http://justinmklam.com/projects/software/external-ballistics/</link>
-      <pubDate>Thu, 19 Feb 2015 12:36:19 -0700</pubDate>
+      <link>http://justinmklam.com/posts/2015/02/external-ballistics/</link>
+      <pubDate>Thu, 19 Feb 2015 11:38:35 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/software/external-ballistics/</guid>
+      <guid>http://justinmklam.com/posts/2015/02/external-ballistics/</guid>
       <description>Background: including (but not limited to) drag, gravity, air density, altitude, rotation of the bullet, and rotation of the Earth.
 One solution is to connect a computer to a manual targeting system (ie. a scope) and estimate the corrected target location by accounting for these external factors. The user may then line the manual targeting system up with the corrected target location, hoping to the high heavens that the target will be hit upon releasing the projectile.</description>
     </item>
     
     <item>
       <title>MECH 328: TrailRider Design Project</title>
-      <link>http://justinmklam.com/projects/mech/mech-328-trailrider/</link>
+      <link>http://justinmklam.com/posts/2014/11/mech-328-trailrider/</link>
       <pubDate>Mon, 24 Nov 2014 12:37:55 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/mech/mech-328-trailrider/</guid>
+      <guid>http://justinmklam.com/posts/2014/11/mech-328-trailrider/</guid>
       <description>Background: The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility. It is intended for a seated rider propelled and balanced by assistants.
 Objective: Expand the range of both riders and assistants who can ride safely use the Black Diamond TrailRider™.
 How: As a team of seven mechanical engineering undergrads, we explored a range of areas for improvement and developed a new design to incorporate these features.</description>
@@ -412,11 +356,11 @@ Objective: Develop, conduct, and analyze a study to quantify the drilling perfo
     </item>
     
     <item>
-      <title>car2go Bowling</title>
-      <link>http://justinmklam.com/projects/mech/car2go/</link>
+      <title>Bowling With car2go</title>
+      <link>http://justinmklam.com/posts/2014/08/car2go/</link>
       <pubDate>Fri, 29 Aug 2014 12:37:42 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/mech/car2go/</guid>
+      <guid>http://justinmklam.com/posts/2014/08/car2go/</guid>
       <description>Objective: Design a roof-mounted bowling rig for a car2go marketing event.
 Constraints: Use a non-permanent method to securely attach the apparatus to the roof.
 Venue: 2014 Vancouver Fringe Festival
@@ -426,10 +370,10 @@ Venue: 2014 Vancouver Fringe Festival
     
     <item>
       <title>Award Winning Bamboo Bike</title>
-      <link>http://justinmklam.com/projects/mech/bamboo-bike/</link>
+      <link>http://justinmklam.com/posts/2014/08/bamboo-bike/</link>
       <pubDate>Mon, 18 Aug 2014 22:12:57 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/mech/bamboo-bike/</guid>
+      <guid>http://justinmklam.com/posts/2014/08/bamboo-bike/</guid>
       <description>Objective: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.
 Challenges:
  Constructing a frame jig to allow freedom around joints for carbon-fibre layup Accounting for the non-uniformity of bamboo poles at the frame lugs Maintaining compatibility with standard bicycle components Ensuring the frame is treated for typical&#34;Wet&#34; Coast weather  Awards:
@@ -437,11 +381,11 @@ Challenges:
     </item>
     
     <item>
-      <title>Photo Editing Script</title>
-      <link>http://justinmklam.com/projects/software/photo-editing/</link>
-      <pubDate>Sun, 12 Jan 2014 12:25:44 -0700</pubDate>
+      <title>MATLAB Photo Editing Script</title>
+      <link>http://justinmklam.com/posts/2014/01/photo-editing/</link>
+      <pubDate>Sun, 12 Jan 2014 11:45:14 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/software/photo-editing/</guid>
+      <guid>http://justinmklam.com/posts/2014/01/photo-editing/</guid>
       <description>Objective: Develop a script to find and remove any differences in a series of photos.
 Motivation: How to Remove People From Your Travel Using Photoshop
 Framework: MATLAB
@@ -483,10 +427,10 @@ Research Proposal According to Tom Delph-Janiurek, a “mis-performance of voice
     
     <item>
       <title>LEGO Headphones</title>
-      <link>http://justinmklam.com/projects/mech/lego-headphones/</link>
+      <link>http://justinmklam.com/posts/2010/07/lego-headphones/</link>
       <pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate>
       
-      <guid>http://justinmklam.com/projects/mech/lego-headphones/</guid>
+      <guid>http://justinmklam.com/posts/2010/07/lego-headphones/</guid>
       <description>Background: I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go.</description>
     </item>
     

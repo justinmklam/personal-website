@@ -3,23 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://justinmklam.com/sections/mechatronics/</loc>
-    <lastmod>2016-09-24T22:18:22-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/sections/mechanical/</loc>
-    <lastmod>2016-09-24T17:34:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/sections/electrical/</loc>
-    <lastmod>2016-09-24T17:34:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/sections/software/</loc>
-    <lastmod>2016-09-24T22:21:29-07:00</lastmod>
+    <loc>http://justinmklam.com/archives/</loc>
+    <lastmod>2019-09-15T16:56:13-07:00</lastmod>
   </url>
   
   <url>
@@ -53,27 +38,17 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/blog-archive/</loc>
-    <lastmod>2017-05-14T23:08:47-07:00</lastmod>
+    <loc>http://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</loc>
+    <lastmod>2017-05-09T11:30:56-07:00</lastmod>
   </url>
   
   <url>
     <loc>http://justinmklam.com/blog/</loc>
-    <lastmod>2017-05-14T23:08:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/projects/elec/mistywest-mvs/</loc>
-    <lastmod>2017-05-09T21:26:18-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/pages/blog/</loc>
     <lastmod>2017-04-14T16:56:13-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/mecha/vr-gantry/</loc>
+    <loc>http://justinmklam.com/posts/2017/04/vr-gantry/</loc>
     <lastmod>2017-04-04T09:26:50-08:00</lastmod>
   </url>
   
@@ -113,27 +88,22 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/software/engineers-diary/</loc>
-    <lastmod>2016-10-01T12:39:52-07:00</lastmod>
+    <loc>http://justinmklam.com/posts/2016/10/engineers-diary/</loc>
+    <lastmod>2016-10-01T11:34:47-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/view-all/</loc>
-    <lastmod>2016-09-24T23:08:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/pages/contact/</loc>
+    <loc>http://justinmklam.com/contact/</loc>
     <lastmod>2016-09-24T13:48:02-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/pages/about/</loc>
+    <loc>http://justinmklam.com/about/</loc>
     <lastmod>2016-09-24T12:58:43-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/mech/mech-458-capstone/</loc>
+    <loc>http://justinmklam.com/posts/2016/06/mech-458-capstone/</loc>
     <lastmod>2016-06-02T12:57:32-07:00</lastmod>
   </url>
   
@@ -143,12 +113,12 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/elec/power-supply/</loc>
+    <loc>http://justinmklam.com/posts/2016/05/power-supply/</loc>
     <lastmod>2016-05-25T17:29:58-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/mecha/perfeggct/</loc>
+    <loc>http://justinmklam.com/posts/2016/04/perfeggct/</loc>
     <lastmod>2016-04-22T22:38:31-07:00</lastmod>
   </url>
   
@@ -163,13 +133,13 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/software/haikuza/</loc>
-    <lastmod>2015-07-19T12:36:28-07:00</lastmod>
+    <loc>http://justinmklam.com/posts/2015/making-haikuza-i/</loc>
+    <lastmod>2015-07-12T23:49:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/posts/2015/making-haikuza-i/</loc>
-    <lastmod>2015-07-12T23:49:52-07:00</lastmod>
+    <loc>http://justinmklam.com/posts/2015/07/haikuza/</loc>
+    <lastmod>2015-07-10T11:42:26-07:00</lastmod>
   </url>
   
   <url>
@@ -183,12 +153,12 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/software/external-ballistics/</loc>
-    <lastmod>2015-02-19T12:36:19-07:00</lastmod>
+    <loc>http://justinmklam.com/posts/2015/02/external-ballistics/</loc>
+    <lastmod>2015-02-19T11:38:35-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/mech/mech-328-trailrider/</loc>
+    <loc>http://justinmklam.com/posts/2014/11/mech-328-trailrider/</loc>
     <lastmod>2014-11-24T12:37:55-07:00</lastmod>
   </url>
   
@@ -198,18 +168,18 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/mech/car2go/</loc>
+    <loc>http://justinmklam.com/posts/2014/08/car2go/</loc>
     <lastmod>2014-08-29T12:37:42-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/mech/bamboo-bike/</loc>
+    <loc>http://justinmklam.com/posts/2014/08/bamboo-bike/</loc>
     <lastmod>2014-08-18T22:12:57-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/software/photo-editing/</loc>
-    <lastmod>2014-01-12T12:25:44-07:00</lastmod>
+    <loc>http://justinmklam.com/posts/2014/01/photo-editing/</loc>
+    <lastmod>2014-01-12T11:45:14-07:00</lastmod>
   </url>
   
   <url>
@@ -228,7 +198,7 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/projects/mech/lego-headphones/</loc>
+    <loc>http://justinmklam.com/posts/2010/07/lego-headphones/</loc>
     <lastmod>2010-07-10T12:37:00-07:00</lastmod>
   </url>
   
@@ -244,14 +214,14 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/categories/elec/</loc>
-    <lastmod>2017-05-09T21:26:18-07:00</lastmod>
+    <loc>http://justinmklam.com/tags/design/</loc>
+    <lastmod>2017-04-04T09:26:50-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://justinmklam.com/tags/electrical/</loc>
-    <lastmod>2017-02-05T12:28:27-08:00</lastmod>
+    <lastmod>2017-05-09T11:30:56-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -263,7 +233,7 @@
   
   <url>
     <loc>http://justinmklam.com/</loc>
-    <lastmod>2016-09-24T22:18:22-07:00</lastmod>
+    <lastmod>2019-09-15T16:56:13-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -281,7 +251,7 @@
   
   <url>
     <loc>http://justinmklam.com/tags/school/</loc>
-    <lastmod>2013-04-20T12:22:15-07:00</lastmod>
+    <lastmod>2016-06-02T12:57:32-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -293,7 +263,7 @@
   
   <url>
     <loc>http://justinmklam.com/tags/work/</loc>
-    <lastmod>2016-11-15T23:02:43-07:00</lastmod>
+    <lastmod>2017-04-04T09:26:50-08:00</lastmod>
     <priority>0</priority>
   </url>
   
