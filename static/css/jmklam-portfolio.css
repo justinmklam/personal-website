@@ -215,6 +215,12 @@ h4 {
 	margin-top: 20px
 }
 
+.about-footer-icons {
+	color:inherit !important;
+	background-image: none !important;
+	font-weight: normal !important;
+}
+
 .project-description h4 {
 	margin-top: 5px
 }
