@@ -8,7 +8,7 @@ tagline = "Racing a remote-controlled hovercraft made of cardboard, plastic bags
 title = "MECH 223: Hovercraft Competition"
 type = "blog"
 draft = false
-layout = "single-blog"
+layout = "single"
 tags = ["school"]
 +++
 

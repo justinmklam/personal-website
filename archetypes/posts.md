@@ -1,14 +1,14 @@
 +++
-layout =    "single-blog"
+layout =    "single"
 type =      "blog"
 
 date =      {{ .Date }}
 draft =     true
 
 title =     ""
+tagline =   ""
 image =     "http://placehold.it/900x300"
 tags =      [""]
-tagline =   ""
 
 aliases =   []
 +++

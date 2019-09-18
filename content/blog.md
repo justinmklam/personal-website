@@ -1,7 +1,8 @@
 +++
-date = "2017-05-14T23:08:47-07:00"
+date = "2017-04-14T16:56:13-07:00"
 draft = false
-title = "Blog"
+title = "blog"
 layout = "blog"
-section = "blog"
+
 +++
+

@@ -2,7 +2,7 @@
 date = "2015-12-18T20:50:37-07:00"
 draft = false
 image = "/imgs/blog-imgs/bamboo-boo-bike/IMG_20140809_150631.jpg"
-layout = "single-blog"
+layout = "single"
 tags = ["woodworking"]
 title = "Boo-Boo with the Bamboo Bike"
 type = "blog"
@@ -11,9 +11,9 @@ tagline = "Splitting hairs over split bamboo."
 
 As you probably already know, I made a [bamboo bike](/projects/mech/bamboo-bike/) which I'm very proud of. However, what you probably don't  know is that I made some mistakes in the process. The photo above shows the result of one of these progress speedbumps, and yes, I did indeed cry the day I had to cut those tubes out.
 
-I started this project in November 2013 but failed to finish due splitting bamboo. Progress was moving forward: I had the bamboo, carbon fibre, and epoxy ready for frame building, and the poles were in the process of being cut and shaped to size. However, winter was quickly approaching and the weather was becoming less and less ideal for carbon fibre layup. The epoxy I was using had a working temperature above 10°C, but the outside temperature was beginning to drop below that. I was able to keep it in its liquid state by using my mother's hair dryer (don't tell her though since she still doesn't know...), but the epoxy wasn't the main issue. Apparently bamboo is a living thing and doesn't like drastic changes in temperature. Turns out doing the layup in colder temperatures, then bringing the frame inside to dry in warm, livable temperatures wasn't good for the bamboo. Moisture is the devil here, and causes the wood to expand and contract based on the current environmental conditions. 
+I started this project in November 2013 but failed to finish due splitting bamboo. Progress was moving forward: I had the bamboo, carbon fibre, and epoxy ready for frame building, and the poles were in the process of being cut and shaped to size. However, winter was quickly approaching and the weather was becoming less and less ideal for carbon fibre layup. The epoxy I was using had a working temperature above 10°C, but the outside temperature was beginning to drop below that. I was able to keep it in its liquid state by using my mother's hair dryer (don't tell her though since she still doesn't know...), but the epoxy wasn't the main issue. Apparently bamboo is a living thing and doesn't like drastic changes in temperature. Turns out doing the layup in colder temperatures, then bringing the frame inside to dry in warm, livable temperatures wasn't good for the bamboo. Moisture is the devil here, and causes the wood to expand and contract based on the current environmental conditions.
 
-A week of thermal cycling like so, and I had myself some cracked bamboo. I was heart-broken. It was the end of December at this point, so I decided not to continue with this project until the weather warmed up. 
+A week of thermal cycling like so, and I had myself some cracked bamboo. I was heart-broken. It was the end of December at this point, so I decided not to continue with this project until the weather warmed up.
 
 Once spring came around, I set off to Chilliwack to get myself much higher quality materials from [Bamboo World](http://www.bambooworld.com/). I was significantly more meticulous in heat treatment this time around, conducting an oven bake as well as direct heat treatment to remove as much moisture as possible and to cure the bamboo.
 

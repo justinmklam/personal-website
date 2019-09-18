@@ -5,7 +5,7 @@ image = "/imgs/blog-imgs/sous-vide-pla/banner.jpg"
 title = "Annealing 3D Printed Plastics: Sous Vide Style"
 tagline = "When hobbies combine and engineering takes over."
 type = "blog"
-layout = "single-blog"
+layout = "single"
 tags = ["3d printing"]
 +++
 
@@ -21,11 +21,11 @@ Click-bait headlines aside, this post is quite lengthy and not everyone may have
 
 # The Short Version
 
-Heat treatment was carried out on 3D printed parts using a temperature controlled water bath (aka sous vide) instead of being baked in an oven. 
+Heat treatment was carried out on 3D printed parts using a temperature controlled water bath (aka sous vide) instead of being baked in an oven.
 
 **What the goal was:**
 
-+ To determine if extra strength can be squeezed out of PLA filament by annealing the parts and testing how much force can be applied before the test piece breaks in half. 
++ To determine if extra strength can be squeezed out of PLA filament by annealing the parts and testing how much force can be applied before the test piece breaks in half.
 
 **How it was tested:**
 
@@ -48,7 +48,7 @@ Heat treatment was carried out on 3D printed parts using a temperature controlle
 
 # The Long Version
 
-Let's say we wanted to make a highly functional part using a 3D printer. Maybe you need a replacement gear or a weight-bearing mounting bracket, and 3D printing would be the easiest way to fabricate the part. 
+Let's say we wanted to make a highly functional part using a 3D printer. Maybe you need a replacement gear or a weight-bearing mounting bracket, and 3D printing would be the easiest way to fabricate the part.
 
 You carefully select your slicer settings to optimize shell thickness, infill density, and layer height based on your application.  You select a material that adequately suits your needs based on material strength or flexibility and environmental factors like UV exposure and heat resistance. You even take layer geometry into consideration to maximize strength in the loading direction.
 
@@ -58,13 +58,13 @@ With all settings configured and high hopes for success, you load up the filamen
 
 {{<img caption="Fence bracket repaired (left), and broken after a heavy windstorm (right)." src="/imgs/blog-imgs/sous-vide-pla/broken fence.jpg" >}}
 
-But it still fails. Tears ensue. Aspirations crumble. Is there any hope for the humanity of functional, home-made, plastic designs? 
+But it still fails. Tears ensue. Aspirations crumble. Is there any hope for the humanity of functional, home-made, plastic designs?
 
 ## The Problem With Printed Parts
 
-3D printing shines in the rapid creation of designs with moderately complex geometries. From trinkets to tool holders and enclosures to gear trains, 3D printing has found its way into a variety of purposes. However, at the end of the day, they're only plastic parts having limited practicality in more demanding applications. 
+3D printing shines in the rapid creation of designs with moderately complex geometries. From trinkets to tool holders and enclosures to gear trains, 3D printing has found its way into a variety of purposes. However, at the end of the day, they're only plastic parts having limited practicality in more demanding applications.
 
-The inherent property of these parts is that they're built layer upon layer, with different areas being rapidly heated and cooled at different rates. This causes internal stresses and they end up acting like perforated lines that are prone to snapping apart. 
+The inherent property of these parts is that they're built layer upon layer, with different areas being rapidly heated and cooled at different rates. This causes internal stresses and they end up acting like perforated lines that are prone to snapping apart.
 
 Thankfully there's an entire industry dedicated to squeezing every ounce of performance out of material properties, so that will be an adequate starting point. Let's begin!
 
@@ -74,7 +74,7 @@ In metallurgy (the study of physical and chemical behaviour of metallic elements
 
 [^1]: [Annealing (metallurgy)](https://en.wikipedia.org/wiki/Annealing_(metallurgy)), Wikipedia.
 
-1. Heat material until glowing 
+1. Heat material until glowing
 2. Maintain at desired (recrystallization) temperature
 3. Slowly let cool to room temperature
 
@@ -82,9 +82,9 @@ In metallurgy (the study of physical and chemical behaviour of metallic elements
 
 ### The Importance of Reducing Internal Stresses
 
-Typically with any material, internal defects are evident (notably on a microscopic scale) and create internal stresses which weaken its overall strength. When creating metal parts, the initial metal-forming processes create these defects and as a result, the metal will crack under stress along these stress-forming juncture lines called "grains". 
+Typically with any material, internal defects are evident (notably on a microscopic scale) and create internal stresses which weaken its overall strength. When creating metal parts, the initial metal-forming processes create these defects and as a result, the metal will crack under stress along these stress-forming juncture lines called "grains".
 
-To minimize the effect of these grains, annealing can be done to soften the material, relax the grain structures causing the internal stresses, and allow new, strain-free grains to form as replacements. 
+To minimize the effect of these grains, annealing can be done to soften the material, relax the grain structures causing the internal stresses, and allow new, strain-free grains to form as replacements.
 
 {{<img caption="Diagram showing the effect of heat treatment on the material's microstructure. (Source: Rigid Ink Blog)" src="/imgs/blog-imgs/sous-vide-pla/annealing_prints.jpg" >}}
 
@@ -96,7 +96,7 @@ So to recap our newfound knowledge in maximizing material performance in metals:
 
 ### How does this relate to our 3D printed plastic?
 
-With 3D printed parts, these internal defects occur on a more macroscopic scale[^2]. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there's really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling. 
+With 3D printed parts, these internal defects occur on a more macroscopic scale[^2]. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there's really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling.
 
 [^2]: [How to Anneal Your 3D Prints for Strength](https://rigid.ink/blogs/news/how-to-anneal-your-3d-prints-for-strength), Rigid Ink.
 
@@ -118,11 +118,11 @@ The figure below shows the outcome of non-annealed (clear, first from bottom) an
 
 {{<img caption="The first sample (non-annealed) had the lowest degree of crystallinity and highest deformation at 65°C. (Source: Turng and Srithep, 2014)" src="/imgs/blog-imgs/sous-vide-pla/pla-annealing-paper.jpg" >}}
 
-Looking at the graph below, we see that the PLA samples had a maximum crystallinity of about 49%. Maintaining the oven/annealing temperature at 80°C led to the fastest rate of crystallization, whereas 65°C had the slowest rate. 
+Looking at the graph below, we see that the PLA samples had a maximum crystallinity of about 49%. Maintaining the oven/annealing temperature at 80°C led to the fastest rate of crystallization, whereas 65°C had the slowest rate.
 
 {{<img caption="Degree of crystallinity versus annealing time. (Source: Turng and Srithep, 2014)" src="/imgs/blog-imgs/sous-vide-pla/crystallinity vs annealing time.JPG" >}}
 
-This shows that maximum crystallinity can be achieved even at lower temperatures, as long as the material is given enough time to sufficiently undergo recrystallization. 
+This shows that maximum crystallinity can be achieved even at lower temperatures, as long as the material is given enough time to sufficiently undergo recrystallization.
 
 ### The Takeaway
 
@@ -130,11 +130,11 @@ Unfortunately, this paper only tested the heat resistance of the annealed sample
 
 ## A Review of Current Methods
 
-From a cursory search in the 3D printing community, annealing PLA seems to be a common, known method in squeezing a bit of extra mechanical performance out of printed parts. YouTubers Thomas Sanlader[^4] and Joe Mike Terranella[^5] have shown both quantitative and qualitative results in strength improvements by annealing. 
+From a cursory search in the 3D printing community, annealing PLA seems to be a common, known method in squeezing a bit of extra mechanical performance out of printed parts. YouTubers Thomas Sanlader[^4] and Joe Mike Terranella[^5] have shown both quantitative and qualitative results in strength improvements by annealing.
 
 ### The Oven Bake Method
 
-Thomas' approach in testing oven-baked samples was nicely scientific, and warping was shown to be an issue since ovens aren't great at providing even, uniform heating.  
+Thomas' approach in testing oven-baked samples was nicely scientific, and warping was shown to be an issue since ovens aren't great at providing even, uniform heating.
 
 [^4]: [Bake your PLA and have it outperform everything else!](https://www.youtube.com/watch?v=CZX8eHC7fws), Thomas Sanladerer.
 [^5]: [Annealing MakerGeeks Raptor PLA - The Boil Method](https://www.youtube.com/watch?v=WmTGU3r53VU), Joe Mike Terranella.
@@ -149,7 +149,7 @@ Joe's approach with boiling PLA was a good proof of concept, but it was only qua
 
 ### Areas of Improvement
 
-Using water as a heat source is advantageous because it provides fairly uniform heating, but temperature control is fussy to maintain a specific temperature. Ovens are convenient since it provides a (moderately) temperature controlled chamber, but heat transfer from the heating element to the part is less than ideal and still leads to uneven heating. 
+Using water as a heat source is advantageous because it provides fairly uniform heating, but temperature control is fussy to maintain a specific temperature. Ovens are convenient since it provides a (moderately) temperature controlled chamber, but heat transfer from the heating element to the part is less than ideal and still leads to uneven heating.
 
 If only there was a way to combine the temperature control of an oven and uniform, stable heating of a water bath...
 
@@ -161,7 +161,7 @@ A while back, I made a [sous vide controller](/projects/elec/sous-vide/) to get 
 
 {{<img caption="DIY sous vide controller hooked up to a kettle." src="/imgs/blog-imgs/sous-vide-pla/IMG_20170318_130307.jpg" >}}
 
-Ladies and gentlemen, welcome to the meat and potatoes of this post. 
+Ladies and gentlemen, welcome to the meat and potatoes of this post.
 
 To recap, we've learned why annealing is desirable to reduce internal stresses (ie. increase crystallization), what previous research has identified, and what current heat treatment processes have already been tried. Although the presented information has helped in answering our preliminary questions, we still have unanswered ones that are left for us to uncover and test.
 
@@ -195,7 +195,7 @@ Ain't nobody got time for that! I'm an impatient guy, and waiting for my 3D prin
 
 **Q: Sounds good. But why are the test samples so small? Other people seem to test with much larger parts.**
 
-Since we're applying (what we'll assume to be) a point force, the sample doesn't actually need to be that long. In terms of cross-sectional area, wall thickness has a much larger impact on a part's strength than infill. Thus, these samples were designed to be hollow with a 2.0 mm wall thickness, which is actually a reasonable thickness for standard printed parts. Since those are the criteria that needs to be met, the sample just needs to be big enough to be able to test with (ie. long enough to span the gap). And going back to my impatience, 8 minutes is about the longest I want to wait for these samples since I'll be printing multiple of these. 
+Since we're applying (what we'll assume to be) a point force, the sample doesn't actually need to be that long. In terms of cross-sectional area, wall thickness has a much larger impact on a part's strength than infill. Thus, these samples were designed to be hollow with a 2.0 mm wall thickness, which is actually a reasonable thickness for standard printed parts. Since those are the criteria that needs to be met, the sample just needs to be big enough to be able to test with (ie. long enough to span the gap). And going back to my impatience, 8 minutes is about the longest I want to wait for these samples since I'll be printing multiple of these.
 
 [^6]: [PLA](http://reprap.org/wiki/PLA), RepRap Wiki.
 
@@ -234,7 +234,7 @@ The figures below tell the story. However, the results were not 100% as expected
 
 #### Measuring the Maximum Applied Load
 
-For the 0.2625 mm layer height, there was virtually no change between the control and annealed (sous vide, slow/fast cooled) samples. On the other hand, the samples printed at 0.175 mm demonstrated ~53% increase in resistance to shear force when compared with the non-annealed samples. 
+For the 0.2625 mm layer height, there was virtually no change between the control and annealed (sous vide, slow/fast cooled) samples. On the other hand, the samples printed at 0.175 mm demonstrated ~53% increase in resistance to shear force when compared with the non-annealed samples.
 
 {{<img caption="Max applied force before failure at 0.2625 mm and 0.175 mm layer heights." src="/imgs/blog-imgs/sous-vide-pla/data-layer height.JPG">}}
 
@@ -244,7 +244,7 @@ Averaging the data paints a clearer picture. Interestingly, the sous vide sample
 
 #### Measuring the Changes in Physical Dimensions
 
-One of the hypothesized benefits of annealing with sous vide instead of in an oven is the uniform temperature control and reduced risk of warping. These parts were small and relatively thick, so warping wouldn't normally be an issue anyway, but I measured the dimensional changes in the part from heat treatment anyway. 
+One of the hypothesized benefits of annealing with sous vide instead of in an oven is the uniform temperature control and reduced risk of warping. These parts were small and relatively thick, so warping wouldn't normally be an issue anyway, but I measured the dimensional changes in the part from heat treatment anyway.
 
 {{<img caption="Quantifying the changes in each dimension after annealing." src="/imgs/blog-imgs/sous-vide-pla/data-dimensional change.JPG">}}
 
@@ -258,7 +258,7 @@ So after all this, what does it all mean? Like it or not, it means we don't have
 
 This was probably the most unexpected observation. Annealing didn't seem to have an effect on the samples printed at 0.2625 mm, but it did at 0.175 mm. What gives?
 
-After doing a bit of Googling, other tests have shown that larger layer heights provide greater part strength[^7]. 3D Matter wrote a great article on how layer height, infill percentage, and infill pattern affects the maximum strength of a printed part. 
+After doing a bit of Googling, other tests have shown that larger layer heights provide greater part strength[^7]. 3D Matter wrote a great article on how layer height, infill percentage, and infill pattern affects the maximum strength of a printed part.
 
 [^7]: [What is the influence of infill %, layer height, and infill pattern on my 3D prints?](http://my3dmatter.com/influence-infill-layer-height-pattern/), 3D Matter.
 
@@ -270,7 +270,7 @@ So why did only the smaller layer height benefit from annealing? My guess is tha
 
 #### Slow Cooling vs Fast Cooling
 
-For annealing to be effective, the material typically needs to be cooled uniformly back to room temperature. If it's cooled too rapidly, different areas of the part may cool at different rates and cause either warping or internal stress to form. To slowly cool the test samples, they were left in the water bath (with heat turned off) such that the rate of part cooling matched that of the water bath. Since water has a high heat capacity of 4.181 J/g/K (and for comparison, solid aluminum is only 0.897 J/g/K)[^8], it would reach room temperature at a significantly slower rate than if the parts were just left on the counter (a difference of about < 10 mins versus > 4 hours). 
+For annealing to be effective, the material typically needs to be cooled uniformly back to room temperature. If it's cooled too rapidly, different areas of the part may cool at different rates and cause either warping or internal stress to form. To slowly cool the test samples, they were left in the water bath (with heat turned off) such that the rate of part cooling matched that of the water bath. Since water has a high heat capacity of 4.181 J/g/K (and for comparison, solid aluminum is only 0.897 J/g/K)[^8], it would reach room temperature at a significantly slower rate than if the parts were just left on the counter (a difference of about < 10 mins versus > 4 hours).
 
 [^8]: [Heat capacity](https://en.wikipedia.org/wiki/Heat_capacity), Wikipedia.
 
@@ -296,7 +296,7 @@ The silver lining to all of this are the learnings from mistakes. If I were to c
 
 So does this mean annealing is worth the effort? Is sous vide really necessary over a regular oven? Was this just a waste 20 minutes reading an article with inconclusive results?
 
-Maybe, probably, and it depends. 
+Maybe, probably, and it depends.
 
 As discussed earlier in this post, annealing plastic has tangible benefits in increasing its mechanical strength. However, plastic (and especially 3D printed plastic) is not the end-all material for home projects. It can only go so far, and sometimes 3D printing may not be the most suitable manufacturing method. Yes, people have printed gearboxes and mechanical vises which are undoubtedly impressive, but sometimes it's cheaper in material cost and/or time to look at alternative manufacturing methods (or even off-the-shelf components).
 

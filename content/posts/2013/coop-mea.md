@@ -7,7 +7,7 @@ tagline = "Assessing the safety of your 15 year-old helmet."
 title = "Co-op: The Age Effect on Bicycle Helmets"
 type = "blog"
 draft = false
-layout = "single-blog"
+layout = "single"
 tags = ["work"]
 +++
 

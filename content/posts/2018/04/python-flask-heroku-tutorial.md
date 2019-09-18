@@ -2,7 +2,7 @@
 date = "2018-04-06T20:33:46-07:00"
 draft = false
 image = "/imgs/blog-imgs/python-heroku-tutorial/modularity comparison.png"
-layout = "single-blog"
+layout = "single"
 tagline = "A journey from Jupyter to Flask to Heroku, all in one post."
 tags = ["programming"]
 title = "From Prototype to Cloud: A Python Recipe Converter"
@@ -24,7 +24,7 @@ After a bit of searching, I came across [Flask](http://flask.pocoo.org/) and [He
 
 # The Outline
 
-This blog post will outline the development of a simple string-parsing application that converts common ingredients measured in cups, tablespoons, and teaspoons to grams. 
+This blog post will outline the development of a simple string-parsing application that converts common ingredients measured in cups, tablespoons, and teaspoons to grams.
 
 + Prototype the recipe conversions in [Jupyter Lab's](https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906) interactive environment
 + Migrate script to [Visual Studio Code](https://code.visualstudio.com/) to a command line interface
@@ -81,7 +81,7 @@ Now that we've finished testing the prototype and are happy with how it works, w
 
 ## Migrating to Visual Studio Code
 
-Fortunately, this is painless! In Jupyter, navigate to `File > Export Notebook As... > Executable Script`, and that's it. A Python script will download with all the cells in a single executable file. 
+Fortunately, this is painless! In Jupyter, navigate to `File > Export Notebook As... > Executable Script`, and that's it. A Python script will download with all the cells in a single executable file.
 
 {{<img caption="Exporting from Jupyter Lab to the next phase of development: the command line." src="/imgs/blog-imgs/python-heroku-tutorial/export from jupyter.png" >}}
 
@@ -93,7 +93,7 @@ Feel free to check out the cleaned up file on [GitHub](https://github.com/justin
 
 ### Like the Thing Used in Chemistry?
 
-No, this Flask is different! There are many options for web development in Python, with two heavy hitters being Flask and Django. They're both great frameworks, but where Django is the more fully-featured framework, Flask follows the Unix philosophy of "do one thing and do it well". 
+No, this Flask is different! There are many options for web development in Python, with two heavy hitters being Flask and Django. They're both great frameworks, but where Django is the more fully-featured framework, Flask follows the Unix philosophy of "do one thing and do it well".
 
 > Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications. It began as a simple wrapper around Werkzeug and Jinja and has become one of the most popular Python web application frameworks.
 
@@ -143,13 +143,13 @@ Now moving on to our recipe converter, we need two parts to make this work:
 
 Looking at the code below, there isn't much difference from the simple "hello world" application from above. One key change is the inclusion of `methods = ['GET', 'POST']` in the `route()` decorator. From the [quickstart](http://flask.pocoo.org/docs/0.12/quickstart/) guide:
 
-> **GET** - The browser tells the server to just get the information stored on that page and send it. 
+> **GET** - The browser tells the server to just get the information stored on that page and send it.
 
 > **POST** - The browser tells the server that it wants to post some new information to that URL and that the server must ensure the data is stored and only stored once. This is how HTML forms usually transmit data to the server.
 
 Since we are going to have a few buttons on our webpage, we need to include these HTTP methods. With multiple buttons, we can do a simple value check to handle them differently.
 
-The second key change is returning `render_template()` in the routed function call. Since we want to be able to format an HTML page, we can use a template (running on [Jinja2](http://jinja.pocoo.org/docs/2.10/)) to create one. 
+The second key change is returning `render_template()` in the routed function call. Since we want to be able to format an HTML page, we can use a template (running on [Jinja2](http://jinja.pocoo.org/docs/2.10/)) to create one.
 
 We can also pass variables to the template. In this case, `textarea` is where the user will enter the ingredient list. When the 'Convert' button is clicked, the text will be parsed by `parse_form_text()`. To display the parsed/converted recipe, we can use the `flash()` method, which Flask provides as a feedback mechanism to the users (see [Message Flashing](http://flask.pocoo.org/docs/0.12/patterns/flashing/)).
 
@@ -220,19 +220,19 @@ The `{{textarea}}` is the input variable from `render_template()` above. For the
         </form>
     </p>
 </div>
-    
+
 <!-- Output column (right) -->
 <div class="col-md-6">
     <h2>Output Recipe</h2>
     <p>
         <!-- Display each converted line from the flash method (from Flask) -->
-        {% with messages = get_flashed_messages() %} 
+        {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
                     {{ message }}
                     <br>
                 {% endfor %}
-            {% endif %} 
+            {% endif %}
         {% endwith %}
     </p>
 </div>
@@ -285,13 +285,13 @@ Heroku should now be initialized on your local system!
 
 To deploy an application/dyno on Heroku, we need the following files:
 
-+ **app.py** 
++ **app.py**
     + Flask Python script
-+ **Procfile** 
++ **Procfile**
     + Tells Heroku what commands are run by your application's dynos
-+ **requirements.txt** 
++ **requirements.txt**
     + Tells Heroku what modules it needs to install
-+ **runtime.txt** 
++ **runtime.txt**
     + Tells Heroku which version of Python to use
 
 The following sections will detail what goes into where.
@@ -369,7 +369,7 @@ Heroku uses `git` to receive files to host on `herokuapp.com`. First, we'll setu
 > heroku create recipe-converter-app
 ```
 
-The following commands will create a local git repository and queue all files to be pushed to Heroku's servers. 
+The following commands will create a local git repository and queue all files to be pushed to Heroku's servers.
 
 ```
 > git init
@@ -410,7 +410,7 @@ To recap our on our journey, we:
 + Integrated the Python script with [Flask's web framework](http://flask.pocoo.org/)
 + Deployed the app through the [Heroku cloud platform](https://www.heroku.com/python)
 
-Doing everything in Python has [its caveats](https://www.probytes.net/blog/advantages-disadvantages-python/), but it still can be an excellent tool for quickly getting results. Although the deployed version is still (arguably) a prototype, the amount of legwork we had to accomplish to achieve this end product was relatively minimal! 
+Doing everything in Python has [its caveats](https://www.probytes.net/blog/advantages-disadvantages-python/), but it still can be an excellent tool for quickly getting results. Although the deployed version is still (arguably) a prototype, the amount of legwork we had to accomplish to achieve this end product was relatively minimal!
 
 As long as we keep in mind that Python is not the solution to everything, we can use it where appropriate and/or when we are aware of its trade-offs.
 

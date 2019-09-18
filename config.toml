@@ -14,10 +14,17 @@ disqusShortname = "justinmklam"
 
 FootnoteReturnLinkContents = "↩"
 
+[menu]
+
+  [[menu.main]]
+    identifier = "Blog"
+    name = "Blog"
+    url = "/"
+    weight = 1
+
 [taxonomies]
 	tag = "tags"
 	type = "types"
-	category = "categories"
 
 [params]
 	footer = "Justin MK Lam"

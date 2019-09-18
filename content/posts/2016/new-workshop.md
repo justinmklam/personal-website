@@ -2,7 +2,7 @@
 date = "2016-06-01T15:39:56-07:00"
 draft = false
 image = "/imgs/blog-imgs/new-shop/IMG_20160601_171007.jpg"
-layout = "single-blog"
+layout = "single"
 tagline = "Finally having a garage means finally having space for a proper workbench."
 tags = ["woodworking"]
 title = "New Workshop + Plywood Bench Stool"

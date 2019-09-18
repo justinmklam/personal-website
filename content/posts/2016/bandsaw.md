@@ -7,11 +7,11 @@ summary = "It's generally known that cheap tools are usually not worth the troub
 tagline = "Sometimes you can get more than what you pay for."
 title = "Making Do With a Bargain Bin Bandsaw"
 type = "blog"
-layout = "single-blog"
+layout = "single"
 tags = ["woodworking"]
 +++
 
-I've always wanted a bandsaw. Being able to cut wood, plastics, etc. quickly and with flexibility has been a dream in my home shop. When I found an ad on Craigslist for a portable bandsaw for $50, I just couldn't resist. The main caveat was that it was missing a table, but that wasn't a big enough issue to turn me away from this killer deal. 
+I've always wanted a bandsaw. Being able to cut wood, plastics, etc. quickly and with flexibility has been a dream in my home shop. When I found an ad on Craigslist for a portable bandsaw for $50, I just couldn't resist. The main caveat was that it was missing a table, but that wasn't a big enough issue to turn me away from this killer deal.
 
 {{<img caption="Fresh off Craigslist in its table-naked glory."
 src="/imgs/bandsaw/original_1.jpg" >}}
@@ -46,14 +46,14 @@ src="/imgs/bandsaw/IMG_20161022_162614.jpg" >}}
 src="/imgs/bandsaw/IMG_20161023_174353.jpg" >}}
 
 {{<img caption="Bandsaw fully functional and ready to rip."
-src="/imgs/bandsaw/IMG_20161023_174235.jpg" >}} 
+src="/imgs/bandsaw/IMG_20161023_174235.jpg" >}}
 
-Below are a few woodworking projects I used the bandsaw for. Turns out you get what you pay for, with this bandsaw being no exception. It retails for [$249 at Canadian Tire](http://www.canadiantire.ca/en/pdp/mastercraft-120v-9-in-bandsaw-0556748p.html), and many reviewers complained that cutting straight is virtually impossible without the blade bowing, likely due to the inadequately designed blade tensioner. It performs okay for cutting thin stock like plywood, but I wouldn't rely on this for any mating joints. 
+Below are a few woodworking projects I used the bandsaw for. Turns out you get what you pay for, with this bandsaw being no exception. It retails for [$249 at Canadian Tire](http://www.canadiantire.ca/en/pdp/mastercraft-120v-9-in-bandsaw-0556748p.html), and many reviewers complained that cutting straight is virtually impossible without the blade bowing, likely due to the inadequately designed blade tensioner. It performs okay for cutting thin stock like plywood, but I wouldn't rely on this for any mating joints.
 
 {{<img caption="First bandsaw project was making a keyholder and to increase stoke for the winter ski season."
-src="/imgs/bandsaw/IMG_20161017_204329.jpg" >}} 
+src="/imgs/bandsaw/IMG_20161017_204329.jpg" >}}
 
 {{<img caption="Also made a butcher's block out of an old fireplace mantle."
-src="/imgs/bandsaw/IMG_20161021_222031.jpg" >}} 
+src="/imgs/bandsaw/IMG_20161021_222031.jpg" >}}
 
 Stay tuned for more woodworking projects!

@@ -1,46 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>{{ .Title }}</title>
-    {{ partial "header.html" . }}
+    <!-- Redirect blog/ to homepage -->
+    <title>{{ .Site.BaseURL}}/blog/</title>
+    <link rel="canonical" href="{{ .Site.BaseURL}}" />
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url={{ .Site.BaseURL}}" />
 </head>
-
-<body>
-
-    {{ partial "navbar.html" . }}
-
-    <!-- Page Content -->
-    <div class="container" id="page-container">
-
-        <br>
-
-		<!--Blog post summaries-->
-        <div class="col-sm-8 col-centered">
-
-            {{ range first 5 (where .Site.Pages "Type" "blog") }}
-
-            {{ partial "blog-snippets.html" . }}
-
-            {{ end }}
-
-            <!--Archives button-->
-            <div class="text-left">
-                <a class="blog-nav-btn" href="/blog-archive">
-                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>All Posts
-                </a>
-            </div>
-
-        </div>
-        <!-- /.blog posts -->
-
-    </div>
-    <!-- /.page container -->
-
-	{{ partial "footer-js.html" . }}
-
-</body>
-
-{{ partial "footer.html" . }}
 
 </html>

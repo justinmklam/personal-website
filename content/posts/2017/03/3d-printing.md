@@ -2,7 +2,7 @@
 date = "2017-03-23T19:38:27-07:00"
 draft = false
 image = "/imgs/blog-imgs/3d-printing-primer/mp select mini user group.jpg"
-layout = "single-blog"
+layout = "single"
 title = "Resources for 3D Printing with the MP Select Mini"
 tagline = "A collection of information to reduce the initial headaches with 3D printing."
 type = "blog"
@@ -12,15 +12,15 @@ tags = ["3d printing"]
 What's better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.
 
 # General Info
-* Product Page: 
+* Product Page:
     * [Monoprice Select Mini V1](https://www.monoprice.com/product?p_id=15365)
 * Official User Manual:
     * [MP Select Mini User Manual](/imgs/blog-imgs/3d-printing-primer/15365_Manual_170509.pdf)
-* Reddit: 
+* Reddit:
     * [/r/MPSelectMiniOwners](https://www.reddit.com/r/MPSelectMiniOwners/)
-* Facebook Group: 
+* Facebook Group:
     * [MP Mini User Group](https://www.facebook.com/groups/1717306548519045/)
-* Unofficial Wiki: 
+* Unofficial Wiki:
     * [MP Select Mini Wiki](http://mpselectmini.com/start)
 * Community Knowledge Base:
     * [Google Doc](https://docs.google.com/document/d/1HJaLIcUD4oiIUYu6In7Bxf7WxAOiT3n48RvOe5pvSHk/edit)
@@ -35,7 +35,7 @@ What's better than an inexpensive 3D printer? Free sources of information! The i
 # Initial Set Up
 * CAD Modeling Software (free for hobbyists and enthusiasts):
     * [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview)
-* Slicing Software: 
+* Slicing Software:
     * [Ultimaker Cura](https://ultimaker.com/en/products/cura-software)
 * Onboard WiFi for wireless printing:
     * [Connecting to WiFi through G-code](http://mpselectmini.com/wifi/g-code_file)
@@ -80,7 +80,7 @@ M107 ; turn off fan
 
 ## OctoPrint
 
-To connect OctoPrint through Cura, go to "Settings > Printer > Manage Printers", select your printer from the list, then click the "Connect OctoPrint" button on the right side of the menu. 
+To connect OctoPrint through Cura, go to "Settings > Printer > Manage Printers", select your printer from the list, then click the "Connect OctoPrint" button on the right side of the menu.
 
 {{<img caption="Setting up OctoPrint through Cura." src="/imgs/blog-imgs/3d-printing-primer/octopi settings.png" >}}
 
@@ -88,7 +88,7 @@ This way, you can send gcode files directly from Cura to Octoprint with a click 
 
 # Print Settings
 
- When fiddling with layer heights, it's recommended to use the optimal values below: 
+ When fiddling with layer heights, it's recommended to use the optimal values below:
 
 * 0.04375 (results may vary)*
 * 0.0875
@@ -100,7 +100,7 @@ This way, you can send gcode files directly from Cura to Octoprint with a click 
 
 Numbers courtesy of Michael O'Brien on [Hackaday](https://hackaday.io/project/12696-monoprice-select-mini-electro-mechanical-upgrades). Explanation:
 
-> So that motor [Z-Axis] is a 7.5°, 48 step motor as I just listed. Since the motor is attached to a M4 rod, which has a 0.7 mm thread pitch, then in one revolution makes the Z-Axis travel up or down 0.7 mm. Since it took 48 steps to turn that rev, each step is 0.0014583... mm. To avoid rounding errors, you can use multiple of 3 of this number, which is a nice and pretty 0.04375 mm. That is a nice and handy number that effectively represents the layer heights that mathematically work the best for layer heights for this printer. 
+> So that motor [Z-Axis] is a 7.5°, 48 step motor as I just listed. Since the motor is attached to a M4 rod, which has a 0.7 mm thread pitch, then in one revolution makes the Z-Axis travel up or down 0.7 mm. Since it took 48 steps to turn that rev, each step is 0.0014583... mm. To avoid rounding errors, you can use multiple of 3 of this number, which is a nice and pretty 0.04375 mm. That is a nice and handy number that effectively represents the layer heights that mathematically work the best for layer heights for this printer.
 
 The settings below should serve as a decent starting point in dialing in your own print settings for PLA.
 

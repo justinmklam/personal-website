@@ -2,72 +2,45 @@
 <html lang="en">
 
 <head>
-    <title>{{ .Site.Title }}</title>
-    <link rel="image_src" href="/imgs/homepage-thumb.JPG" />
+    <title>{{ .Title }}</title>
     {{ partial "header.html" . }}
-    <!--<script src="/js/walkway.js"></script>-->
 </head>
 
-<style>
-/*! CSS Styling for homepage (from homepage.css)
-Last edited: Wed, 5 Oct 2016
-*/
-.home-body{	width: 600px; height: 415px; 
-position: absolute; top: 60px; bottom: 0; left: 0;	right: 0; margin: auto; 
-text-align:center;vertical-align:middle}
-.home-body h1{font-size:43px;font-weight:800;letter-spacing:8px}
-.home-body h2{font-size:26px; font-family:'Roboto Slab',serif;font-weight:200}
-.home-item{font-size:16px;text-transform:uppercase;letter-spacing:3px;color:#555;font-weight:regular}
-/* .home-item:hover,.home-item:focus,.home-item:active{color:steelblue;text-decoration:none} */
-.home-list{display:inline-block;vertical-align:middle;line-height:45px}
-.navbar .navbar-nav{display:inline-block;float:none;vertical-align:top}
-.navbar .navbar-collapse{text-align:center}
-.glyphicon{font-size:0.83em}
-@media only screen and (max-device-width:480px){
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-    .home-body{zoom: 0.8;-moz-transform: scale(0.8); width: 350px} .home-body h1{font-size:3em}
-}
-</style>
+<body>
 
-<body id="page-container">
+    {{ partial "navbar.html" . }}
 
-	{{ partial "navbar-index.html" . }}
-    <!--{{ partial "jlam-svg.svg" . }}-->
+    <!-- Page Content -->
+    <div class="container" id="page-container">
 
-    <div class="home-body">
-        <h1>JUSTIN LAM</h1>
-        <h2><small>An engineer's showcase of design, experiments, and more.</small></h2>
         <br>
-        
-        <br>
-        <div class="home-list">
-            <a href="/sections/mechatronics" class="home-item">Mechatronics <span class="glyphicon glyphicon-menu-right"></span></a>
-            <br>
-            <a href="/sections/mechanical" class="home-item">Mechanical <span class="glyphicon glyphicon-menu-right"></span></a>
-            <br>
-            <a href="/sections/electrical/" class="home-item">Electrical <span class="glyphicon glyphicon-menu-right"></span></a>
-            <br>
-            <a href="/sections/software" class="home-item">Software <span class="glyphicon glyphicon-menu-right"></span></a>
-            <hr>
-            <a href="/view-all" class="home-item"><strong>All Projects<span class="glyphicon glyphicon-menu-right"></strong></span></a>
-            
+
+		<!--Blog post summaries-->
+        <div class="col-sm-8 col-centered">
+
+            {{ range first 5 (where .Site.Pages "Type" "blog") }}
+
+            {{ partial "blog-snippets.html" . }}
+
+            {{ end }}
+
+            <!--Archives button-->
+            <div class="text-left">
+                <a class="blog-nav-btn" href="/blog-archive">
+                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>All Posts
+                </a>
+            </div>
+
         </div>
-        
+        <!-- /.blog posts -->
+
     </div>
-    <!--<script src="http://cdn.jsdelivr.net/walkway/0.0.7/walkway.min.js"></script>
-    <script> 
-        document.addEventListener('DOMContentLoaded', function() {
-            var svg = new Walkway({
-                selector: '#jlam',
-                duration: 2000,
-                easing: 'linear'
-            });
-            
-            svg.draw(function() {
-                console.log('Finished!');
-            });
-        });
-    </script>-->
+    <!-- /.page container -->
+
+	{{ partial "footer-js.html" . }}
+
 </body>
-    
-{{ partial "footer-js.html" . }}
+
+{{ partial "footer.html" . }}
+
+</html>

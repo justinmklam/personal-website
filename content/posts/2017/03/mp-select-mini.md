@@ -2,7 +2,7 @@
 date = "2017-03-07T15:56:53-07:00"
 draft = false
 image = "/imgs/blog-imgs/mp-select-mini/mp-select-mini-product.jpg"
-layout = "single-blog"
+layout = "single"
 title = "New Toy Tuesday: Monoprice Select Mini 3D Printer"
 tagline = "Giving in to temptation for a tool that can make other tools."
 type = "blog"
@@ -11,7 +11,7 @@ tags = ["3d printing"]
 
 I've been bit by the 3D printing bug.
 
-Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for quite some time. For my final year mechatronics design project, my partner and I designed an extravagent contraption to measure the yolk done-ness of a soft-boiled egg, which we called [The PerfEGGct](http://justinmklam.com/projects/mecha/perfeggct/). We borrowed my roommate's 3D printer to create the enclosure, and it turned out to be an indispensable tool during our prototyping process. At the time, reliable 3D printers were upwards of $500 which was just out of my threshold for nice-to-have gadgets. 
+Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for quite some time. For my final year mechatronics design project, my partner and I designed an extravagent contraption to measure the yolk done-ness of a soft-boiled egg, which we called [The PerfEGGct](http://justinmklam.com/projects/mecha/perfeggct/). We borrowed my roommate's 3D printer to create the enclosure, and it turned out to be an indispensable tool during our prototyping process. At the time, reliable 3D printers were upwards of $500 which was just out of my threshold for nice-to-have gadgets.
 
 {{<img caption="Your everyday solution for perfect soft-boiled eggs: The PerfEGGct"
 src="http://justinmklam.com/imgs/perfeggct/IMG_0407.JPG" >}}

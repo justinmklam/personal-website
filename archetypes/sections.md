@@ -1,5 +1,0 @@
-+++
-subtitle = ""
-section = ""
-layout = "list"
-+++
