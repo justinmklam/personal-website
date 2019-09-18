@@ -116,7 +116,7 @@ a:hover, a:focus,
 .archive-date-category,
 .project-description a,
 .project-description h4,
-.blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4,
+h1, h2, h3, h4, h5, h6
 .blog-title {
 	font-family: "DM Sans", sans-serif;
 }
