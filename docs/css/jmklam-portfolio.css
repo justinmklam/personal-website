@@ -141,6 +141,8 @@ h1, h2, h3, h4, h5, h6
 }
 
 .archive-blog-tagline {
+	font-family: inherit;
+	font-style: oblique;
 	font-size:16px;
 	margin-top: 5px;
 }
