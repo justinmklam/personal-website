@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>School on Justin MK Lam | Portfolio</title>
-    <link>http://justinmklam.com/tags/school/</link>
-    <description>Recent content in School on Justin MK Lam | Portfolio</description>
+    <title>School on Justin MK Lam | Blog</title>
+    <link>https://justinmklam.com/tags/school/</link>
+    <description>Recent content in School on Justin MK Lam | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jun 2016 12:57:32 -0700</lastBuildDate>
     
-	<atom:link href="http://justinmklam.com/tags/school/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://justinmklam.com/tags/school/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MECH 458: Capstone 3D Optical Well Imager</title>
-      <link>http://justinmklam.com/posts/2016/06/mech-458-capstone/</link>
+      <link>https://justinmklam.com/posts/2016/06/mech-458-capstone/</link>
       <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
-      <guid>http://justinmklam.com/posts/2016/06/mech-458-capstone/</guid>
+      <guid>https://justinmklam.com/posts/2016/06/mech-458-capstone/</guid>
       <description>Introduction Objective: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.
 How: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.
 Project Details Requirements and Specifications Optical  Device must have a tolerance on distance measurement of 1 mm Device must have a camera circumferential resolution of 1.</description>
@@ -24,10 +24,10 @@ Project Details Requirements and Specifications Optical  Device must have a tole
     
     <item>
       <title>MECH 423: Mechatronics Product Design</title>
-      <link>http://justinmklam.com/posts/2016/04/perfeggct/</link>
+      <link>https://justinmklam.com/posts/2016/04/perfeggct/</link>
       <pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate>
       
-      <guid>http://justinmklam.com/posts/2016/04/perfeggct/</guid>
+      <guid>https://justinmklam.com/posts/2016/04/perfeggct/</guid>
       <description>Background: When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
  &amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman
  Objective: Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.</description>
@@ -35,10 +35,10 @@ Project Details Requirements and Specifications Optical  Device must have a tole
     
     <item>
       <title>MECH 328: TrailRider Design Project</title>
-      <link>http://justinmklam.com/posts/2014/11/mech-328-trailrider/</link>
+      <link>https://justinmklam.com/posts/2014/11/mech-328-trailrider/</link>
       <pubDate>Mon, 24 Nov 2014 12:37:55 -0700</pubDate>
       
-      <guid>http://justinmklam.com/posts/2014/11/mech-328-trailrider/</guid>
+      <guid>https://justinmklam.com/posts/2014/11/mech-328-trailrider/</guid>
       <description>Background: The TrailRider™ is a specialized device to provide accessibility to the wilderness for those with limited mobility. It is intended for a seated rider propelled and balanced by assistants.
 Objective: Expand the range of both riders and assistants who can ride safely use the Black Diamond TrailRider™.
 How: As a team of seven mechanical engineering undergrads, we explored a range of areas for improvement and developed a new design to incorporate these features.</description>
@@ -46,20 +46,20 @@ How: As a team of seven mechanical engineering undergrads, we explored a range o
     
     <item>
       <title>MECH 223: Hovercraft Competition</title>
-      <link>http://justinmklam.com/posts/2013/mech-223-hovercraft/</link>
+      <link>https://justinmklam.com/posts/2013/mech-223-hovercraft/</link>
       <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
       
-      <guid>http://justinmklam.com/posts/2013/mech-223-hovercraft/</guid>
+      <guid>https://justinmklam.com/posts/2013/mech-223-hovercraft/</guid>
       <description>For our final MECH2 design project at UBC, we were given three weeks to research, conceptualize, test, and build a functional hovercraft. The end goal was a class-wide competition of speed, cargo capacity, maneuverability, and driving skill. Budget was limited since costs came out of our own pockets, so we set out to build an inexpensive hovercraft using parts from the hardware and dollar store.
 Our result: 5th place out of 30 teams.</description>
     </item>
     
     <item>
       <title>Men in Massage: Research Paper</title>
-      <link>http://justinmklam.com/posts/2011/12/men-in-massage-therapy/</link>
+      <link>https://justinmklam.com/posts/2011/12/men-in-massage-therapy/</link>
       <pubDate>Thu, 01 Dec 2011 17:51:38 -0700</pubDate>
       
-      <guid>http://justinmklam.com/posts/2011/12/men-in-massage-therapy/</guid>
+      <guid>https://justinmklam.com/posts/2011/12/men-in-massage-therapy/</guid>
       <description>Originally written as a research paper for ENG 112 at UBC. Republished here for archival purposes.
 Research Proposal According to Tom Delph-Janiurek, a “mis-performance of voice” may be necessary in order to gain authority in specific interactional spaces by creating a display of control and assertiveness (277). He proposes that the vocal performances in teaching spaces adapt to their social roles of authority by opposing the hegemonic heterosexuality in voices and perform vocal features of “drag” without giving up their gendered identities, contributing to and disrupting the “heterosexing of [teaching] space” (277).</description>
     </item>
