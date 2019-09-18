@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electrical on Justin MK Lam | Blog</title>
-    <link>https://justinmklam.com/tags/electrical/</link>
+    <link>http://justinmklam.com/tags/electrical/</link>
     <description>Recent content in Electrical on Justin MK Lam | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 May 2017 11:30:56 -0700</lastBuildDate>
     
-	<atom:link href="https://justinmklam.com/tags/electrical/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://justinmklam.com/tags/electrical/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Battery Power Protection and Regulation PCB</title>
-      <link>https://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</link>
+      <link>http://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</link>
       <pubDate>Tue, 09 May 2017 11:30:56 -0700</pubDate>
       
-      <guid>https://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</guid>
+      <guid>http://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</guid>
       <description>Objective:
  Design a custom PCB to protect and regulate a 14.8V LiPo battery for use with an autonomous RC car  Features:
  12V undervoltage and 10A overcurrent protection 8.4V, 7.4V, and 5V regulated outputs  Main Components:
@@ -26,10 +26,10 @@
     
     <item>
       <title>Overhead Robotic Gantry for Tethered VR Headsets</title>
-      <link>https://justinmklam.com/posts/2017/04/vr-gantry/</link>
+      <link>http://justinmklam.com/posts/2017/04/vr-gantry/</link>
       <pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate>
       
-      <guid>https://justinmklam.com/posts/2017/04/vr-gantry/</guid>
+      <guid>http://justinmklam.com/posts/2017/04/vr-gantry/</guid>
       <description>Project Overview Objective: Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.
 Motivation: An extravagant party prop for an evening at CES 2017, hosted by MistyWest.
 Features:
@@ -38,10 +38,10 @@ Features:
     
     <item>
       <title>ESP8266 Sous Vide Controller</title>
-      <link>https://justinmklam.com/posts/2017/05/sous-vide-controller/</link>
+      <link>http://justinmklam.com/posts/2017/05/sous-vide-controller/</link>
       <pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate>
       
-      <guid>https://justinmklam.com/posts/2017/05/sous-vide-controller/</guid>
+      <guid>http://justinmklam.com/posts/2017/05/sous-vide-controller/</guid>
       <description>Project Summary Objective: Create a small, modular controller to regulate the temperature of a water bath.
 Motivation: To get in on this cooking fad without dropping fat stacks of cash on an immersion circulator.
 Features:
@@ -50,10 +50,10 @@ Features:
     
     <item>
       <title>Adjustable Portable Power Supply</title>
-      <link>https://justinmklam.com/posts/2016/05/power-supply/</link>
+      <link>http://justinmklam.com/posts/2016/05/power-supply/</link>
       <pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate>
       
-      <guid>https://justinmklam.com/posts/2016/05/power-supply/</guid>
+      <guid>http://justinmklam.com/posts/2016/05/power-supply/</guid>
       <description>Objective: Build a cheap, portable, variable DC power supply.
 Motivation: It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.
 Limitations:
@@ -62,10 +62,10 @@ Limitations:
     
     <item>
       <title>MECH 423: Mechatronics Product Design</title>
-      <link>https://justinmklam.com/posts/2016/04/perfeggct/</link>
+      <link>http://justinmklam.com/posts/2016/04/perfeggct/</link>
       <pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate>
       
-      <guid>https://justinmklam.com/posts/2016/04/perfeggct/</guid>
+      <guid>http://justinmklam.com/posts/2016/04/perfeggct/</guid>
       <description>Background: When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
  &amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman
  Objective: Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.</description>
@@ -73,10 +73,10 @@ Limitations:
     
     <item>
       <title>A Minty-Fresh Power Pack</title>
-      <link>https://justinmklam.com/posts/2009/altoids/</link>
+      <link>http://justinmklam.com/posts/2009/altoids/</link>
       <pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate>
       
-      <guid>https://justinmklam.com/posts/2009/altoids/</guid>
+      <guid>http://justinmklam.com/posts/2009/altoids/</guid>
       <description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback. I built a simple, rechargable battery pack to keep the tunes playing on long road trips.
  The iPod is alive!
   President&amp;#39;s Choice rechargable batteries and some janky wiring is all it took.</description>
