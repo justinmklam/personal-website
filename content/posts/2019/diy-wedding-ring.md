@@ -4,9 +4,9 @@ type =      "blog"
 draft =     true
 layout =    "single-blog"
 tags =      ["3d-printing", "design"]
-tagline =   "Save that money with sentiment."
-title = "3D Printed Wedding Ring"
-date = "2019-07-03T17:50:22-07:00"
+tagline =   "Sentimental sintered metal. (Actually casted, but this is more catchy.)"
+title = "DIY 3D Printed Wedding Ring"
+date = "2019-10-13T11:50:22-07:00"
 +++
 
 <p class="text-center" style="font-style:oblique">
