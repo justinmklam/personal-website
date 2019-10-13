@@ -57,20 +57,32 @@ Here's [another video](https://www.youtube.com/watch?v=-5Ix57Cetek) on how a sto
 
 {{<img caption="The finished product!" src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181106_183320.jpg" >}}
 
+# The Outcome
+
 ## The Proposal
 
 {{<img caption="Locked and loaded." src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181118_104503.jpg" >}}
 
 {{<img caption="She said yes!" src="/imgs/blog-imgs/diy-wedding-ring/heather 2.jpg" >}}
 
-## ... The Boo Boo
+## ... The Mistake
 
 {{<img caption="The flat edge under the stone reduces the actual inner diameter..." src="/imgs/blog-imgs/diy-wedding-ring/ring-side-view.png" >}}
 
 {{<img caption="The aftermath of the resizing. Fortunately it's not (very) visible while it's worn." src="/imgs/blog-imgs/diy-wedding-ring/aftermath.jpg" >}}
 
-## Final Thoughts
+## The Wedding
 
 {{<img caption="DIY engagement ring sandwiched between our not-DIY wedding rings." src="/imgs/blog-imgs/diy-wedding-ring/J_H-10.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
+{{<img caption="Ceremony at the UBC Farm." src="/imgs/blog-imgs/diy-wedding-ring/J_H-144.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
+{{<img caption="Cozy reception within the Poplar Grove." src="/imgs/blog-imgs/diy-wedding-ring/J&H-1124_websize.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
+
+{{<img caption="Trying to cut the cake without toppling it over..." src="/imgs/blog-imgs/diy-wedding-ring/J&H-1184_websize.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
+
+{{<img caption="Ending the night with the first dance." src="/imgs/blog-imgs/diy-wedding-ring/J&H-37_websize.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
+
+## Final Thoughts
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
