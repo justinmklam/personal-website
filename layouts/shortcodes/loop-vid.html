@@ -1,5 +1,5 @@
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
       <source src={{ .Get "src" }} type="video/mp4" />
     </video>
     <p class="caption">{{ .Get "caption" }}{{ with .Get "link"}} (Source: <a href={{.}}>{{end}}{{ with .Get "link-text"}} {{.}}</a>) {{end}}</p>
