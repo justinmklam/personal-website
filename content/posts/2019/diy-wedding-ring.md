@@ -37,23 +37,48 @@ Qualitative videos are great, but what I needed were actual dimensions on wall t
 
 ## Initial Design
 
-{{<img caption="Fresh off the Form 2 SLA printer, with the dimaond placed inside." src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181018_123234.jpg" >}}
+Luckily, one of my coworkers, [Phil Tsao](http://www.philiptsao.com), owns a plethora of rapid prototyping machines as part of his [Ember Prototypes](https://www.emberprototypes.com) side business. One of his fancy toys is the [Form 2 SLA Printer](https://formlabs.com/3d-printers/form-2/), which is well suited for printing intricate plastic parts with fine details.
+
+{{<img caption="Fresh off the Form 2 SLA printer, with the diamond placed inside." src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181018_123234.jpg" >}}
 
 {{<img caption="You can see that the shape is quite blocky." src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181018_123554.jpg" >}}
 
 ## Refinement
 
+Iterations are a key part of design (for both hardware and software). Seeing a physical prototype of the ring was extremely useful in determining what aspects needed changing.
+
+I was unhappy with how blocky and square the ring currently looked, so I took a closer look at other rings to see what made them look better. After all, they say good design is invisible (to the untrained eye, and my eye for ring design is pretty inexperienced). One main aspect is that almost all surfaces on rings (and other jewelry, for that matter) are curved, allowing light to reflect off the surface in a more aesthetically pleasing way.
+
+Given these findings, my list of change orders were as follows:
+
+- Increase height of stone holder to make it "stand out" more
+- Increase visibility of leaf pattern on band
+- Increase height of ridge on band for a more pronounced look
+- Round both inner and outer surfaces of band for comfort and aesthetic improvements
+
 {{<img caption="Original design on left, revised design on right." src="/imgs/blog-imgs/diy-wedding-ring/IMG-20181028-WA0005.jpg" >}}
 
 ## Sending to Shapeways
 
-{{<img caption="Order placed (with express shipping, of course).z" src="/imgs/blog-imgs/diy-wedding-ring/shapeways-order.jpeg" >}}
+I hadn't used [Shapeways](https://www.shapeways.com) previously, but their offerings and capabilities looked promising. Aside from printing plastics and metals, [jewelry](https://www.shapeways.com/getting-started/jewelry) also seemed to be a common offering.
+
+> Gold models are 3D printed using a complex five-step process. First, the model is printed in wax using a specialized high-resolution 3D printer. It is then put in a container where liquid plaster is poured in around it. When the plaster sets, the wax is melted out in a furnace, and the remaining plaster becomes the mold.
+>
+> Molten Gold is poured into this mold and set to harden. The plaster is broken away, revealing your new product. The product is then carefully cleaned and hand-polished to give it the trademark Gold luster. Please be aware that polishing can wear down or fill in very fine details and edges. Polishing also removes a bit of material from your product in order to smooth it out, so the exact volume may be up to 10% smaller than that of your digital model.
+>
+> \- [Shapeways: Gold Material Info](https://www.shapeways.com/materials/gold)
+
+{{<vid caption="A quick tour of the Shapeways cast metal jewelry printing process." src="https://www.youtube.com/embed/Eq-BIw1_jX0" >}}
+
+If my timeline was more permitting, I would have printed this second version in an inexpensive metal like plated brass or silver. This would ensure the end result of the ring is exactly how I expect it to be, rather than have the risk of being surprised on the final order. However, given my expedited timeline, I opted to take the risk and just go for ordering the ring in 14K gold. If I ended up unhappy with it, paying another ~$200 would be acceptable (in my books) since the flipside of the risk was potentially proposing a few weeks earlier (and thus giving more time for the wedding planning!).
+
+{{<img caption="Order placed (with express shipping, of course)." src="/imgs/blog-imgs/diy-wedding-ring/shapeways-order.jpeg" >}}
 
 ## Setting the Diamond
 
-Here's [another video](https://www.youtube.com/watch?v=-5Ix57Cetek) on how a stone is set.
+{{<vid caption="Full instructional video on bezel setting stones." src="https://www.youtube.com/embed/-5Ix57Cetek" >}}
 
-{{<loop-vid caption="How bezel set diamonds are typically set." link="https://www.youtube.com/watch?v=0z6EOdgr6GQ" link-text="92nd Street Y" src="/imgs/blog-imgs/diy-wedding-ring/bezel set instructions.mp4">}}
+{{<loop-vid caption="How bezel set stones are typically set." link="https://www.youtube.com/watch?v=0z6EOdgr6GQ" link-text="92nd Street Y" src="/imgs/blog-imgs/diy-wedding-ring/bezel set instructions.mp4">}}
 
 {{<img caption="The finished product!" src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181106_183320.jpg" >}}
 
