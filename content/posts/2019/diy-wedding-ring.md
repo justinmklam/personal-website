@@ -63,6 +63,8 @@ Here's [another video](https://www.youtube.com/watch?v=-5Ix57Cetek) on how a sto
 
 {{<img caption="Locked and loaded." src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181118_104503.jpg" >}}
 
+{{<img caption="Patiently waiting at the same street corner we met on." src="/imgs/blog-imgs/diy-wedding-ring/DSC_0180.JPG" >}}
+
 {{<img caption="She said yes!" src="/imgs/blog-imgs/diy-wedding-ring/heather 2.jpg" >}}
 
 ## ... The Mistake
