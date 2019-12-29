@@ -13,15 +13,18 @@ date = "2019-10-13T11:50:22-07:00"
 Professional photos from <a href="http://justine-russo.com/" target="_blank">Justine Russo Photography.</a>
 </p>
 
+For readers of my blog, you'll notice that I haven't had any new content in the past year. For good reason though, as I got married in June! Aside from planning the proposal and wedding, I also had the lofty goal of designing and making my wife's engagement ring. Having experience with mechanical design and rapid manufacturing methods, I figured it was well within my capabilities to propose with a truly special, sentimental engagement ring.
+
+With this post, I'd like to share my quest in designing and 3D printing my wife's engagement ring, along with the *minor* mistakes I made.
+
 # The Backstory
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-{{<loop-vid caption="Timelapse of the ring design in Fusion 360. Yes I know, I should have just used a revolve feature." src="/imgs/blog-imgs/diy-wedding-ring/fusion 360 screencast_trimmed.mp4">}}
+{{<loop-vid caption="Timelapse of the ring design in Fusion 360. (Yes I know, I should have just used a revolve feature, but I started out designing prongs and quickly abandoned that concept.)" src="/imgs/blog-imgs/diy-wedding-ring/fusion 360 screencast_trimmed.mp4">}}
 
 # The Development
 
 ## Planning
+*~ September to October 2018 ~*
 
 I casually brought up engagement ring designs with Heather, and she showed me a few designs that she liked.
 
@@ -36,6 +39,7 @@ Qualitative videos are great, but what I needed were actual dimensions on wall t
 {{<img caption="Design guidelines for bezel set features." src="/imgs/blog-imgs/diy-wedding-ring/144654.jpg" link="https://www.gia.edu/bench-tip-modified-tool-to-bezel-set-round-faceted-stones" link-text="GIA">}}
 
 ## Initial Design
+*~ October 11 to 17, 2018 ~*
 
 Luckily, one of my coworkers, [Phil Tsao](http://www.philiptsao.com), owns a plethora of rapid prototyping machines as part of his [Ember Prototypes](https://www.emberprototypes.com) side business. One of his fancy toys is the [Form 2 SLA Printer](https://formlabs.com/3d-printers/form-2/), which is well suited for printing intricate plastic parts with fine details.
 
@@ -44,6 +48,7 @@ Luckily, one of my coworkers, [Phil Tsao](http://www.philiptsao.com), owns a ple
 {{<img caption="You can see that the shape is quite blocky." src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181018_123554.jpg" >}}
 
 ## Refinement
+*~ October 22, 2018 ~*
 
 Iterations are a key part of design (for both hardware and software). Seeing a physical prototype of the ring was extremely useful in determining what aspects needed changing.
 
@@ -56,9 +61,9 @@ Given these findings, my list of change orders were as follows:
 - Increase height of ridge on band for a more pronounced look
 - Round both inner and outer surfaces of band for comfort and aesthetic improvements
 
-{{<img caption="Original design on left, revised design on right." src="/imgs/blog-imgs/diy-wedding-ring/IMG-20181028-WA0005.jpg" >}}
+Foobar 123 
 
-## Sending to Shapeways
+*~ October 28, 2018 ~*
 
 I hadn't used [Shapeways](https://www.shapeways.com) previously, but their offerings and capabilities looked promising. Aside from printing plastics and metals, [jewelry](https://www.shapeways.com/getting-started/jewelry) also seemed to be a common offering.
 
@@ -76,15 +81,27 @@ If my timeline was more permitting, I would have printed this second version in 
 
 ## Setting the Diamond
 
+*~ November 6, 2018 ~*
+
+Now, for the most critical part! After scouring YouTube and Google for instructions on how to set the stone, I came to the conclusion that it's actually quite a simple process:
+
+1. Find a tool to form the edge over the stone
+2. Bend the edge over the stone with the given tool'
+3. Repeat for the circumference of the bezel
+
+There are different tools available to do the bending. In the video below, a hammer-like tool is used to compress the edge on to the stone. In other videos, a file-like tool is pushed toward the center to bend the edge. I looked around my workshop, and
+
 {{<vid caption="Full instructional video on bezel setting stones." src="https://www.youtube.com/embed/-5Ix57Cetek" >}}
 
-{{<loop-vid caption="How bezel set stones are typically set." link="https://www.youtube.com/watch?v=0z6EOdgr6GQ" link-text="92nd Street Y" src="/imgs/blog-imgs/diy-wedding-ring/bezel set instructions.mp4">}}
+{{<loop-vid caption="Snippet to show bending of the bezel edges to secure the stone in place." link="https://www.youtube.com/watch?v=0z6EOdgr6GQ" link-text="92nd Street Y" src="/imgs/blog-imgs/diy-wedding-ring/bezel set instructions.mp4">}}
 
 {{<img caption="The finished product!" src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181106_183320.jpg" >}}
 
 # The Outcome
 
 ## The Proposal
+
+*~ November 18, 2018 ~*
 
 {{<img caption="Locked and loaded." src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181118_104503.jpg" >}}
 
@@ -94,11 +111,15 @@ If my timeline was more permitting, I would have printed this second version in 
 
 ## ... The Mistake
 
+*~ November 21, 2018 ~*
+
 {{<img caption="The flat edge under the stone reduces the actual inner diameter..." src="/imgs/blog-imgs/diy-wedding-ring/ring-side-view.png" >}}
 
 {{<img caption="The aftermath of the resizing. Fortunately it's not (very) visible while it's worn." src="/imgs/blog-imgs/diy-wedding-ring/aftermath.jpg" >}}
 
 ## The Wedding
+
+*~ June 2019 ~*
 
 {{<img caption="DIY engagement ring sandwiched between our not-DIY wedding rings." src="/imgs/blog-imgs/diy-wedding-ring/J_H-10.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
