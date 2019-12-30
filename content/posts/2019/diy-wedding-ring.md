@@ -106,7 +106,7 @@ With that, I went ahead and placed the order. And so, the waiting game began (an
 
 *~ November 6, 2018 ~*
 
-I needed to figure out how to actually nicely bend the bevel over the stone. After scouring YouTube and Google for instructions, I came to the conclusion that it is actually quite a simple process:
+I needed to figure out how to actually nicely bend the bezel over the stone. After scouring YouTube and Google for instructions, I came to the conclusion that it is actually quite a simple process:
 
 1. Find a tool to form the edge over the stone
 2. Bend the edge over the stone with the given tool'
@@ -118,7 +118,7 @@ There are different tools available to do the bending. In the video below, a ham
 
 {{<loop-vid caption="Snippet to show bending of the bezel edges to secure the stone in place." link="https://www.youtube.com/watch?v=0z6EOdgr6GQ" link-text="92nd Street Y" src="/imgs/blog-imgs/diy-wedding-ring/bezel set instructions.mp4">}}
 
-Once the ring arrived, I was ready to set the stone. However, due to the tight tolerances of the bevel and (expected) imperfections of the casting process, I had to use a rotary tool with the smallest grind attachment to carve out the tiny bumps so the diamond would actually fit inside. Having a very good microscope was integral in this slow, methodical process.
+Once the ring arrived, I was ready to set the stone. However, due to the tight tolerances of the bezel and (expected) imperfections of the casting process, I had to use a rotary tool with the smallest grind attachment to carve out the tiny bumps so the diamond would actually fit inside. Having a very good microscope was integral in this slow, methodical process.
 
 {{<img caption="The finished product!" src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181106_183320.jpg" >}}
 
@@ -142,7 +142,7 @@ For the proposal, I thought it'd be funny (and sweet) if I proposed on the same 
 
 Our friend was conveniently furnishing her new appartment, so we created a fake ad for a bookshelf. She took my wife to Ikea while I made my way to the proposal spot, and when they eventually arrived, I came out from my hiding spot and started my proposal.
 
-{{<img caption="She said yes!" src="/imgs/blog-imgs/diy-wedding-ring/heather 2.jpg" >}}
+{{<img caption="She said yes!" src="/imgs/blog-imgs/diy-wedding-ring/proposal.jpg" >}}
 
 ## ... The Mistake
 
