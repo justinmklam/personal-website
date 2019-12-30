@@ -1,7 +1,7 @@
 +++
 image =     "/imgs/blog-imgs/diy-wedding-ring/J_H-323.jpg"
 type =      "blog"
-draft =     true
+draft =     false
 layout =    "single-blog"
 tags =      ["3d-printing", "design"]
 tagline =   "Sentimental sintered metal. (Actually casted, but this is more catchy.)"
