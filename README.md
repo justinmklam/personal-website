@@ -2,8 +2,8 @@
 Increasing my online presence by showcasing projects and posts that I've worked on over the years.
 
 # Dependencies
-+ Static website created using Hugo engine
-+ Theme template created using Bootstrap framework
++ Static website built with [Hugo](https://gohugo.io/)
++ Custom theme built with [Bootstrap 3.3.7](https://getbootstrap.com/docs/3.3/)
 
 # How To Use
 ## Basic Hugo commands
