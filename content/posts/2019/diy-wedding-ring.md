@@ -5,8 +5,8 @@ draft =     true
 layout =    "single-blog"
 tags =      ["3d-printing", "design"]
 tagline =   "Sentimental sintered metal. (Actually casted, but this is more catchy.)"
-title = "DIY 3D Printed Wedding Ring"
-date = "2019-10-13T11:50:22-07:00"
+title = "3D Printed Engagement Ring"
+date = "2019-12-29T11:50:22-07:00"
 +++
 
 <p class="text-center" style="font-style:oblique">
@@ -124,15 +124,23 @@ Due to the tight tolerances of the bevel and (expected) imperfections of the cas
 
 Once the stone sat snuggly inside, I settled on using the shaft of a large screwdriver as the tool to bend the lip over the stone. This ended up working quite well, and a few minutes later, the ring was complete!
 
+{{<img caption="Locked and loaded." src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181118_104503.jpg" >}}
+
+I showed the ring to my grandpa to check my setting, and he gave it a thumbs up. Now for the proposal.
+
 # The Outcome
 
 ## The Proposal
 
 *~ November 18, 2018 ~*
 
-{{<img caption="Locked and loaded." src="/imgs/blog-imgs/diy-wedding-ring/IMG_20181118_104503.jpg" >}}
+So Heather and I met through Craigslist. While we were both in university, I was buying some rock climbing gear, and she was selling hers. Turns out we were renting houses on the same block, so I took a gamble and asked her to go climbing at our local gym. She kindly said yes, and now we're here, about to get married.
 
 {{<img caption="Patiently waiting at the same street corner we met on." src="/imgs/blog-imgs/diy-wedding-ring/DSC_0180.JPG" >}}
+
+For the proposal, I thought it'd be funny (and sweet) if I proposed on the same street corner that we had our first transaction. But how would I get her there as a surprise? Through another Craigslist transaction, of course!
+
+Our friend (Jess) was conveniently furnishing her new appartment, so we created a fake ad for a bookshelf. Jess took Heather to Ikea while I made my way to the proposal spot, and when they eventually arrived, I came out from my hiding spot and proposed to Heather.
 
 {{<img caption="She said yes!" src="/imgs/blog-imgs/diy-wedding-ring/heather 2.jpg" >}}
 
@@ -140,13 +148,24 @@ Once the stone sat snuggly inside, I settled on using the shaft of a large screw
 
 *~ November 21, 2018 ~*
 
+Turns out my specifications were incorrect, and the ring didn't fit... Two things were at fault:
+
+1. I sized it too tight
+2. The flat edge under the stone reduces the effective diameter
+
 {{<img caption="The flat edge under the stone reduces the actual inner diameter..." src="/imgs/blog-imgs/diy-wedding-ring/ring-side-view.png" >}}
 
-{{<img caption="The aftermath of the resizing. Fortunately it's not (very) visible while it's worn." src="/imgs/blog-imgs/diy-wedding-ring/aftermath.jpg" >}}
+A quick trip to a professional jeweler for a resizing and the issue was fixed, albeit with some blemishing. The leaf pattern where extra material needed to be added was now gone, but fortunately it's not too visible while it's worn.
+
+{{<img caption="The aftermath of the resizing." src="/imgs/blog-imgs/diy-wedding-ring/aftermath.jpg" >}}
+
+Hindsight 20 / 20, but all things considered, it's not the worst thing that could have happened with this endeavour!
 
 ## The Wedding
 
 *~ June 2019 ~*
+
+With the engagement completed, we spent the next months planning for our farm-to-table themed wedding at the [Poplar Grove at UBC Farm](https://ubcfarm.ubc.ca/bookings/ubc-farm-venues/). We opted for professionally-made rings for our wedding bands (smartly so), and the end result of everything was just lovely.
 
 {{<img caption="DIY engagement ring sandwiched between our not-DIY wedding rings." src="/imgs/blog-imgs/diy-wedding-ring/J_H-10.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
@@ -158,6 +177,8 @@ Once the stone sat snuggly inside, I settled on using the shaft of a large screw
 
 {{<img caption="Ending the night with the first dance." src="/imgs/blog-imgs/diy-wedding-ring/J&H-37_websize.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
-## Final Thoughts
+# Final Thoughts
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+So there you have it, a story of how a young man created a perfectly imperfect engagement ring with the help of 3D printing. I was very happy with how it turned out, and it received many compliments by friends and family. For anyone thinking of going down a similar path, I hope you  learn from my mistakes (and that your significant other says yes!).
+
+> There are some things that money can't buy or make. For everything else, there's 3D printing.
