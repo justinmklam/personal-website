@@ -151,10 +151,12 @@
     <p class="caption">Modular sous vide controller powered by everyone&#39;s favourite WiFi chip, the EPS8266.</p>
 </div>
 
+
 <div class="row captioned-img">
     <a href=/imgs/sous-vide/ui-demo.gif><img class="img-responsive img-content" src=/imgs/sous-vide/ui-demo.gif /></a>
     <p class="caption">Push button toggles between three states: main monitoring screen, set cooking time, and set cooking temperature.</p>
 </div>
+
 
 <h1 id="the-long-version">The Long Version</h1>
 
@@ -173,15 +175,18 @@
     <p class="caption">Talk nerdy to me about sous vide. (Source: ChefSteps)</p>
 </div>
 
+
 <div class="row captioned-img">
     <a href=/imgs/sous-vide/what-is-sous-vide.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/what-is-sous-vide.jpg /></a>
     <p class="caption">Once immersion circulators came to the consumer market, sous vide became accessible to home kitchens. (Source: Anova Culinary)</p>
 </div>
 
+
 <!--<div class="row captioned-img">
     <a href=/imgs/sous-vide/Sous-Vide-ENG.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/Sous-Vide-ENG.jpg /></a>
     <p class="caption">Why cooking sous vide is worth the effort. (Source: OBH Nordica)</p>
-</div>-->
+</div>
+-->
 
 <h2 id="the-controller">The Controller</h2>
 
@@ -201,45 +206,54 @@
     <p class="caption">DIY sous vide setup with home-made temperature controller.</p>
 </div>
 
+
 <div class="row captioned-img">
     <a href=/imgs/sous-vide/IMG_8522.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/IMG_8522.jpg /></a>
     <p class="caption">Front face of the controller.</p>
 </div>
+
 
 <div class="row captioned-img">
     <a href=/imgs/sous-vide/IMG_8526.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/IMG_8526.jpg /></a>
     <p class="caption">Backside of the controller. Note the switch and cord grip for that back-me-on-Kickstarter finish quality.</p>
 </div>
 
+
 <div class="row captioned-img">
     <a href=/imgs/sous-vide/IMG_8454.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/IMG_8454.jpg /></a>
     <p class="caption">Little space was left unused to minimize the physical footprint of the circuit.</p>
 </div>
+
 
 <div class="row captioned-img">
     <a href=/imgs/sous-vide/IMG_8432.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/IMG_8432.jpg /></a>
     <p class="caption">Reveal of perfboard craftsmanship using the gobs-of-solder trace method.</p>
 </div>
 
+
 <div class="row captioned-img">
     <a href=/imgs/sous-vide/iUJLGdd.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/iUJLGdd.jpg /></a>
     <p class="caption">I designed the panel in SolidWorks, printed out the layout, taped it to a store bought enclosure panel and used a Dremel to carve out the holes.</p>
 </div>
+
 
 <div class="row captioned-img">
     <a href=/imgs/sous-vide/DCfOE0B.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/DCfOE0B.jpg /></a>
     <p class="caption">Dry fitting after a bit of filing to clean up the edges and corners.</p>
 </div>
 
+
 <div class="row captioned-img">
     <a href=/imgs/sous-vide/IMG_8400.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/IMG_8400.jpg /></a>
     <p class="caption">Programming the ESP8266.</p>
 </div>
 
+
 <!--<div class="row captioned-img">
     <a href=/imgs/sous-vide/IMG_8580.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/IMG_8580.jpg /></a>
     <p class="caption">TEXT</p>
-</div>-->
+</div>
+-->
 
 <h2 id="the-data">The Data</h2>
 
@@ -258,6 +272,7 @@
     <p class="caption">The ESP8266 logs temperature data through Adafruit servers. Data is displayed through their live dashboard feed.</p>
 </div>
 
+
 <h3 id="a-comparison-of-cookers">A Comparison of Cookers</h3>
 
 <p>Four trials were conducted with three different cooking vessels: a 3 cup rice cooker, 7 cup rice cooker, and a 14 cup (3.3 L) slow cooker. Two cups of water were used in each vessel for these tests. As shown through the graph below, the rice cookers get up to 55°C significantly than the <em>(very)</em> slow cooker. Although it would be better in maintaining temperature due to its ceramic makeup, it took way too long to heat up for practical purposes. You can fill it with hot/boiling water to help it warm up, but it still wouldn&rsquo;t be as fast or convenient than the rice cookers.</p>
@@ -269,6 +284,7 @@
     <p class="caption">Comparison of rice and slow cookers with circulated and uncirculated water baths.</p>
 </div>
 
+
 <p>Looking at the rice cookers in more detail, we see that the small rice cooker has a much lower overshoot than the large. This makes sense since the heating element is smaller, thus it retains less heat &ldquo;momentum&rdquo; upon shutoff. The addition of a water circulator significantly reduced the steady state temperature oscillation as well as the amplitude of overshoot. With the added benefit of greater temperature uniformity within the water bath than relying on natural convection to mix the water, using a circulator is proven to be a necessity.</p>
 
 <p>Moving forward, I decided to use the large rice cooker with a circulator. Although the small rice cooker reaches steady state more quickly, its small vessel size s unfortunately not practical for cooking anything but a feast for ants.</p>
@@ -278,10 +294,12 @@
     <p class="caption">Comparison of the remaining cooking vessels.</p>
 </div>
 
+
 <div class="row captioned-img">
     <a href=/imgs/sous-vide/IMG_8543.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/IMG_8543.jpg /></a>
     <p class="caption">Small aquarium pump used to circulate the water.</p>
 </div>
+
 
 <p>Time to actually cook with this thing! After trying out various foods, the data shows that the temperature stability is surprisingly stable given the simple on-off temperature control.</p>
 
@@ -289,6 +307,7 @@
     <a href=/imgs/sous-vide/plot_cook%20times.png><img class="img-responsive img-content" src=/imgs/sous-vide/plot_cook%20times.png /></a>
     <p class="caption">Log of cook times.</p>
 </div>
+
 
 <p>Quantifying the ripple with some simple analysis shows that the average standard deviation for these four cooking trials was ±0.4°C, where the steak had the highest deviation of ±0.6°C.</p>
 
@@ -321,6 +340,7 @@
     <a href=/imgs/sous-vide/IMG-20161231-WA0007.jpg><img class="img-responsive img-content" src=/imgs/sous-vide/IMG-20161231-WA0007.jpg /></a>
     <p class="caption">A uniformly cooked sirloin steak finished on a cast-iron pan.</p>
 </div>
+
 
                 </div>
 

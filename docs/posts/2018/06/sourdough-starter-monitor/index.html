@@ -133,11 +133,12 @@
 </div>
 
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29%20Levain%20Timelapse.mp4 type="video/mp4" />
     </video>
     <p class="caption">Image analysis for tracking growth of the above timelapse.</p>
 </div>
+
 
 <h1 id="the-backstory">The Backstory</h1>
 
@@ -201,21 +202,20 @@ The solution:</p>
 
 <ol>
 <li>Create an empty file on the SD&rsquo;s boot partition called <code>ssh</code> to enable it.</li>
-
-<li><p>Create another file named <code>wpa_supplicant.conf</code> with the following content:</p>
+<li>Create another file named <code>wpa_supplicant.conf</code> with the following content:</li>
+</ol>
 
 <pre><code>country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-ssid=&quot;your_real_wifi_ssid&quot;
-scan_ssid=1
-psk=&quot;your_real_password&quot;
-key_mgmt=WPA-PSK
+    ssid=&quot;your_real_wifi_ssid&quot;
+    scan_ssid=1
+    psk=&quot;your_real_password&quot;
+    key_mgmt=WPA-PSK
 }
-</code></pre></li>
-</ol>
+</code></pre>
 
 <p>Connect the camera module and boot it up. You can use something like <a href="https://angryip.org/download/#linux">Angry IP Scanner</a> to find its IP address, and with any luck you should be able to SSH into it from your own computer!</p>
 
@@ -309,10 +309,12 @@ nohup ./timelapse.sh &amp;&gt; /dev/null &amp;
     <p class="caption">Sometimes random parts and a bit of tape are the best way forward.</p>
 </div>
 
+
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_225557.jpg><img class="img-responsive img-content" src=/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_225557.jpg /></a>
     <p class="caption">The light was originally placed in front (as shown above), but a better method was to put the light behind the jars to maximize contrast and minimize glare.</p>
 </div>
+
 
 <p>To start the timelapse, ssh into the Pi and execute the following:</p>
 
@@ -330,6 +332,7 @@ nohup ./timelapse.sh &amp;&gt; /dev/null &amp;
     <a href=/imgs/blog-imgs/sourdough-starter-monitor/Screenshot_JuiceSSH_20180623-124103.png><img class="img-responsive img-content" src=/imgs/blog-imgs/sourdough-starter-monitor/Screenshot_JuiceSSH_20180623-124103.png /></a>
     <p class="caption">Starting the timelapse on Android, because why not?</p>
 </div>
+
 
 <p>Now we have some data to analyze!</p>
 
@@ -372,6 +375,7 @@ plt.show()
     <p class="caption">The try_all_threshold() function is fast and convenient to see which will likely be the best for an image.</p>
 </div>
 
+
 <p>Discussing the different thresholding algorithms is beyond the scope of this post, but what we&rsquo;re looking for is one that is able to separate the boundary between the clear glass jar and the opaque sourdough starter. From the image above, it looks like isodata, otsu, and yen provide the sharpest thresholded boundary.</p>
 
 <p>Given a hot tip from my coworker (thanks Andreas) that Otsu&rsquo;s method is a good one to pick, we can dig deeper into it. From the docs:</p>
@@ -393,6 +397,7 @@ plt.show()
     <a href=/imgs/blog-imgs/sourdough-starter-monitor/histogram.png><img class="img-responsive img-content" src=/imgs/blog-imgs/sourdough-starter-monitor/histogram.png /></a>
     <p class="caption">The image is a bimodal histogram, so Otsu&#39;s method should work well. (Please forgive my unlabelled axes.)</p>
 </div>
+
 
 <p>Great, the histogram shows just what we need! (Except for the high concentration of saturated pixels, but let&rsquo;s just ignore that for now&hellip;)</p>
 
@@ -419,6 +424,7 @@ plt.show()
     <a href=/imgs/blog-imgs/sourdough-starter-monitor/threshold-comparison.png><img class="img-responsive img-content" src=/imgs/blog-imgs/sourdough-starter-monitor/threshold-comparison.png /></a>
     <p class="caption">The result of Otsu&#39;s thresholding method.</p>
 </div>
+
 
 <p>Those white blobs on the walls of the jar may still be detected as regions of interest, but applying a minimum thresholded area will help with false positives. Luckily, we have moderate control of the lighting and contrast of the object in question. If we&rsquo;re lucky we won&rsquo;t have to change much for the timelapses taken at different times of the day!</p>
 
@@ -460,12 +466,14 @@ plt.show()
     <p class="caption">Minimum area is required since other areas will register as a detected region.</p>
 </div>
 
+
 <p>Due to the camera perspective and curvature of the jar, the boundary between the two regions is not actually straight. This was solved by taking a much narrower cropped region, which you will see below in the animated timelapses.</p>
 
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/sourdough-starter-monitor/first-thresh.png><img class="img-responsive img-content" src=/imgs/blog-imgs/sourdough-starter-monitor/first-thresh.png /></a>
     <p class="caption">This may have been a bit easier with a square container...</p>
 </div>
+
 
 <p>Now that we have a working understanding of the components we need, let&rsquo;s get scripting and collect a bunch of data! You can check out the full analysis on <a href="https://github.com/justinmklam/sourdough-starter-monitor">Github</a>.</p>
 
@@ -476,65 +484,72 @@ plt.show()
 <h3 id="may-29-left-jar">May 29, Left Jar</h3>
 
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29%20Levain%20Timelapse.mp4 type="video/mp4" />
     </video>
     <p class="caption">The rise on the left jar had the cleanest growth trace.</p>
 </div>
 
+
 <h3 id="may-29-right-jar">May 29, Right Jar</h3>
 
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29%20Levain%20Timelapse,%20Right.mp4 type="video/mp4" />
     </video>
     <p class="caption">A narrow crop area had to be used to prevent detection of uneven rise levels.</p>
 </div>
 
+
 <h3 id="may-31-first-feeding">May 31, First Feeding</h3>
 
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-05-31%20Levain%20Timelapse.mp4 type="video/mp4" />
     </video>
     <p class="caption">Sunlight through the kitchen window created glare on the bottom left area on the jar, which affected the binary thresholding.</p>
 </div>
 
+
 <h3 id="may-31-second-feeding">May 31, Second Feeding</h3>
 
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-05-31%20Levain%20Timelapse%202.mp4 type="video/mp4" />
     </video>
     <p class="caption">Having the jar farther away reduced the thresholding accuracy, but the overall trace was still acceptable.</p>
 </div>
 
+
 <h3 id="june-10-out-of-fridge">June 10, Out of Fridge</h3>
 
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-06-10%20Out%20of%20Fridge.mp4 type="video/mp4" />
     </video>
     <p class="caption">A larger jar was needed for this one! The thresholding algorithm was surprisingly still able ot catch the peak to some extent, despite minimal contrast.</p>
 </div>
 
+
 <h3 id="june-23-first-feeding">June 23, First Feeding</h3>
 
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-06-23%20First%20Feeding.mp4 type="video/mp4" />
     </video>
     <p class="caption">After some neglect, the starter only rose to ~50%...</p>
 </div>
 
+
 <h3 id="june-23-refeeding">June 23, Refeeding</h3>
 
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-06-23%20Refeeding.mp4 type="video/mp4" />
     </video>
     <p class="caption">But after another feeding the next morning, it had enough activity to spring back ~80% growth!</p>
 </div>
+
 
 <h2 id="the-discussion">The Discussion</h2>
 

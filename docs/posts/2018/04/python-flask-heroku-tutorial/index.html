@@ -158,13 +158,15 @@
 
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/python-heroku-tutorial/jupyter%20demo%20gif.gif><img class="img-responsive img-content" src=/imgs/blog-imgs/python-heroku-tutorial/jupyter%20demo%20gif.gif /></a>
-    <p class="caption">The power of Jupyter&#39;s interactive output makes prototyping almost effortless. (Image: <a href=http://n-s-f.github.io/2017/03/25/r-to-python.html> Noam Finkelstein</a>) </p>
+    <p class="caption">The power of Jupyter&#39;s interactive output makes prototyping almost effortless. (Source: <a href=http://n-s-f.github.io/2017/03/25/r-to-python.html> Noam Finkelstein</a>) </p>
 </div>
+
 
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/python-heroku-tutorial/jupyter%20lab.png><img class="img-responsive img-content" src=/imgs/blog-imgs/python-heroku-tutorial/jupyter%20lab.png /></a>
-    <p class="caption">Jupyter Lab is the successor to Jupyter (previously iPython) Notebook. The tabbed interface is a godsend. (Image: <a href=https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906> Jupyter</a>) </p>
+    <p class="caption">Jupyter Lab is the successor to Jupyter (previously iPython) Notebook. The tabbed interface is a godsend. (Source: <a href=https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906> Jupyter</a>) </p>
 </div>
+
 
 <h3 id="on-to-the-prototype">On To The Prototype</h3>
 
@@ -193,6 +195,7 @@
     <p class="caption">Imperial volume to metric mass (gram) conversions in a csv file, ie. the wrong units to the right ones.</p>
 </div>
 
+
 <p>Checking out my <a href="https://github.com/justinmklam/recipe-converter/blob/3a4c109a1eb7604cb01cc3f615b37e73e08273ca/.ipynb_checkpoints/Recipe%20Converter-checkpoint.ipynb">first working version</a>, you&rsquo;ll see that it&rsquo;s not the most efficient script. However, when proving out a concept, the priority is to get something working (ie. a minimum viable product) and optimize later. Since uncertainty of this working (or being worth it) is quite high, we don&rsquo;t want to spend too much time making it perfect!</p>
 
 <div class="row captioned-img">
@@ -200,12 +203,14 @@
     <p class="caption">Testing out the prototype in Jupyter.</p>
 </div>
 
+
 <p>Comparing that with the <a href="https://github.com/justinmklam/recipe-converter/blob/master/Recipe%20Converter%20PoC.ipynb">current version</a>, we can see that the code structure went from messy and repetitive to organized and modular. Cleaning up code is always mildly therapeutic.</p>
 
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/python-heroku-tutorial/modularity%20comparison.png><img class="img-responsive img-content" src=/imgs/blog-imgs/python-heroku-tutorial/modularity%20comparison.png /></a>
     <p class="caption">Repetitive version on left, modular version on right.</p>
 </div>
+
 
 <p>Now that we&rsquo;ve finished testing the prototype and are happy with how it works, we can move on to the next step in turning it into a browser-based application.</p>
 
@@ -218,10 +223,12 @@
     <p class="caption">Exporting from Jupyter Lab to the next phase of development: the command line.</p>
 </div>
 
+
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/python-heroku-tutorial/vs%20code.png><img class="img-responsive img-content" src=/imgs/blog-imgs/python-heroku-tutorial/vs%20code.png /></a>
     <p class="caption">A bit of clean up later and the python script is ready to be imported as a module.</p>
 </div>
+
 
 <p>Feel free to check out the cleaned up file on <a href="https://github.com/justinmklam/recipe-converter/blob/master/recipeConverter.py">GitHub</a>. That was easy.</p>
 
@@ -274,6 +281,7 @@ if __name__ == &quot;__main__&quot;:
     <a href=/imgs/blog-imgs/python-heroku-tutorial/hello%20flask.gif><img class="img-responsive img-content" src=/imgs/blog-imgs/python-heroku-tutorial/hello%20flask.gif /></a>
     <p class="caption">Saying hello from localhost:5000.</p>
 </div>
+
 
 <p>Now moving on to our recipe converter, we need two parts to make this work:</p>
 
@@ -411,6 +419,7 @@ $ flask run
     <p class="caption">Running Flask in Visual Studio Code.</p>
 </div>
 
+
 <h2 id="deploying-on-heroku-cloud">Deploying on Heroku Cloud</h2>
 
 <p>First thing&rsquo;s first: Create download <a href="https://devcenter.heroku.com/articles/heroku-cli#download-and-install">Heroku</a> and create an account by running (after the installation completes):</p>
@@ -531,6 +540,7 @@ Flask
     <p class="caption">Heroku output on compile.</p>
 </div>
 
+
 <p><strong>Troubleshooting</strong>: If it compiles but fails to load at <code>*.herokuapp.com</code>, you can check the logs with the following command:</p>
 
 <pre><code>&gt; heroku logs
@@ -545,12 +555,14 @@ Flask
     <p class="caption">The final python app published through Heroku App.</p>
 </div>
 
+
 <p>Logging in to <a href="https://dashboard.heroku.com/">dashboard.heroku.com</a> provides a nice dashboard for managing all your deployments, activity, and more.</p>
 
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/python-heroku-tutorial/heroku%20dashboard.PNG><img class="img-responsive img-content" src=/imgs/blog-imgs/python-heroku-tutorial/heroku%20dashboard.PNG /></a>
     <p class="caption">Heroku dashboard to manage your dynos.</p>
 </div>
+
 
 <h1 id="closing-thoughts">Closing Thoughts</h1>
 
