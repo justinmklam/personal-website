@@ -3,6 +3,8 @@
 
 <head>
     <title>{{ .Title }}</title>
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}"/>
+    <meta property="og:type" content="blog"/>
     {{ partial "header.html" . }}
 
 </head>
