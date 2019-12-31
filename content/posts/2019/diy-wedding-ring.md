@@ -21,7 +21,7 @@ With this post, I'd like to share my quest in designing and 3D printing the ring
 
 # The Backstory
 
-It all started with the diamond. My grandpa used to own a jewelry store, so my grandma naturally had a lot of jewelry. However, she doesn't wear much anymore, so a few years ago she took the five diamonds out of one of her bracelets and gave it to each of her grandchildren. My older sister and cousin made theirs into a pendant, but mine went straight to the safety deposit box. Eventually, I realized I could use the diamond for an engagement ring (+1 for sentimental value), and so my journey began.
+It all started with the diamond. My grandpa used to own a jewelry store, so my grandma naturally had a lot of jewelry. However, she doesn't wear much anymore, so a few years ago she took the diamonds out of one of her bracelets and gave it to each of her grandchildren. My older sister and cousin eventually made theirs into a pendant, but mine stayed in the safety deposit box for quite some time longer. I eventually realized I could use the diamond for an engagement ring (+1 for sentimental value), and so my journey began.
 
 However, I didn't know many local shops where you can give them a stone to create a ring for it (mind you, this was an assumption and I didn't bother to validate it). Having experience with mechanical design and rapid manufacturing methods, I figured it was well within my capabilities to propose with a truly special, sentimental engagement ring. Turns out I was only partially right about this, but we'll get to that later...
 
