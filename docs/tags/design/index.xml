@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Design on Justin MK Lam | Blog</title>
+    <title>design on Justin MK Lam | Blog</title>
     <link>http://justinmklam.com/tags/design/</link>
-    <description>Recent content in Design on Justin MK Lam | Blog</description>
+    <description>Recent content in design on Justin MK Lam | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Dec 2019 11:50:22 -0700</lastBuildDate>
@@ -17,8 +17,8 @@
       <pubDate>Sun, 29 Dec 2019 11:50:22 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2019/diy-wedding-ring/</guid>
-      <description>Professional photos from Justine Russo Photography. For readers of my blog, you&amp;rsquo;ll notice that I haven&amp;rsquo;t had any new content in the past year. For good reason though, as I got married in June! Aside from planning the proposal and wedding, I also had the lofty goal of designing and making my wife&amp;rsquo;s engagement ring.
-With this post, I&amp;rsquo;d like to share my quest in designing and 3D printing the ring, along with some *minor* mistakes I made.</description>
+      <description>For readers of my blog, you&#39;ll notice that I haven&#39;t had any new content in the past year. For good reason though, as I got married in June! Aside from planning the proposal and wedding, I also had the lofty goal of designing and making my wife&#39;s engagement ring.
+With this post, I&#39;d like to share my quest in designing and 3D printing the ring, along with some *minor* mistakes I made.</description>
     </item>
     
     <item>
@@ -39,9 +39,9 @@ Features:
       <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2016/06/mech-458-capstone/</guid>
-      <description>Introduction Objective: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.
-How: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.
-Project Details Requirements and Specifications Optical  Device must have a tolerance on distance measurement of 1 mm Device must have a camera circumferential resolution of 1.</description>
+      <description>Introduction Objective: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.How: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.Project Details Requirements and Specifications Optical Mechanical Design Overview  Simplified diagram of scanning functionality.
+ Combine Modules  Overview of the optical imaging device.
+ Camera Module  Diagram of the camera module.</description>
     </item>
     
     <item>
@@ -51,7 +51,7 @@ Project Details Requirements and Specifications Optical  Device must have a tole
       
       <guid>http://justinmklam.com/posts/2016/04/perfeggct/</guid>
       <description>Background: When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
- &amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman
+ &amp;ldquo;If it&#39;s worth doing, it&#39;s worth overdoing.&amp;rdquo; - Jaime Hyneman
  Objective: Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.</description>
     </item>
     
@@ -72,11 +72,8 @@ How: As a team of seven mechanical engineering undergrads, we explored a range o
       <pubDate>Fri, 29 Aug 2014 12:37:42 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2014/08/car2go/</guid>
-      <description>Objective: Design a roof-mounted bowling rig for a car2go marketing event.
-Constraints: Use a non-permanent method to securely attach the apparatus to the roof.
-Venue: 2014 Vancouver Fringe Festival
- Bowling rig set up and ready to roll.
-  Car2go bowling in action.</description>
+      <description> Bowling rig set up and ready to roll.
+ </description>
     </item>
     
     <item>
@@ -85,10 +82,14 @@ Venue: 2014 Vancouver Fringe Festival
       <pubDate>Mon, 18 Aug 2014 22:12:57 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2014/08/bamboo-bike/</guid>
-      <description>Objective: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.
-Challenges:
- Constructing a frame jig to allow freedom around joints for carbon-fibre layup Accounting for the non-uniformity of bamboo poles at the frame lugs Maintaining compatibility with standard bicycle components Ensuring the frame is treated for typical&#34;Wet&#34; Coast weather  Awards:
- First Prize - Hand Tools Only Instructables Contest First Prize - Teach It!</description>
+      <description>Track bicycle custom geometry.
+  Frame dimensions with tubes shown to determine the required cut lengths of bamboo.
+  Frame jig modeled in SolidWorks.
+  Bamboo poles after heat treatment in the oven, preparing for the next heat treatment.
+  Dry fitting of bamboo poles after mitering.
+  Bottom bracket junction with mitered bamboo.
+  Slotted bamboo to fit the dropouts.
+  Frame wrapped, sanded, and ready for finishing details.</description>
     </item>
     
     <item>
@@ -97,7 +98,7 @@ Challenges:
       <pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2010/07/lego-headphones/</guid>
-      <description>Background: I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go.</description>
+      <description>Background: I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&#39;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go.</description>
     </item>
     
   </channel>

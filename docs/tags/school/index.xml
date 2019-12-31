@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>School on Justin MK Lam | Blog</title>
+    <title>school on Justin MK Lam | Blog</title>
     <link>http://justinmklam.com/tags/school/</link>
-    <description>Recent content in School on Justin MK Lam | Blog</description>
+    <description>Recent content in school on Justin MK Lam | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jun 2016 12:57:32 -0700</lastBuildDate>
@@ -17,9 +17,9 @@
       <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2016/06/mech-458-capstone/</guid>
-      <description>Introduction Objective: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.
-How: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.
-Project Details Requirements and Specifications Optical  Device must have a tolerance on distance measurement of 1 mm Device must have a camera circumferential resolution of 1.</description>
+      <description>Introduction Objective: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.How: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.Project Details Requirements and Specifications Optical Mechanical Design Overview  Simplified diagram of scanning functionality.
+ Combine Modules  Overview of the optical imaging device.
+ Camera Module  Diagram of the camera module.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@ Project Details Requirements and Specifications Optical  Device must have a tole
       
       <guid>http://justinmklam.com/posts/2016/04/perfeggct/</guid>
       <description>Background: When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
- &amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman
+ &amp;ldquo;If it&#39;s worth doing, it&#39;s worth overdoing.&amp;rdquo; - Jaime Hyneman
  Objective: Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.</description>
     </item>
     
@@ -50,8 +50,7 @@ How: As a team of seven mechanical engineering undergrads, we explored a range o
       <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2013/mech-223-hovercraft/</guid>
-      <description>For our final MECH2 design project at UBC, we were given three weeks to research, conceptualize, test, and build a functional hovercraft. The end goal was a class-wide competition of speed, cargo capacity, maneuverability, and driving skill. Budget was limited since costs came out of our own pockets, so we set out to build an inexpensive hovercraft using parts from the hardware and dollar store.
-Our result: 5th place out of 30 teams.</description>
+      <description>Teams were given 3 weeks to research, conceptualize, test, and refine their hovercrafts to compete in a class-wide battle of speed, cargo capacity, and maneuverability.</description>
     </item>
     
     <item>
