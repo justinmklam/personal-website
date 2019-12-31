@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Justin MK Lam | Blog</title>
@@ -17,8 +17,8 @@
       <pubDate>Sun, 29 Dec 2019 11:50:22 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2019/diy-wedding-ring/</guid>
-      <description>For readers of my blog, you&#39;ll notice that I haven&#39;t had any new content in the past year. For good reason though, as I got married in June! Aside from planning the proposal and wedding, I also had the lofty goal of designing and making my wife&#39;s engagement ring.
-With this post, I&#39;d like to share my quest in designing and 3D printing the ring, along with some *minor* mistakes I made.</description>
+      <description>Professional photos from Justine Russo Photography. For readers of my blog, you&amp;rsquo;ll notice that I haven&amp;rsquo;t had any new content in the past year. For good reason though, as I got married in June! Aside from planning the proposal and wedding, I also had the lofty goal of designing and making my wife&amp;rsquo;s engagement ring.
+With this post, I&amp;rsquo;d like to share my quest in designing and 3D printing the ring, along with some *minor* mistakes I made.</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@ With this post, I&#39;d like to share my quest in designing and 3D printing the 
       <pubDate>Sun, 24 Jun 2018 17:50:22 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2018/06/sourdough-starter-monitor/</guid>
-      <description>Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you&#39;ll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.
+      <description>Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you&amp;rsquo;ll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.
 Despite it being relatively easy to turn dough into something that looks and feels like bread, the challenge is in squeezing every possible ounce of flavour and texture (using only those four ingredients) to achieve the embodiment of a true loaf of bread.</description>
     </item>
     
@@ -46,8 +46,8 @@ Despite it being relatively easy to turn dough into something that looks and fee
       <pubDate>Fri, 06 Apr 2018 20:33:46 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2018/04/python-flask-heroku-tutorial/</guid>
-      <description>In case the title wasn&#39;t clear, this blog post is about developing a web application using the Python programming language using Jupyter Lab, Flask, and the Heroku platform. If you were looking for an article on python recipes, you can start off with this one on making a poached Burmese python curry.
-The Backstory The problem with online baking recipes is that the majority of them use volumetric units. As any civilized baker would know, Patricia&#39;s 1 cup of flour may very well be different than Patrick&#39;s 1 cup of flour.</description>
+      <description>In case the title wasn&amp;rsquo;t clear, this blog post is about developing a web application using the Python programming language using Jupyter Lab, Flask, and the Heroku platform. If you were looking for an article on python recipes, you can start off with this one on making a poached Burmese python curry.
+The Backstory The problem with online baking recipes is that the majority of them use volumetric units. As any civilized baker would know, Patricia&amp;rsquo;s 1 cup of flour may very well be different than Patrick&amp;rsquo;s 1 cup of flour.</description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@ Ah, the winter blues of Vancouver, BC. While some days bring bluebird skies and 
       <pubDate>Sun, 29 Oct 2017 14:24:52 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2017/10/vscode-debugger-setup/</guid>
-      <description>Visual Studio Code&#39;s combination of functionality, customizability, and aesthetics makes it one of my favourite code editors. As such, I was set on making it work with embedded development since I was getting started with the STM32 line of microcontrollers. I was following the steps outlined in Mastering STM32 by Carmine Noviello (which is an excellent resource) until it said to use Eclipse, because life&#39;s too short to use software with unnecessary bloat.</description>
+      <description>Visual Studio Code&amp;rsquo;s combination of functionality, customizability, and aesthetics makes it one of my favourite code editors. As such, I was set on making it work with embedded development since I was getting started with the STM32 line of microcontrollers. I was following the steps outlined in Mastering STM32 by Carmine Noviello (which is an excellent resource) until it said to use Eclipse, because life&amp;rsquo;s too short to use software with unnecessary bloat.</description>
     </item>
     
     <item>
@@ -85,8 +85,8 @@ Ah, the winter blues of Vancouver, BC. While some days bring bluebird skies and 
       <pubDate>Tue, 13 Jun 2017 15:56:53 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2017/06/sous-vide-pla/</guid>
-      <description>Yep, you heard it right. With all the craze surrounding cooking sous vide these days, it was only a matter of time before someone decided to venture using it outside of the culinary world. Turns out that someone also had a 3D printer, and you won&#39;t believe what happened next!
-Click-bait headlines aside, this post is quite lengthy and not everyone may have the patience to get through it all. Feel free to read the TL;DR below, or if you&#39;re feeling inclined, follow along my adventure through the land of 3D printing, materials science, and modern cooking.</description>
+      <description>Featured on Hackaday and Fictiv Blog! Yep, you heard it right. With all the craze surrounding cooking sous vide these days, it was only a matter of time before someone decided to venture using it outside of the culinary world. Turns out that someone also had a 3D printer, and you won&amp;rsquo;t believe what happened next!
+Click-bait headlines aside, this post is quite lengthy and not everyone may have the patience to get through it all.</description>
     </item>
     
     <item>
@@ -129,7 +129,7 @@ Features:
       <pubDate>Sat, 25 Mar 2017 21:14:29 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2017/03/solder-fume-extractor/</guid>
-      <description>I&#39;ve been slowly getting into the land of electrical pixies. So now, not only will I be inhaling sawdust, I can also fill them with leaded solder (because we all know that the performance of leaded solder takes higher priority than the safety of lead-free solder)! However, because I still value living, I figured I should get something to help get the solder fumes away from my lungs.
+      <description>I&amp;rsquo;ve been slowly getting into the land of electrical pixies. So now, not only will I be inhaling sawdust, I can also fill them with leaded solder (because we all know that the performance of leaded solder takes higher priority than the safety of lead-free solder)! However, because I still value living, I figured I should get something to help get the solder fumes away from my lungs.
 At my current job with MistyWest, we have a nice, bench top solder fume extractor by Hakko.</description>
     </item>
     
@@ -139,8 +139,8 @@ At my current job with MistyWest, we have a nice, bench top solder fume extracto
       <pubDate>Thu, 23 Mar 2017 19:38:27 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2017/03/3d-printing/</guid>
-      <description>What&#39;s better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.
-General Info  Product Page:  Monoprice Select Mini V1   Official User Manual:  MP Select Mini User Manual   Reddit:  /r/MPSelectMiniOwners   Facebook Group:  MP Mini User Group   Unofficial Wiki:  MP Select Mini Wiki   Community Knowledge Base:  Google Doc    Materials and Accessories  Tested PLA Brands:  Hatchbox AMZ3D   Alternative Bed Surface:  PEI Sheet, see RepRap Wiki for details    Initial Set Up  CAD Modeling Software (free for hobbyists and enthusiasts):  Autodesk Fusion 360   Slicing Software:  Ultimaker Cura   Onboard WiFi for wireless printing:  Connecting to WiFi through G-code   Using Raspberry Pi and Octoprint for wireless printing:  OctoPi    Machine Settings General The machine settings below are based off the ones in the official user manual.</description>
+      <description>What&amp;rsquo;s better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.
+General Info  Product Page:  Monoprice Select Mini V1  Official User Manual:  MP Select Mini User Manual  Reddit:  /r/MPSelectMiniOwners  Facebook Group:  MP Mini User Group  Unofficial Wiki:  MP Select Mini Wiki  Community Knowledge Base:  Google Doc   Materials and Accessories  Tested PLA Brands:  Hatchbox AMZ3D  Alternative Bed Surface:  PEI Sheet, see RepRap Wiki for details   Initial Set Up  CAD Modeling Software (free for hobbyists and enthusiasts):  Autodesk Fusion 360  Slicing Software:  Ultimaker Cura  Onboard WiFi for wireless printing:  Connecting to WiFi through G-code  Using Raspberry Pi and Octoprint for wireless printing:  OctoPi   Machine Settings General The machine settings below are based off the ones in the official user manual.</description>
     </item>
     
     <item>
@@ -149,8 +149,8 @@ General Info  Product Page:  Monoprice Select Mini V1   Official User Manual:  M
       <pubDate>Tue, 07 Mar 2017 15:56:53 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2017/03/mp-select-mini/</guid>
-      <description>I&#39;ve been bit by the 3D printing bug.
-Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for quite some time. For my final year mechatronics design project, my partner and I designed an extravagent contraption to measure the yolk done-ness of a soft-boiled egg, which we called The PerfEGGct. We borrowed my roommate&#39;s 3D printer to create the enclosure, and it turned out to be an indispensable tool during our prototyping process.</description>
+      <description>I&amp;rsquo;ve been bit by the 3D printing bug.
+Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for quite some time. For my final year mechatronics design project, my partner and I designed an extravagent contraption to measure the yolk done-ness of a soft-boiled egg, which we called The PerfEGGct. We borrowed my roommate&amp;rsquo;s 3D printer to create the enclosure, and it turned out to be an indispensable tool during our prototyping process.</description>
     </item>
     
     <item>
@@ -182,7 +182,7 @@ Since the first virtual reality headset that was hacked together in 2011, immers
       <pubDate>Sun, 13 Nov 2016 21:35:28 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2016/phone-stand/</guid>
-      <description>Phone stands are something that seem a little unnecessary, but once you have one then you&#39;ll wonder how your desk lived without one. I&#39;m a firm believer in having a dedicated place for everything as a solution to keep things tidy, so making a phone stand for my desk at work just made sense.
+      <description>Phone stands are something that seem a little unnecessary, but once you have one then you&amp;rsquo;ll wonder how your desk lived without one. I&amp;rsquo;m a firm believer in having a dedicated place for everything as a solution to keep things tidy, so making a phone stand for my desk at work just made sense.
 I started off on Google to look for existing designs I could imitate, but most fell short of not fitting my aesthetic needs.</description>
     </item>
     
@@ -192,7 +192,8 @@ I started off on Google to look for existing designs I could imitate, but most f
       <pubDate>Sat, 22 Oct 2016 20:58:10 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2016/bandsaw/</guid>
-      <description>It&#39;s generally known that cheap tools are usually not worth the trouble, but the deal on this bandsaw was simply too hard to pass up. With only a missing table, it was merely a quick woodworking project away from restoring its full functionality.</description>
+      <description>I&amp;rsquo;ve always wanted a bandsaw. Being able to cut wood, plastics, etc. quickly and with flexibility has been a dream in my home shop. When I found an ad on Craigslist for a portable bandsaw for $50, I just couldn&amp;rsquo;t resist. The main caveat was that it was missing a table, but that wasn&amp;rsquo;t a big enough issue to turn me away from this killer deal.
+ Fresh off Craigslist in its table-naked glory.</description>
     </item>
     
     <item>
@@ -211,7 +212,7 @@ My paper notebook is excellent for free-form thoughts, sketches, and calculation
       <pubDate>Sat, 24 Sep 2016 13:48:02 -0700</pubDate>
       
       <guid>http://justinmklam.com/contact/</guid>
-      <description>Located in Vancouver, British Columbia. Drop me a line and I&#39;ll get back to you within the day.</description>
+      <description>Located in Vancouver, British Columbia. Drop me a line and I&amp;rsquo;ll get back to you within the day.</description>
     </item>
     
     <item>
@@ -230,9 +231,9 @@ Reality came quite bluntly, yet these dreams continued to flourish. These days, 
       <pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2016/06/mech-458-capstone/</guid>
-      <description>Introduction Objective: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.How: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.Project Details Requirements and Specifications Optical Mechanical Design Overview  Simplified diagram of scanning functionality.
- Combine Modules  Overview of the optical imaging device.
- Camera Module  Diagram of the camera module.</description>
+      <description>Introduction Objective: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.
+How: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.
+Project Details Requirements and Specifications Optical  Device must have a tolerance on distance measurement of 1 mm Device must have a camera circumferential resolution of 1.</description>
     </item>
     
     <item>
@@ -241,7 +242,7 @@ Reality came quite bluntly, yet these dreams continued to flourish. These days, 
       <pubDate>Wed, 01 Jun 2016 15:39:56 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2016/new-workshop/</guid>
-      <description>My family moved into a new house, meaning that we finally have an actual garage instead of a measly carport. But what this really means is that I get a chance to claim space to set up an actual workshop! First project was naturally a workbench, which I put together using 2x4&#39;s and a 3/4&amp;rdquo; MDF board for the work surface (see above). Second project was a bench stool, as shown in the following images below.</description>
+      <description>My family moved into a new house, meaning that we finally have an actual garage instead of a measly carport. But what this really means is that I get a chance to claim space to set up an actual workshop! First project was naturally a workbench, which I put together using 2x4&amp;rsquo;s and a 3&amp;frasl;4&amp;rdquo; MDF board for the work surface (see above). Second project was a bench stool, as shown in the following images below.</description>
     </item>
     
     <item>
@@ -263,7 +264,7 @@ Limitations:
       
       <guid>http://justinmklam.com/posts/2016/04/perfeggct/</guid>
       <description>Background: When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
- &amp;ldquo;If it&#39;s worth doing, it&#39;s worth overdoing.&amp;rdquo; - Jaime Hyneman
+ &amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman
  Objective: Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.</description>
     </item>
     
@@ -273,7 +274,7 @@ Limitations:
       <pubDate>Fri, 18 Dec 2015 20:50:37 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2015/bamboo-bike-boo-boo/</guid>
-      <description>As you probably already know, I made a bamboo bike which I&#39;m very proud of. However, what you probably don&#39;t know is that I made some mistakes in the process. The photo above shows the result of one of these progress speedbumps, and yes, I did indeed cry the day I had to cut those tubes out.
+      <description>As you probably already know, I made a bamboo bike which I&amp;rsquo;m very proud of. However, what you probably don&amp;rsquo;t know is that I made some mistakes in the process. The photo above shows the result of one of these progress speedbumps, and yes, I did indeed cry the day I had to cut those tubes out.
 I started this project in November 2013 but failed to finish due splitting bamboo.</description>
     </item>
     
@@ -284,8 +285,8 @@ I started this project in November 2013 but failed to finish due splitting bambo
       
       <guid>http://justinmklam.com/posts/2015/making-haikuza-ii/</guid>
       <description>The format of this series is an outline of my thought process during the development of @thehaikuza.
-I dont want my haiku generator to be a vegetarian chef. There&#39;s nothing wrong with always making word salad, but eventually it&#39;ll have to learn to make fancier things. A poetic risotto would be nice from time to time.
-Leaving @thehaikuza to make complete gibberish wasnt what I had intended. I envisioned my algorithm to be able to reconstruct bad haikus, but definitely not as crappy as the ones it actually made.</description>
+Poetry is hard To write when algorithms Are extremely dumb.  I dont want my haiku generator to be a vegetarian chef. There&amp;rsquo;s nothing wrong with always making word salad, but eventually it&amp;rsquo;ll have to learn to make fancier things. A poetic risotto would be nice from time to time.
+Leaving @thehaikuza to make complete gibberish wasnt what I had intended.</description>
     </item>
     
     <item>
@@ -295,8 +296,8 @@ Leaving @thehaikuza to make complete gibberish wasnt what I had intended. I envi
       
       <guid>http://justinmklam.com/posts/2015/making-haikuza-i/</guid>
       <description>The format of this series is an outline of my thought process during the development of @thehaikuza.
-Nothing is cooler than algorithmic poetry. Except for maybe Carl Sagan. I heard he was a pretty cool guy.
-I was listening to the radio while driving home one Sunday evening, and an ad came up for a university that was submitting computer-generated poetry to a literature competition. I&#39;ve recently been fascinated by the many intricacies of the English language, so the thought of somehow teaching a computer how to construct proper phrases seemed like an elusive task.</description>
+Haikus are simple Even children can write them maybe programs too?  Nothing is cooler than algorithmic poetry. Except for maybe Carl Sagan. I heard he was a pretty cool guy.
+I was listening to the radio while driving home one Sunday evening, and an ad came up for a university that was submitting computer-generated poetry to a literature competition.</description>
     </item>
     
     <item>
@@ -305,9 +306,11 @@ I was listening to the radio while driving home one Sunday evening, and an ad ca
       <pubDate>Fri, 10 Jul 2015 11:42:26 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2015/07/haikuza/</guid>
-      <description>Objective: Develop an algorithm to generate haikus using song lyrics.Motivation: Because computational linguistics are cool.Project: twitter.com/thehaikuza
+      <description>Objective: Develop an algorithm to generate haikus using song lyrics.
+Motivation: Because computational linguistics are cool.
+Project: twitter.com/thehaikuza
 Features:
- Scrapes Virgin Radio&#39;s broadcast history to find recently played songs Creates a song-based haiku queue in Google Sheets Generates a haiku using the queue as a reference and posts it on Twitter Checks for new tweets every 5 minutes and generates a relevant haiku, if requested Finds all song lyrics from Lyrics Wikia Runs on a Raspberry Pi  Challenges:</description>
+ Scrapes Virgin Radio&amp;rsquo;s broadcast history to find recently played songs Creates a song-based haiku queue in Google Sheets Generates a haiku using the queue as a reference and posts it on Twitter Checks for new tweets every 5 minutes and generates a relevant haiku, if requested Finds all song lyrics from Lyrics Wikia Runs on a Raspberry Pi  Challenges:</description>
     </item>
     
     <item>
@@ -327,7 +330,7 @@ As a new member of the VOC, it quickly became apparent to me how &amp;ldquo;begi
       <pubDate>Tue, 23 Jun 2015 21:30:17 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2015/mistywest-coop/</guid>
-      <description>Background: Welcome to TZOA (pronounced &amp;lsquo;zoa&amp;rsquo;) - the world&#39;s most advanced environment tracker. TZOA uses internal sensors to measure your air quality, temperature, humidity, atmospheric pressure, ambient light, and UV (sun) exposure, all in one wearable device.
+      <description>Background: Welcome to TZOA (pronounced &amp;lsquo;zoa&amp;rsquo;) - the world&amp;rsquo;s most advanced environment tracker. TZOA uses internal sensors to measure your air quality, temperature, humidity, atmospheric pressure, ambient light, and UV (sun) exposure, all in one wearable device.
 Objective: Design and build a purified test chamber with zero air particulate to calibrate the TZOA devices against the DusTrak DRX 8533. An aerosolized cloud of ultrafine (0.3 - 20 μm) test dust was used to create the particle events.</description>
     </item>
     
@@ -358,7 +361,8 @@ How: As a team of seven mechanical engineering undergrads, we explored a range o
       <pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2014/coop-drill-cover/</guid>
-      <description>Drill availability is a major limitation in developing counties, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.</description>
+      <description>Background: Drill availability is a major limitation in developing countries, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.
+Objective: Develop, conduct, and analyze a study to quantify the drilling performance of the drill cover solution and compare it against a commercial surgical drill and a manual hand-crank drill.</description>
     </item>
     
     <item>
@@ -367,8 +371,11 @@ How: As a team of seven mechanical engineering undergrads, we explored a range o
       <pubDate>Fri, 29 Aug 2014 12:37:42 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2014/08/car2go/</guid>
-      <description> Bowling rig set up and ready to roll.
- </description>
+      <description>Objective: Design a roof-mounted bowling rig for a car2go marketing event.
+Constraints: Use a non-permanent method to securely attach the apparatus to the roof.
+Venue: 2014 Vancouver Fringe Festival
+ Bowling rig set up and ready to roll.
+  Car2go bowling in action.</description>
     </item>
     
     <item>
@@ -377,14 +384,10 @@ How: As a team of seven mechanical engineering undergrads, we explored a range o
       <pubDate>Mon, 18 Aug 2014 22:12:57 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2014/08/bamboo-bike/</guid>
-      <description>Track bicycle custom geometry.
-  Frame dimensions with tubes shown to determine the required cut lengths of bamboo.
-  Frame jig modeled in SolidWorks.
-  Bamboo poles after heat treatment in the oven, preparing for the next heat treatment.
-  Dry fitting of bamboo poles after mitering.
-  Bottom bracket junction with mitered bamboo.
-  Slotted bamboo to fit the dropouts.
-  Frame wrapped, sanded, and ready for finishing details.</description>
+      <description>Objective: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.
+Challenges:
+ Constructing a frame jig to allow freedom around joints for carbon-fibre layup Accounting for the non-uniformity of bamboo poles at the frame lugs Maintaining compatibility with standard bicycle components Ensuring the frame is treated for typical&#34;Wet&#34; Coast weather  Awards:
+ First Prize - Hand Tools Only Instructables Contest First Prize - Teach It!</description>
     </item>
     
     <item>
@@ -407,7 +410,9 @@ Framework: MATLAB
       <pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2013/coop-mea/</guid>
-      <description>Foam liners in bicycle helmets absorb energy during impacts. Manufacturers recommend replacing a helmet every 2 to 10 years to maintain optimal head protection. To investigate this recommendation, we quantified the material and impact attenuation properties of helmets to determine if they changed with age.</description>
+      <description>Objective: Determine if age has an effect on the mechanical properties of bicycle helmets.
+Tasks:
+ Conducted 1630 helmet impact attenuation tests to measure the effect of age and use on bicycle helmet foam Developed scripts in MATLAB to autonomously post-process the impact data and organize information according to existing helmet databases Wrote the Methods section of the research report to be submitted to the Accident Prevention &amp;amp; Analysis Journal Assisted in protocol development of the helmet and foam core impact attenuation tests  Company: MEA Forensic Engineers &amp;amp; Scientists</description>
     </item>
     
     <item>
@@ -416,7 +421,8 @@ Framework: MATLAB
       <pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2013/mech-223-hovercraft/</guid>
-      <description>Teams were given 3 weeks to research, conceptualize, test, and refine their hovercrafts to compete in a class-wide battle of speed, cargo capacity, and maneuverability.</description>
+      <description>For our final MECH2 design project at UBC, we were given three weeks to research, conceptualize, test, and build a functional hovercraft. The end goal was a class-wide competition of speed, cargo capacity, maneuverability, and driving skill. Budget was limited since costs came out of our own pockets, so we set out to build an inexpensive hovercraft using parts from the hardware and dollar store.
+Our result: 5th place out of 30 teams.</description>
     </item>
     
     <item>
@@ -435,7 +441,7 @@ Research Proposal According to Tom Delph-Janiurek, a “mis-performance of voice
       <pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2010/07/lego-headphones/</guid>
-      <description>Background: I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&#39;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go.</description>
+      <description>Background: I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go.</description>
     </item>
     
     <item>
@@ -444,7 +450,9 @@ Research Proposal According to Tom Delph-Janiurek, a “mis-performance of voice
       <pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2009/altoids/</guid>
-      <description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback.</description>
+      <description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback. I built a simple, rechargable battery pack to keep the tunes playing on long road trips.
+ The iPod is alive!
+  President&amp;#39;s Choice rechargable batteries and some janky wiring is all it took.</description>
     </item>
     
   </channel>

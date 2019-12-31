@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>electrical on Justin MK Lam | Blog</title>
+    <title>Electrical on Justin MK Lam | Blog</title>
     <link>http://justinmklam.com/tags/electrical/</link>
-    <description>Recent content in electrical on Justin MK Lam | Blog</description>
+    <description>Recent content in Electrical on Justin MK Lam | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 May 2017 11:30:56 -0700</lastBuildDate>
@@ -67,7 +67,7 @@ Limitations:
       
       <guid>http://justinmklam.com/posts/2016/04/perfeggct/</guid>
       <description>Background: When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
- &amp;ldquo;If it&#39;s worth doing, it&#39;s worth overdoing.&amp;rdquo; - Jaime Hyneman
+ &amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman
  Objective: Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.</description>
     </item>
     
@@ -77,7 +77,9 @@ Limitations:
       <pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2009/altoids/</guid>
-      <description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback.</description>
+      <description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback. I built a simple, rechargable battery pack to keep the tunes playing on long road trips.
+ The iPod is alive!
+  President&amp;#39;s Choice rechargable batteries and some janky wiring is all it took.</description>
     </item>
     
   </channel>
