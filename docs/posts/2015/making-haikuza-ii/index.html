@@ -120,32 +120,22 @@
                 </a>
 
                 <div class="blog-content page-content">
-                    
-
-<p><em>The format of this series is an outline of my thought process during the development of <a href="/projects/software/haikuza/">@thehaikuza</a>.</em></p>
-
+                    <p><em>The format of this series is an outline of my thought process during the development of <a href="/projects/software/haikuza/">@thehaikuza</a>.</em></p>
 <blockquote style="text-align:center">
 Poetry is hard
 <br>To write when algorithms
 <br>Are extremely dumb.
 </blockquote>
-
-<p>I dont want my haiku generator to be a vegetarian chef. There&rsquo;s nothing wrong with always making word salad, but eventually it&rsquo;ll have to learn to make fancier things. A poetic risotto would be nice from time to time.</p>
-
+<p>I dont want my haiku generator to be a vegetarian chef. There's nothing wrong with always making word salad, but eventually it'll have to learn to make fancier things. A poetic risotto would be nice from time to time.</p>
 <p>Leaving @thehaikuza to make complete gibberish wasnt what I had intended. I envisioned my algorithm to be able to reconstruct bad haikus, but definitely not as crappy as the ones it actually made. My idea of bad had more to do with this xkcd comic:</p>
-
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/making-haikuza/ios_keyboard.png><img class="img-responsive img-content" src=/imgs/blog-imgs/making-haikuza/ios_keyboard.png /></a>
     <p class="caption">iOS Keyboard Predictions (Source: xkcd.com/1427)</p>
 </div>
 
-
-<p>In any event, I needed to try something a little more sophisticated than shoving words into slots where they didn&rsquo;t really fit.</p>
-
+<p>In any event, I needed to try something a little more sophisticated than shoving words into slots where they didn't really fit.</p>
 <h1 id="the-lesser-known-cousin-of-2-chainz">The Lesser Known Cousin of 2 Chainz</h1>
-
 <p>Every time I Googled a new topic I didnt know about, five more topics were thrown on my plate. Notable keywords that popped up:</p>
-
 <ul>
 <li>Computational linguistics</li>
 <li>Neural networks</li>
@@ -154,49 +144,32 @@ Poetry is hard
 <li>Tree kernels for semantic role labeling</li>
 <li>Markov chains</li>
 </ul>
-
-<p>By no means am I suggesting that I understood all of those search terms after reading about them. In fact, I still don&rsquo;t and am constantly trying to wrap my head around those polysyllabic words. (Fun fact: anything above three syllables starts to scare most people.) The takeaway is the last item on the list, which coincidentally is the one I did manage to (somewhat) understand: the Markov chain.</p>
-
+<p>By no means am I suggesting that I understood all of those search terms after reading about them. In fact, I still don't and am constantly trying to wrap my head around those polysyllabic words. (Fun fact: anything above three syllables starts to scare most people.) The takeaway is the last item on the list, which coincidentally is the one I did manage to (somewhat) understand: the Markov chain.</p>
 <h2 id="a-primer-for-markov-chains">A Primer for Markov Chains</h2>
-
-<p>In technical terms, a Markov chain is any random process that undergoes transitions from one state to another. It&rsquo;s also a memoryless process, meaning that it only cares about its current state and not the states it has previously occupied.</p>
-
-<p>In less technical terms, a Markov chain is like your tokens position during a game of Monopoly. The next property that your token lands on is random (ie. its a random state transition), and every dice roll is independent of the previous roll (ie. its a memoryless process). Probability determines what the next dice roll is: theres a higher chance of rolling a 7 since there are 6 possible combinations (<sup>6</sup>&frasl;<sub>36</sub> = 16.7% probability), whereas theres only one way to roll a 2 or 12 (<sup>1</sup>&frasl;<sub>36</sub> = 2.8% probability).</p>
-
+<p>In technical terms, a Markov chain is any random process that undergoes transitions from one state to another. It's also a memoryless process, meaning that it only cares about its current state and not the states it has previously occupied.</p>
+<p>In less technical terms, a Markov chain is like your tokens position during a game of Monopoly. The next property that your token lands on is random (ie. its a random state transition), and every dice roll is independent of the previous roll (ie. its a memoryless process). Probability determines what the next dice roll is: theres a higher chance of rolling a 7 since there are 6 possible combinations (6/36 = 16.7% probability), whereas theres only one way to roll a 2 or 12 (1/36 = 2.8% probability).</p>
 <p>The marvelous aspect of Markov chains is that they can work with any item, not just numbers! Lets say you wanted to form sentences using Markov chains. Given a corpus of phrases (like the entire works of Shakespeare), a flowchart like the one below can be formed and used to create new phrases. Interestingly enough, this is the basis of prediction engines used on smartphone keyboards! It will learn from your phrasing habits and try to guess what your next word will be, based on how frequently youve typed similar words or phrases (just like the above xkcd comic).</p>
-
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/making-haikuza/chain.png><img class="img-responsive img-content" src=/imgs/blog-imgs/making-haikuza/chain.png /></a>
     <p class="caption">Visualization of words forming a Markov chain. (Source: Andrew Cholakian&#39;s Blog)</p>
 </div>
 
-
 <h2 id="harnessing-its-raw-indisputable-power">Harnessing its Raw, Indisputable Power</h2>
-
 <p>Using Markov chains would allow me to use song lyrics as a training ground for creating alternate phrases. This would consequently form a probability-based flowchart like the one above, allowing me to generate new sentences by walking through each word state and letting probability determine my next word.</p>
-
-<p>To understand how to turn this into a programmable scenario, let&rsquo;s take a look at an example. Given a phrase like:</p>
-
+<p>To understand how to turn this into a programmable scenario, let's take a look at an example. Given a phrase like:</p>
 <blockquote>
 <p>Mo butter, mo better, mo slipperier</p>
 </blockquote>
-
-<p>A Markov chain algorithm will take triplets of the phrase, use the first two words as the dictionary word, and the third word as the definition. If you&rsquo;re familiar with using dictionaries in Python, the former is known as keys and the latter as values. This would result in the above phrase being translated to:</p>
-
+<p>A Markov chain algorithm will take triplets of the phrase, use the first two words as the dictionary word, and the third word as the definition. If you're familiar with using dictionaries in Python, the former is known as keys and the latter as values. This would result in the above phrase being translated to:</p>
 <pre><code>('mo', 'butter') : ['mo']
 ('butter', 'mo') : ['better']
 ('mo', 'better') : ['mo']
 ('better', 'mo') : ['slipperier']
-</code></pre>
-
-<p>Okay, but this isn&rsquo;t very captivating because there&rsquo;s a 1:1 ratio of keys to values, which means that there will never be any mixing and matching of words since the probability of the next word is always 1. Alternatively, if we have a sentence such as:</p>
-
+</code></pre><p>Okay, but this isn't very captivating because there's a 1:1 ratio of keys to values, which means that there will never be any mixing and matching of words since the probability of the next word is always 1. Alternatively, if we have a sentence such as:</p>
 <blockquote>
 <p>Living in a land of butter is like living in a paradise with flying unicorns</p>
 </blockquote>
-
 <p>Then the resulting dictionary will look like:</p>
-
 <pre><code>('Living', 'in') :     ['a']
 ('in', 'a') :          ['land', 'paradise']
 ('a', 'land') :        ['of']
@@ -209,12 +182,8 @@ Poetry is hard
 ('a', 'paradise') :    ['with']
 ('paradise', 'with') : ['flying']
 ('with', 'flying') :   ['unicorns']
-</code></pre>
-
-<p>The interesting part of this phrase (other than the wildly imaginative scenario) is the second line item, where the key <em>(in, a)</em> has two possible values, either land or paradise. So if I&rsquo;m wandering around a word-based flowchart and come across the pair of words in a, my next word can either be land or paradise. Now, this was just for a 15 word phrase, so imagine the magnitude of choices if lyrics for an entire song was used (where more repetitions are prevalent), or all lyrics from an artists full discography, or even a body of text with a +1,000,000 word count meant for this purpose! More phrases and more words result in more possible combinations, which is excellent news for attempting to create pseudo-random sentences.</p>
-
+</code></pre><p>The interesting part of this phrase (other than the wildly imaginative scenario) is the second line item, where the key <em>(in, a)</em> has two possible values, either land or paradise. So if I'm wandering around a word-based flowchart and come across the pair of words in a, my next word can either be land or paradise. Now, this was just for a 15 word phrase, so imagine the magnitude of choices if lyrics for an entire song was used (where more repetitions are prevalent), or all lyrics from an artists full discography, or even a body of text with a +1,000,000 word count meant for this purpose! More phrases and more words result in more possible combinations, which is excellent news for attempting to create pseudo-random sentences.</p>
 <p>The code below for the Markov chain algorithm was adapted from Agiliqs Blog:</p>
-
 <pre><code>import random
 
 class Markov(object):
@@ -255,14 +224,9 @@ class Markov(object):
             w1, w2 = w2, random.choice(self.cache[(w1, w2)])
         gen_words.append(w2)
         return ' '.join(gen_words)
-</code></pre>
-
-<h2 id="teaching-markov-the-art-of-haikus">Teaching Markov the Art of Haikus</h2>
-
-<p>Time to make some progress in making some beautifully robotic poetry! The plan for @thehaikuza V0.2 is to create a Markov chain dictionary using song lyrics and create randomized phrases from the resulting keys and values. Although this implementation still doesn&rsquo;t involve a proper grammar model, it&rsquo;s an improvement from the previous method because of its more structured approach. By simply mixing and matching phrases that once made sense before, there&rsquo;s a much higher probability that the resulting phrase will also make some level of sense.</p>
-
+</code></pre><h2 id="teaching-markov-the-art-of-haikus">Teaching Markov the Art of Haikus</h2>
+<p>Time to make some progress in making some beautifully robotic poetry! The plan for @thehaikuza V0.2 is to create a Markov chain dictionary using song lyrics and create randomized phrases from the resulting keys and values. Although this implementation still doesn't involve a proper grammar model, it's an improvement from the previous method because of its more structured approach. By simply mixing and matching phrases that once made sense before, there's a much higher probability that the resulting phrase will also make some level of sense.</p>
 <p>The success rate should now go from laughable to respectfully laughable! Progress is progress.</p>
-
 <p><em>Check out the full repo on <a href="https://github.com/justinmklam/project-haikuza">Github</a>!</em></p>
 
                 </div>
