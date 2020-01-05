@@ -37,4 +37,7 @@ FootnoteReturnLinkContents = "↩"
 
 [markup]
     [markup.goldmark.renderer]
-      unsafe = true
+    	unsafe = true
+	[markup.highlight]
+		guessSyntax = true
+		style="vs"
