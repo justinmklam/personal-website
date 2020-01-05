@@ -34,3 +34,7 @@ FootnoteReturnLinkContents = "↩"
 	facebook = "facebook.com/jmklam"
 	linkedin = "linkedin.com/in/justinmklam"
 	instagram = "instagram.com/justinmklam"
+
+[markup]
+    [markup.goldmark.renderer]
+      unsafe = true

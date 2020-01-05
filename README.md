@@ -2,8 +2,10 @@
 Increasing my online presence by showcasing projects and posts that I've worked on over the years.
 
 # Dependencies
-+ Static website built with [Hugo](https://gohugo.io/)
++ Static website built with [Hugo (>v0.62.1)](https://gohugo.io/)
 + Custom theme built with [Bootstrap 3.3.7](https://getbootstrap.com/docs/3.3/)
+
+*Note: Install hugo via `snap` instead of `apt` to get the latest version.*
 
 # How To Use
 ## Basic Hugo commands
