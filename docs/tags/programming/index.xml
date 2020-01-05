@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>programming on Justin MK Lam | Blog</title>
+    <title>Programming on Justin MK Lam | Blog</title>
     <link>http://justinmklam.com/tags/programming/</link>
-    <description>Recent content in programming on Justin MK Lam | Blog</description>
+    <description>Recent content in Programming on Justin MK Lam | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Jun 2018 17:50:22 -0700</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Sun, 24 Jun 2018 17:50:22 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2018/06/sourdough-starter-monitor/</guid>
-      <description>Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you&#39;ll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.
+      <description>Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you&amp;rsquo;ll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.
 Despite it being relatively easy to turn dough into something that looks and feels like bread, the challenge is in squeezing every possible ounce of flavour and texture (using only those four ingredients) to achieve the embodiment of a true loaf of bread.</description>
     </item>
     
@@ -27,8 +27,8 @@ Despite it being relatively easy to turn dough into something that looks and fee
       <pubDate>Fri, 06 Apr 2018 20:33:46 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2018/04/python-flask-heroku-tutorial/</guid>
-      <description>In case the title wasn&#39;t clear, this blog post is about developing a web application using the Python programming language using Jupyter Lab, Flask, and the Heroku platform. If you were looking for an article on python recipes, you can start off with this one on making a poached Burmese python curry.
-The Backstory The problem with online baking recipes is that the majority of them use volumetric units. As any civilized baker would know, Patricia&#39;s 1 cup of flour may very well be different than Patrick&#39;s 1 cup of flour.</description>
+      <description>In case the title wasn&amp;rsquo;t clear, this blog post is about developing a web application using the Python programming language using Jupyter Lab, Flask, and the Heroku platform. If you were looking for an article on python recipes, you can start off with this one on making a poached Burmese python curry.
+The Backstory The problem with online baking recipes is that the majority of them use volumetric units. As any civilized baker would know, Patricia&amp;rsquo;s 1 cup of flour may very well be different than Patrick&amp;rsquo;s 1 cup of flour.</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@ In my most recent adventures to software land at MistyWest, I needed to write an
       <pubDate>Sun, 29 Oct 2017 14:24:52 -0700</pubDate>
       
       <guid>http://justinmklam.com/posts/2017/10/vscode-debugger-setup/</guid>
-      <description>Visual Studio Code&#39;s combination of functionality, customizability, and aesthetics makes it one of my favourite code editors. As such, I was set on making it work with embedded development since I was getting started with the STM32 line of microcontrollers. I was following the steps outlined in Mastering STM32 by Carmine Noviello (which is an excellent resource) until it said to use Eclipse, because life&#39;s too short to use software with unnecessary bloat.</description>
+      <description>Visual Studio Code&amp;rsquo;s combination of functionality, customizability, and aesthetics makes it one of my favourite code editors. As such, I was set on making it work with embedded development since I was getting started with the STM32 line of microcontrollers. I was following the steps outlined in Mastering STM32 by Carmine Noviello (which is an excellent resource) until it said to use Eclipse, because life&amp;rsquo;s too short to use software with unnecessary bloat.</description>
     </item>
     
     <item>
@@ -91,7 +91,7 @@ My paper notebook is excellent for free-form thoughts, sketches, and calculation
       
       <guid>http://justinmklam.com/posts/2015/making-haikuza-ii/</guid>
       <description>The format of this series is an outline of my thought process during the development of @thehaikuza.
-Poetry is hard To write when algorithms Are extremely dumb.  I dont want my haiku generator to be a vegetarian chef. There&#39;s nothing wrong with always making word salad, but eventually it&#39;ll have to learn to make fancier things. A poetic risotto would be nice from time to time.
+Poetry is hard To write when algorithms Are extremely dumb.  I dont want my haiku generator to be a vegetarian chef. There&amp;rsquo;s nothing wrong with always making word salad, but eventually it&amp;rsquo;ll have to learn to make fancier things. A poetic risotto would be nice from time to time.
 Leaving @thehaikuza to make complete gibberish wasnt what I had intended.</description>
     </item>
     
@@ -116,7 +116,7 @@ I was listening to the radio while driving home one Sunday evening, and an ad ca
 Motivation: Because computational linguistics are cool.
 Project: twitter.com/thehaikuza
 Features:
- Scrapes Virgin Radio&#39;s broadcast history to find recently played songs Creates a song-based haiku queue in Google Sheets Generates a haiku using the queue as a reference and posts it on Twitter Checks for new tweets every 5 minutes and generates a relevant haiku, if requested Finds all song lyrics from Lyrics Wikia Runs on a Raspberry Pi  Challenges:</description>
+ Scrapes Virgin Radio&amp;rsquo;s broadcast history to find recently played songs Creates a song-based haiku queue in Google Sheets Generates a haiku using the queue as a reference and posts it on Twitter Checks for new tweets every 5 minutes and generates a relevant haiku, if requested Finds all song lyrics from Lyrics Wikia Runs on a Raspberry Pi  Challenges:</description>
     </item>
     
     <item>
