@@ -344,11 +344,11 @@ For a minimal application, our file structure should look like the following:
 
 With our recipe converter app (and because we're on Windows), we have the addition of two files shown below:
 
-```text
+```text {hl_lines=[2,4]}
   ├── app.py
-  ├** recipe-converter.py
+  ├── recipe-converter.py
   ├── Procfile
-  ├** Procfile.Windows
+  ├── Procfile.Windows
   ├── requirements.txt
   └── runtime.txt
 ```
