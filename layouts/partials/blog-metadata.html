@@ -1,5 +1,8 @@
 <span class="fa fa-calendar-o"></span>&nbsp Posted on {{ .Date.Format "January 2, 2006" }}
-<em>&nbsp &middot &nbsp&nbsp{{.ReadingTime}} min read &nbsp &middot &nbsp
+<em>&nbsp &middot &nbsp&nbsp{{.ReadingTime}} min read
+    &nbsp &middot &nbsp
+    <a class="blog-tag" href="{{ .Permalink }}#disqus_thread"># Comments</a>
+    &nbsp &middot &nbsp
     {{ range .Params.tags }}
     <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp</a>
     {{ end }}
