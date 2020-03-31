@@ -120,8 +120,8 @@
                 </a>
 
                 <div class="blog-content page-content">
-                    <p>Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you'll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.</p>
-<p>Despite it being relatively easy to turn dough into something that looks and feels like bread, the challenge is in squeezing every possible ounce of flavour and texture (using only those four ingredients) to achieve the embodiment of a true loaf of bread. The secret to artisinal bread is <strong>all in the fermentation.</strong> A baker's skill is in their ability to manage and control the fermentation process, which is usually achieved through countless months and/or years of trial and error.</p>
+                    <p>Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you&rsquo;ll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.</p>
+<p>Despite it being relatively easy to turn dough into something that looks and feels like bread, the challenge is in squeezing every possible ounce of flavour and texture (using only those four ingredients) to achieve the embodiment of a true loaf of bread. The secret to artisinal bread is <strong>all in the fermentation.</strong> A baker&rsquo;s skill is in their ability to manage and control the fermentation process, which is usually achieved through countless months and/or years of trial and error.</p>
 <p><strong>But what if there was a better way to understand what happens during the fermentation process?</strong></p>
 <p>In this blog post, we dive into the world of wild yeast (commonly known as sourdough starter) by tracking its growth through timelapses, automated image analysis, and cool graph animations. Read on to find out more!</p>
 <div class="row captioned-img">
@@ -138,8 +138,8 @@
 </div>
 
 <h1 id="the-backstory">The Backstory</h1>
-<p>Two key components in making artisinal bread are <strong>time</strong> and <strong>fermentation</strong>. If you can afford a long, slow rise, you will be rewarded with a texture like no other, and flavours that are both complex and subtle. Most bakeries unfortunately do not have this luxury (since it's a business after all), so commercial instant dry yeast is used to expedite the fermentation such that it reaches the desired loaf volume at a reasonable schedule. With bread risen with instant dry yeast, it will definitely resemble visual qualities of bread, but the texture and taste will not be comparable to bread that uses wild yeast.</p>
-<p>The quest for achieving the perfect loaf is an arduous one. It can take upwards of 12 hours from the first mix to actually being able to bake the loaf, and environmental factors (ie. temperature and humidity) can alter the dough's behaviour (ie. in how it absorbs water, or how fast/slow the fermentation occurs). With every loaf being slightly different, it can be challenging to identify what processes need adjusting to get one step closer to that perfect loaf.</p>
+<p>Two key components in making artisinal bread are <strong>time</strong> and <strong>fermentation</strong>. If you can afford a long, slow rise, you will be rewarded with a texture like no other, and flavours that are both complex and subtle. Most bakeries unfortunately do not have this luxury (since it&rsquo;s a business after all), so commercial instant dry yeast is used to expedite the fermentation such that it reaches the desired loaf volume at a reasonable schedule. With bread risen with instant dry yeast, it will definitely resemble visual qualities of bread, but the texture and taste will not be comparable to bread that uses wild yeast.</p>
+<p>The quest for achieving the perfect loaf is an arduous one. It can take upwards of 12 hours from the first mix to actually being able to bake the loaf, and environmental factors (ie. temperature and humidity) can alter the dough&rsquo;s behaviour (ie. in how it absorbs water, or how fast/slow the fermentation occurs). With every loaf being slightly different, it can be challenging to identify what processes need adjusting to get one step closer to that perfect loaf.</p>
 <p>For context, a typical process for making an artisinal loaf is roughly described below:</p>
 <ol>
 <li>Discard 80-90% of the sourdough starter and feed it with flour and water.</li>
@@ -154,10 +154,10 @@
 </ol>
 <p>Sourdough starter is a living organism, and as such should be treated with kindness, respect, and most importantly, food. A well-fed starter is an active and happy one; if we can get a feel for how the starter behaves on a day-to-day basis during its feeding (ie. when the fermentation occurs), it may help clear up at least one of the variables in bread baking.</p>
 <p>One way to achieve this understanding is simply through trial and error. But we can do better. We can use (rather simple) <strong>computer vision</strong>!</p>
-<p>The loaf's holey texture (ie. the elusive open crumb) is largely determined by activeness of the starter, so this is where we shall put our initial efforts. <strong>Specifically, we want to understand</strong>:</p>
+<p>The loaf&rsquo;s holey texture (ie. the elusive open crumb) is largely determined by activeness of the starter, so this is where we shall put our initial efforts. <strong>Specifically, we want to understand</strong>:</p>
 <ul>
 <li>When the starter reaches its maximum fermentation,</li>
-<li>How consistent the starter's fermentation is, and</li>
+<li>How consistent the starter&rsquo;s fermentation is, and</li>
 <li>What happens when the starter is neglected and how quickly it can come back to life.</li>
 </ul>
 <p>To answer these questions, our plan of action is to:</p>
@@ -166,7 +166,7 @@
 <li>Write an image analysis script to locate the current height of the starter in each image</li>
 <li>Plot the height over time to get its growth characteristics</li>
 </ol>
-<p>Enough with the walls of text. Let's get on to the fun stuff!</p>
+<p>Enough with the walls of text. Let&rsquo;s get on to the fun stuff!</p>
 <h1 id="the-development">The Development</h1>
 <h2 id="setting-up-the-timelapse">Setting Up the Timelapse</h2>
 <p>For ease and convenience, the timelapse was set up on a Raspberry Pi. I initially had the idea to eventually create a real-time analysis of the starter (ie. a Python script updating a locally hosted dashboard), but I figured post processing a timelapse was good enough for now to answer those questions. You can pretty much use any camera to take a timelapse.</p>
@@ -179,7 +179,7 @@
 <p>The only hiccup I ran into was setting up without any monitor or ethernet attached, so getting it connected to WiFi and retrieving its IP address was non-trivial. Luckily, other people had run into the same problem over at the <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=191252">Raspberry Pi forums</a>.
 The solution:</p>
 <ol>
-<li>Create an empty file on the SD's boot partition called <code>ssh</code> to enable it.</li>
+<li>Create an empty file on the SD&rsquo;s boot partition called <code>ssh</code> to enable it.</li>
 <li>Create another file named <code>wpa_supplicant.conf</code> with the following content:</li>
 </ol>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">country=US
@@ -233,19 +233,19 @@ trap cleanup INT
 
 <span style="color:#00f">while</span> true; <span style="color:#00f">do</span>
         DATE=<span style="color:#00f">$(</span>date +%Y-%m-%d_%H-%M-%S<span style="color:#00f">)</span>
-        FNAME=<span style="color:#a31515">&#34;</span><span style="color:#a31515">${</span>DATE<span style="color:#a31515">}</span><span style="color:#a31515">_(</span><span style="color:#a31515">${</span>IDX<span style="color:#a31515">}</span><span style="color:#a31515">)</span><span style="color:#a31515">&#34;</span> <span style="color:#008000"># image filename</span>
+        FNAME=<span style="color:#a31515">&#34;</span><span style="color:#a31515">${</span>DATE<span style="color:#a31515">}</span><span style="color:#a31515">_(</span><span style="color:#a31515">${</span>IDX<span style="color:#a31515">}</span><span style="color:#a31515">)&#34;</span> <span style="color:#008000"># image filename</span>
 
         <span style="color:#008000"># Create folder for current timelapse set</span>
         <span style="color:#00f">if</span> [ $IDX -eq 0 ]
         <span style="color:#00f">then</span>
                 FOLDER_NAME=$FOLDER_NAME/$DATE
                 mkdir -p $FOLDER_NAME
-                echo <span style="color:#a31515">&#34;</span><span style="color:#a31515">Created folder: </span><span style="color:#a31515">${</span>FOLDER_NAME<span style="color:#a31515">}</span><span style="color:#a31515">&#34;</span>
+                echo <span style="color:#a31515">&#34;Created folder: </span><span style="color:#a31515">${</span>FOLDER_NAME<span style="color:#a31515">}</span><span style="color:#a31515">&#34;</span>
         <span style="color:#00f">fi</span>
         <span style="color:#008000"># Take image</span>
         raspistill --nopreview -t $CAM_DELAY -o ./$FOLDER_NAME/$FNAME.jpg -w $RES_W -h $RES_H
 
-        echo <span style="color:#a31515">&#34;</span><span style="color:#a31515">Captured: </span><span style="color:#a31515">${</span>FNAME<span style="color:#a31515">}</span><span style="color:#a31515">&#34;</span>
+        echo <span style="color:#a31515">&#34;Captured: </span><span style="color:#a31515">${</span>FNAME<span style="color:#a31515">}</span><span style="color:#a31515">&#34;</span>
         IDX=<span style="color:#00f">$((</span>IDX+1<span style="color:#00f">))</span>
         sleep $SLEEP_DELAY
 <span style="color:#00f">done</span>
@@ -258,9 +258,9 @@ cd sourdough-monitor
 
 <span style="color:#008000"># Start in background so ssh session can be closed</span>
 nohup ./timelapse.sh &amp;&gt; /dev/null &amp;
-</code></pre></div><p>Nothing fancy here, so let's move along.</p>
+</code></pre></div><p>Nothing fancy here, so let&rsquo;s move along.</p>
 <h2 id="taking-the-timelapses">Taking the Timelapses</h2>
-<p>Sometimes having kludgy setups is the best way forward. Might not be as pretty, but when bread is on the menu then nothing else matters. All we're here for is the data!</p>
+<p>Sometimes having kludgy setups is the best way forward. Might not be as pretty, but when bread is on the menu then nothing else matters. All we&rsquo;re here for is the data!</p>
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_173837.jpg><img class="img-responsive img-content" src=/imgs/blog-imgs/sourdough-starter-monitor/IMG_20180527_173837.jpg /></a>
     <p class="caption">Sometimes random parts and a bit of tape are the best way forward.</p>
@@ -299,7 +299,7 @@ nohup ./timelapse.sh &amp;&gt; /dev/null &amp;
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">import</span> matplotlib.pyplot <span style="color:#00f">as</span> plt
 <span style="color:#00f">from</span> skimage.filters <span style="color:#00f">import</span> try_all_threshold
 
-img = io.imread(<span style="color:#a31515"></span><span style="color:#a31515">&#39;</span><span style="color:#a31515">2018-05-31 Levain Timelapse/test.jpg</span><span style="color:#a31515">&#39;</span>, as_grey=True)
+img = io.imread(<span style="color:#a31515">&#39;2018-05-31 Levain Timelapse/test.jpg&#39;</span>, as_grey=True)
 img = img[0:1000, 650:1100]   <span style="color:#008000"># crop image to zoom in to jar</span>
 
 fig, ax = try_all_threshold(img, figsize=(10, 8), verbose=False)
@@ -310,14 +310,14 @@ plt.show()
     <p class="caption">The try_all_threshold() function is fast and convenient to see which will likely be the best for an image.</p>
 </div>
 
-<p>Discussing the different thresholding algorithms is beyond the scope of this post, but what we're looking for is one that is able to separate the boundary between the clear glass jar and the opaque sourdough starter. From the image above, it looks like isodata, otsu, and yen provide the sharpest thresholded boundary.</p>
-<p>Given a hot tip from my coworker (thanks Andreas) that Otsu's method is a good one to pick, we can dig deeper into it. From the docs:</p>
+<p>Discussing the different thresholding algorithms is beyond the scope of this post, but what we&rsquo;re looking for is one that is able to separate the boundary between the clear glass jar and the opaque sourdough starter. From the image above, it looks like isodata, otsu, and yen provide the sharpest thresholded boundary.</p>
+<p>Given a hot tip from my coworker (thanks Andreas) that Otsu&rsquo;s method is a good one to pick, we can dig deeper into it. From the docs:</p>
 <blockquote>
 <p>Otsu’s method calculates an “optimal” threshold (marked by a red line in the histogram below) by maximizing the variance between two classes of pixels, which are separated by the threshold. Equivalently, this threshold minimizes the intra-class variance. - <a href="http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html">SciKit Image Docs</a></p>
 </blockquote>
-<p>The main takeaway with Otsu's method is that it works best with a bimodal distribution. For our image, this means the histogram should be represented by two distinct peaks. Since our cropped image looks to have two visually different areas (ie. transparent glass at the top, flour/water mixture at the bottom), let's confirm that this method will work.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">plt.hist(img.ravel(), bins=256, range=(0.0, 1.0), fc=<span style="color:#a31515"></span><span style="color:#a31515">&#39;</span><span style="color:#a31515">k</span><span style="color:#a31515">&#39;</span>, ec=<span style="color:#a31515"></span><span style="color:#a31515">&#39;</span><span style="color:#a31515">k</span><span style="color:#a31515">&#39;</span>)
-plt.title(<span style="color:#a31515"></span><span style="color:#a31515">&#39;</span><span style="color:#a31515">Histogram of Original Image</span><span style="color:#a31515">&#39;</span>)
+<p>The main takeaway with Otsu&rsquo;s method is that it works best with a bimodal distribution. For our image, this means the histogram should be represented by two distinct peaks. Since our cropped image looks to have two visually different areas (ie. transparent glass at the top, flour/water mixture at the bottom), let&rsquo;s confirm that this method will work.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">plt.hist(img.ravel(), bins=256, range=(0.0, 1.0), fc=<span style="color:#a31515">&#39;k&#39;</span>, ec=<span style="color:#a31515">&#39;k&#39;</span>)
+plt.title(<span style="color:#a31515">&#39;Histogram of Original Image&#39;</span>)
 plt.show()
 </code></pre></div><p>Plotting the histogram yields the following result:</p>
 <div class="row captioned-img">
@@ -325,7 +325,7 @@ plt.show()
     <p class="caption">The image is a bimodal histogram, so Otsu&#39;s method should work well. (Please forgive my unlabelled axes.)</p>
 </div>
 
-<p>Great, the histogram shows just what we need! (Except for the high concentration of saturated pixels, but let's just ignore that for now&hellip;)</p>
+<p>Great, the histogram shows just what we need! (Except for the high concentration of saturated pixels, but let&rsquo;s just ignore that for now&hellip;)</p>
 <p>Taking a closer look at the thresholded image:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">from</span> skimage.filters <span style="color:#00f">import</span> threshold_otsu
 
@@ -336,10 +336,10 @@ fig, axes = plt.subplots(ncols=2)
 ax = axes.ravel()
 
 ax[0].imshow(img, cmap=plt.cm.gray)
-ax[0].set_title(<span style="color:#a31515"></span><span style="color:#a31515">&#39;</span><span style="color:#a31515">Original image</span><span style="color:#a31515">&#39;</span>)
+ax[0].set_title(<span style="color:#a31515">&#39;Original image&#39;</span>)
 
 ax[1].imshow(binary_img, cmap=plt.cm.gray)
-ax[1].set_title(<span style="color:#a31515"></span><span style="color:#a31515">&#39;</span><span style="color:#a31515">Result</span><span style="color:#a31515">&#39;</span>)
+ax[1].set_title(<span style="color:#a31515">&#39;Result&#39;</span>)
 
 plt.show()
 </code></pre></div><div class="row captioned-img">
@@ -347,7 +347,7 @@ plt.show()
     <p class="caption">The result of Otsu&#39;s thresholding method.</p>
 </div>
 
-<p>Those white blobs on the walls of the jar may still be detected as regions of interest, but applying a minimum thresholded area will help with false positives. Luckily, we have moderate control of the lighting and contrast of the object in question. If we're lucky we won't have to change much for the timelapses taken at different times of the day!</p>
+<p>Those white blobs on the walls of the jar may still be detected as regions of interest, but applying a minimum thresholded area will help with false positives. Luckily, we have moderate control of the lighting and contrast of the object in question. If we&rsquo;re lucky we won&rsquo;t have to change much for the timelapses taken at different times of the day!</p>
 <h3 id="quantifying-the-image">Quantifying the Image</h3>
 <p>With our binary image, we can now use skimage.measure to easily get quantified properties of the regions. Full list of properties can be found <a href="http://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops">in the docs</a>.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">height = None
@@ -369,13 +369,13 @@ regions = regionprops(label_img)
 
     <span style="color:#00f">if</span> area &gt;= min_area:
         <span style="color:#008000"># Plot the bounding box</span>
-        ax.plot(bx, by, <span style="color:#a31515"></span><span style="color:#a31515">&#39;</span><span style="color:#a31515">-b</span><span style="color:#a31515">&#39;</span>, linewidth=2.5)
+        ax.plot(bx, by, <span style="color:#a31515">&#39;-b&#39;</span>, linewidth=2.5)
         <span style="color:#008000"># Plot the centroid</span>
-        ax.plot(x0, y0, <span style="color:#a31515"></span><span style="color:#a31515">&#39;</span><span style="color:#a31515">ro</span><span style="color:#a31515">&#39;</span>)
+        ax.plot(x0, y0, <span style="color:#a31515">&#39;ro&#39;</span>)
         height = minr
 
 plt.show()
-</code></pre></div><p>The resultant image below shows how multiple areas are detected and classified. However, we can apply some RI(TM) (aka. <em>real</em> intelligence) to only pick the region of the sourdough starter. There are many ways to do this, but the simplest was to simply set a minimum area requirement. As long as it's high enough, it should ignore all the other regions.</p>
+</code></pre></div><p>The resultant image below shows how multiple areas are detected and classified. However, we can apply some RI(TM) (aka. <em>real</em> intelligence) to only pick the region of the sourdough starter. There are many ways to do this, but the simplest was to simply set a minimum area requirement. As long as it&rsquo;s high enough, it should ignore all the other regions.</p>
 <div class="row captioned-img">
     <a href=/imgs/blog-imgs/sourdough-starter-monitor/min-area.png><img class="img-responsive img-content" src=/imgs/blog-imgs/sourdough-starter-monitor/min-area.png /></a>
     <p class="caption">Minimum area is required since other areas will register as a detected region.</p>
@@ -387,7 +387,7 @@ plt.show()
     <p class="caption">This may have been a bit easier with a square container...</p>
 </div>
 
-<p>Now that we have a working understanding of the components we need, let's get scripting and collect a bunch of data! You can check out the full analysis on <a href="https://github.com/justinmklam/sourdough-starter-monitor">Github</a>.</p>
+<p>Now that we have a working understanding of the components we need, let&rsquo;s get scripting and collect a bunch of data! You can check out the full analysis on <a href="https://github.com/justinmklam/sourdough-starter-monitor">Github</a>.</p>
 <h2 id="the-results">The Results</h2>
 <p>The timelapses below show the sourdough starter from different dates. The boundary tracking algorithm is reasonably well at detecting the correct height, but there are occasional outliers that cause the errors. However, the overall trend of the growth is still captured.</p>
 <h3 id="may-29-left-jar">May 29, Left Jar</h3>
@@ -466,7 +466,7 @@ plt.show()
     <a href=/imgs/blog-imgs/sourdough-starter-monitor/refeeding_1.png><img class="img-responsive img-span-row" src=/imgs/blog-imgs/sourdough-starter-monitor/refeeding_1.png /></a>
     <p class="caption">What doesn&#39;t kill you makes you stronger (or at least as strong as before). First feeding is shifted because I forgot to start the timelapse right away.</p>
 </div>
-<p>Thus, a bit of neglect seems to be okay since the starter appears to be fairly resilient to starvation! (But if you're going on vacation, please feed it more than you typically would so it can sustain itself in your absence.)</p>
+<p>Thus, a bit of neglect seems to be okay since the starter appears to be fairly resilient to starvation! (But if you&rsquo;re going on vacation, please feed it more than you typically would so it can sustain itself in your absence.)</p>
 <h2 id="the-conclusion">The Conclusion</h2>
 <p>So what can we take away from ~40 hours of watching yeast rise<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>? From all this, we learned:</p>
 <ul>
@@ -475,14 +475,14 @@ plt.show()
 <li>The peak has a ~1 hour window for when it should be used</li>
 <li>Regularly feeding a neglected starter will make it (and you) happy again</li>
 </ul>
-<p>Even just taking a timelapse will give you a good feel for how your starter behaves, especially when you're starting out with baking bread. If you leave it overnight and come back the next morning to what looks like minimal growth, a timelapse can tell you if it peaked 3 hours in without you noticing, or if it actually didn't grow. Every starter is different, but if you can give it the attention it deserves, its fermentation will continually reward you with loaves like no other.</p>
+<p>Even just taking a timelapse will give you a good feel for how your starter behaves, especially when you&rsquo;re starting out with baking bread. If you leave it overnight and come back the next morning to what looks like minimal growth, a timelapse can tell you if it peaked 3 hours in without you noticing, or if it actually didn&rsquo;t grow. Every starter is different, but if you can give it the attention it deserves, its fermentation will continually reward you with loaves like no other.</p>
 <p>Happy baking!</p>
 <hr>
 <h1 id="further-reading">Further Reading</h1>
 <p>Check out the links below to level-up your bread game. (I may make profit from the Amazon (affiliate) links below, but not the other ones. Those just have good content that I support!)</p>
 <ul>
-<li>Alex French Guy Cooking's Guide to Sourdough <a href="https://www.youtube.com/watch?v=APEavQg8rMw&amp;t=514s">(YouTube)</a></li>
-<li>Trevor J. Wilson's Open Crumb Mastery <a href="http://www.breadwerx.com/open-crumb-mastery/">(Breadwerx</a>, <a href="https://www.youtube.com/watch?v=QHiQ5X3NKEI&amp;t=288s">YouTube)</a></li>
+<li>Alex French Guy Cooking&rsquo;s Guide to Sourdough <a href="https://www.youtube.com/watch?v=APEavQg8rMw&amp;t=514s">(YouTube)</a></li>
+<li>Trevor J. Wilson&rsquo;s Open Crumb Mastery <a href="http://www.breadwerx.com/open-crumb-mastery/">(Breadwerx</a>, <a href="https://www.youtube.com/watch?v=QHiQ5X3NKEI&amp;t=288s">YouTube)</a></li>
 <li>Tartine Bread <a target="_blank" href="https://www.amazon.com/gp/product/0811870413/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0811870413&linkCode=as2&tag=justinmklam-20&linkId=389ae22a493d37c70d3a6c4446a42721">(Amazon)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=justinmklam-20&l=am2&o=1&a=0811870413" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
 <li>Flour Water Salt Yeast: The Fundamentals of Artisan Bread and Pizza <a target="_blank" href="https://www.amazon.com/gp/product/160774273X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=160774273X&linkCode=as2&tag=justinmklam-20&linkId=9e6460fb3ee23e897b924d08e34709d9">(Amazon)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=justinmklam-20&l=am2&o=1&a=160774273X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
 <li>My Bread: The Revolutionary No-Work, No-Knead Method<a target="_blank" href="https://www.amazon.com/gp/product/0393066304/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393066304&linkCode=as2&tag=justinmklam-20&linkId=292f06c9eaad7c87742dbb35cc1d1233"> (Amazon)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=justinmklam-20&l=am2&o=1&a=0393066304" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
