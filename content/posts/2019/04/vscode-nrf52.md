@@ -3,7 +3,7 @@ layout =    "single"
 type =      "blog"
 
 date =      2019-04-25T14:14:25-07:00
-draft =     true
+draft =     false
 
 title =     "Nordic nRF52 Development with Visual Studio Code"
 tagline =   "One editor to rule them all, one editor to find them."

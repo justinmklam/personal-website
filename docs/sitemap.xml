@@ -28,12 +28,22 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/posts/2018/06/sourdough-starter-monitor/</loc>
-    <lastmod>2018-06-24T17:50:22-07:00</lastmod>
+    <loc>http://justinmklam.com/tags/embedded/</loc>
+    <lastmod>2019-04-25T14:14:25-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/posts/2019/04/vscode-nrf52/</loc>
+    <lastmod>2019-04-25T14:14:25-07:00</lastmod>
   </url>
   
   <url>
     <loc>http://justinmklam.com/tags/programming/</loc>
+    <lastmod>2019-04-25T14:14:25-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/posts/2018/06/sourdough-starter-monitor/</loc>
     <lastmod>2018-06-24T17:50:22-07:00</lastmod>
   </url>
   
@@ -59,11 +69,6 @@
   
   <url>
     <loc>http://justinmklam.com/posts/2017/10/vscode-debugger-setup/</loc>
-    <lastmod>2017-10-29T14:24:52-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/embedded/</loc>
     <lastmod>2017-10-29T14:24:52-07:00</lastmod>
   </url>
   

@@ -6,10 +6,21 @@
     <description>Recent content in programming on Justin MK Lam | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Jun 2018 17:50:22 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 25 Apr 2019 14:14:25 -0700</lastBuildDate>
     
 	<atom:link href="http://justinmklam.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nordic nRF52 Development with Visual Studio Code</title>
+      <link>http://justinmklam.com/posts/2019/04/vscode-nrf52/</link>
+      <pubDate>Thu, 25 Apr 2019 14:14:25 -0700</pubDate>
+      
+      <guid>http://justinmklam.com/posts/2019/04/vscode-nrf52/</guid>
+      <description>A few years ago, I created a tutorial on setting up Visual Studio Code for development with the STM32. Since I&amp;rsquo;ve also been developing on the Nordic nRF52, I thought I&amp;rsquo;d share another tutorial to show how a project can be set up, flashed, and debugged using Visual Studio Code.
+The template project discussed in this post can be found on Github.
+Instructions The Nordic toolchain is cross-platform, but the instructions below are specifically for Linux.</description>
+    </item>
     
     <item>
       <title>Monitoring the Fermentation of Sourdough Starter with Computer Vision</title>
