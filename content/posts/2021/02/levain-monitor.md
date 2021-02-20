@@ -45,10 +45,11 @@ AWS
 
 ## In Detail
 
+<!-- {{<img caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/combined.png" >}} -->
+
 {{<img caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/feeding.png" >}}
 {{<img caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/pairplot.png" >}}
 
-{{<img caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/all-feedings.png" >}}
-{{<img caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/all-pairplots.png" >}}
+{{<img caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/all-combined.png" >}}
 
 # Conclusion
