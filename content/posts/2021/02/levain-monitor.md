@@ -2,7 +2,7 @@
 layout =    "single"
 type =      "blog"
 
-date =      2021-02-16T08:36:18-08:00
+date =      2021-02-21T08:36:18-08:00
 draft =     true
 
 title =     "Precision Sourdough Starter: An IoT Smart Lid"
@@ -23,7 +23,7 @@ This project definitely took longer than I originally expected... And since I'm 
 
 If you're only interested in the resulting data that came out of this, you can skip to [the end](#the-analysis) where I visualize the growth, temperature, and humidity from a few weeks of worth of feedings.
 
-All the design files and code can be found on [GitHub](https://github.com/justinmklam/iot-sourdough-starter-monitor).
+Interested in making your own? All the design files and code can be found on [GitHub](https://github.com/justinmklam/iot-sourdough-starter-monitor).
 
 {{<img caption="Three modes of operation: Max rise and time, graph, stats for nerds." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/jar.gif" >}}
 {{<img caption="Selecting, viewing, and downloading data for a given feeding session." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/webapp.gif" >}}
@@ -117,23 +117,50 @@ The most annoying part of this project was actually getting AWS set up on the ES
 
 Once I got it publishing messages over MQTT to AWS, I set up the cloud infrastructure to receive and save the data. The data flow is:
 
-1. Device sends data over MQTT
-2. [Kinesis Firehose](https://aws.amazon.com/kinesis/data-firehose/) receives the data stream
-3. On the receive event, an [AWS Lambda](https://aws.amazon.com/lambda/) function is triggered and puts the data from Firehose to [Amazon S3](https://aws.amazon.com/s3/)
-
-I initially was going to use [Amazon QuickSight](https://aws.amazon.com/quicksight/) to visualize the data, but there were limitations with the refresh rate that were a deal breaker for me. I bit the bullet and created a custom dashboard using [Flask](https://flask.palletsprojects.com/), which queries data from S3 using [Amazon Athena](https://aws.amazon.com/athena/).
+1. Device sends the data in a message over MQTT
+2. On a message receive event, an [AWS Lambda](https://aws.amazon.com/lambda/) function is triggered to parse the data from the message and passes it to a [Kinesis Firehose](https://aws.amazon.com/kinesis/data-firehose/) delivery stream
+2. Kinesis Firehose receives the data and saves it [Amazon S3](https://aws.amazon.com/s3/)
 
 {{<img caption="AWS architecture for basic IoT applications." link="https://dzone.com/articles/design-practices-aws-iot-solutions-volansys" link-text="DZone" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/aws-iot.png" >}}
 
+I initially was going to use [Amazon QuickSight](https://aws.amazon.com/quicksight/) to visualize the data, but there were limitations with the refresh rate that were a deal breaker for me. I bit the bullet and created a custom dashboard using [Flask](https://flask.palletsprojects.com/), which queries data from S3 using [Amazon Athena](https://aws.amazon.com/athena/). I was too lazy to figure out how to host the dashboard on AWS for free, so I opted to use [Heroku](https://www.heroku.com/) (as I've done previously for my [recipe converter web app](https://github.com/justinmklam/recipe-converter)).
+
+With cloud connectivity and dashboard complete, the sourdough monitor is now ready to be used!
+
 # The Analysis
+
+The main purpose of the monitor was to help with my timing of when to use the starter. Since the data was being collected anyway, I figured I might as well do some analysis to see if there was anything significant.
 
 ## Overview
 
-{{<img caption="Feeding schedule over the past few weeks." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/max-rise-over-time.png" >}}
+After using the monitor for a few weeks, I had enough data to play with. The two main things I was curious about were:
+
+1. Whether the peak height changes over time (i.e. through repeated feedings)
+2. If it still grew as much if the starter was kept in the fridge and hadn't been fed for a few days
+
+Doing a quick kernel density plot to get a feel for the data, we see some clustering but no obvious trends.
+
 {{<img caption="Kernel density plot to show the distribution and clustering of data. No clear correlations are present..." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/kde-plot.png" >}}
+
+The graph below shows the consistency of my feedings:
+
+- 5 subsequent feedings, starting on Jan 21
+- 3 subsequent feedings on Jan 30, Feb 3, and Feb 17
+- 2 subsequent feedings on Feb 12
+
+*Note: The horizontal axis is a bit off since some days had multiple feedings, the graph assumes each feeding is a separate day.*
+
+{{<img caption="Feeding schedule over the past few weeks." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/max-rise-over-time.png" >}}
+
+The graph below shows no correlation between how long it took for the peak rise to occur. It also didn't seem to matter if the starter was kept in the fridge for a few days, which is great news (and maybe not news to those who know their starter well)!
+
 {{<img caption="No statistical significance between the most relevant metrics." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/regression.png" >}}
 
 ## In Detail
+
+Looking at the time series data, we see that the progression of the rise height from the first to last feeding. Interestingly, the slope remains constant, even if the starter has been dormant for a few days.
+
+Keep in mind that I used a temperature controlled proofing box, which is why the temperature and humidity are constant throughout the majority of the fermentation.
 
 <!-- {{<img caption="TEXT" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/combined.png" >}} -->
 
