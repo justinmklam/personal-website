@@ -30,6 +30,12 @@ Mechatronics Engineer
 
 ### Personal Achievements
 
+##### 2021
++ First time speaking on a panel. Topic: [The Future of IoT on the Cloud](https://www.crowdcast.io/e/future-of-iot-on-the-cloud/register).
+
+##### 2019
++ Got married, became a puppy parent.
+
 ##### 2018
 + Interviewed by the MagPi magazine about my post on monitoring sourdough in [Issue 72](https://www.raspberrypi.org/magpi-issues/MagPi72.pdf) (page 12).
 + Kevin Scott, CTO of Microsoft, shared my sourdough post on his [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6417114943220523008).
