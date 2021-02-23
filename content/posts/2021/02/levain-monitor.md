@@ -3,7 +3,7 @@ layout =    "single"
 type =      "blog"
 
 date =      2021-02-22T08:36:18-08:00
-draft =     true
+draft =     false
 
 title =     "Precision Sourdough: A Smart Lid for Your Starter"
 tagline =   "Taking the guess work out of baking with wild yeast."
