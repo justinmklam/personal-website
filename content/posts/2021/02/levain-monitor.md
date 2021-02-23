@@ -15,9 +15,9 @@ aliases =   []
 
 A few years ago, I had the idea to [track my sourdough starter using computer vision]({{< ref "/posts/2018/06/sourdough-starter-monitor" >}}). It was neat to monitor it this way, but it was fairly impractical to do for each feeding since it required setting up a camera, downloading the images, and doing some manual image cropping before running it through my analysis script. The analysis was also only done after the fact, and what I really wanted was something that could tell me when the starter was ready to be used (or fed), or, if I missed the window of opportunity, how long ago it peaked.
 
-Last year, I came across [this Reddit thread](https://www.reddit.com/r/Sourdough/comments/duhqmd/i_built_a_device_that_tracks_the_development_of/) and [Christine Sunu's sourd.io project](https://www.twilio.com/blog/sourd-io-is-a-fitness-tracker-for-your-sourdough-starter), where they both had distance sensors inside the lid to measure the height of the starter. I thought it was genius, and had to make one for myself! However, in addition to the live monitoring, I wanted to log the data for further analysis, so I also decided to make it internet-connected as a way to get the data off the device (since saving to an SD card adds hardware costs, as well as being less "sexy" in today's world of everything having wifi connectivity).
+Last year, I came across [this Reddit thread](https://www.reddit.com/r/Sourdough/comments/duhqmd/i_built_a_device_that_tracks_the_development_of/) and [Christine Sunu's sourd.io project](https://www.twilio.com/blog/sourd-io-is-a-fitness-tracker-for-your-sourdough-starter), where they both had distance sensors inside the lid to measure the height of the starter. I thought it was genius, and had to make one for myself! However, in addition to the live monitoring, I wanted to log the data for further analysis, so I also decided to make it internet-connected as a way to get the data off the device (since saving to an SD card would add hardware costs, as well as being less "sexy" in today's world of everything having wifi connectivity).
 
-Interested in making your own? All the design files and code can be found on [GitHub](https://github.com/justinmklam/iot-sourdough-starter-monitor).
+Interested in making your own? All the design files and code can be found on [GitHub](https://github.com/justinmklam/iot-sourdough-starter-monitor)!
 
 {{<img caption="Three modes of operation: Max rise and time, graph, stats for nerds." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/jar.gif" >}}
 {{<img caption="Selecting, viewing, and downloading data for a given feeding session." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/webapp.gif" >}}
@@ -32,11 +32,18 @@ If you're only interested in the resulting data that came out of this, you can s
 
 ### Electronics
 
-With the idea in mind, I bought the components off Digikey and Aliexpress and hooked them up on a breadboard. I wrote some code to test that all components worked correctly, then went on to design a PCB to make integrating it into a lid form factor easier.
+With the idea in mind, I bought the components off Digikey and AliExpress and hooked them up on a breadboard. The parts I used for this project:
+
+- NodeMCU ESP8266
+- VL6180X Time of flight distance sensor
+- DHT22 Temperature and humidity sensor
+- SSD1306 128x32 OLED display
+
+I wrote some code to test that all components worked correctly, then went on to design a PCB to make it easier to integrate into the form factor of a jar a lid.
 
 {{<img caption="Breadboard prototype with off-the-shelf modules." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/IMG_1513.jpg" >}}
 
-I've made PCBs using protoboards before (in my [sous vide controller]({{< ref "/posts/2017/05/sous-vide-controller#the-controller" >}})), but it was extremely time consuming. Since I got over the learning curve of using KiCad, now I'd rather wait a few weeks for the boards to show up from overseas, especially since it's so cheap ($2 for 5 boards, plus $14 shipping).
+I've made PCBs using protoboards before (in my [sous vide controller]({{< ref "/posts/2017/05/sous-vide-controller#the-controller" >}})), but it was extremely time consuming. Since I surpassed the learning curve of designing boards in KiCad, now I'd rather wait a few weeks for the boards to show up from overseas, especially since it's so cheap ($2 for 5 boards, plus $14 shipping).
 
 {{<img caption="PCB layout and schematic." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/kicad.png" >}}
 {{<img caption="Top of the PCB with the display (left), bottom with the distance and temperature/humidity sensors (right)." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/pcb.png" >}}
@@ -51,7 +58,7 @@ It worked well enough to test out the initial workflow, and I realized that I ne
 - The starting height of the starter
 - The height the starter has grown
 
-With a bit of algebra and math, these values can be calculated with the distance sensor at the bottom of the lid.
+With a bit of algebra and math, these values were now measured by the distance sensor, mounted at the bottom of the lid.
 
 {{<img caption="Algebra? More like alge-bread!" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/diagram.jpeg" >}}
 
@@ -78,7 +85,7 @@ I designed the enclosure in Fusion 360 and printed it on my [Monoprice Mini 3D P
 
 {{<img caption="3D printed enclosure, designed in Fusion 360." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/fusion 360.png" >}}
 
-I wasn't the proudest of this design, since I resorted to using hot glue to attach the PCB to the enclosure, mainly because I forgot to leave enough hole clearance on the PCB . Ideally, the PCB would drop into the top half and assemble from the back (instead of the bottom half, as designed), but unfortunately I didn't have this forethought and there weren't any features to easily mount to the ESP8266 or display.
+I wasn't the proudest of this design, since I had to resort to using hot glue to attach the PCB to the enclosure, mainly because I forgot to leave enough hole clearance on the PCB . Ideally, the PCB would drop into the top half and assemble from the back (instead of the bottom half, as designed), but unfortunately I didn't have this forethought. I was designing the PCB to have a minimal footprint to keep costs low, instead of making it easy to integrate with!
 
 Since I didn't want to solder the modules directly on to the PCB, I used female headers to keep them removable. However, this gave the assembly quite a bit of height, which resulted in the button needing some type of extension. I didn't want to make another Digikey order specifically for this button, so I decided to be resourceful and glued a machine screw to the button to make up for the missing height.
 
@@ -90,7 +97,7 @@ Anyway, it assembled together without issues, and the only mistake you can see f
 
 ## Firmware
 
-I wanted to use a task-based architecture, since having everything in a single state machine can become convoluted and difficult to debug. With multitasking, the processor is only executing a single task at any given time, but it switches between each task rapidly to give the illusion of concurrency. I've used FreeRTOS before, but wanted something more lightweight since I didn't need all the bells and whistles that it provides.
+I wanted to use a task-based architecture, since having everything in a single state machine can become convoluted and difficult to debug. With multitasking, the processor is only executing a single task at any given time, but it switches between each task rapidly to give the illusion of concurrency. I've used FreeRTOS in other projects, but wanted something more lightweight since I didn't need all the bells and whistles that it provides.
 
 {{<img caption="Multitasking vs concurrency" link="https://www.freertos.org/implementation/a00004.html" link-text="FreeRTOS" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/TaskExecution.gif" >}}
 
@@ -98,7 +105,7 @@ I eventually came across [TaskScheduler](https://github.com/arkhipenko/TaskSched
 
 {{<img caption="A lightweight implementation of cooperative multitasking by TaskScheduler." link="https://github.com/arkhipenko/TaskScheduler" link-text="GitHub" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/TaskScheduler_html.png" >}}
 
-The code was divided up as follows:
+The code was divided up into the following tasks/files:
 
 - **measurements.cpp** - Read the sensors and make the measurements available for other tasks
 - **userinput.cpp** - Handle the button presses from user input (short press, long press, double click)
@@ -109,15 +116,15 @@ The benefit of this architecture is that each file is less than 200 lines of cod
 
 {{<img caption="The display shows how much it peaked, and how much time elapsed since it peaked." src="/imgs/blog-imgs/sourdough-starter-monitor-lid/jar1.jpg" >}}
 
-The firmware itself was fairly straightforward, where the only "fancy" thing I needed to do was save the jar height to EEPROM so that it's saved between sessions, even if it's powered off. Interestingly, the ESP8266 doesn't actually have genuine EEPROM memory, so it's [emulated by using a section of flash memory](https://www.arduino.cc/reference/en/libraries/esp_eeprom/).
+With the architecture in place, the firmware itself was fairly straightforward. The only "fancy" thing I needed to do was save the jar height to EEPROM so that it would be saved between sessions, even if it's powered off. Interestingly, the ESP8266 doesn't actually have genuine EEPROM memory, so it's [emulated by using a section of flash memory](https://www.arduino.cc/reference/en/libraries/esp_eeprom/).
 
 ## Cloud Connectivity
 
-One of the more time consuming parts of this project was actually getting AWS set up on the ESP8266. I encountered many library compatibility issues, which I should have expected since this chip was released 6 years ago (at the time of development)! If I didn't have an ESP8266 in my box of parts that I wanted to use, I would have used the newer ESP32, which (hopefully) would present fewer issues.
+One of the more time consuming parts of this project was actually getting AWS set up on the ESP8266. I encountered many library compatibility issues, which I should have expected since this chip was released 6 years ago (at the time of development)! If I didn't have an ESP8266 in my box of parts that I wanted to use, I would have used the newer ESP32, which (hopefully) would have presented fewer issues.
 
 If you're looking to do the same, let me save you some headache! You can check out the template I made on [GitHub](https://github.com/justinmklam/aws-iot-esp266-demo) to get set up.
 
-Once I got it publishing messages over MQTT to AWS, I set up the cloud infrastructure to receive and save the data. The data flow is:
+Once I got it publishing messages over MQTT to AWS, I set up the cloud infrastructure to receive and save the data. The data flow was:
 
 1. Device sends the data in a message over MQTT
 2. On a message receive event, an [AWS Lambda](https://aws.amazon.com/lambda/) function is triggered to parse the data from the message and passes it to a [Kinesis Firehose](https://aws.amazon.com/kinesis/data-firehose/) delivery stream
@@ -127,7 +134,7 @@ Once I got it publishing messages over MQTT to AWS, I set up the cloud infrastru
 
 I initially was going to use [Amazon QuickSight](https://aws.amazon.com/quicksight/) to visualize the data, but there were limitations with the refresh rate that were a deal breaker for me. Instead, I bit the bullet and created a custom dashboard using [Flask](https://flask.palletsprojects.com/) and HTML/CSS/Javascript, which queries data from S3 using [Amazon Athena](https://aws.amazon.com/athena/). I was too lazy to figure out how to host the dashboard on AWS for free, so I opted to use [Heroku](https://www.heroku.com/) (as I've done previously for my [recipe converter web app](https://github.com/justinmklam/recipe-converter)).
 
-With cloud connectivity and dashboard complete, the sourdough monitor is now ready to be used!
+With cloud connectivity and dashboard complete, the sourdough monitor was now ready to be used!
 
 # The Analysis
 
@@ -197,9 +204,9 @@ Other experiments that I'd like to nerd out on:
 
 # Conclusion
 
-So after all this, the takeaway might actually be that timing the starter isn't actually that important, since it stays active at its peak for at least a few hours. And if you maintain a somewhat regular feeding schedule and have a relatively stable environment, then you can probably get a good feel for how long it takes your starter to grow (or set up a timelapse with your smartphone camera).
+So after all this, the takeaway might actually be that timing the starter isn't all that important, since it stays active at its peak for at least a few hours. And if you maintain a somewhat regular feeding schedule and have a relatively stable environment, then you can probably get a good feel for how long it takes your starter to grow (or you can set up a timelapse with your smartphone camera to see how it's doing).
 
-This was still a fun way to nerd out with baking, since engineers like metrics, and there's a lot to measure with sourdough bread. Although this gadget might seem superfluous to some, I enjoy the precision and confidence it gives me in taking out the guesswork of how my starter is doing. There's two types of bakers in the world: those who go by feel, and those have a 0.01 g resolution kitchen scale. Guess which one I am ;)
+This was still a fun way to nerd out with baking, since engineers like metrics, and there's a lot to measure with sourdough bread. Although this gadget might seem superfluous to some, I enjoyed the precision and confidence it gave me in taking out the guesswork of how my starter is doing. There's two types of bakers in the world: those who go by feel, and those have a 0.01 g resolution kitchen scale. Guess which one I am 😏
 
 {{<img caption="A darn nice crumb, if I do say so myself!" src="/imgs/blog-imgs/sourdough-starter-monitor-lid/bread.jpg" >}}
 
