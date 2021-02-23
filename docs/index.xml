@@ -6,7 +6,16 @@
     <description>Recent content on Justin MK Lam | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2019 11:50:22 -0700</lastBuildDate><atom:link href="http://justinmklam.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Feb 2021 08:36:18 -0800</lastBuildDate><atom:link href="http://justinmklam.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Precision Sourdough: A Smart Lid for Your Starter</title>
+      <link>http://justinmklam.com/posts/2021/02/levain-monitor/</link>
+      <pubDate>Mon, 22 Feb 2021 08:36:18 -0800</pubDate>
+      
+      <guid>http://justinmklam.com/posts/2021/02/levain-monitor/</guid>
+      <description>The Backstory A few years ago, I had the idea to track my sourdough starter using computer vision. It was neat to monitor it this way, but it was fairly impractical to do for each feeding since it required setting up a camera, downloading the images, and doing some manual image cropping before running it through my analysis script. The analysis was also only done after the fact, and what I really wanted was something that could tell me when the starter was ready to be used (or fed), or, if I missed the window of opportunity, how long ago it peaked.</description>
+    </item>
+    
     <item>
       <title>3D Printed Engagement Ring</title>
       <link>http://justinmklam.com/posts/2019/diy-wedding-ring/</link>

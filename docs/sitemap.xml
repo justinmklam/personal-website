@@ -3,22 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://justinmklam.com/posts/2019/diy-wedding-ring/</loc>
-    <lastmod>2019-12-29T11:50:22-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://justinmklam.com/tags/3d-printing/</loc>
-    <lastmod>2019-12-29T11:50:22-07:00</lastmod>
+    <lastmod>2021-02-22T08:36:18-08:00</lastmod>
   </url>
   
   <url>
     <loc>http://justinmklam.com/tags/design/</loc>
-    <lastmod>2019-12-29T11:50:22-07:00</lastmod>
+    <lastmod>2021-02-22T08:36:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/tags/electrical/</loc>
+    <lastmod>2021-02-22T08:36:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/tags/embedded/</loc>
+    <lastmod>2021-02-22T08:36:18-08:00</lastmod>
   </url>
   
   <url>
     <loc>http://justinmklam.com/</loc>
+    <lastmod>2021-02-22T08:36:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/posts/2021/02/levain-monitor/</loc>
+    <lastmod>2021-02-22T08:36:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/tags/programming/</loc>
+    <lastmod>2021-02-22T08:36:18-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://justinmklam.com/posts/2019/diy-wedding-ring/</loc>
     <lastmod>2019-12-29T11:50:22-07:00</lastmod>
   </url>
   
@@ -28,17 +48,7 @@
   </url>
   
   <url>
-    <loc>http://justinmklam.com/tags/embedded/</loc>
-    <lastmod>2019-04-25T14:14:25-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://justinmklam.com/posts/2019/04/vscode-nrf52/</loc>
-    <lastmod>2019-04-25T14:14:25-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/programming/</loc>
     <lastmod>2019-04-25T14:14:25-07:00</lastmod>
   </url>
   
@@ -79,11 +89,6 @@
   
   <url>
     <loc>http://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</loc>
-    <lastmod>2017-05-09T11:30:56-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://justinmklam.com/tags/electrical/</loc>
     <lastmod>2017-05-09T11:30:56-07:00</lastmod>
   </url>
   
