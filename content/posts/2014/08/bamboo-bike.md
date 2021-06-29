@@ -9,7 +9,7 @@ title = "Award Winning Bamboo Bike"
 tagline = "An organic, gluten-free mode of transportation."
 
 image =     "/imgs/bamboo_bike/IMG_5359-e1424407598804.jpg"
-tags =      ["design"]
+tags =      ["design", "woodworking"]
 
 aliases =   ["/projects/mech/bamboo-bike/"]
 +++
