@@ -131,7 +131,7 @@
     <p class="caption">Timelapse taken over ~10 hours at 5 minute intervals. Shown: Two sourdough starters with different feeding ratios.</p>
 </div>
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay loop muted controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29%20Levain%20Timelapse.mp4 type="video/mp4" />
     </video>
     <p class="caption">Image analysis for tracking growth of the above timelapse.</p>
@@ -299,10 +299,10 @@ nohup ./timelapse.sh &amp;&gt; /dev/null &amp;
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">import</span> matplotlib.pyplot <span style="color:#00f">as</span> plt
 <span style="color:#00f">from</span> skimage.filters <span style="color:#00f">import</span> try_all_threshold
 
-img = io.imread(<span style="color:#a31515">&#39;2018-05-31 Levain Timelapse/test.jpg&#39;</span>, as_grey=True)
+img = io.imread(<span style="color:#a31515">&#39;2018-05-31 Levain Timelapse/test.jpg&#39;</span>, as_grey=<span style="color:#00f">True</span>)
 img = img[0:1000, 650:1100]   <span style="color:#008000"># crop image to zoom in to jar</span>
 
-fig, ax = try_all_threshold(img, figsize=(10, 8), verbose=False)
+fig, ax = try_all_threshold(img, figsize=(10, 8), verbose=<span style="color:#00f">False</span>)
 plt.show()
 </code></pre></div><p>Running the above code yields the following image:</p>
 <div class="row captioned-img">
@@ -350,7 +350,7 @@ plt.show()
 <p>Those white blobs on the walls of the jar may still be detected as regions of interest, but applying a minimum thresholded area will help with false positives. Luckily, we have moderate control of the lighting and contrast of the object in question. If we&rsquo;re lucky we won&rsquo;t have to change much for the timelapses taken at different times of the day!</p>
 <h3 id="quantifying-the-image">Quantifying the Image</h3>
 <p>With our binary image, we can now use skimage.measure to easily get quantified properties of the regions. Full list of properties can be found <a href="http://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops">in the docs</a>.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">height = None
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">height = <span style="color:#00f">None</span>
 
 fig, ax = plt.subplots()
 ax.imshow(binary_img, cmap=plt.cm.gray)
@@ -392,7 +392,7 @@ plt.show()
 <p>The timelapses below show the sourdough starter from different dates. The boundary tracking algorithm is reasonably well at detecting the correct height, but there are occasional outliers that cause the errors. However, the overall trend of the growth is still captured.</p>
 <h3 id="may-29-left-jar">May 29, Left Jar</h3>
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay loop muted controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29%20Levain%20Timelapse.mp4 type="video/mp4" />
     </video>
     <p class="caption">The rise on the left jar had the cleanest growth trace.</p>
@@ -400,7 +400,7 @@ plt.show()
 
 <h3 id="may-29-right-jar">May 29, Right Jar</h3>
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay loop muted controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-05-29%20Levain%20Timelapse,%20Right.mp4 type="video/mp4" />
     </video>
     <p class="caption">A narrow crop area had to be used to prevent detection of uneven rise levels.</p>
@@ -408,7 +408,7 @@ plt.show()
 
 <h3 id="may-31-first-feeding">May 31, First Feeding</h3>
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay loop muted controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-05-31%20Levain%20Timelapse.mp4 type="video/mp4" />
     </video>
     <p class="caption">Sunlight through the kitchen window created glare on the bottom left area on the jar, which affected the binary thresholding.</p>
@@ -416,7 +416,7 @@ plt.show()
 
 <h3 id="may-31-second-feeding">May 31, Second Feeding</h3>
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay loop muted controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-05-31%20Levain%20Timelapse%202.mp4 type="video/mp4" />
     </video>
     <p class="caption">Having the jar farther away reduced the thresholding accuracy, but the overall trace was still acceptable.</p>
@@ -424,7 +424,7 @@ plt.show()
 
 <h3 id="june-10-out-of-fridge">June 10, Out of Fridge</h3>
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay loop muted controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-06-10%20Out%20of%20Fridge.mp4 type="video/mp4" />
     </video>
     <p class="caption">A larger jar was needed for this one! The thresholding algorithm was surprisingly still able ot catch the peak to some extent, despite minimal contrast.</p>
@@ -432,7 +432,7 @@ plt.show()
 
 <h3 id="june-23-first-feeding">June 23, First Feeding</h3>
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay loop muted controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-06-23%20First%20Feeding.mp4 type="video/mp4" />
     </video>
     <p class="caption">After some neglect, the starter only rose to ~50%...</p>
@@ -440,7 +440,7 @@ plt.show()
 
 <h3 id="june-23-refeeding">June 23, Refeeding</h3>
 <div class="row captioned-img">
-    <video class="img-responsive img-span-row img-content" autoplay="autoplay" loop="loop" controls>
+    <video class="img-responsive img-span-row img-content" autoplay loop muted controls>
       <source src=/imgs/blog-imgs/sourdough-starter-monitor/2018-06-23%20Refeeding.mp4 type="video/mp4" />
     </video>
     <p class="caption">But after another feeding the next morning, it had enough activity to spring back ~80% growth!</p>
@@ -499,7 +499,7 @@ plt.show()
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Which, for the record, is much more interesting than watching paint dry. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Which, for the record, is much more interesting than watching paint dry.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
