@@ -32,11 +32,11 @@ Most coops are made out of an outdoor wood like cedar, but that would have blown
 
 As such, we built out the frame with the thinnest (and cheapest) construction wood at Home Depot (something like 1x2). With just the perimeter built, it was honestly quite wobbly... but once the trusses were added, rigidity was achieved.
 
-{{<img caption="Rough frame of the coop (top) and part of the run (bottom)." src="/imgs/2021/chicken-coop/build1.jpg" >}}
+![Rough frame of the coop (top) and part of the run (bottom)](/imgs/2021/chicken-coop/build1.jpg)
 
-{{<img caption="Building out the frame, adding the angled roof and the nesting box." src="/imgs/2021/chicken-coop/build2.jpg" >}}
+![Building out the frame, adding the angled roof and the nesting box.](/imgs/2021/chicken-coop/build2.jpg)
 
-{{<img caption="\"And then I said, that's no chicken, that's my wife!\"" src="/imgs/2021/chicken-coop/build6.jpg" >}}
+!["And then I said, that's no chicken, that's my wife!"](/imgs/2021/chicken-coop/build6.jpg)
 
 The doors were a bit of a pain, since the opening wasn't perfectly square. But after an adequate amount of measuring and shimming, we had the doors installed, operational, and smooth.
 
@@ -44,11 +44,11 @@ For the paint, we went to the clearance section at Home Depot and found heavily 
 
 {{<loop-vid caption="Sturdy enough for me, sturdy enough for chickens." src="/imgs/2021/chicken-coop/coopdoor.mp4">}}
 
-{{<img caption="Dry fitting the coop and building out the run." src="/imgs/2021/chicken-coop/build4.jpg" >}}
+![Dry fitting the coop and building out the run.](/imgs/2021/chicken-coop/build4.jpg)
 
-{{<img caption="How the chickens will enter and leave the coop." src="/imgs/2021/chicken-coop/build5.jpg" >}}
+![How the chickens will enter and leave the coop.](/imgs/2021/chicken-coop/build5.jpg)
 
-{{<img caption="Fully assembled and ready for our new guests!" src="/imgs/2021/chicken-coop/coop.jpg" >}}
+![Fully assembled and ready for our new guests!](/imgs/2021/chicken-coop/coop.jpg)
 
 At this point, we were finally ready to go get ourselves some chicken(s)!
 
@@ -56,11 +56,11 @@ At this point, we were finally ready to go get ourselves some chicken(s)!
 
 Turns out buying chickens is easier said than done. We eventually found a farm in the next city over that hosts farm animal auctions, which sounded like a great idea at the time. Upon arrival, potential buyers browse the inventory and make notes about what they would like to purchase. What we didn't realize was that sellers were there to sell in bulk... While we wanted to buy a couple hens of different breeds, sellers were putting chickens up for sale in multiples of five!
 
-{{<img caption="Browsing the inventory before the auction starts." src="/imgs/2021/chicken-coop/auction1.jpg" >}}
+![Browsing the inventory before the auction starts.](/imgs/2021/chicken-coop/auction1.jpg)
 
 Having never been to an auction before, it was actually a bit stressful. The auctioneer speaks extremely quickly, and you (as the buyer) need to make quick decisions on how much you want to bid, and if someone else also bids, if you're willing to outbid them (and how many times you want to repeat this cycle). The auctioneer also scolded a few people for waving their paddles by accident, since the slightest of movement is an indicator that the person holding the paddle wants to bid.
 
-{{<img caption="Bidding for our hens." src="/imgs/2021/chicken-coop/auction2.jpg" >}}
+![Bidding for our hens.](/imgs/2021/chicken-coop/auction2.jpg)
 
 # The Chickens
 
@@ -74,15 +74,15 @@ Within the span of 24 hours, our chicken ownership went something like this:
 6. Take all the chickens home, find out the next morning at 6 am that one of them is a rooster
 7. *Panic again*, find a local farm to trade our rooster (plus another hen since our coop was built for max 3, not 4)
 
-{{<img caption="Hens in their new home (some of them anyway...)." src="/imgs/2021/chicken-coop/chickens5.jpg" >}}
+![Hens in their new home (some of them anyway...).](/imgs/2021/chicken-coop/chickens5.jpg)
 
-{{<img caption="Turns out catching a chicken is easier said than done, but eventually we got him!" src="/imgs/2021/chicken-coop/rooster.jpg" >}}
+![Turns out catching a chicken is easier said than done, but eventually we got him!](/imgs/2021/chicken-coop/rooster.jpg)
 
 With the chicken fiasco over, we had ourselves a stable flock.
 
-{{<img caption="Three happy hens roosting in their new home." src="/imgs/2021/chicken-coop/chickens1.jpg" >}}
-{{<img caption="From left to right: Tamago (Bantam hen), Peidan (Black Copper Maran), and Pecorino (Ameraucana)." src="/imgs/2021/chicken-coop/chickens2.jpg" >}}
-{{<img caption="This was mildly painful at first since they'd nip our flesh when going for the seeds." src="/imgs/2021/chicken-coop/feeding.jpg" >}}
+![Three happy hens roosting in their new home.](/imgs/2021/chicken-coop/chickens1.jpg)
+![From left to right: Tamago (Bantam hen), Peidan (Black Copper Maran), and Pecorino (Ameraucana).](/imgs/2021/chicken-coop/chickens2.jpg)
+![This was mildly painful at first since they'd nip our flesh when going for the seeds.](/imgs/2021/chicken-coop/feeding.jpg)
 
 On the first few nights, a bit of training was required to tell the chickens to go inside the coop at dusk. To do this, we shined a flashlight from the inside (such that it's visible from the outside), which eventually attracted their attention and they flew up into the opening.
 
@@ -94,24 +94,24 @@ After a while, they no longer needed any coaxing and like clockwork, they'd retu
 
 That winter, we had snowfall that stuck (which is rare for the "wet" coast of Vancouver), but the chickens were fortunately ok. We had a heat lamp ready but they didn't seem to be cold, and we kept the water warm to keep it from freezing overnight.
 
-{{<img caption="When winter rolled around, we had to keep an eye on their water to make sure it didn't freeze." src="/imgs/2021/chicken-coop/winter1.jpg" >}}
+![When winter rolled around, we had to keep an eye on their water to make sure it didn't freeze.](/imgs/2021/chicken-coop/winter1.jpg)
 
-{{<img caption="At least they were still somewhat free run!" src="/imgs/2021/chicken-coop/winter2.jpg" >}}
+![At least they were still somewhat free run!](/imgs/2021/chicken-coop/winter2.jpg)
 
 ## The Eggs
 
-{{<img caption="Soft shell crab is a delicacy, but soft shell eggs are not." src="/imgs/2021/chicken-coop/eggerror1.jpg" >}}
-{{<img caption="This one almost made it, but the shell was still too thin. More calcium required!" src="/imgs/2021/chicken-coop/eggerror2.jpg" >}}
-{{<img caption="Waking up to this pair of eggs was egg-tremely egg-citing (sorry, couldn't resist)." src="/imgs/2021/chicken-coop/eggs1.jpg" >}}
-{{<img caption="Production eventually entered steady state." src="/imgs/2021/chicken-coop/eggs3.jpg" >}}
+![Soft shell crab is a delicacy, but soft shell eggs are not.](/imgs/2021/chicken-coop/eggerror1.jpg)
+![This one almost made it, but the shell was still too thin. More calcium required!](/imgs/2021/chicken-coop/eggerror2.jpg)
+![Waking up to this pair of eggs was egg-tremely egg-citing (sorry, couldn't resist).](/imgs/2021/chicken-coop/eggs1.jpg)
+![Production eventually entered steady state.](/imgs/2021/chicken-coop/eggs3.jpg)
 
 ## The Replacements
 
 Turns out one of the chickens was actually a rooster, so we did what we had to do...
 
-{{<img caption="Being a little facetious..." src="/imgs/2021/chicken-coop/bbq.jpg" >}}
+![Being a little facetious...](/imgs/2021/chicken-coop/bbq.jpg)
 
-{{<img caption="New hens, new eggs!" src="/imgs/2021/chicken-coop/chickens3.jpg" >}}
+![New hens, new eggs!](/imgs/2021/chicken-coop/chickens3.jpg)
 
 {{<loop-vid caption="Our puppy was very inquisitive about our new chickens." src="/imgs/2021/chicken-coop/chicken-dog.mp4">}}
 
@@ -119,6 +119,6 @@ Turns out one of the chickens was actually a rooster, so we did what we had to d
 
 In the summer of 2020, it was time to say goodbye to our beloved hens.
 
-{{<img caption="TEXT" src="/imgs/2021/chicken-coop/goodbye1.jpg" >}}
-{{<img caption="TEXT" src="/imgs/2021/chicken-coop/goodbye2.jpg" >}}
-{{<img caption="TEXT" src="/imgs/2021/chicken-coop/crashpad.jpg" >}}
+![TEXT](/imgs/2021/chicken-coop/goodbye1.jpg)
+![TEXT](/imgs/2021/chicken-coop/goodbye2.jpg)
+![TEXT](/imgs/2021/chicken-coop/crashpad.jpg)
