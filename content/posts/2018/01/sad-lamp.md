@@ -1,7 +1,7 @@
 +++
 date = "2018-01-12T09:42:57-08:00"
 draft = false
-image = "/imgs/blog-imgs/sad-lamp/Verilux Spectral Response - Comparison.PNG"
+image = "/imgs/blog-imgs/sad-lamp/verilux-comparison.PNG"
 layout = "single"
 tagline = "Shining the light of truth on a $70 bulb."
 tags = ["physics"]
